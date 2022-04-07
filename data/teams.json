@@ -1,0 +1,200 @@
+[
+  {
+    "pulseId": 1,
+    "optaId": "t3",
+    "name": "Arsenal",
+    "shortName": "ARS"
+  },
+  {
+    "pulseId": 2,
+    "optaId": "t7",
+    "name": "Aston Villa",
+    "shortName": "AVL"
+  },
+  {
+    "pulseId": 30,
+    "optaId": "t37",
+    "name": "Barnsley",
+    "shortName": "BAR"
+  },
+  {
+    "pulseId": 3,
+    "optaId": "t5",
+    "name": "Blackburn Rovers",
+    "shortName": "BLB"
+  },
+  {
+    "pulseId": 27,
+    "optaId": "t30",
+    "name": "Bolton Wanderers",
+    "shortName": "BOL"
+  },
+  {
+    "pulseId": 32,
+    "optaId": "t55",
+    "name": "Bradford City",
+    "shortName": "BRA"
+  },
+  {
+    "pulseId": 31,
+    "optaId": "t33",
+    "name": "Charlton Athletic",
+    "shortName": "CHA"
+  },
+  {
+    "pulseId": 4,
+    "optaId": "t8",
+    "name": "Chelsea",
+    "shortName": "CHE"
+  },
+  {
+    "pulseId": 5,
+    "optaId": "t9",
+    "name": "Coventry City",
+    "shortName": "COV"
+  },
+  {
+    "pulseId": 6,
+    "optaId": "t31",
+    "name": "Crystal Palace",
+    "shortName": "CRY"
+  },
+  {
+    "pulseId": 28,
+    "optaId": "t24",
+    "name": "Derby County",
+    "shortName": "DER"
+  },
+  {
+    "pulseId": 7,
+    "optaId": "t11",
+    "name": "Everton",
+    "shortName": "EVE"
+  },
+  {
+    "pulseId": 8,
+    "optaId": "t40",
+    "name": "Ipswich Town",
+    "shortName": "IPS"
+  },
+  {
+    "pulseId": 9,
+    "optaId": "t2",
+    "name": "Leeds United",
+    "shortName": "LEE"
+  },
+  {
+    "pulseId": 26,
+    "optaId": "t13",
+    "name": "Leicester City",
+    "shortName": "LEI"
+  },
+  {
+    "pulseId": 10,
+    "optaId": "t14",
+    "name": "Liverpool",
+    "shortName": "LIV"
+  },
+  {
+    "pulseId": 11,
+    "optaId": "t43",
+    "name": "Manchester City",
+    "shortName": "MCI"
+  },
+  {
+    "pulseId": 12,
+    "optaId": "t1",
+    "name": "Manchester United",
+    "shortName": "MUN"
+  },
+  {
+    "pulseId": 13,
+    "optaId": "t25",
+    "name": "Middlesbrough",
+    "shortName": "MID"
+  },
+  {
+    "pulseId": 23,
+    "optaId": "t4",
+    "name": "Newcastle United",
+    "shortName": "NEW"
+  },
+  {
+    "pulseId": 14,
+    "optaId": "t45",
+    "name": "Norwich City",
+    "shortName": "NOR"
+  },
+  {
+    "pulseId": 15,
+    "optaId": "t17",
+    "name": "Nottingham Forest",
+    "shortName": "NFO"
+  },
+  {
+    "pulseId": 16,
+    "optaId": "t105",
+    "name": "Oldham Athletic",
+    "shortName": "OLD"
+  },
+  {
+    "pulseId": 17,
+    "optaId": "t52",
+    "name": "Queens Park Rangers",
+    "shortName": "QPR"
+  },
+  {
+    "pulseId": 18,
+    "optaId": "t49",
+    "name": "Sheffield United",
+    "shortName": "SHU"
+  },
+  {
+    "pulseId": 19,
+    "optaId": "t19",
+    "name": "Sheffield Wednesday",
+    "shortName": "SHW"
+  },
+  {
+    "pulseId": 20,
+    "optaId": "t20",
+    "name": "Southampton",
+    "shortName": "SOU"
+  },
+  {
+    "pulseId": 29,
+    "optaId": "t56",
+    "name": "Sunderland",
+    "shortName": "SUN"
+  },
+  {
+    "pulseId": 24,
+    "optaId": "t46",
+    "name": "Swindon Town",
+    "shortName": "SWI"
+  },
+  {
+    "pulseId": 21,
+    "optaId": "t6",
+    "name": "Tottenham Hotspur",
+    "shortName": "TOT"
+  },
+  {
+    "pulseId": 33,
+    "optaId": "t57",
+    "name": "Watford",
+    "shortName": "WAT"
+  },
+  {
+    "pulseId": 25,
+    "optaId": "t21",
+    "name": "West Ham United",
+    "shortName": "WHU"
+  },
+  {
+    "pulseId": 22,
+    "optaId": "t1736",
+    "name": "Wimbledon",
+    "shortName": "WIM"
+  }
+]
