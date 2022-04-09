@@ -1,18 +1,16 @@
 const teams = require('../data/teams.json')
 const squads = require('../data/squads.json')
+const tables = require('../data/tables.json')
 const players = require('../data/players.json')
 const stickers = require('../data/stickers.json')
 
 const fs = require('fs')
 const db = require('better-sqlite3')('./db/epl.db')
 
-function setup() {
-  const schema = fs.readFileSync('./db/schema.sql', 'utf-8')
-  db.exec(schema)
-}
+const schema = fs.readFileSync('./db/schema.sql', 'utf-8')
+db.exec(schema)
 
-function seedPlayers() {
-  const insert = db.prepare(`
+const insertPlayers = db.prepare(`
     INSERT INTO players VALUES (
       $id,
       $pulseId,
@@ -28,18 +26,16 @@ function seedPlayers() {
     )
   `)
 
-  const insertMany = db.transaction((data) => {
-    data.forEach((item) => {
-      const sticker = stickers[item.optaId]
-      insert.run({ ...item, sticker })
-    })
+const insertManyPlayers = db.transaction((data) => {
+  data.forEach((item) => {
+    const sticker = stickers[item.optaId]
+    insertPlayers.run({ ...item, sticker })
   })
+})
 
-  insertMany(players)
-}
+insertManyPlayers(players)
 
-function seedTeams() {
-  const insert = db.prepare(`
+const insertTeams = db.prepare(`
     INSERT INTO teams VALUES (
       $id,
       $pulseId,
@@ -49,15 +45,13 @@ function seedTeams() {
     )
   `)
 
-  const insertMany = db.transaction((data) => {
-    data.forEach((item) => insert.run(item))
-  })
+const insertManyTeams = db.transaction((data) => {
+  data.forEach((item) => insertTeams.run(item))
+})
 
-  insertMany(teams)
-}
+insertManyTeams(teams)
 
-function seedSquads() {
-  const insert = db.prepare(`
+const insertSquads = db.prepare(`
     INSERT INTO squads VALUES (
       $seasonId,
       $teamId,
@@ -68,19 +62,38 @@ function seedSquads() {
     )
   `)
 
-  const insertMany = db.transaction((data) => {
-    data.forEach((squad) => {
-      squad.players.forEach((player) => {
-        const { seasonId, teamId } = squad
-        insert.run({ seasonId, teamId, ...player })
-      })
+const insertManySquads = db.transaction((data) => {
+  data.forEach((squad) => {
+    const { seasonId, teamId } = squad
+
+    squad.players.forEach((player) => {
+      insertSquads.run({ seasonId, teamId, ...player })
     })
   })
+})
 
-  insertMany(squads)
-}
+insertManySquads(squads)
 
-setup()
-seedPlayers()
-seedTeams()
-seedSquads()
+const insertTables = db.prepare(`
+    INSERT INTO tables VALUES (
+      $seasonId,
+      $teamId,
+      $rank,
+      $points,
+      $played,
+      $wins,
+      $draws,
+      $losses,
+      $for,
+      $against,
+      $diff
+    )
+  `)
+
+const insertManyTables = db.transaction((data) => {
+  data.forEach((table) => {
+    table.forEach((row) => insertTables.run(row))
+  })
+})
+
+insertManyTables(tables)

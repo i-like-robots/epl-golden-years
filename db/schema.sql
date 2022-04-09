@@ -31,3 +31,20 @@ CREATE TABLE IF NOT EXISTS squads (
 
 CREATE INDEX IF NOT EXISTS squads_lookups
 ON squads (seasonId, teamId, playerId);
+
+CREATE TABLE IF NOT EXISTS tables (
+    seasonId INTEGER,
+    teamId   INTEGER,
+    rank     INTEGER,
+    points   INTEGER,
+    played   INTEGER,
+    wins     INTEGER,
+    draws    INTEGER,
+    losses   INTEGER,
+    for      INTEGER,
+    against  INTEGER,
+    diff     INTEGER
+);
+
+CREATE INDEX IF NOT EXISTS tables_lookups
+ON tables (seasonId, teamId);
