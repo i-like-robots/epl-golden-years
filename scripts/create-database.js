@@ -6,14 +6,6 @@ const stickers = require('../data/stickers.json')
 const fs = require('fs')
 const db = require('better-sqlite3')('./db/epl.db')
 
-const playerDefaults = {
-  positionCode: null,
-  positionName: null,
-  dateOfBirth: null,
-  countryCode: null,
-  countryName: null,
-}
-
 function setup() {
   const schema = fs.readFileSync('./db/schema.sql', 'utf-8')
   db.exec(schema)
@@ -39,7 +31,7 @@ function seedPlayers() {
   const insertMany = db.transaction((data) => {
     data.forEach((item) => {
       const sticker = stickers[item.optaId]
-      insert.run({ ...playerDefaults, ...item, sticker })
+      insert.run({ ...item, sticker })
     })
   })
 

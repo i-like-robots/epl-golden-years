@@ -6507,6 +6507,8 @@
     "id": 543,
     "pulseId": 10245,
     "optaId": "p11946",
+    "positionCode": null,
+    "positionName": null,
     "firstName": "Lee",
     "lastName": "Fowler",
     "dateOfBirth": "10 June 1983",
@@ -18065,7 +18067,9 @@
     "positionName": "Defender",
     "firstName": "Thomas",
     "lastName": "Staniforth",
-    "dateOfBirth": "15 December 1980"
+    "dateOfBirth": "15 December 1980",
+    "countryCode": null,
+    "countryName": null
   },
   {
     "id": 1507,
@@ -18567,6 +18571,7 @@
     "positionName": "Goalkeeper",
     "firstName": "Danny",
     "lastName": "Taylor",
+    "dateOfBirth": null,
     "countryCode": "GB-ENG",
     "countryName": "England"
   },
