@@ -4,6 +4,7 @@ const teams = require('../data/teams.json')
 const squads = require('../data/squads.json')
 const tables = require('../data/tables.json')
 const players = require('../data/players.json')
+const stickers = require('../data/stickers.json')
 
 const app = express()
 
@@ -12,10 +13,33 @@ app.get('/', (request, response) => {
 })
 
 app.get('/player/:playerId', (request, response) => {
-  const player = players[request.params.playerId]
+  const playerId = request.params.playerId
+  const player = players[playerId]
 
   if (player) {
-    response.json(player)
+    const squadHistory = squads.filter((squad) =>
+      squad.players.some((p) => p.playerId === playerId)
+    )
+
+    const history = squadHistory.map((squad) => {
+      const team = teams[squad.teamId]
+      const table = tables[squad.seasonId]
+      const result = table.find((item) => item.teamId === squad.teamId)
+      const stats = squad.players.find((p) => p.playerId === playerId)
+
+      return {
+        ...team,
+        rank: result.rank,
+        seasonId: squad.seasonId,
+        appearances: stats.appearances,
+      }
+    })
+
+    const sticker = stickers[player.optaId]
+
+    const appearances = history.reduce((acc, item) => acc + item.appearances, 0)
+
+    response.json({ ...player, history, appearances, sticker })
   } else {
     response.sendStatus(404)
   }
