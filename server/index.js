@@ -11,11 +11,7 @@ app.get('/', (request, response) => {
 })
 
 app.get('/player/:id', (request, response) => {
-  const id = Number(request.params.id)
-
-  const player = players.find((player) => {
-    return player.pulseId === id
-  })
+  const player = players[request.params.id]
 
   if (player) {
     response.json(player)
@@ -25,11 +21,7 @@ app.get('/player/:id', (request, response) => {
 })
 
 app.get('/team/:id', (request, response) => {
-  const id = Number(request.params.id)
-
-  const team = teams.find((team) => {
-    return team.pulseId === id
-  })
+  const team = teams[request.params.id]
 
   if (team) {
     response.json(team)
@@ -39,22 +31,16 @@ app.get('/team/:id', (request, response) => {
 })
 
 app.get('/squad/:teamId/:seasonId', (request, response) => {
-  const teamId = Number(request.params.teamId)
-  const seasonId = Number(request.params.seasonId)
-
   const squad = squads.find((squad) => {
-    return squad.teamPulseId === teamId && squad.seasonId === seasonId
+    return squad.teamId === request.params.teamId && squad.seasonId === request.params.seasonId
   })
 
-  const playersData = squad.players.map((squadPlayer) => {
-    const player = players.find((player) => {
-      return player.pulseId === squadPlayer.pulseId
-    })
-
-    return { ...squadPlayer, ...player }
+  const squadData = squad.players.map((p) => {
+    const player = players[p.playerId]
+    return { ...p, ...player }
   })
 
-  response.json(playersData)
+  response.json(squadData)
 })
 
 app.listen(3000, () => {

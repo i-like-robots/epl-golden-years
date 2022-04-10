@@ -1,8 +1,7 @@
-[
-  [
+{
+  "92-93": [
     {
-      "seasonId": 1,
-      "teamId": 18,
+      "teamId": "18",
       "rank": 1,
       "points": 84,
       "played": 42,
@@ -14,8 +13,7 @@
       "diff": 36
     },
     {
-      "seasonId": 1,
-      "teamId": 2,
+      "teamId": "2",
       "rank": 2,
       "points": 74,
       "played": 42,
@@ -27,8 +25,7 @@
       "diff": 17
     },
     {
-      "seasonId": 1,
-      "teamId": 21,
+      "teamId": "21",
       "rank": 3,
       "points": 72,
       "played": 42,
@@ -40,8 +37,7 @@
       "diff": -4
     },
     {
-      "seasonId": 1,
-      "teamId": 4,
+      "teamId": "4",
       "rank": 4,
       "points": 71,
       "played": 42,
@@ -53,8 +49,7 @@
       "diff": 22
     },
     {
-      "seasonId": 1,
-      "teamId": 24,
+      "teamId": "24",
       "rank": 5,
       "points": 63,
       "played": 42,
@@ -66,8 +61,7 @@
       "diff": 8
     },
     {
-      "seasonId": 1,
-      "teamId": 16,
+      "teamId": "16",
       "rank": 6,
       "points": 59,
       "played": 42,
@@ -79,8 +73,7 @@
       "diff": 7
     },
     {
-      "seasonId": 1,
-      "teamId": 26,
+      "teamId": "26",
       "rank": 7,
       "points": 59,
       "played": 42,
@@ -92,8 +85,7 @@
       "diff": 4
     },
     {
-      "seasonId": 1,
-      "teamId": 30,
+      "teamId": "30",
       "rank": 8,
       "points": 59,
       "played": 42,
@@ -105,8 +97,7 @@
       "diff": -6
     },
     {
-      "seasonId": 1,
-      "teamId": 17,
+      "teamId": "17",
       "rank": 9,
       "points": 57,
       "played": 42,
@@ -118,8 +109,7 @@
       "diff": 5
     },
     {
-      "seasonId": 1,
-      "teamId": 1,
+      "teamId": "1",
       "rank": 10,
       "points": 56,
       "played": 42,
@@ -131,8 +121,7 @@
       "diff": 2
     },
     {
-      "seasonId": 1,
-      "teamId": 8,
+      "teamId": "8",
       "rank": 11,
       "points": 56,
       "played": 42,
@@ -144,8 +133,7 @@
       "diff": -3
     },
     {
-      "seasonId": 1,
-      "teamId": 33,
+      "teamId": "33",
       "rank": 12,
       "points": 54,
       "played": 42,
@@ -157,8 +145,7 @@
       "diff": 1
     },
     {
-      "seasonId": 1,
-      "teamId": 12,
+      "teamId": "12",
       "rank": 13,
       "points": 53,
       "played": 42,
@@ -170,8 +157,7 @@
       "diff": -2
     },
     {
-      "seasonId": 1,
-      "teamId": 25,
+      "teamId": "25",
       "rank": 14,
       "points": 52,
       "played": 42,
@@ -183,8 +169,7 @@
       "diff": 1
     },
     {
-      "seasonId": 1,
-      "teamId": 9,
+      "teamId": "9",
       "rank": 15,
       "points": 52,
       "played": 42,
@@ -196,8 +181,7 @@
       "diff": -5
     },
     {
-      "seasonId": 1,
-      "teamId": 13,
+      "teamId": "13",
       "rank": 16,
       "points": 52,
       "played": 42,
@@ -209,8 +193,7 @@
       "diff": -5
     },
     {
-      "seasonId": 1,
-      "teamId": 14,
+      "teamId": "14",
       "rank": 17,
       "points": 51,
       "played": 42,
@@ -222,8 +205,7 @@
       "diff": -5
     },
     {
-      "seasonId": 1,
-      "teamId": 27,
+      "teamId": "27",
       "rank": 18,
       "points": 50,
       "played": 42,
@@ -235,8 +217,7 @@
       "diff": -7
     },
     {
-      "seasonId": 1,
-      "teamId": 23,
+      "teamId": "23",
       "rank": 19,
       "points": 49,
       "played": 42,
@@ -248,8 +229,7 @@
       "diff": -11
     },
     {
-      "seasonId": 1,
-      "teamId": 10,
+      "teamId": "10",
       "rank": 20,
       "points": 49,
       "played": 42,
@@ -261,8 +241,7 @@
       "diff": -13
     },
     {
-      "seasonId": 1,
-      "teamId": 19,
+      "teamId": "19",
       "rank": 21,
       "points": 44,
       "played": 42,
@@ -274,8 +253,7 @@
       "diff": -21
     },
     {
-      "seasonId": 1,
-      "teamId": 22,
+      "teamId": "22",
       "rank": 22,
       "points": 40,
       "played": 42,
@@ -287,10 +265,9 @@
       "diff": -21
     }
   ],
-  [
+  "93-94": [
     {
-      "seasonId": 2,
-      "teamId": 18,
+      "teamId": "18",
       "rank": 1,
       "points": 92,
       "played": 42,
@@ -302,8 +279,7 @@
       "diff": 42
     },
     {
-      "seasonId": 2,
-      "teamId": 4,
+      "teamId": "4",
       "rank": 2,
       "points": 84,
       "played": 42,
@@ -315,8 +291,7 @@
       "diff": 27
     },
     {
-      "seasonId": 2,
-      "teamId": 20,
+      "teamId": "20",
       "rank": 3,
       "points": 77,
       "played": 42,
@@ -328,8 +303,7 @@
       "diff": 41
     },
     {
-      "seasonId": 2,
-      "teamId": 1,
+      "teamId": "1",
       "rank": 4,
       "points": 71,
       "played": 42,
@@ -341,8 +315,7 @@
       "diff": 25
     },
     {
-      "seasonId": 2,
-      "teamId": 14,
+      "teamId": "14",
       "rank": 5,
       "points": 70,
       "played": 42,
@@ -354,8 +327,7 @@
       "diff": 26
     },
     {
-      "seasonId": 2,
-      "teamId": 33,
+      "teamId": "33",
       "rank": 6,
       "points": 65,
       "played": 42,
@@ -367,8 +339,7 @@
       "diff": 3
     },
     {
-      "seasonId": 2,
-      "teamId": 26,
+      "teamId": "26",
       "rank": 7,
       "points": 64,
       "played": 42,
@@ -380,8 +351,7 @@
       "diff": 22
     },
     {
-      "seasonId": 2,
-      "teamId": 16,
+      "teamId": "16",
       "rank": 8,
       "points": 60,
       "played": 42,
@@ -393,8 +363,7 @@
       "diff": 4
     },
     {
-      "seasonId": 2,
-      "teamId": 24,
+      "teamId": "24",
       "rank": 9,
       "points": 60,
       "played": 42,
@@ -406,8 +375,7 @@
       "diff": 1
     },
     {
-      "seasonId": 2,
-      "teamId": 2,
+      "teamId": "2",
       "rank": 10,
       "points": 57,
       "played": 42,
@@ -419,8 +387,7 @@
       "diff": -4
     },
     {
-      "seasonId": 2,
-      "teamId": 9,
+      "teamId": "9",
       "rank": 11,
       "points": 56,
       "played": 42,
@@ -432,8 +399,7 @@
       "diff": -2
     },
     {
-      "seasonId": 2,
-      "teamId": 21,
+      "teamId": "21",
       "rank": 12,
       "points": 53,
       "played": 42,
@@ -445,8 +411,7 @@
       "diff": 4
     },
     {
-      "seasonId": 2,
-      "teamId": 32,
+      "teamId": "32",
       "rank": 13,
       "points": 52,
       "played": 42,
@@ -458,8 +423,7 @@
       "diff": -11
     },
     {
-      "seasonId": 2,
-      "teamId": 8,
+      "teamId": "8",
       "rank": 14,
       "points": 51,
       "played": 42,
@@ -471,8 +435,7 @@
       "diff": -4
     },
     {
-      "seasonId": 2,
-      "teamId": 30,
+      "teamId": "30",
       "rank": 15,
       "points": 45,
       "played": 42,
@@ -484,8 +447,7 @@
       "diff": -5
     },
     {
-      "seasonId": 2,
-      "teamId": 17,
+      "teamId": "17",
       "rank": 16,
       "points": 45,
       "played": 42,
@@ -497,8 +459,7 @@
       "diff": -11
     },
     {
-      "seasonId": 2,
-      "teamId": 12,
+      "teamId": "12",
       "rank": 17,
       "points": 44,
       "played": 42,
@@ -510,8 +471,7 @@
       "diff": -21
     },
     {
-      "seasonId": 2,
-      "teamId": 27,
+      "teamId": "27",
       "rank": 18,
       "points": 43,
       "played": 42,
@@ -523,8 +483,7 @@
       "diff": -17
     },
     {
-      "seasonId": 2,
-      "teamId": 13,
+      "teamId": "13",
       "rank": 19,
       "points": 43,
       "played": 42,
@@ -536,8 +495,7 @@
       "diff": -23
     },
     {
-      "seasonId": 2,
-      "teamId": 25,
+      "teamId": "25",
       "rank": 20,
       "points": 42,
       "played": 42,
@@ -549,8 +507,7 @@
       "diff": -18
     },
     {
-      "seasonId": 2,
-      "teamId": 23,
+      "teamId": "23",
       "rank": 21,
       "points": 40,
       "played": 42,
@@ -562,8 +519,7 @@
       "diff": -26
     },
     {
-      "seasonId": 2,
-      "teamId": 29,
+      "teamId": "29",
       "rank": 22,
       "points": 30,
       "played": 42,
@@ -575,10 +531,9 @@
       "diff": -53
     }
   ],
-  [
+  "94-95": [
     {
-      "seasonId": 3,
-      "teamId": 4,
+      "teamId": "4",
       "rank": 1,
       "points": 89,
       "played": 42,
@@ -590,8 +545,7 @@
       "diff": 41
     },
     {
-      "seasonId": 3,
-      "teamId": 18,
+      "teamId": "18",
       "rank": 2,
       "points": 88,
       "played": 42,
@@ -603,8 +557,7 @@
       "diff": 49
     },
     {
-      "seasonId": 3,
-      "teamId": 22,
+      "teamId": "22",
       "rank": 3,
       "points": 77,
       "played": 42,
@@ -616,8 +569,7 @@
       "diff": 29
     },
     {
-      "seasonId": 3,
-      "teamId": 16,
+      "teamId": "16",
       "rank": 4,
       "points": 74,
       "played": 42,
@@ -629,8 +581,7 @@
       "diff": 28
     },
     {
-      "seasonId": 3,
-      "teamId": 14,
+      "teamId": "14",
       "rank": 5,
       "points": 73,
       "played": 42,
@@ -642,8 +593,7 @@
       "diff": 21
     },
     {
-      "seasonId": 3,
-      "teamId": 20,
+      "teamId": "20",
       "rank": 6,
       "points": 72,
       "played": 42,
@@ -655,8 +605,7 @@
       "diff": 20
     },
     {
-      "seasonId": 3,
-      "teamId": 30,
+      "teamId": "30",
       "rank": 7,
       "points": 62,
       "played": 42,
@@ -668,8 +617,7 @@
       "diff": 8
     },
     {
-      "seasonId": 3,
-      "teamId": 24,
+      "teamId": "24",
       "rank": 8,
       "points": 60,
       "played": 42,
@@ -681,8 +629,7 @@
       "diff": 2
     },
     {
-      "seasonId": 3,
-      "teamId": 33,
+      "teamId": "33",
       "rank": 9,
       "points": 56,
       "played": 42,
@@ -694,8 +641,7 @@
       "diff": -17
     },
     {
-      "seasonId": 3,
-      "teamId": 27,
+      "teamId": "27",
       "rank": 10,
       "points": 54,
       "played": 42,
@@ -707,8 +653,7 @@
       "diff": -2
     },
     {
-      "seasonId": 3,
-      "teamId": 8,
+      "teamId": "8",
       "rank": 11,
       "points": 54,
       "played": 42,
@@ -720,8 +665,7 @@
       "diff": -5
     },
     {
-      "seasonId": 3,
-      "teamId": 1,
+      "teamId": "1",
       "rank": 12,
       "points": 51,
       "played": 42,
@@ -733,8 +677,7 @@
       "diff": 3
     },
     {
-      "seasonId": 3,
-      "teamId": 26,
+      "teamId": "26",
       "rank": 13,
       "points": 51,
       "played": 42,
@@ -746,8 +689,7 @@
       "diff": -8
     },
     {
-      "seasonId": 3,
-      "teamId": 32,
+      "teamId": "32",
       "rank": 14,
       "points": 50,
       "played": 42,
@@ -759,8 +701,7 @@
       "diff": -4
     },
     {
-      "seasonId": 3,
-      "teamId": 12,
+      "teamId": "12",
       "rank": 15,
       "points": 50,
       "played": 42,
@@ -772,8 +713,7 @@
       "diff": -7
     },
     {
-      "seasonId": 3,
-      "teamId": 9,
+      "teamId": "9",
       "rank": 16,
       "points": 50,
       "played": 42,
@@ -785,8 +725,7 @@
       "diff": -18
     },
     {
-      "seasonId": 3,
-      "teamId": 17,
+      "teamId": "17",
       "rank": 17,
       "points": 49,
       "played": 42,
@@ -798,8 +737,7 @@
       "diff": -11
     },
     {
-      "seasonId": 3,
-      "teamId": 2,
+      "teamId": "2",
       "rank": 18,
       "points": 48,
       "played": 42,
@@ -811,8 +749,7 @@
       "diff": -5
     },
     {
-      "seasonId": 3,
-      "teamId": 10,
+      "teamId": "10",
       "rank": 19,
       "points": 45,
       "played": 42,
@@ -824,8 +761,7 @@
       "diff": -15
     },
     {
-      "seasonId": 3,
-      "teamId": 21,
+      "teamId": "21",
       "rank": 20,
       "points": 43,
       "played": 42,
@@ -837,8 +773,7 @@
       "diff": -17
     },
     {
-      "seasonId": 3,
-      "teamId": 15,
+      "teamId": "15",
       "rank": 21,
       "points": 29,
       "played": 42,
@@ -850,8 +785,7 @@
       "diff": -35
     },
     {
-      "seasonId": 3,
-      "teamId": 13,
+      "teamId": "13",
       "rank": 22,
       "points": 27,
       "played": 42,
@@ -863,10 +797,9 @@
       "diff": -57
     }
   ],
-  [
+  "95-96": [
     {
-      "seasonId": 4,
-      "teamId": 18,
+      "teamId": "18",
       "rank": 1,
       "points": 82,
       "played": 38,
@@ -878,8 +811,7 @@
       "diff": 38
     },
     {
-      "seasonId": 4,
-      "teamId": 20,
+      "teamId": "20",
       "rank": 2,
       "points": 78,
       "played": 38,
@@ -891,8 +823,7 @@
       "diff": 29
     },
     {
-      "seasonId": 4,
-      "teamId": 16,
+      "teamId": "16",
       "rank": 3,
       "points": 71,
       "played": 38,
@@ -904,8 +835,7 @@
       "diff": 36
     },
     {
-      "seasonId": 4,
-      "teamId": 2,
+      "teamId": "2",
       "rank": 4,
       "points": 63,
       "played": 38,
@@ -917,8 +847,7 @@
       "diff": 17
     },
     {
-      "seasonId": 4,
-      "teamId": 1,
+      "teamId": "1",
       "rank": 5,
       "points": 63,
       "played": 38,
@@ -930,8 +859,7 @@
       "diff": 17
     },
     {
-      "seasonId": 4,
-      "teamId": 12,
+      "teamId": "12",
       "rank": 6,
       "points": 61,
       "played": 38,
@@ -943,8 +871,7 @@
       "diff": 20
     },
     {
-      "seasonId": 4,
-      "teamId": 4,
+      "teamId": "4",
       "rank": 7,
       "points": 61,
       "played": 38,
@@ -956,8 +883,7 @@
       "diff": 14
     },
     {
-      "seasonId": 4,
-      "teamId": 30,
+      "teamId": "30",
       "rank": 8,
       "points": 61,
       "played": 38,
@@ -969,8 +895,7 @@
       "diff": 12
     },
     {
-      "seasonId": 4,
-      "teamId": 22,
+      "teamId": "22",
       "rank": 9,
       "points": 58,
       "played": 38,
@@ -982,8 +907,7 @@
       "diff": -4
     },
     {
-      "seasonId": 4,
-      "teamId": 32,
+      "teamId": "32",
       "rank": 10,
       "points": 51,
       "played": 38,
@@ -995,8 +919,7 @@
       "diff": -9
     },
     {
-      "seasonId": 4,
-      "teamId": 8,
+      "teamId": "8",
       "rank": 11,
       "points": 50,
       "played": 38,
@@ -1008,8 +931,7 @@
       "diff": 2
     },
     {
-      "seasonId": 4,
-      "teamId": 19,
+      "teamId": "19",
       "rank": 12,
       "points": 43,
       "played": 38,
@@ -1021,8 +943,7 @@
       "diff": -15
     },
     {
-      "seasonId": 4,
-      "teamId": 14,
+      "teamId": "14",
       "rank": 13,
       "points": 43,
       "played": 38,
@@ -1034,8 +955,7 @@
       "diff": -17
     },
     {
-      "seasonId": 4,
-      "teamId": 33,
+      "teamId": "33",
       "rank": 14,
       "points": 41,
       "played": 38,
@@ -1047,8 +967,7 @@
       "diff": -15
     },
     {
-      "seasonId": 4,
-      "teamId": 26,
+      "teamId": "26",
       "rank": 15,
       "points": 40,
       "played": 38,
@@ -1060,8 +979,7 @@
       "diff": -13
     },
     {
-      "seasonId": 4,
-      "teamId": 9,
+      "teamId": "9",
       "rank": 16,
       "points": 38,
       "played": 38,
@@ -1073,8 +991,7 @@
       "diff": -18
     },
     {
-      "seasonId": 4,
-      "teamId": 27,
+      "teamId": "27",
       "rank": 17,
       "points": 38,
       "played": 38,
@@ -1086,8 +1003,7 @@
       "diff": -18
     },
     {
-      "seasonId": 4,
-      "teamId": 17,
+      "teamId": "17",
       "rank": 18,
       "points": 38,
       "played": 38,
@@ -1099,8 +1015,7 @@
       "diff": -25
     },
     {
-      "seasonId": 4,
-      "teamId": 24,
+      "teamId": "24",
       "rank": 19,
       "points": 33,
       "played": 38,
@@ -1112,8 +1027,7 @@
       "diff": -19
     },
     {
-      "seasonId": 4,
-      "teamId": 5,
+      "teamId": "5",
       "rank": 20,
       "points": 29,
       "played": 38,
@@ -1125,10 +1039,9 @@
       "diff": -32
     }
   ],
-  [
+  "96-97": [
     {
-      "seasonId": 5,
-      "teamId": 18,
+      "teamId": "18",
       "rank": 1,
       "points": 75,
       "played": 38,
@@ -1140,8 +1053,7 @@
       "diff": 32
     },
     {
-      "seasonId": 5,
-      "teamId": 20,
+      "teamId": "20",
       "rank": 2,
       "points": 68,
       "played": 38,
@@ -1153,8 +1065,7 @@
       "diff": 33
     },
     {
-      "seasonId": 5,
-      "teamId": 1,
+      "teamId": "1",
       "rank": 3,
       "points": 68,
       "played": 38,
@@ -1166,8 +1077,7 @@
       "diff": 30
     },
     {
-      "seasonId": 5,
-      "teamId": 16,
+      "teamId": "16",
       "rank": 4,
       "points": 68,
       "played": 38,
@@ -1179,8 +1089,7 @@
       "diff": 25
     },
     {
-      "seasonId": 5,
-      "teamId": 2,
+      "teamId": "2",
       "rank": 5,
       "points": 61,
       "played": 38,
@@ -1192,8 +1101,7 @@
       "diff": 13
     },
     {
-      "seasonId": 5,
-      "teamId": 8,
+      "teamId": "8",
       "rank": 6,
       "points": 59,
       "played": 38,
@@ -1205,8 +1113,7 @@
       "diff": 3
     },
     {
-      "seasonId": 5,
-      "teamId": 26,
+      "teamId": "26",
       "rank": 7,
       "points": 57,
       "played": 38,
@@ -1218,8 +1125,7 @@
       "diff": -1
     },
     {
-      "seasonId": 5,
-      "teamId": 33,
+      "teamId": "33",
       "rank": 8,
       "points": 56,
       "played": 38,
@@ -1231,8 +1137,7 @@
       "diff": 3
     },
     {
-      "seasonId": 5,
-      "teamId": 15,
+      "teamId": "15",
       "rank": 9,
       "points": 47,
       "played": 38,
@@ -1244,8 +1149,7 @@
       "diff": -8
     },
     {
-      "seasonId": 5,
-      "teamId": 30,
+      "teamId": "30",
       "rank": 10,
       "points": 46,
       "played": 38,
@@ -1257,8 +1161,7 @@
       "diff": -7
     },
     {
-      "seasonId": 5,
-      "teamId": 14,
+      "teamId": "14",
       "rank": 11,
       "points": 46,
       "played": 38,
@@ -1270,8 +1173,7 @@
       "diff": -10
     },
     {
-      "seasonId": 5,
-      "teamId": 11,
+      "teamId": "11",
       "rank": 12,
       "points": 46,
       "played": 38,
@@ -1283,8 +1185,7 @@
       "diff": -13
     },
     {
-      "seasonId": 5,
-      "teamId": 4,
+      "teamId": "4",
       "rank": 13,
       "points": 42,
       "played": 38,
@@ -1296,8 +1197,7 @@
       "diff": -1
     },
     {
-      "seasonId": 5,
-      "teamId": 32,
+      "teamId": "32",
       "rank": 14,
       "points": 42,
       "played": 38,
@@ -1309,8 +1209,7 @@
       "diff": -9
     },
     {
-      "seasonId": 5,
-      "teamId": 12,
+      "teamId": "12",
       "rank": 15,
       "points": 42,
       "played": 38,
@@ -1322,8 +1221,7 @@
       "diff": -13
     },
     {
-      "seasonId": 5,
-      "teamId": 27,
+      "teamId": "27",
       "rank": 16,
       "points": 41,
       "played": 38,
@@ -1335,8 +1233,7 @@
       "diff": -6
     },
     {
-      "seasonId": 5,
-      "teamId": 9,
+      "teamId": "9",
       "rank": 17,
       "points": 41,
       "played": 38,
@@ -1348,8 +1245,7 @@
       "diff": -16
     },
     {
-      "seasonId": 5,
-      "teamId": 28,
+      "teamId": "28",
       "rank": 18,
       "points": 40,
       "played": 38,
@@ -1361,8 +1257,7 @@
       "diff": -18
     },
     {
-      "seasonId": 5,
-      "teamId": 19,
+      "teamId": "19",
       "rank": 19,
       "points": 39,
       "played": 38,
@@ -1374,8 +1269,7 @@
       "diff": -9
     },
     {
-      "seasonId": 5,
-      "teamId": 22,
+      "teamId": "22",
       "rank": 20,
       "points": 34,
       "played": 38,
@@ -1387,10 +1281,9 @@
       "diff": -28
     }
   ],
-  [
+  "97-98": [
     {
-      "seasonId": 6,
-      "teamId": 1,
+      "teamId": "1",
       "rank": 1,
       "points": 78,
       "played": 38,
@@ -1402,8 +1295,7 @@
       "diff": 35
     },
     {
-      "seasonId": 6,
-      "teamId": 18,
+      "teamId": "18",
       "rank": 2,
       "points": 77,
       "played": 38,
@@ -1415,8 +1307,7 @@
       "diff": 47
     },
     {
-      "seasonId": 6,
-      "teamId": 16,
+      "teamId": "16",
       "rank": 3,
       "points": 65,
       "played": 38,
@@ -1428,8 +1319,7 @@
       "diff": 26
     },
     {
-      "seasonId": 6,
-      "teamId": 8,
+      "teamId": "8",
       "rank": 4,
       "points": 63,
       "played": 38,
@@ -1441,8 +1331,7 @@
       "diff": 28
     },
     {
-      "seasonId": 6,
-      "teamId": 14,
+      "teamId": "14",
       "rank": 5,
       "points": 59,
       "played": 38,
@@ -1454,8 +1343,7 @@
       "diff": 11
     },
     {
-      "seasonId": 6,
-      "teamId": 4,
+      "teamId": "4",
       "rank": 6,
       "points": 58,
       "played": 38,
@@ -1467,8 +1355,7 @@
       "diff": 5
     },
     {
-      "seasonId": 6,
-      "teamId": 2,
+      "teamId": "2",
       "rank": 7,
       "points": 57,
       "played": 38,
@@ -1480,8 +1367,7 @@
       "diff": 1
     },
     {
-      "seasonId": 6,
-      "teamId": 32,
+      "teamId": "32",
       "rank": 8,
       "points": 56,
       "played": 38,
@@ -1493,8 +1379,7 @@
       "diff": -1
     },
     {
-      "seasonId": 6,
-      "teamId": 11,
+      "teamId": "11",
       "rank": 9,
       "points": 55,
       "played": 38,
@@ -1506,8 +1391,7 @@
       "diff": 3
     },
     {
-      "seasonId": 6,
-      "teamId": 15,
+      "teamId": "15",
       "rank": 10,
       "points": 53,
       "played": 38,
@@ -1519,8 +1403,7 @@
       "diff": 10
     },
     {
-      "seasonId": 6,
-      "teamId": 9,
+      "teamId": "9",
       "rank": 11,
       "points": 52,
       "played": 38,
@@ -1532,8 +1415,7 @@
       "diff": 2
     },
     {
-      "seasonId": 6,
-      "teamId": 27,
+      "teamId": "27",
       "rank": 12,
       "points": 48,
       "played": 38,
@@ -1545,8 +1427,7 @@
       "diff": -5
     },
     {
-      "seasonId": 6,
-      "teamId": 20,
+      "teamId": "20",
       "rank": 13,
       "points": 44,
       "played": 38,
@@ -1558,8 +1439,7 @@
       "diff": -9
     },
     {
-      "seasonId": 6,
-      "teamId": 30,
+      "teamId": "30",
       "rank": 14,
       "points": 44,
       "played": 38,
@@ -1571,8 +1451,7 @@
       "diff": -12
     },
     {
-      "seasonId": 6,
-      "teamId": 33,
+      "teamId": "33",
       "rank": 15,
       "points": 44,
       "played": 38,
@@ -1584,8 +1463,7 @@
       "diff": -12
     },
     {
-      "seasonId": 6,
-      "teamId": 26,
+      "teamId": "26",
       "rank": 16,
       "points": 44,
       "played": 38,
@@ -1597,8 +1475,7 @@
       "diff": -15
     },
     {
-      "seasonId": 6,
-      "teamId": 12,
+      "teamId": "12",
       "rank": 17,
       "points": 40,
       "played": 38,
@@ -1610,8 +1487,7 @@
       "diff": -15
     },
     {
-      "seasonId": 6,
-      "teamId": 5,
+      "teamId": "5",
       "rank": 18,
       "points": 40,
       "played": 38,
@@ -1623,8 +1499,7 @@
       "diff": -20
     },
     {
-      "seasonId": 6,
-      "teamId": 3,
+      "teamId": "3",
       "rank": 19,
       "points": 35,
       "played": 38,
@@ -1636,8 +1511,7 @@
       "diff": -45
     },
     {
-      "seasonId": 6,
-      "teamId": 10,
+      "teamId": "10",
       "rank": 20,
       "points": 33,
       "played": 38,
@@ -1649,10 +1523,9 @@
       "diff": "–34"
     }
   ],
-  [
+  "98-99": [
     {
-      "seasonId": 7,
-      "teamId": 18,
+      "teamId": "18",
       "rank": 1,
       "points": 79,
       "played": 38,
@@ -1664,8 +1537,7 @@
       "diff": 43
     },
     {
-      "seasonId": 7,
-      "teamId": 1,
+      "teamId": "1",
       "rank": 2,
       "points": 78,
       "played": 38,
@@ -1677,8 +1549,7 @@
       "diff": 42
     },
     {
-      "seasonId": 7,
-      "teamId": 8,
+      "teamId": "8",
       "rank": 3,
       "points": 75,
       "played": 38,
@@ -1690,8 +1561,7 @@
       "diff": 27
     },
     {
-      "seasonId": 7,
-      "teamId": 14,
+      "teamId": "14",
       "rank": 4,
       "points": 67,
       "played": 38,
@@ -1703,8 +1573,7 @@
       "diff": 28
     },
     {
-      "seasonId": 7,
-      "teamId": 32,
+      "teamId": "32",
       "rank": 5,
       "points": 57,
       "played": 38,
@@ -1716,8 +1585,7 @@
       "diff": -7
     },
     {
-      "seasonId": 7,
-      "teamId": 2,
+      "teamId": "2",
       "rank": 6,
       "points": 55,
       "played": 38,
@@ -1729,8 +1597,7 @@
       "diff": 5
     },
     {
-      "seasonId": 7,
-      "teamId": 16,
+      "teamId": "16",
       "rank": 7,
       "points": 54,
       "played": 38,
@@ -1742,8 +1609,7 @@
       "diff": 19
     },
     {
-      "seasonId": 7,
-      "teamId": 11,
+      "teamId": "11",
       "rank": 8,
       "points": 52,
       "played": 38,
@@ -1755,8 +1621,7 @@
       "diff": -5
     },
     {
-      "seasonId": 7,
-      "teamId": 19,
+      "teamId": "19",
       "rank": 9,
       "points": 51,
       "played": 38,
@@ -1768,8 +1633,7 @@
       "diff": -6
     },
     {
-      "seasonId": 7,
-      "teamId": 15,
+      "teamId": "15",
       "rank": 10,
       "points": 49,
       "played": 38,
@@ -1781,8 +1645,7 @@
       "diff": -6
     },
     {
-      "seasonId": 7,
-      "teamId": 30,
+      "teamId": "30",
       "rank": 11,
       "points": 47,
       "played": 38,
@@ -1794,8 +1657,7 @@
       "diff": -3
     },
     {
-      "seasonId": 7,
-      "teamId": 26,
+      "teamId": "26",
       "rank": 12,
       "points": 46,
       "played": 38,
@@ -1807,8 +1669,7 @@
       "diff": -1
     },
     {
-      "seasonId": 7,
-      "teamId": 20,
+      "teamId": "20",
       "rank": 13,
       "points": 46,
       "played": 38,
@@ -1820,8 +1681,7 @@
       "diff": -6
     },
     {
-      "seasonId": 7,
-      "teamId": 12,
+      "teamId": "12",
       "rank": 14,
       "points": 43,
       "played": 38,
@@ -1833,8 +1693,7 @@
       "diff": -5
     },
     {
-      "seasonId": 7,
-      "teamId": 9,
+      "teamId": "9",
       "rank": 15,
       "points": 42,
       "played": 38,
@@ -1846,8 +1705,7 @@
       "diff": -12
     },
     {
-      "seasonId": 7,
-      "teamId": 33,
+      "teamId": "33",
       "rank": 16,
       "points": 42,
       "played": 38,
@@ -1859,8 +1717,7 @@
       "diff": -23
     },
     {
-      "seasonId": 7,
-      "teamId": 27,
+      "teamId": "27",
       "rank": 17,
       "points": 41,
       "played": 38,
@@ -1872,8 +1729,7 @@
       "diff": -27
     },
     {
-      "seasonId": 7,
-      "teamId": 7,
+      "teamId": "7",
       "rank": 18,
       "points": 36,
       "played": 38,
@@ -1885,8 +1741,7 @@
       "diff": -15
     },
     {
-      "seasonId": 7,
-      "teamId": 4,
+      "teamId": "4",
       "rank": 19,
       "points": 35,
       "played": 38,
@@ -1898,8 +1753,7 @@
       "diff": -14
     },
     {
-      "seasonId": 7,
-      "teamId": 22,
+      "teamId": "22",
       "rank": 20,
       "points": 30,
       "played": 38,
@@ -1911,10 +1765,9 @@
       "diff": -34
     }
   ],
-  [
+  "99-00": [
     {
-      "seasonId": 8,
-      "teamId": 18,
+      "teamId": "18",
       "rank": 1,
       "points": 91,
       "played": 38,
@@ -1926,8 +1779,7 @@
       "diff": 52
     },
     {
-      "seasonId": 8,
-      "teamId": 1,
+      "teamId": "1",
       "rank": 2,
       "points": 73,
       "played": 38,
@@ -1939,8 +1791,7 @@
       "diff": 30
     },
     {
-      "seasonId": 8,
-      "teamId": 14,
+      "teamId": "14",
       "rank": 3,
       "points": 69,
       "played": 38,
@@ -1952,8 +1803,7 @@
       "diff": 15
     },
     {
-      "seasonId": 8,
-      "teamId": 16,
+      "teamId": "16",
       "rank": 4,
       "points": 67,
       "played": 38,
@@ -1965,8 +1815,7 @@
       "diff": 21
     },
     {
-      "seasonId": 8,
-      "teamId": 8,
+      "teamId": "8",
       "rank": 5,
       "points": 65,
       "played": 38,
@@ -1978,8 +1827,7 @@
       "diff": 19
     },
     {
-      "seasonId": 8,
-      "teamId": 2,
+      "teamId": "2",
       "rank": 6,
       "points": 58,
       "played": 38,
@@ -1991,8 +1839,7 @@
       "diff": 11
     },
     {
-      "seasonId": 8,
-      "teamId": 28,
+      "teamId": "28",
       "rank": 7,
       "points": 58,
       "played": 38,
@@ -2004,8 +1851,7 @@
       "diff": 1
     },
     {
-      "seasonId": 8,
-      "teamId": 15,
+      "teamId": "15",
       "rank": 8,
       "points": 55,
       "played": 38,
@@ -2017,8 +1863,7 @@
       "diff": 0
     },
     {
-      "seasonId": 8,
-      "teamId": 32,
+      "teamId": "32",
       "rank": 9,
       "points": 55,
       "played": 38,
@@ -2030,8 +1875,7 @@
       "diff": -1
     },
     {
-      "seasonId": 8,
-      "teamId": 30,
+      "teamId": "30",
       "rank": 10,
       "points": 53,
       "played": 38,
@@ -2043,8 +1887,7 @@
       "diff": 8
     },
     {
-      "seasonId": 8,
-      "teamId": 20,
+      "teamId": "20",
       "rank": 11,
       "points": 52,
       "played": 38,
@@ -2056,8 +1899,7 @@
       "diff": 9
     },
     {
-      "seasonId": 8,
-      "teamId": 19,
+      "teamId": "19",
       "rank": 12,
       "points": 52,
       "played": 38,
@@ -2069,8 +1911,7 @@
       "diff": -6
     },
     {
-      "seasonId": 8,
-      "teamId": 12,
+      "teamId": "12",
       "rank": 13,
       "points": 50,
       "played": 38,
@@ -2082,8 +1923,7 @@
       "diff": 10
     },
     {
-      "seasonId": 8,
-      "teamId": 9,
+      "teamId": "9",
       "rank": 14,
       "points": 44,
       "played": 38,
@@ -2095,8 +1935,7 @@
       "diff": -7
     },
     {
-      "seasonId": 8,
-      "teamId": 27,
+      "teamId": "27",
       "rank": 15,
       "points": 44,
       "played": 38,
@@ -2108,8 +1947,7 @@
       "diff": -17
     },
     {
-      "seasonId": 8,
-      "teamId": 11,
+      "teamId": "11",
       "rank": 16,
       "points": 38,
       "played": 38,
@@ -2121,8 +1959,7 @@
       "diff": -13
     },
     {
-      "seasonId": 8,
-      "teamId": 6,
+      "teamId": "6",
       "rank": 17,
       "points": 36,
       "played": 38,
@@ -2134,8 +1971,7 @@
       "diff": -30
     },
     {
-      "seasonId": 8,
-      "teamId": 33,
+      "teamId": "33",
       "rank": 18,
       "points": 33,
       "played": 38,
@@ -2147,8 +1983,7 @@
       "diff": -28
     },
     {
-      "seasonId": 8,
-      "teamId": 26,
+      "teamId": "26",
       "rank": 19,
       "points": 31,
       "played": 38,
@@ -2160,8 +1995,7 @@
       "diff": -32
     },
     {
-      "seasonId": 8,
-      "teamId": 31,
+      "teamId": "31",
       "rank": 20,
       "points": 24,
       "played": 38,
@@ -2173,4 +2007,4 @@
       "diff": -42
     }
   ]
-]
+}
