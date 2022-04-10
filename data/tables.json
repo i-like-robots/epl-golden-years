@@ -1,7 +1,7 @@
 {
   "92-93": [
     {
-      "teamId": "18",
+      "teamId": "MUN",
       "rank": 1,
       "points": 84,
       "played": 42,
@@ -13,7 +13,7 @@
       "diff": 36
     },
     {
-      "teamId": "2",
+      "teamId": "AVL",
       "rank": 2,
       "points": 74,
       "played": 42,
@@ -25,7 +25,7 @@
       "diff": 17
     },
     {
-      "teamId": "21",
+      "teamId": "NOR",
       "rank": 3,
       "points": 72,
       "played": 42,
@@ -37,7 +37,7 @@
       "diff": -4
     },
     {
-      "teamId": "4",
+      "teamId": "BLB",
       "rank": 4,
       "points": 71,
       "played": 42,
@@ -49,7 +49,7 @@
       "diff": 22
     },
     {
-      "teamId": "24",
+      "teamId": "QPR",
       "rank": 5,
       "points": 63,
       "played": 42,
@@ -61,7 +61,7 @@
       "diff": 8
     },
     {
-      "teamId": "16",
+      "teamId": "LIV",
       "rank": 6,
       "points": 59,
       "played": 42,
@@ -73,7 +73,7 @@
       "diff": 7
     },
     {
-      "teamId": "26",
+      "teamId": "SHW",
       "rank": 7,
       "points": 59,
       "played": 42,
@@ -85,7 +85,7 @@
       "diff": 4
     },
     {
-      "teamId": "30",
+      "teamId": "TOT",
       "rank": 8,
       "points": 59,
       "played": 42,
@@ -97,7 +97,7 @@
       "diff": -6
     },
     {
-      "teamId": "17",
+      "teamId": "MCI",
       "rank": 9,
       "points": 57,
       "played": 42,
@@ -109,7 +109,7 @@
       "diff": 5
     },
     {
-      "teamId": "1",
+      "teamId": "ARS",
       "rank": 10,
       "points": 56,
       "played": 42,
@@ -121,7 +121,7 @@
       "diff": 2
     },
     {
-      "teamId": "8",
+      "teamId": "CHE",
       "rank": 11,
       "points": 56,
       "played": 42,
@@ -133,7 +133,7 @@
       "diff": -3
     },
     {
-      "teamId": "33",
+      "teamId": "WIM",
       "rank": 12,
       "points": 54,
       "played": 42,
@@ -145,7 +145,7 @@
       "diff": 1
     },
     {
-      "teamId": "12",
+      "teamId": "EVE",
       "rank": 13,
       "points": 53,
       "played": 42,
@@ -157,7 +157,7 @@
       "diff": -2
     },
     {
-      "teamId": "25",
+      "teamId": "SHU",
       "rank": 14,
       "points": 52,
       "played": 42,
@@ -169,7 +169,7 @@
       "diff": 1
     },
     {
-      "teamId": "9",
+      "teamId": "COV",
       "rank": 15,
       "points": 52,
       "played": 42,
@@ -181,7 +181,7 @@
       "diff": -5
     },
     {
-      "teamId": "13",
+      "teamId": "IPS",
       "rank": 16,
       "points": 52,
       "played": 42,
@@ -193,7 +193,7 @@
       "diff": -5
     },
     {
-      "teamId": "14",
+      "teamId": "LEE",
       "rank": 17,
       "points": 51,
       "played": 42,
@@ -205,7 +205,7 @@
       "diff": -5
     },
     {
-      "teamId": "27",
+      "teamId": "SOU",
       "rank": 18,
       "points": 50,
       "played": 42,
@@ -217,7 +217,7 @@
       "diff": -7
     },
     {
-      "teamId": "23",
+      "teamId": "OLD",
       "rank": 19,
       "points": 49,
       "played": 42,
@@ -229,7 +229,7 @@
       "diff": -11
     },
     {
-      "teamId": "10",
+      "teamId": "CRY",
       "rank": 20,
       "points": 49,
       "played": 42,
@@ -241,7 +241,7 @@
       "diff": -13
     },
     {
-      "teamId": "19",
+      "teamId": "MID",
       "rank": 21,
       "points": 44,
       "played": 42,
@@ -253,7 +253,7 @@
       "diff": -21
     },
     {
-      "teamId": "22",
+      "teamId": "NFO",
       "rank": 22,
       "points": 40,
       "played": 42,
@@ -267,7 +267,7 @@
   ],
   "93-94": [
     {
-      "teamId": "18",
+      "teamId": "MUN",
       "rank": 1,
       "points": 92,
       "played": 42,
@@ -279,7 +279,7 @@
       "diff": 42
     },
     {
-      "teamId": "4",
+      "teamId": "BLB",
       "rank": 2,
       "points": 84,
       "played": 42,
@@ -291,7 +291,7 @@
       "diff": 27
     },
     {
-      "teamId": "20",
+      "teamId": "NEW",
       "rank": 3,
       "points": 77,
       "played": 42,
@@ -303,7 +303,7 @@
       "diff": 41
     },
     {
-      "teamId": "1",
+      "teamId": "ARS",
       "rank": 4,
       "points": 71,
       "played": 42,
@@ -315,7 +315,7 @@
       "diff": 25
     },
     {
-      "teamId": "14",
+      "teamId": "LEE",
       "rank": 5,
       "points": 70,
       "played": 42,
@@ -327,7 +327,7 @@
       "diff": 26
     },
     {
-      "teamId": "33",
+      "teamId": "WIM",
       "rank": 6,
       "points": 65,
       "played": 42,
@@ -339,7 +339,7 @@
       "diff": 3
     },
     {
-      "teamId": "26",
+      "teamId": "SHW",
       "rank": 7,
       "points": 64,
       "played": 42,
@@ -351,7 +351,7 @@
       "diff": 22
     },
     {
-      "teamId": "16",
+      "teamId": "LIV",
       "rank": 8,
       "points": 60,
       "played": 42,
@@ -363,7 +363,7 @@
       "diff": 4
     },
     {
-      "teamId": "24",
+      "teamId": "QPR",
       "rank": 9,
       "points": 60,
       "played": 42,
@@ -375,7 +375,7 @@
       "diff": 1
     },
     {
-      "teamId": "2",
+      "teamId": "AVL",
       "rank": 10,
       "points": 57,
       "played": 42,
@@ -387,7 +387,7 @@
       "diff": -4
     },
     {
-      "teamId": "9",
+      "teamId": "COV",
       "rank": 11,
       "points": 56,
       "played": 42,
@@ -399,7 +399,7 @@
       "diff": -2
     },
     {
-      "teamId": "21",
+      "teamId": "NOR",
       "rank": 12,
       "points": 53,
       "played": 42,
@@ -411,7 +411,7 @@
       "diff": 4
     },
     {
-      "teamId": "32",
+      "teamId": "WHU",
       "rank": 13,
       "points": 52,
       "played": 42,
@@ -423,7 +423,7 @@
       "diff": -11
     },
     {
-      "teamId": "8",
+      "teamId": "CHE",
       "rank": 14,
       "points": 51,
       "played": 42,
@@ -435,7 +435,7 @@
       "diff": -4
     },
     {
-      "teamId": "30",
+      "teamId": "TOT",
       "rank": 15,
       "points": 45,
       "played": 42,
@@ -447,7 +447,7 @@
       "diff": -5
     },
     {
-      "teamId": "17",
+      "teamId": "MCI",
       "rank": 16,
       "points": 45,
       "played": 42,
@@ -459,7 +459,7 @@
       "diff": -11
     },
     {
-      "teamId": "12",
+      "teamId": "EVE",
       "rank": 17,
       "points": 44,
       "played": 42,
@@ -471,7 +471,7 @@
       "diff": -21
     },
     {
-      "teamId": "27",
+      "teamId": "SOU",
       "rank": 18,
       "points": 43,
       "played": 42,
@@ -483,7 +483,7 @@
       "diff": -17
     },
     {
-      "teamId": "13",
+      "teamId": "IPS",
       "rank": 19,
       "points": 43,
       "played": 42,
@@ -495,7 +495,7 @@
       "diff": -23
     },
     {
-      "teamId": "25",
+      "teamId": "SHU",
       "rank": 20,
       "points": 42,
       "played": 42,
@@ -507,7 +507,7 @@
       "diff": -18
     },
     {
-      "teamId": "23",
+      "teamId": "OLD",
       "rank": 21,
       "points": 40,
       "played": 42,
@@ -519,7 +519,7 @@
       "diff": -26
     },
     {
-      "teamId": "29",
+      "teamId": "SWI",
       "rank": 22,
       "points": 30,
       "played": 42,
@@ -533,7 +533,7 @@
   ],
   "94-95": [
     {
-      "teamId": "4",
+      "teamId": "BLB",
       "rank": 1,
       "points": 89,
       "played": 42,
@@ -545,7 +545,7 @@
       "diff": 41
     },
     {
-      "teamId": "18",
+      "teamId": "MUN",
       "rank": 2,
       "points": 88,
       "played": 42,
@@ -557,7 +557,7 @@
       "diff": 49
     },
     {
-      "teamId": "22",
+      "teamId": "NFO",
       "rank": 3,
       "points": 77,
       "played": 42,
@@ -569,7 +569,7 @@
       "diff": 29
     },
     {
-      "teamId": "16",
+      "teamId": "LIV",
       "rank": 4,
       "points": 74,
       "played": 42,
@@ -581,7 +581,7 @@
       "diff": 28
     },
     {
-      "teamId": "14",
+      "teamId": "LEE",
       "rank": 5,
       "points": 73,
       "played": 42,
@@ -593,7 +593,7 @@
       "diff": 21
     },
     {
-      "teamId": "20",
+      "teamId": "NEW",
       "rank": 6,
       "points": 72,
       "played": 42,
@@ -605,7 +605,7 @@
       "diff": 20
     },
     {
-      "teamId": "30",
+      "teamId": "TOT",
       "rank": 7,
       "points": 62,
       "played": 42,
@@ -617,7 +617,7 @@
       "diff": 8
     },
     {
-      "teamId": "24",
+      "teamId": "QPR",
       "rank": 8,
       "points": 60,
       "played": 42,
@@ -629,7 +629,7 @@
       "diff": 2
     },
     {
-      "teamId": "33",
+      "teamId": "WIM",
       "rank": 9,
       "points": 56,
       "played": 42,
@@ -641,7 +641,7 @@
       "diff": -17
     },
     {
-      "teamId": "27",
+      "teamId": "SOU",
       "rank": 10,
       "points": 54,
       "played": 42,
@@ -653,7 +653,7 @@
       "diff": -2
     },
     {
-      "teamId": "8",
+      "teamId": "CHE",
       "rank": 11,
       "points": 54,
       "played": 42,
@@ -665,7 +665,7 @@
       "diff": -5
     },
     {
-      "teamId": "1",
+      "teamId": "ARS",
       "rank": 12,
       "points": 51,
       "played": 42,
@@ -677,7 +677,7 @@
       "diff": 3
     },
     {
-      "teamId": "26",
+      "teamId": "SHW",
       "rank": 13,
       "points": 51,
       "played": 42,
@@ -689,7 +689,7 @@
       "diff": -8
     },
     {
-      "teamId": "32",
+      "teamId": "WHU",
       "rank": 14,
       "points": 50,
       "played": 42,
@@ -701,7 +701,7 @@
       "diff": -4
     },
     {
-      "teamId": "12",
+      "teamId": "EVE",
       "rank": 15,
       "points": 50,
       "played": 42,
@@ -713,7 +713,7 @@
       "diff": -7
     },
     {
-      "teamId": "9",
+      "teamId": "COV",
       "rank": 16,
       "points": 50,
       "played": 42,
@@ -725,7 +725,7 @@
       "diff": -18
     },
     {
-      "teamId": "17",
+      "teamId": "MCI",
       "rank": 17,
       "points": 49,
       "played": 42,
@@ -737,7 +737,7 @@
       "diff": -11
     },
     {
-      "teamId": "2",
+      "teamId": "AVL",
       "rank": 18,
       "points": 48,
       "played": 42,
@@ -749,7 +749,7 @@
       "diff": -5
     },
     {
-      "teamId": "10",
+      "teamId": "CRY",
       "rank": 19,
       "points": 45,
       "played": 42,
@@ -761,7 +761,7 @@
       "diff": -15
     },
     {
-      "teamId": "21",
+      "teamId": "NOR",
       "rank": 20,
       "points": 43,
       "played": 42,
@@ -773,7 +773,7 @@
       "diff": -17
     },
     {
-      "teamId": "15",
+      "teamId": "LEI",
       "rank": 21,
       "points": 29,
       "played": 42,
@@ -785,7 +785,7 @@
       "diff": -35
     },
     {
-      "teamId": "13",
+      "teamId": "IPS",
       "rank": 22,
       "points": 27,
       "played": 42,
@@ -799,7 +799,7 @@
   ],
   "95-96": [
     {
-      "teamId": "18",
+      "teamId": "MUN",
       "rank": 1,
       "points": 82,
       "played": 38,
@@ -811,7 +811,7 @@
       "diff": 38
     },
     {
-      "teamId": "20",
+      "teamId": "NEW",
       "rank": 2,
       "points": 78,
       "played": 38,
@@ -823,7 +823,7 @@
       "diff": 29
     },
     {
-      "teamId": "16",
+      "teamId": "LIV",
       "rank": 3,
       "points": 71,
       "played": 38,
@@ -835,7 +835,7 @@
       "diff": 36
     },
     {
-      "teamId": "2",
+      "teamId": "AVL",
       "rank": 4,
       "points": 63,
       "played": 38,
@@ -847,7 +847,7 @@
       "diff": 17
     },
     {
-      "teamId": "1",
+      "teamId": "ARS",
       "rank": 5,
       "points": 63,
       "played": 38,
@@ -859,7 +859,7 @@
       "diff": 17
     },
     {
-      "teamId": "12",
+      "teamId": "EVE",
       "rank": 6,
       "points": 61,
       "played": 38,
@@ -871,7 +871,7 @@
       "diff": 20
     },
     {
-      "teamId": "4",
+      "teamId": "BLB",
       "rank": 7,
       "points": 61,
       "played": 38,
@@ -883,7 +883,7 @@
       "diff": 14
     },
     {
-      "teamId": "30",
+      "teamId": "TOT",
       "rank": 8,
       "points": 61,
       "played": 38,
@@ -895,7 +895,7 @@
       "diff": 12
     },
     {
-      "teamId": "22",
+      "teamId": "NFO",
       "rank": 9,
       "points": 58,
       "played": 38,
@@ -907,7 +907,7 @@
       "diff": -4
     },
     {
-      "teamId": "32",
+      "teamId": "WHU",
       "rank": 10,
       "points": 51,
       "played": 38,
@@ -919,7 +919,7 @@
       "diff": -9
     },
     {
-      "teamId": "8",
+      "teamId": "CHE",
       "rank": 11,
       "points": 50,
       "played": 38,
@@ -931,7 +931,7 @@
       "diff": 2
     },
     {
-      "teamId": "19",
+      "teamId": "MID",
       "rank": 12,
       "points": 43,
       "played": 38,
@@ -943,7 +943,7 @@
       "diff": -15
     },
     {
-      "teamId": "14",
+      "teamId": "LEE",
       "rank": 13,
       "points": 43,
       "played": 38,
@@ -955,7 +955,7 @@
       "diff": -17
     },
     {
-      "teamId": "33",
+      "teamId": "WIM",
       "rank": 14,
       "points": 41,
       "played": 38,
@@ -967,7 +967,7 @@
       "diff": -15
     },
     {
-      "teamId": "26",
+      "teamId": "SHW",
       "rank": 15,
       "points": 40,
       "played": 38,
@@ -979,7 +979,7 @@
       "diff": -13
     },
     {
-      "teamId": "9",
+      "teamId": "COV",
       "rank": 16,
       "points": 38,
       "played": 38,
@@ -991,7 +991,7 @@
       "diff": -18
     },
     {
-      "teamId": "27",
+      "teamId": "SOU",
       "rank": 17,
       "points": 38,
       "played": 38,
@@ -1003,7 +1003,7 @@
       "diff": -18
     },
     {
-      "teamId": "17",
+      "teamId": "MCI",
       "rank": 18,
       "points": 38,
       "played": 38,
@@ -1015,7 +1015,7 @@
       "diff": -25
     },
     {
-      "teamId": "24",
+      "teamId": "QPR",
       "rank": 19,
       "points": 33,
       "played": 38,
@@ -1027,7 +1027,7 @@
       "diff": -19
     },
     {
-      "teamId": "5",
+      "teamId": "BOL",
       "rank": 20,
       "points": 29,
       "played": 38,
@@ -1041,7 +1041,7 @@
   ],
   "96-97": [
     {
-      "teamId": "18",
+      "teamId": "MUN",
       "rank": 1,
       "points": 75,
       "played": 38,
@@ -1053,7 +1053,7 @@
       "diff": 32
     },
     {
-      "teamId": "20",
+      "teamId": "NEW",
       "rank": 2,
       "points": 68,
       "played": 38,
@@ -1065,7 +1065,7 @@
       "diff": 33
     },
     {
-      "teamId": "1",
+      "teamId": "ARS",
       "rank": 3,
       "points": 68,
       "played": 38,
@@ -1077,7 +1077,7 @@
       "diff": 30
     },
     {
-      "teamId": "16",
+      "teamId": "LIV",
       "rank": 4,
       "points": 68,
       "played": 38,
@@ -1089,7 +1089,7 @@
       "diff": 25
     },
     {
-      "teamId": "2",
+      "teamId": "AVL",
       "rank": 5,
       "points": 61,
       "played": 38,
@@ -1101,7 +1101,7 @@
       "diff": 13
     },
     {
-      "teamId": "8",
+      "teamId": "CHE",
       "rank": 6,
       "points": 59,
       "played": 38,
@@ -1113,7 +1113,7 @@
       "diff": 3
     },
     {
-      "teamId": "26",
+      "teamId": "SHW",
       "rank": 7,
       "points": 57,
       "played": 38,
@@ -1125,7 +1125,7 @@
       "diff": -1
     },
     {
-      "teamId": "33",
+      "teamId": "WIM",
       "rank": 8,
       "points": 56,
       "played": 38,
@@ -1137,7 +1137,7 @@
       "diff": 3
     },
     {
-      "teamId": "15",
+      "teamId": "LEI",
       "rank": 9,
       "points": 47,
       "played": 38,
@@ -1149,7 +1149,7 @@
       "diff": -8
     },
     {
-      "teamId": "30",
+      "teamId": "TOT",
       "rank": 10,
       "points": 46,
       "played": 38,
@@ -1161,7 +1161,7 @@
       "diff": -7
     },
     {
-      "teamId": "14",
+      "teamId": "LEE",
       "rank": 11,
       "points": 46,
       "played": 38,
@@ -1173,7 +1173,7 @@
       "diff": -10
     },
     {
-      "teamId": "11",
+      "teamId": "DER",
       "rank": 12,
       "points": 46,
       "played": 38,
@@ -1185,7 +1185,7 @@
       "diff": -13
     },
     {
-      "teamId": "4",
+      "teamId": "BLB",
       "rank": 13,
       "points": 42,
       "played": 38,
@@ -1197,7 +1197,7 @@
       "diff": -1
     },
     {
-      "teamId": "32",
+      "teamId": "WHU",
       "rank": 14,
       "points": 42,
       "played": 38,
@@ -1209,7 +1209,7 @@
       "diff": -9
     },
     {
-      "teamId": "12",
+      "teamId": "EVE",
       "rank": 15,
       "points": 42,
       "played": 38,
@@ -1221,7 +1221,7 @@
       "diff": -13
     },
     {
-      "teamId": "27",
+      "teamId": "SOU",
       "rank": 16,
       "points": 41,
       "played": 38,
@@ -1233,7 +1233,7 @@
       "diff": -6
     },
     {
-      "teamId": "9",
+      "teamId": "COV",
       "rank": 17,
       "points": 41,
       "played": 38,
@@ -1245,7 +1245,7 @@
       "diff": -16
     },
     {
-      "teamId": "28",
+      "teamId": "SUN",
       "rank": 18,
       "points": 40,
       "played": 38,
@@ -1257,7 +1257,7 @@
       "diff": -18
     },
     {
-      "teamId": "19",
+      "teamId": "MID",
       "rank": 19,
       "points": 39,
       "played": 38,
@@ -1269,7 +1269,7 @@
       "diff": -9
     },
     {
-      "teamId": "22",
+      "teamId": "NFO",
       "rank": 20,
       "points": 34,
       "played": 38,
@@ -1283,7 +1283,7 @@
   ],
   "97-98": [
     {
-      "teamId": "1",
+      "teamId": "ARS",
       "rank": 1,
       "points": 78,
       "played": 38,
@@ -1295,7 +1295,7 @@
       "diff": 35
     },
     {
-      "teamId": "18",
+      "teamId": "MUN",
       "rank": 2,
       "points": 77,
       "played": 38,
@@ -1307,7 +1307,7 @@
       "diff": 47
     },
     {
-      "teamId": "16",
+      "teamId": "LIV",
       "rank": 3,
       "points": 65,
       "played": 38,
@@ -1319,7 +1319,7 @@
       "diff": 26
     },
     {
-      "teamId": "8",
+      "teamId": "CHE",
       "rank": 4,
       "points": 63,
       "played": 38,
@@ -1331,7 +1331,7 @@
       "diff": 28
     },
     {
-      "teamId": "14",
+      "teamId": "LEE",
       "rank": 5,
       "points": 59,
       "played": 38,
@@ -1343,7 +1343,7 @@
       "diff": 11
     },
     {
-      "teamId": "4",
+      "teamId": "BLB",
       "rank": 6,
       "points": 58,
       "played": 38,
@@ -1355,7 +1355,7 @@
       "diff": 5
     },
     {
-      "teamId": "2",
+      "teamId": "AVL",
       "rank": 7,
       "points": 57,
       "played": 38,
@@ -1367,7 +1367,7 @@
       "diff": 1
     },
     {
-      "teamId": "32",
+      "teamId": "WHU",
       "rank": 8,
       "points": 56,
       "played": 38,
@@ -1379,7 +1379,7 @@
       "diff": -1
     },
     {
-      "teamId": "11",
+      "teamId": "DER",
       "rank": 9,
       "points": 55,
       "played": 38,
@@ -1391,7 +1391,7 @@
       "diff": 3
     },
     {
-      "teamId": "15",
+      "teamId": "LEI",
       "rank": 10,
       "points": 53,
       "played": 38,
@@ -1403,7 +1403,7 @@
       "diff": 10
     },
     {
-      "teamId": "9",
+      "teamId": "COV",
       "rank": 11,
       "points": 52,
       "played": 38,
@@ -1415,7 +1415,7 @@
       "diff": 2
     },
     {
-      "teamId": "27",
+      "teamId": "SOU",
       "rank": 12,
       "points": 48,
       "played": 38,
@@ -1427,7 +1427,7 @@
       "diff": -5
     },
     {
-      "teamId": "20",
+      "teamId": "NEW",
       "rank": 13,
       "points": 44,
       "played": 38,
@@ -1439,7 +1439,7 @@
       "diff": -9
     },
     {
-      "teamId": "30",
+      "teamId": "TOT",
       "rank": 14,
       "points": 44,
       "played": 38,
@@ -1451,7 +1451,7 @@
       "diff": -12
     },
     {
-      "teamId": "33",
+      "teamId": "WIM",
       "rank": 15,
       "points": 44,
       "played": 38,
@@ -1463,7 +1463,7 @@
       "diff": -12
     },
     {
-      "teamId": "26",
+      "teamId": "SHW",
       "rank": 16,
       "points": 44,
       "played": 38,
@@ -1475,7 +1475,7 @@
       "diff": -15
     },
     {
-      "teamId": "12",
+      "teamId": "EVE",
       "rank": 17,
       "points": 40,
       "played": 38,
@@ -1487,7 +1487,7 @@
       "diff": -15
     },
     {
-      "teamId": "5",
+      "teamId": "BOL",
       "rank": 18,
       "points": 40,
       "played": 38,
@@ -1499,7 +1499,7 @@
       "diff": -20
     },
     {
-      "teamId": "3",
+      "teamId": "BAR",
       "rank": 19,
       "points": 35,
       "played": 38,
@@ -1511,7 +1511,7 @@
       "diff": -45
     },
     {
-      "teamId": "10",
+      "teamId": "CRY",
       "rank": 20,
       "points": 33,
       "played": 38,
@@ -1525,7 +1525,7 @@
   ],
   "98-99": [
     {
-      "teamId": "18",
+      "teamId": "MUN",
       "rank": 1,
       "points": 79,
       "played": 38,
@@ -1537,7 +1537,7 @@
       "diff": 43
     },
     {
-      "teamId": "1",
+      "teamId": "ARS",
       "rank": 2,
       "points": 78,
       "played": 38,
@@ -1549,7 +1549,7 @@
       "diff": 42
     },
     {
-      "teamId": "8",
+      "teamId": "CHE",
       "rank": 3,
       "points": 75,
       "played": 38,
@@ -1561,7 +1561,7 @@
       "diff": 27
     },
     {
-      "teamId": "14",
+      "teamId": "LEE",
       "rank": 4,
       "points": 67,
       "played": 38,
@@ -1573,7 +1573,7 @@
       "diff": 28
     },
     {
-      "teamId": "32",
+      "teamId": "WHU",
       "rank": 5,
       "points": 57,
       "played": 38,
@@ -1585,7 +1585,7 @@
       "diff": -7
     },
     {
-      "teamId": "2",
+      "teamId": "AVL",
       "rank": 6,
       "points": 55,
       "played": 38,
@@ -1597,7 +1597,7 @@
       "diff": 5
     },
     {
-      "teamId": "16",
+      "teamId": "LIV",
       "rank": 7,
       "points": 54,
       "played": 38,
@@ -1609,7 +1609,7 @@
       "diff": 19
     },
     {
-      "teamId": "11",
+      "teamId": "DER",
       "rank": 8,
       "points": 52,
       "played": 38,
@@ -1621,7 +1621,7 @@
       "diff": -5
     },
     {
-      "teamId": "19",
+      "teamId": "MID",
       "rank": 9,
       "points": 51,
       "played": 38,
@@ -1633,7 +1633,7 @@
       "diff": -6
     },
     {
-      "teamId": "15",
+      "teamId": "LEI",
       "rank": 10,
       "points": 49,
       "played": 38,
@@ -1645,7 +1645,7 @@
       "diff": -6
     },
     {
-      "teamId": "30",
+      "teamId": "TOT",
       "rank": 11,
       "points": 47,
       "played": 38,
@@ -1657,7 +1657,7 @@
       "diff": -3
     },
     {
-      "teamId": "26",
+      "teamId": "SHW",
       "rank": 12,
       "points": 46,
       "played": 38,
@@ -1669,7 +1669,7 @@
       "diff": -1
     },
     {
-      "teamId": "20",
+      "teamId": "NEW",
       "rank": 13,
       "points": 46,
       "played": 38,
@@ -1681,7 +1681,7 @@
       "diff": -6
     },
     {
-      "teamId": "12",
+      "teamId": "EVE",
       "rank": 14,
       "points": 43,
       "played": 38,
@@ -1693,7 +1693,7 @@
       "diff": -5
     },
     {
-      "teamId": "9",
+      "teamId": "COV",
       "rank": 15,
       "points": 42,
       "played": 38,
@@ -1705,7 +1705,7 @@
       "diff": -12
     },
     {
-      "teamId": "33",
+      "teamId": "WIM",
       "rank": 16,
       "points": 42,
       "played": 38,
@@ -1717,7 +1717,7 @@
       "diff": -23
     },
     {
-      "teamId": "27",
+      "teamId": "SOU",
       "rank": 17,
       "points": 41,
       "played": 38,
@@ -1729,7 +1729,7 @@
       "diff": -27
     },
     {
-      "teamId": "7",
+      "teamId": "CHA",
       "rank": 18,
       "points": 36,
       "played": 38,
@@ -1741,7 +1741,7 @@
       "diff": -15
     },
     {
-      "teamId": "4",
+      "teamId": "BLB",
       "rank": 19,
       "points": 35,
       "played": 38,
@@ -1753,7 +1753,7 @@
       "diff": -14
     },
     {
-      "teamId": "22",
+      "teamId": "NFO",
       "rank": 20,
       "points": 30,
       "played": 38,
@@ -1767,7 +1767,7 @@
   ],
   "99-00": [
     {
-      "teamId": "18",
+      "teamId": "MUN",
       "rank": 1,
       "points": 91,
       "played": 38,
@@ -1779,7 +1779,7 @@
       "diff": 52
     },
     {
-      "teamId": "1",
+      "teamId": "ARS",
       "rank": 2,
       "points": 73,
       "played": 38,
@@ -1791,7 +1791,7 @@
       "diff": 30
     },
     {
-      "teamId": "14",
+      "teamId": "LEE",
       "rank": 3,
       "points": 69,
       "played": 38,
@@ -1803,7 +1803,7 @@
       "diff": 15
     },
     {
-      "teamId": "16",
+      "teamId": "LIV",
       "rank": 4,
       "points": 67,
       "played": 38,
@@ -1815,7 +1815,7 @@
       "diff": 21
     },
     {
-      "teamId": "8",
+      "teamId": "CHE",
       "rank": 5,
       "points": 65,
       "played": 38,
@@ -1827,7 +1827,7 @@
       "diff": 19
     },
     {
-      "teamId": "2",
+      "teamId": "AVL",
       "rank": 6,
       "points": 58,
       "played": 38,
@@ -1839,7 +1839,7 @@
       "diff": 11
     },
     {
-      "teamId": "28",
+      "teamId": "SUN",
       "rank": 7,
       "points": 58,
       "played": 38,
@@ -1851,7 +1851,7 @@
       "diff": 1
     },
     {
-      "teamId": "15",
+      "teamId": "LEI",
       "rank": 8,
       "points": 55,
       "played": 38,
@@ -1863,7 +1863,7 @@
       "diff": 0
     },
     {
-      "teamId": "32",
+      "teamId": "WHU",
       "rank": 9,
       "points": 55,
       "played": 38,
@@ -1875,7 +1875,7 @@
       "diff": -1
     },
     {
-      "teamId": "30",
+      "teamId": "TOT",
       "rank": 10,
       "points": 53,
       "played": 38,
@@ -1887,7 +1887,7 @@
       "diff": 8
     },
     {
-      "teamId": "20",
+      "teamId": "NEW",
       "rank": 11,
       "points": 52,
       "played": 38,
@@ -1899,7 +1899,7 @@
       "diff": 9
     },
     {
-      "teamId": "19",
+      "teamId": "MID",
       "rank": 12,
       "points": 52,
       "played": 38,
@@ -1911,7 +1911,7 @@
       "diff": -6
     },
     {
-      "teamId": "12",
+      "teamId": "EVE",
       "rank": 13,
       "points": 50,
       "played": 38,
@@ -1923,7 +1923,7 @@
       "diff": 10
     },
     {
-      "teamId": "9",
+      "teamId": "COV",
       "rank": 14,
       "points": 44,
       "played": 38,
@@ -1935,7 +1935,7 @@
       "diff": -7
     },
     {
-      "teamId": "27",
+      "teamId": "SOU",
       "rank": 15,
       "points": 44,
       "played": 38,
@@ -1947,7 +1947,7 @@
       "diff": -17
     },
     {
-      "teamId": "11",
+      "teamId": "DER",
       "rank": 16,
       "points": 38,
       "played": 38,
@@ -1959,7 +1959,7 @@
       "diff": -13
     },
     {
-      "teamId": "6",
+      "teamId": "BRA",
       "rank": 17,
       "points": 36,
       "played": 38,
@@ -1971,7 +1971,7 @@
       "diff": -30
     },
     {
-      "teamId": "33",
+      "teamId": "WIM",
       "rank": 18,
       "points": 33,
       "played": 38,
@@ -1983,7 +1983,7 @@
       "diff": -28
     },
     {
-      "teamId": "26",
+      "teamId": "SHW",
       "rank": 19,
       "points": 31,
       "played": 38,
@@ -1995,7 +1995,7 @@
       "diff": -32
     },
     {
-      "teamId": "31",
+      "teamId": "WAT",
       "rank": 20,
       "points": 24,
       "played": 38,

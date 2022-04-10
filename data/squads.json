@@ -1,7 +1,7 @@
 [
   {
     "seasonId": "92-93",
-    "teamId": "1",
+    "teamId": "ARS",
     "players": [
       {
         "playerId": "1423",
@@ -187,7 +187,7 @@
   },
   {
     "seasonId": "92-93",
-    "teamId": "2",
+    "teamId": "AVL",
     "players": [
       {
         "playerId": "168",
@@ -391,7 +391,7 @@
   },
   {
     "seasonId": "92-93",
-    "teamId": "4",
+    "teamId": "BLB",
     "players": [
       {
         "playerId": "1100",
@@ -583,7 +583,7 @@
   },
   {
     "seasonId": "92-93",
-    "teamId": "8",
+    "teamId": "CHE",
     "players": [
       {
         "playerId": "101",
@@ -799,7 +799,7 @@
   },
   {
     "seasonId": "92-93",
-    "teamId": "9",
+    "teamId": "COV",
     "players": [
       {
         "playerId": "1207",
@@ -1015,7 +1015,7 @@
   },
   {
     "seasonId": "92-93",
-    "teamId": "10",
+    "teamId": "CRY",
     "players": [
       {
         "playerId": "602",
@@ -1207,7 +1207,7 @@
   },
   {
     "seasonId": "92-93",
-    "teamId": "12",
+    "teamId": "EVE",
     "players": [
       {
         "playerId": "863",
@@ -1381,7 +1381,7 @@
   },
   {
     "seasonId": "92-93",
-    "teamId": "13",
+    "teamId": "IPS",
     "players": [
       {
         "playerId": "67",
@@ -1537,7 +1537,7 @@
   },
   {
     "seasonId": "92-93",
-    "teamId": "14",
+    "teamId": "LEE",
     "players": [
       {
         "playerId": "1263",
@@ -1729,7 +1729,7 @@
   },
   {
     "seasonId": "92-93",
-    "teamId": "16",
+    "teamId": "LIV",
     "players": [
       {
         "playerId": "743",
@@ -1909,7 +1909,7 @@
   },
   {
     "seasonId": "92-93",
-    "teamId": "17",
+    "teamId": "MCI",
     "players": [
       {
         "playerId": "321",
@@ -2083,7 +2083,7 @@
   },
   {
     "seasonId": "92-93",
-    "teamId": "18",
+    "teamId": "MUN",
     "players": [
       {
         "playerId": "1409",
@@ -2317,7 +2317,7 @@
   },
   {
     "seasonId": "92-93",
-    "teamId": "19",
+    "teamId": "MID",
     "players": [
       {
         "playerId": "1247",
@@ -2503,7 +2503,7 @@
   },
   {
     "seasonId": "92-93",
-    "teamId": "21",
+    "teamId": "NOR",
     "players": [
       {
         "playerId": "651",
@@ -2659,7 +2659,7 @@
   },
   {
     "seasonId": "92-93",
-    "teamId": "22",
+    "teamId": "NFO",
     "players": [
       {
         "playerId": "998",
@@ -2827,7 +2827,7 @@
   },
   {
     "seasonId": "92-93",
-    "teamId": "23",
+    "teamId": "OLD",
     "players": [
       {
         "playerId": "663",
@@ -2989,7 +2989,7 @@
   },
   {
     "seasonId": "92-93",
-    "teamId": "24",
+    "teamId": "QPR",
     "players": [
       {
         "playerId": "1510",
@@ -3157,7 +3157,7 @@
   },
   {
     "seasonId": "92-93",
-    "teamId": "25",
+    "teamId": "SHU",
     "players": [
       {
         "playerId": "1595",
@@ -3331,7 +3331,7 @@
   },
   {
     "seasonId": "92-93",
-    "teamId": "26",
+    "teamId": "SHW",
     "players": [
       {
         "playerId": "1741",
@@ -3505,7 +3505,7 @@
   },
   {
     "seasonId": "92-93",
-    "teamId": "27",
+    "teamId": "SOU",
     "players": [
       {
         "playerId": "40",
@@ -3679,7 +3679,7 @@
   },
   {
     "seasonId": "92-93",
-    "teamId": "30",
+    "teamId": "TOT",
     "players": [
       {
         "playerId": "1627",
@@ -3901,7 +3901,7 @@
   },
   {
     "seasonId": "92-93",
-    "teamId": "33",
+    "teamId": "WIM",
     "players": [
       {
         "playerId": "1426",
@@ -4087,7 +4087,7 @@
   },
   {
     "seasonId": "93-94",
-    "teamId": "1",
+    "teamId": "ARS",
     "players": [
       {
         "playerId": "1423",
@@ -4267,7 +4267,7 @@
   },
   {
     "seasonId": "93-94",
-    "teamId": "2",
+    "teamId": "AVL",
     "players": [
       {
         "playerId": "1500",
@@ -4483,7 +4483,7 @@
   },
   {
     "seasonId": "93-94",
-    "teamId": "4",
+    "teamId": "BLB",
     "players": [
       {
         "playerId": "1543",
@@ -4669,7 +4669,7 @@
   },
   {
     "seasonId": "93-94",
-    "teamId": "8",
+    "teamId": "CHE",
     "players": [
       {
         "playerId": "725",
@@ -4879,7 +4879,7 @@
   },
   {
     "seasonId": "93-94",
-    "teamId": "9",
+    "teamId": "COV",
     "players": [
       {
         "playerId": "1207",
@@ -5071,7 +5071,7 @@
   },
   {
     "seasonId": "93-94",
-    "teamId": "12",
+    "teamId": "EVE",
     "players": [
       {
         "playerId": "1493",
@@ -5257,7 +5257,7 @@
   },
   {
     "seasonId": "93-94",
-    "teamId": "13",
+    "teamId": "IPS",
     "players": [
       {
         "playerId": "67",
@@ -5419,7 +5419,7 @@
   },
   {
     "seasonId": "93-94",
-    "teamId": "14",
+    "teamId": "LEE",
     "players": [
       {
         "playerId": "1263",
@@ -5605,7 +5605,7 @@
   },
   {
     "seasonId": "93-94",
-    "teamId": "16",
+    "teamId": "LIV",
     "players": [
       {
         "playerId": "640",
@@ -5791,7 +5791,7 @@
   },
   {
     "seasonId": "93-94",
-    "teamId": "17",
+    "teamId": "MCI",
     "players": [
       {
         "playerId": "990",
@@ -6019,7 +6019,7 @@
   },
   {
     "seasonId": "93-94",
-    "teamId": "18",
+    "teamId": "MUN",
     "players": [
       {
         "playerId": "1275",
@@ -6241,7 +6241,7 @@
   },
   {
     "seasonId": "93-94",
-    "teamId": "20",
+    "teamId": "NEW",
     "players": [
       {
         "playerId": "1759",
@@ -6439,7 +6439,7 @@
   },
   {
     "seasonId": "93-94",
-    "teamId": "21",
+    "teamId": "NOR",
     "players": [
       {
         "playerId": "651",
@@ -6601,7 +6601,7 @@
   },
   {
     "seasonId": "93-94",
-    "teamId": "23",
+    "teamId": "OLD",
     "players": [
       {
         "playerId": "625",
@@ -6793,7 +6793,7 @@
   },
   {
     "seasonId": "93-94",
-    "teamId": "24",
+    "teamId": "QPR",
     "players": [
       {
         "playerId": "1360",
@@ -6979,7 +6979,7 @@
   },
   {
     "seasonId": "93-94",
-    "teamId": "25",
+    "teamId": "SHU",
     "players": [
       {
         "playerId": "1595",
@@ -7183,7 +7183,7 @@
   },
   {
     "seasonId": "93-94",
-    "teamId": "26",
+    "teamId": "SHW",
     "players": [
       {
         "playerId": "888",
@@ -7369,7 +7369,7 @@
   },
   {
     "seasonId": "93-94",
-    "teamId": "27",
+    "teamId": "SOU",
     "players": [
       {
         "playerId": "101",
@@ -7579,7 +7579,7 @@
   },
   {
     "seasonId": "93-94",
-    "teamId": "29",
+    "teamId": "SWI",
     "players": [
       {
         "playerId": "412",
@@ -7753,7 +7753,7 @@
   },
   {
     "seasonId": "93-94",
-    "teamId": "30",
+    "teamId": "TOT",
     "players": [
       {
         "playerId": "1585",
@@ -7993,7 +7993,7 @@
   },
   {
     "seasonId": "93-94",
-    "teamId": "32",
+    "teamId": "WHU",
     "players": [
       {
         "playerId": "1087",
@@ -8209,7 +8209,7 @@
   },
   {
     "seasonId": "93-94",
-    "teamId": "33",
+    "teamId": "WIM",
     "players": [
       {
         "playerId": "1531",
@@ -8389,7 +8389,7 @@
   },
   {
     "seasonId": "94-95",
-    "teamId": "1",
+    "teamId": "ARS",
     "players": [
       {
         "playerId": "95",
@@ -8593,7 +8593,7 @@
   },
   {
     "seasonId": "94-95",
-    "teamId": "2",
+    "teamId": "AVL",
     "players": [
       {
         "playerId": "1203",
@@ -8815,7 +8815,7 @@
   },
   {
     "seasonId": "94-95",
-    "teamId": "4",
+    "teamId": "BLB",
     "players": [
       {
         "playerId": "1543",
@@ -9007,7 +9007,7 @@
   },
   {
     "seasonId": "94-95",
-    "teamId": "8",
+    "teamId": "CHE",
     "players": [
       {
         "playerId": "725",
@@ -9205,7 +9205,7 @@
   },
   {
     "seasonId": "94-95",
-    "teamId": "9",
+    "teamId": "COV",
     "players": [
       {
         "playerId": "1207",
@@ -9409,7 +9409,7 @@
   },
   {
     "seasonId": "94-95",
-    "teamId": "10",
+    "teamId": "CRY",
     "players": [
       {
         "playerId": "1008",
@@ -9613,7 +9613,7 @@
   },
   {
     "seasonId": "94-95",
-    "teamId": "12",
+    "teamId": "EVE",
     "players": [
       {
         "playerId": "863",
@@ -9793,7 +9793,7 @@
   },
   {
     "seasonId": "94-95",
-    "teamId": "13",
+    "teamId": "IPS",
     "players": [
       {
         "playerId": "1755",
@@ -10015,7 +10015,7 @@
   },
   {
     "seasonId": "94-95",
-    "teamId": "14",
+    "teamId": "LEE",
     "players": [
       {
         "playerId": "965",
@@ -10195,7 +10195,7 @@
   },
   {
     "seasonId": "94-95",
-    "teamId": "15",
+    "teamId": "LEI",
     "players": [
       {
         "playerId": "752",
@@ -10387,7 +10387,7 @@
   },
   {
     "seasonId": "94-95",
-    "teamId": "16",
+    "teamId": "LIV",
     "players": [
       {
         "playerId": "270",
@@ -10579,7 +10579,7 @@
   },
   {
     "seasonId": "94-95",
-    "teamId": "17",
+    "teamId": "MCI",
     "players": [
       {
         "playerId": "321",
@@ -10801,7 +10801,7 @@
   },
   {
     "seasonId": "94-95",
-    "teamId": "18",
+    "teamId": "MUN",
     "players": [
       {
         "playerId": "1275",
@@ -11005,7 +11005,7 @@
   },
   {
     "seasonId": "94-95",
-    "teamId": "20",
+    "teamId": "NEW",
     "players": [
       {
         "playerId": "743",
@@ -11179,7 +11179,7 @@
   },
   {
     "seasonId": "94-95",
-    "teamId": "21",
+    "teamId": "NOR",
     "players": [
       {
         "playerId": "651",
@@ -11365,7 +11365,7 @@
   },
   {
     "seasonId": "94-95",
-    "teamId": "22",
+    "teamId": "NFO",
     "players": [
       {
         "playerId": "1083",
@@ -11545,7 +11545,7 @@
   },
   {
     "seasonId": "94-95",
-    "teamId": "24",
+    "teamId": "QPR",
     "players": [
       {
         "playerId": "1360",
@@ -11725,7 +11725,7 @@
   },
   {
     "seasonId": "94-95",
-    "teamId": "26",
+    "teamId": "SHW",
     "players": [
       {
         "playerId": "1741",
@@ -11899,7 +11899,7 @@
   },
   {
     "seasonId": "94-95",
-    "teamId": "27",
+    "teamId": "SOU",
     "players": [
       {
         "playerId": "640",
@@ -12073,7 +12073,7 @@
   },
   {
     "seasonId": "94-95",
-    "teamId": "30",
+    "teamId": "TOT",
     "players": [
       {
         "playerId": "1585",
@@ -12289,7 +12289,7 @@
   },
   {
     "seasonId": "94-95",
-    "teamId": "32",
+    "teamId": "WHU",
     "players": [
       {
         "playerId": "1422",
@@ -12505,7 +12505,7 @@
   },
   {
     "seasonId": "94-95",
-    "teamId": "33",
+    "teamId": "WIM",
     "players": [
       {
         "playerId": "1426",
@@ -12697,7 +12697,7 @@
   },
   {
     "seasonId": "95-96",
-    "teamId": "1",
+    "teamId": "ARS",
     "players": [
       {
         "playerId": "678",
@@ -12895,7 +12895,7 @@
   },
   {
     "seasonId": "95-96",
-    "teamId": "2",
+    "teamId": "AVL",
     "players": [
       {
         "playerId": "1203",
@@ -13117,7 +13117,7 @@
   },
   {
     "seasonId": "95-96",
-    "teamId": "4",
+    "teamId": "BLB",
     "players": [
       {
         "playerId": "601",
@@ -13345,7 +13345,7 @@
   },
   {
     "seasonId": "95-96",
-    "teamId": "5",
+    "teamId": "BOL",
     "players": [
       {
         "playerId": "1643",
@@ -13555,7 +13555,7 @@
   },
   {
     "seasonId": "95-96",
-    "teamId": "8",
+    "teamId": "CHE",
     "players": [
       {
         "playerId": "305",
@@ -13771,7 +13771,7 @@
   },
   {
     "seasonId": "95-96",
-    "teamId": "9",
+    "teamId": "COV",
     "players": [
       {
         "playerId": "616",
@@ -13987,7 +13987,7 @@
   },
   {
     "seasonId": "95-96",
-    "teamId": "12",
+    "teamId": "EVE",
     "players": [
       {
         "playerId": "863",
@@ -14179,7 +14179,7 @@
   },
   {
     "seasonId": "95-96",
-    "teamId": "14",
+    "teamId": "LEE",
     "players": [
       {
         "playerId": "487",
@@ -14407,7 +14407,7 @@
   },
   {
     "seasonId": "95-96",
-    "teamId": "16",
+    "teamId": "LIV",
     "players": [
       {
         "playerId": "1512",
@@ -14593,7 +14593,7 @@
   },
   {
     "seasonId": "95-96",
-    "teamId": "17",
+    "teamId": "MCI",
     "players": [
       {
         "playerId": "786",
@@ -14851,7 +14851,7 @@
   },
   {
     "seasonId": "95-96",
-    "teamId": "18",
+    "teamId": "MUN",
     "players": [
       {
         "playerId": "321",
@@ -15049,7 +15049,7 @@
   },
   {
     "seasonId": "95-96",
-    "teamId": "19",
+    "teamId": "MID",
     "players": [
       {
         "playerId": "1635",
@@ -15259,7 +15259,7 @@
   },
   {
     "seasonId": "95-96",
-    "teamId": "20",
+    "teamId": "NEW",
     "players": [
       {
         "playerId": "724",
@@ -15445,7 +15445,7 @@
   },
   {
     "seasonId": "95-96",
-    "teamId": "22",
+    "teamId": "NFO",
     "players": [
       {
         "playerId": "347",
@@ -15649,7 +15649,7 @@
   },
   {
     "seasonId": "95-96",
-    "teamId": "24",
+    "teamId": "QPR",
     "players": [
       {
         "playerId": "1490",
@@ -15817,7 +15817,7 @@
   },
   {
     "seasonId": "95-96",
-    "teamId": "26",
+    "teamId": "SHW",
     "players": [
       {
         "playerId": "888",
@@ -16021,7 +16021,7 @@
   },
   {
     "seasonId": "95-96",
-    "teamId": "27",
+    "teamId": "SOU",
     "players": [
       {
         "playerId": "101",
@@ -16189,7 +16189,7 @@
   },
   {
     "seasonId": "95-96",
-    "teamId": "30",
+    "teamId": "TOT",
     "players": [
       {
         "playerId": "1627",
@@ -16399,7 +16399,7 @@
   },
   {
     "seasonId": "95-96",
-    "teamId": "32",
+    "teamId": "WHU",
     "players": [
       {
         "playerId": "1445",
@@ -16663,7 +16663,7 @@
   },
   {
     "seasonId": "95-96",
-    "teamId": "33",
+    "teamId": "WIM",
     "players": [
       {
         "playerId": "1426",
@@ -16855,7 +16855,7 @@
   },
   {
     "seasonId": "96-97",
-    "teamId": "1",
+    "teamId": "ARS",
     "players": [
       {
         "playerId": "965",
@@ -17077,7 +17077,7 @@
   },
   {
     "seasonId": "96-97",
-    "teamId": "2",
+    "teamId": "AVL",
     "players": [
       {
         "playerId": "168",
@@ -17275,7 +17275,7 @@
   },
   {
     "seasonId": "96-97",
-    "teamId": "4",
+    "teamId": "BLB",
     "players": [
       {
         "playerId": "528",
@@ -17461,7 +17461,7 @@
   },
   {
     "seasonId": "96-97",
-    "teamId": "8",
+    "teamId": "CHE",
     "players": [
       {
         "playerId": "305",
@@ -17689,7 +17689,7 @@
   },
   {
     "seasonId": "96-97",
-    "teamId": "9",
+    "teamId": "COV",
     "players": [
       {
         "playerId": "1207",
@@ -17881,7 +17881,7 @@
   },
   {
     "seasonId": "96-97",
-    "teamId": "11",
+    "teamId": "DER",
     "players": [
       {
         "playerId": "1286",
@@ -18061,7 +18061,7 @@
   },
   {
     "seasonId": "96-97",
-    "teamId": "12",
+    "teamId": "EVE",
     "players": [
       {
         "playerId": "1493",
@@ -18271,7 +18271,7 @@
   },
   {
     "seasonId": "96-97",
-    "teamId": "14",
+    "teamId": "LEE",
     "players": [
       {
         "playerId": "107",
@@ -18469,7 +18469,7 @@
   },
   {
     "seasonId": "96-97",
-    "teamId": "15",
+    "teamId": "LEI",
     "players": [
       {
         "playerId": "868",
@@ -18643,7 +18643,7 @@
   },
   {
     "seasonId": "96-97",
-    "teamId": "16",
+    "teamId": "LIV",
     "players": [
       {
         "playerId": "1512",
@@ -18817,7 +18817,7 @@
   },
   {
     "seasonId": "96-97",
-    "teamId": "18",
+    "teamId": "MUN",
     "players": [
       {
         "playerId": "590",
@@ -19033,7 +19033,7 @@
   },
   {
     "seasonId": "96-97",
-    "teamId": "19",
+    "teamId": "MID",
     "players": [
       {
         "playerId": "1357",
@@ -19297,7 +19297,7 @@
   },
   {
     "seasonId": "96-97",
-    "teamId": "20",
+    "teamId": "NEW",
     "players": [
       {
         "playerId": "724",
@@ -19471,7 +19471,7 @@
   },
   {
     "seasonId": "96-97",
-    "teamId": "22",
+    "teamId": "NFO",
     "players": [
       {
         "playerId": "1759",
@@ -19687,7 +19687,7 @@
   },
   {
     "seasonId": "96-97",
-    "teamId": "26",
+    "teamId": "SHW",
     "players": [
       {
         "playerId": "288",
@@ -19873,7 +19873,7 @@
   },
   {
     "seasonId": "96-97",
-    "teamId": "27",
+    "teamId": "SOU",
     "players": [
       {
         "playerId": "1550",
@@ -20083,7 +20083,7 @@
   },
   {
     "seasonId": "96-97",
-    "teamId": "28",
+    "teamId": "SUN",
     "players": [
       {
         "playerId": "1257",
@@ -20269,7 +20269,7 @@
   },
   {
     "seasonId": "96-97",
-    "teamId": "30",
+    "teamId": "TOT",
     "players": [
       {
         "playerId": "213",
@@ -20503,7 +20503,7 @@
   },
   {
     "seasonId": "96-97",
-    "teamId": "32",
+    "teamId": "WHU",
     "players": [
       {
         "playerId": "516",
@@ -20749,7 +20749,7 @@
   },
   {
     "seasonId": "96-97",
-    "teamId": "33",
+    "teamId": "WIM",
     "players": [
       {
         "playerId": "1531",
@@ -20911,7 +20911,7 @@
   },
   {
     "seasonId": "97-98",
-    "teamId": "1",
+    "teamId": "ARS",
     "players": [
       {
         "playerId": "1556",
@@ -21145,7 +21145,7 @@
   },
   {
     "seasonId": "97-98",
-    "teamId": "2",
+    "teamId": "AVL",
     "players": [
       {
         "playerId": "168",
@@ -21337,7 +21337,7 @@
   },
   {
     "seasonId": "97-98",
-    "teamId": "3",
+    "teamId": "BAR",
     "players": [
       {
         "playerId": "1657",
@@ -21505,7 +21505,7 @@
   },
   {
     "seasonId": "97-98",
-    "teamId": "4",
+    "teamId": "BLB",
     "players": [
       {
         "playerId": "513",
@@ -21739,7 +21739,7 @@
   },
   {
     "seasonId": "97-98",
-    "teamId": "5",
+    "teamId": "BOL",
     "players": [
       {
         "playerId": "1643",
@@ -21955,7 +21955,7 @@
   },
   {
     "seasonId": "97-98",
-    "teamId": "8",
+    "teamId": "CHE",
     "players": [
       {
         "playerId": "725",
@@ -22177,7 +22177,7 @@
   },
   {
     "seasonId": "97-98",
-    "teamId": "9",
+    "teamId": "COV",
     "players": [
       {
         "playerId": "1207",
@@ -22369,7 +22369,7 @@
   },
   {
     "seasonId": "97-98",
-    "teamId": "10",
+    "teamId": "CRY",
     "players": [
       {
         "playerId": "1152",
@@ -22603,7 +22603,7 @@
   },
   {
     "seasonId": "97-98",
-    "teamId": "11",
+    "teamId": "DER",
     "players": [
       {
         "playerId": "752",
@@ -22807,7 +22807,7 @@
   },
   {
     "seasonId": "97-98",
-    "teamId": "12",
+    "teamId": "EVE",
     "players": [
       {
         "playerId": "1150",
@@ -23065,7 +23065,7 @@
   },
   {
     "seasonId": "97-98",
-    "teamId": "14",
+    "teamId": "LEE",
     "players": [
       {
         "playerId": "1367",
@@ -23269,7 +23269,7 @@
   },
   {
     "seasonId": "97-98",
-    "teamId": "15",
+    "teamId": "LEI",
     "players": [
       {
         "playerId": "40",
@@ -23437,7 +23437,7 @@
   },
   {
     "seasonId": "97-98",
-    "teamId": "16",
+    "teamId": "LIV",
     "players": [
       {
         "playerId": "1649",
@@ -23635,7 +23635,7 @@
   },
   {
     "seasonId": "97-98",
-    "teamId": "18",
+    "teamId": "MUN",
     "players": [
       {
         "playerId": "1409",
@@ -23875,7 +23875,7 @@
   },
   {
     "seasonId": "97-98",
-    "teamId": "20",
+    "teamId": "NEW",
     "players": [
       {
         "playerId": "724",
@@ -24115,7 +24115,7 @@
   },
   {
     "seasonId": "97-98",
-    "teamId": "26",
+    "teamId": "SHW",
     "players": [
       {
         "playerId": "1300",
@@ -24361,7 +24361,7 @@
   },
   {
     "seasonId": "97-98",
-    "teamId": "27",
+    "teamId": "SOU",
     "players": [
       {
         "playerId": "840",
@@ -24595,7 +24595,7 @@
   },
   {
     "seasonId": "97-98",
-    "teamId": "30",
+    "teamId": "TOT",
     "players": [
       {
         "playerId": "1627",
@@ -24841,7 +24841,7 @@
   },
   {
     "seasonId": "97-98",
-    "teamId": "32",
+    "teamId": "WHU",
     "players": [
       {
         "playerId": "1200",
@@ -25081,7 +25081,7 @@
   },
   {
     "seasonId": "97-98",
-    "teamId": "33",
+    "teamId": "WIM",
     "players": [
       {
         "playerId": "693",
@@ -25267,7 +25267,7 @@
   },
   {
     "seasonId": "98-99",
-    "teamId": "1",
+    "teamId": "ARS",
     "players": [
       {
         "playerId": "1556",
@@ -25495,7 +25495,7 @@
   },
   {
     "seasonId": "98-99",
-    "teamId": "2",
+    "teamId": "AVL",
     "players": [
       {
         "playerId": "1203",
@@ -25723,7 +25723,7 @@
   },
   {
     "seasonId": "98-99",
-    "teamId": "4",
+    "teamId": "BLB",
     "players": [
       {
         "playerId": "513",
@@ -25957,7 +25957,7 @@
   },
   {
     "seasonId": "98-99",
-    "teamId": "7",
+    "teamId": "CHA",
     "players": [
       {
         "playerId": "1390",
@@ -26161,7 +26161,7 @@
   },
   {
     "seasonId": "98-99",
-    "teamId": "8",
+    "teamId": "CHE",
     "players": [
       {
         "playerId": "1776",
@@ -26383,7 +26383,7 @@
   },
   {
     "seasonId": "98-99",
-    "teamId": "9",
+    "teamId": "COV",
     "players": [
       {
         "playerId": "1207",
@@ -26599,7 +26599,7 @@
   },
   {
     "seasonId": "98-99",
-    "teamId": "11",
+    "teamId": "DER",
     "players": [
       {
         "playerId": "1286",
@@ -26809,7 +26809,7 @@
   },
   {
     "seasonId": "98-99",
-    "teamId": "12",
+    "teamId": "EVE",
     "players": [
       {
         "playerId": "1150",
@@ -27079,7 +27079,7 @@
   },
   {
     "seasonId": "98-99",
-    "teamId": "14",
+    "teamId": "LEE",
     "players": [
       {
         "playerId": "1367",
@@ -27289,7 +27289,7 @@
   },
   {
     "seasonId": "98-99",
-    "teamId": "15",
+    "teamId": "LEI",
     "players": [
       {
         "playerId": "40",
@@ -27469,7 +27469,7 @@
   },
   {
     "seasonId": "98-99",
-    "teamId": "16",
+    "teamId": "LIV",
     "players": [
       {
         "playerId": "1176",
@@ -27679,7 +27679,7 @@
   },
   {
     "seasonId": "98-99",
-    "teamId": "18",
+    "teamId": "MUN",
     "players": [
       {
         "playerId": "1409",
@@ -27901,7 +27901,7 @@
   },
   {
     "seasonId": "98-99",
-    "teamId": "19",
+    "teamId": "MID",
     "players": [
       {
         "playerId": "1357",
@@ -28117,7 +28117,7 @@
   },
   {
     "seasonId": "98-99",
-    "teamId": "20",
+    "teamId": "NEW",
     "players": [
       {
         "playerId": "1257",
@@ -28387,7 +28387,7 @@
   },
   {
     "seasonId": "98-99",
-    "teamId": "22",
+    "teamId": "NFO",
     "players": [
       {
         "playerId": "101",
@@ -28627,7 +28627,7 @@
   },
   {
     "seasonId": "98-99",
-    "teamId": "26",
+    "teamId": "SHW",
     "players": [
       {
         "playerId": "1502",
@@ -28843,7 +28843,7 @@
   },
   {
     "seasonId": "98-99",
-    "teamId": "27",
+    "teamId": "SOU",
     "players": [
       {
         "playerId": "840",
@@ -29053,7 +29053,7 @@
   },
   {
     "seasonId": "98-99",
-    "teamId": "30",
+    "teamId": "TOT",
     "players": [
       {
         "playerId": "1627",
@@ -29281,7 +29281,7 @@
   },
   {
     "seasonId": "98-99",
-    "teamId": "32",
+    "teamId": "WHU",
     "players": [
       {
         "playerId": "1200",
@@ -29527,7 +29527,7 @@
   },
   {
     "seasonId": "98-99",
-    "teamId": "33",
+    "teamId": "WIM",
     "players": [
       {
         "playerId": "1531",
@@ -29683,7 +29683,7 @@
   },
   {
     "seasonId": "99-00",
-    "teamId": "1",
+    "teamId": "ARS",
     "players": [
       {
         "playerId": "965",
@@ -29935,7 +29935,7 @@
   },
   {
     "seasonId": "99-00",
-    "teamId": "2",
+    "teamId": "AVL",
     "players": [
       {
         "playerId": "363",
@@ -30169,7 +30169,7 @@
   },
   {
     "seasonId": "99-00",
-    "teamId": "6",
+    "teamId": "BRA",
     "players": [
       {
         "playerId": "288",
@@ -30373,7 +30373,7 @@
   },
   {
     "seasonId": "99-00",
-    "teamId": "8",
+    "teamId": "CHE",
     "players": [
       {
         "playerId": "725",
@@ -30613,7 +30613,7 @@
   },
   {
     "seasonId": "99-00",
-    "teamId": "9",
+    "teamId": "COV",
     "players": [
       {
         "playerId": "696",
@@ -30871,7 +30871,7 @@
   },
   {
     "seasonId": "99-00",
-    "teamId": "11",
+    "teamId": "DER",
     "players": [
       {
         "playerId": "1202",
@@ -31105,7 +31105,7 @@
   },
   {
     "seasonId": "99-00",
-    "teamId": "12",
+    "teamId": "EVE",
     "players": [
       {
         "playerId": "584",
@@ -31339,7 +31339,7 @@
   },
   {
     "seasonId": "99-00",
-    "teamId": "14",
+    "teamId": "LEE",
     "players": [
       {
         "playerId": "1008",
@@ -31549,7 +31549,7 @@
   },
   {
     "seasonId": "99-00",
-    "teamId": "15",
+    "teamId": "LEI",
     "players": [
       {
         "playerId": "528",
@@ -31759,7 +31759,7 @@
   },
   {
     "seasonId": "99-00",
-    "teamId": "16",
+    "teamId": "LIV",
     "players": [
       {
         "playerId": "554",
@@ -31951,7 +31951,7 @@
   },
   {
     "seasonId": "99-00",
-    "teamId": "18",
+    "teamId": "MUN",
     "players": [
       {
         "playerId": "1540",
@@ -32227,7 +32227,7 @@
   },
   {
     "seasonId": "99-00",
-    "teamId": "19",
+    "teamId": "MID",
     "players": [
       {
         "playerId": "117",
@@ -32455,7 +32455,7 @@
   },
   {
     "seasonId": "99-00",
-    "teamId": "20",
+    "teamId": "NEW",
     "players": [
       {
         "playerId": "857",
@@ -32713,7 +32713,7 @@
   },
   {
     "seasonId": "99-00",
-    "teamId": "26",
+    "teamId": "SHW",
     "players": [
       {
         "playerId": "1502",
@@ -32941,7 +32941,7 @@
   },
   {
     "seasonId": "99-00",
-    "teamId": "27",
+    "teamId": "SOU",
     "players": [
       {
         "playerId": "1135",
@@ -33169,7 +33169,7 @@
   },
   {
     "seasonId": "99-00",
-    "teamId": "28",
+    "teamId": "SUN",
     "players": [
       {
         "playerId": "791",
@@ -33403,7 +33403,7 @@
   },
   {
     "seasonId": "99-00",
-    "teamId": "30",
+    "teamId": "TOT",
     "players": [
       {
         "playerId": "1627",
@@ -33643,7 +33643,7 @@
   },
   {
     "seasonId": "99-00",
-    "teamId": "31",
+    "teamId": "WAT",
     "players": [
       {
         "playerId": "270",
@@ -33853,7 +33853,7 @@
   },
   {
     "seasonId": "99-00",
-    "teamId": "32",
+    "teamId": "WHU",
     "players": [
       {
         "playerId": "1422",
@@ -34135,7 +34135,7 @@
   },
   {
     "seasonId": "99-00",
-    "teamId": "33",
+    "teamId": "WIM",
     "players": [
       {
         "playerId": "1531",
