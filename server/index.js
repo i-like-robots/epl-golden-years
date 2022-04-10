@@ -2,6 +2,7 @@ const express = require('express')
 
 const teams = require('../data/teams.json')
 const squads = require('../data/squads.json')
+const tables = require('../data/tables.json')
 const players = require('../data/players.json')
 
 const app = express()
@@ -10,8 +11,8 @@ app.get('/', (request, response) => {
   response.send('Home page')
 })
 
-app.get('/player/:id', (request, response) => {
-  const player = players[request.params.id]
+app.get('/player/:playerId', (request, response) => {
+  const player = players[request.params.playerId]
 
   if (player) {
     response.json(player)
@@ -20,11 +21,26 @@ app.get('/player/:id', (request, response) => {
   }
 })
 
-app.get('/team/:id', (request, response) => {
-  const team = teams[request.params.id]
+app.get('/team/:teamId', (request, response) => {
+  const team = teams[request.params.teamId]
 
   if (team) {
     response.json(team)
+  } else {
+    response.sendStatus(404)
+  }
+})
+
+app.get('/table/:seasonId', (request, response) => {
+  const table = tables[request.params.seasonId]
+
+  if (table) {
+    const tableData = table.map((t) => {
+      const team = teams[t.teamId]
+      return { ...t, ...team }
+    })
+
+    response.json(tableData)
   } else {
     response.sendStatus(404)
   }
@@ -35,12 +51,16 @@ app.get('/squad/:teamId/:seasonId', (request, response) => {
     return squad.teamId === request.params.teamId && squad.seasonId === request.params.seasonId
   })
 
-  const squadData = squad.players.map((p) => {
-    const player = players[p.playerId]
-    return { ...p, ...player }
-  })
+  if (squad) {
+    const squadData = squad.players.map((p) => {
+      const player = players[p.playerId]
+      return { ...p, ...player }
+    })
 
-  response.json(squadData)
+    response.json(squadData)
+  } else {
+    response.sendStatus(404)
+  }
 })
 
 app.listen(3000, () => {
