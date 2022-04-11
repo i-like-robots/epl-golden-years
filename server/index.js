@@ -24,7 +24,7 @@ app.get('/player/:playerId', (request, response) => {
     const history = squadHistory.map((squad) => {
       const team = teams[squad.teamId]
       const table = tables[squad.seasonId]
-      const result = table.find((item) => item.teamId === squad.teamId)
+      const result = table.find((t) => t.teamId === squad.teamId)
       const stats = squad.players.find((p) => p.playerId === playerId)
 
       return {
@@ -32,14 +32,25 @@ app.get('/player/:playerId', (request, response) => {
         rank: result.rank,
         seasonId: squad.seasonId,
         appearances: stats.appearances,
+        cleanSheets: stats.cleanSheets,
+        goals: stats.goals,
       }
     })
 
+    const stats = history.reduce(
+      (acc, record) => {
+        return {
+          appearances: record.appearances + acc.appearances,
+          cleanSheets: record.cleanSheets + acc.cleanSheets,
+          goals: record.goals + acc.goals,
+        }
+      },
+      { appearances: 0, cleanSheets: 0, goals: 0 }
+    )
+
     const sticker = stickers[player.optaId]
 
-    const appearances = history.reduce((acc, item) => acc + item.appearances, 0)
-
-    response.json({ ...player, history, appearances, sticker })
+    response.json({ ...player, history, stats, sticker })
   } else {
     response.sendStatus(404)
   }
