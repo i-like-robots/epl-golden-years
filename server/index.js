@@ -21,32 +21,27 @@ app.get('/player/:playerId', (request, response) => {
       squad.players.some((p) => p.playerId === playerId)
     )
 
+    const stats = { appearances: 0, cleanSheets: 0, goals: 0 }
+
     const history = squadHistory.map((squad) => {
       const team = teams[squad.teamId]
       const table = tables[squad.seasonId]
       const result = table.find((t) => t.teamId === squad.teamId)
-      const stats = squad.players.find((p) => p.playerId === playerId)
+      const squadPlayer = squad.players.find((p) => p.playerId === playerId)
+
+      stats.appearances += squadPlayer.appearances
+      stats.cleanSheets += squadPlayer.cleanSheets
+      stats.goals += squadPlayer.goals
 
       return {
         ...team,
         rank: result.rank,
         seasonId: squad.seasonId,
-        appearances: stats.appearances,
-        cleanSheets: stats.cleanSheets,
-        goals: stats.goals,
+        appearances: squadPlayer.appearances,
+        cleanSheets: squadPlayer.cleanSheets,
+        goals: squadPlayer.goals,
       }
     })
-
-    const stats = history.reduce(
-      (acc, record) => {
-        return {
-          appearances: record.appearances + acc.appearances,
-          cleanSheets: record.cleanSheets + acc.cleanSheets,
-          goals: record.goals + acc.goals,
-        }
-      },
-      { appearances: 0, cleanSheets: 0, goals: 0 }
-    )
 
     const sticker = stickers[player.optaId]
 
