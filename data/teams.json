@@ -71,6 +71,12 @@
     "name": "Everton",
     "shortName": "EVE"
   },
+  "FUL": {
+    "pulseId": 34,
+    "optaId": "t54",
+    "name": "Fulham",
+    "shortName": "FUL"
+  },
   "IPS": {
     "pulseId": 8,
     "optaId": "t40",
