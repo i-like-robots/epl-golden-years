@@ -1,5 +1,5 @@
 const express = require('express')
-const { playerRoute, teamRoute, tableRoute, squadRoute } = require('./routes')
+const { playerRoute, teamRoute, tableRoute, squadRoute, playersRoute } = require('./routes')
 
 const app = express()
 
@@ -7,7 +7,9 @@ app.get('/', (request, response) => {
   response.send('Home page')
 })
 
-app.get('/player/:playerId', playerRoute)
+app.get('/players', playersRoute)
+
+app.get('/players/:playerId', playerRoute)
 
 app.get('/team/:teamId', teamRoute)
 
