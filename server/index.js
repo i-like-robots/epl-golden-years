@@ -1,5 +1,12 @@
 const express = require('express')
-const { playerRoute, teamRoute, tableRoute, squadRoute, playersRoute } = require('./routes')
+const {
+  playerRoute, 
+  playersRoute, 
+  squadRoute, 
+  tableRoute, 
+  teamRoute, 
+  teamsRoute,
+} = require('./routes')
 
 const app = express()
 
@@ -11,7 +18,9 @@ app.get('/players', playersRoute)
 
 app.get('/players/:playerId', playerRoute)
 
-app.get('/team/:teamId', teamRoute)
+app.get('/teams', teamsRoute)
+
+app.get('/teams/:teamId', teamRoute)
 
 app.get('/table/:seasonId', tableRoute)
 
