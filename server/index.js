@@ -5,6 +5,7 @@ const {
   squadRoute, 
   squadsRoute,
   tableRoute, 
+  tablesRoute,
   teamRoute, 
   teamsRoute,
 } = require('./routes')
@@ -23,7 +24,9 @@ app.get('/teams', teamsRoute)
 
 app.get('/teams/:teamId', teamRoute)
 
-app.get('/table/:seasonId', tableRoute)
+app.get('/tables', tablesRoute)
+
+app.get('/tables/:seasonId', tableRoute)
 
 app.get('/squads', squadsRoute)
 
