@@ -5,7 +5,7 @@ const squads = require('../data/squads.json')
 const tables = require('../data/tables.json')
 const players = require('../data/players.json')
 
-const { playerRoute, teamRoute } = require('./routes')
+const { playerRoute, teamRoute, tableRoute } = require('./routes')
 
 const app = express()
 
@@ -17,20 +17,7 @@ app.get('/player/:playerId', playerRoute)
 
 app.get('/team/:teamId', teamRoute)
 
-app.get('/table/:seasonId', (request, response) => {
-  const table = tables[request.params.seasonId]
-
-  if (table) {
-    const tableData = table.map((t) => {
-      const team = teams[t.teamId]
-      return { ...t, ...team }
-    })
-
-    response.json(tableData)
-  } else {
-    response.sendStatus(404)
-  }
-})
+app.get('/table/:seasonId', tableRoute)
 
 app.get('/squad/:teamId', (request, response) => {
   const team = teams[request.params.teamId]
