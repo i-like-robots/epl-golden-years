@@ -21,29 +21,33 @@ app.get('/player/:playerId', (request, response) => {
       squad.players.some((p) => p.playerId === playerId)
     )
 
+    const history = []
+
     const stats = { appearances: 0, cleanSheets: 0, goals: 0 }
 
-    const history = squadHistory.map((squad) => {
+    squadHistory.forEach((squad) => {
       const team = teams[squad.teamId]
       const table = tables[squad.seasonId]
       const result = table.find((t) => t.teamId === squad.teamId)
-      const squadPlayer = squad.players.find((p) => p.playerId === playerId)
+      const member = squad.players.find((p) => p.playerId === playerId)
 
-      stats.appearances += squadPlayer.appearances
-      stats.cleanSheets += squadPlayer.cleanSheets
-      stats.goals += squadPlayer.goals
-
-      return {
+      history.push({
         ...team,
+        optaId: undefined,
+        pulseId: undefined,
         rank: result.rank,
         seasonId: squad.seasonId,
-        appearances: squadPlayer.appearances,
-        cleanSheets: squadPlayer.cleanSheets,
-        goals: squadPlayer.goals,
-      }
+        appearances: member.appearances,
+        cleanSheets: member.cleanSheets,
+        goals: member.goals,
     })
 
-    const sticker = stickers[player.optaId]
+      stats.appearances += member.appearances
+      stats.cleanSheets += member.cleanSheets
+      stats.goals += member.goals
+    })
+
+    const sticker = stickers[player.optaId] || null
 
     response.json({ ...player, history, stats, sticker })
   } else {
