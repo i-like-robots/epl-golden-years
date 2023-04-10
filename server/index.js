@@ -5,7 +5,7 @@ const squads = require('../data/squads.json')
 const tables = require('../data/tables.json')
 const players = require('../data/players.json')
 
-const { playerRoute, teamRoute, tableRoute } = require('./routes')
+const { playerRoute, teamRoute, tableRoute, squadRoute } = require('./routes')
 
 const app = express()
 
@@ -48,22 +48,7 @@ app.get('/squad/:teamId', (request, response) => {
   }
 })
 
-app.get('/squad/:teamId/:seasonId', (request, response) => {
-  const squad = squads.find((squad) => {
-    return squad.teamId === request.params.teamId && squad.seasonId === request.params.seasonId
-  })
-
-  if (squad) {
-    const squadData = squad.players.map((p) => {
-      const player = players[p.playerId]
-      return { ...p, ...player }
-    })
-
-    response.json(squadData)
-  } else {
-    response.sendStatus(404)
-  }
-})
+app.get('/squad/:teamId/:seasonId', squadRoute)
 
 app.listen(3000, () => {
   console.log('App is listening at http://localhost:3000')
