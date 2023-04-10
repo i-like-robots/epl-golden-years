@@ -1,4 +1,3 @@
-const teams = require('../../data/teams.json')
 const squads = require('../../data/squads.json')
 const tables = require('../../data/tables.json')
 const players = require('../../data/players.json')

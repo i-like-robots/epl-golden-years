@@ -1,3 +1,4 @@
 module.exports = {
-  playerRoute: require('./playerRoute')
+  playerRoute: require('./playerRoute'),
+  teamRoute: require('./teamRoute'),
 }
