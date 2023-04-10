@@ -22,7 +22,6 @@ app.get('/player/:playerId', (request, response) => {
     )
 
     const history = []
-
     const stats = { appearances: 0, cleanSheets: 0, goals: 0 }
 
     squadHistory.forEach((squad) => {
@@ -47,9 +46,9 @@ app.get('/player/:playerId', (request, response) => {
       stats.goals += member.goals
     })
 
-    const sticker = stickers[player.optaId] || null
+    const album = stickers[playerId] || null
 
-    response.json({ ...player, history, stats, sticker })
+    response.json({ ...player, history, stats, album })
   } else {
     response.sendStatus(404)
   }
