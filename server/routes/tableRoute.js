@@ -5,7 +5,7 @@ module.exports = function tableRoute(request, response) {
   const table = tables[seasonId]
 
   if (table) {
-    response.json({ seasonId, table })
+    response.json({ id: seasonId, rankings: table })
   } else {
     response.sendStatus(404)
   }

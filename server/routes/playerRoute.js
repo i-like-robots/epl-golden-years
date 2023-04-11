@@ -34,7 +34,7 @@ module.exports = function playerRoute(request, response) {
       stats.goals += member.goals
     })
 
-    const album = stickers[playerId] || null
+    const album = stickers[playerId] || []
 
     response.json({ ...player, history, stats, album })
   } else {
