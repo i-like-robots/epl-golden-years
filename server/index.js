@@ -3,6 +3,7 @@ const {
   playerRoute, 
   playersRoute, 
   squadRoute, 
+  squadsBySeasonRoute,
   squadsRoute,
   tableRoute, 
   tablesRoute,
@@ -30,7 +31,9 @@ app.get('/tables/:seasonId', tableRoute)
 
 app.get('/squads', squadsRoute)
 
-app.get('/squads/:teamId/:seasonId', squadRoute)
+app.get('/squads/:seasonId', squadsBySeasonRoute)
+
+app.get('/squads/:seasonId/:teamId', squadRoute)
 
 app.listen(3000, () => {
   console.log('App is listening at http://localhost:3000')

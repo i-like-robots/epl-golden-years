@@ -2,29 +2,22 @@ const squads = require('../../data/squads.json')
 const baseUrl = require('../lib/baseUrl')
 
 module.exports = function squadsRoute(request, response) {
-  const squadsData = squads.reduce((acc, squad) => {
-    const { teamId, seasonId } = squad
+  const seen = new Set()
 
-    acc.push({
-      teamId,
-      seasonId,
-      rel: baseUrl(request, 'squads', teamId, seasonId)
-    })
+  const squadsData = squads.reduce((acc, squad) => {
+    const { seasonId } = squad
+
+    if (!seen.has(seasonId)) {
+      seen.add(seasonId)
+
+      acc.push({
+        id: seasonId,
+        rel: baseUrl(request, 'squads', seasonId)
+      })
+    }
 
     return acc
   }, [])
-
-  squadsData.sort((a, b) => {
-    if (a.teamId > b.teamId) {
-      return 1
-    }
-
-    if (a.teamId < b.teamId) {
-      return -1
-    }
-
-    return 0
-  })
 
   response.json(squadsData)
 }
