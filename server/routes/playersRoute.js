@@ -1,3 +1,4 @@
+const baseUrl = require('../lib/baseUrl')
 const players = require('../../data/players.json')
 
 module.exports = function playersRoute(request, response) {
@@ -5,7 +6,7 @@ module.exports = function playersRoute(request, response) {
   const playersData = playerIds.map((playerId) => (
     {
       id: playerId,
-      rel: `${request.protocol}://${request.get('host')}/players/${playerId}`
+      rel: baseUrl(request, 'players', playerId),
     }
   ))
 
