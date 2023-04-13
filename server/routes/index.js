@@ -1,11 +1,13 @@
 module.exports = {
-  playerRoute: require('./playerRoute'),
   playersRoute: require('./playersRoute'),
+  playerRoute: require('./playerRoute'),
+  seasonsRoute: require('./seasonsRoute'),
+  seasonRoute: require('./seasonRoute'),
   squadRoute: require('./squadRoute'),
   squadsBySeasonRoute: require('./squadsBySeasonRoute'),
   squadsRoute: require('./squadsRoute'),
-  tableRoute: require('./tableRoute'),
   tablesRoute: require('./tablesRoute'),
-  teamRoute: require('./teamRoute'),
+  tableRoute: require('./tableRoute'),
   teamsRoute: require('./teamsRoute'),
+  teamRoute: require('./teamRoute'),
 }
