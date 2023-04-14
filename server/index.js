@@ -29,7 +29,7 @@ app.get('/teams/:teamId', teamRoute)
 
 app.get('/tables', tablesRoute)
 
-app.get('/tables/:seasonId', tableRoute)
+app.get('/tables/:tableId', tableRoute)
 
 app.get('/seasons', seasonsRoute)
 
