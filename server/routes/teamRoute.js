@@ -1,3 +1,5 @@
+const omit = require('../lib/object-omit')
+const restfulUri = require('../lib/baseUrl')
 const teams = require('../../data/teams.json')
 const tables = require('../../data/tables.json')
 
@@ -6,11 +8,12 @@ module.exports = function teamRoute(request, response) {
   const team = teams[teamId]
 
   if (team) {
-    const resultHistory = Object.keys(tables).filter((seasonId) =>
+    const seasonIds = Object.keys(tables).filter((seasonId) =>
       tables[seasonId].some((t) => t.teamId === teamId)
     )
 
     const history = []
+
     const stats = {
       played: 0,
       wins: 0,
@@ -20,10 +23,14 @@ module.exports = function teamRoute(request, response) {
       against: 0,
     }
 
-    resultHistory.forEach((seasonId) => {
+    seasonIds.forEach((seasonId) => {
       const result = tables[seasonId].find((t) => t.teamId === teamId)
 
-      history.push({ seasonId, ...result, teamId: undefined })
+      history.push({
+        season: restfulUri(request, 'seasons', seasonId),
+        squad: restfulUri(request, 'squads', seasonId, teamId),
+        table: restfulUri(request, 'tables', seasonId),
+      })
 
       stats.played += result.played
       stats.wins += result.wins
@@ -33,7 +40,7 @@ module.exports = function teamRoute(request, response) {
       stats.against += result.against
     })
 
-    response.json({ ...team, history, stats })
+    response.json({ ...omit(team, 'teamId'), history, stats })
   } else {
     response.sendStatus(404)
   }
