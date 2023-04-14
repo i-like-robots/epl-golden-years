@@ -1,5 +1,5 @@
+const restfulUri = require('../lib/baseUrl')
 const squads = require('../../data/squads.json')
-const tables = require('../../data/tables.json')
 const players = require('../../data/players.json')
 const stickers = require('../../data/laststicker.json')
 
@@ -16,17 +16,12 @@ module.exports = function playerRoute(request, response) {
     const stats = { appearances: 0, cleanSheets: 0, goals: 0 }
 
     squadHistory.forEach((squad) => {
-      const table = tables[squad.seasonId]
-      const result = table.find((t) => t.teamId === squad.teamId)
       const member = squad.players.find((p) => p.playerId === playerId)
 
       history.push({
-        seasonId: squad.seasonId,
-        teamId: squad.teamId,
-        rank: result.rank,
-        appearances: member.appearances,
-        cleanSheets: member.cleanSheets,
-        goals: member.goals,
+        season: restfulUri(request, 'seasons', squad.seasonId),
+        squad: restfulUri(request, 'squads', squad.seasonId, squad.teamId),
+        team: restfulUri(request, 'teams', squad.teamId),
       })
 
       stats.appearances += member.appearances
@@ -34,9 +29,15 @@ module.exports = function playerRoute(request, response) {
       stats.goals += member.goals
     })
 
-    const album = stickers[playerId] || []
+    const album = (stickers[playerId] || []).map((item) => (
+      {
+        season:restfulUri(request, 'seasons', item.seasonId),
+        team: restfulUri(request, 'teams', item.teamId),
+        url: item.sticker,
+      }
+    ))
 
-    response.json({ ...player, history, stats, album })
+    response.json({ playerId, ...player, history, stats, album })
   } else {
     response.sendStatus(404)
   }
