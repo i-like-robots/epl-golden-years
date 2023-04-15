@@ -1,16 +1,16 @@
 const express = require('express')
 const {
-  playerRoute, 
-  playersRoute, 
+  playerRoute,
+  playersRoute,
   seasonsRoute,
   seasonRoute,
-  squadRoute, 
-  squadsBySeasonRoute,
-  squadsRoute,
-  tableRoute, 
+  squadRoute,
+  tableRoute,
   tablesRoute,
-  teamRoute, 
+  teamRoute,
   teamsRoute,
+  teamSquadsRoute,
+  teamSquadRoute,
 } = require('./routes')
 
 const app = express()
@@ -27,6 +27,10 @@ app.get('/teams', teamsRoute)
 
 app.get('/teams/:teamId', teamRoute)
 
+app.get('/teams/:teamId/squads', teamSquadsRoute)
+
+app.get('/teams/:teamId/squads/:seasonId', teamSquadRoute)
+
 app.get('/tables', tablesRoute)
 
 app.get('/tables/:tableId', tableRoute)
@@ -35,11 +39,7 @@ app.get('/seasons', seasonsRoute)
 
 app.get('/seasons/:seasonId', seasonRoute)
 
-app.get('/squads', squadsRoute)
-
-app.get('/squads/:seasonId', squadsBySeasonRoute)
-
-app.get('/squads/:seasonId/:teamId', squadRoute)
+// app.get('/seasons/:seasonId/table', seasonRoute)
 
 app.listen(3000, () => {
   console.log('App is listening at http://localhost:3000')

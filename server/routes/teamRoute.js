@@ -28,8 +28,7 @@ module.exports = function teamRoute(request, response) {
 
       history.push({
         season: restfulUri(request, 'seasons', seasonId),
-        squad: restfulUri(request, 'squads', seasonId, teamId),
-        table: restfulUri(request, 'tables', seasonId),
+        squad: restfulUri(request, 'teams', teamId, 'squads', seasonId),
       })
 
       stats.played += result.played

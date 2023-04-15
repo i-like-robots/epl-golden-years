@@ -8,7 +8,6 @@ module.exports = function seasonRoute(request, response) {
   if (season) {
     const seasonData = {
       id: seasonId,
-      squads: baseUrl(request, 'squads', seasonId),
       table: baseUrl(request, 'tables', seasonId),
     }
 

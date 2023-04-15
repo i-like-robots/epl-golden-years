@@ -2,9 +2,11 @@ const pick = require('../lib/object-pick')
 const restfulUri = require('../lib/baseUrl')
 const squads = require('../../data/squads.json')
 
-module.exports = function squadRoute(request, response) {
+module.exports = function teamSquadRoute(request, response) {
+  const { teamId, seasonId } = request.params
+
   const squad = squads.find((squad) => {
-    return squad.teamId === request.params.teamId && squad.seasonId === request.params.seasonId
+    return squad.teamId === teamId && squad.seasonId === seasonId
   })
 
   if (squad) {
