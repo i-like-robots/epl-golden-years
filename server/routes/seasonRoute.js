@@ -7,9 +7,9 @@ module.exports = function seasonRoute(request, response) {
 
   if (table) {
     const seasonData = {
-      id: seasonId,
-      topScorers: restfulUri(request, 'seasons', seasonId, 'top-scorers'),
       table: restfulUri(request, 'seasons', seasonId, 'table'),
+      topScorers: restfulUri(request, 'seasons', seasonId, 'top-scorers'),
+      topAssists: restfulUri(request, 'seasons', seasonId, 'top-assists'),
     }
 
     response.json(seasonData)
