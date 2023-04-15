@@ -1,5 +1,5 @@
 const tables = require('../../data/tables.json')
-const baseUrl = require('../lib/baseUrl')
+const restfulUri = require('../lib/baseUrl')
 
 module.exports = function seasonRoute(request, response) {
   const seasonId = request.params.seasonId
@@ -7,8 +7,8 @@ module.exports = function seasonRoute(request, response) {
 
   if (season) {
     const seasonData = {
-      id: seasonId,
-      table: baseUrl(request, 'tables', seasonId),
+      season: seasonId,
+      table: restfulUri(request, 'seasons', seasonId, 'table'),
     }
 
     response.json(seasonData)
