@@ -1082,6 +1082,38 @@
       "sticker": "https://www.laststicker.com/i/cards/507/256.jpg"
     }
   ],
+  "vinnie-jones-96c4": [
+    {
+      "teamId": "che",
+      "seasonId": "1992-1993",
+      "sticker": "https://www.laststicker.com/i/cards/3153/41.jpg"
+    },
+    {
+      "teamId": "wim",
+      "seasonId": "1993-1994",
+      "sticker": "https://www.laststicker.com/i/cards/470/465.jpg"
+    },
+    {
+      "teamId": "wim",
+      "seasonId": "1994-1995",
+      "sticker": "https://www.laststicker.com/i/cards/471/516.jpg"
+    },
+    {
+      "teamId": "wim",
+      "seasonId": "1995-1996",
+      "sticker": "https://www.laststicker.com/i/cards/312/224.jpg"
+    },
+    {
+      "teamId": "wim",
+      "seasonId": "1996-1997",
+      "sticker": "https://www.laststicker.com/i/cards/472/524.jpg"
+    },
+    {
+      "teamId": "wim",
+      "seasonId": "1997-1998",
+      "sticker": "https://www.laststicker.com/i/cards/86/492.jpg"
+    }
+  ],
   "paul-elliott-2f50": [
     {
       "teamId": "che",
@@ -1542,6 +1574,11 @@
       "teamId": "cry",
       "seasonId": "1992-1993",
       "sticker": "https://www.laststicker.com/i/cards/3153/63.jpg"
+    },
+    {
+      "teamId": "cry",
+      "seasonId": "1994-1995",
+      "sticker": "https://www.laststicker.com/i/cards/471/132.jpg"
     }
   ],
   "gareth-southgate-59cf": [
@@ -1777,6 +1814,28 @@
       "teamId": "eve",
       "seasonId": "1997-1998",
       "sticker": "https://www.laststicker.com/i/cards/86/224.jpg"
+    }
+  ],
+  "matt-jackson-e360": [
+    {
+      "teamId": "eve",
+      "seasonId": "1992-1993",
+      "sticker": "https://www.laststicker.com/i/cards/3153/74.jpg"
+    },
+    {
+      "teamId": "eve",
+      "seasonId": "1993-1994",
+      "sticker": "https://www.laststicker.com/i/cards/470/103.jpg"
+    },
+    {
+      "teamId": "eve",
+      "seasonId": "1994-1995",
+      "sticker": "https://www.laststicker.com/i/cards/471/150.jpg"
+    },
+    {
+      "teamId": "eve",
+      "seasonId": "1995-1996",
+      "sticker": "https://www.laststicker.com/i/cards/312/386.jpg"
     }
   ],
   "gary-ablett-722c": [
@@ -2725,6 +2784,13 @@
       "sticker": "https://www.laststicker.com/i/cards/86/322.jpg"
     }
   ],
+  "nicky-tanner-f2ef": [
+    {
+      "teamId": "liv",
+      "seasonId": "1992-1993",
+      "sticker": "https://www.laststicker.com/i/cards/3153/114.jpg"
+    }
+  ],
   "paul-stewart-3fbc": [
     {
       "teamId": "liv",
@@ -2904,6 +2970,18 @@
       "sticker": "https://www.laststicker.com/i/cards/472/439.jpg"
     }
   ],
+  "rick-holden-d6c9": [
+    {
+      "teamId": "mci",
+      "seasonId": "1992-1993",
+      "sticker": "https://www.laststicker.com/i/cards/3153/122.jpg"
+    },
+    {
+      "teamId": "old",
+      "seasonId": "1993-1994",
+      "sticker": "https://www.laststicker.com/i/cards/470/314.jpg"
+    }
+  ],
   "keith-curle-565f": [
     {
       "teamId": "mci",
@@ -2985,6 +3063,21 @@
       "teamId": "sun",
       "seasonId": "1996-1997",
       "sticker": "https://www.laststicker.com/i/cards/472/453.jpg"
+    },
+    {
+      "teamId": "sun",
+      "seasonId": "1999-2000",
+      "sticker": "https://www.laststicker.com/i/cards/88/431.jpg"
+    },
+    {
+      "teamId": "sun",
+      "seasonId": "2000-2001",
+      "sticker": "https://www.laststicker.com/i/cards/498/367.jpg"
+    },
+    {
+      "teamId": "sun",
+      "seasonId": "2001-2002",
+      "sticker": "https://www.laststicker.com/i/cards/507/388.jpg"
     }
   ],
   "david-brightwell-1800": [
@@ -3447,6 +3540,11 @@
     },
     {
       "teamId": "mid",
+      "seasonId": "1998-1999",
+      "sticker": "https://www.laststicker.com/i/cards/87/341.jpg"
+    },
+    {
+      "teamId": "mid",
       "seasonId": "2000-2001",
       "sticker": "https://www.laststicker.com/i/cards/498/299.jpg"
     },
@@ -3512,6 +3610,18 @@
       "teamId": "bol",
       "seasonId": "1997-1998",
       "sticker": "https://www.laststicker.com/i/cards/86/114.jpg"
+    }
+  ],
+  "willie-falconer-fded": [
+    {
+      "teamId": "mid",
+      "seasonId": "1992-1993",
+      "sticker": "https://www.laststicker.com/i/cards/3153/151.jpg"
+    },
+    {
+      "teamId": "shu",
+      "seasonId": "1993-1994",
+      "sticker": "https://www.laststicker.com/i/cards/470/350.jpg"
     }
   ],
   "robbie-mustoe-cdfc": [
@@ -5142,7 +5252,7 @@
       "sticker": "https://www.laststicker.com/i/cards/470/390.jpg"
     }
   ],
-  "matthew-le-tissier-ede3": [
+  "matt-le-tissier-ede3": [
     {
       "teamId": "sou",
       "seasonId": "1992-1993",
@@ -5157,6 +5267,31 @@
       "teamId": "sou",
       "seasonId": "1994-1995",
       "sticker": "https://www.laststicker.com/i/cards/471/448.jpg"
+    },
+    {
+      "teamId": "sou",
+      "seasonId": "1995-1996",
+      "sticker": "https://www.laststicker.com/i/cards/312/255.jpg"
+    },
+    {
+      "teamId": "sou",
+      "seasonId": "1996-1997",
+      "sticker": "https://www.laststicker.com/i/cards/472/425.jpg"
+    },
+    {
+      "teamId": "sou",
+      "seasonId": "1997-1998",
+      "sticker": "https://www.laststicker.com/i/cards/86/425.jpg"
+    },
+    {
+      "teamId": "sou",
+      "seasonId": "1998-1999",
+      "sticker": "https://www.laststicker.com/i/cards/87/454.jpg"
+    },
+    {
+      "teamId": "sou",
+      "seasonId": "1999-2000",
+      "sticker": "https://www.laststicker.com/i/cards/88/400.jpg"
     },
     {
       "teamId": "sou",
@@ -5369,6 +5504,13 @@
       "teamId": "tot",
       "seasonId": "1992-1993",
       "sticker": "https://www.laststicker.com/i/cards/3153/248.jpg"
+    }
+  ],
+  "nayim-c496": [
+    {
+      "teamId": "tot",
+      "seasonId": "1992-1993",
+      "sticker": "https://www.laststicker.com/i/cards/3153/249.jpg"
     }
   ],
   "vinny-samways-8643": [
@@ -5769,6 +5911,11 @@
       "teamId": "ars",
       "seasonId": "1996-1997",
       "sticker": "https://www.laststicker.com/i/cards/472/13.jpg"
+    },
+    {
+      "teamId": "cry",
+      "seasonId": "1997-1998",
+      "sticker": "https://www.laststicker.com/i/cards/86/182.jpg"
     }
   ],
   "paul-davis-fd61": [
@@ -5914,6 +6061,18 @@
       "teamId": "mun",
       "seasonId": "1997-1998",
       "sticker": "https://www.laststicker.com/i/cards/86/345.jpg"
+    }
+  ],
+  "nicky-marker-330c": [
+    {
+      "teamId": "blb",
+      "seasonId": "1993-1994",
+      "sticker": "https://www.laststicker.com/i/cards/470/45.jpg"
+    },
+    {
+      "teamId": "blb",
+      "seasonId": "1994-1995",
+      "sticker": "https://www.laststicker.com/i/cards/471/59.jpg"
     }
   ],
   "henning-berg-956f": [
@@ -6099,6 +6258,18 @@
       "teamId": "che",
       "seasonId": "1996-1997",
       "sticker": "https://www.laststicker.com/i/cards/472/85.jpg"
+    }
+  ],
+  "jakob-kjeldbjerg-dc47": [
+    {
+      "teamId": "che",
+      "seasonId": "1993-1994",
+      "sticker": "https://www.laststicker.com/i/cards/470/65.jpg"
+    },
+    {
+      "teamId": "che",
+      "seasonId": "1994-1995",
+      "sticker": "https://www.laststicker.com/i/cards/471/78.jpg"
     }
   ],
   "erland-johnsen-502c": [
@@ -6500,6 +6671,13 @@
       "teamId": "eve",
       "seasonId": "1994-1995",
       "sticker": "https://www.laststicker.com/i/cards/471/157.jpg"
+    }
+  ],
+  "preki-07d6": [
+    {
+      "teamId": "eve",
+      "seasonId": "1993-1994",
+      "sticker": "https://www.laststicker.com/i/cards/470/113.jpg"
     }
   ],
   "paul-rideout-ac47": [
@@ -7075,6 +7253,50 @@
       "sticker": "https://www.laststicker.com/i/cards/312/437.jpg"
     }
   ],
+  "garry-flitcroft-777e": [
+    {
+      "teamId": "mci",
+      "seasonId": "1993-1994",
+      "sticker": "https://www.laststicker.com/i/cards/470/183.jpg"
+    },
+    {
+      "teamId": "mci",
+      "seasonId": "1994-1995",
+      "sticker": "https://www.laststicker.com/i/cards/471/275.jpg"
+    },
+    {
+      "teamId": "mci",
+      "seasonId": "1995-1996",
+      "sticker": "https://www.laststicker.com/i/cards/312/439.jpg"
+    },
+    {
+      "teamId": "blb",
+      "seasonId": "1996-1997",
+      "sticker": "https://www.laststicker.com/i/cards/472/68.jpg"
+    },
+    {
+      "teamId": "blb",
+      "seasonId": "1997-1998",
+      "sticker": "https://www.laststicker.com/i/cards/86/91.jpg"
+    },
+    {
+      "teamId": "blb",
+      "seasonId": "1998-1999",
+      "sticker": "https://www.laststicker.com/i/cards/87/69.jpg"
+    },
+    {
+      "teamId": "blb",
+      "seasonId": "2001-2002",
+      "sticker": "https://www.laststicker.com/i/cards/507/53.jpg"
+    }
+  ],
+  "alfons-groenendijk-0469": [
+    {
+      "teamId": "mci",
+      "seasonId": "1993-1994",
+      "sticker": "https://www.laststicker.com/i/cards/470/185.jpg"
+    }
+  ],
   "steve-mcmahon-390f": [
     {
       "teamId": "mci",
@@ -7300,6 +7522,13 @@
       "sticker": "https://www.laststicker.com/i/cards/507/150.jpg"
     }
   ],
+  "nicos-papavasiliou-52a4": [
+    {
+      "teamId": "new",
+      "seasonId": "1993-1994",
+      "sticker": "https://www.laststicker.com/i/cards/470/271.jpg"
+    }
+  ],
   "john-beresford-e657": [
     {
       "teamId": "new",
@@ -7403,6 +7632,53 @@
       "teamId": "new",
       "seasonId": "1993-1994",
       "sticker": "https://www.laststicker.com/i/cards/470/276.jpg"
+    }
+  ],
+  "andy-cole-710b": [
+    {
+      "teamId": "new",
+      "seasonId": "1993-1994",
+      "sticker": "https://www.laststicker.com/i/cards/470/277.jpg"
+    },
+    {
+      "teamId": "new",
+      "seasonId": "1994-1995",
+      "sticker": "https://www.laststicker.com/i/cards/471/331.jpg"
+    },
+    {
+      "teamId": "mun",
+      "seasonId": "1995-1996",
+      "sticker": "https://www.laststicker.com/i/cards/312/45.jpg"
+    },
+    {
+      "teamId": "mun",
+      "seasonId": "1996-1997",
+      "sticker": "https://www.laststicker.com/i/cards/472/296.jpg"
+    },
+    {
+      "teamId": "mun",
+      "seasonId": "1997-1998",
+      "sticker": "https://www.laststicker.com/i/cards/86/354.jpg"
+    },
+    {
+      "teamId": "mun",
+      "seasonId": "1998-1999",
+      "sticker": "https://www.laststicker.com/i/cards/87/326.jpg"
+    },
+    {
+      "teamId": "mun",
+      "seasonId": "1999-2000",
+      "sticker": "https://www.laststicker.com/i/cards/88/299.jpg"
+    },
+    {
+      "teamId": "mun",
+      "seasonId": "2000-2001",
+      "sticker": "https://www.laststicker.com/i/cards/498/287.jpg"
+    },
+    {
+      "teamId": "mun",
+      "seasonId": "2001-2002",
+      "sticker": "https://www.laststicker.com/i/cards/507/305.jpg"
     }
   ],
   "robert-lee-74f9": [
@@ -7591,6 +7867,20 @@
       "sticker": "https://www.laststicker.com/i/cards/507/145.jpg"
     }
   ],
+  "jon-hallworth-310e": [
+    {
+      "teamId": "old",
+      "seasonId": "1993-1994",
+      "sticker": "https://www.laststicker.com/i/cards/470/306.jpg"
+    }
+  ],
+  "craig-fleming-fd3b": [
+    {
+      "teamId": "old",
+      "seasonId": "1993-1994",
+      "sticker": "https://www.laststicker.com/i/cards/470/308.jpg"
+    }
+  ],
   "neil-pointon-e1fc": [
     {
       "teamId": "old",
@@ -7713,6 +8003,16 @@
       "teamId": "lei",
       "seasonId": "1999-2000",
       "sticker": "https://www.laststicker.com/i/cards/88/223.jpg"
+    },
+    {
+      "teamId": "lei",
+      "seasonId": "2000-2001",
+      "sticker": "https://www.laststicker.com/i/cards/498/220.jpg"
+    },
+    {
+      "teamId": "lei",
+      "seasonId": "2001-2002",
+      "sticker": "https://www.laststicker.com/i/cards/507/258.jpg"
     }
   ],
   "gary-penrice-a3bc": [
@@ -8012,6 +8312,38 @@
       "sticker": "https://www.laststicker.com/i/cards/312/244.jpg"
     }
   ],
+  "ken-monkou-5fe7": [
+    {
+      "teamId": "sou",
+      "seasonId": "1993-1994",
+      "sticker": "https://www.laststicker.com/i/cards/470/385.jpg"
+    },
+    {
+      "teamId": "sou",
+      "seasonId": "1994-1995",
+      "sticker": "https://www.laststicker.com/i/cards/471/440.jpg"
+    },
+    {
+      "teamId": "sou",
+      "seasonId": "1995-1996",
+      "sticker": "https://www.laststicker.com/i/cards/312/243.jpg"
+    },
+    {
+      "teamId": "sou",
+      "seasonId": "1996-1997",
+      "sticker": "https://www.laststicker.com/i/cards/472/416.jpg"
+    },
+    {
+      "teamId": "sou",
+      "seasonId": "1997-1998",
+      "sticker": "https://www.laststicker.com/i/cards/86/417.jpg"
+    },
+    {
+      "teamId": "sou",
+      "seasonId": "1998-1999",
+      "sticker": "https://www.laststicker.com/i/cards/87/448.jpg"
+    }
+  ],
   "simon-charlton-7f23": [
     {
       "teamId": "sou",
@@ -8172,6 +8504,25 @@
       "sticker": "https://www.laststicker.com/i/cards/507/423.jpg"
     }
   ],
+  "ross-maclaren-23ec": [
+    {
+      "teamId": "swi",
+      "seasonId": "1993-1994",
+      "sticker": "https://www.laststicker.com/i/cards/470/404.jpg"
+    }
+  ],
+  "jan-age-fjortoft-4c10": [
+    {
+      "teamId": "swi",
+      "seasonId": "1993-1994",
+      "sticker": "https://www.laststicker.com/i/cards/470/405.jpg"
+    },
+    {
+      "teamId": "mid",
+      "seasonId": "1995-1996",
+      "sticker": "https://www.laststicker.com/i/cards/312/496.jpg"
+    }
+  ],
   "andy-mutch-3b00": [
     {
       "teamId": "swi",
@@ -8316,6 +8667,53 @@
       "teamId": "tot",
       "seasonId": "1994-1995",
       "sticker": "https://www.laststicker.com/i/cards/471/470.jpg"
+    }
+  ],
+  "nicky-barmby-5920": [
+    {
+      "teamId": "tot",
+      "seasonId": "1993-1994",
+      "sticker": "https://www.laststicker.com/i/cards/470/429.jpg"
+    },
+    {
+      "teamId": "tot",
+      "seasonId": "1994-1995",
+      "sticker": "https://www.laststicker.com/i/cards/471/475.jpg"
+    },
+    {
+      "teamId": "mid",
+      "seasonId": "1995-1996",
+      "sticker": "https://www.laststicker.com/i/cards/312/499.jpg"
+    },
+    {
+      "teamId": "mid",
+      "seasonId": "1996-1997",
+      "sticker": "https://www.laststicker.com/i/cards/472/320.jpg"
+    },
+    {
+      "teamId": "eve",
+      "seasonId": "1997-1998",
+      "sticker": "https://www.laststicker.com/i/cards/86/237.jpg"
+    },
+    {
+      "teamId": "eve",
+      "seasonId": "1998-1999",
+      "sticker": "https://www.laststicker.com/i/cards/87/204.jpg"
+    },
+    {
+      "teamId": "eve",
+      "seasonId": "1999-2000",
+      "sticker": "https://www.laststicker.com/i/cards/88/171.jpg"
+    },
+    {
+      "teamId": "liv",
+      "seasonId": "2000-2001",
+      "sticker": "https://www.laststicker.com/i/cards/498/245.jpg"
+    },
+    {
+      "teamId": "liv",
+      "seasonId": "2001-2002",
+      "sticker": "https://www.laststicker.com/i/cards/507/276.jpg"
     }
   ],
   "gordon-durie-2c6b": [
@@ -8570,6 +8968,28 @@
       "sticker": "https://www.laststicker.com/i/cards/498/268.jpg"
     }
   ],
+  "stefan-schwarz-db99": [
+    {
+      "teamId": "ars",
+      "seasonId": "1994-1995",
+      "sticker": "https://www.laststicker.com/i/cards/471/22.jpg"
+    },
+    {
+      "teamId": "sun",
+      "seasonId": "1999-2000",
+      "sticker": "https://www.laststicker.com/i/cards/88/426.jpg"
+    },
+    {
+      "teamId": "sun",
+      "seasonId": "2000-2001",
+      "sticker": "https://www.laststicker.com/i/cards/498/361.jpg"
+    },
+    {
+      "teamId": "sun",
+      "seasonId": "2001-2002",
+      "sticker": "https://www.laststicker.com/i/cards/507/384.jpg"
+    }
+  ],
   "ugo-ehiogu-c3f6": [
     {
       "teamId": "avl",
@@ -8730,6 +9150,11 @@
     },
     {
       "teamId": "der",
+      "seasonId": "2000-2001",
+      "sticker": "https://www.laststicker.com/i/cards/498/134.jpg"
+    },
+    {
+      "teamId": "der",
       "seasonId": "2001-2002",
       "sticker": "https://www.laststicker.com/i/cards/507/133.jpg"
     }
@@ -8785,6 +9210,28 @@
       "sticker": "https://www.laststicker.com/i/cards/312/292.jpg"
     }
   ],
+  "neil-shipperley-17ab": [
+    {
+      "teamId": "che",
+      "seasonId": "1994-1995",
+      "sticker": "https://www.laststicker.com/i/cards/471/90.jpg"
+    },
+    {
+      "teamId": "sou",
+      "seasonId": "1995-1996",
+      "sticker": "https://www.laststicker.com/i/cards/312/257.jpg"
+    },
+    {
+      "teamId": "sou",
+      "seasonId": "1996-1997",
+      "sticker": "https://www.laststicker.com/i/cards/472/426.jpg"
+    },
+    {
+      "teamId": "cry",
+      "seasonId": "1997-1998",
+      "sticker": "https://www.laststicker.com/i/cards/86/188.jpg"
+    }
+  ],
   "mark-stein-a7bf": [
     {
       "teamId": "che",
@@ -8819,6 +9266,18 @@
       "teamId": "cov",
       "seasonId": "1994-1995",
       "sticker": "https://www.laststicker.com/i/cards/471/105.jpg"
+    }
+  ],
+  "david-busst-fc83": [
+    {
+      "teamId": "cov",
+      "seasonId": "1994-1995",
+      "sticker": "https://www.laststicker.com/i/cards/471/106.jpg"
+    },
+    {
+      "teamId": "cov",
+      "seasonId": "1995-1996",
+      "sticker": "https://www.laststicker.com/i/cards/312/410.jpg"
     }
   ],
   "ally-pickering-34f6": [
@@ -9113,11 +9572,35 @@
       "sticker": "https://www.laststicker.com/i/cards/87/92.jpg"
     }
   ],
+  "mauricio-taricco-59e8": [
+    {
+      "teamId": "ips",
+      "seasonId": "1994-1995",
+      "sticker": "https://www.laststicker.com/i/cards/471/179.jpg"
+    },
+    {
+      "teamId": "tot",
+      "seasonId": "1999-2000",
+      "sticker": "https://www.laststicker.com/i/cards/88/448.jpg"
+    },
+    {
+      "teamId": "tot",
+      "seasonId": "2000-2001",
+      "sticker": "https://www.laststicker.com/i/cards/498/379.jpg"
+    }
+  ],
   "adrian-paz-1423": [
     {
       "teamId": "ips",
       "seasonId": "1994-1995",
       "sticker": "https://www.laststicker.com/i/cards/471/186.jpg"
+    }
+  ],
+  "bontcho-guenchev-f9f6": [
+    {
+      "teamId": "ips",
+      "seasonId": "1994-1995",
+      "sticker": "https://www.laststicker.com/i/cards/471/190.jpg"
     }
   ],
   "john-pemberton-2a13": [
@@ -9144,6 +9627,11 @@
       "teamId": "lee",
       "seasonId": "1994-1995",
       "sticker": "https://www.laststicker.com/i/cards/471/210.jpg"
+    },
+    {
+      "teamId": "lee",
+      "seasonId": "1995-1996",
+      "sticker": "https://www.laststicker.com/i/cards/312/125.jpg"
     }
   ],
   "gavin-ward-bc6f": [
@@ -9187,6 +9675,11 @@
       "teamId": "lei",
       "seasonId": "1994-1995",
       "sticker": "https://www.laststicker.com/i/cards/471/224.jpg"
+    },
+    {
+      "teamId": "lei",
+      "seasonId": "1996-1997",
+      "sticker": "https://www.laststicker.com/i/cards/472/217.jpg"
     },
     {
       "teamId": "bol",
@@ -10028,6 +10521,11 @@
       "teamId": "lee",
       "seasonId": "1998-1999",
       "sticker": "https://www.laststicker.com/i/cards/87/226.jpg"
+    },
+    {
+      "teamId": "mci",
+      "seasonId": "2000-2001",
+      "sticker": "https://www.laststicker.com/i/cards/498/260.jpg"
     }
   ],
   "bryan-roy-1d9b": [
@@ -10378,6 +10876,13 @@
       "sticker": "https://www.laststicker.com/i/cards/471/453.jpg"
     }
   ],
+  "ronnie-ekelund-1ca2": [
+    {
+      "teamId": "sou",
+      "seasonId": "1994-1995",
+      "sticker": "https://www.laststicker.com/i/cards/471/454.jpg"
+    }
+  ],
   "ian-walker-335d": [
     {
       "teamId": "tot",
@@ -10456,6 +10961,13 @@
       "teamId": "tot",
       "seasonId": "1994-1995",
       "sticker": "https://www.laststicker.com/i/cards/471/472.jpg"
+    }
+  ],
+  "micky-hazard-9984": [
+    {
+      "teamId": "tot",
+      "seasonId": "1994-1995",
+      "sticker": "https://www.laststicker.com/i/cards/471/473.jpg"
     }
   ],
   "jurgen-klinsmann-9ffb": [
@@ -10566,6 +11078,28 @@
       "sticker": "https://www.laststicker.com/i/cards/88/535.jpg"
     }
   ],
+  "neal-ardley-46d7": [
+    {
+      "teamId": "wim",
+      "seasonId": "1994-1995",
+      "sticker": "https://www.laststicker.com/i/cards/471/526.jpg"
+    },
+    {
+      "teamId": "wim",
+      "seasonId": "1996-1997",
+      "sticker": "https://www.laststicker.com/i/cards/472/528.jpg"
+    },
+    {
+      "teamId": "wim",
+      "seasonId": "1997-1998",
+      "sticker": "https://www.laststicker.com/i/cards/86/495.jpg"
+    },
+    {
+      "teamId": "wim",
+      "seasonId": "1998-1999",
+      "sticker": "https://www.laststicker.com/i/cards/87/531.jpg"
+    }
+  ],
   "billy-mckinlay-f0cc": [
     {
       "teamId": "blb",
@@ -10620,6 +11154,43 @@
       "sticker": "https://www.laststicker.com/i/cards/507/295.jpg"
     }
   ],
+  "phil-neville-3bc7": [
+    {
+      "teamId": "mun",
+      "seasonId": "1995-1996",
+      "sticker": "https://www.laststicker.com/i/cards/312/38.jpg"
+    },
+    {
+      "teamId": "mun",
+      "seasonId": "1996-1997",
+      "sticker": "https://www.laststicker.com/i/cards/472/287.jpg"
+    },
+    {
+      "teamId": "mun",
+      "seasonId": "1997-1998",
+      "sticker": "https://www.laststicker.com/i/cards/86/347.jpg"
+    },
+    {
+      "teamId": "mun",
+      "seasonId": "1998-1999",
+      "sticker": "https://www.laststicker.com/i/cards/87/319.jpg"
+    },
+    {
+      "teamId": "mun",
+      "seasonId": "1999-2000",
+      "sticker": "https://www.laststicker.com/i/cards/88/291.jpg"
+    },
+    {
+      "teamId": "mun",
+      "seasonId": "2000-2001",
+      "sticker": "https://www.laststicker.com/i/cards/498/278.jpg"
+    },
+    {
+      "teamId": "mun",
+      "seasonId": "2001-2002",
+      "sticker": "https://www.laststicker.com/i/cards/507/296.jpg"
+    }
+  ],
   "david-beckham-528c": [
     {
       "teamId": "mun",
@@ -10662,13 +11233,6 @@
       "teamId": "mun",
       "seasonId": "1995-1996",
       "sticker": "https://www.laststicker.com/i/cards/312/44.jpg"
-    }
-  ],
-  "stephen-howe-fbbe": [
-    {
-      "teamId": "nfo",
-      "seasonId": "1995-1996",
-      "sticker": "https://www.laststicker.com/i/cards/312/64.jpg"
     }
   ],
   "paul-mcgregor-1ba7": [
@@ -10734,6 +11298,23 @@
       "teamId": "lee",
       "seasonId": "1995-1996",
       "sticker": "https://www.laststicker.com/i/cards/312/118.jpg"
+    },
+    {
+      "teamId": "lee",
+      "seasonId": "1996-1997",
+      "sticker": "https://www.laststicker.com/i/cards/472/196.jpg"
+    }
+  ],
+  "tony-yeboah-a9d1": [
+    {
+      "teamId": "lee",
+      "seasonId": "1995-1996",
+      "sticker": "https://www.laststicker.com/i/cards/312/127.jpg"
+    },
+    {
+      "teamId": "lee",
+      "seasonId": "1996-1997",
+      "sticker": "https://www.laststicker.com/i/cards/472/204.jpg"
     }
   ],
   "shaka-hislop-1d4e": [
@@ -10861,6 +11442,25 @@
       "sticker": "https://www.laststicker.com/i/cards/312/177.jpg"
     }
   ],
+  "ronnie-rosenthal-f541": [
+    {
+      "teamId": "tot",
+      "seasonId": "1995-1996",
+      "sticker": "https://www.laststicker.com/i/cards/312/178.jpg"
+    },
+    {
+      "teamId": "tot",
+      "seasonId": "1996-1997",
+      "sticker": "https://www.laststicker.com/i/cards/472/480.jpg"
+    }
+  ],
+  "juergen-sommer-b19e": [
+    {
+      "teamId": "qpr",
+      "seasonId": "1995-1996",
+      "sticker": "https://www.laststicker.com/i/cards/312/188.jpg"
+    }
+  ],
   "ned-zelic-4348": [
     {
       "teamId": "qpr",
@@ -10873,6 +11473,13 @@
       "teamId": "qpr",
       "seasonId": "1995-1996",
       "sticker": "https://www.laststicker.com/i/cards/312/202.jpg"
+    }
+  ],
+  "danny-dichio-2ad5": [
+    {
+      "teamId": "qpr",
+      "seasonId": "1995-1996",
+      "sticker": "https://www.laststicker.com/i/cards/312/203.jpg"
     }
   ],
   "paul-heald-4607": [
@@ -10983,23 +11590,6 @@
       "sticker": "https://www.laststicker.com/i/cards/498/382.jpg"
     }
   ],
-  "vinnie-jones-96c4": [
-    {
-      "teamId": "wim",
-      "seasonId": "1995-1996",
-      "sticker": "https://www.laststicker.com/i/cards/312/224.jpg"
-    },
-    {
-      "teamId": "wim",
-      "seasonId": "1996-1997",
-      "sticker": "https://www.laststicker.com/i/cards/472/524.jpg"
-    },
-    {
-      "teamId": "wim",
-      "seasonId": "1997-1998",
-      "sticker": "https://www.laststicker.com/i/cards/86/492.jpg"
-    }
-  ],
   "jon-goodman-0209": [
     {
       "teamId": "wim",
@@ -11053,23 +11643,6 @@
       "teamId": "sou",
       "seasonId": "1995-1996",
       "sticker": "https://www.laststicker.com/i/cards/312/253.jpg"
-    }
-  ],
-  "neil-shipperley-17ab": [
-    {
-      "teamId": "sou",
-      "seasonId": "1995-1996",
-      "sticker": "https://www.laststicker.com/i/cards/312/257.jpg"
-    },
-    {
-      "teamId": "sou",
-      "seasonId": "1996-1997",
-      "sticker": "https://www.laststicker.com/i/cards/472/426.jpg"
-    },
-    {
-      "teamId": "cry",
-      "seasonId": "1997-1998",
-      "sticker": "https://www.laststicker.com/i/cards/86/188.jpg"
     }
   ],
   "kevin-hitchcock-5148": [
@@ -11541,6 +12114,13 @@
       "sticker": "https://www.laststicker.com/i/cards/498/112.jpg"
     }
   ],
+  "isaias-dfe6": [
+    {
+      "teamId": "cov",
+      "seasonId": "1995-1996",
+      "sticker": "https://www.laststicker.com/i/cards/312/416.jpg"
+    }
+  ],
   "paul-telfer-fcf9": [
     {
       "teamId": "cov",
@@ -11597,33 +12177,6 @@
       "teamId": "ful",
       "seasonId": "2001-2002",
       "sticker": "https://www.laststicker.com/i/cards/507/172.jpg"
-    }
-  ],
-  "garry-flitcroft-777e": [
-    {
-      "teamId": "mci",
-      "seasonId": "1995-1996",
-      "sticker": "https://www.laststicker.com/i/cards/312/439.jpg"
-    },
-    {
-      "teamId": "blb",
-      "seasonId": "1996-1997",
-      "sticker": "https://www.laststicker.com/i/cards/472/68.jpg"
-    },
-    {
-      "teamId": "blb",
-      "seasonId": "1997-1998",
-      "sticker": "https://www.laststicker.com/i/cards/86/91.jpg"
-    },
-    {
-      "teamId": "blb",
-      "seasonId": "1998-1999",
-      "sticker": "https://www.laststicker.com/i/cards/87/69.jpg"
-    },
-    {
-      "teamId": "blb",
-      "seasonId": "2001-2002",
-      "sticker": "https://www.laststicker.com/i/cards/507/53.jpg"
     }
   ],
   "michael-brown-3858": [
@@ -11763,6 +12316,18 @@
       "sticker": "https://www.laststicker.com/i/cards/312/498.jpg"
     }
   ],
+  "juninho-paulista-41e3": [
+    {
+      "teamId": "mid",
+      "seasonId": "1995-1996",
+      "sticker": "https://www.laststicker.com/i/cards/312/500.jpg"
+    },
+    {
+      "teamId": "mid",
+      "seasonId": "1996-1997",
+      "sticker": "https://www.laststicker.com/i/cards/472/321.jpg"
+    }
+  ],
   "keith-branagan-40bc": [
     {
       "teamId": "bol",
@@ -11850,6 +12415,13 @@
       "sticker": "https://www.laststicker.com/i/cards/312/516.jpg"
     }
   ],
+  "steve-mcanespie-84a0": [
+    {
+      "teamId": "bol",
+      "seasonId": "1995-1996",
+      "sticker": "https://www.laststicker.com/i/cards/312/517.jpg"
+    }
+  ],
   "alan-thompson-00fc": [
     {
       "teamId": "bol",
@@ -11896,6 +12468,13 @@
       "teamId": "avl",
       "seasonId": "1996-1997",
       "sticker": "https://www.laststicker.com/i/cards/472/44.jpg"
+    }
+  ],
+  "david-lee-eb39": [
+    {
+      "teamId": "bol",
+      "seasonId": "1995-1996",
+      "sticker": "https://www.laststicker.com/i/cards/312/522.jpg"
     }
   ],
   "fabian-de-freitas-7c1b": [
@@ -11973,6 +12552,13 @@
       "teamId": "avl",
       "seasonId": "1997-1998",
       "sticker": "https://www.laststicker.com/i/cards/86/43.jpg"
+    }
+  ],
+  "giorgos-donis-a043": [
+    {
+      "teamId": "blb",
+      "seasonId": "1996-1997",
+      "sticker": "https://www.laststicker.com/i/cards/472/67.jpg"
     }
   ],
   "graham-fenton-0449": [
@@ -12094,6 +12680,13 @@
       "teamId": "cov",
       "seasonId": "1996-1997",
       "sticker": "https://www.laststicker.com/i/cards/472/119.jpg"
+    }
+  ],
+  "andy-ducros-e03c": [
+    {
+      "teamId": "cov",
+      "seasonId": "1996-1997",
+      "sticker": "https://www.laststicker.com/i/cards/472/126.jpg"
     }
   ],
   "russell-hoult-6bec": [
@@ -12284,6 +12877,11 @@
       "teamId": "der",
       "seasonId": "1996-1997",
       "sticker": "https://www.laststicker.com/i/cards/472/146.jpg"
+    },
+    {
+      "teamId": "der",
+      "seasonId": "1997-1998",
+      "sticker": "https://www.laststicker.com/i/cards/86/207.jpg"
     }
   ],
   "dean-sturridge-45e0": [
@@ -12486,6 +13084,38 @@
       "teamId": "lei",
       "seasonId": "1996-1997",
       "sticker": "https://www.laststicker.com/i/cards/472/219.jpg"
+    }
+  ],
+  "muzzy-izzet-e139": [
+    {
+      "teamId": "lei",
+      "seasonId": "1996-1997",
+      "sticker": "https://www.laststicker.com/i/cards/472/222.jpg"
+    },
+    {
+      "teamId": "lei",
+      "seasonId": "1997-1998",
+      "sticker": "https://www.laststicker.com/i/cards/86/300.jpg"
+    },
+    {
+      "teamId": "lei",
+      "seasonId": "1998-1999",
+      "sticker": "https://www.laststicker.com/i/cards/87/250.jpg"
+    },
+    {
+      "teamId": "lei",
+      "seasonId": "1999-2000",
+      "sticker": "https://www.laststicker.com/i/cards/88/224.jpg"
+    },
+    {
+      "teamId": "lei",
+      "seasonId": "2000-2001",
+      "sticker": "https://www.laststicker.com/i/cards/498/222.jpg"
+    },
+    {
+      "teamId": "lei",
+      "seasonId": "2001-2002",
+      "sticker": "https://www.laststicker.com/i/cards/507/259.jpg"
     }
   ],
   "neil-lennon-de6d": [
@@ -12697,43 +13327,11 @@
       "sticker": "https://www.laststicker.com/i/cards/472/309.jpg"
     }
   ],
-  "emerson-moises-costa-dd34": [
+  "emerson-dd34": [
     {
       "teamId": "mid",
       "seasonId": "1996-1997",
       "sticker": "https://www.laststicker.com/i/cards/472/317.jpg"
-    }
-  ],
-  "nick-barmby-5920": [
-    {
-      "teamId": "mid",
-      "seasonId": "1996-1997",
-      "sticker": "https://www.laststicker.com/i/cards/472/320.jpg"
-    },
-    {
-      "teamId": "eve",
-      "seasonId": "1997-1998",
-      "sticker": "https://www.laststicker.com/i/cards/86/237.jpg"
-    },
-    {
-      "teamId": "eve",
-      "seasonId": "1998-1999",
-      "sticker": "https://www.laststicker.com/i/cards/87/204.jpg"
-    },
-    {
-      "teamId": "eve",
-      "seasonId": "1999-2000",
-      "sticker": "https://www.laststicker.com/i/cards/88/171.jpg"
-    },
-    {
-      "teamId": "liv",
-      "seasonId": "2000-2001",
-      "sticker": "https://www.laststicker.com/i/cards/498/245.jpg"
-    },
-    {
-      "teamId": "liv",
-      "seasonId": "2001-2002",
-      "sticker": "https://www.laststicker.com/i/cards/507/276.jpg"
     }
   ],
   "fabrizio-ravanelli-f9ba": [
@@ -12880,6 +13478,33 @@
       "sticker": "https://www.laststicker.com/i/cards/507/355.jpg"
     }
   ],
+  "matt-oakley-ec57": [
+    {
+      "teamId": "sou",
+      "seasonId": "1996-1997",
+      "sticker": "https://www.laststicker.com/i/cards/472/428.jpg"
+    },
+    {
+      "teamId": "sou",
+      "seasonId": "1997-1998",
+      "sticker": "https://www.laststicker.com/i/cards/86/420.jpg"
+    },
+    {
+      "teamId": "sou",
+      "seasonId": "1998-1999",
+      "sticker": "https://www.laststicker.com/i/cards/87/451.jpg"
+    },
+    {
+      "teamId": "sou",
+      "seasonId": "2000-2001",
+      "sticker": "https://www.laststicker.com/i/cards/498/341.jpg"
+    },
+    {
+      "teamId": "sou",
+      "seasonId": "2001-2002",
+      "sticker": "https://www.laststicker.com/i/cards/507/361.jpg"
+    }
+  ],
   "dariusz-kubicki-f67c": [
     {
       "teamId": "sun",
@@ -13012,6 +13637,13 @@
       "sticker": "https://www.laststicker.com/i/cards/87/198.jpg"
     }
   ],
+  "paulo-futre-1401": [
+    {
+      "teamId": "whu",
+      "seasonId": "1996-1997",
+      "sticker": "https://www.laststicker.com/i/cards/472/500.jpg"
+    }
+  ],
   "florin-raducioiu-22c3": [
     {
       "teamId": "whu",
@@ -13112,6 +13744,13 @@
       "teamId": "wim",
       "seasonId": "1996-1997",
       "sticker": "https://www.laststicker.com/i/cards/472/523.jpg"
+    }
+  ],
+  "alexander-manninger-0332": [
+    {
+      "teamId": "ars",
+      "seasonId": "1997-1998",
+      "sticker": "https://www.laststicker.com/i/cards/86/9.jpg"
     }
   ],
   "gilles-grimandi-ec99": [
@@ -13220,7 +13859,21 @@
       "sticker": "https://www.laststicker.com/i/cards/86/57.jpg"
     }
   ],
-  "adrian-moses-469d": [
+  "nicky-eaden-0941": [
+    {
+      "teamId": "bar",
+      "seasonId": "1997-1998",
+      "sticker": "https://www.laststicker.com/i/cards/86/58.jpg"
+    }
+  ],
+  "matty-appleby-4efa": [
+    {
+      "teamId": "bar",
+      "seasonId": "1997-1998",
+      "sticker": "https://www.laststicker.com/i/cards/86/59.jpg"
+    }
+  ],
+  "adie-moses-469d": [
     {
       "teamId": "bar",
       "seasonId": "1997-1998",
@@ -13794,6 +14447,13 @@
       "sticker": "https://www.laststicker.com/i/cards/88/427.jpg"
     }
   ],
+  "michael-branch-1eb7": [
+    {
+      "teamId": "eve",
+      "seasonId": "1997-1998",
+      "sticker": "https://www.laststicker.com/i/cards/86/239.jpg"
+    }
+  ],
   "david-robertson-1a65": [
     {
       "teamId": "lee",
@@ -13816,6 +14476,18 @@
       "teamId": "lee",
       "seasonId": "1998-1999",
       "sticker": "https://www.laststicker.com/i/cards/87/225.jpg"
+    }
+  ],
+  "bruno-ribeiro-e958": [
+    {
+      "teamId": "lee",
+      "seasonId": "1997-1998",
+      "sticker": "https://www.laststicker.com/i/cards/86/280.jpg"
+    },
+    {
+      "teamId": "lee",
+      "seasonId": "1998-1999",
+      "sticker": "https://www.laststicker.com/i/cards/87/228.jpg"
     }
   ],
   "harry-kewell-4427": [
@@ -13901,33 +14573,6 @@
       "sticker": "https://www.laststicker.com/i/cards/507/254.jpg"
     }
   ],
-  "muzzy-izzet-e139": [
-    {
-      "teamId": "lei",
-      "seasonId": "1997-1998",
-      "sticker": "https://www.laststicker.com/i/cards/86/300.jpg"
-    },
-    {
-      "teamId": "lei",
-      "seasonId": "1998-1999",
-      "sticker": "https://www.laststicker.com/i/cards/87/250.jpg"
-    },
-    {
-      "teamId": "lei",
-      "seasonId": "1999-2000",
-      "sticker": "https://www.laststicker.com/i/cards/88/224.jpg"
-    },
-    {
-      "teamId": "lei",
-      "seasonId": "2000-2001",
-      "sticker": "https://www.laststicker.com/i/cards/498/222.jpg"
-    },
-    {
-      "teamId": "lei",
-      "seasonId": "2001-2002",
-      "sticker": "https://www.laststicker.com/i/cards/507/259.jpg"
-    }
-  ],
   "robbie-savage-151c": [
     {
       "teamId": "lei",
@@ -13982,6 +14627,18 @@
       "teamId": "liv",
       "seasonId": "1997-1998",
       "sticker": "https://www.laststicker.com/i/cards/86/320.jpg"
+    }
+  ],
+  "karl-heinz-riedle-4afb": [
+    {
+      "teamId": "liv",
+      "seasonId": "1997-1998",
+      "sticker": "https://www.laststicker.com/i/cards/86/332.jpg"
+    },
+    {
+      "teamId": "liv",
+      "seasonId": "1998-1999",
+      "sticker": "https://www.laststicker.com/i/cards/87/303.jpg"
     }
   ],
   "michael-owen-e317": [
@@ -14181,7 +14838,7 @@
       "sticker": "https://www.laststicker.com/i/cards/86/416.jpg"
     }
   ],
-  "michael-evans-a29e": [
+  "mickey-evans-a29e": [
     {
       "teamId": "sou",
       "seasonId": "1997-1998",
@@ -14276,6 +14933,13 @@
       "teamId": "tot",
       "seasonId": "1999-2000",
       "sticker": "https://www.laststicker.com/i/cards/88/446.jpg"
+    }
+  ],
+  "jose-dominguez-40a5": [
+    {
+      "teamId": "tot",
+      "seasonId": "1997-1998",
+      "sticker": "https://www.laststicker.com/i/cards/86/450.jpg"
     }
   ],
   "steffen-iversen-5260": [
@@ -14383,18 +15047,6 @@
       "sticker": "https://www.laststicker.com/i/cards/87/528.jpg"
     }
   ],
-  "neal-ardley-46d7": [
-    {
-      "teamId": "wim",
-      "seasonId": "1997-1998",
-      "sticker": "https://www.laststicker.com/i/cards/86/495.jpg"
-    },
-    {
-      "teamId": "wim",
-      "seasonId": "1998-1999",
-      "sticker": "https://www.laststicker.com/i/cards/87/531.jpg"
-    }
-  ],
   "jason-euell-f34b": [
     {
       "teamId": "wim",
@@ -14470,6 +15122,13 @@
       "sticker": "https://www.laststicker.com/i/cards/507/35.jpg"
     }
   ],
+  "fabio-ferraresi-4c87": [
+    {
+      "teamId": "avl",
+      "seasonId": "1998-1999",
+      "sticker": "https://www.laststicker.com/i/cards/87/47.jpg"
+    }
+  ],
   "darius-vassell-3b7d": [
     {
       "teamId": "avl",
@@ -14523,6 +15182,28 @@
       "teamId": "cha",
       "seasonId": "1998-1999",
       "sticker": "https://www.laststicker.com/i/cards/87/88.jpg"
+    }
+  ],
+  "danny-mills-5bee": [
+    {
+      "teamId": "cha",
+      "seasonId": "1998-1999",
+      "sticker": "https://www.laststicker.com/i/cards/87/89.jpg"
+    },
+    {
+      "teamId": "lee",
+      "seasonId": "1999-2000",
+      "sticker": "https://www.laststicker.com/i/cards/88/192.jpg"
+    },
+    {
+      "teamId": "lee",
+      "seasonId": "2000-2001",
+      "sticker": "https://www.laststicker.com/i/cards/498/189.jpg"
+    },
+    {
+      "teamId": "lee",
+      "seasonId": "2001-2002",
+      "sticker": "https://www.laststicker.com/i/cards/507/236.jpg"
     }
   ],
   "richard-rufus-e73a": [
@@ -14682,6 +15363,23 @@
       "teamId": "cov",
       "seasonId": "1998-1999",
       "sticker": "https://www.laststicker.com/i/cards/87/151.jpg"
+    }
+  ],
+  "horacio-carbonari-b5cc": [
+    {
+      "teamId": "der",
+      "seasonId": "1998-1999",
+      "sticker": "https://www.laststicker.com/i/cards/87/169.jpg"
+    },
+    {
+      "teamId": "der",
+      "seasonId": "1999-2000",
+      "sticker": "https://www.laststicker.com/i/cards/88/140.jpg"
+    },
+    {
+      "teamId": "der",
+      "seasonId": "2000-2001",
+      "sticker": "https://www.laststicker.com/i/cards/498/128.jpg"
     }
   ],
   "rory-delap-bd29": [
@@ -15048,11 +15746,16 @@
       "sticker": "https://www.laststicker.com/i/cards/87/369.jpg"
     }
   ],
-  "nikolaos-dabizas-edb1": [
+  "niko-dabizas-edb1": [
     {
       "teamId": "new",
       "seasonId": "1998-1999",
       "sticker": "https://www.laststicker.com/i/cards/87/372.jpg"
+    },
+    {
+      "teamId": "new",
+      "seasonId": "2001-2002",
+      "sticker": "https://www.laststicker.com/i/cards/507/333.jpg"
     }
   ],
   "dietmar-hamann-7bc4": [
@@ -15105,6 +15808,13 @@
       "sticker": "https://www.laststicker.com/i/cards/87/400.jpg"
     }
   ],
+  "craig-armstrong-b14e": [
+    {
+      "teamId": "nfo",
+      "seasonId": "1998-1999",
+      "sticker": "https://www.laststicker.com/i/cards/87/402.jpg"
+    }
+  ],
   "thierry-bonalair-6c0e": [
     {
       "teamId": "nfo",
@@ -15117,6 +15827,28 @@
       "teamId": "nfo",
       "seasonId": "1998-1999",
       "sticker": "https://www.laststicker.com/i/cards/87/407.jpg"
+    }
+  ],
+  "emerson-thome-4748": [
+    {
+      "teamId": "shw",
+      "seasonId": "1998-1999",
+      "sticker": "https://www.laststicker.com/i/cards/87/424.jpg"
+    },
+    {
+      "teamId": "shw",
+      "seasonId": "1999-2000",
+      "sticker": "https://www.laststicker.com/i/cards/88/366.jpg"
+    },
+    {
+      "teamId": "sun",
+      "seasonId": "2000-2001",
+      "sticker": "https://www.laststicker.com/i/cards/498/357.jpg"
+    },
+    {
+      "teamId": "sun",
+      "seasonId": "2001-2002",
+      "sticker": "https://www.laststicker.com/i/cards/507/376.jpg"
     }
   ],
   "wim-jonk-bd96": [
@@ -15219,7 +15951,7 @@
       "sticker": "https://www.laststicker.com/i/cards/87/536.jpg"
     }
   ],
-  "sylvinho-mendes-campos-junior-dd95": [
+  "sylvinho-dd95": [
     {
       "teamId": "ars",
       "seasonId": "1999-2000",
@@ -15236,6 +15968,23 @@
       "teamId": "ars",
       "seasonId": "1999-2000",
       "sticker": "https://www.laststicker.com/i/cards/88/14.jpg"
+    }
+  ],
+  "freddie-ljungberg-34a8": [
+    {
+      "teamId": "ars",
+      "seasonId": "1999-2000",
+      "sticker": "https://www.laststicker.com/i/cards/88/19.jpg"
+    },
+    {
+      "teamId": "ars",
+      "seasonId": "2000-2001",
+      "sticker": "https://www.laststicker.com/i/cards/498/16.jpg"
+    },
+    {
+      "teamId": "ars",
+      "seasonId": "2001-2002",
+      "sticker": "https://www.laststicker.com/i/cards/507/13.jpg"
     }
   ],
   "nwankwo-kanu-aa65": [
@@ -15325,6 +16074,13 @@
       "sticker": "https://www.laststicker.com/i/cards/88/61.jpg"
     }
   ],
+  "ashley-westwood-d04b": [
+    {
+      "teamId": "bra",
+      "seasonId": "1999-2000",
+      "sticker": "https://www.laststicker.com/i/cards/88/65.jpg"
+    }
+  ],
   "gareth-whalley-f6d2": [
     {
       "teamId": "bra",
@@ -15408,6 +16164,13 @@
       "sticker": "https://www.laststicker.com/i/cards/88/98.jpg"
     }
   ],
+  "mohammed-konjic-ca29": [
+    {
+      "teamId": "cov",
+      "seasonId": "1999-2000",
+      "sticker": "https://www.laststicker.com/i/cards/88/119.jpg"
+    }
+  ],
   "youssef-chippo-be4b": [
     {
       "teamId": "cov",
@@ -15418,6 +16181,30 @@
       "teamId": "cov",
       "seasonId": "2000-2001",
       "sticker": "https://www.laststicker.com/i/cards/498/115.jpg"
+    }
+  ],
+  "steve-froggatt-1577": [
+    {
+      "teamId": "cov",
+      "seasonId": "1999-2000",
+      "sticker": "https://www.laststicker.com/i/cards/88/121.jpg"
+    }
+  ],
+  "mustapha-hadji-a792": [
+    {
+      "teamId": "cov",
+      "seasonId": "1999-2000",
+      "sticker": "https://www.laststicker.com/i/cards/88/122.jpg"
+    },
+    {
+      "teamId": "cov",
+      "seasonId": "2000-2001",
+      "sticker": "https://www.laststicker.com/i/cards/498/116.jpg"
+    },
+    {
+      "teamId": "avl",
+      "seasonId": "2001-2002",
+      "sticker": "https://www.laststicker.com/i/cards/507/34.jpg"
     }
   ],
   "john-aloisi-318d": [
@@ -15442,6 +16229,13 @@
       "teamId": "lee",
       "seasonId": "2001-2002",
       "sticker": "https://www.laststicker.com/i/cards/507/246.jpg"
+    }
+  ],
+  "vassilis-borbokis-48a8": [
+    {
+      "teamId": "der",
+      "seasonId": "1999-2000",
+      "sticker": "https://www.laststicker.com/i/cards/88/139.jpg"
     }
   ],
   "stefan-schnoor-b614": [
@@ -15699,23 +16493,6 @@
       "sticker": "https://www.laststicker.com/i/cards/88/257.jpg"
     }
   ],
-  "andrew-cole-710b": [
-    {
-      "teamId": "mun",
-      "seasonId": "1999-2000",
-      "sticker": "https://www.laststicker.com/i/cards/88/299.jpg"
-    },
-    {
-      "teamId": "mun",
-      "seasonId": "2000-2001",
-      "sticker": "https://www.laststicker.com/i/cards/498/287.jpg"
-    },
-    {
-      "teamId": "mun",
-      "seasonId": "2001-2002",
-      "sticker": "https://www.laststicker.com/i/cards/507/305.jpg"
-    }
-  ],
   "robbie-stockdale-9eb6": [
     {
       "teamId": "mid",
@@ -15814,6 +16591,18 @@
       "sticker": "https://www.laststicker.com/i/cards/88/343.jpg"
     }
   ],
+  "andy-griffin-81fb": [
+    {
+      "teamId": "new",
+      "seasonId": "1999-2000",
+      "sticker": "https://www.laststicker.com/i/cards/88/344.jpg"
+    },
+    {
+      "teamId": "new",
+      "seasonId": "2000-2001",
+      "sticker": "https://www.laststicker.com/i/cards/498/314.jpg"
+    }
+  ],
   "kieron-dyer-07c7": [
     {
       "teamId": "new",
@@ -15889,6 +16678,13 @@
       "teamId": "eve",
       "seasonId": "2001-2002",
       "sticker": "https://www.laststicker.com/i/cards/507/153.jpg"
+    }
+  ],
+  "simon-donnelly-9402": [
+    {
+      "teamId": "shw",
+      "seasonId": "1999-2000",
+      "sticker": "https://www.laststicker.com/i/cards/88/375.jpg"
     }
   ],
   "gerald-sibon-757a": [
@@ -15975,7 +16771,7 @@
       "sticker": "https://www.laststicker.com/i/cards/507/359.jpg"
     }
   ],
-  "luis-boa-morte-pereira-d9b2": [
+  "luis-boa-morte-d9b2": [
     {
       "teamId": "sou",
       "seasonId": "1999-2000",
@@ -16110,18 +16906,6 @@
       "sticker": "https://www.laststicker.com/i/cards/507/387.jpg"
     }
   ],
-  "mauricio-taricco-59e8": [
-    {
-      "teamId": "tot",
-      "seasonId": "1999-2000",
-      "sticker": "https://www.laststicker.com/i/cards/88/448.jpg"
-    },
-    {
-      "teamId": "tot",
-      "seasonId": "2000-2001",
-      "sticker": "https://www.laststicker.com/i/cards/498/379.jpg"
-    }
-  ],
   "steffen-freund-36dd": [
     {
       "teamId": "tot",
@@ -16202,6 +16986,13 @@
       "teamId": "wat",
       "seasonId": "1999-2000",
       "sticker": "https://www.laststicker.com/i/cards/88/477.jpg"
+    }
+  ],
+  "alexandre-bonnot-330f": [
+    {
+      "teamId": "wat",
+      "seasonId": "1999-2000",
+      "sticker": "https://www.laststicker.com/i/cards/88/478.jpg"
     }
   ],
   "johann-gudmundsson-4ad6": [
@@ -16315,6 +17106,18 @@
       "sticker": "https://www.laststicker.com/i/cards/507/15.jpg"
     }
   ],
+  "lauren-bc15": [
+    {
+      "teamId": "ars",
+      "seasonId": "2000-2001",
+      "sticker": "https://www.laststicker.com/i/cards/498/18.jpg"
+    },
+    {
+      "teamId": "ars",
+      "seasonId": "2001-2002",
+      "sticker": "https://www.laststicker.com/i/cards/507/10.jpg"
+    }
+  ],
   "sylvain-wiltord-ff4b": [
     {
       "teamId": "ars",
@@ -16327,11 +17130,49 @@
       "sticker": "https://www.laststicker.com/i/cards/507/22.jpg"
     }
   ],
+  "jlloyd-samuel-639f": [
+    {
+      "teamId": "avl",
+      "seasonId": "2000-2001",
+      "sticker": "https://www.laststicker.com/i/cards/498/29.jpg"
+    }
+  ],
+  "ozalan-alpay-725b": [
+    {
+      "teamId": "avl",
+      "seasonId": "2000-2001",
+      "sticker": "https://www.laststicker.com/i/cards/498/32.jpg"
+    },
+    {
+      "teamId": "avl",
+      "seasonId": "2001-2002",
+      "sticker": "https://www.laststicker.com/i/cards/507/26.jpg"
+    }
+  ],
   "luc-nilis-00f0": [
     {
       "teamId": "avl",
       "seasonId": "2000-2001",
       "sticker": "https://www.laststicker.com/i/cards/498/40.jpg"
+    }
+  ],
+  "matt-clarke-8b1c": [
+    {
+      "teamId": "bra",
+      "seasonId": "2000-2001",
+      "sticker": "https://www.laststicker.com/i/cards/498/47.jpg"
+    }
+  ],
+  "andy-obrien-a26a": [
+    {
+      "teamId": "bra",
+      "seasonId": "2000-2001",
+      "sticker": "https://www.laststicker.com/i/cards/498/49.jpg"
+    },
+    {
+      "teamId": "new",
+      "seasonId": "2001-2002",
+      "sticker": "https://www.laststicker.com/i/cards/507/337.jpg"
     }
   ],
   "wayne-jacobs-fa5e": [
@@ -16491,6 +17332,13 @@
       "sticker": "https://www.laststicker.com/i/cards/498/118.jpg"
     }
   ],
+  "ysrael-zuniga-e411": [
+    {
+      "teamId": "cov",
+      "seasonId": "2000-2001",
+      "sticker": "https://www.laststicker.com/i/cards/498/119.jpg"
+    }
+  ],
   "cedric-roussel-d71c": [
     {
       "teamId": "cov",
@@ -16508,13 +17356,6 @@
       "teamId": "new",
       "seasonId": "2001-2002",
       "sticker": "https://www.laststicker.com/i/cards/507/346.jpg"
-    }
-  ],
-  "horacio-carbonari-b5cc": [
-    {
-      "teamId": "der",
-      "seasonId": "2000-2001",
-      "sticker": "https://www.laststicker.com/i/cards/498/128.jpg"
     }
   ],
   "bjorn-otto-bragstad-fefa": [
@@ -16575,6 +17416,18 @@
       "teamId": "der",
       "seasonId": "2001-2002",
       "sticker": "https://www.laststicker.com/i/cards/507/139.jpg"
+    }
+  ],
+  "abel-xavier-844a": [
+    {
+      "teamId": "eve",
+      "seasonId": "2000-2001",
+      "sticker": "https://www.laststicker.com/i/cards/498/152.jpg"
+    },
+    {
+      "teamId": "eve",
+      "seasonId": "2001-2002",
+      "sticker": "https://www.laststicker.com/i/cards/507/152.jpg"
     }
   ],
   "alex-nyarko-d00e": [
@@ -16658,6 +17511,18 @@
       "sticker": "https://www.laststicker.com/i/cards/507/186.jpg"
     }
   ],
+  "jamie-clapham-f5f9": [
+    {
+      "teamId": "ips",
+      "seasonId": "2000-2001",
+      "sticker": "https://www.laststicker.com/i/cards/498/173.jpg"
+    },
+    {
+      "teamId": "ips",
+      "seasonId": "2001-2002",
+      "sticker": "https://www.laststicker.com/i/cards/507/187.jpg"
+    }
+  ],
   "fabian-wilnis-c946": [
     {
       "teamId": "ips",
@@ -16723,6 +17588,11 @@
       "teamId": "ips",
       "seasonId": "2000-2001",
       "sticker": "https://www.laststicker.com/i/cards/498/180.jpg"
+    },
+    {
+      "teamId": "lei",
+      "seasonId": "2001-2002",
+      "sticker": "https://www.laststicker.com/i/cards/507/268.jpg"
     }
   ],
   "david-johnson-f3d5": [
@@ -16730,6 +17600,18 @@
       "teamId": "ips",
       "seasonId": "2000-2001",
       "sticker": "https://www.laststicker.com/i/cards/498/181.jpg"
+    }
+  ],
+  "marcus-stewart-336e": [
+    {
+      "teamId": "ips",
+      "seasonId": "2000-2001",
+      "sticker": "https://www.laststicker.com/i/cards/498/182.jpg"
+    },
+    {
+      "teamId": "ips",
+      "seasonId": "2001-2002",
+      "sticker": "https://www.laststicker.com/i/cards/507/202.jpg"
     }
   ],
   "mark-viduka-0be7": [
@@ -16768,6 +17650,13 @@
       "teamId": "liv",
       "seasonId": "2001-2002",
       "sticker": "https://www.laststicker.com/i/cards/507/272.jpg"
+    }
+  ],
+  "nicky-weaver-ccc5": [
+    {
+      "teamId": "mci",
+      "seasonId": "2000-2001",
+      "sticker": "https://www.laststicker.com/i/cards/498/253.jpg"
     }
   ],
   "paul-ritchie-066b": [
@@ -16891,6 +17780,18 @@
       "teamId": "new",
       "seasonId": "2000-2001",
       "sticker": "https://www.laststicker.com/i/cards/498/324.jpg"
+    }
+  ],
+  "lomana-lua-lua-6103": [
+    {
+      "teamId": "new",
+      "seasonId": "2000-2001",
+      "sticker": "https://www.laststicker.com/i/cards/498/325.jpg"
+    },
+    {
+      "teamId": "new",
+      "seasonId": "2001-2002",
+      "sticker": "https://www.laststicker.com/i/cards/507/344.jpg"
     }
   ],
   "daniel-cordone-e251": [
@@ -17022,6 +17923,18 @@
       "sticker": "https://www.laststicker.com/i/cards/507/400.jpg"
     }
   ],
+  "serhiy-rebrov-6cdf": [
+    {
+      "teamId": "tot",
+      "seasonId": "2000-2001",
+      "sticker": "https://www.laststicker.com/i/cards/498/388.jpg"
+    },
+    {
+      "teamId": "tot",
+      "seasonId": "2001-2002",
+      "sticker": "https://www.laststicker.com/i/cards/507/407.jpg"
+    }
+  ],
   "michael-carrick-8078": [
     {
       "teamId": "whu",
@@ -17102,7 +18015,7 @@
       "sticker": "https://www.laststicker.com/i/cards/507/52.jpg"
     }
   ],
-  "tugay-kerimoglou-b1af": [
+  "tugay-b1af": [
     {
       "teamId": "blb",
       "seasonId": "2001-2002",
@@ -17368,6 +18281,13 @@
       "sticker": "https://www.laststicker.com/i/cards/507/169.jpg"
     }
   ],
+  "abdeslam-ouaddou-ac3f": [
+    {
+      "teamId": "ful",
+      "seasonId": "2001-2002",
+      "sticker": "https://www.laststicker.com/i/cards/507/171.jpg"
+    }
+  ],
   "sean-davis-c8c5": [
     {
       "teamId": "ful",
@@ -17604,6 +18524,13 @@
       "teamId": "new",
       "seasonId": "2001-2002",
       "sticker": "https://www.laststicker.com/i/cards/507/343.jpg"
+    }
+  ],
+  "shola-ameobi-a463": [
+    {
+      "teamId": "new",
+      "seasonId": "2001-2002",
+      "sticker": "https://www.laststicker.com/i/cards/507/345.jpg"
     }
   ],
   "anders-svensson-a8f8": [
