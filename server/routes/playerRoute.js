@@ -1,4 +1,4 @@
-const { players, stickers, squads } = require('../dataset')
+const { players, stickers, squads, hatTricks } = require('../dataset')
 const { seasonUrl, teamSquadUrl, teamUrl } = require('../lib/urls')
 
 module.exports = function playerRoute(request, response) {
@@ -26,6 +26,8 @@ module.exports = function playerRoute(request, response) {
       stats.goals += member.goals
       stats.assists += member.assists
     })
+
+    stats.hatTricks = hatTricks.filter((hatTrick) => hatTrick.playerId === playerId).length
 
     const album = (stickers[playerId] || []).map((item) => (
       {
