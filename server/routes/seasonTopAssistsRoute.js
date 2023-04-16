@@ -1,5 +1,6 @@
-const squads = require('../../data/squads.json')
+const pick = require('../lib/object-pick')
 const restfulUri = require('../lib/baseUrl')
+const squads = require('../../data/squads.json')
 
 module.exports = function seasonTopAssistsRoute(request, response) {
   const { seasonId } = request.params
@@ -28,7 +29,8 @@ module.exports = function seasonTopAssistsRoute(request, response) {
 
     const assistersData = assisters.slice(0, 10).map((player) => ({
       player: restfulUri(request, 'players', player.playerId),
-      assists: player.assists,
+      ...pick(player, 'assists', 'goals', 'appearances'),
+      mpa: Math.round((player.appearances * 90) / player.assists),
     }))
 
     response.json(assistersData)
