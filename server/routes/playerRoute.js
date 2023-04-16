@@ -1,5 +1,5 @@
-const { players, stickers, squads, hatTricks } = require('../dataset')
-const { seasonUrl, teamSquadUrl, teamUrl } = require('../lib/urls')
+const { players, squads } = require('../dataset')
+const { playerAlbumUrl, playerStatsUrl, seasonUrl, teamSquadUrl } = require('../lib/urls')
 
 module.exports = function playerRoute(request, response) {
   const { playerId } = request.params
@@ -10,34 +10,18 @@ module.exports = function playerRoute(request, response) {
       squad.players.some((p) => p.playerId === playerId)
     )
 
-    const history = []
-    const stats = { appearances: 0, cleanSheets: 0, goals: 0, assists: 0 }
-
-    squadHistory.forEach((squad) => {
-      const member = squad.players.find((p) => p.playerId === playerId)
-
-      history.push({
+    const history = squadHistory.map((squad) => (
+      {
         season: seasonUrl(squad.seasonId),
         squad: teamSquadUrl(squad.teamId, squad.seasonId),
-      })
-
-      stats.appearances += member.appearances
-      stats.cleanSheets += member.cleanSheets
-      stats.goals += member.goals
-      stats.assists += member.assists
-    })
-
-    stats.hatTricks = hatTricks.filter((hatTrick) => hatTrick.playerId === playerId).length
-
-    const album = (stickers[playerId] || []).map((item) => (
-      {
-        season: seasonUrl(item.seasonId),
-        team: teamUrl(item.teamId),
-        url: item.sticker,
       }
     ))
 
-    response.json({ playerId, ...player, history, stats, album })
+    const statistics = playerStatsUrl(playerId)
+
+    const album = playerAlbumUrl(playerId)
+
+    response.json({ ...player, history, statistics, album })
   } else {
     response.sendStatus(404)
   }

@@ -2,6 +2,8 @@ const express = require('express')
 const {
   playerRoute,
   playersRoute,
+  playerAlbumRoute,
+  playerStatsRoute,
   seasonsRoute,
   seasonRoute,
   seasonHatTricksRoute,
@@ -28,6 +30,10 @@ app.get('/', (request, response) => {
 app.get('/players', playersRoute)
 
 app.get('/players/:playerId', playerRoute)
+
+app.get('/players/:playerId/album', playerAlbumRoute)
+
+app.get('/players/:playerId/statistics', playerStatsRoute)
 
 app.get('/teams', teamsRoute)
 

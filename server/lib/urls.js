@@ -10,6 +10,14 @@ function playerUrl(playerId) {
   return join(API_URL, '/players', playerId)
 }
 
+function playerAlbumUrl(playerId) {
+  return join(API_URL, '/players', playerId, '/album')
+}
+
+function playerStatsUrl(playerId) {
+  return join(API_URL, '/players', playerId, '/statistics')
+}
+
 function teamsUrl() {
   return join(API_URL, '/teams',)
 }
@@ -53,6 +61,8 @@ function seasonTopScorersUrl(seasonId) {
 module.exports = {
   playersUrl,
   playerUrl,
+  playerAlbumUrl,
+  playerStatsUrl,
   teamsUrl,
   teamUrl,
   teamSquadsUrl,
