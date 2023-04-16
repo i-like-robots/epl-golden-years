@@ -23,6 +23,7 @@ module.exports = function playerRoute(request, response) {
 
     response.send({ ...player, history, statistics, album })
   } else {
-    response.sendStatus(404)
+    response.code(404)
+    response.send({ error: 'Player not found' })
   }
 }

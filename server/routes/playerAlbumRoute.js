@@ -16,6 +16,7 @@ module.exports = function playerAlbumRoute(request, response) {
 
     response.send(albumData)
   } else {
-    response.sendStatus(404)
+    response.code(404)
+    response.send({ error: 'Player not found' })
   }
 }

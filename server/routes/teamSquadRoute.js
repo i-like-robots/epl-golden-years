@@ -25,6 +25,7 @@ module.exports = function teamSquadRoute(request, response) {
 
     response.send(squadData)
   } else {
-    response.sendStatus(404)
+    response.code(404)
+    response.send({ error: 'Squad not found' })
   }
 }

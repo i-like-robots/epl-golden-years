@@ -35,6 +35,7 @@ module.exports = function seasonTopAssistsRoute(request, response) {
 
     response.send(assistsData)
   } else {
-    response.sendStatus(404)
+    response.code(404)
+    response.send({ error: 'Season not found' })
   }
 }

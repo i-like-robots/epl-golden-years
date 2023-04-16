@@ -16,6 +16,7 @@ module.exports = function seasonHatTricksRoute(request, response) {
 
     response.send(hatTricksData)
   } else {
-    response.sendStatus(404)
+    response.code(404)
+    response.send({ error: 'Season not found' })
   }
 }

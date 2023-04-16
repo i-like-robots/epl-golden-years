@@ -12,5 +12,10 @@ module.exports = function teamSquadsRoute(request, response) {
     }
   })
 
-  response.send(squadsData)
+  if (squads.length) {
+    response.send(squadsData)
+  } else {
+    response.code(404)
+    response.send({ error: 'Team not found' })
+  }
 }

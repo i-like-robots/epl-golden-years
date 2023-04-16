@@ -40,6 +40,7 @@ module.exports = function teamRoute(request, response) {
 
     response.send({ ...omit(team, 'teamId'), history, stats })
   } else {
-    response.sendStatus(404)
+    response.code(404)
+    response.send({ error: 'Team not found' })
   }
 }

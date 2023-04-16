@@ -35,6 +35,7 @@ module.exports = function seasonTopScorersRoute(request, response) {
 
     response.send(scorersData)
   } else {
-    response.sendStatus(404)
+    response.code(404)
+    response.send({ error: 'Season not found' })
   }
 }

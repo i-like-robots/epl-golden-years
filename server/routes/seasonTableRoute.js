@@ -19,6 +19,7 @@ module.exports = function tableRoute(request, response) {
 
     response.send(tableData)
   } else {
-    response.sendStatus(404)
+    response.code(404)
+    response.send({ error: 'Season not found' })
   }
 }
