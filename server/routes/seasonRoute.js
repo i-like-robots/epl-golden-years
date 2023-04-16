@@ -13,7 +13,7 @@ module.exports = function seasonRoute(request, response) {
       hatTricks: seasonHatTricksUrl(seasonId),
     }
 
-    response.json(seasonData)
+    response.send(seasonData)
   } else {
     response.sendStatus(404)
   }

@@ -38,7 +38,7 @@ module.exports = function teamRoute(request, response) {
       stats.against += result.against
     })
 
-    response.json({ ...omit(team, 'teamId'), history, stats })
+    response.send({ ...omit(team, 'teamId'), history, stats })
   } else {
     response.sendStatus(404)
   }

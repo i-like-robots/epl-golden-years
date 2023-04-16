@@ -12,5 +12,5 @@ module.exports = function teamSquadsRoute(request, response) {
     }
   })
 
-  response.json(squadsData)
+  response.send(squadsData)
 }

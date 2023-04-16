@@ -33,7 +33,7 @@ module.exports = function seasonTopScorersRoute(request, response) {
       mpg: Math.round((player.appearances * 90) / player.goals),
     }))
 
-    response.json(scorersData)
+    response.send(scorersData)
   } else {
     response.sendStatus(404)
   }

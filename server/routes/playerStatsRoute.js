@@ -22,7 +22,7 @@ module.exports = function playerStatsRoute(request, response) {
 
     stats.hatTricks = hatTricks.filter((hatTrick) => hatTrick.playerId === playerId).length
 
-    response.json({ stats })
+    response.send({ stats })
   } else {
     response.sendStatus(404)
   }

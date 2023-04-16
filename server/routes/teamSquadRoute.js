@@ -23,7 +23,7 @@ module.exports = function teamSquadRoute(request, response) {
       players
     }
 
-    response.json(squadData)
+    response.send(squadData)
   } else {
     response.sendStatus(404)
   }

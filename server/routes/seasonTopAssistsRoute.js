@@ -33,7 +33,7 @@ module.exports = function seasonTopAssistsRoute(request, response) {
       mpa: Math.round((player.appearances * 90) / player.assists),
     }))
 
-    response.json(assistsData)
+    response.send(assistsData)
   } else {
     response.sendStatus(404)
   }

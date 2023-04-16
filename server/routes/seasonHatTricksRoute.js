@@ -14,7 +14,7 @@ module.exports = function seasonHatTricksRoute(request, response) {
       awayTeam: teamUrl(player.awayTeamId),
     }))
 
-    response.json(hatTricksData)
+    response.send(hatTricksData)
   } else {
     response.sendStatus(404)
   }

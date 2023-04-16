@@ -21,7 +21,7 @@ module.exports = function playerRoute(request, response) {
 
     const album = playerAlbumUrl(playerId)
 
-    response.json({ ...player, history, statistics, album })
+    response.send({ ...player, history, statistics, album })
   } else {
     response.sendStatus(404)
   }

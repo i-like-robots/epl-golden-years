@@ -14,5 +14,5 @@ module.exports = function playersRoute(request, response) {
     }
   })
 
-  response.json(playersData)
+  response.send(playersData)
 }

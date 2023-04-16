@@ -17,7 +17,7 @@ module.exports = function tableRoute(request, response) {
       ))
     }
 
-    response.json(tableData)
+    response.send(tableData)
   } else {
     response.sendStatus(404)
   }

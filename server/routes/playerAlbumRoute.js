@@ -14,7 +14,7 @@ module.exports = function playerAlbumRoute(request, response) {
       }
     ))
 
-    response.json(albumData)
+    response.send(albumData)
   } else {
     response.sendStatus(404)
   }

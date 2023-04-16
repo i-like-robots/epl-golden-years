@@ -4,5 +4,5 @@ const { seasonUrl } = require('../lib/urls')
 module.exports = function seasonsRoute(request, response) {
   const seasonsData = Object.keys(tables).map((seasonId) => seasonUrl(seasonId))
 
-  response.json(seasonsData)
+  response.send(seasonsData)
 }

@@ -1,4 +1,4 @@
-const express = require('express')
+// const express = require('express')
 const {
   playerRoute,
   playersRoute,
@@ -17,10 +17,12 @@ const {
 } = require('./routes')
 const { playersUrl, teamsUrl, seasonsUrl } = require('./lib/urls')
 
-const app = express()
+const app = require('fastify')({
+  logger: true
+})
 
 app.get('/', (request, response) => {
-  response.json({
+  response.send({
     players: playersUrl(),
     teams: teamsUrl(),
     seasons: seasonsUrl(),
@@ -55,6 +57,11 @@ app.get('/seasons/:seasonId/top-scorers', seasonTopScorersRoute)
 
 app.get('/seasons/:seasonId/top-assists', seasonTopAssistsRoute)
 
-app.listen(3000, () => {
-  console.log('App is listening at http://localhost:3000')
+app.listen({ port: process.env.PORT || 3000 }, (error) => {
+  if (error) {
+    app.log.error(error)
+    process.exit(1)
+  }
+
+  app.log.info('App is listening at http://localhost:3000')
 })
