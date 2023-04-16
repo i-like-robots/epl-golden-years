@@ -1,5 +1,5 @@
+const { tables } = require('../dataset')
 const { seasonTableUrl, seasonTopScorersUrl, seasonTopAssistsUrl } = require('../lib/urls')
-const tables = require('../../data/tables.json')
 
 module.exports = function seasonRoute(request, response) {
   const { seasonId } = request.params

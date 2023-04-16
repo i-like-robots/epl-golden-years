@@ -1,6 +1,6 @@
-const matches = require('../lib/object-matches')
+const { players } = require('../dataset')
 const { playerUrl } = require('../lib/urls')
-const players = require('../../data/players.json')
+const matches = require('../lib/object-matches')
 
 module.exports = function playersRoute(request, response) {
   const matcher = request.query.search ? matches(request.query.search) : null

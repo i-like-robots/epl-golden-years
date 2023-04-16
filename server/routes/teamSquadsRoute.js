@@ -1,5 +1,5 @@
-const squads = require('../../data/squads.json')
-const teamSquadRoute = require('./teamSquadRoute')
+const { squads } = require('../dataset')
+const { teamSquadUrl } = require('../lib/urls')
 
 module.exports = function teamSquadsRoute(request, response) {
   const { teamId } = request.params
@@ -8,7 +8,7 @@ module.exports = function teamSquadsRoute(request, response) {
 
   squads.forEach((squad) => {
     if (squad.teamId === teamId) {
-      squadsData.push(teamSquadRoute(teamId, squad.seasonId))
+      squadsData.push(teamSquadUrl(teamId, squad.seasonId))
     }
   })
 

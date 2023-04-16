@@ -1,6 +1,6 @@
-const pick = require('../lib/object-pick')
+const { squads } = require('../dataset')
 const { playerUrl } = require('../lib/urls')
-const squads = require('../../data/squads.json')
+const pick = require('../lib/object-pick')
 
 module.exports = function seasonTopAssistsRoute(request, response) {
   const { seasonId } = request.params

@@ -1,6 +1,6 @@
-const omit = require('../lib/object-omit')
+const { tables }  = require('../dataset')
 const { seasonUrl, teamUrl } = require('../lib/urls')
-const tables = require('../../data/tables.json')
+const omit = require('../lib/object-omit')
 
 module.exports = function tableRoute(request, response) {
   const { seasonId } = request.params

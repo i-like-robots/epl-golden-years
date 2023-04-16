@@ -1,7 +1,5 @@
+const { players, stickers, squads } = require('../dataset')
 const { seasonUrl, teamSquadUrl, teamUrl } = require('../lib/urls')
-const squads = require('../../data/squads.json')
-const players = require('../../data/players.json')
-const stickers = require('../../data/laststicker.json')
 
 module.exports = function playerRoute(request, response) {
   const { playerId } = request.params
