@@ -4,6 +4,7 @@ const {
   playersRoute,
   seasonsRoute,
   seasonRoute,
+  seasonHatTricksRoute,
   seasonTableRoute,
   seasonTopAssistsRoute,
   seasonTopScorersRoute,
@@ -39,6 +40,8 @@ app.get('/teams/:teamId/squads/:seasonId', teamSquadRoute)
 app.get('/seasons', seasonsRoute)
 
 app.get('/seasons/:seasonId', seasonRoute)
+
+app.get('/seasons/:seasonId/hat-tricks', seasonHatTricksRoute)
 
 app.get('/seasons/:seasonId/table', seasonTableRoute)
 

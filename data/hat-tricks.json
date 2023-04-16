@@ -1,0 +1,808 @@
+[
+  {
+    "playerId": "eric-cantona-e67a",
+    "seasonId": "1992-1993",
+    "homeTeamId": "lee",
+    "awayTeamId": "tot"
+  },
+  {
+    "playerId": "mark-robins-c8f9",
+    "seasonId": "1992-1993",
+    "homeTeamId": "nor",
+    "awayTeamId": "old"
+  },
+  {
+    "playerId": "john-hendrie-eb99",
+    "seasonId": "1992-1993",
+    "homeTeamId": "mid",
+    "awayTeamId": "blb"
+  },
+  {
+    "playerId": "andy-sinton-7e2b",
+    "seasonId": "1992-1993",
+    "homeTeamId": "qpr",
+    "awayTeamId": "eve"
+  },
+  {
+    "playerId": "brian-deane-2ff8",
+    "seasonId": "1992-1993",
+    "homeTeamId": "shu",
+    "awayTeamId": "ips"
+  },
+  {
+    "playerId": "teddy-sheringham-3850",
+    "seasonId": "1992-1993",
+    "homeTeamId": "tot",
+    "awayTeamId": "lee"
+  },
+  {
+    "playerId": "gordon-strachan-1e43",
+    "seasonId": "1992-1993",
+    "homeTeamId": "lee",
+    "awayTeamId": "blb"
+  },
+  {
+    "playerId": "les-ferdinand-d1de",
+    "homeTeamId": "qpr",
+    "awayTeamId": "nfo"
+  },
+  {
+    "playerId": "chris-bart-williams-af25",
+    "seasonId": "1992-1993",
+    "homeTeamId": "shw",
+    "awayTeamId": "sou"
+  },
+  {
+    "playerId": "les-ferdinand-d1de",
+    "homeTeamId": "eve",
+    "awayTeamId": "qpr"
+  },
+  {
+    "playerId": "chris-sutton-745d",
+    "seasonId": "1992-1993",
+    "homeTeamId": "nor",
+    "awayTeamId": "lee"
+  },
+  {
+    "playerId": "mark-walters-dc53",
+    "seasonId": "1992-1993",
+    "homeTeamId": "liv",
+    "awayTeamId": "cov"
+  },
+  {
+    "playerId": "rod-wallace-eed7",
+    "seasonId": "1992-1993",
+    "homeTeamId": "cov",
+    "awayTeamId": "lee"
+  },
+  {
+    "playerId": "matt-le-tissier-ede3",
+    "homeTeamId": "old",
+    "awayTeamId": "sou"
+  },
+  {
+    "playerId": "mick-quinn-ddd0",
+    "seasonId": "1993-1994",
+    "homeTeamId": "ars",
+    "awayTeamId": "cov"
+  },
+  {
+    "playerId": "tony-cottee-ecf0",
+    "seasonId": "1993-1994",
+    "homeTeamId": "eve",
+    "awayTeamId": "shu"
+  },
+  {
+    "playerId": "kevin-campbell-997c",
+    "seasonId": "1993-1994",
+    "homeTeamId": "ars",
+    "awayTeamId": "ips"
+  },
+  {
+    "playerId": "efan-ekoku-d85e",
+    "seasonId": "1993-1994",
+    "homeTeamId": "eve",
+    "awayTeamId": "nor"
+  },
+  {
+    "playerId": "alan-shearer-2da0",
+    "seasonId": "1993-1994",
+    "homeTeamId": "lee",
+    "awayTeamId": "blb"
+  },
+  {
+    "playerId": "peter-beardsley-3a20",
+    "seasonId": "1993-1994",
+    "homeTeamId": "new",
+    "awayTeamId": "wim"
+  },
+  {
+    "playerId": "robbie-fowler-16d7",
+    "homeTeamId": "liv",
+    "awayTeamId": "sou"
+  },
+  {
+    "playerId": "bradley-allen-d014",
+    "seasonId": "1993-1994",
+    "homeTeamId": "eve",
+    "awayTeamId": "qpr"
+  },
+  {
+    "playerId": "andy-cole-710b",
+    "seasonId": "1993-1994",
+    "homeTeamId": "new",
+    "awayTeamId": "liv"
+  },
+  {
+    "playerId": "kevin-campbell-997c",
+    "seasonId": "1993-1994",
+    "homeTeamId": "swi",
+    "awayTeamId": "ars"
+  },
+  {
+    "playerId": "tony-cottee-ecf0",
+    "seasonId": "1993-1994",
+    "homeTeamId": "eve",
+    "awayTeamId": "swi"
+  },
+  {
+    "playerId": "jan-age-fjortoft-4c10",
+    "seasonId": "1993-1994",
+    "homeTeamId": "swi",
+    "awayTeamId": "cov"
+  },
+  {
+    "playerId": "dean-saunders-0fc2",
+    "seasonId": "1993-1994",
+    "homeTeamId": "avl",
+    "awayTeamId": "swi"
+  },
+  {
+    "playerId": "matt-le-tissier-ede3",
+    "seasonId": "1993-1994",
+    "homeTeamId": "sou",
+    "awayTeamId": "liv"
+  },
+  {
+    "playerId": "andy-cole-710b",
+    "seasonId": "1993-1994",
+    "homeTeamId": "new",
+    "awayTeamId": "cov"
+  },
+  {
+    "playerId": "ian-wright-5f41",
+    "seasonId": "1993-1994",
+    "homeTeamId": "ips",
+    "awayTeamId": "ars"
+  },
+  {
+    "playerId": "ian-wright-5f41",
+    "seasonId": "1993-1994",
+    "homeTeamId": "sou",
+    "awayTeamId": "ars"
+  },
+  {
+    "playerId": "matt-le-tissier-ede3",
+    "seasonId": "1993-1994",
+    "homeTeamId": "nor",
+    "awayTeamId": "sou"
+  },
+  {
+    "playerId": "dean-holdsworth-38a7",
+    "seasonId": "1993-1994",
+    "homeTeamId": "wim",
+    "awayTeamId": "old"
+  },
+  {
+    "playerId": "chris-sutton-745d",
+    "seasonId": "1994-1995",
+    "homeTeamId": "blb",
+    "awayTeamId": "cov"
+  },
+  {
+    "playerId": "robbie-fowler-16d7",
+    "seasonId": "1994-1995",
+    "homeTeamId": "liv",
+    "awayTeamId": "ars"
+  },
+  {
+    "playerId": "andrei-kanchelskis-b9d5",
+    "seasonId": "1994-1995",
+    "homeTeamId": "mun",
+    "awayTeamId": "mci"
+  },
+  {
+    "playerId": "alan-shearer-2da0",
+    "seasonId": "1994-1995",
+    "homeTeamId": "blb",
+    "awayTeamId": "qpr"
+  },
+  {
+    "playerId": "teddy-sheringham-3850",
+    "seasonId": "1994-1995",
+    "homeTeamId": "tot",
+    "awayTeamId": "new"
+  },
+  {
+    "playerId": "tony-cottee-ecf0",
+    "seasonId": "1994-1995",
+    "homeTeamId": "whu",
+    "awayTeamId": "mci"
+  },
+  {
+    "playerId": "alan-shearer-2da0",
+    "seasonId": "1994-1995",
+    "homeTeamId": "blb",
+    "awayTeamId": "whu"
+  },
+  {
+    "playerId": "alan-shearer-2da0",
+    "seasonId": "1994-1995",
+    "homeTeamId": "blb",
+    "awayTeamId": "ips"
+  },
+  {
+    "playerId": "tommy-johnson-2210",
+    "seasonId": "1994-1995",
+    "homeTeamId": "avl",
+    "awayTeamId": "wim"
+  },
+  {
+    "playerId": "andy-cole-710b",
+    "seasonId": "1994-1995",
+    "homeTeamId": "mun",
+    "awayTeamId": "ips"
+  },
+  {
+    "playerId": "peter-ndlovu-6247",
+    "seasonId": "1994-1995",
+    "homeTeamId": "liv",
+    "awayTeamId": "cov"
+  },
+  {
+    "playerId": "tony-yeboah-a9d1",
+    "seasonId": "1994-1995",
+    "homeTeamId": "lee",
+    "awayTeamId": "ips"
+  },
+  {
+    "playerId": "ian-wright-5f41",
+    "seasonId": "1994-1995",
+    "homeTeamId": "ars",
+    "awayTeamId": "ips"
+  },
+  {
+    "playerId": "matt-le-tissier-ede3",
+    "seasonId": "1995-1996",
+    "homeTeamId": "sou",
+    "awayTeamId": "nfo"
+  },
+  {
+    "playerId": "robbie-fowler-16d7",
+    "seasonId": "1995-1996",
+    "homeTeamId": "liv",
+    "awayTeamId": "bol"
+  },
+  {
+    "playerId": "alan-shearer-2da0",
+    "homeTeamId": "blb",
+    "awayTeamId": "cov"
+  },
+  {
+    "playerId": "tony-yeboah-a9d1",
+    "homeTeamId": "wim",
+    "awayTeamId": "lee"
+  },
+  {
+    "playerId": "les-ferdinand-d1de",
+    "seasonId": "1995-1996",
+    "homeTeamId": "new",
+    "awayTeamId": "wim"
+  },
+  {
+    "playerId": "gary-mcallister-871c",
+    "seasonId": "1995-1996",
+    "homeTeamId": "lee",
+    "awayTeamId": "cov"
+  },
+  {
+    "playerId": "alan-shearer-2da0",
+    "seasonId": "1995-1996",
+    "homeTeamId": "blb",
+    "awayTeamId": "nfo"
+  },
+  {
+    "playerId": "alan-shearer-2da0",
+    "seasonId": "1995-1996",
+    "homeTeamId": "blb",
+    "awayTeamId": "whu"
+  },
+  {
+    "playerId": "dion-dublin-4d19",
+    "seasonId": "1995-1996",
+    "homeTeamId": "shw",
+    "awayTeamId": "cov"
+  },
+  {
+    "playerId": "savo-milosevic-f848",
+    "seasonId": "1995-1996",
+    "homeTeamId": "avl",
+    "awayTeamId": "cov"
+  },
+  {
+    "playerId": "robbie-fowler-16d7",
+    "seasonId": "1995-1996",
+    "homeTeamId": "liv",
+    "awayTeamId": "ars"
+  },
+  {
+    "playerId": "alan-shearer-2da0",
+    "seasonId": "1995-1996",
+    "homeTeamId": "blb",
+    "awayTeamId": "bol"
+  },
+  {
+    "playerId": "gavin-peacock-97b5",
+    "seasonId": "1995-1996",
+    "homeTeamId": "che",
+    "awayTeamId": "mid"
+  },
+  {
+    "playerId": "alan-shearer-2da0",
+    "seasonId": "1995-1996",
+    "homeTeamId": "tot",
+    "awayTeamId": "blb"
+  },
+  {
+    "playerId": "mark-hughes-c2c6",
+    "seasonId": "1995-1996",
+    "homeTeamId": "che",
+    "awayTeamId": "lee"
+  },
+  {
+    "playerId": "andrei-kanchelskis-b9d5",
+    "seasonId": "1995-1996",
+    "homeTeamId": "shw",
+    "awayTeamId": "eve"
+  },
+  {
+    "playerId": "kevin-campbell-997c",
+    "seasonId": "1996-1997",
+    "homeTeamId": "cov",
+    "awayTeamId": "nfo"
+  },
+  {
+    "playerId": "fabrizio-ravanelli-f9ba",
+    "homeTeamId": "mid",
+    "awayTeamId": "liv"
+  },
+  {
+    "playerId": "ian-wright-5f41",
+    "seasonId": "1996-1997",
+    "homeTeamId": "ars",
+    "awayTeamId": "shw"
+  },
+  {
+    "playerId": "dwight-yorke-212b",
+    "seasonId": "1996-1997",
+    "homeTeamId": "new",
+    "awayTeamId": "avl"
+  },
+  {
+    "playerId": "gary-speed-6854",
+    "seasonId": "1996-1997",
+    "homeTeamId": "eve",
+    "awayTeamId": "sou"
+  },
+  {
+    "playerId": "robbie-fowler-16d7",
+    "seasonId": "1996-1997",
+    "homeTeamId": "liv",
+    "awayTeamId": "mid"
+  },
+  {
+    "playerId": "alan-shearer-2da0",
+    "seasonId": "1996-1997",
+    "homeTeamId": "new",
+    "awayTeamId": "lei"
+  },
+  {
+    "playerId": "ian-marshall-b78b",
+    "seasonId": "1996-1997",
+    "homeTeamId": "lei",
+    "awayTeamId": "der"
+  },
+  {
+    "playerId": "steffen-iversen-5260",
+    "seasonId": "1996-1997",
+    "homeTeamId": "sun",
+    "awayTeamId": "tot"
+  },
+  {
+    "playerId": "fabrizio-ravanelli-f9ba",
+    "seasonId": "1996-1997",
+    "homeTeamId": "mid",
+    "awayTeamId": "der"
+  },
+  {
+    "playerId": "kevin-gallacher-402d",
+    "seasonId": "1996-1997",
+    "homeTeamId": "blb",
+    "awayTeamId": "wim"
+  },
+  {
+    "playerId": "paul-kitson-eb1b",
+    "seasonId": "1996-1997",
+    "homeTeamId": "whu",
+    "awayTeamId": "shw"
+  },
+  {
+    "playerId": "dion-dublin-4d19",
+    "seasonId": "1997-1998",
+    "homeTeamId": "cov",
+    "awayTeamId": "che"
+  },
+  {
+    "playerId": "chris-sutton-745d",
+    "seasonId": "1997-1998",
+    "homeTeamId": "avl",
+    "awayTeamId": "blb"
+  },
+  {
+    "playerId": "gianluca-vialli-b92a",
+    "seasonId": "1997-1998",
+    "homeTeamId": "bar",
+    "awayTeamId": "che"
+  },
+  {
+    "playerId": "dennis-bergkamp-1a0a",
+    "seasonId": "1997-1998",
+    "homeTeamId": "ars",
+    "awayTeamId": "lei"
+  },
+  {
+    "playerId": "ian-wright-5f41",
+    "seasonId": "1997-1998",
+    "homeTeamId": "ars",
+    "awayTeamId": "bol"
+  },
+  {
+    "playerId": "patrik-berger-b325",
+    "seasonId": "1997-1998",
+    "homeTeamId": "liv",
+    "awayTeamId": "che"
+  },
+  {
+    "playerId": "andy-cole-710b",
+    "seasonId": "1997-1998",
+    "homeTeamId": "mun",
+    "awayTeamId": "bar"
+  },
+  {
+    "playerId": "andy-booth-6a6f",
+    "seasonId": "1997-1998",
+    "homeTeamId": "shw",
+    "awayTeamId": "bol"
+  },
+  {
+    "playerId": "gianfranco-zola-b7ad",
+    "seasonId": "1997-1998",
+    "homeTeamId": "che",
+    "awayTeamId": "der"
+  },
+  {
+    "playerId": "tore-andre-flo-ba34",
+    "seasonId": "1997-1998",
+    "homeTeamId": "tot",
+    "awayTeamId": "che"
+  },
+  {
+    "playerId": "duncan-ferguson-ec73",
+    "seasonId": "1997-1998",
+    "homeTeamId": "eve",
+    "awayTeamId": "bol"
+  },
+  {
+    "playerId": "kevin-gallacher-402d",
+    "seasonId": "1997-1998",
+    "homeTeamId": "blb",
+    "awayTeamId": "avl"
+  },
+  {
+    "playerId": "michael-owen-e317",
+    "seasonId": "1997-1998",
+    "homeTeamId": "shw",
+    "awayTeamId": "liv"
+  },
+  {
+    "playerId": "chris-sutton-745d",
+    "seasonId": "1997-1998",
+    "homeTeamId": "blb",
+    "awayTeamId": "lei"
+  },
+  {
+    "playerId": "darren-huckerby-2a9e",
+    "seasonId": "1997-1998",
+    "homeTeamId": "lee",
+    "awayTeamId": "cov"
+  },
+  {
+    "playerId": "jurgen-klinsmann-9ffb",
+    "seasonId": "1997-1998",
+    "homeTeamId": "wim",
+    "awayTeamId": "tot"
+  },
+  {
+    "playerId": "clive-mendonca-3799",
+    "seasonId": "1998-1999",
+    "homeTeamId": "cha",
+    "awayTeamId": "sou"
+  },
+  {
+    "playerId": "michael-owen-e317",
+    "seasonId": "1998-1999",
+    "homeTeamId": "new",
+    "awayTeamId": "liv"
+  },
+  {
+    "playerId": "michael-owen-e317",
+    "seasonId": "1998-1999",
+    "homeTeamId": "liv",
+    "awayTeamId": "nfo"
+  },
+  {
+    "playerId": "dion-dublin-4d19",
+    "seasonId": "1998-1999",
+    "homeTeamId": "sou",
+    "awayTeamId": "avl"
+  },
+  {
+    "playerId": "robbie-fowler-16d7",
+    "seasonId": "1998-1999",
+    "homeTeamId": "avl",
+    "awayTeamId": "liv"
+  },
+  {
+    "playerId": "chris-armstrong-ab5e",
+    "seasonId": "1998-1999",
+    "homeTeamId": "tot",
+    "awayTeamId": "eve"
+  },
+  {
+    "playerId": "darren-huckerby-2a9e",
+    "seasonId": "1998-1999",
+    "homeTeamId": "cov",
+    "awayTeamId": "nfo"
+  },
+  {
+    "playerId": "robbie-fowler-16d7",
+    "seasonId": "1998-1999",
+    "homeTeamId": "liv",
+    "awayTeamId": "sou"
+  },
+  {
+    "playerId": "dwight-yorke-212b",
+    "homeTeamId": "lei",
+    "awayTeamId": "mun"
+  },
+  {
+    "playerId": "ole-gunnar-solskjaer-b956",
+    "seasonId": "1998-1999",
+    "homeTeamId": "nfo",
+    "awayTeamId": "mun"
+  },
+  {
+    "playerId": "nicolas-anelka-9e65",
+    "seasonId": "1998-1999",
+    "homeTeamId": "ars",
+    "awayTeamId": "lei"
+  },
+  {
+    "playerId": "kevin-campbell-997c",
+    "seasonId": "1998-1999",
+    "homeTeamId": "eve",
+    "awayTeamId": "whu"
+  },
+  {
+    "playerId": "michael-bridges-0207",
+    "seasonId": "1999-2000",
+    "homeTeamId": "sou",
+    "awayTeamId": "lee"
+  },
+  {
+    "playerId": "andy-cole-710b",
+    "seasonId": "1999-2000",
+    "homeTeamId": "mun",
+    "awayTeamId": "new"
+  },
+  {
+    "playerId": "kevin-phillips-fe79",
+    "seasonId": "1999-2000",
+    "homeTeamId": "der",
+    "awayTeamId": "sun"
+  },
+  {
+    "playerId": "alan-shearer-2da0",
+    "seasonId": "1999-2000",
+    "homeTeamId": "new",
+    "awayTeamId": "shw"
+  },
+  {
+    "playerId": "nwankwo-kanu-aa65",
+    "seasonId": "1999-2000",
+    "homeTeamId": "che",
+    "awayTeamId": "ars"
+  },
+  {
+    "playerId": "marc-overmars-7e39",
+    "seasonId": "1999-2000",
+    "homeTeamId": "ars",
+    "awayTeamId": "mid"
+  },
+  {
+    "playerId": "ole-gunnar-solskjaer-b956",
+    "seasonId": "1999-2000",
+    "homeTeamId": "mun",
+    "awayTeamId": "eve"
+  },
+  {
+    "playerId": "nicky-barmby-5920",
+    "seasonId": "1999-2000",
+    "homeTeamId": "whu",
+    "awayTeamId": "eve"
+  },
+  {
+    "playerId": "stan-collymore-6d93",
+    "seasonId": "1999-2000",
+    "homeTeamId": "lei",
+    "awayTeamId": "sun"
+  },
+  {
+    "playerId": "steffen-iversen-5260",
+    "seasonId": "1999-2000",
+    "homeTeamId": "tot",
+    "awayTeamId": "sou"
+  },
+  {
+    "playerId": "dwight-yorke-212b",
+    "homeTeamId": "mun",
+    "awayTeamId": "der"
+  },
+  {
+    "playerId": "paul-scholes-d38b",
+    "seasonId": "1999-2000",
+    "homeTeamId": "mun",
+    "awayTeamId": "whu"
+  },
+  {
+    "playerId": "dean-windass-d6f8",
+    "seasonId": "1999-2000",
+    "homeTeamId": "bra",
+    "awayTeamId": "der"
+  },
+  {
+    "playerId": "paulo-wanchope-24f0",
+    "seasonId": "2000-2001",
+    "homeTeamId": "mci",
+    "awayTeamId": "sun"
+  },
+  {
+    "playerId": "michael-owen-e317",
+    "seasonId": "2000-2001",
+    "homeTeamId": "liv",
+    "awayTeamId": "avl"
+  },
+  {
+    "playerId": "emile-heskey-9d68",
+    "seasonId": "2000-2001",
+    "homeTeamId": "der",
+    "awayTeamId": "liv"
+  },
+  {
+    "playerId": "jimmy-floyd-hasselbaink-9f2d",
+    "seasonId": "2000-2001",
+    "homeTeamId": "che",
+    "awayTeamId": "cov"
+  },
+  {
+    "playerId": "teddy-sheringham-3850",
+    "seasonId": "2000-2001",
+    "homeTeamId": "mun",
+    "awayTeamId": "sou"
+  },
+  {
+    "playerId": "mark-viduka-0be7",
+    "seasonId": "2000-2001",
+    "homeTeamId": "lee",
+    "awayTeamId": "liv"
+  },
+  {
+    "playerId": "les-ferdinand-d1de",
+    "seasonId": "2000-2001",
+    "homeTeamId": "tot",
+    "awayTeamId": "lei"
+  },
+  {
+    "playerId": "ray-parlour-742e",
+    "seasonId": "2000-2001",
+    "homeTeamId": "ars",
+    "awayTeamId": "new"
+  },
+  {
+    "playerId": "thierry-henry-15fe",
+    "seasonId": "2000-2001",
+    "homeTeamId": "ars",
+    "awayTeamId": "lei"
+  },
+  {
+    "playerId": "kevin-phillips-fe79",
+    "homeTeamId": "bra",
+    "awayTeamId": "sun"
+  },
+  {
+    "playerId": "dwight-yorke-212b",
+    "seasonId": "2000-2001",
+    "homeTeamId": "mun",
+    "awayTeamId": "ars"
+  },
+  {
+    "playerId": "sylvain-wiltord-ff4b",
+    "seasonId": "2000-2001",
+    "homeTeamId": "ars",
+    "awayTeamId": "whu"
+  },
+  {
+    "playerId": "marcus-stewart-336e",
+    "seasonId": "2000-2001",
+    "homeTeamId": "sou",
+    "awayTeamId": "ips"
+  },
+  {
+    "playerId": "michael-owen-e317",
+    "seasonId": "2000-2001",
+    "homeTeamId": "liv",
+    "awayTeamId": "new"
+  },
+  {
+    "playerId": "robbie-fowler-16d7",
+    "seasonId": "2001-2002",
+    "homeTeamId": "lei",
+    "awayTeamId": "liv"
+  },
+  {
+    "playerId": "paul-kitson-eb1b",
+    "seasonId": "2001-2002",
+    "homeTeamId": "cha",
+    "awayTeamId": "whu"
+  },
+  {
+    "playerId": "ruud-van-nistelrooy-574f",
+    "seasonId": "2001-2002",
+    "homeTeamId": "mun",
+    "awayTeamId": "sou"
+  },
+  {
+    "playerId": "robbie-fowler-16d7",
+    "seasonId": "2001-2002",
+    "homeTeamId": "bol",
+    "awayTeamId": "lee"
+  },
+  {
+    "playerId": "ole-gunnar-solskjaer-b956",
+    "seasonId": "2001-2002",
+    "homeTeamId": "bol",
+    "awayTeamId": "mun"
+  },
+  {
+    "playerId": "jimmy-floyd-hasselbaink-9f2d",
+    "seasonId": "2001-2002",
+    "homeTeamId": "che",
+    "awayTeamId": "tot"
+  },
+  {
+    "playerId": "fredi-bobic-122d",
+    "seasonId": "2001-2002",
+    "homeTeamId": "bol",
+    "awayTeamId": "ips"
+  }
+]

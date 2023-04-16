@@ -34,6 +34,10 @@ function seasonUrl(seasonId) {
   return join(API_URL, '/seasons', seasonId)
 }
 
+function seasonHatTricksUrl(seasonId) {
+  return join(API_URL, '/seasons', seasonId, '/hat-tricks')
+}
+
 function seasonTableUrl(seasonId) {
   return join(API_URL, '/seasons', seasonId, '/table')
 }
@@ -55,6 +59,7 @@ module.exports = {
   teamSquadUrl,
   seasonsUrl,
   seasonUrl,
+  seasonHatTricksUrl,
   seasonTableUrl,
   seasonTopAssistsUrl,
   seasonTopScorersUrl,
