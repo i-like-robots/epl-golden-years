@@ -12,15 +12,15 @@ const {
   teamSquadsRoute,
   teamSquadRoute,
 } = require('./routes')
-const baseUrl = require('./lib/baseUrl')
+const { playersUrl, teamsUrl, seasonsUrl } = require('./lib/urls')
 
 const app = express()
 
 app.get('/', (request, response) => {
   response.json({
-    players: baseUrl(request, 'players'),
-    teams: baseUrl(request, 'teams'),
-    seasons: baseUrl(request, 'seasons'),
+    players: playersUrl(),
+    teams: teamsUrl(),
+    seasons: seasonsUrl(),
   })
 })
 

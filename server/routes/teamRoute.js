@@ -1,10 +1,10 @@
 const omit = require('../lib/object-omit')
-const restfulUri = require('../lib/baseUrl')
+const { seasonUrl, teamSquadUrl } = require('../lib/urls')
 const teams = require('../../data/teams.json')
 const tables = require('../../data/tables.json')
 
 module.exports = function teamRoute(request, response) {
-  const teamId = request.params.teamId
+  const { teamId } = request.params
   const team = teams[teamId]
 
   if (team) {
@@ -27,8 +27,8 @@ module.exports = function teamRoute(request, response) {
       const result = tables[seasonId].find((t) => t.teamId === teamId)
 
       history.push({
-        season: restfulUri(request, 'seasons', seasonId),
-        squad: restfulUri(request, 'teams', teamId, 'squads', seasonId),
+        season: seasonUrl(seasonId),
+        squad: teamSquadUrl(teamId, seasonId),
       })
 
       stats.played += result.played

@@ -1,5 +1,5 @@
+const { seasonTableUrl, seasonTopScorersUrl, seasonTopAssistsUrl } = require('../lib/urls')
 const tables = require('../../data/tables.json')
-const restfulUri = require('../lib/baseUrl')
 
 module.exports = function seasonRoute(request, response) {
   const { seasonId } = request.params
@@ -7,9 +7,9 @@ module.exports = function seasonRoute(request, response) {
 
   if (table) {
     const seasonData = {
-      table: restfulUri(request, 'seasons', seasonId, 'table'),
-      topScorers: restfulUri(request, 'seasons', seasonId, 'top-scorers'),
-      topAssists: restfulUri(request, 'seasons', seasonId, 'top-assists'),
+      table: seasonTableUrl(seasonId),
+      topScorers: seasonTopScorersUrl(seasonId),
+      topAssists: seasonTopAssistsUrl(seasonId),
     }
 
     response.json(seasonData)

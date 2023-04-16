@@ -1,24 +1,24 @@
 const pick = require('../lib/object-pick')
-const restfulUri = require('../lib/baseUrl')
+const { playerUrl } = require('../lib/urls')
 const squads = require('../../data/squads.json')
 
 module.exports = function seasonTopAssistsRoute(request, response) {
   const { seasonId } = request.params
 
-  const assisters = []
+  const players = []
 
   squads.forEach((squad) => {
     if (squad.seasonId === seasonId) {
       squad.players.forEach((player) => {
         if (player.assists) {
-          assisters.push(player)
+          players.push(player)
         }
       })
     }
   })
 
-  if (assisters.length) {
-    assisters.sort((a, b) => {
+  if (players.length) {
+    players.sort((a, b) => {
       if (a.assists > b.assists) return -1
       if (a.assists < b.assists) return 1
       if (a.goals > b.goals) return -1
@@ -27,13 +27,13 @@ module.exports = function seasonTopAssistsRoute(request, response) {
       return 0
     })
 
-    const assistersData = assisters.slice(0, 10).map((player) => ({
-      player: restfulUri(request, 'players', player.playerId),
+    const assistsData = players.slice(0, 10).map((player) => ({
+      player: playerUrl(player.playerId),
       ...pick(player, 'assists', 'goals', 'appearances'),
       mpa: Math.round((player.appearances * 90) / player.assists),
     }))
 
-    response.json(assistersData)
+    response.json(assistsData)
   } else {
     response.sendStatus(404)
   }

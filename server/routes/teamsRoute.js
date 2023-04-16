@@ -1,14 +1,8 @@
+const { teamUrl } = require('../lib/urls')
 const teams = require('../../data/teams.json')
-const baseUrl = require('../lib/baseUrl')
 
 module.exports = function teamsRoute(request, response) {
-  const teamIds = Object.keys(teams)
-  const teamsData = teamIds.map((teamId) => (
-    {
-      id: teamId,
-      rel: baseUrl(request, 'teams', teamId),
-    }
-  ))
+  const teamsData = Object.keys(teams).map((teamId) => teamUrl(teamId))
 
   response.json(teamsData)
 }

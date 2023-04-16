@@ -1,5 +1,5 @@
 const pick = require('../lib/object-pick')
-const restfulUri = require('../lib/baseUrl')
+const { seasonUrl, teamUrl, playerUrl } = require('../lib/urls')
 const squads = require('../../data/squads.json')
 
 module.exports = function teamSquadRoute(request, response) {
@@ -12,14 +12,14 @@ module.exports = function teamSquadRoute(request, response) {
   if (squad) {
     const players = squad.players.map((player) => (
       {
-        player: restfulUri(request, 'players', player.playerId),
+        player: playerUrl(player.playerId),
         ...pick(player, 'appearances', 'cleanSheets', 'goals'),
       }
     ))
 
     const squadData = {
-      season: restfulUri(request, 'seasons', squad.seasonId),
-      team: restfulUri(request, 'teams', squad.teamId),
+      season: seasonUrl(squad.seasonId),
+      team: teamUrl(squad.teamId),
       players
     }
 

@@ -1,21 +1,16 @@
-const baseUrl = require('../lib/baseUrl')
 const matches = require('../lib/object-matches')
+const { playerUrl } = require('../lib/urls')
 const players = require('../../data/players.json')
 
 module.exports = function playersRoute(request, response) {
-  const playerIds = Object.keys(players)
+  const matcher = request.query.search ? matches(request.query.search) : null
   const playersData = []
 
-  const matcher = request.query.search ? matches(request.query.search) : null
-
-  playerIds.forEach((playerId) => {
+  Object.keys(players).forEach((playerId) => {
     const player = players[playerId]
 
     if (matcher ? matcher(player, 'displayName', 'firstName', 'lastName') : true) {
-      playersData.push({
-        id: playerId,
-        rel: baseUrl(request, 'players', playerId),
-      })
+      playersData.push(playerUrl(playerId))
     }
   })
 

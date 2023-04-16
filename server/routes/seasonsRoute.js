@@ -1,14 +1,8 @@
-const baseUrl = require('../lib/baseUrl')
+const { seasonUrl } = require('../lib/urls')
 const tables = require('../../data/tables.json')
 
 module.exports = function seasonsRoute(request, response) {
-  const seasonIds = Object.keys(tables)
-  const seasonsData = seasonIds.map((seasonId) => (
-    {
-      id: seasonId,
-      rel: baseUrl(request, 'seasons', seasonId),
-    }
-  ))
+  const seasonsData = Object.keys(tables).map((seasonId) => seasonUrl(seasonId))
 
   response.json(seasonsData)
 }

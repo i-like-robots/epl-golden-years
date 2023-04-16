@@ -1,5 +1,5 @@
 const omit = require('../lib/object-omit')
-const restfulUri = require('../lib/baseUrl')
+const { seasonUrl, teamUrl } = require('../lib/urls')
 const tables = require('../../data/tables.json')
 
 module.exports = function tableRoute(request, response) {
@@ -8,10 +8,10 @@ module.exports = function tableRoute(request, response) {
 
   if (table) {
     const tableData = {
-      season: restfulUri(request, 'seasons', seasonId),
+      season: seasonUrl(seasonId),
       table: table.map((row) => (
         {
-          team: restfulUri(request, 'teams', row.teamId),
+          team: teamUrl(row.teamId),
           ...omit(row, 'teamId'),
         }
       ))
