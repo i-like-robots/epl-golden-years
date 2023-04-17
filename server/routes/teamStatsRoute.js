@@ -1,7 +1,7 @@
 const { tables, teams } = require('../dataset')
 const { teamUrl } = require('../lib/urls')
 
-module.exports = function teamRoute(request, response) {
+module.exports = function teamStatsRoute(request, response) {
   const { teamId } = request.params
   const team = teams[teamId]
 
