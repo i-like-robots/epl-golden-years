@@ -4,941 +4,951 @@
     "seasonId": "1992-1993",
     "homeTeamId": "lee",
     "awayTeamId": "tot",
-    "date": "1992-08-25T00:00:00.000Z"
+    "date": "1992-08-25"
   },
   {
     "playerId": "mark-robins-c8f9",
     "seasonId": "1992-1993",
     "homeTeamId": "nor",
     "awayTeamId": "old",
-    "date": "1992-11-09T00:00:00.000Z"
+    "date": "1992-11-09"
   },
   {
     "playerId": "john-hendrie-eb99",
     "seasonId": "1992-1993",
     "homeTeamId": "mid",
     "awayTeamId": "blb",
-    "date": "1992-12-05T00:00:00.000Z"
+    "date": "1992-12-05"
   },
   {
     "playerId": "andy-sinton-7e2b",
     "seasonId": "1992-1993",
     "homeTeamId": "qpr",
     "awayTeamId": "eve",
-    "date": "1992-12-28T00:00:00.000Z"
+    "date": "1992-12-28"
   },
   {
     "playerId": "brian-deane-2ff8",
     "seasonId": "1992-1993",
     "homeTeamId": "shu",
     "awayTeamId": "ips",
-    "date": "1993-01-16T00:00:00.000Z"
+    "date": "1993-01-16"
   },
   {
     "playerId": "teddy-sheringham-3850",
     "seasonId": "1992-1993",
     "homeTeamId": "tot",
     "awayTeamId": "lee",
-    "date": "1993-02-20T00:00:00.000Z"
+    "date": "1993-02-20"
   },
   {
     "playerId": "gordon-strachan-1e43",
     "seasonId": "1992-1993",
     "homeTeamId": "lee",
     "awayTeamId": "blb",
-    "date": "1993-04-10T00:00:00.000Z"
+    "date": "1993-04-10"
   },
   {
     "playerId": "les-ferdinand-d1de",
+    "seasonId": "1992-1993",
     "homeTeamId": "qpr",
     "awayTeamId": "nfo",
-    "date": null
+    "date": "1993-04-10"
   },
   {
     "playerId": "chris-bart-williams-af25",
     "seasonId": "1992-1993",
     "homeTeamId": "shw",
     "awayTeamId": "sou",
-    "date": "1993-04-12T00:00:00.000Z"
+    "date": "1993-04-12"
   },
   {
     "playerId": "les-ferdinand-d1de",
+    "seasonId": "1992-1993",
     "homeTeamId": "eve",
     "awayTeamId": "qpr",
-    "date": null
+    "date": "1993-04-12"
   },
   {
     "playerId": "chris-sutton-745d",
     "seasonId": "1992-1993",
     "homeTeamId": "nor",
     "awayTeamId": "lee",
-    "date": "1993-04-14T00:00:00.000Z"
+    "date": "1993-04-14"
   },
   {
     "playerId": "mark-walters-dc53",
     "seasonId": "1992-1993",
     "homeTeamId": "liv",
     "awayTeamId": "cov",
-    "date": "1993-04-17T00:00:00.000Z"
+    "date": "1993-04-17"
   },
   {
     "playerId": "rod-wallace-eed7",
     "seasonId": "1992-1993",
     "homeTeamId": "cov",
     "awayTeamId": "lee",
-    "date": "1993-05-08T00:00:00.000Z"
+    "date": "1993-05-08"
   },
   {
     "playerId": "matt-le-tissier-ede3",
+    "seasonId": "1992-1993",
     "homeTeamId": "old",
     "awayTeamId": "sou",
-    "date": null
+    "date": "1993-05-08"
   },
   {
     "playerId": "mick-quinn-ddd0",
     "seasonId": "1993-1994",
     "homeTeamId": "ars",
     "awayTeamId": "cov",
-    "date": "1993-08-14T00:00:00.000Z"
+    "date": "1993-08-14"
   },
   {
     "playerId": "tony-cottee-ecf0",
     "seasonId": "1993-1994",
     "homeTeamId": "eve",
     "awayTeamId": "shu",
-    "date": "1993-08-21T00:00:00.000Z"
+    "date": "1993-08-21"
   },
   {
     "playerId": "kevin-campbell-997c",
     "seasonId": "1993-1994",
     "homeTeamId": "ars",
     "awayTeamId": "ips",
-    "date": "1993-09-11T00:00:00.000Z"
+    "date": "1993-09-11"
   },
   {
     "playerId": "efan-ekoku-d85e",
     "seasonId": "1993-1994",
     "homeTeamId": "eve",
     "awayTeamId": "nor",
-    "date": "1993-09-25T00:00:00.000Z"
+    "date": "1993-09-25"
   },
   {
     "playerId": "alan-shearer-2da0",
     "seasonId": "1993-1994",
     "homeTeamId": "lee",
     "awayTeamId": "blb",
-    "date": "1993-10-23T00:00:00.000Z"
+    "date": "1993-10-23"
   },
   {
     "playerId": "peter-beardsley-3a20",
     "seasonId": "1993-1994",
     "homeTeamId": "new",
     "awayTeamId": "wim",
-    "date": "1993-10-30T00:00:00.000Z"
+    "date": "1993-10-30"
   },
   {
     "playerId": "robbie-fowler-16d7",
+    "seasonId": "1993-1994",
     "homeTeamId": "liv",
     "awayTeamId": "sou",
-    "date": null
+    "date": "1993-10-30"
   },
   {
     "playerId": "bradley-allen-d014",
     "seasonId": "1993-1994",
     "homeTeamId": "eve",
     "awayTeamId": "qpr",
-    "date": "1993-11-20T00:00:00.000Z"
+    "date": "1993-11-20"
   },
   {
     "playerId": "andy-cole-710b",
     "seasonId": "1993-1994",
     "homeTeamId": "new",
     "awayTeamId": "liv",
-    "date": "1993-11-21T00:00:00.000Z"
+    "date": "1993-11-21"
   },
   {
     "playerId": "kevin-campbell-997c",
     "seasonId": "1993-1994",
     "homeTeamId": "swi",
     "awayTeamId": "ars",
-    "date": "1993-12-27T00:00:00.000Z"
+    "date": "1993-12-27"
   },
   {
     "playerId": "tony-cottee-ecf0",
     "seasonId": "1993-1994",
     "homeTeamId": "eve",
     "awayTeamId": "swi",
-    "date": "1994-01-15T00:00:00.000Z"
+    "date": "1994-01-15"
   },
   {
     "playerId": "jan-age-fjortoft-4c10",
     "seasonId": "1993-1994",
     "homeTeamId": "swi",
     "awayTeamId": "cov",
-    "date": "1994-02-05T00:00:00.000Z"
+    "date": "1994-02-05"
   },
   {
     "playerId": "dean-saunders-0fc2",
     "seasonId": "1993-1994",
     "homeTeamId": "avl",
     "awayTeamId": "swi",
-    "date": "1994-02-12T00:00:00.000Z"
+    "date": "1994-02-12"
   },
   {
     "playerId": "matt-le-tissier-ede3",
     "seasonId": "1993-1994",
     "homeTeamId": "sou",
     "awayTeamId": "liv",
-    "date": "1994-02-14T00:00:00.000Z"
+    "date": "1994-02-14"
   },
   {
     "playerId": "andy-cole-710b",
     "seasonId": "1993-1994",
     "homeTeamId": "new",
     "awayTeamId": "cov",
-    "date": "1994-02-23T00:00:00.000Z"
+    "date": "1994-02-23"
   },
   {
     "playerId": "ian-wright-5f41",
     "seasonId": "1993-1994",
     "homeTeamId": "ips",
     "awayTeamId": "ars",
-    "date": "1994-03-05T00:00:00.000Z"
+    "date": "1994-03-05"
   },
   {
     "playerId": "ian-wright-5f41",
     "seasonId": "1993-1994",
     "homeTeamId": "sou",
     "awayTeamId": "ars",
-    "date": "1994-03-19T00:00:00.000Z"
+    "date": "1994-03-19"
   },
   {
     "playerId": "matt-le-tissier-ede3",
     "seasonId": "1993-1994",
     "homeTeamId": "nor",
     "awayTeamId": "sou",
-    "date": "1994-04-09T00:00:00.000Z"
+    "date": "1994-04-09"
   },
   {
     "playerId": "dean-holdsworth-38a7",
     "seasonId": "1993-1994",
     "homeTeamId": "wim",
     "awayTeamId": "old",
-    "date": "1994-04-26T00:00:00.000Z"
+    "date": "1994-04-26"
   },
   {
     "playerId": "chris-sutton-745d",
     "seasonId": "1994-1995",
     "homeTeamId": "blb",
     "awayTeamId": "cov",
-    "date": "1994-08-27T00:00:00.000Z"
+    "date": "1994-08-27"
   },
   {
     "playerId": "robbie-fowler-16d7",
     "seasonId": "1994-1995",
     "homeTeamId": "liv",
     "awayTeamId": "ars",
-    "date": "1994-08-28T00:00:00.000Z"
+    "date": "1994-08-28"
   },
   {
     "playerId": "andrei-kanchelskis-b9d5",
     "seasonId": "1994-1995",
     "homeTeamId": "mun",
     "awayTeamId": "mci",
-    "date": "1994-11-10T00:00:00.000Z"
+    "date": "1994-11-10"
   },
   {
     "playerId": "alan-shearer-2da0",
     "seasonId": "1994-1995",
     "homeTeamId": "blb",
     "awayTeamId": "qpr",
-    "date": "1994-11-26T00:00:00.000Z"
+    "date": "1994-11-26"
   },
   {
     "playerId": "teddy-sheringham-3850",
     "seasonId": "1994-1995",
     "homeTeamId": "tot",
     "awayTeamId": "new",
-    "date": "1994-12-03T00:00:00.000Z"
+    "date": "1994-12-03"
   },
   {
     "playerId": "tony-cottee-ecf0",
     "seasonId": "1994-1995",
     "homeTeamId": "whu",
     "awayTeamId": "mci",
-    "date": "1994-12-17T00:00:00.000Z"
+    "date": "1994-12-17"
   },
   {
     "playerId": "alan-shearer-2da0",
     "seasonId": "1994-1995",
     "homeTeamId": "blb",
     "awayTeamId": "whu",
-    "date": "1995-01-02T00:00:00.000Z"
+    "date": "1995-01-02"
   },
   {
     "playerId": "alan-shearer-2da0",
     "seasonId": "1994-1995",
     "homeTeamId": "blb",
     "awayTeamId": "ips",
-    "date": "1995-01-28T00:00:00.000Z"
+    "date": "1995-01-28"
   },
   {
     "playerId": "tommy-johnson-2210",
     "seasonId": "1994-1995",
     "homeTeamId": "avl",
     "awayTeamId": "wim",
-    "date": "1995-02-11T00:00:00.000Z"
+    "date": "1995-02-11"
   },
   {
     "playerId": "andy-cole-710b",
     "seasonId": "1994-1995",
     "homeTeamId": "mun",
     "awayTeamId": "ips",
-    "date": "1995-03-04T00:00:00.000Z"
+    "date": "1995-03-04"
   },
   {
     "playerId": "peter-ndlovu-6247",
     "seasonId": "1994-1995",
     "homeTeamId": "liv",
     "awayTeamId": "cov",
-    "date": "1995-03-14T00:00:00.000Z"
+    "date": "1995-03-14"
   },
   {
     "playerId": "tony-yeboah-a9d1",
     "seasonId": "1994-1995",
     "homeTeamId": "lee",
     "awayTeamId": "ips",
-    "date": "1995-04-05T00:00:00.000Z"
+    "date": "1995-04-05"
   },
   {
     "playerId": "ian-wright-5f41",
     "seasonId": "1994-1995",
     "homeTeamId": "ars",
     "awayTeamId": "ips",
-    "date": "1995-04-15T00:00:00.000Z"
+    "date": "1995-04-15"
   },
   {
     "playerId": "matt-le-tissier-ede3",
     "seasonId": "1995-1996",
     "homeTeamId": "sou",
     "awayTeamId": "nfo",
-    "date": "1995-08-19T00:00:00.000Z"
+    "date": "1995-08-19"
   },
   {
     "playerId": "robbie-fowler-16d7",
     "seasonId": "1995-1996",
     "homeTeamId": "liv",
     "awayTeamId": "bol",
-    "date": "1995-09-23T00:00:00.000Z"
+    "date": "1995-09-23"
   },
   {
     "playerId": "alan-shearer-2da0",
+    "seasonId": "1995-1996",
     "homeTeamId": "blb",
     "awayTeamId": "cov",
-    "date": null
+    "date": "1995-09-23"
   },
   {
     "playerId": "tony-yeboah-a9d1",
+    "seasonId": "1995-1996",
     "homeTeamId": "wim",
     "awayTeamId": "lee",
-    "date": null
+    "date": "1995-09-23"
   },
   {
     "playerId": "les-ferdinand-d1de",
     "seasonId": "1995-1996",
     "homeTeamId": "new",
     "awayTeamId": "wim",
-    "date": "1995-10-21T00:00:00.000Z"
+    "date": "1995-10-21"
   },
   {
     "playerId": "gary-mcallister-871c",
     "seasonId": "1995-1996",
     "homeTeamId": "lee",
     "awayTeamId": "cov",
-    "date": "1995-10-28T00:00:00.000Z"
+    "date": "1995-10-28"
   },
   {
     "playerId": "alan-shearer-2da0",
     "seasonId": "1995-1996",
     "homeTeamId": "blb",
     "awayTeamId": "nfo",
-    "date": "1995-11-18T00:00:00.000Z"
+    "date": "1995-11-18"
   },
   {
     "playerId": "alan-shearer-2da0",
     "seasonId": "1995-1996",
     "homeTeamId": "blb",
     "awayTeamId": "whu",
-    "date": "1995-12-02T00:00:00.000Z"
+    "date": "1995-12-02"
   },
   {
     "playerId": "dion-dublin-4d19",
     "seasonId": "1995-1996",
     "homeTeamId": "shw",
     "awayTeamId": "cov",
-    "date": "1995-12-04T00:00:00.000Z"
+    "date": "1995-12-04"
   },
   {
     "playerId": "savo-milosevic-f848",
     "seasonId": "1995-1996",
     "homeTeamId": "avl",
     "awayTeamId": "cov",
-    "date": "1995-12-16T00:00:00.000Z"
+    "date": "1995-12-16"
   },
   {
     "playerId": "robbie-fowler-16d7",
     "seasonId": "1995-1996",
     "homeTeamId": "liv",
     "awayTeamId": "ars",
-    "date": "1995-12-23T00:00:00.000Z"
+    "date": "1995-12-23"
   },
   {
     "playerId": "alan-shearer-2da0",
     "seasonId": "1995-1996",
     "homeTeamId": "blb",
     "awayTeamId": "bol",
-    "date": "1996-02-03T00:00:00.000Z"
+    "date": "1996-02-03"
   },
   {
     "playerId": "gavin-peacock-97b5",
     "seasonId": "1995-1996",
     "homeTeamId": "che",
     "awayTeamId": "mid",
-    "date": "1996-02-04T00:00:00.000Z"
+    "date": "1996-02-04"
   },
   {
     "playerId": "alan-shearer-2da0",
     "seasonId": "1995-1996",
     "homeTeamId": "tot",
     "awayTeamId": "blb",
-    "date": "1996-03-16T00:00:00.000Z"
+    "date": "1996-03-16"
   },
   {
     "playerId": "mark-hughes-c2c6",
     "seasonId": "1995-1996",
     "homeTeamId": "che",
     "awayTeamId": "lee",
-    "date": "1996-04-13T00:00:00.000Z"
+    "date": "1996-04-13"
   },
   {
     "playerId": "andrei-kanchelskis-b9d5",
     "seasonId": "1995-1996",
     "homeTeamId": "shw",
     "awayTeamId": "eve",
-    "date": "1996-04-27T00:00:00.000Z"
+    "date": "1996-04-27"
   },
   {
     "playerId": "kevin-campbell-997c",
     "seasonId": "1996-1997",
     "homeTeamId": "cov",
     "awayTeamId": "nfo",
-    "date": "1996-08-17T00:00:00.000Z"
+    "date": "1996-08-17"
   },
   {
     "playerId": "fabrizio-ravanelli-f9ba",
+    "seasonId": "1996-1997",
     "homeTeamId": "mid",
     "awayTeamId": "liv",
-    "date": null
+    "date": "1996-08-17"
   },
   {
     "playerId": "ian-wright-5f41",
     "seasonId": "1996-1997",
     "homeTeamId": "ars",
     "awayTeamId": "shw",
-    "date": "1996-09-16T00:00:00.000Z"
+    "date": "1996-09-16"
   },
   {
     "playerId": "dwight-yorke-212b",
     "seasonId": "1996-1997",
     "homeTeamId": "new",
     "awayTeamId": "avl",
-    "date": "1996-09-30T00:00:00.000Z"
+    "date": "1996-09-30"
   },
   {
     "playerId": "gary-speed-6854",
     "seasonId": "1996-1997",
     "homeTeamId": "eve",
     "awayTeamId": "sou",
-    "date": "1996-11-16T00:00:00.000Z"
+    "date": "1996-11-16"
   },
   {
     "playerId": "robbie-fowler-16d7",
     "seasonId": "1996-1997",
     "homeTeamId": "liv",
     "awayTeamId": "mid",
-    "date": "1996-12-14T00:00:00.000Z"
+    "date": "1996-12-14"
   },
   {
     "playerId": "alan-shearer-2da0",
     "seasonId": "1996-1997",
     "homeTeamId": "new",
     "awayTeamId": "lei",
-    "date": "1997-02-02T00:00:00.000Z"
+    "date": "1997-02-02"
   },
   {
     "playerId": "ian-marshall-b78b",
     "seasonId": "1996-1997",
     "homeTeamId": "lei",
     "awayTeamId": "der",
-    "date": "1997-02-22T00:00:00.000Z"
+    "date": "1997-02-22"
   },
   {
     "playerId": "steffen-iversen-5260",
     "seasonId": "1996-1997",
     "homeTeamId": "sun",
     "awayTeamId": "tot",
-    "date": "1997-03-04T00:00:00.000Z"
+    "date": "1997-03-04"
   },
   {
     "playerId": "fabrizio-ravanelli-f9ba",
     "seasonId": "1996-1997",
     "homeTeamId": "mid",
     "awayTeamId": "der",
-    "date": "1997-03-05T00:00:00.000Z"
+    "date": "1997-03-05"
   },
   {
     "playerId": "kevin-gallacher-402d",
     "seasonId": "1996-1997",
     "homeTeamId": "blb",
     "awayTeamId": "wim",
-    "date": "1997-03-15T00:00:00.000Z"
+    "date": "1997-03-15"
   },
   {
     "playerId": "paul-kitson-eb1b",
     "seasonId": "1996-1997",
     "homeTeamId": "whu",
     "awayTeamId": "shw",
-    "date": "1997-05-03T00:00:00.000Z"
+    "date": "1997-05-03"
   },
   {
     "playerId": "dion-dublin-4d19",
     "seasonId": "1997-1998",
     "homeTeamId": "cov",
     "awayTeamId": "che",
-    "date": "1997-08-09T00:00:00.000Z"
+    "date": "1997-08-09"
   },
   {
     "playerId": "chris-sutton-745d",
     "seasonId": "1997-1998",
     "homeTeamId": "avl",
     "awayTeamId": "blb",
-    "date": "1997-08-13T00:00:00.000Z"
+    "date": "1997-08-13"
   },
   {
     "playerId": "gianluca-vialli-b92a",
     "seasonId": "1997-1998",
     "homeTeamId": "bar",
     "awayTeamId": "che",
-    "date": "1997-08-24T00:00:00.000Z"
+    "date": "1997-08-24"
   },
   {
     "playerId": "dennis-bergkamp-1a0a",
     "seasonId": "1997-1998",
     "homeTeamId": "ars",
     "awayTeamId": "lei",
-    "date": "1997-08-27T00:00:00.000Z"
+    "date": "1997-08-27"
   },
   {
     "playerId": "ian-wright-5f41",
     "seasonId": "1997-1998",
     "homeTeamId": "ars",
     "awayTeamId": "bol",
-    "date": "1997-09-13T00:00:00.000Z"
+    "date": "1997-09-13"
   },
   {
     "playerId": "patrik-berger-b325",
     "seasonId": "1997-1998",
     "homeTeamId": "liv",
     "awayTeamId": "che",
-    "date": "1997-10-05T00:00:00.000Z"
+    "date": "1997-10-05"
   },
   {
     "playerId": "andy-cole-710b",
     "seasonId": "1997-1998",
     "homeTeamId": "mun",
     "awayTeamId": "bar",
-    "date": "1997-10-25T00:00:00.000Z"
+    "date": "1997-10-25"
   },
   {
     "playerId": "andy-booth-6a6f",
     "seasonId": "1997-1998",
     "homeTeamId": "shw",
     "awayTeamId": "bol",
-    "date": "1997-11-08T00:00:00.000Z"
+    "date": "1997-11-08"
   },
   {
     "playerId": "gianfranco-zola-b7ad",
     "seasonId": "1997-1998",
     "homeTeamId": "che",
     "awayTeamId": "der",
-    "date": "1997-11-29T00:00:00.000Z"
+    "date": "1997-11-29"
   },
   {
     "playerId": "tore-andre-flo-ba34",
     "seasonId": "1997-1998",
     "homeTeamId": "tot",
     "awayTeamId": "che",
-    "date": "1997-12-06T00:00:00.000Z"
+    "date": "1997-12-06"
   },
   {
     "playerId": "duncan-ferguson-ec73",
     "seasonId": "1997-1998",
     "homeTeamId": "eve",
     "awayTeamId": "bol",
-    "date": "1997-12-28T00:00:00.000Z"
+    "date": "1997-12-28"
   },
   {
     "playerId": "kevin-gallacher-402d",
     "seasonId": "1997-1998",
     "homeTeamId": "blb",
     "awayTeamId": "avl",
-    "date": "1998-01-17T00:00:00.000Z"
+    "date": "1998-01-17"
   },
   {
     "playerId": "michael-owen-e317",
     "seasonId": "1997-1998",
     "homeTeamId": "shw",
     "awayTeamId": "liv",
-    "date": "1998-02-14T00:00:00.000Z"
+    "date": "1998-02-14"
   },
   {
     "playerId": "chris-sutton-745d",
     "seasonId": "1997-1998",
     "homeTeamId": "blb",
     "awayTeamId": "lei",
-    "date": "1998-02-28T00:00:00.000Z"
+    "date": "1998-02-28"
   },
   {
     "playerId": "darren-huckerby-2a9e",
     "seasonId": "1997-1998",
     "homeTeamId": "lee",
     "awayTeamId": "cov",
-    "date": "1998-04-25T00:00:00.000Z"
+    "date": "1998-04-25"
   },
   {
     "playerId": "jurgen-klinsmann-9ffb",
     "seasonId": "1997-1998",
     "homeTeamId": "wim",
     "awayTeamId": "tot",
-    "date": "1998-05-02T00:00:00.000Z"
+    "date": "1998-05-02"
   },
   {
     "playerId": "clive-mendonca-3799",
     "seasonId": "1998-1999",
     "homeTeamId": "cha",
     "awayTeamId": "sou",
-    "date": "1998-08-22T00:00:00.000Z"
+    "date": "1998-08-22"
   },
   {
     "playerId": "michael-owen-e317",
     "seasonId": "1998-1999",
     "homeTeamId": "new",
     "awayTeamId": "liv",
-    "date": "1998-08-30T00:00:00.000Z"
+    "date": "1998-08-30"
   },
   {
     "playerId": "michael-owen-e317",
     "seasonId": "1998-1999",
     "homeTeamId": "liv",
     "awayTeamId": "nfo",
-    "date": "1998-10-24T00:00:00.000Z"
+    "date": "1998-10-24"
   },
   {
     "playerId": "dion-dublin-4d19",
     "seasonId": "1998-1999",
     "homeTeamId": "sou",
     "awayTeamId": "avl",
-    "date": "1998-11-14T00:00:00.000Z"
+    "date": "1998-11-14"
   },
   {
     "playerId": "robbie-fowler-16d7",
     "seasonId": "1998-1999",
     "homeTeamId": "avl",
     "awayTeamId": "liv",
-    "date": "1998-11-21T00:00:00.000Z"
+    "date": "1998-11-21"
   },
   {
     "playerId": "chris-armstrong-ab5e",
     "seasonId": "1998-1999",
     "homeTeamId": "tot",
     "awayTeamId": "eve",
-    "date": "1998-12-28T00:00:00.000Z"
+    "date": "1998-12-28"
   },
   {
     "playerId": "darren-huckerby-2a9e",
     "seasonId": "1998-1999",
     "homeTeamId": "cov",
     "awayTeamId": "nfo",
-    "date": "1999-01-09T00:00:00.000Z"
+    "date": "1999-01-09"
   },
   {
     "playerId": "robbie-fowler-16d7",
     "seasonId": "1998-1999",
     "homeTeamId": "liv",
     "awayTeamId": "sou",
-    "date": "1999-01-16T00:00:00.000Z"
+    "date": "1999-01-16"
   },
   {
     "playerId": "dwight-yorke-212b",
+    "seasonId": "2000-2001",
     "homeTeamId": "lei",
     "awayTeamId": "mun",
-    "date": null
+    "date": "2001-02-25"
   },
   {
     "playerId": "ole-gunnar-solskjaer-b956",
     "seasonId": "1998-1999",
     "homeTeamId": "nfo",
     "awayTeamId": "mun",
-    "date": "1999-02-06T00:00:00.000Z"
+    "date": "1999-02-06"
   },
   {
     "playerId": "nicolas-anelka-9e65",
     "seasonId": "1998-1999",
     "homeTeamId": "ars",
     "awayTeamId": "lei",
-    "date": "1999-02-20T00:00:00.000Z"
+    "date": "1999-02-20"
   },
   {
     "playerId": "kevin-campbell-997c",
     "seasonId": "1998-1999",
     "homeTeamId": "eve",
     "awayTeamId": "whu",
-    "date": "1999-05-08T00:00:00.000Z"
+    "date": "1999-05-08"
   },
   {
     "playerId": "michael-bridges-0207",
     "seasonId": "1999-2000",
     "homeTeamId": "sou",
     "awayTeamId": "lee",
-    "date": "1999-08-11T00:00:00.000Z"
+    "date": "1999-08-11"
   },
   {
     "playerId": "andy-cole-710b",
     "seasonId": "1999-2000",
     "homeTeamId": "mun",
     "awayTeamId": "new",
-    "date": "1999-08-30T00:00:00.000Z"
+    "date": "1999-08-30"
   },
   {
     "playerId": "kevin-phillips-fe79",
     "seasonId": "1999-2000",
     "homeTeamId": "der",
     "awayTeamId": "sun",
-    "date": "1999-09-18T00:00:00.000Z"
+    "date": "1999-09-18"
   },
   {
     "playerId": "alan-shearer-2da0",
     "seasonId": "1999-2000",
     "homeTeamId": "new",
     "awayTeamId": "shw",
-    "date": "1999-09-19T00:00:00.000Z"
+    "date": "1999-09-19"
   },
   {
     "playerId": "nwankwo-kanu-aa65",
     "seasonId": "1999-2000",
     "homeTeamId": "che",
     "awayTeamId": "ars",
-    "date": "1999-10-23T00:00:00.000Z"
+    "date": "1999-10-23"
   },
   {
     "playerId": "marc-overmars-7e39",
     "seasonId": "1999-2000",
     "homeTeamId": "ars",
     "awayTeamId": "mid",
-    "date": "1999-11-21T00:00:00.000Z"
+    "date": "1999-11-21"
   },
   {
     "playerId": "ole-gunnar-solskjaer-b956",
     "seasonId": "1999-2000",
     "homeTeamId": "mun",
     "awayTeamId": "eve",
-    "date": "1999-12-04T00:00:00.000Z"
+    "date": "1999-12-04"
   },
   {
     "playerId": "nicky-barmby-5920",
     "seasonId": "1999-2000",
     "homeTeamId": "whu",
     "awayTeamId": "eve",
-    "date": "2000-02-26T00:00:00.000Z"
+    "date": "2000-02-26"
   },
   {
     "playerId": "stan-collymore-6d93",
     "seasonId": "1999-2000",
     "homeTeamId": "lei",
     "awayTeamId": "sun",
-    "date": "2000-03-05T00:00:00.000Z"
+    "date": "2000-03-05"
   },
   {
     "playerId": "steffen-iversen-5260",
     "seasonId": "1999-2000",
     "homeTeamId": "tot",
     "awayTeamId": "sou",
-    "date": "2000-03-11T00:00:00.000Z"
+    "date": "2000-03-11"
   },
   {
     "playerId": "dwight-yorke-212b",
+    "seasonId": "1998-1999",
     "homeTeamId": "mun",
     "awayTeamId": "der",
-    "date": null
+    "date": "1999-01-16"
   },
   {
     "playerId": "paul-scholes-d38b",
     "seasonId": "1999-2000",
     "homeTeamId": "mun",
     "awayTeamId": "whu",
-    "date": "2000-04-01T00:00:00.000Z"
+    "date": "2000-04-01"
   },
   {
     "playerId": "dean-windass-d6f8",
     "seasonId": "1999-2000",
     "homeTeamId": "bra",
     "awayTeamId": "der",
-    "date": "2000-04-21T00:00:00.000Z"
+    "date": "2000-04-21"
   },
   {
     "playerId": "paulo-wanchope-24f0",
     "seasonId": "2000-2001",
     "homeTeamId": "mci",
     "awayTeamId": "sun",
-    "date": "2000-08-23T00:00:00.000Z"
+    "date": "2000-08-23"
   },
   {
     "playerId": "michael-owen-e317",
     "seasonId": "2000-2001",
     "homeTeamId": "liv",
     "awayTeamId": "avl",
-    "date": "2000-09-06T00:00:00.000Z"
+    "date": "2000-09-06"
   },
   {
     "playerId": "emile-heskey-9d68",
     "seasonId": "2000-2001",
     "homeTeamId": "der",
     "awayTeamId": "liv",
-    "date": "2000-10-15T00:00:00.000Z"
+    "date": "2000-10-15"
   },
   {
     "playerId": "jimmy-floyd-hasselbaink-9f2d",
     "seasonId": "2000-2001",
     "homeTeamId": "che",
     "awayTeamId": "cov",
-    "date": "2000-10-21T00:00:00.000Z"
+    "date": "2000-10-21"
   },
   {
     "playerId": "teddy-sheringham-3850",
     "seasonId": "2000-2001",
     "homeTeamId": "mun",
     "awayTeamId": "sou",
-    "date": "2000-10-28T00:00:00.000Z"
+    "date": "2000-10-28"
   },
   {
     "playerId": "mark-viduka-0be7",
     "seasonId": "2000-2001",
     "homeTeamId": "lee",
     "awayTeamId": "liv",
-    "date": "2000-11-04T00:00:00.000Z"
+    "date": "2000-11-04"
   },
   {
     "playerId": "les-ferdinand-d1de",
     "seasonId": "2000-2001",
     "homeTeamId": "tot",
     "awayTeamId": "lei",
-    "date": "2000-11-25T00:00:00.000Z"
+    "date": "2000-11-25"
   },
   {
     "playerId": "ray-parlour-742e",
     "seasonId": "2000-2001",
     "homeTeamId": "ars",
     "awayTeamId": "new",
-    "date": "2000-12-10T00:00:00.000Z"
+    "date": "2000-12-10"
   },
   {
     "playerId": "thierry-henry-15fe",
     "seasonId": "2000-2001",
     "homeTeamId": "ars",
     "awayTeamId": "lei",
-    "date": "2000-12-26T00:00:00.000Z"
+    "date": "2000-12-26"
   },
   {
     "playerId": "kevin-phillips-fe79",
+    "seasonId": "2000-2001",
     "homeTeamId": "bra",
     "awayTeamId": "sun",
-    "date": null
+    "date": "2000-12-27"
   },
   {
     "playerId": "dwight-yorke-212b",
     "seasonId": "2000-2001",
     "homeTeamId": "mun",
     "awayTeamId": "ars",
-    "date": "2001-02-25T00:00:00.000Z"
+    "date": "2001-02-25"
   },
   {
     "playerId": "sylvain-wiltord-ff4b",
     "seasonId": "2000-2001",
     "homeTeamId": "ars",
     "awayTeamId": "whu",
-    "date": "2001-03-03T00:00:00.000Z"
+    "date": "2001-03-03"
   },
   {
     "playerId": "marcus-stewart-336e",
     "seasonId": "2000-2001",
     "homeTeamId": "sou",
     "awayTeamId": "ips",
-    "date": "2001-04-07T00:00:00.000Z"
+    "date": "2001-04-07"
   },
   {
     "playerId": "michael-owen-e317",
     "seasonId": "2000-2001",
     "homeTeamId": "liv",
     "awayTeamId": "new",
-    "date": "2001-05-05T00:00:00.000Z"
+    "date": "2001-05-05"
   },
   {
     "playerId": "robbie-fowler-16d7",
     "seasonId": "2001-2002",
     "homeTeamId": "lei",
     "awayTeamId": "liv",
-    "date": "2001-10-20T00:00:00.000Z"
+    "date": "2001-10-20"
   },
   {
     "playerId": "paul-kitson-eb1b",
     "seasonId": "2001-2002",
     "homeTeamId": "cha",
     "awayTeamId": "whu",
-    "date": "2001-11-19T00:00:00.000Z"
+    "date": "2001-11-19"
   },
   {
     "playerId": "ruud-van-nistelrooy-574f",
     "seasonId": "2001-2002",
     "homeTeamId": "mun",
     "awayTeamId": "sou",
-    "date": "2001-12-22T00:00:00.000Z"
+    "date": "2001-12-22"
   },
   {
     "playerId": "robbie-fowler-16d7",
     "seasonId": "2001-2002",
     "homeTeamId": "bol",
     "awayTeamId": "lee",
-    "date": "2001-12-26T00:00:00.000Z"
+    "date": "2001-12-26"
   },
   {
     "playerId": "ole-gunnar-solskjaer-b956",
     "seasonId": "2001-2002",
     "homeTeamId": "bol",
     "awayTeamId": "mun",
-    "date": "2002-01-29T00:00:00.000Z"
+    "date": "2002-01-29"
   },
   {
     "playerId": "jimmy-floyd-hasselbaink-9f2d",
     "seasonId": "2001-2002",
     "homeTeamId": "che",
     "awayTeamId": "tot",
-    "date": "2002-03-13T00:00:00.000Z"
+    "date": "2002-03-13"
   },
   {
     "playerId": "fredi-bobic-122d",
     "seasonId": "2001-2002",
     "homeTeamId": "bol",
     "awayTeamId": "ips",
-    "date": "2002-04-06T00:00:00.000Z"
+    "date": "2002-04-06"
   }
 ]

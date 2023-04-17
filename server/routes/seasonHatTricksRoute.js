@@ -6,21 +6,16 @@ module.exports = function seasonHatTricksRoute(request, response) {
   const table = tables[seasonId]
 
   if (table) {
-    const events = hatTricks.filter((hatTrick) => hatTrick.seasonId === seasonId)
-
-    const date = new Intl.DateTimeFormat('en-GB', { dateStyle: 'full', timeZone: 'Europe/London' })
-
-    const data = events.map((event) => (
+    const data = hatTricks.filter((hatTrick) => hatTrick.seasonId === seasonId).map((hatTrick) => (
       {
-        player: playerUrl(event.playerId),
-        season: seasonUrl(event.seasonId),
-        homeTeam: teamUrl(event.homeTeamId),
-        awayTeam: teamUrl(event.awayTeamId),
-        date: date.format(new Date(event.date)),
+        player: playerUrl(hatTrick.playerId),
+        homeTeam: teamUrl(hatTrick.homeTeamId),
+        awayTeam: teamUrl(hatTrick.awayTeamId),
+        date: hatTrick.date,
       }
     ))
 
-    response.send({ season: seasonUrl(seasonId), data })
+    response.send({ season: seasonUrl(seasonId), hatTricks: data })
   } else {
     response.code(404)
     response.send({ error: 'Season not found' })
