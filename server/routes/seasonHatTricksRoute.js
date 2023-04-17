@@ -1,18 +1,24 @@
-const { hatTricks } = require('../dataset')
+const { hatTricks, tables } = require('../dataset')
 const { playerUrl, seasonUrl, teamUrl } = require('../lib/urls')
 
 module.exports = function seasonHatTricksRoute(request, response) {
   const { seasonId } = request.params
+  const table = tables[seasonId]
 
-  const players = hatTricks.filter((hatTrick) => hatTrick.seasonId === seasonId)
+  if (table) {
+    const events = hatTricks.filter((hatTrick) => hatTrick.seasonId === seasonId)
 
-  if (players.length) {
-    const hatTricksData = players.map((player) => ({
-      player: playerUrl(player.playerId),
-      season: seasonUrl(player.seasonId),
-      homeTeam: teamUrl(player.homeTeamId),
-      awayTeam: teamUrl(player.awayTeamId),
-    }))
+    const date = new Intl.DateTimeFormat('en-GB', { dateStyle: 'full', timeZone: 'Europe/London' })
+
+    const hatTricksData = events.map((event) => (
+      {
+        player: playerUrl(event.playerId),
+        season: seasonUrl(event.seasonId),
+        homeTeam: teamUrl(event.homeTeamId),
+        awayTeam: teamUrl(event.awayTeamId),
+        date: date.format(new Date(event.date)),
+      }
+    ))
 
     response.send(hatTricksData)
   } else {
