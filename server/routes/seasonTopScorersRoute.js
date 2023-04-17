@@ -1,5 +1,5 @@
 const { squads } = require('../dataset')
-const { playerUrl } = require('../lib/urls')
+const { playerUrl, seasonUrl } = require('../lib/urls')
 const pick = require('../lib/object-pick')
 
 module.exports = function seasonTopScorersRoute(request, response) {
@@ -27,13 +27,13 @@ module.exports = function seasonTopScorersRoute(request, response) {
       return 0
     })
 
-    const scorersData = players.slice(0, 10).map((player) => ({
+    const data = players.slice(0, 10).map((player) => ({
       player: playerUrl(player.playerId),
       ...pick(player, 'goals', 'assists', 'appearances'),
       mpg: Math.round((player.appearances * 90) / player.goals),
     }))
 
-    response.send(scorersData)
+    response.send({ season: seasonUrl(seasonId), scorers: data })
   } else {
     response.code(404)
     response.send({ error: 'Season not found' })

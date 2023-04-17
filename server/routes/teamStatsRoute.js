@@ -10,7 +10,7 @@ module.exports = function teamRoute(request, response) {
       tables[seasonId].some((t) => t.teamId === teamId)
     )
 
-    const statistics = {
+    const data = {
       played: 0,
       wins: 0,
       draws: 0,
@@ -22,15 +22,15 @@ module.exports = function teamRoute(request, response) {
     seasonIds.forEach((seasonId) => {
       const result = tables[seasonId].find((t) => t.teamId === teamId)
 
-      statistics.played += result.played
-      statistics.wins += result.wins
-      statistics.draws += result.draws
-      statistics.losses += result.losses
-      statistics.for += result.for
-      statistics.against += result.against
+      data.played += result.played
+      data.wins += result.wins
+      data.draws += result.draws
+      data.losses += result.losses
+      data.for += result.for
+      data.against += result.against
     })
 
-    response.send({ team: teamUrl(teamId), statistics })
+    response.send({ team: teamUrl(teamId), statistics: data })
   } else {
     response.code(404)
     response.send({ error: 'Team not found' })

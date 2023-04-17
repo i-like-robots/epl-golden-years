@@ -17,13 +17,11 @@ module.exports = function teamSquadRoute(request, response) {
       }
     ))
 
-    const squadData = {
+    response.send({
       season: seasonUrl(squad.seasonId),
       team: teamUrl(squad.teamId),
       players
-    }
-
-    response.send(squadData)
+    })
   } else {
     response.code(404)
     response.send({ error: 'Squad not found' })

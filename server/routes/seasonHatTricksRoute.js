@@ -10,7 +10,7 @@ module.exports = function seasonHatTricksRoute(request, response) {
 
     const date = new Intl.DateTimeFormat('en-GB', { dateStyle: 'full', timeZone: 'Europe/London' })
 
-    const hatTricksData = events.map((event) => (
+    const data = events.map((event) => (
       {
         player: playerUrl(event.playerId),
         season: seasonUrl(event.seasonId),
@@ -20,7 +20,7 @@ module.exports = function seasonHatTricksRoute(request, response) {
       }
     ))
 
-    response.send(hatTricksData)
+    response.send({ season: seasonUrl(seasonId), data })
   } else {
     response.code(404)
     response.send({ error: 'Season not found' })

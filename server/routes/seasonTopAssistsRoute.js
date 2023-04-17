@@ -1,10 +1,10 @@
 const { squads } = require('../dataset')
-const { playerUrl } = require('../lib/urls')
+const { playerUrl, seasonUrl } = require('../lib/urls')
 const pick = require('../lib/object-pick')
 
 module.exports = function seasonTopAssistsRoute(request, response) {
   const { seasonId } = request.params
-
+  
   const players = []
 
   squads.forEach((squad) => {
@@ -27,13 +27,13 @@ module.exports = function seasonTopAssistsRoute(request, response) {
       return 0
     })
 
-    const assistsData = players.slice(0, 10).map((player) => ({
+    const data = players.slice(0, 10).map((player) => ({
       player: playerUrl(player.playerId),
       ...pick(player, 'assists', 'goals', 'appearances'),
       mpa: Math.round((player.appearances * 90) / player.assists),
     }))
 
-    response.send(assistsData)
+    response.send({ season: seasonUrl(seasonId), assists: data })
   } else {
     response.code(404)
     response.send({ error: 'Season not found' })
