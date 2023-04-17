@@ -13,4 +13,5 @@ module.exports = {
   teamRoute: require('./teamRoute'),
   teamSquadsRoute: require('./teamSquadsRoute'),
   teamSquadRoute: require('./teamSquadRoute'),
+  teamStatsRoute: require('./teamStatsRoute'),
 }

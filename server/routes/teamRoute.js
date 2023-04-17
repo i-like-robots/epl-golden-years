@@ -1,5 +1,5 @@
 const { tables, teams } = require('../dataset')
-const { seasonUrl, teamSquadUrl } = require('../lib/urls')
+const { seasonUrl, teamSquadUrl, teamStatsUrl, teamUrl } = require('../lib/urls')
 const omit = require('../lib/object-omit')
 
 module.exports = function teamRoute(request, response) {
@@ -11,34 +11,16 @@ module.exports = function teamRoute(request, response) {
       tables[seasonId].some((t) => t.teamId === teamId)
     )
 
-    const history = []
-
-    const stats = {
-      played: 0,
-      wins: 0,
-      draws: 0,
-      losses: 0,
-      for: 0,
-      against: 0,
-    }
-
-    seasonIds.forEach((seasonId) => {
-      const result = tables[seasonId].find((t) => t.teamId === teamId)
-
-      history.push({
+    const history = seasonIds.map((seasonId) => (
+      {
         season: seasonUrl(seasonId),
         squad: teamSquadUrl(teamId, seasonId),
-      })
+      }
+    ))
 
-      stats.played += result.played
-      stats.wins += result.wins
-      stats.draws += result.draws
-      stats.losses += result.losses
-      stats.for += result.for
-      stats.against += result.against
-    })
+    const statistics = teamStatsUrl(teamId)
 
-    response.send({ ...omit(team, 'teamId'), history, stats })
+    response.send({ ...omit(team, 'teamId'), history, statistics })
   } else {
     response.code(404)
     response.send({ error: 'Team not found' })

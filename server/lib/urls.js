@@ -27,15 +27,19 @@ function teamUrl(teamId) {
 }
 
 function teamSquadsUrl(teamId) {
-  return join(API_URL, '/teams/', teamId, '/squads')
+  return join(API_URL, '/teams', teamId, '/squads')
 }
 
 function teamSquadUrl(teamId, seasonId) {
-  return join(API_URL, '/teams/', teamId, '/squads', seasonId)
+  return join(API_URL, '/teams', teamId, '/squads', seasonId)
+}
+
+function teamStatsUrl(teamId) {
+  return join(API_URL, '/teams', teamId, '/statistics')
 }
 
 function seasonsUrl() {
-  return join(API_URL, '/seasons',)
+  return join(API_URL, '/seasons')
 }
 
 function seasonUrl(seasonId) {
@@ -67,6 +71,7 @@ module.exports = {
   teamUrl,
   teamSquadsUrl,
   teamSquadUrl,
+  teamStatsUrl,
   seasonsUrl,
   seasonUrl,
   seasonHatTricksUrl,

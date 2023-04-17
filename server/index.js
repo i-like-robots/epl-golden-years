@@ -1,4 +1,3 @@
-// const express = require('express')
 const {
   playerRoute,
   playersRoute,
@@ -14,6 +13,7 @@ const {
   teamsRoute,
   teamSquadsRoute,
   teamSquadRoute,
+  teamStatsRoute,
 } = require('./routes')
 const { playersUrl, teamsUrl, seasonsUrl } = require('./lib/urls')
 
@@ -44,6 +44,8 @@ app.get('/teams/:teamId', teamRoute)
 app.get('/teams/:teamId/squads', teamSquadsRoute)
 
 app.get('/teams/:teamId/squads/:seasonId', teamSquadRoute)
+
+app.get('/teams/:teamId/statistics', teamStatsRoute)
 
 app.get('/seasons', seasonsRoute)
 

@@ -1,4 +1,5 @@
 const { players, squads, hatTricks } = require('../dataset')
+const { playerUrl } = require('../lib/urls')
 
 module.exports = function playerStatsRoute(request, response) {
   const { playerId } = request.params
@@ -9,20 +10,20 @@ module.exports = function playerStatsRoute(request, response) {
       squad.players.some((p) => p.playerId === playerId)
     )
 
-    const stats = { appearances: 0, cleanSheets: 0, goals: 0, assists: 0 }
+    const statistics = { appearances: 0, cleanSheets: 0, goals: 0, assists: 0 }
 
     squadHistory.forEach((squad) => {
       const member = squad.players.find((p) => p.playerId === playerId)
 
-      stats.appearances += member.appearances
-      stats.cleanSheets += member.cleanSheets
-      stats.goals += member.goals
-      stats.assists += member.assists
+      statistics.appearances += member.appearances
+      statistics.cleanSheets += member.cleanSheets
+      statistics.goals += member.goals
+      statistics.assists += member.assists
     })
 
-    stats.hatTricks = hatTricks.filter((hatTrick) => hatTrick.playerId === playerId).length
+    statistics.hatTricks = hatTricks.filter((hatTrick) => hatTrick.playerId === playerId).length
 
-    response.send({ stats })
+    response.send({ player: playerUrl(playerId), statistics })
   } else {
     response.code(404)
     response.send({ error: 'Player not found' })

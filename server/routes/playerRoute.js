@@ -21,7 +21,7 @@ module.exports = function playerRoute(request, response) {
 
     const album = playerAlbumUrl(playerId)
 
-    response.send({ ...player, history, statistics, album })
+    response.send({ ...omit(player, 'playerId'), history, statistics, album })
   } else {
     response.code(404)
     response.send({ error: 'Player not found' })
