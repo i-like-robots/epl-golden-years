@@ -18,7 +18,7 @@ const {
 const { playersUrl, teamsUrl, seasonsUrl } = require('./lib/urls')
 
 const app = require('fastify')({
-  logger: true
+  logger: true,
 })
 
 app.get('/', (request, response) => {

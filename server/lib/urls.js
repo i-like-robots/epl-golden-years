@@ -19,7 +19,7 @@ function playerStatsUrl(playerId) {
 }
 
 function teamsUrl() {
-  return join(API_URL, '/teams',)
+  return join(API_URL, '/teams')
 }
 
 function teamUrl(teamId) {

@@ -1,5 +1,10 @@
 const { tables } = require('../dataset')
-const { seasonHatTricksUrl, seasonTableUrl, seasonTopScorersUrl, seasonTopAssistsUrl } = require('../lib/urls')
+const {
+  seasonHatTricksUrl,
+  seasonTableUrl,
+  seasonTopScorersUrl,
+  seasonTopAssistsUrl,
+} = require('../lib/urls')
 
 module.exports = function seasonRoute(request, response) {
   const { seasonId } = request.params

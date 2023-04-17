@@ -10,17 +10,15 @@ module.exports = function teamSquadRoute(request, response) {
   })
 
   if (squad) {
-    const players = squad.players.map((player) => (
-      {
-        player: playerUrl(player.playerId),
-        ...pick(player, 'appearances', 'cleanSheets', 'goals'),
-      }
-    ))
+    const players = squad.players.map((player) => ({
+      player: playerUrl(player.playerId),
+      ...pick(player, 'appearances', 'cleanSheets', 'goals'),
+    }))
 
     response.send({
       season: seasonUrl(squad.seasonId),
       team: teamUrl(squad.teamId),
-      players
+      players,
     })
   } else {
     response.code(404)

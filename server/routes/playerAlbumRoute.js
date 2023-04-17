@@ -6,13 +6,11 @@ module.exports = function playerAlbumRoute(request, response) {
   const player = players[playerId]
 
   if (player) {
-    const data = (stickers[playerId] || []).map((sticker) => (
-      {
-        season: seasonUrl(sticker.seasonId),
-        team: teamUrl(sticker.teamId),
-        url: sticker.sticker,
-      }
-    ))
+    const data = (stickers[playerId] || []).map((sticker) => ({
+      season: seasonUrl(sticker.seasonId),
+      team: teamUrl(sticker.teamId),
+      url: sticker.sticker,
+    }))
 
     response.send({ player: playerUrl(playerId), stickers: data })
   } else {

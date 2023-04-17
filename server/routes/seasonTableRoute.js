@@ -7,12 +7,10 @@ module.exports = function seasonTableRoute(request, response) {
   const table = tables[seasonId]
 
   if (table) {
-    const data = table.map((row) => (
-      {
-        team: teamUrl(row.teamId),
-        ...omit(row, 'teamId'),
-      }
-    ))
+    const data = table.map((row) => ({
+      team: teamUrl(row.teamId),
+      ...omit(row, 'teamId'),
+    }))
 
     response.send({ season: seasonUrl(seasonId), table: data })
   } else {

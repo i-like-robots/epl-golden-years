@@ -1,5 +1,6 @@
 const { players, squads } = require('../dataset')
 const { playerAlbumUrl, playerStatsUrl, seasonUrl, teamSquadUrl } = require('../lib/urls')
+const omit = require('../lib/object-omit')
 
 module.exports = function playerRoute(request, response) {
   const { playerId } = request.params
@@ -10,12 +11,10 @@ module.exports = function playerRoute(request, response) {
       squad.players.some((p) => p.playerId === playerId)
     )
 
-    const history = squadHistory.map((squad) => (
-      {
-        season: seasonUrl(squad.seasonId),
-        squad: teamSquadUrl(squad.teamId, squad.seasonId),
-      }
-    ))
+    const history = squadHistory.map((squad) => ({
+      season: seasonUrl(squad.seasonId),
+      squad: teamSquadUrl(squad.teamId, squad.seasonId),
+    }))
 
     const statistics = playerStatsUrl(playerId)
 

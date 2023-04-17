@@ -4,7 +4,7 @@ const pick = require('../lib/object-pick')
 
 module.exports = function seasonTopAssistsRoute(request, response) {
   const { seasonId } = request.params
-  
+
   const players = []
 
   squads.forEach((squad) => {
