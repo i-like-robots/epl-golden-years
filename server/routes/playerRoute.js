@@ -7,14 +7,16 @@ module.exports = function playerRoute(request, response) {
   const player = players[playerId]
 
   if (player) {
-    const squadHistory = squads.filter((squad) =>
-      squad.players.some((p) => p.playerId === playerId)
-    )
+    const history = []
 
-    const history = squadHistory.map((squad) => ({
-      season: seasonUrl(squad.seasonId),
-      squad: teamSquadUrl(squad.teamId, squad.seasonId),
-    }))
+    squads.forEach((squad) => {
+      if (squad.players.some((player) => player.playerId === playerId)) {
+        history.push({
+          season: seasonUrl(squad.seasonId),
+          squad: teamSquadUrl(squad.teamId, squad.seasonId),
+        })
+      }
+    })
 
     const statistics = playerStatsUrl(playerId)
 
