@@ -1,9 +1,11 @@
 {
   "name": "epl-golden-years",
+  "private": true,
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "server/start.js",
   "scripts": {
+    "dev": "node --watch ./server/start.js",
     "start": "node ./server/start.js",
     "lint": "eslint . --ext ts,tsx,js,jsx",
     "format": "prettier --write '**/*.{ts,tsx,js,jsx,json,yml}'",
@@ -19,5 +21,8 @@
   "devDependencies": {
     "eslint": "^8.38.0",
     "prettier": "^2.8.7"
+  },
+  "engines": {
+    "node": "18.x"
   }
 }
