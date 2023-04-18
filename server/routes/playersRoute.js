@@ -1,22 +1,17 @@
 const { players } = require('../dataset')
 const { playerUrl } = require('../lib/urls')
-const matches = require('../lib/object-matches')
+const search = require('../lib/object-search')
 
-const SEARCH_PATTERN = /^[a-z]+$/i
-
-const SEARCH_FIELDS = ['displayName', 'firstName', 'lastName']
-
-const isSearchValid = (search) => search && SEARCH_PATTERN.test(search)
+const SEARCH_PROPS = ['displayName', 'firstName', 'lastName']
 
 module.exports = function playersRoute(request, response) {
-  const { search } = request.query
-  const matcher = isSearchValid(search) ? matches(search) : null
+  const matcher = search(request.query.search)
   const playersData = []
 
   Object.keys(players).forEach((playerId) => {
     const player = players[playerId]
 
-    if (matcher ? matcher(player, SEARCH_FIELDS) : true) {
+    if (typeof matcher === 'function' ? matcher(player, SEARCH_PROPS) : true) {
       playersData.push(playerUrl(playerId))
     }
   })
