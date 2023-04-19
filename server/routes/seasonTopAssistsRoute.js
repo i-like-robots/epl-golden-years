@@ -29,8 +29,8 @@ module.exports = function seasonTopAssistsRoute(request, response) {
 
     const data = players.slice(0, 10).map((player) => ({
       player: playerUrl(player.playerId),
-      ...pick(player, 'assists', 'goals', 'appearances'),
-      mpa: Math.round((player.appearances * 90) / player.assists),
+      ...pick(player, 'assists', 'appearances'),
+      minutesPerAssists: Math.round((player.appearances * 90) / player.assists),
     }))
 
     response.send({ season: seasonUrl(seasonId), assists: data })
