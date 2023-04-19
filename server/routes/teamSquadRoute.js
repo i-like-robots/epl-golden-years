@@ -12,7 +12,7 @@ module.exports = function teamSquadRoute(request, response) {
   if (squad) {
     const players = squad.players.map((player) => ({
       player: playerUrl(player.playerId),
-      ...pick(player, 'appearances', 'cleanSheets', 'goals'),
+      ...pick(player, 'appearances', 'cleanSheets', 'goals', 'assists'),
     }))
 
     response.send({
