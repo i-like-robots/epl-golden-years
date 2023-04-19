@@ -17,9 +17,13 @@ const {
 } = require('./routes')
 const { playersUrl, teamsUrl, seasonsUrl } = require('./lib/urls')
 
+const cors = require('@fastify/cors')
+
 const app = require('fastify')({
   logger: true,
 })
+
+app.register(cors)
 
 app.get('/', (request, response) => {
   response.send({
