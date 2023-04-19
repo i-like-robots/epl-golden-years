@@ -1,0 +1,699 @@
+openapi: 3.0.3
+info:
+  title: EPL Golden Years - OpenAPI 3.0
+  description: |-
+    This is a sample Pet Store Server based on the OpenAPI 3.0 specification.  You can find out more about
+    Swagger at [https://swagger.io](https://swagger.io). In the third iteration of the pet store, we've switched to the design first approach!
+    You can now help us improve the API whether it's by making changes to the definition itself or to the code.
+    That way, with time, we can improve the API in general, and expose some of the new features in OAS3.
+
+    _If you're looking for the Swagger 2.0/OAS 2.0 version of Petstore, then click [here](https://editor.swagger.io/?url=https://petstore.swagger.io/v2/swagger.yaml). Alternatively, you can load via the `Edit > Load Petstore OAS 2.0` menu option!_
+    
+    Some useful links:
+    - [The Pet Store repository](https://github.com/swagger-api/swagger-petstore)
+    - [The source API definition for the Pet Store](https://github.com/swagger-api/swagger-petstore/blob/master/src/main/resources/openapi.yaml)
+  termsOfService: http://swagger.io/terms/
+  contact:
+    email: apiteam@swagger.io
+  license:
+    name: Apache 2.0
+    url: http://www.apache.org/licenses/LICENSE-2.0.html
+  version: 1.0.11
+externalDocs:
+  description: Find out more about Swagger
+  url: http://swagger.io
+servers:
+  - url: https://epl-golden-years.vercel.app/
+tags:
+  - name: player
+    description: Everything about players
+  - name: season
+    description: Everything about seasons
+  - name: team
+    description: Everything about teams
+paths:
+  /players:
+    get:
+      tags:
+        - player
+      summary: List all players
+      description: Returns a list of all players, optionally filtered by player name.
+      operationId: playersRoute
+      parameters:
+        - name: search
+          in: query
+          description: Filter player names by search term
+          required: false
+          explode: false
+          schema:
+            type: string
+      responses:
+        '200':
+          description: success
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Players'
+ 
+  /players/{playerId}:
+    get:
+      tags:
+        - player
+      summary: Get player by ID
+      description: Returns details for a single player.
+      operationId: playerRoute
+      parameters:
+        - name: playerId
+          in: path
+          description: ID of player
+          required: true
+          schema:
+            type: string
+      responses:
+        '200':
+          description: success
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Player'
+        '404':
+          description: Player not found
+
+  /players/{playerId}/album:
+    get:
+      tags:
+        - player
+      summary: Get stickers for a player
+      description: Returns sticker album entries for a single player
+      operationId: playerAlbumRoute
+      parameters:
+        - name: playerId
+          in: path
+          description: ID of player
+          required: true
+          schema:
+            type: string
+      responses:
+        '200':
+          description: success
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/PlayerAlbum'
+        '404':
+          description: Player not found
+
+  /players/{playerId}/statistics:
+    get:
+      tags:
+        - player
+      summary: Get statistics for a player
+      description: Returns cumulative statistics for a player across all seasons.
+      operationId: playerStatsRoute
+      parameters:
+        - name: playerId
+          in: path
+          description: ID of player
+          required: true
+          schema:
+            type: string
+      responses:
+        '200':
+          description: success
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/PlayerStats'
+        '404':
+          description: Player not found
+
+  /teams:
+    get:
+      tags:
+        - team
+      summary: List all teams
+      description: Returns a list of all teams, optionally filtered by team name.
+      operationId: teamsRoute
+      parameters:
+        - name: search
+          in: query
+          description: Filter team names by search term
+          required: false
+          explode: false
+          schema:
+            type: string
+      responses:
+        '200':
+          description: success
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Teams'
+ 
+  /teams/{teamId}:
+    get:
+      tags:
+        - team
+      summary: Get team by ID
+      description: Returns details for a single team.
+      operationId: teamRoute
+      parameters:
+        - name: teamId
+          in: path
+          description: ID of player
+          required: true
+          schema:
+            type: string
+      responses:
+        '200':
+          description: success
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Team'
+        '404':
+          description: Team not found
+
+  /teams/{teamId}/squads:
+    get:
+      tags:
+        - team
+      summary: Get list of squads for a team
+      description: Returns a list of squads for a single team.
+      operationId: teamSquadsRoute
+      parameters:
+        - name: teamId
+          in: path
+          description: ID of team
+          required: true
+          schema:
+            type: string
+      responses:
+        '200':
+          description: success
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/TeamSquads'
+        '404':
+          description: Team not found
+
+  /teams/{teamId}/squads/{seasonId}:
+    get:
+      tags:
+        - team
+      summary: Get squad by team and season
+      description: Returns data about a single squad for a single team and season.
+      operationId: teamSquadRoute
+      parameters:
+        - name: teamId
+          in: path
+          description: ID of team
+          required: true
+          schema:
+            type: string
+        - name: seasonId
+          in: path
+          description: ID of season
+          required: true
+          schema:
+            type: string
+            pattern: "^\\d{4}-\\d{4}$"
+      responses:
+        '200':
+          description: success
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/TeamSquad'
+        '404':
+          description: Squad not found
+
+  /teams/{teamId}/statistics:
+    get:
+      tags:
+        - team
+      summary: Get statistics for a team
+      description: Returns cumulative statistics for a team across all seasons played.
+      operationId: teamStatsRoute
+      parameters:
+        - name: teamId
+          in: path
+          description: ID of team
+          required: true
+          schema:
+            type: string
+      responses:
+        '200':
+          description: success
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/TeamStats'
+        '404':
+          description: Team not found
+
+  /seasons:
+    get:
+      tags:
+        - season
+      summary: List all seasons
+      description: Returns a list of all seasons.
+      operationId: seasonsRoute
+      responses:
+        '200':
+          description: success
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Seasons'
+
+  /seasons/{seasonId}:
+    get:
+      tags:
+        - season
+      summary: Get season by ID
+      description: Returns details for a single season.
+      operationId: seasonRoute
+      parameters:
+        - name: seasonId
+          in: path
+          description: ID of season
+          required: true
+          schema:
+            type: string
+      responses:
+        '200':
+          description: success
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Season'
+        '404':
+          description: Season not found
+
+  /seasons/{seasonId}/table:
+    get:
+      tags:
+        - season
+      summary: Get league table by season
+      description: Returns final league table standings for a single season.
+      operationId: seasonTableRoute
+      parameters:
+        - name: seasonId
+          in: path
+          description: ID of season
+          required: true
+          schema:
+            type: string
+      responses:
+        '200':
+          description: success
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/SeasonTable'
+        '404':
+          description: Season not found
+
+  /seasons/{seasonId}/top-assists:
+    get:
+      tags:
+        - season
+      summary: Get top assists by season
+      description: Returns a list of players with the most assists for a single season.
+      operationId: seasonTopAssistsRoute
+      parameters:
+        - name: seasonId
+          in: path
+          description: ID of season
+          required: true
+          schema:
+            type: string
+      responses:
+        '200':
+          description: success
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/SeasonTopAssists'
+        '404':
+          description: Season not found
+
+  /seasons/{seasonId}/top-scorers:
+    get:
+      tags:
+        - season
+      summary: Get top scorers by season
+      description: Returns a list of players with the most goals for a single season.
+      operationId: seasonTopScorersRoute
+      parameters:
+        - name: seasonId
+          in: path
+          description: ID of season
+          required: true
+          schema:
+            type: string
+      responses:
+        '200':
+          description: success
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/SeasonTopScorers'
+        '404':
+          description: Season not found
+
+  /seasons/{seasonId}/hat-tricks:
+    get:
+      tags:
+        - season
+      summary: Get hat-tricks by season
+      description: Returns a list of hat-tricks for a single season.
+      operationId: seasonHatTricksRoute
+      parameters:
+        - name: seasonId
+          in: path
+          description: ID of season
+          required: true
+          schema:
+            type: string
+      responses:
+        '200':
+          description: success
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/SeasonHatTricks'
+        '404':
+          description: Season not found
+
+components:
+  schemas:
+
+    Players:
+      type: array
+      items:
+        type: string
+        format: uri
+
+    Player:
+      type: object
+      properties:
+        pulseId:
+          type: integer
+        optaId:
+          type: string
+          pattern: "^p\\d{3,5}$"
+        positionCode:
+          type: string
+          enum: [G, D, M, F]
+        positionName:
+          type: string
+        displayName:
+          type: string
+        firstName:
+          type: string
+        lastName:
+          type: string
+        dateOfBirth:
+          type: string
+          format: date
+        countryCode:
+          type: string
+          format: ISO-3166-1
+        countryName:
+          type: string
+        history:
+          type: array
+          items:
+            type: object
+            properties:
+              season:
+                type: string
+                format: uri
+              squad:
+                type: string
+                format: uri
+        statistics:
+          type: string
+          format: uri
+        album:
+          type: string
+          format: uri
+
+    PlayerStats:
+      type: object
+      properties:
+        player:
+          type: string
+          format: uri
+        statistics:
+          type: object
+          properties:
+            appearances:
+              type: integer
+            cleanSheets:
+              type: integer
+            goals:
+              type: integer
+            assists:
+              type: integer
+            hatTricks:
+              type: integer
+
+    PlayerAlbum:
+      type: object
+      properties:
+        player:
+          type: string
+          format: uri
+        stickers:
+          type: array
+          items:
+            type: object
+          properties:
+            season:
+              type: string
+              format: uri
+            team:
+              type: string
+              format: uri
+            url:
+              type: string
+              format: uri
+
+    Teams:
+      type: array
+      items:
+        type: string
+        format: uri
+
+    Team:
+      type: object
+      properties:
+        pulseId:
+          type: integer
+        optaId:
+          type: string
+          pattern: "^t\\d{1,3}$"
+        name:
+          type: string
+        shortName:
+          type: string
+          pattern: "^[A-Z]{2,3}$"
+        history:
+          type: array
+          items:
+            type: object
+            properties:
+              season:
+                type: string
+                format: uri
+              squad:
+                type: string
+                format: uri
+        statistics:
+          type: string
+          format: uri
+
+    TeamStats:
+      type: object
+      properties:
+        team:
+          type: string
+          format: uri
+        statistics:
+          type: object
+          properties:
+            played:
+              type: integer
+            wins:
+              type: integer
+            draws:
+              type: integer
+            losses:
+              type: integer
+            for:
+              type: integer
+            against:
+              type: integer
+
+    TeamSquads:
+      type: object
+      properties:
+        team:
+          type: string
+          format: uri
+        squads:
+          type: array
+          items:
+            type: string
+            format: uri
+
+    TeamSquad:
+      type: object
+      properties:
+        team:
+          type: string
+          format: uri
+        season:
+          type: string
+          format: uri
+        squad:
+          type: array
+          items:
+            type: object
+            properties:
+              player:
+                type: string
+                format: uri
+              appearances:
+                type: integer
+              cleanSheets:
+                type: integer
+              goals:
+                type: integer
+              assists:
+                type: integer
+
+    Seasons:
+      type: array
+      items:
+        type: string
+        format: uri
+
+    Season:
+      type: object
+      properties:
+        table:
+          type: string
+          format: uri
+        topScorers:
+          type: string
+          format: uri
+        topAssists:
+          type: string
+          format: uri
+        hatTricks:
+          type: string
+          format: uri
+
+    SeasonTable:
+      type: object
+      properties:
+        season:
+          type: string
+          format: uri
+        table:
+          type: array
+          items:
+            type: object
+          properties:
+            team:
+              type: string
+              format: uri
+            rank:
+              type: integer
+            points:
+              type: integer
+            played:
+              type: integer
+            wins:
+              type: integer
+            draws:
+              type: integer
+            losses:
+              type: integer
+            for:
+              type: integer
+            against:
+              type: integer
+            diff:
+              type: integer
+
+    SeasonTopAssists:
+      type: object
+      properties:
+        season:
+          type: string
+          format: uri
+        assists:
+          type: array
+          items:
+            type: object
+          properties:
+            player:
+              type: string
+              format: uri
+            assists:
+              type: integer
+            appearances:
+              type: integer
+            minutesPerAssist:
+              type: integer
+
+    SeasonTopScorers:
+      type: object
+      properties:
+        season:
+          type: string
+          format: uri
+        scorers:
+          type: array
+          items:
+            type: object
+          properties:
+            player:
+              type: string
+              format: uri
+            goals:
+              type: integer
+            appearances:
+              type: integer
+            minutesPerGoal:
+              type: integer
+
+    SeasonHatTricks:
+      type: object
+      properties:
+        season:
+          type: string
+          format: uri
+        hatTricks:
+          type: array
+          items:
+            type: object
+          properties:
+            player:
+              type: string
+              format: uri
+            homeTeam:
+              type: string
+              format: uri
+            awayTeam:
+              type: string
+              format: uri
+            date:
+              type: string
+              format: date
