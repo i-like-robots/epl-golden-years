@@ -12,10 +12,11 @@ module.exports = function teamRoute(request, response) {
     Object.keys(tables).forEach((seasonId) => {
       const playedInSeason = tables[seasonId].some((team) => team.teamId === teamId)
 
-      playedInSeason && history.push({
-        season: seasonUrl(seasonId),
-        squad: teamSquadUrl(teamId, seasonId),
-      })
+      playedInSeason &&
+        history.push({
+          season: seasonUrl(seasonId),
+          squad: teamSquadUrl(teamId, seasonId),
+        })
     })
 
     const statistics = teamStatsUrl(teamId)
