@@ -15,7 +15,6 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "@fastify/cors": "^8.2.1",
     "fastify": "^4.15.0",
     "url-join": "^4.0.0"
   },

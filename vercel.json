@@ -12,6 +12,10 @@
         {
           "key": "Cache-Control",
           "value": "public, s-maxage=86400, stale-while-revalidate"
+        },
+        {
+          "key": "Access-Control-Allow-Origin",
+          "value": "*"
         }
       ]
     }
