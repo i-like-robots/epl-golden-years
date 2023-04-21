@@ -4727,6 +4727,18 @@
       "sticker": "https://www.laststicker.com/i/cards/312/115.jpg"
     }
   ],
+  "dave-barnes-7d9b": [
+    {
+      "teamId": "shu",
+      "seasonId": "1992-1993",
+      "sticker": "https://www.laststicker.com/i/cards/3153/209.jpg"
+    },
+    {
+      "teamId": "shu",
+      "seasonId": "1993-1994",
+      "sticker": "https://www.laststicker.com/i/cards/470/348.jpg"
+    }
+  ],
   "john-gannon-890c": [
     {
       "teamId": "shu",
@@ -7733,6 +7745,18 @@
       "teamId": "new",
       "seasonId": "1993-1994",
       "sticker": "https://www.laststicker.com/i/cards/470/280.jpg"
+    }
+  ],
+  "alex-mathie-dfc3": [
+    {
+      "teamId": "new",
+      "seasonId": "1993-1994",
+      "sticker": "https://www.laststicker.com/i/cards/470/281.jpg"
+    },
+    {
+      "teamId": "new",
+      "seasonId": "1994-1995",
+      "sticker": "https://www.laststicker.com/i/cards/471/334.jpg"
     }
   ],
   "spencer-prior-4c1b": [
@@ -12210,6 +12234,18 @@
       "sticker": "https://www.laststicker.com/i/cards/312/446.jpg"
     }
   ],
+  "alan-miller-941a": [
+    {
+      "teamId": "mid",
+      "seasonId": "1995-1996",
+      "sticker": "https://www.laststicker.com/i/cards/312/483.jpg"
+    },
+    {
+      "teamId": "mid",
+      "seasonId": "1996-1997",
+      "sticker": "https://www.laststicker.com/i/cards/472/309.jpg"
+    }
+  ],
   "chris-morris-afb1": [
     {
       "teamId": "mid",
@@ -13320,13 +13356,6 @@
       "sticker": "https://www.laststicker.com/i/cards/472/298.jpg"
     }
   ],
-  "alan-miller-941a": [
-    {
-      "teamId": "mid",
-      "seasonId": "1996-1997",
-      "sticker": "https://www.laststicker.com/i/cards/472/309.jpg"
-    }
-  ],
   "emerson-dd34": [
     {
       "teamId": "mid",
@@ -13958,6 +13987,11 @@
       "teamId": "blb",
       "seasonId": "1997-1998",
       "sticker": "https://www.laststicker.com/i/cards/86/85.jpg"
+    },
+    {
+      "teamId": "blb",
+      "seasonId": "1998-1999",
+      "sticker": "https://www.laststicker.com/i/cards/87/66.jpg"
     },
     {
       "teamId": "liv",
@@ -15223,6 +15257,18 @@
       "sticker": "https://www.laststicker.com/i/cards/507/91.jpg"
     }
   ],
+  "shaun-newton-59f1": [
+    {
+      "teamId": "cha",
+      "seasonId": "1998-1999",
+      "sticker": "https://www.laststicker.com/i/cards/87/95.jpg"
+    },
+    {
+      "teamId": "cha",
+      "seasonId": "2000-2001",
+      "sticker": "https://www.laststicker.com/i/cards/498/76.jpg"
+    }
+  ],
   "mark-kinsella-f09b": [
     {
       "teamId": "cha",
@@ -15329,6 +15375,13 @@
       "sticker": "https://www.laststicker.com/i/cards/87/121.jpg"
     }
   ],
+  "pierluigi-casiraghi-cb8e": [
+    {
+      "teamId": "che",
+      "seasonId": "1998-1999",
+      "sticker": "https://www.laststicker.com/i/cards/87/127.jpg"
+    }
+  ],
   "jean-guy-wallemme-1b62": [
     {
       "teamId": "cov",
@@ -15363,6 +15416,23 @@
       "teamId": "cov",
       "seasonId": "1998-1999",
       "sticker": "https://www.laststicker.com/i/cards/87/151.jpg"
+    }
+  ],
+  "stefan-schnoor-b614": [
+    {
+      "teamId": "der",
+      "seasonId": "1998-1999",
+      "sticker": "https://www.laststicker.com/i/cards/87/168.jpg"
+    },
+    {
+      "teamId": "der",
+      "seasonId": "1999-2000",
+      "sticker": "https://www.laststicker.com/i/cards/88/143.jpg"
+    },
+    {
+      "teamId": "der",
+      "seasonId": "2000-2001",
+      "sticker": "https://www.laststicker.com/i/cards/498/129.jpg"
     }
   ],
   "horacio-carbonari-b5cc": [
@@ -16236,18 +16306,6 @@
       "teamId": "der",
       "seasonId": "1999-2000",
       "sticker": "https://www.laststicker.com/i/cards/88/139.jpg"
-    }
-  ],
-  "stefan-schnoor-b614": [
-    {
-      "teamId": "der",
-      "seasonId": "1999-2000",
-      "sticker": "https://www.laststicker.com/i/cards/88/143.jpg"
-    },
-    {
-      "teamId": "der",
-      "seasonId": "2000-2001",
-      "sticker": "https://www.laststicker.com/i/cards/498/129.jpg"
     }
   ],
   "seth-johnson-751b": [
@@ -17228,13 +17286,6 @@
       "teamId": "cha",
       "seasonId": "2001-2002",
       "sticker": "https://www.laststicker.com/i/cards/507/89.jpg"
-    }
-  ],
-  "shaun-newton-59f1": [
-    {
-      "teamId": "cha",
-      "seasonId": "2000-2001",
-      "sticker": "https://www.laststicker.com/i/cards/498/76.jpg"
     }
   ],
   "claus-jensen-5bf0": [

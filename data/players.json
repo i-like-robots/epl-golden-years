@@ -419,11 +419,11 @@
     "countryCode": "BR",
     "countryName": "Brazil"
   },
-  "darren-ambrose-96b1": {
+  "darren-ambrose-2b11": {
     "pulseId": 2093,
     "optaId": "p10744",
     "positionCode": "M",
-    "positionName": "Centre/Right Central Midfielder",
+    "positionName": "Midfielder",
     "displayName": "Darren Ambrose",
     "firstName": "Darren",
     "lastName": "Ambrose",
@@ -443,11 +443,11 @@
     "countryCode": "IT",
     "countryName": "Italy"
   },
-  "shola-ameobi-c8eb": {
+  "shola-ameobi-125b": {
     "pulseId": 1962,
     "optaId": "p6240",
     "positionCode": "F",
-    "positionName": "Centre Striker",
+    "positionName": "Forward",
     "displayName": "Shola Ameobi",
     "firstName": "Foluwashola",
     "lastName": "Ameobi",
@@ -2927,11 +2927,11 @@
     "countryCode": "GB-ENG",
     "countryName": "England"
   },
-  "thomas-brolin-b8da": {
+  "thomas-brolin-596f": {
     "pulseId": 1124,
     "optaId": "p15003",
     "positionCode": "F",
-    "positionName": "Centre Second Striker",
+    "positionName": "Forward",
     "displayName": "Thomas Brolin",
     "firstName": "Thomas",
     "lastName": "Brolin",
@@ -3059,11 +3059,11 @@
     "countryCode": "GB-ENG",
     "countryName": "England"
   },
-  "wes-brown-f398": {
+  "wes-brown-60a3": {
     "pulseId": 1211,
     "optaId": "p1841",
     "positionCode": "D",
-    "positionName": "Centre/Right Central Defender",
+    "positionName": "Defender",
     "displayName": "Wes Brown",
     "firstName": "Wes",
     "lastName": "Brown",
@@ -3119,11 +3119,11 @@
     "countryCode": "GB-SCT",
     "countryName": "Scotland"
   },
-  "gary-bull-0772": {
+  "gary-bull-b949": {
     "pulseId": 945,
     "optaId": "p3129",
     "positionCode": "F",
-    "positionName": "Striker",
+    "positionName": "Forward",
     "displayName": "Gary Bull",
     "firstName": "Gary",
     "lastName": "Bull",
@@ -3659,11 +3659,11 @@
     "countryCode": "IE",
     "countryName": "Ireland"
   },
-  "jamie-carragher-c0fa": {
+  "jamie-carragher-e9cf": {
     "pulseId": 915,
     "optaId": "p1809",
     "positionCode": "D",
-    "positionName": "Centre/Right Central Defender",
+    "positionName": "Defender",
     "displayName": "Jamie Carragher",
     "firstName": "Jamie",
     "lastName": "Carragher",
@@ -4259,11 +4259,11 @@
     "countryCode": "GB-ENG",
     "countryName": "England"
   },
-  "joe-cole-1269": {
+  "joe-cole-551b": {
     "pulseId": 1632,
     "optaId": "p2060",
     "positionCode": "M",
-    "positionName": "Left/Centre/Right Attacking Midfielder",
+    "positionName": "Midfielder",
     "displayName": "Joe Cole",
     "firstName": "Joe",
     "lastName": "Cole",
@@ -6095,11 +6095,11 @@
     "countryCode": "GB-NIR",
     "countryName": "Northern Ireland"
   },
-  "stewart-downing-ada4": {
+  "stewart-downing-c31d": {
     "pulseId": 2122,
     "optaId": "p12002",
     "positionCode": "M",
-    "positionName": "Left/Right Winger",
+    "positionName": "Winger",
     "displayName": "Stewart Downing",
     "firstName": "Stewart",
     "lastName": "Downing",
@@ -6335,11 +6335,11 @@
     "countryCode": "CA",
     "countryName": "Canada"
   },
-  "david-dunn-9b6a": {
+  "david-dunn-c7f6": {
     "pulseId": 1337,
     "optaId": "p1274",
     "positionCode": "M",
-    "positionName": "Centre Attacking Midfielder",
+    "positionName": "Midfielder",
     "displayName": "David Dunn",
     "firstName": "David",
     "lastName": "Dunn",
@@ -6539,11 +6539,11 @@
     "countryCode": "GB-WLS",
     "countryName": "Wales"
   },
-  "paul-edwards-6b94": {
+  "paul-edwards-7c95": {
     "pulseId": 625,
     "optaId": "p173633",
     "positionCode": "D",
-    "positionName": "Left Full Back",
+    "positionName": "Defender",
     "displayName": "Paul Edwards",
     "firstName": "Paul",
     "lastName": "Edwards",
@@ -7343,11 +7343,11 @@
     "countryCode": "GB-ENG",
     "countryName": "England"
   },
-  "darren-fletcher-595d": {
+  "darren-fletcher-f7c5": {
     "pulseId": 1943,
     "optaId": "p14295",
     "positionCode": "M",
-    "positionName": "Centre/Right Central Midfielder",
+    "positionName": "Midfielder",
     "displayName": "Darren Fletcher",
     "firstName": "Darren",
     "lastName": "Fletcher",
@@ -7487,11 +7487,11 @@
     "countryCode": "IE",
     "countryName": "Ireland"
   },
-  "terrell-forbes-4026": {
+  "terrell-forbes-223a": {
     "pulseId": 8615,
     "optaId": "p10246",
     "positionCode": "D",
-    "positionName": "Central Defender",
+    "positionName": "Defender",
     "displayName": "Terrell Forbes",
     "firstName": "Terrell",
     "lastName": "Forbes",
@@ -8015,11 +8015,11 @@
     "countryCode": "GB-ENG",
     "countryName": "England"
   },
-  "ricardo-gardner-7760": {
+  "ricardo-gardner-9cb2": {
     "pulseId": 2041,
     "optaId": "p1307",
     "positionCode": "M",
-    "positionName": "Left/Centre Central Midfielder",
+    "positionName": "Midfielder",
     "displayName": "Ricardo Gardner",
     "firstName": "Ricardo",
     "lastName": "Gardner",
@@ -8207,11 +8207,11 @@
     "countryCode": "GB-ENG",
     "countryName": "England"
   },
-  "steven-gerrard-d246": {
+  "steven-gerrard-d365": {
     "pulseId": 1575,
     "optaId": "p1814",
     "positionCode": "M",
-    "positionName": "Centre Defensive Midfielder",
+    "positionName": "Midfielder",
     "displayName": "Steven Gerrard",
     "firstName": "Steven",
     "lastName": "Gerrard",
@@ -8291,11 +8291,11 @@
     "countryCode": "GB-ENG",
     "countryName": "England"
   },
-  "ryan-giggs-e077": {
+  "ryan-giggs-d4f1": {
     "pulseId": 335,
     "optaId": "p3",
     "positionCode": "M",
-    "positionName": "Left/Centre Central Midfielder",
+    "positionName": "Midfielder",
     "displayName": "Ryan Giggs",
     "firstName": "Ryan",
     "lastName": "Giggs",
@@ -9947,11 +9947,11 @@
     "countryCode": "GB-ENG",
     "countryName": "England"
   },
-  "thierry-henry-0a6b": {
+  "thierry-henry-31bb": {
     "pulseId": 1659,
     "optaId": "p1619",
     "positionCode": "F",
-    "positionName": "Centre Striker",
+    "positionName": "Forward",
     "displayName": "Thierry Henry",
     "firstName": "Thierry",
     "lastName": "Henry",
@@ -9983,11 +9983,11 @@
     "countryCode": "GB-ENG",
     "countryName": "England"
   },
-  "tony-hibbert-7546": {
+  "tony-hibbert-b375": {
     "pulseId": 1881,
     "optaId": "p9007",
     "positionCode": "D",
-    "positionName": "Right Full Back",
+    "positionName": "Defender",
     "displayName": "Tony Hibbert",
     "firstName": "Tony",
     "lastName": "Hibbert",
@@ -10247,11 +10247,11 @@
     "countryCode": "GB-WLS",
     "countryName": "Wales"
   },
-  "john-hodges-189f": {
+  "john-hodges-9454": {
     "pulseId": 75290,
     "optaId": "p506734",
     "positionCode": "G",
-    "positionName": "Centre Goalkeeper",
+    "positionName": "Goalkeeper",
     "displayName": "John Hodges",
     "firstName": "John",
     "lastName": "Hodges",
@@ -10883,11 +10883,11 @@
     "countryCode": "GB-ENG",
     "countryName": "England"
   },
-  "nicky-hunt-565a": {
+  "nicky-hunt-2df4": {
     "pulseId": 2031,
     "optaId": "p15441",
     "positionCode": "D",
-    "positionName": "Right Full Back",
+    "positionName": "Defender",
     "displayName": "Nicky Hunt",
     "firstName": "Nicky",
     "lastName": "Hunt",
@@ -12599,11 +12599,11 @@
     "countryCode": "SK",
     "countryName": "Slovakia"
   },
-  "ledley-king-2198": {
+  "ledley-king-0c1c": {
     "pulseId": 1627,
     "optaId": "p1934",
     "positionCode": "D",
-    "positionName": "Centre Central Defender",
+    "positionName": "Defender",
     "displayName": "Ledley King",
     "firstName": "Ledley",
     "lastName": "King",
@@ -13019,11 +13019,11 @@
     "countryCode": "FR",
     "countryName": "France"
   },
-  "frank-lampard-7a4b": {
+  "frank-lampard-06ce": {
     "pulseId": 800,
     "optaId": "p2051",
     "positionCode": "M",
-    "positionName": "Centre Central Midfielder",
+    "positionName": "Midfielder",
     "displayName": "Frank Lampard",
     "firstName": "Frank",
     "lastName": "Lampard",
@@ -14651,11 +14651,11 @@
     "countryCode": "GB-ENG",
     "countryName": "England"
   },
-  "george-mccartney-dc3f": {
+  "george-mccartney-9e49": {
     "pulseId": 1756,
     "optaId": "p5609",
     "positionCode": "D",
-    "positionName": "Left Full Back",
+    "positionName": "Defender",
     "displayName": "George McCartney",
     "firstName": "George",
     "lastName": "McCartney",
@@ -16391,11 +16391,11 @@
     "countryCode": "GB-ENG",
     "countryName": "England"
   },
-  "gary-neville-e685": {
+  "gary-neville-6984": {
     "pulseId": 321,
     "optaId": "p1807",
     "positionCode": "D",
-    "positionName": "Right Full Back",
+    "positionName": "Defender",
     "displayName": "Gary Neville",
     "firstName": "Gary",
     "lastName": "Neville",
@@ -16955,11 +16955,11 @@
     "countryCode": "IE",
     "countryName": "Ireland"
   },
-  "john-oshea-8798": {
+  "john-oshea-7e5e": {
     "pulseId": 1717,
     "optaId": "p3736",
     "positionCode": "D",
-    "positionName": "Left/Centre/Right Central Defender",
+    "positionName": "Defender",
     "displayName": "John O'Shea",
     "firstName": "John",
     "lastName": "O'Shea",
@@ -17147,11 +17147,11 @@
     "countryCode": "GB-ENG",
     "countryName": "England"
   },
-  "leon-osman-e3ff": {
+  "leon-osman-d903": {
     "pulseId": 1887,
     "optaId": "p8378",
     "positionCode": "M",
-    "positionName": "Centre/Right Attacking Midfielder",
+    "positionName": "Midfielder",
     "displayName": "Leon Osman",
     "firstName": "Leon",
     "lastName": "Osman",
@@ -17447,11 +17447,11 @@
     "countryCode": "GB-ENG",
     "countryName": "England"
   },
-  "stuart-parnaby-b7cb": {
+  "stuart-parnaby-1c8f": {
     "pulseId": 1948,
     "optaId": "p7907",
     "positionCode": "D",
-    "positionName": "Right Full Back",
+    "positionName": "Defender",
     "displayName": "Stuart Parnaby",
     "firstName": "Stuart",
     "lastName": "Parnaby",
@@ -18659,11 +18659,11 @@
     "countryCode": "GB-SCT",
     "countryName": "Scotland"
   },
-  "marino-rahmberg-7c72": {
+  "marino-rahmberg-2a3f": {
     "pulseId": 1182,
     "optaId": "p17057",
-    "positionCode": "S",
-    "positionName": "Substitute",
+    "positionCode": "F",
+    "positionName": "Forward",
     "displayName": "Marino Rahmberg",
     "firstName": "Marino",
     "lastName": "Rahmberg",
@@ -19175,11 +19175,11 @@
     "countryCode": "GB-ENG",
     "countryName": "England"
   },
-  "omer-riza-789a": {
+  "omer-riza-59aa": {
     "pulseId": 18583,
     "optaId": "p3645",
     "positionCode": "F",
-    "positionName": "Striker",
+    "positionName": "Forward",
     "displayName": "Omer Riza",
     "firstName": "Omer",
     "lastName": "Riza",
@@ -19907,11 +19907,11 @@
     "countryCode": "DE",
     "countryName": "Germany"
   },
-  "paul-scholes-d344": {
+  "paul-scholes-bdef": {
     "pulseId": 336,
     "optaId": "p363",
     "positionCode": "M",
-    "positionName": "Centre Central Midfielder",
+    "positionName": "Midfielder",
     "displayName": "Paul Scholes",
     "firstName": "Paul",
     "lastName": "Scholes",
@@ -21839,11 +21839,11 @@
     "countryCode": "GB-ENG",
     "countryName": "England"
   },
-  "cleveland-taylor-596b": {
+  "cleveland-taylor-c990": {
     "pulseId": 10184,
     "optaId": "p12247",
     "positionCode": "M",
-    "positionName": "Right Winger",
+    "positionName": "Winger",
     "displayName": "Cleveland Taylor",
     "firstName": "Cleveland",
     "lastName": "Taylor",
@@ -21851,7 +21851,7 @@
     "countryCode": "GB-ENG",
     "countryName": "England"
   },
-  "danny-taylor-5aff": {
+  "danny-taylor-c94b": {
     "pulseId": 75283,
     "optaId": "p506759",
     "positionCode": "G",
@@ -21860,8 +21860,8 @@
     "firstName": "Danny",
     "lastName": "Taylor",
     "dateOfBirth": "1981-10-09",
-    "countryCode": null,
-    "countryName": null
+    "countryCode": "GB-ENG",
+    "countryName": "England"
   },
   "gareth-taylor-e566": {
     "pulseId": 1937,
@@ -22031,11 +22031,11 @@
     "countryCode": "FR",
     "countryName": "France"
   },
-  "john-terry-eaff": {
+  "john-terry-3fa8": {
     "pulseId": 1353,
     "optaId": "p1718",
     "positionCode": "D",
-    "positionName": "Centre Central Defender",
+    "positionName": "Defender",
     "displayName": "John Terry",
     "firstName": "John",
     "lastName": "Terry",
@@ -24131,11 +24131,11 @@
     "countryCode": "NL",
     "countryName": "Netherlands"
   },
-  "andy-williams-95e6": {
+  "andy-williams-a8ed": {
     "pulseId": 1460,
     "optaId": "p38187",
     "positionCode": "F",
-    "positionName": "Striker",
+    "positionName": "Forward",
     "displayName": "Andy Williams",
     "firstName": "Andy",
     "lastName": "Williams",
@@ -24875,11 +24875,11 @@
     "countryCode": "GB-NIR",
     "countryName": "Northern Ireland"
   },
-  "shaun-wright-phillips-7257": {
+  "shaun-wright-phillips-57da": {
     "pulseId": 1934,
     "optaId": "p1212",
     "positionCode": "M",
-    "positionName": "Right Winger",
+    "positionName": "Winger",
     "displayName": "Shaun Wright-Phillips",
     "firstName": "Shaun",
     "lastName": "Wright-Phillips",
