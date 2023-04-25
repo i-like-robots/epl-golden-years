@@ -111,7 +111,7 @@ paths:
         '404':
           description: Player not found
 
-  /players/{playerId}/statistics:
+  /players/{playerId}/stats:
     get:
       tags:
         - player
@@ -237,7 +237,7 @@ paths:
         '404':
           description: Squad not found
 
-  /teams/{teamId}/statistics:
+  /teams/{teamId}/stats:
     get:
       tags:
         - team
