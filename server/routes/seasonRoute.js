@@ -7,7 +7,7 @@ const {
   seasonTopAssistsUrl,
 } = require('../lib/urls')
 
-const routeOptions = {
+const seasonRouteOptions = {
   schema: {
     params: {
       seasonId: {
@@ -18,7 +18,7 @@ const routeOptions = {
   },
 }
 
-function routeHandler(request, response) {
+function seasonRouteHandler(request, response) {
   const { seasonId } = request.params
   const table = tables[seasonId]
 
@@ -37,4 +37,4 @@ function routeHandler(request, response) {
   }
 }
 
-module.exports = { routeOptions, routeHandler }
+module.exports = [seasonRouteOptions, seasonRouteHandler]

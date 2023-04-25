@@ -3,7 +3,7 @@ const { players, squads } = require('../dataset')
 const { playerAlbumUrl, playerStatsUrl, seasonUrl, teamSquadUrl } = require('../lib/urls')
 const omit = require('../lib/object-omit')
 
-const routeOptions = {
+const playerRouteOptions = {
   schema: {
     params: {
       playerId: {
@@ -14,7 +14,7 @@ const routeOptions = {
   },
 }
 
-function routeHandler(request, response) {
+function playerRouteHandler(request, response) {
   const { playerId } = request.params
   const player = players[playerId]
 
@@ -42,4 +42,4 @@ function routeHandler(request, response) {
   }
 }
 
-module.exports = { routeOptions, routeHandler }
+module.exports = [playerRouteOptions, playerRouteHandler]

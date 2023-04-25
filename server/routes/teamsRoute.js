@@ -4,7 +4,7 @@ const search = require('../lib/object-search')
 
 const NAME_PROPS = ['name', 'shortName']
 
-const routeOptions = {
+const teamRouteOptions = {
   schema: {
     query: {
       name: {
@@ -15,7 +15,7 @@ const routeOptions = {
   },
 }
 
-function routeHandler(request, response) {
+function teamRouteHandler(request, response) {
   const { name } = request.query
 
   const filters = []
@@ -37,4 +37,4 @@ function routeHandler(request, response) {
   response.send(teamsData)
 }
 
-module.exports = { routeOptions, routeHandler }
+module.exports = [teamRouteOptions, teamRouteHandler]

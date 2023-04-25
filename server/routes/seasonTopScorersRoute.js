@@ -3,7 +3,7 @@ const { SEASON_ID } = require('../lib/constants')
 const { playerUrl, seasonUrl } = require('../lib/urls')
 const pick = require('../lib/object-pick')
 
-const routeOptions = {
+const seasonTopScorersRouteOptions = {
   schema: {
     params: {
       seasonId: {
@@ -14,7 +14,7 @@ const routeOptions = {
   },
 }
 
-function routeHandler(request, response) {
+function seasonTopScorersRouteHandler(request, response) {
   const { seasonId } = request.params
   const players = []
 
@@ -51,4 +51,4 @@ function routeHandler(request, response) {
   }
 }
 
-module.exports = { routeOptions, routeHandler }
+module.exports = [seasonTopScorersRouteOptions, seasonTopScorersRouteHandler]

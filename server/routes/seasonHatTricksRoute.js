@@ -2,7 +2,7 @@ const { hatTricks, tables } = require('../dataset')
 const { SEASON_ID } = require('../lib/constants')
 const { playerUrl, seasonUrl, teamUrl } = require('../lib/urls')
 
-const routeOptions = {
+const seasonHatTricksRouteOptions = {
   schema: {
     params: {
       seasonId: {
@@ -13,7 +13,7 @@ const routeOptions = {
   },
 }
 
-function routeHandler(request, response) {
+function seasonHatTricksRouteHandler(request, response) {
   const { seasonId } = request.params
   const table = tables[seasonId]
 
@@ -38,4 +38,4 @@ function routeHandler(request, response) {
   }
 }
 
-module.exports = { routeOptions, routeHandler }
+module.exports = [seasonHatTricksRouteOptions, seasonHatTricksRouteHandler]

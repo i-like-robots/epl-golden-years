@@ -2,7 +2,7 @@ const { tables, teams } = require('../dataset')
 const { TEAM_ID } = require('../lib/constants')
 const { teamUrl } = require('../lib/urls')
 
-const routeOptions = {
+const teamStatsRouteOptions = {
   schema: {
     params: {
       teamId: {
@@ -13,7 +13,7 @@ const routeOptions = {
   },
 }
 
-function routeHandler(request, response) {
+function teamStatsRouteHandler(request, response) {
   const { teamId } = request.params
   const team = teams[teamId]
 
@@ -49,4 +49,4 @@ function routeHandler(request, response) {
   }
 }
 
-module.exports = { routeOptions, routeHandler }
+module.exports = [teamStatsRouteOptions, teamStatsRouteHandler]
