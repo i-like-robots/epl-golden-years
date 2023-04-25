@@ -1,8 +1,24 @@
 const { squads } = require('../dataset')
+const { TEAM_ID, SEASON_ID } = require('../lib/constants')
 const { seasonUrl, teamUrl, playerUrl } = require('../lib/urls')
 const pick = require('../lib/object-pick')
 
-module.exports = function teamSquadRoute(request, response) {
+const routeOptions = {
+  schema: {
+    params: {
+      teamId: {
+        type: 'string',
+        pattern: TEAM_ID,
+      },
+      seasonId: {
+        type: 'string',
+        pattern: SEASON_ID,
+      },
+    },
+  },
+}
+
+function routeHandler(request, response) {
   const { teamId, seasonId } = request.params
 
   const squad = squads.find((squad) => {
@@ -25,3 +41,5 @@ module.exports = function teamSquadRoute(request, response) {
     response.send({ error: 'Squad not found' })
   }
 }
+
+module.exports = { routeOptions, routeHandler }

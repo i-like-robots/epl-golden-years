@@ -37,15 +37,15 @@ app.get('/players/:playerId/album', playerAlbumRoute.routeOptions, playerAlbumRo
 
 app.get('/players/:playerId/stats', playerStatsRoute.routeOptions, playerStatsRoute.routeHandler)
 
-app.get('/teams', teamsRoute)
+app.get('/teams', teamsRoute.routeOptions, teamsRoute.routeHandler)
 
-app.get('/teams/:teamId', teamRoute)
+app.get('/teams/:teamId', teamRoute.routeOptions, teamRoute.routeHandler)
 
-app.get('/teams/:teamId/squads', teamSquadsRoute)
+app.get('/teams/:teamId/squads', teamSquadsRoute.routeOptions, teamSquadsRoute.routeHandler)
 
-app.get('/teams/:teamId/squads/:seasonId', teamSquadRoute)
+app.get('/teams/:teamId/squads/:seasonId', teamSquadRoute.routeOptions, teamSquadRoute.routeHandler)
 
-app.get('/teams/:teamId/stats', teamStatsRoute)
+app.get('/teams/:teamId/stats', teamStatsRoute.routeOptions, teamStatsRoute.routeHandler)
 
 app.get('/seasons', seasonsRoute.routeOptions, seasonsRoute.routeHandler)
 

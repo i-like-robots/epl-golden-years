@@ -1,7 +1,19 @@
 const { squads } = require('../dataset')
+const { TEAM_ID } = require('../lib/constants')
 const { teamSquadUrl, teamUrl } = require('../lib/urls')
 
-module.exports = function teamSquadsRoute(request, response) {
+const routeOptions = {
+  schema: {
+    params: {
+      teamId: {
+        type: 'string',
+        pattern: TEAM_ID,
+      },
+    },
+  },
+}
+
+function routeHandler(request, response) {
   const { teamId } = request.params
 
   const data = []
@@ -19,3 +31,5 @@ module.exports = function teamSquadsRoute(request, response) {
     response.send({ error: 'Team not found' })
   }
 }
+
+module.exports = { routeOptions, routeHandler }
