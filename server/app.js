@@ -29,13 +29,13 @@ app.get('/', (request, response) => {
   })
 })
 
-app.get('/players', playersRoute)
+app.get('/players', playersRoute.routeOptions, playersRoute.routeHandler)
 
-app.get('/players/:playerId', playerRoute)
+app.get('/players/:playerId', playerRoute.routeOptions, playerRoute.routeHandler)
 
-app.get('/players/:playerId/album', playerAlbumRoute)
+app.get('/players/:playerId/album', playerAlbumRoute.routeOptions, playerAlbumRoute.routeHandler)
 
-app.get('/players/:playerId/statistics', playerStatsRoute)
+app.get('/players/:playerId/statistics', playerStatsRoute.routeOptions, playerStatsRoute.routeHandler)
 
 app.get('/teams', teamsRoute)
 

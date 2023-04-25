@@ -40,13 +40,21 @@ paths:
       description: Returns a list of all players, optionally filtered by player name.
       operationId: playersRoute
       parameters:
-        - name: search
+        - name: name
           in: query
-          description: Filter player names by search term
+          description: Filter players by name
           required: false
           explode: false
           schema:
             type: string
+        - name: position
+          in: query
+          description: Filter players by position
+          required: false
+          explode: false
+          schema:
+            type: string
+            enum: [G, D, M, F]
       responses:
         '200':
           description: success

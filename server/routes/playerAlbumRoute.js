@@ -1,7 +1,19 @@
 const { players, stickers } = require('../dataset')
+const { PLAYER_ID } = require('../lib/constants')
 const { seasonUrl, teamUrl, playerUrl } = require('../lib/urls')
 
-module.exports = function playerAlbumRoute(request, response) {
+const routeOptions = {
+  schema: {
+    params: {
+      playerId: {
+        type: 'string',
+        pattern: PLAYER_ID,
+      },
+    },
+  }
+}
+
+function routeHandler(request, response) {
   const { playerId } = request.params
   const player = players[playerId]
 
@@ -18,3 +30,5 @@ module.exports = function playerAlbumRoute(request, response) {
     response.send({ error: 'Player not found' })
   }
 }
+
+module.exports = { routeOptions, routeHandler }

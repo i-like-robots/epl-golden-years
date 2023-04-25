@@ -1,20 +1,49 @@
 const { players } = require('../dataset')
+const { PLAYER_POSITIONS } = require('../lib/constants')
 const { playerUrl } = require('../lib/urls')
 const search = require('../lib/object-search')
 
-const SEARCH_PROPS = ['displayName', 'firstName', 'lastName']
+const NAME_PROPS = ['displayName', 'firstName', 'lastName']
 
-module.exports = function playersRoute(request, response) {
-  const matcher = search(request.query.search)
+const routeOptions = {
+  schema: {
+    query: {
+      name: {
+        type: 'string',
+        pattern: '^\\w+$',
+      },
+      position: {
+        type: 'string',
+        enum: PLAYER_POSITIONS,
+      }
+    }
+  }
+}
+
+function routeHandler(request, response) {
+  const { name, position } = request.query
+
+  const filters = []
   const playersData = []
+
+  if (name) {
+    const fn = search(name)
+    filters.push((player) => fn(player, NAME_PROPS))
+  }
+
+  if (position) {
+    filters.push((player) => player.positionCode === position)
+  }
 
   Object.keys(players).forEach((playerId) => {
     const player = players[playerId]
 
-    if (typeof matcher === 'function' ? matcher(player, SEARCH_PROPS) : true) {
+    if (filters.every((filter) => filter(player))) {
       playersData.push(playerUrl(playerId))
     }
   })
 
   response.send(playersData)
 }
+
+module.exports = { routeOptions, routeHandler }
