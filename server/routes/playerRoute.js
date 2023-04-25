@@ -11,7 +11,7 @@ const routeOptions = {
         pattern: PLAYER_ID,
       },
     },
-  }
+  },
 }
 
 function routeHandler(request, response) {

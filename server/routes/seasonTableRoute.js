@@ -1,8 +1,20 @@
 const { tables } = require('../dataset')
+const { SEASON_ID } = require('../lib/constants')
 const { seasonUrl, teamUrl } = require('../lib/urls')
 const omit = require('../lib/object-omit')
 
-module.exports = function seasonTableRoute(request, response) {
+const routeOptions = {
+  schema: {
+    params: {
+      seasonId: {
+        type: 'string',
+        pattern: SEASON_ID,
+      },
+    },
+  },
+}
+
+function routeHandler(request, response) {
   const { seasonId } = request.params
   const table = tables[seasonId]
 
@@ -18,3 +30,5 @@ module.exports = function seasonTableRoute(request, response) {
     response.send({ error: 'Season not found' })
   }
 }
+
+module.exports = { routeOptions, routeHandler }

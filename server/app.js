@@ -47,16 +47,28 @@ app.get('/teams/:teamId/squads/:seasonId', teamSquadRoute)
 
 app.get('/teams/:teamId/stats', teamStatsRoute)
 
-app.get('/seasons', seasonsRoute)
+app.get('/seasons', seasonsRoute.routeOptions, seasonsRoute.routeHandler)
 
-app.get('/seasons/:seasonId', seasonRoute)
+app.get('/seasons/:seasonId', seasonRoute.routeOptions, seasonRoute.routeHandler)
 
-app.get('/seasons/:seasonId/hat-tricks', seasonHatTricksRoute)
+app.get(
+  '/seasons/:seasonId/hat-tricks',
+  seasonHatTricksRoute.routeOptions,
+  seasonHatTricksRoute.routeHandler
+)
 
-app.get('/seasons/:seasonId/table', seasonTableRoute)
+app.get('/seasons/:seasonId/table', seasonTableRoute.routeOptions, seasonTableRoute.routeHandler)
 
-app.get('/seasons/:seasonId/top-scorers', seasonTopScorersRoute)
+app.get(
+  '/seasons/:seasonId/top-scorers',
+  seasonTopScorersRoute.routeOptions,
+  seasonTopScorersRoute.routeHandler
+)
 
-app.get('/seasons/:seasonId/top-assists', seasonTopAssistsRoute)
+app.get(
+  '/seasons/:seasonId/top-assists',
+  seasonTopAssistsRoute.routeOptions,
+  seasonTopAssistsRoute.routeHandler
+)
 
 module.exports = app

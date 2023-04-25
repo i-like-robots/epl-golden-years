@@ -15,9 +15,9 @@ const routeOptions = {
       position: {
         type: 'string',
         enum: PLAYER_POSITIONS,
-      }
-    }
-  }
+      },
+    },
+  },
 }
 
 function routeHandler(request, response) {
