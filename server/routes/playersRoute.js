@@ -1,26 +1,10 @@
 const { players } = require('../dataset')
-const { PLAYER_POSITIONS } = require('../lib/constants')
 const { playerUrl } = require('../lib/urls')
 const search = require('../lib/object-search')
 
 const NAME_PROPS = ['displayName', 'firstName', 'lastName']
 
-const playerRouteOptions = {
-  schema: {
-    query: {
-      name: {
-        type: 'string',
-        pattern: '^\\w+$',
-      },
-      position: {
-        type: 'string',
-        enum: PLAYER_POSITIONS,
-      },
-    },
-  },
-}
-
-function playerRouteHandler(request, response) {
+module.exports = function playerRoute(request, response) {
   const { name, position } = request.query
 
   const filters = []
@@ -45,5 +29,3 @@ function playerRouteHandler(request, response) {
 
   response.send(playersData)
 }
-
-module.exports = [playerRouteOptions, playerRouteHandler]

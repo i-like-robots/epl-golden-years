@@ -15,6 +15,7 @@ const {
   teamSquadRoute,
   teamStatsRoute,
 } = require('./routes')
+const { playerAlbumSchema, playerSchema, playerStatsSchema, playersSchema } = require('./schemas')
 const { playersUrl, teamsUrl, seasonsUrl } = require('./lib/urls')
 
 const app = require('fastify')({
@@ -29,13 +30,13 @@ app.get('/', (request, response) => {
   })
 })
 
-app.get('/players', ...playersRoute)
+app.get('/players', { schema: playersSchema }, playersRoute)
 
-app.get('/players/:playerId', ...playerRoute)
+app.get('/players/:playerId', { schema: playerSchema }, playerRoute)
 
-app.get('/players/:playerId/album', ...playerAlbumRoute)
+app.get('/players/:playerId/album', { schema: playerAlbumSchema }, playerAlbumRoute)
 
-app.get('/players/:playerId/stats', ...playerStatsRoute)
+app.get('/players/:playerId/stats', { schema: playerStatsSchema }, playerStatsRoute)
 
 app.get('/teams', ...teamsRoute)
 

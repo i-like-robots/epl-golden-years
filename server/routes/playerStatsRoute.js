@@ -1,19 +1,7 @@
 const { players, squads, hatTricks } = require('../dataset')
-const { PLAYER_ID } = require('../lib/constants')
 const { playerUrl } = require('../lib/urls')
 
-const playerStatsRouteOptions = {
-  schema: {
-    params: {
-      playerId: {
-        type: 'string',
-        pattern: PLAYER_ID,
-      },
-    },
-  },
-}
-
-function playerStatsRouteHandler(request, response) {
+module.exports = function playerStatsRoute(request, response) {
   const { playerId } = request.params
   const player = players[playerId]
 
@@ -46,5 +34,3 @@ function playerStatsRouteHandler(request, response) {
     response.send({ error: 'Player not found' })
   }
 }
-
-module.exports = [playerStatsRouteOptions, playerStatsRouteHandler]
