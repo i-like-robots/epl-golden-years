@@ -1,20 +1,8 @@
 const { squads } = require('../dataset')
-const { SEASON_ID } = require('../lib/constants')
 const { playerUrl, seasonUrl } = require('../lib/urls')
 const pick = require('../lib/object-pick')
 
-const seasonTopAssistsRouteOptions = {
-  schema: {
-    params: {
-      seasonId: {
-        type: 'string',
-        pattern: SEASON_ID,
-      },
-    },
-  },
-}
-
-function seasonTopAssistsRouteHandler(request, response) {
+module.exports = function seasonTopAssistsRoute(request, response) {
   const { seasonId } = request.params
   const players = []
 
@@ -50,5 +38,3 @@ function seasonTopAssistsRouteHandler(request, response) {
     response.send({ error: 'Season not found' })
   }
 }
-
-module.exports = [seasonTopAssistsRouteOptions, seasonTopAssistsRouteHandler]

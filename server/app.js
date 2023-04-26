@@ -15,7 +15,18 @@ const {
   teamSquadRoute,
   teamStatsRoute,
 } = require('./routes')
-const { playerAlbumSchema, playerSchema, playerStatsSchema, playersSchema } = require('./schemas')
+const {
+  playerAlbumSchema,
+  playerSchema,
+  playerStatsSchema,
+  playersSchema,
+  seasonHatTricksSchema,
+  seasonsSchema,
+  seasonTableSchema,
+  seasonSchema,
+  seasonTopAssistsSchema,
+  seasonTopScorersSchema,
+} = require('./schemas')
 const { playersUrl, teamsUrl, seasonsUrl } = require('./lib/urls')
 
 const app = require('fastify')({
@@ -48,16 +59,16 @@ app.get('/teams/:teamId/squads/:seasonId', ...teamSquadRoute)
 
 app.get('/teams/:teamId/stats', ...teamStatsRoute)
 
-app.get('/seasons', ...seasonsRoute)
+app.get('/seasons', { schema: seasonsSchema }, seasonsRoute)
 
-app.get('/seasons/:seasonId', ...seasonRoute)
+app.get('/seasons/:seasonId', { schema: seasonSchema }, seasonRoute)
 
-app.get('/seasons/:seasonId/hat-tricks', ...seasonHatTricksRoute)
+app.get('/seasons/:seasonId/hat-tricks', { schema: seasonHatTricksSchema }, seasonHatTricksRoute)
 
-app.get('/seasons/:seasonId/table', ...seasonTableRoute)
+app.get('/seasons/:seasonId/table', { schema: seasonTableSchema }, seasonTableRoute)
 
-app.get('/seasons/:seasonId/top-scorers', ...seasonTopScorersRoute)
+app.get('/seasons/:seasonId/top-assists', { schema: seasonTopAssistsSchema }, seasonTopAssistsRoute)
 
-app.get('/seasons/:seasonId/top-assists', ...seasonTopAssistsRoute)
+app.get('/seasons/:seasonId/top-scorers', { schema: seasonTopScorersSchema }, seasonTopScorersRoute)
 
 module.exports = app

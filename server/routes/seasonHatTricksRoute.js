@@ -1,19 +1,7 @@
 const { hatTricks, tables } = require('../dataset')
-const { SEASON_ID } = require('../lib/constants')
 const { playerUrl, seasonUrl, teamUrl } = require('../lib/urls')
 
-const seasonHatTricksRouteOptions = {
-  schema: {
-    params: {
-      seasonId: {
-        type: 'string',
-        pattern: SEASON_ID,
-      },
-    },
-  },
-}
-
-function seasonHatTricksRouteHandler(request, response) {
+module.exports = function seasonHatTricksRoute(request, response) {
   const { seasonId } = request.params
   const table = tables[seasonId]
 
@@ -37,5 +25,3 @@ function seasonHatTricksRouteHandler(request, response) {
     response.send({ error: 'Season not found' })
   }
 }
-
-module.exports = [seasonHatTricksRouteOptions, seasonHatTricksRouteHandler]
