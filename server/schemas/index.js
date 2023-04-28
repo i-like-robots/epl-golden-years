@@ -9,4 +9,9 @@ module.exports = {
   seasonTableSchema: require('./seasonTableSchema'),
   seasonTopAssistsSchema: require('./seasonTopAssistsSchema'),
   seasonTopScorersSchema: require('./seasonTopScorersSchema'),
+  teamSchema: require('./teamSchema'),
+  teamSquadSchema: require('./teamSquadSchema'),
+  teamSquadsSchema: require('./teamSquadsSchema'),
+  teamsSchema: require('./teamsSchema'),
+  teamStatsSchema: require('./teamStatsSchema'),
 }

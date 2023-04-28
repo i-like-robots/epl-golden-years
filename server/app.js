@@ -26,6 +26,11 @@ const {
   seasonSchema,
   seasonTopAssistsSchema,
   seasonTopScorersSchema,
+  teamSchema,
+  teamsSchema,
+  teamStatsSchema,
+  teamSquadsSchema,
+  teamSquadSchema,
 } = require('./schemas')
 const { playersUrl, teamsUrl, seasonsUrl } = require('./lib/urls')
 
@@ -49,15 +54,15 @@ app.get('/players/:playerId/album', { schema: playerAlbumSchema }, playerAlbumRo
 
 app.get('/players/:playerId/stats', { schema: playerStatsSchema }, playerStatsRoute)
 
-app.get('/teams', ...teamsRoute)
+app.get('/teams', { schema: teamsSchema }, teamsRoute)
 
-app.get('/teams/:teamId', ...teamRoute)
+app.get('/teams/:teamId', { schema: teamSchema }, teamRoute)
 
-app.get('/teams/:teamId/squads', ...teamSquadsRoute)
+app.get('/teams/:teamId/squads', { schema: teamSquadsSchema }, teamSquadsRoute)
 
-app.get('/teams/:teamId/squads/:seasonId', ...teamSquadRoute)
+app.get('/teams/:teamId/squads/:seasonId', { schema: teamSquadSchema }, teamSquadRoute)
 
-app.get('/teams/:teamId/stats', ...teamStatsRoute)
+app.get('/teams/:teamId/stats', { schema: teamStatsSchema }, teamStatsRoute)
 
 app.get('/seasons', { schema: seasonsSchema }, seasonsRoute)
 
