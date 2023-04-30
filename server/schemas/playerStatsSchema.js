@@ -3,7 +3,7 @@ const { PLAYER_ID } = require('../lib/constants')
 module.exports = {
   tags: ['player'],
   summary: 'Get statistics for a player',
-  description: 'Returns cumulative statistics for a player across all seasons',
+  description: 'Returns statistics for a player across all seasons',
   params: {
     playerId: {
       type: 'string',
@@ -20,7 +20,7 @@ module.exports = {
           type: 'string',
           format: 'uri',
         },
-        statistics: {
+        total: {
           type: 'object',
           properties: {
             appearances: {
@@ -37,6 +37,33 @@ module.exports = {
             },
             hatTricks: {
               type: 'integer',
+            },
+          },
+        },
+        history: {
+          type: 'array',
+          items: {
+            type: 'object',
+            properties: {
+              season: {
+                type: 'string',
+                format: 'uri',
+              },
+              appearances: {
+                type: 'integer',
+              },
+              cleanSheets: {
+                type: 'integer',
+              },
+              goals: {
+                type: 'integer',
+              },
+              assists: {
+                type: 'integer',
+              },
+              hatTricks: {
+                type: 'integer',
+              },
             },
           },
         },

@@ -1,5 +1,6 @@
 const { players, squads, hatTricks } = require('../dataset')
-const { playerUrl } = require('../lib/urls')
+const { playerUrl, seasonUrl } = require('../lib/urls')
+const pick = require('../lib/object-pick')
 
 module.exports = function playerStatsRoute(request, response) {
   const { playerId } = request.params
@@ -10,25 +11,34 @@ module.exports = function playerStatsRoute(request, response) {
       squad.players.some((p) => p.playerId === playerId)
     )
 
-    const data = {
+    const hatTrickHistory = hatTricks.filter((h) => h.playerId === playerId)
+
+    const total = {
       appearances: 0,
-      cleanSheets: 0,
       goals: 0,
       assists: 0,
+      cleanSheets: 0,
+      hatTricks: hatTrickHistory.length,
     }
+
+    const history = []
 
     squadHistory.forEach((squad) => {
       const member = squad.players.find((p) => p.playerId === playerId)
 
-      data.appearances += member.appearances
-      data.cleanSheets += member.cleanSheets
-      data.goals += member.goals
-      data.assists += member.assists
+      history.push({
+        season: seasonUrl(squad.seasonId),
+        ...pick(member, 'appearances', 'goals', 'assists', 'cleanSheets'),
+        hatTricks: hatTrickHistory.filter((h) => h.seasonId === squad.seasonId).length,
+      })
+
+      total.appearances += member.appearances
+      total.goals += member.goals
+      total.assists += member.assists
+      total.cleanSheets += member.cleanSheets
     })
 
-    data.hatTricks = hatTricks.filter((hatTrick) => hatTrick.playerId === playerId).length
-
-    response.send({ player: playerUrl(playerId), statistics: data })
+    response.send({ player: playerUrl(playerId), total, history })
   } else {
     response.code(404)
     response.send({ error: 'Player not found' })
