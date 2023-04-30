@@ -20,7 +20,7 @@ module.exports = {
           type: 'string',
           format: 'uri',
         },
-        statistics: {
+        total: {
           type: 'object',
           properties: {
             played: {
@@ -40,6 +40,36 @@ module.exports = {
             },
             against: {
               type: 'integer',
+            },
+          },
+        },
+        history: {
+          type: 'array',
+          items: {
+            type: 'object',
+            properties: {
+              season: {
+                type: 'string',
+                format: 'uri',
+              },
+              played: {
+                type: 'integer',
+              },
+              wins: {
+                type: 'integer',
+              },
+              draws: {
+                type: 'integer',
+              },
+              losses: {
+                type: 'integer',
+              },
+              for: {
+                type: 'integer',
+              },
+              against: {
+                type: 'integer',
+              },
             },
           },
         },
