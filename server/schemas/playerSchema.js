@@ -1,4 +1,4 @@
-const { PLAYER_ID } = require('../lib/constants')
+const { PLAYER_ID, PLAYER_POSITIONS } = require('../lib/constants')
 
 module.exports = {
   tags: ['player'],
@@ -25,7 +25,7 @@ module.exports = {
         },
         positionCode: {
           type: 'string',
-          enum: ['G', 'D', 'M', 'F'],
+          enum: PLAYER_POSITIONS,
         },
         positionName: {
           type: 'string',
@@ -59,7 +59,7 @@ module.exports = {
                 type: 'string',
                 format: 'uri',
               },
-              squad: {
+              team: {
                 type: 'string',
                 format: 'uri',
               },

@@ -26,8 +26,8 @@ module.exports = {
             type: 'string',
             format: 'uri',
           },
-        }
-      }
+        },
+      },
     },
     404: {
       // description: 'Team not found',

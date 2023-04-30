@@ -35,7 +35,7 @@ module.exports = {
           items: {
             type: 'string',
             format: 'uri',
-          }
+          },
         },
         squads: {
           type: 'string',

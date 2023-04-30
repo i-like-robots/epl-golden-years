@@ -2,7 +2,7 @@ const { PLAYER_ID } = require('../lib/constants')
 
 module.exports = {
   tags: ['player'],
-  summary: 'Get stickers for a player',
+  summary: 'Get album for a player',
   description: 'Returns sticker album entries for a single player',
   params: {
     playerId: {

@@ -1,5 +1,5 @@
 const { players, squads } = require('../dataset')
-const { playerAlbumUrl, playerStatsUrl, seasonUrl, teamSquadUrl } = require('../lib/urls')
+const { playerAlbumUrl, playerStatsUrl, seasonUrl, teamUrl } = require('../lib/urls')
 const omit = require('../lib/object-omit')
 
 module.exports = function playerRoute(request, response) {
@@ -15,7 +15,7 @@ module.exports = function playerRoute(request, response) {
       playedInSeason &&
         history.push({
           season: seasonUrl(squad.seasonId),
-          squad: teamSquadUrl(squad.teamId, squad.seasonId),
+          team: teamUrl(squad.teamId),
         })
     })
 
