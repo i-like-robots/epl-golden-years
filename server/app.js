@@ -16,6 +16,7 @@ const {
   teamSquadsRoute,
   teamSquadRoute,
   teamStatsRoute,
+  rootRoute,
 } = require('./routes')
 const {
   playerAlbumSchema,
@@ -33,8 +34,8 @@ const {
   teamStatsSchema,
   teamSquadsSchema,
   teamSquadSchema,
+  rootSchema,
 } = require('./schemas')
-const { playersUrl, teamsUrl, seasonsUrl } = require('./lib/urls')
 
 const app = fastify({
   logger: true,
@@ -57,13 +58,7 @@ app.register(swagger, {
 })
 
 app.after(() => {
-  app.get('/', (request, response) => {
-    response.send({
-      players: playersUrl(),
-      teams: teamsUrl(),
-      seasons: seasonsUrl(),
-    })
-  })
+  app.get('/', { schema: rootSchema }, rootRoute)
 
   app.get('/players', { schema: playersSchema }, playersRoute)
 
@@ -102,10 +97,10 @@ app.after(() => {
     { schema: seasonTopScorersSchema },
     seasonTopScorersRoute
   )
+})
 
-  app.get('/swagger', (request, response) => {
-    response.send(app.swagger())
-  })
+app.get('/swagger', (_, response) => {
+  response.send(app.swagger())
 })
 
 module.exports = app

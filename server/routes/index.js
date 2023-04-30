@@ -3,6 +3,7 @@ module.exports = {
   playerRoute: require('./playerRoute'),
   playerAlbumRoute: require('./playerAlbumRoute'),
   playerStatsRoute: require('./playerStatsRoute'),
+  rootRoute: require('./rootRoute'),
   seasonsRoute: require('./seasonsRoute'),
   seasonRoute: require('./seasonRoute'),
   seasonHatTricksRoute: require('./seasonHatTricksRoute'),

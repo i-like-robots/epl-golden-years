@@ -3,6 +3,7 @@ module.exports = {
   playerSchema: require('./playerSchema'),
   playersSchema: require('./playersSchema'),
   playerStatsSchema: require('./playerStatsSchema'),
+  rootSchema: require('./rootSchema'),
   seasonHatTricksSchema: require('./seasonHatTricksSchema'),
   seasonSchema: require('./seasonSchema'),
   seasonsSchema: require('./seasonsSchema'),
