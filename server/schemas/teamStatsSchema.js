@@ -1,19 +1,19 @@
 const { TEAM_ID } = require('../lib/constants')
 
 module.exports = {
-  // tags: ['team'],
-  // summary: 'Get statistics for a team',
-  // description: 'Returns cumulative statistics for a team across all seasons played',
+  tags: ['team'],
+  summary: 'Get statistics for a team',
+  description: 'Returns cumulative statistics for a team across all seasons played',
   params: {
     teamId: {
       type: 'string',
       pattern: TEAM_ID,
-      // description: 'ID of team',
+      description: 'ID of team',
     },
   },
   response: {
     200: {
-      // description: 'success',
+      description: 'success',
       type: 'object',
       properties: {
         team: {

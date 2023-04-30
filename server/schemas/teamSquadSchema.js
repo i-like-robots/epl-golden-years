@@ -1,24 +1,24 @@
 const { TEAM_ID, SEASON_ID } = require('../lib/constants')
 
 module.exports = {
-  // tags: ['team'],
-  // summary: 'Get squad by team and season',
-  // description: 'Returns data about a single squad for a single team and season',
+  tags: ['team'],
+  summary: 'Get squad by team and season',
+  description: 'Returns data about a single squad for a single team and season',
   params: {
     teamId: {
       type: 'string',
       pattern: TEAM_ID,
-      // description: 'ID of team',
+      description: 'ID of team',
     },
     seasonId: {
       type: 'string',
       pattern: SEASON_ID,
-      // description: 'ID of season',
+      description: 'ID of season',
     },
   },
   response: {
     200: {
-      // description: 'success',
+      description: 'success',
       type: 'object',
       properties: {
         team: {
