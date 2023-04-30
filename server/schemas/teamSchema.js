@@ -30,21 +30,16 @@ module.exports = {
           type: 'string',
           pattern: '^[A-Z]{2,3}$',
         },
-        history: {
+        seasons: {
           type: 'array',
           items: {
-            type: 'object',
-            properties: {
-              season: {
-                type: 'string',
-                format: 'uri',
-              },
-              squad: {
-                type: 'string',
-                format: 'uri',
-              },
-            },
-          },
+            type: 'string',
+            format: 'uri',
+          }
+        },
+        squads: {
+          type: 'string',
+          format: 'uri',
         },
         statistics: {
           type: 'string',
