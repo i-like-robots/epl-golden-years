@@ -14,11 +14,20 @@ module.exports = {
   response: {
     200: {
       description: 'success',
-      type: 'array',
-      items: {
-        type: 'string',
-        format: 'uri',
-      },
+      type: 'object',
+      properties: {
+        team: {
+          type: 'string',
+          format: 'uri',
+        },
+        squads: {
+          type: 'array',
+          items: {
+            type: 'string',
+            format: 'uri',
+          },
+        }
+      }
     },
     404: {
       // description: 'Team not found',
