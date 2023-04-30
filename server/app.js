@@ -1,3 +1,5 @@
+const fastify = require('fastify')
+const swagger = require('@fastify/swagger')
 const {
   playerRoute,
   playersRoute,
@@ -34,46 +36,76 @@ const {
 } = require('./schemas')
 const { playersUrl, teamsUrl, seasonsUrl } = require('./lib/urls')
 
-const app = require('fastify')({
+const app = fastify({
   logger: true,
 })
 
-app.get('/', (request, response) => {
-  response.send({
-    players: playersUrl(),
-    teams: teamsUrl(),
-    seasons: seasonsUrl(),
-  })
+app.register(swagger, {
+  openapi: {
+    info: {
+      title: 'EPL Golden Years - OpenAPI',
+    },
+    tags: [
+      { name: 'player', description: 'Everything about players' },
+      { name: 'season', description: 'Everything about seasons' },
+      { name: 'team', description: 'Everything about teams' },
+    ],
+    schemes: ['http'],
+    produces: ['application/json'],
+    exposeRoute: true,
+  },
 })
 
-app.get('/players', { schema: playersSchema }, playersRoute)
+app.after(() => {
+  app.get('/', (request, response) => {
+    response.send({
+      players: playersUrl(),
+      teams: teamsUrl(),
+      seasons: seasonsUrl(),
+    })
+  })
 
-app.get('/players/:playerId', { schema: playerSchema }, playerRoute)
+  app.get('/players', { schema: playersSchema }, playersRoute)
 
-app.get('/players/:playerId/album', { schema: playerAlbumSchema }, playerAlbumRoute)
+  app.get('/players/:playerId', { schema: playerSchema }, playerRoute)
 
-app.get('/players/:playerId/stats', { schema: playerStatsSchema }, playerStatsRoute)
+  app.get('/players/:playerId/album', { schema: playerAlbumSchema }, playerAlbumRoute)
 
-app.get('/teams', { schema: teamsSchema }, teamsRoute)
+  app.get('/players/:playerId/stats', { schema: playerStatsSchema }, playerStatsRoute)
 
-app.get('/teams/:teamId', { schema: teamSchema }, teamRoute)
+  app.get('/teams', { schema: teamsSchema }, teamsRoute)
 
-app.get('/teams/:teamId/squads', { schema: teamSquadsSchema }, teamSquadsRoute)
+  app.get('/teams/:teamId', { schema: teamSchema }, teamRoute)
 
-app.get('/teams/:teamId/squads/:seasonId', { schema: teamSquadSchema }, teamSquadRoute)
+  app.get('/teams/:teamId/squads', { schema: teamSquadsSchema }, teamSquadsRoute)
 
-app.get('/teams/:teamId/stats', { schema: teamStatsSchema }, teamStatsRoute)
+  app.get('/teams/:teamId/squads/:seasonId', { schema: teamSquadSchema }, teamSquadRoute)
 
-app.get('/seasons', { schema: seasonsSchema }, seasonsRoute)
+  app.get('/teams/:teamId/stats', { schema: teamStatsSchema }, teamStatsRoute)
 
-app.get('/seasons/:seasonId', { schema: seasonSchema }, seasonRoute)
+  app.get('/seasons', { schema: seasonsSchema }, seasonsRoute)
 
-app.get('/seasons/:seasonId/hat-tricks', { schema: seasonHatTricksSchema }, seasonHatTricksRoute)
+  app.get('/seasons/:seasonId', { schema: seasonSchema }, seasonRoute)
 
-app.get('/seasons/:seasonId/table', { schema: seasonTableSchema }, seasonTableRoute)
+  app.get('/seasons/:seasonId/hat-tricks', { schema: seasonHatTricksSchema }, seasonHatTricksRoute)
 
-app.get('/seasons/:seasonId/top-assists', { schema: seasonTopAssistsSchema }, seasonTopAssistsRoute)
+  app.get('/seasons/:seasonId/table', { schema: seasonTableSchema }, seasonTableRoute)
 
-app.get('/seasons/:seasonId/top-scorers', { schema: seasonTopScorersSchema }, seasonTopScorersRoute)
+  app.get(
+    '/seasons/:seasonId/top-assists',
+    { schema: seasonTopAssistsSchema },
+    seasonTopAssistsRoute
+  )
+
+  app.get(
+    '/seasons/:seasonId/top-scorers',
+    { schema: seasonTopScorersSchema },
+    seasonTopScorersRoute
+  )
+
+  app.get('/swagger', (request, response) => {
+    response.send(app.swagger())
+  })
+})
 
 module.exports = app

@@ -1,19 +1,19 @@
 const { PLAYER_ID } = require('../lib/constants')
 
 module.exports = {
-  // tags: ['player'],
-  // summary: 'Get stickers for a player',
-  // description: 'Returns sticker album entries for a single player',
+  tags: ['player'],
+  summary: 'Get stickers for a player',
+  description: 'Returns sticker album entries for a single player',
   params: {
     playerId: {
       type: 'string',
       pattern: PLAYER_ID,
-      // description: 'ID of player',
+      description: 'ID of player',
     },
   },
   response: {
     200: {
-      // description: 'success',
+      description: 'success',
       type: 'object',
       properties: {
         player: {
@@ -43,7 +43,7 @@ module.exports = {
       },
     },
     404: {
-      //   description: 'Player not found',
+      // description: 'Player not found',
     },
   },
 }

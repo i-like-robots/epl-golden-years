@@ -1,19 +1,19 @@
 const { SEASON_ID } = require('../lib/constants')
 
 module.exports = {
-  // tags: ['season'],
-  // summary: 'Get league table by season',
-  // description: 'Returns final league table standings for a single season',
+  tags: ['season'],
+  summary: 'Get league table by season',
+  description: 'Returns final league table standings for a single season',
   params: {
     seasonId: {
       type: 'string',
       pattern: SEASON_ID,
-      // description: 'ID of season',
+      description: 'ID of season',
     },
   },
   response: {
     200: {
-      // description: 'success',
+      description: 'success',
       type: 'object',
       properties: {
         season: {
