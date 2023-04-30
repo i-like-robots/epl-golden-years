@@ -44,7 +44,7 @@ module.exports = function router(app) {
 
   app.get('/players/:playerId/album', { schema: playerAlbumSchema }, playerAlbumRoute)
 
-  app.get('/players/:playerId/stats', { schema: playerStatsSchema }, playerStatsRoute)
+  app.get('/players/:playerId/statistics', { schema: playerStatsSchema }, playerStatsRoute)
 
   app.get('/teams', { schema: teamsSchema }, teamsRoute)
 
@@ -54,7 +54,7 @@ module.exports = function router(app) {
 
   app.get('/teams/:teamId/squads/:seasonId', { schema: teamSquadSchema }, teamSquadRoute)
 
-  app.get('/teams/:teamId/stats', { schema: teamStatsSchema }, teamStatsRoute)
+  app.get('/teams/:teamId/statistics', { schema: teamStatsSchema }, teamStatsRoute)
 
   app.get('/seasons', { schema: seasonsSchema }, seasonsRoute)
 
