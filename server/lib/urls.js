@@ -1,6 +1,5 @@
 const join = require('url-join')
-
-const API_URL = process.env.BASE_URL || 'http://localhost:3000/'
+const { API_URL } = require('../lib/constants')
 
 function playersUrl() {
   return join(API_URL, '/players')
