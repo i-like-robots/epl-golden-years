@@ -4,7 +4,7 @@ const { teamUrl, seasonUrl } = require('../lib/urls')
 module.exports = {
   tags: ['team'],
   summary: 'Get statistics for a team',
-  description: 'Returns cumulative statistics for a team across all seasons played',
+  description: 'Returns statistics for a team by season and cumulatively for the seasons they competed in.',
   params: {
     teamId: {
       type: 'string',

@@ -3,8 +3,8 @@ const { seasonUrl, playerUrl } = require('../lib/urls')
 
 module.exports = {
   tags: ['season'],
-  summary: 'Get top assists by season',
-  description: 'Returns a list of players with the most assists for a single season',
+  summary: 'Get the top assists for a season',
+  description: 'Returns a list of players who provided the most assists within a season.',
   params: {
     seasonId: {
       type: 'string',

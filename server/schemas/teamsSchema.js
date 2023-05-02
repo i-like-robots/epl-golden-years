@@ -3,7 +3,7 @@ const { teamUrl } = require('../lib/urls')
 module.exports = {
   tags: ['team'],
   summary: 'List teams',
-  description: 'Returns a list of all teams, optionally filtered by team name',
+  description: 'Returns a list of all teams, optionally filtered by team name.',
   query: {
     name: {
       type: 'string',

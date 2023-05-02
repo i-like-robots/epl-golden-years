@@ -3,8 +3,8 @@ const { seasonUrl, playerUrl } = require('../lib/urls')
 
 module.exports = {
   tags: ['season'],
-  summary: 'Get top scorers by season',
-  description: 'Returns a list of players with the most scorers for a single season',
+  summary: 'Get the top scorers for a season',
+  description: 'Returns a list of players who scored the most goals within a season.',
   params: {
     seasonId: {
       type: 'string',

@@ -8,8 +8,8 @@ const {
 
 module.exports = {
   tags: ['season'],
-  summary: 'Get hat-tricks by season',
-  description: 'Returns a list of hat-tricks for a single season.',
+  summary: 'Get a season by ID',
+  description: 'Returns details about a single season and references to additional resources.',
   params: {
     seasonId: {
       type: 'string',

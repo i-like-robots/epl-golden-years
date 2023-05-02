@@ -2,8 +2,8 @@ const { TEAM_ID } = require('../lib/constants')
 
 module.exports = {
   tags: ['team'],
-  summary: 'Get team by ID',
-  description: 'Returns details for a single team',
+  summary: 'Get a team by ID',
+  description: 'Returns details for a single team and references to additional resources.',
   params: {
     teamId: {
       type: 'string',

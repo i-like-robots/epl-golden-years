@@ -3,8 +3,8 @@ const { seasonUrl, playerStatsUrl, playerAlbumUrl } = require('../lib/urls')
 
 module.exports = {
   tags: ['player'],
-  summary: 'Get player by ID',
-  description: 'Returns details for a single player',
+  summary: 'Get a player by ID',
+  description: 'Returns details about a player and references to additional resources.',
   params: {
     playerId: {
       type: 'string',

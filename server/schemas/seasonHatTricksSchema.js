@@ -3,8 +3,8 @@ const { seasonsUrl, playerUrl } = require('../lib/urls')
 
 module.exports = {
   tags: ['season'],
-  summary: 'Get hat-tricks by season',
-  description: 'Returns a list of hat-tricks for a single season.',
+  summary: 'Get hat-tricks for a season',
+  description: 'Returns a list of completed hat-tricks within a season.',
   params: {
     seasonId: {
       type: 'string',

@@ -3,7 +3,7 @@ const { playersUrl, seasonsUrl, teamsUrl } = require('../lib/urls')
 module.exports = {
   tags: [],
   summary: 'API root',
-  description: 'Returns a list of all resource types',
+  description: 'Returns a list of all resource types presented by this API.',
   response: {
     200: {
       description: 'success',

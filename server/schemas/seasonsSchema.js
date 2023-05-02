@@ -4,7 +4,7 @@ const { seasonUrl } = require('../lib/urls')
 module.exports = {
   tags: ['season'],
   summary: 'List seasons',
-  description: 'Returns a list of all seasons',
+  description: 'Returns a list of all seasons, optionally filtered by a team who played in them.',
   query: {
     team: {
       type: 'string',

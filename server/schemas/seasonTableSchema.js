@@ -3,8 +3,8 @@ const { seasonUrl, teamUrl } = require('../lib/urls')
 
 module.exports = {
   tags: ['season'],
-  summary: 'Get league table by season',
-  description: 'Returns final league table standings for a single season',
+  summary: 'Get the league table for a season',
+  description: 'Returns the final league table standings for a season.',
   params: {
     seasonId: {
       type: 'string',

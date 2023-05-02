@@ -4,7 +4,7 @@ const { playerUrl } = require('../lib/urls')
 module.exports = {
   tags: ['player'],
   summary: 'List players',
-  description: 'Returns a list of all players, optionally filtered by player name and position',
+  description: 'Returns a list of all players, optionally filtered by player name and position.',
   query: {
     name: {
       type: 'string',

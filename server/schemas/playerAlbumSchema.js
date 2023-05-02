@@ -3,8 +3,8 @@ const { seasonUrl, teamUrl, playerUrl } = require('../lib/urls')
 
 module.exports = {
   tags: ['player'],
-  summary: 'Get album for a player',
-  description: 'Returns sticker album entries for a single player',
+  summary: 'Get an album for a player',
+  description: 'Returns an album of stickers for a player.',
   params: {
     playerId: {
       type: 'string',
