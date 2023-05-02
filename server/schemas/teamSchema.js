@@ -19,21 +19,28 @@ module.exports = {
       properties: {
         pulseId: {
           type: 'integer',
-          example: 29,
+          example: 21,
         },
         optaId: {
           type: 'string',
-          pattern: '^t\\d{2,4}$',
-          example: 't56',
+          pattern: '^t\\d{1,4}$',
+          example: 't6',
         },
         name: {
           type: 'string',
-          example: 'Sunderland',
+          example: 'Tottenham Hotspur',
         },
         shortName: {
           type: 'string',
-          pattern: TEAM_ID,
-          example: 'SUN',
+          example: 'Spurs',
+        },
+        ground: {
+          type: 'string',
+          example: 'White Hart Lane',
+        },
+        city: {
+          type: 'string',
+          example: 'London',
         },
         seasons: {
           type: 'array',
@@ -46,12 +53,12 @@ module.exports = {
         squads: {
           type: 'string',
           format: 'uri',
-          example: teamSquadsUrl('sun'),
+          example: teamSquadsUrl('tot'),
         },
         statistics: {
           type: 'string',
           format: 'uri',
-          example: teamStatsUrl('sun'),
+          example: teamStatsUrl('tot'),
         },
       },
     },

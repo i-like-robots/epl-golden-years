@@ -3,204 +3,272 @@
     "pulseId": 1,
     "optaId": "t3",
     "name": "Arsenal",
-    "shortName": "ARS"
+    "shortName": "Arsenal",
+    "ground": "Highbury",
+    "city": "London"
   },
   "avl": {
     "pulseId": 2,
     "optaId": "t7",
     "name": "Aston Villa",
-    "shortName": "AVL"
+    "shortName": "Aston Villa",
+    "ground": "Villa Park",
+    "city": "Birmingham"
   },
   "bar": {
     "pulseId": 30,
     "optaId": "t37",
     "name": "Barnsley",
-    "shortName": "BAR"
+    "shortName": "Barnsley",
+    "ground": "Oakwell",
+    "city": "Barnsley"
   },
   "blb": {
     "pulseId": 3,
     "optaId": "t5",
     "name": "Blackburn Rovers",
-    "shortName": "BLB"
+    "shortName": "Blackburn",
+    "ground": "Ewood Park",
+    "city": "Blackburn"
   },
   "bol": {
     "pulseId": 27,
     "optaId": "t30",
     "name": "Bolton Wanderers",
-    "shortName": "BOL"
+    "shortName": "Bolton",
+    "ground": "Macron Stadium",
+    "city": "Bolton"
   },
   "bra": {
     "pulseId": 32,
     "optaId": "t55",
     "name": "Bradford City",
-    "shortName": "BRA"
+    "shortName": "Bradford",
+    "ground": "Valley Parade",
+    "city": "Bradford"
   },
   "cha": {
     "pulseId": 31,
     "optaId": "t33",
     "name": "Charlton Athletic",
-    "shortName": "CHA"
+    "shortName": "Charlton",
+    "ground": "The Valley",
+    "city": "London"
   },
   "che": {
     "pulseId": 4,
     "optaId": "t8",
     "name": "Chelsea",
-    "shortName": "CHE"
+    "shortName": "Chelsea",
+    "ground": "Stamford Bridge",
+    "city": "London"
   },
   "cov": {
     "pulseId": 5,
     "optaId": "t9",
     "name": "Coventry City",
-    "shortName": "COV"
+    "shortName": "Coventry",
+    "ground": "Highfield Road",
+    "city": "Coventry"
   },
   "cry": {
     "pulseId": 6,
     "optaId": "t31",
     "name": "Crystal Palace",
-    "shortName": "CRY"
+    "shortName": "Crystal Palace",
+    "ground": "Selhurst Park",
+    "city": "London"
   },
   "der": {
     "pulseId": 28,
     "optaId": "t24",
     "name": "Derby County",
-    "shortName": "DER"
+    "shortName": "Derby",
+    "ground": "Pride Park",
+    "city": "Derby"
   },
   "eve": {
     "pulseId": 7,
     "optaId": "t11",
     "name": "Everton",
-    "shortName": "EVE"
+    "shortName": "Everton",
+    "ground": "Goodison Park",
+    "city": "Liverpool"
   },
   "ful": {
     "pulseId": 34,
     "optaId": "t54",
     "name": "Fulham",
-    "shortName": "FUL"
+    "shortName": "Fulham",
+    "ground": "Craven Cottage",
+    "city": "London"
   },
   "ips": {
     "pulseId": 8,
     "optaId": "t40",
     "name": "Ipswich Town",
-    "shortName": "IPS"
+    "shortName": "Ipswich",
+    "ground": "Portman Road",
+    "city": "Ipswich"
   },
   "lee": {
     "pulseId": 9,
     "optaId": "t2",
     "name": "Leeds United",
-    "shortName": "LEE"
+    "shortName": "Leeds",
+    "ground": "Elland Road",
+    "city": "Leeds"
   },
   "lei": {
     "pulseId": 26,
     "optaId": "t13",
     "name": "Leicester City",
-    "shortName": "LEI"
+    "shortName": "Leicester",
+    "ground": "Filbert Street",
+    "city": "Leicester"
   },
   "liv": {
     "pulseId": 10,
     "optaId": "t14",
     "name": "Liverpool",
-    "shortName": "LIV"
+    "shortName": "Liverpool",
+    "ground": "Anfield",
+    "city": "Liverpool"
   },
   "mci": {
     "pulseId": 11,
     "optaId": "t43",
     "name": "Manchester City",
-    "shortName": "MCI"
+    "shortName": "Man City",
+    "ground": "Maine Road",
+    "city": "Manchester"
   },
   "mun": {
     "pulseId": 12,
     "optaId": "t1",
     "name": "Manchester United",
-    "shortName": "MUN"
+    "shortName": "Man Utd",
+    "ground": "Old Trafford",
+    "city": "Manchester"
   },
   "mid": {
     "pulseId": 13,
     "optaId": "t25",
     "name": "Middlesbrough",
-    "shortName": "MID"
+    "shortName": "Middlesbrough",
+    "ground": "Ayresome Park",
+    "city": "Middlesbrough"
   },
   "new": {
     "pulseId": 23,
     "optaId": "t4",
     "name": "Newcastle United",
-    "shortName": "NEW"
+    "shortName": "Newcastle",
+    "ground": "St. James' Park",
+    "city": "Newcastle"
   },
   "nor": {
     "pulseId": 14,
     "optaId": "t45",
     "name": "Norwich City",
-    "shortName": "NOR"
+    "shortName": "Norwich",
+    "ground": "Carrow Road",
+    "city": "Norwich"
   },
   "nfo": {
     "pulseId": 15,
     "optaId": "t17",
     "name": "Nottingham Forest",
-    "shortName": "NFO"
+    "shortName": "Nott'm Forest",
+    "ground": "City Ground",
+    "city": "Nottingham"
   },
   "old": {
     "pulseId": 16,
     "optaId": "t105",
     "name": "Oldham Athletic",
-    "shortName": "OLD"
+    "shortName": "Oldham",
+    "ground": "Boundary Park",
+    "city": "Oldham"
   },
   "qpr": {
     "pulseId": 17,
     "optaId": "t52",
     "name": "Queens Park Rangers",
-    "shortName": "QPR"
+    "shortName": "QPR",
+    "ground": "Loftus Road",
+    "city": "London"
   },
   "shu": {
     "pulseId": 18,
     "optaId": "t49",
     "name": "Sheffield United",
-    "shortName": "SHU"
+    "shortName": "Sheffield Utd",
+    "ground": "Bramall Lane",
+    "city": "Sheffield"
   },
   "shw": {
     "pulseId": 19,
     "optaId": "t19",
     "name": "Sheffield Wednesday",
-    "shortName": "SHW"
+    "shortName": "Sheffield Wed",
+    "ground": "Hillsborough",
+    "city": "Sheffield"
   },
   "sou": {
     "pulseId": 20,
     "optaId": "t20",
     "name": "Southampton",
-    "shortName": "SOU"
+    "shortName": "Southampton",
+    "ground": "The Dell",
+    "city": "Southampton"
   },
   "sun": {
     "pulseId": 29,
     "optaId": "t56",
     "name": "Sunderland",
-    "shortName": "SUN"
+    "shortName": "Sunderland",
+    "ground": "Stadium of Light",
+    "city": "Sunderland"
   },
   "swi": {
     "pulseId": 24,
     "optaId": "t46",
     "name": "Swindon Town",
-    "shortName": "SWI"
+    "shortName": "Swindon",
+    "ground": "County Ground",
+    "city": "Swindon"
   },
   "tot": {
     "pulseId": 21,
     "optaId": "t6",
     "name": "Tottenham Hotspur",
-    "shortName": "TOT"
+    "shortName": "Spurs",
+    "ground": "White Hart Lane",
+    "city": "London"
   },
   "wat": {
     "pulseId": 33,
     "optaId": "t57",
     "name": "Watford",
-    "shortName": "WAT"
+    "shortName": "Watford",
+    "ground": "Vicarage Road",
+    "city": "Watford"
   },
   "whu": {
     "pulseId": 25,
     "optaId": "t21",
     "name": "West Ham United",
-    "shortName": "WHU"
+    "shortName": "West Ham",
+    "ground": "Boleyn Ground",
+    "city": "London"
   },
   "wim": {
     "pulseId": 22,
     "optaId": "t1736",
     "name": "Wimbledon",
-    "shortName": "WIM"
+    "shortName": "Wimbledon",
+    "ground": "Selhurst Park",
+    "city": "London"
   }
 }
