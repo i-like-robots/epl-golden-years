@@ -23,7 +23,7 @@ module.exports = {
         },
         optaId: {
           type: 'string',
-          pattern: '^p\\d{3,5}$',
+          pattern: '^p\\d{2,4}$',
           example: 'p145',
         },
         positionCode: {
