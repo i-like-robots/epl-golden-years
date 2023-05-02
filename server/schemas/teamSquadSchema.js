@@ -1,4 +1,5 @@
 const { TEAM_ID, SEASON_ID } = require('../lib/constants')
+const { teamUrl, seasonUrl, playerUrl } = require('../lib/urls')
 
 module.exports = {
   tags: ['team'],
@@ -24,10 +25,12 @@ module.exports = {
         team: {
           type: 'string',
           format: 'uri',
+          example: teamUrl('blb'),
         },
         season: {
           type: 'string',
           format: 'uri',
+          example: seasonUrl('1994-1995'),
         },
         players: {
           type: 'array',
@@ -37,6 +40,7 @@ module.exports = {
               player: {
                 type: 'string',
                 format: 'uri',
+                example: playerUrl('henning-berg-f046'),
               },
               appearances: {
                 type: 'integer',

@@ -1,4 +1,10 @@
 const { SEASON_ID } = require('../lib/constants')
+const {
+  seasonTableUrl,
+  seasonTopScorersUrl,
+  seasonTopAssistsUrl,
+  seasonHatTricksUrl,
+} = require('../lib/urls')
 
 module.exports = {
   tags: ['season'],
@@ -19,18 +25,22 @@ module.exports = {
         table: {
           type: 'string',
           format: 'uri',
+          example: seasonTableUrl('1999-2000'),
         },
         topScorers: {
           type: 'string',
           format: 'uri',
+          example: seasonTopScorersUrl('1999-2000'),
         },
         topAssists: {
           type: 'string',
           format: 'uri',
+          example: seasonTopAssistsUrl('1999-2000'),
         },
         hatTricks: {
           type: 'string',
           format: 'uri',
+          example: seasonHatTricksUrl('1999-2000'),
         },
       },
     },

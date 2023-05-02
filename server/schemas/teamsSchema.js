@@ -1,3 +1,5 @@
+const { teamUrl } = require('../lib/urls')
+
 module.exports = {
   tags: ['team'],
   summary: 'List teams',
@@ -16,6 +18,7 @@ module.exports = {
       items: {
         type: 'string',
         format: 'uri',
+        example: teamUrl('qpr'),
       },
     },
   },

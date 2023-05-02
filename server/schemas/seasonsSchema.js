@@ -1,3 +1,5 @@
+const { seasonUrl } = require('../lib/urls')
+
 module.exports = {
   tags: ['season'],
   summary: 'List seasons',
@@ -9,6 +11,7 @@ module.exports = {
       items: {
         type: 'string',
         format: 'uri',
+        example: seasonUrl('1999-2000'),
       },
     },
   },

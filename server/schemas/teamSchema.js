@@ -28,7 +28,7 @@ module.exports = {
         },
         shortName: {
           type: 'string',
-          pattern: '^[A-Z]{2,3}$',
+          pattern: TEAM_ID,
         },
         seasons: {
           type: 'array',

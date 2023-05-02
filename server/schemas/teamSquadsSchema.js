@@ -1,4 +1,5 @@
 const { TEAM_ID } = require('../lib/constants')
+const { teamUrl, teamSquadUrl } = require('../lib/urls')
 
 module.exports = {
   tags: ['team'],
@@ -19,12 +20,14 @@ module.exports = {
         team: {
           type: 'string',
           format: 'uri',
+          example: teamUrl('blb'),
         },
         squads: {
           type: 'array',
           items: {
             type: 'string',
             format: 'uri',
+            example: teamSquadUrl('blb', '1994-1995'),
           },
         },
       },

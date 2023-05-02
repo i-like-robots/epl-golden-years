@@ -1,6 +1,8 @@
+const { playersUrl, seasonsUrl, teamsUrl } = require('../lib/urls')
+
 module.exports = {
   tags: [],
-  summary: 'Root resources',
+  summary: 'API root',
   description: 'Returns a list of all resource types',
   response: {
     200: {
@@ -10,14 +12,17 @@ module.exports = {
         players: {
           type: 'string',
           format: 'uri',
+          example: playersUrl(),
         },
         seasons: {
           type: 'string',
           format: 'uri',
+          example: seasonsUrl(),
         },
         teams: {
           type: 'string',
           format: 'uri',
+          example: teamsUrl(),
         },
       },
     },

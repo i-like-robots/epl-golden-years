@@ -1,4 +1,5 @@
 const { PLAYER_POSITIONS } = require('../lib/constants')
+const { playerUrl } = require('../lib/urls')
 
 module.exports = {
   tags: ['player'],
@@ -23,6 +24,7 @@ module.exports = {
       items: {
         type: 'string',
         format: 'uri',
+        example: playerUrl('david-may-c5be'),
       },
     },
   },

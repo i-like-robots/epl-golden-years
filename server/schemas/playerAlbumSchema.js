@@ -1,4 +1,5 @@
 const { PLAYER_ID } = require('../lib/constants')
+const { seasonUrl, teamUrl, playerUrl } = require('../lib/urls')
 
 module.exports = {
   tags: ['player'],
@@ -19,6 +20,7 @@ module.exports = {
         player: {
           type: 'string',
           format: 'uri',
+          example: playerUrl('nigel-martyn-ffae'),
         },
         stickers: {
           type: 'array',
@@ -28,14 +30,17 @@ module.exports = {
               season: {
                 type: 'string',
                 format: 'uri',
+                example: seasonUrl('1999-2000'),
               },
               team: {
                 type: 'string',
                 format: 'uri',
+                example: teamUrl('lee'),
               },
               url: {
                 type: 'string',
                 format: 'uri',
+                example: 'https://www.laststicker.com/i/cards/88/190.jpg',
               },
             },
           },

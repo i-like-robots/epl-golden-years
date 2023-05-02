@@ -1,4 +1,5 @@
 const { PLAYER_ID } = require('../lib/constants')
+const { playerUrl, seasonUrl } = require('../lib/urls')
 
 module.exports = {
   tags: ['player'],
@@ -19,6 +20,7 @@ module.exports = {
         player: {
           type: 'string',
           format: 'uri',
+          example: playerUrl('ken-monkou-648a'),
         },
         total: {
           type: 'object',
@@ -48,6 +50,7 @@ module.exports = {
               season: {
                 type: 'string',
                 format: 'uri',
+                example: seasonUrl('1993-1994'),
               },
               appearances: {
                 type: 'integer',
