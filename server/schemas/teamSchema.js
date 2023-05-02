@@ -21,7 +21,7 @@ module.exports = {
         },
         optaId: {
           type: 'string',
-          pattern: '^t\\d{1,3}$',
+          pattern: '^t\\d{2,4}$',
         },
         name: {
           type: 'string',
