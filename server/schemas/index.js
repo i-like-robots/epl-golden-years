@@ -1,4 +1,5 @@
 module.exports = {
+  errorSchema: require('./errorSchema'),
   metaSchema: require('./metaSchema'),
   playerAlbumSchema: require('./playerAlbumSchema'),
   playerSchema: require('./playerSchema'),

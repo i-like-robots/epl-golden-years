@@ -1,5 +1,6 @@
 const { SEASON_ID } = require('../lib/constants')
 const { seasonsUrl, playerUrl } = require('../lib/urls')
+const errorSchema = require('./errorSchema')
 
 module.exports = {
   tags: ['season'],
@@ -14,7 +15,7 @@ module.exports = {
   },
   response: {
     200: {
-      description: 'success',
+      description: 'OK',
       type: 'object',
       properties: {
         season: {
@@ -52,8 +53,6 @@ module.exports = {
         },
       },
     },
-    404: {
-      // description: 'Season not found',
-    },
+    ...errorSchema,
   },
 }

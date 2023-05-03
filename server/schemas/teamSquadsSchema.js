@@ -1,5 +1,6 @@
 const { TEAM_ID } = require('../lib/constants')
 const { teamUrl, teamSquadUrl } = require('../lib/urls')
+const errorSchema = require('./errorSchema')
 
 module.exports = {
   tags: ['team'],
@@ -14,7 +15,7 @@ module.exports = {
   },
   response: {
     200: {
-      description: 'success',
+      description: 'OK',
       type: 'object',
       properties: {
         team: {
@@ -32,8 +33,6 @@ module.exports = {
         },
       },
     },
-    404: {
-      // description: 'Team not found',
-    },
+    ...errorSchema,
   },
 }

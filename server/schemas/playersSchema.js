@@ -1,5 +1,6 @@
 const { PLAYER_POSITIONS } = require('../lib/constants')
 const { playerUrl } = require('../lib/urls')
+const errorSchema = require('./errorSchema')
 
 module.exports = {
   tags: ['player'],
@@ -19,7 +20,7 @@ module.exports = {
   },
   response: {
     200: {
-      description: 'success',
+      description: 'OK',
       type: 'array',
       items: {
         type: 'string',
@@ -27,5 +28,6 @@ module.exports = {
         example: playerUrl('david-may-c5be'),
       },
     },
+    400: errorSchema[400],
   },
 }

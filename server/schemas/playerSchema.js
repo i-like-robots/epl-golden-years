@@ -1,5 +1,6 @@
 const { PLAYER_ID, PLAYER_POSITIONS } = require('../lib/constants')
 const { seasonUrl, playerStatsUrl, playerAlbumUrl } = require('../lib/urls')
+const errorSchema = require('./errorSchema')
 
 module.exports = {
   tags: ['player'],
@@ -14,7 +15,7 @@ module.exports = {
   },
   response: {
     200: {
-      description: 'success',
+      description: 'OK',
       type: 'object',
       properties: {
         pulseId: {
@@ -92,8 +93,6 @@ module.exports = {
         },
       },
     },
-    404: {
-      // description: 'Player not found',
-    },
+    ...errorSchema,
   },
 }

@@ -1,5 +1,6 @@
 const { TEAM_ID } = require('../lib/constants')
 const { seasonUrl } = require('../lib/urls')
+const errorSchema = require('./errorSchema')
 
 module.exports = {
   tags: ['season'],
@@ -14,7 +15,7 @@ module.exports = {
   },
   response: {
     200: {
-      description: 'success',
+      description: 'OK',
       type: 'array',
       items: {
         type: 'string',
@@ -22,5 +23,6 @@ module.exports = {
         example: seasonUrl('1999-2000'),
       },
     },
+    400: errorSchema[400],
   },
 }

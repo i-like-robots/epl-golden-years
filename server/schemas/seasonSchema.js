@@ -5,6 +5,7 @@ const {
   seasonTopAssistsUrl,
   seasonHatTricksUrl,
 } = require('../lib/urls')
+const errorSchema = require('./errorSchema')
 
 module.exports = {
   tags: ['season'],
@@ -19,7 +20,7 @@ module.exports = {
   },
   response: {
     200: {
-      description: 'success',
+      description: 'OK',
       type: 'object',
       properties: {
         table: {
@@ -44,8 +45,6 @@ module.exports = {
         },
       },
     },
-    404: {
-      // description: 'Season not found',
-    },
+    ...errorSchema,
   },
 }

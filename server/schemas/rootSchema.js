@@ -6,7 +6,7 @@ module.exports = {
   description: 'Returns a list of all resource types presented by this API.',
   response: {
     200: {
-      description: 'success',
+      description: 'OK',
       type: 'object',
       properties: {
         players: {

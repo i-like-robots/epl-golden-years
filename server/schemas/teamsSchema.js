@@ -1,4 +1,5 @@
 const { teamUrl } = require('../lib/urls')
+const errorSchema = require('./errorSchema')
 
 module.exports = {
   tags: ['team'],
@@ -13,7 +14,7 @@ module.exports = {
   },
   response: {
     200: {
-      description: 'success',
+      description: 'OK',
       type: 'array',
       items: {
         type: 'string',
@@ -21,5 +22,6 @@ module.exports = {
         example: teamUrl('qpr'),
       },
     },
+    400: errorSchema[400],
   },
 }
