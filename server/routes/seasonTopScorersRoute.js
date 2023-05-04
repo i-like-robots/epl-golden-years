@@ -20,8 +20,8 @@ module.exports = function seasonTopScorersRoute(request, response) {
     players.sort((a, b) => {
       if (a.goals > b.goals) return -1
       if (a.goals < b.goals) return 1
-      if (a.assists > b.assists) return -1
-      if (a.assists < b.assists) return 1
+      if (a.appearances > b.appearances) return 1
+      if (a.appearances < b.appearances) return -1
 
       return 0
     })
