@@ -1,4 +1,4 @@
-const { tables } = require('../dataset')
+const { seasons } = require('../dataset')
 const { seasonUrl } = require('../lib/urls')
 
 module.exports = function seasonsRoute(request, response) {
@@ -11,8 +11,8 @@ module.exports = function seasonsRoute(request, response) {
     filters.push((table) => table.some((t) => t.teamId === team))
   }
 
-  Object.keys(tables).forEach((seasonId) => {
-    const table = tables[seasonId]
+  Object.keys(seasons).forEach((seasonId) => {
+    const table = seasons[seasonId]
 
     if (filters.every((filter) => filter(table))) {
       seasonsData.push(seasonUrl(seasonId))

@@ -23,25 +23,51 @@ module.exports = {
       description: 'OK',
       type: 'object',
       properties: {
+        displayName: {
+          type: 'string',
+          example: 'FA Carling Premiership',
+        },
+        shortName: {
+          type: 'string',
+          example: 'The Premier League'
+        },
+        sponsorName: {
+          type: 'string',
+          example: 'Carling Brewery',
+        },
+        ball: {
+          type: 'string',
+          example: 'Mitre Pro Max',
+        },
+        start: {
+          type: 'string',
+          format: 'date',
+          example: '1992-08-15',
+        },
+        end: {
+          type: 'string',
+          format: 'date',
+          example: '1993-05-11',
+        },
         table: {
           type: 'string',
           format: 'uri',
-          example: seasonTableUrl('1999-2000'),
+          example: seasonTableUrl('1992-1993'),
         },
         topScorers: {
           type: 'string',
           format: 'uri',
-          example: seasonTopScorersUrl('1999-2000'),
+          example: seasonTopScorersUrl('1992-1993'),
         },
         topAssists: {
           type: 'string',
           format: 'uri',
-          example: seasonTopAssistsUrl('1999-2000'),
+          example: seasonTopAssistsUrl('1992-1993'),
         },
         hatTricks: {
           type: 'string',
           format: 'uri',
-          example: seasonHatTricksUrl('1999-2000'),
+          example: seasonHatTricksUrl('1992-1993'),
         },
       },
     },

@@ -1,4 +1,4 @@
-const { tables } = require('../dataset')
+const { seasons } = require('../dataset')
 const {
   seasonHatTricksUrl,
   seasonTableUrl,
@@ -8,10 +8,11 @@ const {
 
 module.exports = function seasonRoute(request, response) {
   const { seasonId } = request.params
-  const table = tables[seasonId]
+  const season = seasons[seasonId]
 
-  if (table) {
+  if (season) {
     const seasonData = {
+      ...season,
       table: seasonTableUrl(seasonId),
       topScorers: seasonTopScorersUrl(seasonId),
       topAssists: seasonTopAssistsUrl(seasonId),
