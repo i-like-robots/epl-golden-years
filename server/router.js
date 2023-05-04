@@ -15,6 +15,7 @@ const {
   teamSquadRoute,
   teamStatsRoute,
   rootRoute,
+  seasonTopCleanSheetsRoute,
 } = require('./routes')
 const {
   playerAlbumSchema,
@@ -33,6 +34,7 @@ const {
   teamSquadsSchema,
   teamSquadSchema,
   rootSchema,
+  seasonTopCleanSheetsSchema,
 } = require('./schemas')
 
 module.exports = function router(app) {
@@ -68,6 +70,12 @@ module.exports = function router(app) {
     '/seasons/:seasonId/top-assists',
     { schema: seasonTopAssistsSchema },
     seasonTopAssistsRoute
+  )
+
+  app.get(
+    '/seasons/:seasonId/top-clean-sheets',
+    { schema: seasonTopCleanSheetsSchema },
+    seasonTopCleanSheetsRoute
   )
 
   app.get(

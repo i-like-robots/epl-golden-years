@@ -4,6 +4,7 @@ const {
   seasonTableUrl,
   seasonTopScorersUrl,
   seasonTopAssistsUrl,
+  seasonTopCleanSheetsUrl,
 } = require('../lib/urls')
 
 module.exports = function seasonRoute(request, response) {
@@ -16,6 +17,7 @@ module.exports = function seasonRoute(request, response) {
       table: seasonTableUrl(seasonId),
       topScorers: seasonTopScorersUrl(seasonId),
       topAssists: seasonTopAssistsUrl(seasonId),
+      topCleanSheets: seasonTopCleanSheetsUrl(seasonId),
       hatTricks: seasonHatTricksUrl(seasonId),
     }
 

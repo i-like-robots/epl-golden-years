@@ -9,6 +9,7 @@ module.exports = {
   seasonHatTricksRoute: require('./seasonHatTricksRoute'),
   seasonTableRoute: require('./seasonTableRoute'),
   seasonTopAssistsRoute: require('./seasonTopAssistsRoute'),
+  seasonTopCleanSheetsRoute: require('./seasonTopCleanSheetsRoute'),
   seasonTopScorersRoute: require('./seasonTopScorersRoute'),
   teamsRoute: require('./teamsRoute'),
   teamRoute: require('./teamRoute'),

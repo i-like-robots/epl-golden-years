@@ -11,6 +11,7 @@ module.exports = {
   seasonsSchema: require('./seasonsSchema'),
   seasonTableSchema: require('./seasonTableSchema'),
   seasonTopAssistsSchema: require('./seasonTopAssistsSchema'),
+  seasonTopCleanSheetsSchema: require('./seasonTopCleanSheetsSchema'),
   seasonTopScorersSchema: require('./seasonTopScorersSchema'),
   teamSchema: require('./teamSchema'),
   teamSquadSchema: require('./teamSquadSchema'),

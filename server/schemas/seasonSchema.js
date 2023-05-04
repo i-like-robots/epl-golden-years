@@ -4,6 +4,7 @@ const {
   seasonTopScorersUrl,
   seasonTopAssistsUrl,
   seasonHatTricksUrl,
+  seasonTopCleanSheetsUrl,
 } = require('../lib/urls')
 const errorSchema = require('./errorSchema')
 
@@ -29,7 +30,7 @@ module.exports = {
         },
         shortName: {
           type: 'string',
-          example: 'The Premier League'
+          example: 'The Premier League',
         },
         sponsorName: {
           type: 'string',
@@ -63,6 +64,11 @@ module.exports = {
           type: 'string',
           format: 'uri',
           example: seasonTopAssistsUrl('1992-1993'),
+        },
+        topCleanSheets: {
+          type: 'string',
+          format: 'uri',
+          example: seasonTopCleanSheetsUrl('1992-1993'),
         },
         hatTricks: {
           type: 'string',

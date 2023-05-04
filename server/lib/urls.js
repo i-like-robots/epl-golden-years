@@ -57,6 +57,10 @@ function seasonTopAssistsUrl(seasonId) {
   return join(API_URL, '/seasons', seasonId, '/top-assists')
 }
 
+function seasonTopCleanSheetsUrl(seasonId) {
+  return join(API_URL, '/seasons', seasonId, '/top-clean-sheets')
+}
+
 function seasonTopScorersUrl(seasonId) {
   return join(API_URL, '/seasons', seasonId, '/top-scorers')
 }
@@ -76,5 +80,6 @@ module.exports = {
   seasonHatTricksUrl,
   seasonTableUrl,
   seasonTopAssistsUrl,
+  seasonTopCleanSheetsUrl,
   seasonTopScorersUrl,
 }
