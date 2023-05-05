@@ -32,7 +32,7 @@ module.exports = {
           type: 'string',
           example: 'The Premier League',
         },
-        sponsorName: {
+        sponsor: {
           type: 'string',
           example: 'Carling Brewery',
         },

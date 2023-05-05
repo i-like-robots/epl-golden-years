@@ -23,7 +23,7 @@ module.exports = {
           format: 'uri',
           example: seasonUrl('1995-1996'),
         },
-        goalkeepers: {
+        table: {
           type: 'array',
           items: {
             type: 'object',

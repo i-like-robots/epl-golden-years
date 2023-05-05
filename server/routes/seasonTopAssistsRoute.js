@@ -4,20 +4,20 @@ const pick = require('../lib/object-pick')
 
 module.exports = function seasonTopAssistsRoute(request, response) {
   const { seasonId } = request.params
-  const players = []
+  const data = []
 
   squads.forEach((squad) => {
     if (squad.seasonId === seasonId) {
       squad.players.forEach((player) => {
         if (player.assists) {
-          players.push(player)
+          data.push(player)
         }
       })
     }
   })
 
-  if (players.length) {
-    players.sort((a, b) => {
+  if (data.length) {
+    data.sort((a, b) => {
       if (a.assists > b.assists) return -1
       if (a.assists < b.assists) return 1
       if (a.appearances > b.appearances) return 1
@@ -26,13 +26,13 @@ module.exports = function seasonTopAssistsRoute(request, response) {
       return 0
     })
 
-    const data = players.slice(0, 10).map((player) => ({
+    const table = data.slice(0, 10).map((player) => ({
       player: playerUrl(player.playerId),
       ...pick(player, 'assists', 'appearances'),
       minutesPerAssists: Math.round((player.appearances * 90) / player.assists),
     }))
 
-    response.send({ season: seasonUrl(seasonId), assists: data })
+    response.send({ season: seasonUrl(seasonId), table })
   } else {
     response.code(404)
     response.send({ error: 'Season not found' })
