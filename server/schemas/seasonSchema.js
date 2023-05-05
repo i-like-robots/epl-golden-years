@@ -75,6 +75,21 @@ module.exports = {
           format: 'uri',
           example: seasonHatTricksUrl('1992-1993'),
         },
+        links: {
+          type: 'object',
+          properties: {
+            previous: {
+              type: 'string',
+              format: 'uri',
+              nullable: true
+            },
+            next: {
+              type: 'string',
+              format: 'uri',
+              nullable: true
+            },
+          }
+        }
       },
     },
     ...errorSchema,
