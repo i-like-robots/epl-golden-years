@@ -56,7 +56,8 @@ module.exports = {
         },
         countryCode: {
           type: 'string',
-          format: 'ISO-3166-1',
+          pattern: '^[A-Z]{2}(?:-[A-Z]{2,3})?$',
+          description: 'ISO-3166-1 code',
           example: 'GB-ENG',
         },
         countryName: {

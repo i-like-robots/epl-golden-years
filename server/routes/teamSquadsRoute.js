@@ -12,7 +12,7 @@ module.exports = function teamSquadsRoute(request, response) {
     }
   })
 
-  if (squads.length) {
+  if (data.length) {
     response.send({ team: teamUrl(teamId), squads: data })
   } else {
     response.code(404)
