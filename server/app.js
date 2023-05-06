@@ -4,7 +4,7 @@ const router = require('./router')
 const { metaSchema } = require('./schemas')
 
 const app = fastify({
-  logger: true,
+  logger: { level: process.env.LOG_LEVEL || 'info' },
 })
 
 app.register(swagger, {
