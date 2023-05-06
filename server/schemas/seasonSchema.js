@@ -81,15 +81,15 @@ module.exports = {
             previous: {
               type: 'string',
               format: 'uri',
-              nullable: true
+              nullable: true,
             },
             next: {
               type: 'string',
               format: 'uri',
-              nullable: true
+              nullable: true,
             },
-          }
-        }
+          },
+        },
       },
     },
     ...errorSchema,

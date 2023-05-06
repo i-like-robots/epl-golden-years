@@ -28,7 +28,7 @@ module.exports = function seasonRoute(request, response) {
       links: {
         previous: previousId ? seasonUrl(previousId) : null,
         next: nextId ? seasonUrl(nextId) : null,
-      }
+      },
     }
 
     response.send(seasonData)
