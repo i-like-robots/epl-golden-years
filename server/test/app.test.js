@@ -2,8 +2,8 @@ const { after, before, describe, test } = require('node:test')
 const assert = require('node:assert')
 const Ajv = require('ajv')
 const addFormats = require('ajv-formats')
-const app = require('./app')
-const schemas = require('./schemas')
+const app = require('../app')
+const schemas = require('../schemas')
 
 describe('App', () => {
   const ajv = new Ajv({ strict: false })
@@ -16,15 +16,12 @@ describe('App', () => {
       url: path,
     })
 
+    ajv.validate(schema.response[statusCode], response.json())
+
     assert.equal(response.statusCode, statusCode)
+    assert.equal(ajv.errors, null)
 
-    const valid = ajv.validate(schema.response[statusCode], response.json())
-
-    if (!valid) {
-      console.error('Errors: ', ajv.errors)
-    }
-
-    assert.ok(valid)
+    return response
   }
 
   before(async () => {
@@ -43,14 +40,28 @@ describe('App', () => {
 
   describe('/players', () => {
     test('OK', async () => {
-      await validateRoute('/players', schemas.playersSchema, 200)
+      const response = await validateRoute('/players', schemas.playersSchema, 200)
+      const data = response.json()
+      
+      assert.equal(data.length, 2105)
     })
 
-    test('OK - with filters', async () => {
-      await validateRoute('/players', schemas.playersSchema, 200)
+    test('OK - with name filter', async () => {
+      const response = await validateRoute('/players?name=tony', schemas.playersSchema, 200)
+      const data = response.json()
+      
+      assert.equal(data.length, 23)
+    })
+
+    test('OK - with position filter', async () => {
+      const response = await validateRoute('/players?position=D', schemas.playersSchema, 200)
+      const data = response.json()
+      
+      assert.equal(data.length, 680)
     })
 
     test('Invalid Request', async () => {
+      await validateRoute('/players?name=@', schemas.playersSchema, 400)
       await validateRoute('/players?position=X', schemas.playersSchema, 400)
     })
   })
@@ -87,11 +98,17 @@ describe('App', () => {
 
   describe('/teams', () => {
     test('OK', async () => {
-      await validateRoute('/teams', schemas.teamsSchema, 200)
+      const response = await validateRoute('/teams', schemas.teamsSchema, 200)
+      const data = response.json()
+      
+      assert.equal(data.length, 34)
     })
 
-    test('OK - with filters', async () => {
-      await validateRoute('/teams?name=a', schemas.teamsSchema, 200)
+    test('OK - with name filter', async () => {
+      const response = await validateRoute('/teams?name=man', schemas.teamsSchema, 200)
+      const data = response.json()
+      
+      assert.equal(data.length, 2)
     })
 
     test('Invalid Request', async () => {
@@ -141,11 +158,17 @@ describe('App', () => {
 
   describe('/seasons', () => {
     test('OK', async () => {
-      await validateRoute('/seasons', schemas.seasonsSchema, 200)
+      const response = await validateRoute('/seasons', schemas.seasonsSchema, 200)
+      const data = response.json()
+      
+      assert.equal(data.length, 10)
     })
 
-    test('OK - with filters', async () => {
-      await validateRoute('/seasons?team=cov', schemas.seasonsSchema, 200)
+    test('OK - with team filter', async () => {
+      const response = await validateRoute('/seasons?team=shu', schemas.seasonsSchema, 200)
+      const data = response.json()
+      
+      assert.equal(data.length, 2)
     })
 
     test('Invalid Request', async () => {
