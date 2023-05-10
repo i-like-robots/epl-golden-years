@@ -25,7 +25,7 @@ module.exports = {
       items: {
         type: 'string',
         format: 'uri',
-        example: playerUrl('david-may-c5be'),
+        example: playerUrl('david-may-3f29'),
       },
     },
     400: errorSchema[400],

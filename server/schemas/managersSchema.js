@@ -19,7 +19,7 @@ module.exports = {
       items: {
         type: 'string',
         format: 'uri',
-        example: managerUrl('dave-bassett-30e2'),
+        example: managerUrl('dave-bassett-3f79'),
       },
     },
     400: errorSchema[400],

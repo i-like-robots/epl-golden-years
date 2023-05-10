@@ -22,7 +22,7 @@ module.exports = {
         player: {
           type: 'string',
           format: 'uri',
-          example: playerUrl('ken-monkou-648a'),
+          example: playerUrl('ken-monkou-c89e'),
         },
         total: {
           type: 'object',

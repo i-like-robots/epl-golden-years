@@ -31,7 +31,7 @@ module.exports = {
               player: {
                 type: 'string',
                 format: 'uri',
-                example: playerUrl('darren-peacock-3ef9'),
+                example: playerUrl('darren-peacock-78af'),
               },
               assists: {
                 type: 'integer',

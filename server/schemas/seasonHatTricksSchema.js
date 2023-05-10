@@ -31,7 +31,7 @@ module.exports = {
               player: {
                 type: 'string',
                 format: 'uri',
-                example: playerUrl('tony-cottee-a753'),
+                example: playerUrl('tony-cottee-c708'),
               },
               homeTeam: {
                 type: 'string',

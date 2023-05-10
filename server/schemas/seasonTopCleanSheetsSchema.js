@@ -21,7 +21,7 @@ module.exports = {
         season: {
           type: 'string',
           format: 'uri',
-          example: seasonUrl('1995-1996'),
+          example: seasonUrl('1993-1994'),
         },
         table: {
           type: 'array',
@@ -31,7 +31,7 @@ module.exports = {
               player: {
                 type: 'string',
                 format: 'uri',
-                example: playerUrl('darren-peacock-3ef9'),
+                example: playerUrl('steve-ogrizovic-3e99'),
               },
               cleanSheets: {
                 type: 'integer',

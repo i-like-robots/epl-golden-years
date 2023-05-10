@@ -85,12 +85,12 @@ module.exports = {
         statistics: {
           type: 'string',
           format: 'uri',
-          example: playerStatsUrl('nigel-martyn-ffae'),
+          example: playerStatsUrl('nigel-martyn-99a8'),
         },
         album: {
           type: 'string',
           format: 'uri',
-          example: playerAlbumUrl('nigel-martyn-ffae'),
+          example: playerAlbumUrl('nigel-martyn-99a8'),
         },
       },
     },

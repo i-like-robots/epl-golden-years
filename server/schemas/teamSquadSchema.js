@@ -41,7 +41,7 @@ module.exports = {
               player: {
                 type: 'string',
                 format: 'uri',
-                example: playerUrl('henning-berg-f046'),
+                example: playerUrl('henning-berg-9b5d'),
               },
               appearances: {
                 type: 'integer',

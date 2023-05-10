@@ -21,7 +21,7 @@ module.exports = {
         player: {
           type: 'string',
           format: 'uri',
-          example: playerUrl('nigel-martyn-ffae'),
+          example: playerUrl('nigel-martyn-99a8'),
         },
         stickers: {
           type: 'array',
