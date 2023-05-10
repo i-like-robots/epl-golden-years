@@ -1,0 +1,982 @@
+{
+  "micky-adams-2412": {
+    "pulseId": 2108,
+    "optaId": "man126",
+    "displayName": "Micky Adams",
+    "firstName": "Micky",
+    "lastName": "Adams",
+    "dateOfBirth": "1961-11-08",
+    "countryCode": "GB-ENG",
+    "countryName": "England"
+  },
+  "sam-allardyce-279b": {
+    "pulseId": 2049,
+    "optaId": "man83",
+    "displayName": "Sam Allardyce",
+    "firstName": "Sam",
+    "lastName": "Allardyce",
+    "dateOfBirth": "1954-10-19",
+    "countryCode": "GB-ENG",
+    "countryName": "England"
+  },
+  "osvaldo-ardiles-d74d": {
+    "pulseId": 781,
+    "optaId": "man37383",
+    "displayName": "Osvaldo Ardiles",
+    "firstName": "Osvaldo",
+    "lastName": "Ardiles",
+    "dateOfBirth": "1952-08-02",
+    "countryCode": "AR",
+    "countryName": "Argentina"
+  },
+  "ron-atkinson-cb57": {
+    "pulseId": 63,
+    "optaId": "man37365",
+    "displayName": "Ron Atkinson",
+    "firstName": "Ron",
+    "lastName": "Atkinson",
+    "dateOfBirth": "1939-03-18",
+    "countryCode": "GB-ENG",
+    "countryName": "England"
+  },
+  "alan-ball-bb64": {
+    "pulseId": 761,
+    "optaId": "man37379",
+    "displayName": "Alan Ball",
+    "firstName": "Alan",
+    "lastName": "Ball",
+    "dateOfBirth": "1945-05-11",
+    "countryCode": "GB-ENG",
+    "countryName": "England"
+  },
+  "jim-barron-f1bf": {
+    "pulseId": 17692,
+    "optaId": "man37523",
+    "displayName": "Jim Barron",
+    "firstName": "Jim",
+    "lastName": "Barron",
+    "dateOfBirth": "1943-10-18",
+    "countryCode": "GB-ENG",
+    "countryName": "England"
+  },
+  "dave-bassett-30e2": {
+    "pulseId": 492,
+    "optaId": "man37469",
+    "displayName": "Dave Bassett",
+    "firstName": "Dave",
+    "lastName": "Bassett",
+    "dateOfBirth": "1944-09-03",
+    "countryCode": "GB-ENG",
+    "countryName": "England"
+  },
+  "billy-bonds-4580": {
+    "pulseId": 806,
+    "optaId": "man37382",
+    "displayName": "Billy Bonds",
+    "firstName": "Billy",
+    "lastName": "Bonds",
+    "dateOfBirth": "1946-09-16",
+    "countryCode": "GB-ENG",
+    "countryName": "England"
+  },
+  "tony-book-b5eb": {
+    "pulseId": 17691,
+    "optaId": "man41481",
+    "displayName": "Tony Book",
+    "firstName": "Tony",
+    "lastName": "Book",
+    "dateOfBirth": "1934-09-03",
+    "countryCode": "GB-ENG",
+    "countryName": "England"
+  },
+  "ian-branfoot-eb72": {
+    "pulseId": 543,
+    "optaId": "man37471",
+    "displayName": "Ian Branfoot",
+    "firstName": "Ian",
+    "lastName": "Branfoot",
+    "dateOfBirth": "1947-01-26",
+    "countryCode": "GB-ENG",
+    "countryName": "England"
+  },
+  "george-burley-55f6": {
+    "pulseId": 885,
+    "optaId": "man170",
+    "displayName": "George Burley",
+    "firstName": "George",
+    "lastName": "Burley",
+    "dateOfBirth": "1956-06-02",
+    "countryCode": "GB-SCT",
+    "countryName": "Scotland"
+  },
+  "frank-clark-37bd": {
+    "pulseId": 947,
+    "optaId": "man37378",
+    "displayName": "Frank Clark",
+    "firstName": "Frank",
+    "lastName": "Clark",
+    "dateOfBirth": "1942-09-08",
+    "countryCode": "GB-ENG",
+    "countryName": "England"
+  },
+  "steve-clarke-9041": {
+    "pulseId": 4677,
+    "optaId": "man37376",
+    "displayName": "Steve Clarke",
+    "firstName": "Steve",
+    "lastName": "Clarke",
+    "dateOfBirth": "1963-08-28",
+    "countryCode": "GB-SCT",
+    "countryName": "Scotland"
+  },
+  "brian-clough-900f": {
+    "pulseId": 414,
+    "optaId": "man37473",
+    "displayName": "Brian Clough",
+    "firstName": "Brian",
+    "lastName": "Clough",
+    "dateOfBirth": "1935-03-21",
+    "countryCode": "GB-ENG",
+    "countryName": "England"
+  },
+  "steve-coppell-cb8b": {
+    "pulseId": 170,
+    "optaId": "man231",
+    "displayName": "Steve Coppell",
+    "firstName": "Steve",
+    "lastName": "Coppell",
+    "dateOfBirth": "1955-07-08",
+    "countryCode": "GB-ENG",
+    "countryName": "England"
+  },
+  "alan-curbishley-53b4": {
+    "pulseId": 1530,
+    "optaId": "man84",
+    "displayName": "Alan Curbishley",
+    "firstName": "Alan",
+    "lastName": "Curbishley",
+    "dateOfBirth": "1957-11-08",
+    "countryCode": "GB-ENG",
+    "countryName": "England"
+  },
+  "kenny-dalglish-a7e7": {
+    "pulseId": 90,
+    "optaId": "man37369",
+    "displayName": "Kenny Dalglish",
+    "firstName": "Kenny",
+    "lastName": "Dalglish",
+    "dateOfBirth": "1951-03-04",
+    "countryCode": "GB-SCT",
+    "countryName": "Scotland"
+  },
+  "john-deehan-a9da": {
+    "pulseId": 735,
+    "optaId": "man37364",
+    "displayName": "John Deehan",
+    "firstName": "John",
+    "lastName": "Deehan",
+    "dateOfBirth": "1957-08-05",
+    "countryCode": "GB-ENG",
+    "countryName": "England"
+  },
+  "roy-evans-cd0c": {
+    "pulseId": 697,
+    "optaId": "man241",
+    "displayName": "Roy Evans",
+    "firstName": "Roy",
+    "lastName": "Evans",
+    "dateOfBirth": "1948-10-03",
+    "countryCode": "GB-ENG",
+    "countryName": "England"
+  },
+  "alex-ferguson-9ee1": {
+    "pulseId": 344,
+    "optaId": "man58",
+    "displayName": "Alex Ferguson",
+    "firstName": "Alex",
+    "lastName": "Ferguson",
+    "dateOfBirth": "1941-12-30",
+    "countryCode": "GB-SCT",
+    "countryName": "Scotland"
+  },
+  "gerry-francis-5beb": {
+    "pulseId": 467,
+    "optaId": "man37373",
+    "displayName": "Gerry Francis",
+    "firstName": "Gerry",
+    "lastName": "Francis",
+    "dateOfBirth": "1951-12-06",
+    "countryCode": "GB-ENG",
+    "countryName": "England"
+  },
+  "trevor-francis-9c6b": {
+    "pulseId": 517,
+    "optaId": "man37461",
+    "displayName": "Trevor Francis",
+    "firstName": "Trevor",
+    "lastName": "Francis",
+    "dateOfBirth": "1954-04-18",
+    "countryCode": "GB-ENG",
+    "countryName": "England"
+  },
+  "jimmy-gabriel-7dfb": {
+    "pulseId": 17690,
+    "optaId": "man37362",
+    "displayName": "Jimmy Gabriel",
+    "firstName": "Jimmy",
+    "lastName": "Gabriel",
+    "dateOfBirth": "1940-10-15",
+    "countryCode": "GB-ENG",
+    "countryName": "England"
+  },
+  "paul-goddard-128b": {
+    "pulseId": 17693,
+    "optaId": "man37467",
+    "displayName": "Paul Goddard",
+    "firstName": "Paul",
+    "lastName": "Goddard",
+    "dateOfBirth": "1959-10-12",
+    "countryCode": "GB-ENG",
+    "countryName": "England"
+  },
+  "john-gorman-4c34": {
+    "pulseId": 774,
+    "optaId": "man37482",
+    "displayName": "John Gorman",
+    "firstName": "John",
+    "lastName": "Gorman",
+    "dateOfBirth": "1949-08-15",
+    "countryCode": "GB-SCT",
+    "countryName": "Scotland"
+  },
+  "bobby-gould-775e": {
+    "pulseId": 144,
+    "optaId": "man37822",
+    "displayName": "Bobby Gould",
+    "firstName": "Bobby",
+    "lastName": "Gould",
+    "dateOfBirth": "1946-01-12",
+    "countryCode": "GB-WLS",
+    "countryName": "Wales"
+  },
+  "george-graham-58eb": {
+    "pulseId": 30,
+    "optaId": "man37371",
+    "displayName": "George Graham",
+    "firstName": "George",
+    "lastName": "Graham",
+    "dateOfBirth": "1944-11-29",
+    "countryCode": "GB-SCT",
+    "countryName": "Scotland"
+  },
+  "stuart-gray-9330": {
+    "pulseId": 1965,
+    "optaId": "man176",
+    "displayName": "Stuart Gray",
+    "firstName": "Stuart",
+    "lastName": "Gray",
+    "dateOfBirth": "1960-04-18",
+    "countryCode": "GB-ENG",
+    "countryName": "England"
+  },
+  "john-gregory-5e99": {
+    "pulseId": 1310,
+    "optaId": "man37359",
+    "displayName": "John Gregory",
+    "firstName": "John",
+    "lastName": "Gregory",
+    "dateOfBirth": "1954-05-10",
+    "countryCode": "GB-ENG",
+    "countryName": "England"
+  },
+  "christian-gross-fa84": {
+    "pulseId": 1469,
+    "optaId": "man38",
+    "displayName": "Christian Gross",
+    "firstName": "Christian",
+    "lastName": "Gross",
+    "dateOfBirth": "1954-08-13",
+    "countryCode": "CH",
+    "countryName": "Switzerland"
+  },
+  "ruud-gullit-a3cb": {
+    "pulseId": 1153,
+    "optaId": "man37353",
+    "displayName": "Ruud Gullit",
+    "firstName": "Ruud",
+    "lastName": "Gullit",
+    "dateOfBirth": "1962-08-31",
+    "countryCode": "NL",
+    "countryName": "Netherlands"
+  },
+  "ray-harford-c91d": {
+    "pulseId": 1007,
+    "optaId": "man37368",
+    "displayName": "Ray Harford",
+    "firstName": "Ray",
+    "lastName": "Harford",
+    "dateOfBirth": "1945-05-31",
+    "countryCode": "GB-ENG",
+    "countryName": "England"
+  },
+  "glenn-hoddle-dc50": {
+    "pulseId": 676,
+    "optaId": "man1101",
+    "displayName": "Glenn Hoddle",
+    "firstName": "Glenn",
+    "lastName": "Hoddle",
+    "dateOfBirth": "1957-10-27",
+    "countryCode": "GB-ENG",
+    "countryName": "England"
+  },
+  "roy-hodgson-ce38": {
+    "pulseId": 1341,
+    "optaId": "man1280",
+    "displayName": "Roy Hodgson",
+    "firstName": "Roy",
+    "lastName": "Hodgson",
+    "dateOfBirth": "1947-08-08",
+    "countryCode": "GB-ENG",
+    "countryName": "England"
+  },
+  "brian-horton-86b2": {
+    "pulseId": 705,
+    "optaId": "man208",
+    "displayName": "Brian Horton",
+    "firstName": "Brian",
+    "lastName": "Horton",
+    "dateOfBirth": "1949-02-04",
+    "countryCode": "GB-ENG",
+    "countryName": "England"
+  },
+  "gerard-houllier-3bfc": {
+    "pulseId": 1578,
+    "optaId": "man39",
+    "displayName": "Gérard Houllier",
+    "firstName": "Gérard",
+    "lastName": "Houllier",
+    "dateOfBirth": "1947-09-02",
+    "countryCode": "FR",
+    "countryName": "France"
+  },
+  "stewart-houston-d7c0": {
+    "pulseId": 845,
+    "optaId": "man37390",
+    "displayName": "Stewart Houston",
+    "firstName": "Stewart",
+    "lastName": "Houston",
+    "dateOfBirth": "1949-08-19",
+    "countryCode": "GB-SCT",
+    "countryName": "Scotland"
+  },
+  "chris-hughton-90d1": {
+    "pulseId": 4564,
+    "optaId": "man37372",
+    "displayName": "Chris Hughton",
+    "firstName": "Chris",
+    "lastName": "Hughton",
+    "dateOfBirth": "1958-12-11",
+    "countryCode": "IE",
+    "countryName": "Ireland"
+  },
+  "chris-hutchings-9dc8": {
+    "pulseId": 17699,
+    "optaId": "man37486",
+    "displayName": "Chris Hutchings",
+    "firstName": "Chris",
+    "lastName": "Hutchings",
+    "dateOfBirth": "1957-07-04",
+    "countryCode": "GB-ENG",
+    "countryName": "England"
+  },
+  "jim-jefferies-ffb2": {
+    "pulseId": 1846,
+    "optaId": "man37401",
+    "displayName": "Jim Jefferies",
+    "firstName": "Jim",
+    "lastName": "Jefferies",
+    "dateOfBirth": "1950-11-22",
+    "countryCode": "GB-SCT",
+    "countryName": "Scotland"
+  },
+  "paul-jewell-62f6": {
+    "pulseId": 1675,
+    "optaId": "man234",
+    "displayName": "Paul Jewell",
+    "firstName": "Paul",
+    "lastName": "Jewell",
+    "dateOfBirth": "1964-09-27",
+    "countryCode": "GB-ENG",
+    "countryName": "England"
+  },
+  "dave-jones-dcb8": {
+    "pulseId": 1463,
+    "optaId": "man128",
+    "displayName": "Dave Jones",
+    "firstName": "Dave",
+    "lastName": "Jones",
+    "dateOfBirth": "1956-04-17",
+    "countryCode": "GB-ENG",
+    "countryName": "England"
+  },
+  "kevin-keegan-b19f": {
+    "pulseId": 729,
+    "optaId": "man87",
+    "displayName": "Kevin Keegan",
+    "firstName": "Kevin",
+    "lastName": "Keegan",
+    "dateOfBirth": "1951-02-14",
+    "countryCode": "GB-ENG",
+    "countryName": "England"
+  },
+  "howard-kendall-e489": {
+    "pulseId": 198,
+    "optaId": "man37357",
+    "displayName": "Howard Kendall",
+    "firstName": "Howard",
+    "lastName": "Kendall",
+    "dateOfBirth": "1946-05-21",
+    "countryCode": "GB-ENG",
+    "countryName": "England"
+  },
+  "brian-kidd-2aad": {
+    "pulseId": 1512,
+    "optaId": "man37367",
+    "displayName": "Brian Kidd",
+    "firstName": "Brian",
+    "lastName": "Kidd",
+    "dateOfBirth": "1949-05-28",
+    "countryCode": "GB-ENG",
+    "countryName": "England"
+  },
+  "joe-kinnear-be8d": {
+    "pulseId": 609,
+    "optaId": "man166",
+    "displayName": "Joe Kinnear",
+    "firstName": "Joe",
+    "lastName": "Kinnear",
+    "dateOfBirth": "1946-12-27",
+    "countryCode": "IE",
+    "countryName": "Ireland"
+  },
+  "lennie-lawrence-c2a5": {
+    "pulseId": 370,
+    "optaId": "man220",
+    "displayName": "Lennie Lawrence",
+    "firstName": "Lennie",
+    "lastName": "Lawrence",
+    "dateOfBirth": "1947-12-12",
+    "countryCode": "GB-ENG",
+    "countryName": "England"
+  },
+  "brian-little-72f2": {
+    "pulseId": 850,
+    "optaId": "man179",
+    "displayName": "Brian Little",
+    "firstName": "Brian",
+    "lastName": "Little",
+    "dateOfBirth": "1953-11-25",
+    "countryCode": "GB-ENG",
+    "countryName": "England"
+  },
+  "doug-livermore-5dcd": {
+    "pulseId": 581,
+    "optaId": "man37480",
+    "displayName": "Doug Livermore",
+    "firstName": "Doug",
+    "lastName": "Livermore",
+    "dateOfBirth": "1947-12-27",
+    "countryCode": "GB-ENG",
+    "countryName": "England"
+  },
+  "attilio-lombardo-0c13": {
+    "pulseId": 11197,
+    "optaId": "man37477",
+    "displayName": "Attilio Lombardo",
+    "firstName": "Attilio",
+    "lastName": "Lombardo",
+    "dateOfBirth": "1966-01-06",
+    "countryCode": "IT",
+    "countryName": "Italy"
+  },
+  "john-lyall-d48d": {
+    "pulseId": 223,
+    "optaId": "man37466",
+    "displayName": "John Lyall",
+    "firstName": "John",
+    "lastName": "Lyall",
+    "dateOfBirth": "1940-02-24",
+    "countryCode": "GB-ENG",
+    "countryName": "England"
+  },
+  "kevin-macdonald-0735": {
+    "pulseId": 10434,
+    "optaId": "man37484",
+    "displayName": "Kevin MacDonald",
+    "firstName": "Kevin",
+    "lastName": "MacDonald",
+    "dateOfBirth": "1960-11-22",
+    "countryCode": "GB-SCT",
+    "countryName": "Scotland"
+  },
+  "stuart-mccall-5dd0": {
+    "pulseId": 17700,
+    "optaId": "man37625",
+    "displayName": "Stuart McCall",
+    "firstName": "Stuart",
+    "lastName": "McCall",
+    "dateOfBirth": "1964-06-09",
+    "countryCode": "GB-SCT",
+    "countryName": "Scotland"
+  },
+  "steve-mcclaren-c42c": {
+    "pulseId": 2124,
+    "optaId": "man88",
+    "displayName": "Steve McClaren",
+    "firstName": "Steve",
+    "lastName": "McClaren",
+    "dateOfBirth": "1961-05-02",
+    "countryCode": "GB-ENG",
+    "countryName": "England"
+  },
+  "terry-mcdermott-f184": {
+    "pulseId": 17697,
+    "optaId": "man37375",
+    "displayName": "Terry McDermott",
+    "firstName": "Terry",
+    "lastName": "McDermott",
+    "dateOfBirth": "1951-12-08",
+    "countryCode": "GB-ENG",
+    "countryName": "England"
+  },
+  "billy-mcewan-8259": {
+    "pulseId": 17702,
+    "optaId": "man37491",
+    "displayName": "Billy McEwan",
+    "firstName": "Billy",
+    "lastName": "McEwan",
+    "dateOfBirth": "1951-06-19",
+    "countryCode": "GB-SCT",
+    "countryName": "Scotland"
+  },
+  "roy-mcfarland-14eb": {
+    "pulseId": 17696,
+    "optaId": "man221",
+    "displayName": "Roy McFarland",
+    "firstName": "Roy",
+    "lastName": "McFarland",
+    "dateOfBirth": "1948-04-04",
+    "countryCode": "GB-ENG",
+    "countryName": "England"
+  },
+  "mark-mcghee-9c8a": {
+    "pulseId": 911,
+    "optaId": "man173",
+    "displayName": "Mark McGhee",
+    "firstName": "Mark",
+    "lastName": "McGhee",
+    "dateOfBirth": "1957-05-24",
+    "countryCode": "GB-SCT",
+    "countryName": "Scotland"
+  },
+  "gary-megson-7105": {
+    "pulseId": 933,
+    "optaId": "man37459",
+    "displayName": "Gary Megson",
+    "firstName": "Gary",
+    "lastName": "Megson",
+    "dateOfBirth": "1959-05-01",
+    "countryCode": "GB-ENG",
+    "countryName": "England"
+  },
+  "david-merrington-d372": {
+    "pulseId": 1104,
+    "optaId": "man37472",
+    "displayName": "David Merrington",
+    "firstName": "David",
+    "lastName": "Merrington",
+    "dateOfBirth": "1945-01-25",
+    "countryCode": "GB-ENG",
+    "countryName": "England"
+  },
+  "david-moyes-828d": {
+    "pulseId": 2067,
+    "optaId": "man85",
+    "displayName": "David Moyes",
+    "firstName": "David",
+    "lastName": "Moyes",
+    "dateOfBirth": "1963-04-24",
+    "countryCode": "GB-SCT",
+    "countryName": "Scotland"
+  },
+  "phil-neal-8aac": {
+    "pulseId": 683,
+    "optaId": "man37465",
+    "displayName": "Phil Neal",
+    "firstName": "Phil",
+    "lastName": "Neal",
+    "dateOfBirth": "1951-02-20",
+    "countryCode": "GB-ENG",
+    "countryName": "England"
+  },
+  "ron-noades-99ba": {
+    "pulseId": 1386,
+    "optaId": "man37479",
+    "displayName": "Ron Noades",
+    "firstName": "Ron",
+    "lastName": "Noades",
+    "dateOfBirth": "1937-06-21",
+    "countryCode": "GB-ENG",
+    "countryName": "England"
+  },
+  "david-oleary-19f3": {
+    "pulseId": 1568,
+    "optaId": "man123",
+    "displayName": "David O'Leary",
+    "firstName": "David",
+    "lastName": "O'Leary",
+    "dateOfBirth": "1958-05-01",
+    "countryCode": "IE",
+    "countryName": "Ireland"
+  },
+  "martin-oneill-9898": {
+    "pulseId": 1203,
+    "optaId": "man157",
+    "displayName": "Martin O'Neill",
+    "firstName": "Martin",
+    "lastName": "O'Neill",
+    "dateOfBirth": "1952-03-01",
+    "countryCode": "GB-NIR",
+    "countryName": "Northern Ireland"
+  },
+  "egil-roger-olsen-683f": {
+    "pulseId": 1811,
+    "optaId": "man1323",
+    "displayName": "Egil Roger Olsen",
+    "firstName": "Egil Roger",
+    "lastName": "Olsen",
+    "dateOfBirth": "1942-04-21",
+    "countryCode": "NO",
+    "countryName": "Norway"
+  },
+  "tony-parkes-4e08": {
+    "pulseId": 1142,
+    "optaId": "man37366",
+    "displayName": "Tony Parkes",
+    "firstName": "Tony",
+    "lastName": "Parkes",
+    "dateOfBirth": "1949-05-04",
+    "countryCode": "GB-ENG",
+    "countryName": "England"
+  },
+  "stuart-pearce-4b27": {
+    "pulseId": 2735,
+    "optaId": "man267",
+    "displayName": "Stuart Pearce",
+    "firstName": "Stuart",
+    "lastName": "Pearce",
+    "dateOfBirth": "1962-04-23",
+    "countryCode": "GB-ENG",
+    "countryName": "England"
+  },
+  "steve-perryman-a6e5": {
+    "pulseId": 17695,
+    "optaId": "man37384",
+    "displayName": "Steve Perryman",
+    "firstName": "Steve",
+    "lastName": "Perryman",
+    "dateOfBirth": "1951-12-21",
+    "countryCode": "GB-ENG",
+    "countryName": "England"
+  },
+  "david-pleat-a46e": {
+    "pulseId": 1102,
+    "optaId": "man130",
+    "displayName": "David Pleat",
+    "firstName": "David",
+    "lastName": "Pleat",
+    "dateOfBirth": "1945-01-14",
+    "countryCode": "GB-ENG",
+    "countryName": "England"
+  },
+  "ian-porterfield-42a2": {
+    "pulseId": 17688,
+    "optaId": "man37354",
+    "displayName": "Ian Porterfield",
+    "firstName": "Ian",
+    "lastName": "Porterfield",
+    "dateOfBirth": "1946-02-11",
+    "countryCode": "GB-ENG",
+    "countryName": "England"
+  },
+  "claudio-ranieri-b0bb": {
+    "pulseId": 1867,
+    "optaId": "man80",
+    "displayName": "Claudio Ranieri",
+    "firstName": "Claudio",
+    "lastName": "Ranieri",
+    "dateOfBirth": "1951-10-19",
+    "countryCode": "IT",
+    "countryName": "Italy"
+  },
+  "harry-redknapp-0ce2": {
+    "pulseId": 970,
+    "optaId": "man127",
+    "displayName": "Harry Redknapp",
+    "firstName": "Harry",
+    "lastName": "Redknapp",
+    "dateOfBirth": "1947-03-02",
+    "countryCode": "GB-ENG",
+    "countryName": "England"
+  },
+  "peter-reid-42a3": {
+    "pulseId": 306,
+    "optaId": "man86",
+    "displayName": "Peter Reid",
+    "firstName": "Peter",
+    "lastName": "Reid",
+    "dateOfBirth": "1956-06-19",
+    "countryCode": "GB-ENG",
+    "countryName": "England"
+  },
+  "bruce-rioch-de0d": {
+    "pulseId": 992,
+    "optaId": "man37391",
+    "displayName": "Bruce Rioch",
+    "firstName": "Bruce",
+    "lastName": "Rioch",
+    "dateOfBirth": "1947-09-05",
+    "countryCode": "GB-SCT",
+    "countryName": "Scotland"
+  },
+  "bobby-robson-8396": {
+    "pulseId": 1741,
+    "optaId": "man43",
+    "displayName": "Bobby Robson",
+    "firstName": "Bobby",
+    "lastName": "Robson",
+    "dateOfBirth": "1933-02-18",
+    "countryCode": "GB-ENG",
+    "countryName": "England"
+  },
+  "bryan-robson-b314": {
+    "pulseId": 1079,
+    "optaId": "man172",
+    "displayName": "Bryan Robson",
+    "firstName": "Bryan",
+    "lastName": "Robson",
+    "dateOfBirth": "1957-01-11",
+    "countryCode": "GB-ENG",
+    "countryName": "England"
+  },
+  "glenn-roeder-a8aa": {
+    "pulseId": 1985,
+    "optaId": "man65",
+    "displayName": "Glenn Roeder",
+    "firstName": "Glenn",
+    "lastName": "Roeder",
+    "dateOfBirth": "1955-12-13",
+    "countryCode": "GB-ENG",
+    "countryName": "England"
+  },
+  "joe-royle-1eec": {
+    "pulseId": 440,
+    "optaId": "man177",
+    "displayName": "Joe Royle",
+    "firstName": "Joe",
+    "lastName": "Royle",
+    "dateOfBirth": "1949-04-07",
+    "countryCode": "GB-ENG",
+    "countryName": "England"
+  },
+  "peter-shreeves-ec74": {
+    "pulseId": 1746,
+    "optaId": "man37463",
+    "displayName": "Peter Shreeves",
+    "firstName": "Peter",
+    "lastName": "Shreeves",
+    "dateOfBirth": "1940-11-29",
+    "countryCode": "GB-ENG",
+    "countryName": "England"
+  },
+  "alan-smith-cd5a": {
+    "pulseId": 874,
+    "optaId": "man37476",
+    "displayName": "Alan Smith",
+    "firstName": "Alan",
+    "lastName": "Smith",
+    "dateOfBirth": "1946-12-28",
+    "countryCode": "GB-ENG",
+    "countryName": "England"
+  },
+  "jim-smith-4d43": {
+    "pulseId": 1183,
+    "optaId": "man37483",
+    "displayName": "Jim Smith",
+    "firstName": "Jim",
+    "lastName": "Smith",
+    "dateOfBirth": "1940-10-16",
+    "countryCode": "GB-ENG",
+    "countryName": "England"
+  },
+  "walter-smith-7296": {
+    "pulseId": 1563,
+    "optaId": "man37356",
+    "displayName": "Walter Smith",
+    "firstName": "Walter",
+    "lastName": "Smith",
+    "dateOfBirth": "1948-02-24",
+    "countryCode": "GB-SCT",
+    "countryName": "Scotland"
+  },
+  "graeme-souness-9cf3": {
+    "pulseId": 278,
+    "optaId": "man82",
+    "displayName": "Graeme Souness",
+    "firstName": "Graeme",
+    "lastName": "Souness",
+    "dateOfBirth": "1953-05-05",
+    "countryCode": "GB-SCT",
+    "countryName": "Scotland"
+  },
+  "gordon-strachan-6f11": {
+    "pulseId": 1160,
+    "optaId": "man129",
+    "displayName": "Gordon Strachan",
+    "firstName": "Gordon",
+    "lastName": "Strachan",
+    "dateOfBirth": "1957-02-09",
+    "countryCode": "GB-SCT",
+    "countryName": "Scotland"
+  },
+  "graham-taylor-53f3": {
+    "pulseId": 1801,
+    "optaId": "man66",
+    "displayName": "Graham Taylor",
+    "firstName": "Graham",
+    "lastName": "Taylor",
+    "dateOfBirth": "1944-09-14",
+    "countryCode": "GB-ENG",
+    "countryName": "England"
+  },
+  "peter-taylor-1296": {
+    "pulseId": 1918,
+    "optaId": "man212",
+    "displayName": "Peter Taylor",
+    "firstName": "Peter",
+    "lastName": "Taylor",
+    "dateOfBirth": "1953-01-03",
+    "countryCode": "GB-ENG",
+    "countryName": "England"
+  },
+  "jean-tigana-f584": {
+    "pulseId": 2089,
+    "optaId": "man37380",
+    "displayName": "Jean Tigana",
+    "firstName": "Jean",
+    "lastName": "Tigana",
+    "dateOfBirth": "1955-06-22",
+    "countryCode": "FR",
+    "countryName": "France"
+  },
+  "colin-todd-4048": {
+    "pulseId": 1026,
+    "optaId": "man188",
+    "displayName": "Colin Todd",
+    "firstName": "Colin",
+    "lastName": "Todd",
+    "dateOfBirth": "1948-12-12",
+    "countryCode": "GB-ENG",
+    "countryName": "England"
+  },
+  "terry-venables-2dba": {
+    "pulseId": 1953,
+    "optaId": "man37381",
+    "displayName": "Terry Venables",
+    "firstName": "Terry",
+    "lastName": "Venables",
+    "dateOfBirth": "1943-01-05",
+    "countryCode": "GB-ENG",
+    "countryName": "England"
+  },
+  "gianluca-vialli-a27a": {
+    "pulseId": 1357,
+    "optaId": "man37352",
+    "displayName": "Gianluca Vialli",
+    "firstName": "Gianluca",
+    "lastName": "Vialli",
+    "dateOfBirth": "1964-07-08",
+    "countryCode": "IT",
+    "countryName": "Italy"
+  },
+  "mike-walker-557c": {
+    "pulseId": 392,
+    "optaId": "man37361",
+    "displayName": "Mike Walker",
+    "firstName": "Mike",
+    "lastName": "Walker",
+    "dateOfBirth": "1945-11-28",
+    "countryCode": "GB-WLS",
+    "countryName": "Wales"
+  },
+  "dave-watson-36ff": {
+    "pulseId": 1188,
+    "optaId": "man37360",
+    "displayName": "Dave Watson",
+    "firstName": "Dave",
+    "lastName": "Watson",
+    "dateOfBirth": "1961-11-20",
+    "countryCode": "GB-ENG",
+    "countryName": "England"
+  },
+  "david-webb-5815": {
+    "pulseId": 17689,
+    "optaId": "man37355",
+    "displayName": "David Webb",
+    "firstName": "David",
+    "lastName": "Webb",
+    "dateOfBirth": "1946-04-09",
+    "countryCode": "GB-ENG",
+    "countryName": "England"
+  },
+  "arsene-wenger-3c59": {
+    "pulseId": 1137,
+    "optaId": "man51",
+    "displayName": "Arsène Wenger",
+    "firstName": "Arsène",
+    "lastName": "Wenger",
+    "dateOfBirth": "1949-10-21",
+    "countryCode": "FR",
+    "countryName": "France"
+  },
+  "ray-wilkins-08f9": {
+    "pulseId": 952,
+    "optaId": "man37474",
+    "displayName": "Ray Wilkins",
+    "firstName": "Ray",
+    "lastName": "Wilkins",
+    "dateOfBirth": "1956-09-13",
+    "countryCode": "GB-ENG",
+    "countryName": "England"
+  },
+  "howard-wilkinson-d867": {
+    "pulseId": 249,
+    "optaId": "man37470",
+    "displayName": "Howard Wilkinson",
+    "firstName": "Howard",
+    "lastName": "Wilkinson",
+    "dateOfBirth": "1943-11-12",
+    "countryCode": "GB-ENG",
+    "countryName": "England"
+  },
+  "danny-wilson-4c19": {
+    "pulseId": 1327,
+    "optaId": "man37462",
+    "displayName": "Danny Wilson",
+    "firstName": "Danny",
+    "lastName": "Wilson",
+    "dateOfBirth": "1960-01-01",
+    "countryCode": "GB-NIR",
+    "countryName": "Northern Ireland"
+  }
+}
