@@ -263,4 +263,14 @@ describe('App', () => {
       await validateRoute('/managers?name=@', schemas.managersSchema, 400)
     })
   })
+
+  describe('/managers/:managerId', () => {
+    test('OK', async () => {
+      await validateRoute('/managers/terry-venables-2dba', schemas.managerSchema, 200)
+    })
+
+    test('Not Found', async () => {
+      await validateRoute('/managers/joe-bloggs-1234', schemas.managerSchema, 404)
+    })
+  })
 })

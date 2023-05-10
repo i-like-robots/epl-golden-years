@@ -1,5 +1,6 @@
 module.exports = {
   managersRoute: require('./managersRoute'),
+  managerRoute: require('./managerRoute'),
   playersRoute: require('./playersRoute'),
   playerRoute: require('./playerRoute'),
   playerAlbumRoute: require('./playerAlbumRoute'),

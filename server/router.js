@@ -17,6 +17,7 @@ const {
   rootRoute,
   seasonTopCleanSheetsRoute,
   managersRoute,
+  managerRoute,
 } = require('./routes')
 const {
   playerAlbumSchema,
@@ -37,6 +38,7 @@ const {
   rootSchema,
   seasonTopCleanSheetsSchema,
   managersSchema,
+  managerSchema,
 } = require('./schemas')
 
 module.exports = function router(app) {
@@ -87,6 +89,8 @@ module.exports = function router(app) {
   )
 
   app.get('/managers', { schema: managersSchema }, managersRoute)
+  
+  app.get('/managers/:managerId', { schema: managerSchema }, managerRoute)
 
   return app
 }

@@ -1,6 +1,7 @@
 module.exports = {
   errorSchema: require('./errorSchema'),
   managersSchema: require('./managersSchema'),
+  managerSchema: require('./managerSchema'),
   metaSchema: require('./metaSchema'),
   playerAlbumSchema: require('./playerAlbumSchema'),
   playerSchema: require('./playerSchema'),

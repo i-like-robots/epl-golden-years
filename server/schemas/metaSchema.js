@@ -11,6 +11,7 @@ module.exports = {
     { name: 'player', description: 'Everything about players' },
     { name: 'season', description: 'Everything about seasons' },
     { name: 'team', description: 'Everything about teams' },
+    { name: 'manager', description: 'Everything about managers' },
   ],
   schemes: ['http'],
   produces: ['application/json'],
