@@ -7,7 +7,17 @@
     "lastName": "Adams",
     "dateOfBirth": "1961-11-08",
     "countryCode": "GB-ENG",
-    "countryName": "England"
+    "countryName": "England",
+    "history": [
+      {
+        "seasonId": "1998-1999",
+        "teamId": "nfo"
+      },
+      {
+        "seasonId": "2001-2002",
+        "teamId": "lei"
+      }
+    ]
   },
   "sam-allardyce-8957": {
     "pulseId": 2049,
@@ -17,7 +27,13 @@
     "lastName": "Allardyce",
     "dateOfBirth": "1954-10-19",
     "countryCode": "GB-ENG",
-    "countryName": "England"
+    "countryName": "England",
+    "history": [
+      {
+        "seasonId": "2001-2002",
+        "teamId": "bol"
+      }
+    ]
   },
   "osvaldo-ardiles-4542": {
     "pulseId": 781,
@@ -27,7 +43,17 @@
     "lastName": "Ardiles",
     "dateOfBirth": "1952-08-02",
     "countryCode": "AR",
-    "countryName": "Argentina"
+    "countryName": "Argentina",
+    "history": [
+      {
+        "seasonId": "1993-1994",
+        "teamId": "tot"
+      },
+      {
+        "seasonId": "1994-1995",
+        "teamId": "tot"
+      }
+    ]
   },
   "ron-atkinson-1877": {
     "pulseId": 63,
@@ -37,7 +63,37 @@
     "lastName": "Atkinson",
     "dateOfBirth": "1939-03-18",
     "countryCode": "GB-ENG",
-    "countryName": "England"
+    "countryName": "England",
+    "history": [
+      {
+        "seasonId": "1992-1993",
+        "teamId": "avl"
+      },
+      {
+        "seasonId": "1993-1994",
+        "teamId": "avl"
+      },
+      {
+        "seasonId": "1994-1995",
+        "teamId": "cov"
+      },
+      {
+        "seasonId": "1995-1996",
+        "teamId": "cov"
+      },
+      {
+        "seasonId": "1996-1997",
+        "teamId": "cov"
+      },
+      {
+        "seasonId": "1997-1998",
+        "teamId": "shw"
+      },
+      {
+        "seasonId": "1998-1999",
+        "teamId": "nfo"
+      }
+    ]
   },
   "alan-ball-c0dc": {
     "pulseId": 761,
@@ -47,7 +103,21 @@
     "lastName": "Ball",
     "dateOfBirth": "1945-05-11",
     "countryCode": "GB-ENG",
-    "countryName": "England"
+    "countryName": "England",
+    "history": [
+      {
+        "seasonId": "1993-1994",
+        "teamId": "sou"
+      },
+      {
+        "seasonId": "1994-1995",
+        "teamId": "sou"
+      },
+      {
+        "seasonId": "1995-1996",
+        "teamId": "mci"
+      }
+    ]
   },
   "jim-barron-3b0f": {
     "pulseId": 17692,
@@ -57,7 +127,13 @@
     "lastName": "Barron",
     "dateOfBirth": "1943-10-18",
     "countryCode": "GB-ENG",
-    "countryName": "England"
+    "countryName": "England",
+    "history": [
+      {
+        "seasonId": "1994-1995",
+        "teamId": "avl"
+      }
+    ]
   },
   "dave-bassett-3f79": {
     "pulseId": 492,
@@ -67,7 +143,29 @@
     "lastName": "Bassett",
     "dateOfBirth": "1944-09-03",
     "countryCode": "GB-ENG",
-    "countryName": "England"
+    "countryName": "England",
+    "history": [
+      {
+        "seasonId": "1992-1993",
+        "teamId": "shu"
+      },
+      {
+        "seasonId": "1993-1994",
+        "teamId": "shu"
+      },
+      {
+        "seasonId": "1996-1997",
+        "teamId": "nfo"
+      },
+      {
+        "seasonId": "1998-1999",
+        "teamId": "nfo"
+      },
+      {
+        "seasonId": "2001-2002",
+        "teamId": "lei"
+      }
+    ]
   },
   "billy-bonds-57b9": {
     "pulseId": 806,
@@ -77,7 +175,13 @@
     "lastName": "Bonds",
     "dateOfBirth": "1946-09-16",
     "countryCode": "GB-ENG",
-    "countryName": "England"
+    "countryName": "England",
+    "history": [
+      {
+        "seasonId": "1993-1994",
+        "teamId": "whu"
+      }
+    ]
   },
   "tony-book-1bd5": {
     "pulseId": 17691,
@@ -87,7 +191,13 @@
     "lastName": "Book",
     "dateOfBirth": "1934-09-03",
     "countryCode": "GB-ENG",
-    "countryName": "England"
+    "countryName": "England",
+    "history": [
+      {
+        "seasonId": "1993-1994",
+        "teamId": "mci"
+      }
+    ]
   },
   "ian-branfoot-84b7": {
     "pulseId": 543,
@@ -97,7 +207,17 @@
     "lastName": "Branfoot",
     "dateOfBirth": "1947-01-26",
     "countryCode": "GB-ENG",
-    "countryName": "England"
+    "countryName": "England",
+    "history": [
+      {
+        "seasonId": "1992-1993",
+        "teamId": "sou"
+      },
+      {
+        "seasonId": "1993-1994",
+        "teamId": "sou"
+      }
+    ]
   },
   "george-burley-6ba0": {
     "pulseId": 885,
@@ -107,7 +227,21 @@
     "lastName": "Burley",
     "dateOfBirth": "1956-06-02",
     "countryCode": "GB-SCT",
-    "countryName": "Scotland"
+    "countryName": "Scotland",
+    "history": [
+      {
+        "seasonId": "1994-1995",
+        "teamId": "ips"
+      },
+      {
+        "seasonId": "2000-2001",
+        "teamId": "ips"
+      },
+      {
+        "seasonId": "2001-2002",
+        "teamId": "ips"
+      }
+    ]
   },
   "frank-clark-5c02": {
     "pulseId": 947,
@@ -117,7 +251,21 @@
     "lastName": "Clark",
     "dateOfBirth": "1942-09-08",
     "countryCode": "GB-ENG",
-    "countryName": "England"
+    "countryName": "England",
+    "history": [
+      {
+        "seasonId": "1994-1995",
+        "teamId": "nfo"
+      },
+      {
+        "seasonId": "1995-1996",
+        "teamId": "nfo"
+      },
+      {
+        "seasonId": "1996-1997",
+        "teamId": "nfo"
+      }
+    ]
   },
   "steve-clarke-e72b": {
     "pulseId": 4677,
@@ -127,7 +275,13 @@
     "lastName": "Clarke",
     "dateOfBirth": "1963-08-28",
     "countryCode": "GB-SCT",
-    "countryName": "Scotland"
+    "countryName": "Scotland",
+    "history": [
+      {
+        "seasonId": "1999-2000",
+        "teamId": "new"
+      }
+    ]
   },
   "brian-clough-c2f6": {
     "pulseId": 414,
@@ -137,7 +291,13 @@
     "lastName": "Clough",
     "dateOfBirth": "1935-03-21",
     "countryCode": "GB-ENG",
-    "countryName": "England"
+    "countryName": "England",
+    "history": [
+      {
+        "seasonId": "1992-1993",
+        "teamId": "nfo"
+      }
+    ]
   },
   "steve-coppell-1053": {
     "pulseId": 170,
@@ -147,7 +307,17 @@
     "lastName": "Coppell",
     "dateOfBirth": "1955-07-08",
     "countryCode": "GB-ENG",
-    "countryName": "England"
+    "countryName": "England",
+    "history": [
+      {
+        "seasonId": "1992-1993",
+        "teamId": "cry"
+      },
+      {
+        "seasonId": "1997-1998",
+        "teamId": "cry"
+      }
+    ]
   },
   "alan-curbishley-95ec": {
     "pulseId": 1530,
@@ -157,7 +327,21 @@
     "lastName": "Curbishley",
     "dateOfBirth": "1957-11-08",
     "countryCode": "GB-ENG",
-    "countryName": "England"
+    "countryName": "England",
+    "history": [
+      {
+        "seasonId": "1998-1999",
+        "teamId": "cha"
+      },
+      {
+        "seasonId": "2000-2001",
+        "teamId": "cha"
+      },
+      {
+        "seasonId": "2001-2002",
+        "teamId": "cha"
+      }
+    ]
   },
   "kenny-dalglish-b9f2": {
     "pulseId": 90,
@@ -167,7 +351,33 @@
     "lastName": "Dalglish",
     "dateOfBirth": "1951-03-04",
     "countryCode": "GB-SCT",
-    "countryName": "Scotland"
+    "countryName": "Scotland",
+    "history": [
+      {
+        "seasonId": "1992-1993",
+        "teamId": "blb"
+      },
+      {
+        "seasonId": "1993-1994",
+        "teamId": "blb"
+      },
+      {
+        "seasonId": "1994-1995",
+        "teamId": "blb"
+      },
+      {
+        "seasonId": "1996-1997",
+        "teamId": "new"
+      },
+      {
+        "seasonId": "1997-1998",
+        "teamId": "new"
+      },
+      {
+        "seasonId": "1998-1999",
+        "teamId": "new"
+      }
+    ]
   },
   "john-deehan-dfd7": {
     "pulseId": 735,
@@ -177,7 +387,17 @@
     "lastName": "Deehan",
     "dateOfBirth": "1957-08-05",
     "countryCode": "GB-ENG",
-    "countryName": "England"
+    "countryName": "England",
+    "history": [
+      {
+        "seasonId": "1993-1994",
+        "teamId": "nor"
+      },
+      {
+        "seasonId": "1994-1995",
+        "teamId": "nor"
+      }
+    ]
   },
   "roy-evans-3468": {
     "pulseId": 697,
@@ -187,7 +407,33 @@
     "lastName": "Evans",
     "dateOfBirth": "1948-10-03",
     "countryCode": "GB-ENG",
-    "countryName": "England"
+    "countryName": "England",
+    "history": [
+      {
+        "seasonId": "1993-1994",
+        "teamId": "liv"
+      },
+      {
+        "seasonId": "1994-1995",
+        "teamId": "liv"
+      },
+      {
+        "seasonId": "1995-1996",
+        "teamId": "liv"
+      },
+      {
+        "seasonId": "1996-1997",
+        "teamId": "liv"
+      },
+      {
+        "seasonId": "1997-1998",
+        "teamId": "liv"
+      },
+      {
+        "seasonId": "1998-1999",
+        "teamId": "liv"
+      }
+    ]
   },
   "alex-ferguson-0a5a": {
     "pulseId": 344,
@@ -197,7 +443,49 @@
     "lastName": "Ferguson",
     "dateOfBirth": "1941-12-30",
     "countryCode": "GB-SCT",
-    "countryName": "Scotland"
+    "countryName": "Scotland",
+    "history": [
+      {
+        "seasonId": "1992-1993",
+        "teamId": "mun"
+      },
+      {
+        "seasonId": "1993-1994",
+        "teamId": "mun"
+      },
+      {
+        "seasonId": "1994-1995",
+        "teamId": "mun"
+      },
+      {
+        "seasonId": "1995-1996",
+        "teamId": "mun"
+      },
+      {
+        "seasonId": "1996-1997",
+        "teamId": "mun"
+      },
+      {
+        "seasonId": "1997-1998",
+        "teamId": "mun"
+      },
+      {
+        "seasonId": "1998-1999",
+        "teamId": "mun"
+      },
+      {
+        "seasonId": "1999-2000",
+        "teamId": "mun"
+      },
+      {
+        "seasonId": "2000-2001",
+        "teamId": "mun"
+      },
+      {
+        "seasonId": "2001-2002",
+        "teamId": "mun"
+      }
+    ]
   },
   "gerry-francis-3dbb": {
     "pulseId": 467,
@@ -207,7 +495,33 @@
     "lastName": "Francis",
     "dateOfBirth": "1951-12-06",
     "countryCode": "GB-ENG",
-    "countryName": "England"
+    "countryName": "England",
+    "history": [
+      {
+        "seasonId": "1992-1993",
+        "teamId": "qpr"
+      },
+      {
+        "seasonId": "1993-1994",
+        "teamId": "qpr"
+      },
+      {
+        "seasonId": "1994-1995",
+        "teamId": "tot"
+      },
+      {
+        "seasonId": "1995-1996",
+        "teamId": "tot"
+      },
+      {
+        "seasonId": "1996-1997",
+        "teamId": "tot"
+      },
+      {
+        "seasonId": "1997-1998",
+        "teamId": "tot"
+      }
+    ]
   },
   "trevor-francis-b625": {
     "pulseId": 517,
@@ -217,7 +531,21 @@
     "lastName": "Francis",
     "dateOfBirth": "1954-04-18",
     "countryCode": "GB-ENG",
-    "countryName": "England"
+    "countryName": "England",
+    "history": [
+      {
+        "seasonId": "1992-1993",
+        "teamId": "shw"
+      },
+      {
+        "seasonId": "1993-1994",
+        "teamId": "shw"
+      },
+      {
+        "seasonId": "1994-1995",
+        "teamId": "shw"
+      }
+    ]
   },
   "jimmy-gabriel-1dee": {
     "pulseId": 17690,
@@ -227,7 +555,13 @@
     "lastName": "Gabriel",
     "dateOfBirth": "1940-10-15",
     "countryCode": "GB-ENG",
-    "countryName": "England"
+    "countryName": "England",
+    "history": [
+      {
+        "seasonId": "1993-1994",
+        "teamId": "eve"
+      }
+    ]
   },
   "paul-goddard-4db8": {
     "pulseId": 17693,
@@ -237,7 +571,13 @@
     "lastName": "Goddard",
     "dateOfBirth": "1959-10-12",
     "countryCode": "GB-ENG",
-    "countryName": "England"
+    "countryName": "England",
+    "history": [
+      {
+        "seasonId": "1994-1995",
+        "teamId": "ips"
+      }
+    ]
   },
   "john-gorman-7d0d": {
     "pulseId": 774,
@@ -247,7 +587,13 @@
     "lastName": "Gorman",
     "dateOfBirth": "1949-08-15",
     "countryCode": "GB-SCT",
-    "countryName": "Scotland"
+    "countryName": "Scotland",
+    "history": [
+      {
+        "seasonId": "1993-1994",
+        "teamId": "swi"
+      }
+    ]
   },
   "bobby-gould-0085": {
     "pulseId": 144,
@@ -257,7 +603,17 @@
     "lastName": "Gould",
     "dateOfBirth": "1946-01-12",
     "countryCode": "GB-WLS",
-    "countryName": "Wales"
+    "countryName": "Wales",
+    "history": [
+      {
+        "seasonId": "1992-1993",
+        "teamId": "cov"
+      },
+      {
+        "seasonId": "1993-1994",
+        "teamId": "cov"
+      }
+    ]
   },
   "george-graham-0279": {
     "pulseId": 30,
@@ -267,7 +623,41 @@
     "lastName": "Graham",
     "dateOfBirth": "1944-11-29",
     "countryCode": "GB-SCT",
-    "countryName": "Scotland"
+    "countryName": "Scotland",
+    "history": [
+      {
+        "seasonId": "1992-1993",
+        "teamId": "ars"
+      },
+      {
+        "seasonId": "1993-1994",
+        "teamId": "ars"
+      },
+      {
+        "seasonId": "1994-1995",
+        "teamId": "ars"
+      },
+      {
+        "seasonId": "1996-1997",
+        "teamId": "lee"
+      },
+      {
+        "seasonId": "1997-1998",
+        "teamId": "lee"
+      },
+      {
+        "seasonId": "1998-1999",
+        "teamId": "tot"
+      },
+      {
+        "seasonId": "1999-2000",
+        "teamId": "tot"
+      },
+      {
+        "seasonId": "2000-2001",
+        "teamId": "tot"
+      }
+    ]
   },
   "stuart-gray-0c53": {
     "pulseId": 1965,
@@ -277,7 +667,17 @@
     "lastName": "Gray",
     "dateOfBirth": "1960-04-18",
     "countryCode": "GB-ENG",
-    "countryName": "England"
+    "countryName": "England",
+    "history": [
+      {
+        "seasonId": "2000-2001",
+        "teamId": "sou"
+      },
+      {
+        "seasonId": "2001-2002",
+        "teamId": "avl"
+      }
+    ]
   },
   "john-gregory-5737": {
     "pulseId": 1310,
@@ -287,7 +687,29 @@
     "lastName": "Gregory",
     "dateOfBirth": "1954-05-10",
     "countryCode": "GB-ENG",
-    "countryName": "England"
+    "countryName": "England",
+    "history": [
+      {
+        "seasonId": "1997-1998",
+        "teamId": "avl"
+      },
+      {
+        "seasonId": "1998-1999",
+        "teamId": "avl"
+      },
+      {
+        "seasonId": "1999-2000",
+        "teamId": "avl"
+      },
+      {
+        "seasonId": "2000-2001",
+        "teamId": "avl"
+      },
+      {
+        "seasonId": "2001-2002",
+        "teamId": "der"
+      }
+    ]
   },
   "christian-gross-c1cc": {
     "pulseId": 1469,
@@ -297,7 +719,17 @@
     "lastName": "Gross",
     "dateOfBirth": "1954-08-13",
     "countryCode": "CH",
-    "countryName": "Switzerland"
+    "countryName": "Switzerland",
+    "history": [
+      {
+        "seasonId": "1997-1998",
+        "teamId": "tot"
+      },
+      {
+        "seasonId": "1998-1999",
+        "teamId": "tot"
+      }
+    ]
   },
   "ruud-gullit-a125": {
     "pulseId": 1153,
@@ -307,7 +739,25 @@
     "lastName": "Gullit",
     "dateOfBirth": "1962-08-31",
     "countryCode": "NL",
-    "countryName": "Netherlands"
+    "countryName": "Netherlands",
+    "history": [
+      {
+        "seasonId": "1996-1997",
+        "teamId": "che"
+      },
+      {
+        "seasonId": "1997-1998",
+        "teamId": "che"
+      },
+      {
+        "seasonId": "1998-1999",
+        "teamId": "new"
+      },
+      {
+        "seasonId": "1999-2000",
+        "teamId": "new"
+      }
+    ]
   },
   "ray-harford-469c": {
     "pulseId": 1007,
@@ -317,7 +767,17 @@
     "lastName": "Harford",
     "dateOfBirth": "1945-05-31",
     "countryCode": "GB-ENG",
-    "countryName": "England"
+    "countryName": "England",
+    "history": [
+      {
+        "seasonId": "1995-1996",
+        "teamId": "blb"
+      },
+      {
+        "seasonId": "1996-1997",
+        "teamId": "blb"
+      }
+    ]
   },
   "glenn-hoddle-b084": {
     "pulseId": 676,
@@ -327,7 +787,33 @@
     "lastName": "Hoddle",
     "dateOfBirth": "1957-10-27",
     "countryCode": "GB-ENG",
-    "countryName": "England"
+    "countryName": "England",
+    "history": [
+      {
+        "seasonId": "1993-1994",
+        "teamId": "che"
+      },
+      {
+        "seasonId": "1994-1995",
+        "teamId": "che"
+      },
+      {
+        "seasonId": "1995-1996",
+        "teamId": "che"
+      },
+      {
+        "seasonId": "1999-2000",
+        "teamId": "sou"
+      },
+      {
+        "seasonId": "2000-2001",
+        "teamId": "tot"
+      },
+      {
+        "seasonId": "2001-2002",
+        "teamId": "tot"
+      }
+    ]
   },
   "roy-hodgson-7514": {
     "pulseId": 1341,
@@ -337,7 +823,17 @@
     "lastName": "Hodgson",
     "dateOfBirth": "1947-08-08",
     "countryCode": "GB-ENG",
-    "countryName": "England"
+    "countryName": "England",
+    "history": [
+      {
+        "seasonId": "1997-1998",
+        "teamId": "blb"
+      },
+      {
+        "seasonId": "1998-1999",
+        "teamId": "blb"
+      }
+    ]
   },
   "brian-horton-f609": {
     "pulseId": 705,
@@ -347,7 +843,17 @@
     "lastName": "Horton",
     "dateOfBirth": "1949-02-04",
     "countryCode": "GB-ENG",
-    "countryName": "England"
+    "countryName": "England",
+    "history": [
+      {
+        "seasonId": "1993-1994",
+        "teamId": "mci"
+      },
+      {
+        "seasonId": "1994-1995",
+        "teamId": "mci"
+      }
+    ]
   },
   "gerard-houllier-0100": {
     "pulseId": 1578,
@@ -357,7 +863,25 @@
     "lastName": "Houllier",
     "dateOfBirth": "1947-09-02",
     "countryCode": "FR",
-    "countryName": "France"
+    "countryName": "France",
+    "history": [
+      {
+        "seasonId": "1998-1999",
+        "teamId": "liv"
+      },
+      {
+        "seasonId": "1999-2000",
+        "teamId": "liv"
+      },
+      {
+        "seasonId": "2000-2001",
+        "teamId": "liv"
+      },
+      {
+        "seasonId": "2001-2002",
+        "teamId": "liv"
+      }
+    ]
   },
   "stewart-houston-7819": {
     "pulseId": 845,
@@ -367,7 +891,17 @@
     "lastName": "Houston",
     "dateOfBirth": "1949-08-19",
     "countryCode": "GB-SCT",
-    "countryName": "Scotland"
+    "countryName": "Scotland",
+    "history": [
+      {
+        "seasonId": "1994-1995",
+        "teamId": "ars"
+      },
+      {
+        "seasonId": "1996-1997",
+        "teamId": "ars"
+      }
+    ]
   },
   "chris-hughton-a014": {
     "pulseId": 4564,
@@ -377,7 +911,13 @@
     "lastName": "Hughton",
     "dateOfBirth": "1958-12-11",
     "countryCode": "IE",
-    "countryName": "Ireland"
+    "countryName": "Ireland",
+    "history": [
+      {
+        "seasonId": "1997-1998",
+        "teamId": "tot"
+      }
+    ]
   },
   "chris-hutchings-ef76": {
     "pulseId": 17699,
@@ -387,7 +927,13 @@
     "lastName": "Hutchings",
     "dateOfBirth": "1957-07-04",
     "countryCode": "GB-ENG",
-    "countryName": "England"
+    "countryName": "England",
+    "history": [
+      {
+        "seasonId": "2000-2001",
+        "teamId": "bra"
+      }
+    ]
   },
   "jim-jefferies-bee8": {
     "pulseId": 1846,
@@ -397,7 +943,13 @@
     "lastName": "Jefferies",
     "dateOfBirth": "1950-11-22",
     "countryCode": "GB-SCT",
-    "countryName": "Scotland"
+    "countryName": "Scotland",
+    "history": [
+      {
+        "seasonId": "2000-2001",
+        "teamId": "bra"
+      }
+    ]
   },
   "paul-jewell-34fc": {
     "pulseId": 1675,
@@ -407,7 +959,13 @@
     "lastName": "Jewell",
     "dateOfBirth": "1964-09-27",
     "countryCode": "GB-ENG",
-    "countryName": "England"
+    "countryName": "England",
+    "history": [
+      {
+        "seasonId": "1999-2000",
+        "teamId": "bra"
+      }
+    ]
   },
   "dave-jones-3a42": {
     "pulseId": 1463,
@@ -417,7 +975,21 @@
     "lastName": "Jones",
     "dateOfBirth": "1956-04-17",
     "countryCode": "GB-ENG",
-    "countryName": "England"
+    "countryName": "England",
+    "history": [
+      {
+        "seasonId": "1997-1998",
+        "teamId": "sou"
+      },
+      {
+        "seasonId": "1998-1999",
+        "teamId": "sou"
+      },
+      {
+        "seasonId": "1999-2000",
+        "teamId": "sou"
+      }
+    ]
   },
   "kevin-keegan-6137": {
     "pulseId": 729,
@@ -427,7 +999,25 @@
     "lastName": "Keegan",
     "dateOfBirth": "1951-02-14",
     "countryCode": "GB-ENG",
-    "countryName": "England"
+    "countryName": "England",
+    "history": [
+      {
+        "seasonId": "1993-1994",
+        "teamId": "new"
+      },
+      {
+        "seasonId": "1994-1995",
+        "teamId": "new"
+      },
+      {
+        "seasonId": "1995-1996",
+        "teamId": "new"
+      },
+      {
+        "seasonId": "1996-1997",
+        "teamId": "new"
+      }
+    ]
   },
   "howard-kendall-5efa": {
     "pulseId": 198,
@@ -437,7 +1027,21 @@
     "lastName": "Kendall",
     "dateOfBirth": "1946-05-21",
     "countryCode": "GB-ENG",
-    "countryName": "England"
+    "countryName": "England",
+    "history": [
+      {
+        "seasonId": "1992-1993",
+        "teamId": "eve"
+      },
+      {
+        "seasonId": "1993-1994",
+        "teamId": "eve"
+      },
+      {
+        "seasonId": "1997-1998",
+        "teamId": "eve"
+      }
+    ]
   },
   "brian-kidd-e831": {
     "pulseId": 1512,
@@ -447,7 +1051,13 @@
     "lastName": "Kidd",
     "dateOfBirth": "1949-05-28",
     "countryCode": "GB-ENG",
-    "countryName": "England"
+    "countryName": "England",
+    "history": [
+      {
+        "seasonId": "1998-1999",
+        "teamId": "blb"
+      }
+    ]
   },
   "joe-kinnear-c246": {
     "pulseId": 609,
@@ -457,7 +1067,37 @@
     "lastName": "Kinnear",
     "dateOfBirth": "1946-12-27",
     "countryCode": "IE",
-    "countryName": "Ireland"
+    "countryName": "Ireland",
+    "history": [
+      {
+        "seasonId": "1992-1993",
+        "teamId": "wim"
+      },
+      {
+        "seasonId": "1993-1994",
+        "teamId": "wim"
+      },
+      {
+        "seasonId": "1994-1995",
+        "teamId": "wim"
+      },
+      {
+        "seasonId": "1995-1996",
+        "teamId": "wim"
+      },
+      {
+        "seasonId": "1996-1997",
+        "teamId": "wim"
+      },
+      {
+        "seasonId": "1997-1998",
+        "teamId": "wim"
+      },
+      {
+        "seasonId": "1998-1999",
+        "teamId": "wim"
+      }
+    ]
   },
   "lennie-lawrence-45b8": {
     "pulseId": 370,
@@ -467,7 +1107,13 @@
     "lastName": "Lawrence",
     "dateOfBirth": "1947-12-12",
     "countryCode": "GB-ENG",
-    "countryName": "England"
+    "countryName": "England",
+    "history": [
+      {
+        "seasonId": "1992-1993",
+        "teamId": "mid"
+      }
+    ]
   },
   "brian-little-91d3": {
     "pulseId": 850,
@@ -477,7 +1123,25 @@
     "lastName": "Little",
     "dateOfBirth": "1953-11-25",
     "countryCode": "GB-ENG",
-    "countryName": "England"
+    "countryName": "England",
+    "history": [
+      {
+        "seasonId": "1994-1995",
+        "teamId": "avl"
+      },
+      {
+        "seasonId": "1995-1996",
+        "teamId": "avl"
+      },
+      {
+        "seasonId": "1996-1997",
+        "teamId": "avl"
+      },
+      {
+        "seasonId": "1997-1998",
+        "teamId": "avl"
+      }
+    ]
   },
   "doug-livermore-3fc8": {
     "pulseId": 581,
@@ -487,7 +1151,13 @@
     "lastName": "Livermore",
     "dateOfBirth": "1947-12-27",
     "countryCode": "GB-ENG",
-    "countryName": "England"
+    "countryName": "England",
+    "history": [
+      {
+        "seasonId": "1992-1993",
+        "teamId": "tot"
+      }
+    ]
   },
   "attilio-lombardo-35ee": {
     "pulseId": 11197,
@@ -497,7 +1167,13 @@
     "lastName": "Lombardo",
     "dateOfBirth": "1966-01-06",
     "countryCode": "IT",
-    "countryName": "Italy"
+    "countryName": "Italy",
+    "history": [
+      {
+        "seasonId": "1997-1998",
+        "teamId": "cry"
+      }
+    ]
   },
   "john-lyall-b464": {
     "pulseId": 223,
@@ -507,7 +1183,21 @@
     "lastName": "Lyall",
     "dateOfBirth": "1940-02-24",
     "countryCode": "GB-ENG",
-    "countryName": "England"
+    "countryName": "England",
+    "history": [
+      {
+        "seasonId": "1992-1993",
+        "teamId": "ips"
+      },
+      {
+        "seasonId": "1993-1994",
+        "teamId": "ips"
+      },
+      {
+        "seasonId": "1994-1995",
+        "teamId": "ips"
+      }
+    ]
   },
   "kevin-macdonald-0eb1": {
     "pulseId": 10434,
@@ -517,7 +1207,13 @@
     "lastName": "MacDonald",
     "dateOfBirth": "1960-11-22",
     "countryCode": "GB-SCT",
-    "countryName": "Scotland"
+    "countryName": "Scotland",
+    "history": [
+      {
+        "seasonId": "1994-1995",
+        "teamId": "lei"
+      }
+    ]
   },
   "stuart-mccall-45b6": {
     "pulseId": 17700,
@@ -527,7 +1223,13 @@
     "lastName": "McCall",
     "dateOfBirth": "1964-06-09",
     "countryCode": "GB-SCT",
-    "countryName": "Scotland"
+    "countryName": "Scotland",
+    "history": [
+      {
+        "seasonId": "2000-2001",
+        "teamId": "bra"
+      }
+    ]
   },
   "steve-mcclaren-cd20": {
     "pulseId": 2124,
@@ -537,7 +1239,13 @@
     "lastName": "McClaren",
     "dateOfBirth": "1961-05-02",
     "countryCode": "GB-ENG",
-    "countryName": "England"
+    "countryName": "England",
+    "history": [
+      {
+        "seasonId": "2001-2002",
+        "teamId": "mid"
+      }
+    ]
   },
   "terry-mcdermott-8457": {
     "pulseId": 17697,
@@ -547,7 +1255,13 @@
     "lastName": "McDermott",
     "dateOfBirth": "1951-12-08",
     "countryCode": "GB-ENG",
-    "countryName": "England"
+    "countryName": "England",
+    "history": [
+      {
+        "seasonId": "1996-1997",
+        "teamId": "new"
+      }
+    ]
   },
   "billy-mcewan-c3af": {
     "pulseId": 17702,
@@ -557,7 +1271,13 @@
     "lastName": "McEwan",
     "dateOfBirth": "1951-06-19",
     "countryCode": "GB-SCT",
-    "countryName": "Scotland"
+    "countryName": "Scotland",
+    "history": [
+      {
+        "seasonId": "2001-2002",
+        "teamId": "der"
+      }
+    ]
   },
   "roy-mcfarland-80c1": {
     "pulseId": 17696,
@@ -567,7 +1287,13 @@
     "lastName": "McFarland",
     "dateOfBirth": "1948-04-04",
     "countryCode": "GB-ENG",
-    "countryName": "England"
+    "countryName": "England",
+    "history": [
+      {
+        "seasonId": "1995-1996",
+        "teamId": "bol"
+      }
+    ]
   },
   "mark-mcghee-68a7": {
     "pulseId": 911,
@@ -577,7 +1303,13 @@
     "lastName": "McGhee",
     "dateOfBirth": "1957-05-24",
     "countryCode": "GB-SCT",
-    "countryName": "Scotland"
+    "countryName": "Scotland",
+    "history": [
+      {
+        "seasonId": "1994-1995",
+        "teamId": "lei"
+      }
+    ]
   },
   "gary-megson-07a1": {
     "pulseId": 933,
@@ -587,7 +1319,13 @@
     "lastName": "Megson",
     "dateOfBirth": "1959-05-01",
     "countryCode": "GB-ENG",
-    "countryName": "England"
+    "countryName": "England",
+    "history": [
+      {
+        "seasonId": "1994-1995",
+        "teamId": "nor"
+      }
+    ]
   },
   "david-merrington-cf71": {
     "pulseId": 1104,
@@ -597,7 +1335,13 @@
     "lastName": "Merrington",
     "dateOfBirth": "1945-01-25",
     "countryCode": "GB-ENG",
-    "countryName": "England"
+    "countryName": "England",
+    "history": [
+      {
+        "seasonId": "1995-1996",
+        "teamId": "sou"
+      }
+    ]
   },
   "david-moyes-9c47": {
     "pulseId": 2067,
@@ -607,7 +1351,13 @@
     "lastName": "Moyes",
     "dateOfBirth": "1963-04-24",
     "countryCode": "GB-SCT",
-    "countryName": "Scotland"
+    "countryName": "Scotland",
+    "history": [
+      {
+        "seasonId": "2001-2002",
+        "teamId": "eve"
+      }
+    ]
   },
   "phil-neal-c450": {
     "pulseId": 683,
@@ -617,7 +1367,17 @@
     "lastName": "Neal",
     "dateOfBirth": "1951-02-20",
     "countryCode": "GB-ENG",
-    "countryName": "England"
+    "countryName": "England",
+    "history": [
+      {
+        "seasonId": "1993-1994",
+        "teamId": "cov"
+      },
+      {
+        "seasonId": "1994-1995",
+        "teamId": "cov"
+      }
+    ]
   },
   "ron-noades-308b": {
     "pulseId": 1386,
@@ -627,7 +1387,13 @@
     "lastName": "Noades",
     "dateOfBirth": "1937-06-21",
     "countryCode": "GB-ENG",
-    "countryName": "England"
+    "countryName": "England",
+    "history": [
+      {
+        "seasonId": "1997-1998",
+        "teamId": "cry"
+      }
+    ]
   },
   "david-oleary-9e5c": {
     "pulseId": 1568,
@@ -637,7 +1403,25 @@
     "lastName": "O'Leary",
     "dateOfBirth": "1958-05-01",
     "countryCode": "IE",
-    "countryName": "Ireland"
+    "countryName": "Ireland",
+    "history": [
+      {
+        "seasonId": "1998-1999",
+        "teamId": "lee"
+      },
+      {
+        "seasonId": "1999-2000",
+        "teamId": "lee"
+      },
+      {
+        "seasonId": "2000-2001",
+        "teamId": "lee"
+      },
+      {
+        "seasonId": "2001-2002",
+        "teamId": "lee"
+      }
+    ]
   },
   "martin-oneill-83ea": {
     "pulseId": 1203,
@@ -647,7 +1431,25 @@
     "lastName": "O'Neill",
     "dateOfBirth": "1952-03-01",
     "countryCode": "GB-NIR",
-    "countryName": "Northern Ireland"
+    "countryName": "Northern Ireland",
+    "history": [
+      {
+        "seasonId": "1996-1997",
+        "teamId": "lei"
+      },
+      {
+        "seasonId": "1997-1998",
+        "teamId": "lei"
+      },
+      {
+        "seasonId": "1998-1999",
+        "teamId": "lei"
+      },
+      {
+        "seasonId": "1999-2000",
+        "teamId": "lei"
+      }
+    ]
   },
   "egil-roger-olsen-0ad4": {
     "pulseId": 1811,
@@ -657,7 +1459,13 @@
     "lastName": "Olsen",
     "dateOfBirth": "1942-04-21",
     "countryCode": "NO",
-    "countryName": "Norway"
+    "countryName": "Norway",
+    "history": [
+      {
+        "seasonId": "1999-2000",
+        "teamId": "wim"
+      }
+    ]
   },
   "tony-parkes-4061": {
     "pulseId": 1142,
@@ -667,7 +1475,17 @@
     "lastName": "Parkes",
     "dateOfBirth": "1949-05-04",
     "countryCode": "GB-ENG",
-    "countryName": "England"
+    "countryName": "England",
+    "history": [
+      {
+        "seasonId": "1996-1997",
+        "teamId": "blb"
+      },
+      {
+        "seasonId": "1998-1999",
+        "teamId": "blb"
+      }
+    ]
   },
   "stuart-pearce-c740": {
     "pulseId": 2735,
@@ -677,7 +1495,13 @@
     "lastName": "Pearce",
     "dateOfBirth": "1962-04-23",
     "countryCode": "GB-ENG",
-    "countryName": "England"
+    "countryName": "England",
+    "history": [
+      {
+        "seasonId": "1996-1997",
+        "teamId": "nfo"
+      }
+    ]
   },
   "steve-perryman-b9d9": {
     "pulseId": 17695,
@@ -687,7 +1511,13 @@
     "lastName": "Perryman",
     "dateOfBirth": "1951-12-21",
     "countryCode": "GB-ENG",
-    "countryName": "England"
+    "countryName": "England",
+    "history": [
+      {
+        "seasonId": "1994-1995",
+        "teamId": "tot"
+      }
+    ]
   },
   "david-pleat-56f2": {
     "pulseId": 1102,
@@ -697,7 +1527,29 @@
     "lastName": "Pleat",
     "dateOfBirth": "1945-01-14",
     "countryCode": "GB-ENG",
-    "countryName": "England"
+    "countryName": "England",
+    "history": [
+      {
+        "seasonId": "1995-1996",
+        "teamId": "shw"
+      },
+      {
+        "seasonId": "1996-1997",
+        "teamId": "shw"
+      },
+      {
+        "seasonId": "1997-1998",
+        "teamId": "shw"
+      },
+      {
+        "seasonId": "1998-1999",
+        "teamId": "tot"
+      },
+      {
+        "seasonId": "2000-2001",
+        "teamId": "tot"
+      }
+    ]
   },
   "ian-porterfield-2de7": {
     "pulseId": 17688,
@@ -707,7 +1559,13 @@
     "lastName": "Porterfield",
     "dateOfBirth": "1946-02-11",
     "countryCode": "GB-ENG",
-    "countryName": "England"
+    "countryName": "England",
+    "history": [
+      {
+        "seasonId": "1992-1993",
+        "teamId": "che"
+      }
+    ]
   },
   "claudio-ranieri-54a1": {
     "pulseId": 1867,
@@ -717,7 +1575,17 @@
     "lastName": "Ranieri",
     "dateOfBirth": "1951-10-19",
     "countryCode": "IT",
-    "countryName": "Italy"
+    "countryName": "Italy",
+    "history": [
+      {
+        "seasonId": "2000-2001",
+        "teamId": "che"
+      },
+      {
+        "seasonId": "2001-2002",
+        "teamId": "che"
+      }
+    ]
   },
   "harry-redknapp-d089": {
     "pulseId": 970,
@@ -727,7 +1595,37 @@
     "lastName": "Redknapp",
     "dateOfBirth": "1947-03-02",
     "countryCode": "GB-ENG",
-    "countryName": "England"
+    "countryName": "England",
+    "history": [
+      {
+        "seasonId": "1994-1995",
+        "teamId": "whu"
+      },
+      {
+        "seasonId": "1995-1996",
+        "teamId": "whu"
+      },
+      {
+        "seasonId": "1996-1997",
+        "teamId": "whu"
+      },
+      {
+        "seasonId": "1997-1998",
+        "teamId": "whu"
+      },
+      {
+        "seasonId": "1998-1999",
+        "teamId": "whu"
+      },
+      {
+        "seasonId": "1999-2000",
+        "teamId": "whu"
+      },
+      {
+        "seasonId": "2000-2001",
+        "teamId": "whu"
+      }
+    ]
   },
   "peter-reid-1fe9": {
     "pulseId": 306,
@@ -737,7 +1635,33 @@
     "lastName": "Reid",
     "dateOfBirth": "1956-06-19",
     "countryCode": "GB-ENG",
-    "countryName": "England"
+    "countryName": "England",
+    "history": [
+      {
+        "seasonId": "1992-1993",
+        "teamId": "mci"
+      },
+      {
+        "seasonId": "1993-1994",
+        "teamId": "mci"
+      },
+      {
+        "seasonId": "1996-1997",
+        "teamId": "sun"
+      },
+      {
+        "seasonId": "1999-2000",
+        "teamId": "sun"
+      },
+      {
+        "seasonId": "2000-2001",
+        "teamId": "sun"
+      },
+      {
+        "seasonId": "2001-2002",
+        "teamId": "sun"
+      }
+    ]
   },
   "bruce-rioch-4b16": {
     "pulseId": 992,
@@ -747,7 +1671,13 @@
     "lastName": "Rioch",
     "dateOfBirth": "1947-09-05",
     "countryCode": "GB-SCT",
-    "countryName": "Scotland"
+    "countryName": "Scotland",
+    "history": [
+      {
+        "seasonId": "1995-1996",
+        "teamId": "ars"
+      }
+    ]
   },
   "bobby-robson-41d1": {
     "pulseId": 1741,
@@ -757,7 +1687,21 @@
     "lastName": "Robson",
     "dateOfBirth": "1933-02-18",
     "countryCode": "GB-ENG",
-    "countryName": "England"
+    "countryName": "England",
+    "history": [
+      {
+        "seasonId": "1999-2000",
+        "teamId": "new"
+      },
+      {
+        "seasonId": "2000-2001",
+        "teamId": "new"
+      },
+      {
+        "seasonId": "2001-2002",
+        "teamId": "new"
+      }
+    ]
   },
   "bryan-robson-437a": {
     "pulseId": 1079,
@@ -767,7 +1711,29 @@
     "lastName": "Robson",
     "dateOfBirth": "1957-01-11",
     "countryCode": "GB-ENG",
-    "countryName": "England"
+    "countryName": "England",
+    "history": [
+      {
+        "seasonId": "1995-1996",
+        "teamId": "mid"
+      },
+      {
+        "seasonId": "1996-1997",
+        "teamId": "mid"
+      },
+      {
+        "seasonId": "1998-1999",
+        "teamId": "mid"
+      },
+      {
+        "seasonId": "1999-2000",
+        "teamId": "mid"
+      },
+      {
+        "seasonId": "2000-2001",
+        "teamId": "mid"
+      }
+    ]
   },
   "glenn-roeder-7169": {
     "pulseId": 1985,
@@ -777,7 +1743,17 @@
     "lastName": "Roeder",
     "dateOfBirth": "1955-12-13",
     "countryCode": "GB-ENG",
-    "countryName": "England"
+    "countryName": "England",
+    "history": [
+      {
+        "seasonId": "2000-2001",
+        "teamId": "whu"
+      },
+      {
+        "seasonId": "2001-2002",
+        "teamId": "whu"
+      }
+    ]
   },
   "joe-royle-8f95": {
     "pulseId": 440,
@@ -787,7 +1763,33 @@
     "lastName": "Royle",
     "dateOfBirth": "1949-04-07",
     "countryCode": "GB-ENG",
-    "countryName": "England"
+    "countryName": "England",
+    "history": [
+      {
+        "seasonId": "1992-1993",
+        "teamId": "old"
+      },
+      {
+        "seasonId": "1993-1994",
+        "teamId": "old"
+      },
+      {
+        "seasonId": "1994-1995",
+        "teamId": "eve"
+      },
+      {
+        "seasonId": "1995-1996",
+        "teamId": "eve"
+      },
+      {
+        "seasonId": "1996-1997",
+        "teamId": "eve"
+      },
+      {
+        "seasonId": "2000-2001",
+        "teamId": "mci"
+      }
+    ]
   },
   "peter-shreeves-f43c": {
     "pulseId": 1746,
@@ -797,7 +1799,13 @@
     "lastName": "Shreeves",
     "dateOfBirth": "1940-11-29",
     "countryCode": "GB-ENG",
-    "countryName": "England"
+    "countryName": "England",
+    "history": [
+      {
+        "seasonId": "1999-2000",
+        "teamId": "shw"
+      }
+    ]
   },
   "alan-smith-05f6": {
     "pulseId": 874,
@@ -807,7 +1815,13 @@
     "lastName": "Smith",
     "dateOfBirth": "1946-12-28",
     "countryCode": "GB-ENG",
-    "countryName": "England"
+    "countryName": "England",
+    "history": [
+      {
+        "seasonId": "1994-1995",
+        "teamId": "cry"
+      }
+    ]
   },
   "jim-smith-e77a": {
     "pulseId": 1183,
@@ -817,7 +1831,33 @@
     "lastName": "Smith",
     "dateOfBirth": "1940-10-16",
     "countryCode": "GB-ENG",
-    "countryName": "England"
+    "countryName": "England",
+    "history": [
+      {
+        "seasonId": "1996-1997",
+        "teamId": "der"
+      },
+      {
+        "seasonId": "1997-1998",
+        "teamId": "der"
+      },
+      {
+        "seasonId": "1998-1999",
+        "teamId": "der"
+      },
+      {
+        "seasonId": "1999-2000",
+        "teamId": "der"
+      },
+      {
+        "seasonId": "2000-2001",
+        "teamId": "der"
+      },
+      {
+        "seasonId": "2001-2002",
+        "teamId": "der"
+      }
+    ]
   },
   "walter-smith-64b4": {
     "pulseId": 1563,
@@ -827,7 +1867,25 @@
     "lastName": "Smith",
     "dateOfBirth": "1948-02-24",
     "countryCode": "GB-SCT",
-    "countryName": "Scotland"
+    "countryName": "Scotland",
+    "history": [
+      {
+        "seasonId": "1998-1999",
+        "teamId": "eve"
+      },
+      {
+        "seasonId": "1999-2000",
+        "teamId": "eve"
+      },
+      {
+        "seasonId": "2000-2001",
+        "teamId": "eve"
+      },
+      {
+        "seasonId": "2001-2002",
+        "teamId": "eve"
+      }
+    ]
   },
   "graeme-souness-6feb": {
     "pulseId": 278,
@@ -837,7 +1895,25 @@
     "lastName": "Souness",
     "dateOfBirth": "1953-05-05",
     "countryCode": "GB-SCT",
-    "countryName": "Scotland"
+    "countryName": "Scotland",
+    "history": [
+      {
+        "seasonId": "1992-1993",
+        "teamId": "liv"
+      },
+      {
+        "seasonId": "1993-1994",
+        "teamId": "liv"
+      },
+      {
+        "seasonId": "1996-1997",
+        "teamId": "sou"
+      },
+      {
+        "seasonId": "2001-2002",
+        "teamId": "blb"
+      }
+    ]
   },
   "gordon-strachan-638f": {
     "pulseId": 1160,
@@ -847,7 +1923,33 @@
     "lastName": "Strachan",
     "dateOfBirth": "1957-02-09",
     "countryCode": "GB-SCT",
-    "countryName": "Scotland"
+    "countryName": "Scotland",
+    "history": [
+      {
+        "seasonId": "1996-1997",
+        "teamId": "cov"
+      },
+      {
+        "seasonId": "1997-1998",
+        "teamId": "cov"
+      },
+      {
+        "seasonId": "1998-1999",
+        "teamId": "cov"
+      },
+      {
+        "seasonId": "1999-2000",
+        "teamId": "cov"
+      },
+      {
+        "seasonId": "2000-2001",
+        "teamId": "cov"
+      },
+      {
+        "seasonId": "2001-2002",
+        "teamId": "sou"
+      }
+    ]
   },
   "graham-taylor-5e5a": {
     "pulseId": 1801,
@@ -857,7 +1959,17 @@
     "lastName": "Taylor",
     "dateOfBirth": "1944-09-14",
     "countryCode": "GB-ENG",
-    "countryName": "England"
+    "countryName": "England",
+    "history": [
+      {
+        "seasonId": "1999-2000",
+        "teamId": "wat"
+      },
+      {
+        "seasonId": "2001-2002",
+        "teamId": "avl"
+      }
+    ]
   },
   "peter-taylor-e3c3": {
     "pulseId": 1918,
@@ -867,7 +1979,17 @@
     "lastName": "Taylor",
     "dateOfBirth": "1953-01-03",
     "countryCode": "GB-ENG",
-    "countryName": "England"
+    "countryName": "England",
+    "history": [
+      {
+        "seasonId": "2000-2001",
+        "teamId": "lei"
+      },
+      {
+        "seasonId": "2001-2002",
+        "teamId": "lei"
+      }
+    ]
   },
   "jean-tigana-1d45": {
     "pulseId": 2089,
@@ -877,7 +1999,13 @@
     "lastName": "Tigana",
     "dateOfBirth": "1955-06-22",
     "countryCode": "FR",
-    "countryName": "France"
+    "countryName": "France",
+    "history": [
+      {
+        "seasonId": "2001-2002",
+        "teamId": "ful"
+      }
+    ]
   },
   "colin-todd-3471": {
     "pulseId": 1026,
@@ -887,7 +2015,21 @@
     "lastName": "Todd",
     "dateOfBirth": "1948-12-12",
     "countryCode": "GB-ENG",
-    "countryName": "England"
+    "countryName": "England",
+    "history": [
+      {
+        "seasonId": "1995-1996",
+        "teamId": "bol"
+      },
+      {
+        "seasonId": "1997-1998",
+        "teamId": "bol"
+      },
+      {
+        "seasonId": "2001-2002",
+        "teamId": "der"
+      }
+    ]
   },
   "terry-venables-6af0": {
     "pulseId": 1953,
@@ -897,7 +2039,13 @@
     "lastName": "Venables",
     "dateOfBirth": "1943-01-05",
     "countryCode": "GB-ENG",
-    "countryName": "England"
+    "countryName": "England",
+    "history": [
+      {
+        "seasonId": "2000-2001",
+        "teamId": "mid"
+      }
+    ]
   },
   "gianluca-vialli-9426": {
     "pulseId": 1357,
@@ -907,7 +2055,25 @@
     "lastName": "Vialli",
     "dateOfBirth": "1964-07-08",
     "countryCode": "IT",
-    "countryName": "Italy"
+    "countryName": "Italy",
+    "history": [
+      {
+        "seasonId": "1997-1998",
+        "teamId": "che"
+      },
+      {
+        "seasonId": "1998-1999",
+        "teamId": "che"
+      },
+      {
+        "seasonId": "1999-2000",
+        "teamId": "che"
+      },
+      {
+        "seasonId": "2000-2001",
+        "teamId": "che"
+      }
+    ]
   },
   "mike-walker-c7f4": {
     "pulseId": 392,
@@ -917,7 +2083,21 @@
     "lastName": "Walker",
     "dateOfBirth": "1945-11-28",
     "countryCode": "GB-WLS",
-    "countryName": "Wales"
+    "countryName": "Wales",
+    "history": [
+      {
+        "seasonId": "1992-1993",
+        "teamId": "nor"
+      },
+      {
+        "seasonId": "1993-1994",
+        "teamId": "eve"
+      },
+      {
+        "seasonId": "1994-1995",
+        "teamId": "eve"
+      }
+    ]
   },
   "dave-watson-7caf": {
     "pulseId": 1188,
@@ -927,7 +2107,13 @@
     "lastName": "Watson",
     "dateOfBirth": "1961-11-20",
     "countryCode": "GB-ENG",
-    "countryName": "England"
+    "countryName": "England",
+    "history": [
+      {
+        "seasonId": "1996-1997",
+        "teamId": "eve"
+      }
+    ]
   },
   "david-webb-8bb9": {
     "pulseId": 17689,
@@ -937,7 +2123,13 @@
     "lastName": "Webb",
     "dateOfBirth": "1946-04-09",
     "countryCode": "GB-ENG",
-    "countryName": "England"
+    "countryName": "England",
+    "history": [
+      {
+        "seasonId": "1992-1993",
+        "teamId": "che"
+      }
+    ]
   },
   "arsene-wenger-742c": {
     "pulseId": 1137,
@@ -947,7 +2139,33 @@
     "lastName": "Wenger",
     "dateOfBirth": "1949-10-21",
     "countryCode": "FR",
-    "countryName": "France"
+    "countryName": "France",
+    "history": [
+      {
+        "seasonId": "1996-1997",
+        "teamId": "ars"
+      },
+      {
+        "seasonId": "1997-1998",
+        "teamId": "ars"
+      },
+      {
+        "seasonId": "1998-1999",
+        "teamId": "ars"
+      },
+      {
+        "seasonId": "1999-2000",
+        "teamId": "ars"
+      },
+      {
+        "seasonId": "2000-2001",
+        "teamId": "ars"
+      },
+      {
+        "seasonId": "2001-2002",
+        "teamId": "ars"
+      }
+    ]
   },
   "ray-wilkins-2653": {
     "pulseId": 952,
@@ -957,7 +2175,21 @@
     "lastName": "Wilkins",
     "dateOfBirth": "1956-09-13",
     "countryCode": "GB-ENG",
-    "countryName": "England"
+    "countryName": "England",
+    "history": [
+      {
+        "seasonId": "1994-1995",
+        "teamId": "qpr"
+      },
+      {
+        "seasonId": "1995-1996",
+        "teamId": "qpr"
+      },
+      {
+        "seasonId": "2000-2001",
+        "teamId": "che"
+      }
+    ]
   },
   "howard-wilkinson-b908": {
     "pulseId": 249,
@@ -967,7 +2199,29 @@
     "lastName": "Wilkinson",
     "dateOfBirth": "1943-11-12",
     "countryCode": "GB-ENG",
-    "countryName": "England"
+    "countryName": "England",
+    "history": [
+      {
+        "seasonId": "1992-1993",
+        "teamId": "lee"
+      },
+      {
+        "seasonId": "1993-1994",
+        "teamId": "lee"
+      },
+      {
+        "seasonId": "1994-1995",
+        "teamId": "lee"
+      },
+      {
+        "seasonId": "1995-1996",
+        "teamId": "lee"
+      },
+      {
+        "seasonId": "1996-1997",
+        "teamId": "lee"
+      }
+    ]
   },
   "danny-wilson-8e27": {
     "pulseId": 1327,
@@ -977,6 +2231,20 @@
     "lastName": "Wilson",
     "dateOfBirth": "1960-01-01",
     "countryCode": "GB-NIR",
-    "countryName": "Northern Ireland"
+    "countryName": "Northern Ireland",
+    "history": [
+      {
+        "seasonId": "1997-1998",
+        "teamId": "bar"
+      },
+      {
+        "seasonId": "1998-1999",
+        "teamId": "shw"
+      },
+      {
+        "seasonId": "1999-2000",
+        "teamId": "shw"
+      }
+    ]
   }
 }

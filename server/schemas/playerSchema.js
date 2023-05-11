@@ -1,5 +1,5 @@
 const { PLAYER_ID, PLAYER_POSITIONS } = require('../lib/constants')
-const { seasonUrl, playerStatsUrl, playerAlbumUrl } = require('../lib/urls')
+const { seasonUrl, playerStatsUrl, playerAlbumUrl, teamUrl } = require('../lib/urls')
 const errorSchema = require('./errorSchema')
 
 module.exports = {
@@ -77,7 +77,7 @@ module.exports = {
               team: {
                 type: 'string',
                 format: 'uri',
-                example: seasonUrl('lee'),
+                example: teamUrl('lee'),
               },
             },
           },

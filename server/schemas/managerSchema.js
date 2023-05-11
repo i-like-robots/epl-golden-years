@@ -1,4 +1,5 @@
 const { PLAYER_ID } = require('../lib/constants')
+const { seasonUrl, teamUrl } = require('../lib/urls')
 const errorSchema = require('./errorSchema')
 
 module.exports = {
@@ -53,24 +54,24 @@ module.exports = {
           type: 'string',
           example: 'England',
         },
-        // history: {
-        //   type: 'array',
-        //   items: {
-        //     type: 'object',
-        //     properties: {
-        //       season: {
-        //         type: 'string',
-        //         format: 'uri',
-        //         example: seasonUrl('1999-2000'),
-        //       },
-        //       team: {
-        //         type: 'string',
-        //         format: 'uri',
-        //         example: seasonUrl('lee'),
-        //       },
-        //     },
-        //   },
-        // },
+        history: {
+          type: 'array',
+          items: {
+            type: 'object',
+            properties: {
+              season: {
+                type: 'string',
+                format: 'uri',
+                example: seasonUrl('1999-2000'),
+              },
+              team: {
+                type: 'string',
+                format: 'uri',
+                example: teamUrl('avl'),
+              },
+            },
+          },
+        },
       },
     },
     ...errorSchema,

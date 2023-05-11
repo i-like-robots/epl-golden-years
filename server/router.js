@@ -89,7 +89,7 @@ module.exports = function router(app) {
   )
 
   app.get('/managers', { schema: managersSchema }, managersRoute)
-  
+
   app.get('/managers/:managerId', { schema: managerSchema }, managerRoute)
 
   return app
