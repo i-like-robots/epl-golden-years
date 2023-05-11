@@ -1,5 +1,5 @@
 const { TEAM_ID, SEASON_ID } = require('../lib/constants')
-const { teamUrl, seasonUrl, playerUrl } = require('../lib/urls')
+const { managerUrl, teamUrl, seasonUrl, playerUrl } = require('../lib/urls')
 const errorSchema = require('./errorSchema')
 
 module.exports = {
@@ -56,6 +56,14 @@ module.exports = {
                 type: 'integer',
               },
             },
+          },
+        },
+        managers: {
+          type: 'array',
+          items: {
+            type: 'string',
+            format: 'uri',
+            example: managerUrl('kenny-dalglish-b9f2'),
           },
         },
       },

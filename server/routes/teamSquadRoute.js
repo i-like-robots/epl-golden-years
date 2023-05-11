@@ -1,5 +1,5 @@
-const { squads } = require('../dataset')
-const { seasonUrl, teamUrl, playerUrl } = require('../lib/urls')
+const { squads, managers } = require('../dataset')
+const { seasonUrl, teamUrl, playerUrl, managerUrl } = require('../lib/urls')
 const pick = require('../lib/object-pick')
 
 module.exports = function teamSquadRoute(request, response) {
@@ -15,10 +15,16 @@ module.exports = function teamSquadRoute(request, response) {
       ...pick(player, 'appearances', 'cleanSheets', 'goals', 'assists'),
     }))
 
+    const managerIds = Object.keys(managers).filter((managerId) => {
+      const manager = managers[managerId]
+      return manager.history.some((h) => h.teamId === teamId && h.seasonId === seasonId)
+    })
+
     response.send({
       season: seasonUrl(squad.seasonId),
       team: teamUrl(squad.teamId),
       players,
+      managers: managerIds.map(managerUrl),
     })
   } else {
     response.code(404)
