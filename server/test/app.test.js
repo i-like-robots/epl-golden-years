@@ -68,7 +68,7 @@ describe('App', () => {
 
   describe('/players/:playerId', () => {
     test('OK', async () => {
-      await validateRoute('/players/kevin-phillips-240a', schemas.playerSchema, 200)
+      await validateRoute('/players/kevin-phillips-b8f6', schemas.playerSchema, 200)
     })
 
     test('Not Found', async () => {
@@ -78,7 +78,7 @@ describe('App', () => {
 
   describe('/players/:playerId/album', () => {
     test('OK', async () => {
-      await validateRoute('/players/kevin-phillips-240a/album', schemas.playerAlbumSchema, 200)
+      await validateRoute('/players/kevin-phillips-b8f6/album', schemas.playerAlbumSchema, 200)
     })
 
     test('Not Found', async () => {
@@ -88,7 +88,7 @@ describe('App', () => {
 
   describe('/players/:playerId/statistics', () => {
     test('OK', async () => {
-      await validateRoute('/players/kevin-phillips-240a/statistics', schemas.playerStatsSchema, 200)
+      await validateRoute('/players/kevin-phillips-b8f6/statistics', schemas.playerStatsSchema, 200)
     })
 
     test('Not Found', async () => {
@@ -266,7 +266,7 @@ describe('App', () => {
 
   describe('/managers/:managerId', () => {
     test('OK', async () => {
-      await validateRoute('/managers/terry-venables-2dba', schemas.managerSchema, 200)
+      await validateRoute('/managers/terry-venables-6af0', schemas.managerSchema, 200)
     })
 
     test('Not Found', async () => {
