@@ -1,6 +1,5 @@
 const { tables, teams } = require('../dataset')
 const { seasonUrl, teamStatsUrl, teamSquadsUrl } = require('../lib/urls')
-const omit = require('../lib/object-omit')
 
 module.exports = function teamRoute(request, response) {
   const { teamId } = request.params
@@ -21,7 +20,7 @@ module.exports = function teamRoute(request, response) {
 
     const squads = teamSquadsUrl(teamId)
 
-    response.send({ ...omit(team, 'teamId'), seasons, squads, statistics })
+    response.send({ ...team, seasons, squads, statistics })
   } else {
     response.code(404)
     response.send({ error: 'Team not found' })

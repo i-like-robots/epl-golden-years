@@ -35,9 +35,12 @@ module.exports = {
           type: 'string',
           example: 'Spurs',
         },
-        ground: {
-          type: 'string',
-          example: 'White Hart Lane',
+        grounds: {
+          type: 'array',
+          items: {
+            type: 'string',
+            example: 'White Hart Lane',
+          },
         },
         city: {
           type: 'string',
