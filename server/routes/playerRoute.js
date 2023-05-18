@@ -1,10 +1,11 @@
 const { players, squads } = require('../dataset')
 const { playerAlbumUrl, playerStatsUrl, seasonUrl, teamUrl } = require('../lib/urls')
 const omit = require('../lib/object-omit')
+const get = require('../lib/object-get')
 
 module.exports = function playerRoute(request, response) {
   const { playerId } = request.params
-  const player = players[playerId]
+  const player = get(players, playerId)
 
   if (player) {
     const history = []
@@ -12,11 +13,12 @@ module.exports = function playerRoute(request, response) {
     squads.forEach((squad) => {
       const playedInSeason = squad.players.some((player) => player.playerId === playerId)
 
-      playedInSeason &&
+      if (playedInSeason) {
         history.push({
           season: seasonUrl(squad.seasonId),
           team: teamUrl(squad.teamId),
         })
+      }
     })
 
     const statistics = playerStatsUrl(playerId)

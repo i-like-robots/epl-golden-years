@@ -1,9 +1,10 @@
 const { tables, teams } = require('../dataset')
 const { seasonUrl, teamStatsUrl, teamSquadsUrl } = require('../lib/urls')
+const get = require('../lib/object-get')
 
 module.exports = function teamRoute(request, response) {
   const { teamId } = request.params
-  const team = teams[teamId]
+  const team = get(teams, teamId)
 
   if (team) {
     const seasons = []

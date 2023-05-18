@@ -1,22 +1,25 @@
-const { players, squads } = require('../dataset')
+const { players, squads, seasons } = require('../dataset')
 const { playerUrl, seasonUrl } = require('../lib/urls')
 const pick = require('../lib/object-pick')
+const get = require('../lib/object-get')
 
 module.exports = function seasonTopCleanSheetsRoute(request, response) {
   const { seasonId } = request.params
-  const data = []
+  const season = get(seasons, seasonId)
 
-  squads.forEach((squad) => {
-    if (squad.seasonId === seasonId) {
-      squad.players.forEach((player) => {
-        if (players[player.playerId].positionCode === 'G' && player.cleanSheets) {
-          data.push(player)
-        }
-      })
-    }
-  })
+  if (season) {
+    const data = []
 
-  if (data.length) {
+    squads.forEach((squad) => {
+      if (squad.seasonId === seasonId) {
+        squad.players.forEach((player) => {
+          if (players[player.playerId].positionCode === 'G' && player.cleanSheets) {
+            data.push(player)
+          }
+        })
+      }
+    })
+
     data.sort((a, b) => {
       if (a.cleanSheets > b.cleanSheets) return -1
       if (a.cleanSheets < b.cleanSheets) return 1

@@ -1,9 +1,10 @@
 const { players, stickers } = require('../dataset')
 const { seasonUrl, teamUrl, playerUrl } = require('../lib/urls')
+const get = require('../lib/object-get')
 
 module.exports = function playerAlbumRoute(request, response) {
   const { playerId } = request.params
-  const player = players[playerId]
+  const player = get(players, playerId)
 
   if (player) {
     const album = stickers[playerId] || []

@@ -7,10 +7,11 @@ const {
   seasonTopCleanSheetsUrl,
   seasonUrl,
 } = require('../lib/urls')
+const get = require('../lib/object-get')
 
 module.exports = function seasonRoute(request, response) {
   const { seasonId } = request.params
-  const season = seasons[seasonId]
+  const season = get(seasons, seasonId)
 
   if (season) {
     const seasonIds = Object.keys(seasons)

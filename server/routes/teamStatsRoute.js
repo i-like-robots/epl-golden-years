@@ -1,10 +1,11 @@
 const { tables, teams } = require('../dataset')
 const { teamUrl, seasonUrl } = require('../lib/urls')
 const pick = require('../lib/object-pick')
+const get = require('../lib/object-get')
 
 module.exports = function teamStatsRoute(request, response) {
   const { teamId } = request.params
-  const team = teams[teamId]
+  const team = get(teams, teamId)
 
   if (team) {
     const seasonIds = Object.keys(tables).filter((seasonId) =>

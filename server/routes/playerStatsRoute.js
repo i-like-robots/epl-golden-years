@@ -1,10 +1,11 @@
 const { players, squads, hatTricks } = require('../dataset')
 const { playerUrl, seasonUrl } = require('../lib/urls')
 const pick = require('../lib/object-pick')
+const get = require('../lib/object-get')
 
 module.exports = function playerStatsRoute(request, response) {
   const { playerId } = request.params
-  const player = players[playerId]
+  const player = get(players, playerId)
 
   if (player) {
     const squadHistory = squads.filter((squad) =>

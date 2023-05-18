@@ -1,22 +1,25 @@
-const { squads } = require('../dataset')
+const { squads, seasons } = require('../dataset')
 const { playerUrl, seasonUrl } = require('../lib/urls')
 const pick = require('../lib/object-pick')
+const get = require('../lib/object-get')
 
 module.exports = function seasonTopScorersRoute(request, response) {
   const { seasonId } = request.params
-  const data = []
+  const season = get(seasons, seasonId)
 
-  squads.forEach((squad) => {
-    if (squad.seasonId === seasonId) {
-      squad.players.forEach((player) => {
-        if (player.goals) {
-          data.push(player)
-        }
-      })
-    }
-  })
+  if (season) {
+    const data = []
 
-  if (data.length) {
+    squads.forEach((squad) => {
+      if (squad.seasonId === seasonId) {
+        squad.players.forEach((player) => {
+          if (player.goals) {
+            data.push(player)
+          }
+        })
+      }
+    })
+
     data.sort((a, b) => {
       if (a.goals > b.goals) return -1
       if (a.goals < b.goals) return 1

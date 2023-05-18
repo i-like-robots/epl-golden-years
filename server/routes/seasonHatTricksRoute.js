@@ -1,9 +1,10 @@
 const { hatTricks, tables } = require('../dataset')
 const { playerUrl, seasonUrl, teamUrl } = require('../lib/urls')
+const get = require('../lib/object-get')
 
 module.exports = function seasonHatTricksRoute(request, response) {
   const { seasonId } = request.params
-  const table = tables[seasonId]
+  const table = get(tables, seasonId)
 
   if (table) {
     const data = []
