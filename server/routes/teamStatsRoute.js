@@ -8,10 +8,6 @@ module.exports = function teamStatsRoute(request, response) {
   const team = get(teams, teamId)
 
   if (team) {
-    const seasonIds = Object.keys(tables).filter((seasonId) =>
-      tables[seasonId].some((t) => t.teamId === teamId)
-    )
-
     const total = {
       played: 0,
       wins: 0,
@@ -23,20 +19,23 @@ module.exports = function teamStatsRoute(request, response) {
 
     const history = []
 
-    seasonIds.forEach((seasonId) => {
-      const result = tables[seasonId].find((t) => t.teamId === teamId)
+    Object.keys(tables).forEach((tableId) => {
+      const table = tables[tableId]
+      const result = table.find((t) => t.teamId === teamId)
 
-      history.push({
-        season: seasonUrl(seasonId),
-        ...pick(result, 'played', 'wins', 'draws', 'losses', 'for', 'against'),
-      })
+      if (result) {
+        history.push({
+          season: seasonUrl(tableId),
+          ...pick(result, 'played', 'wins', 'draws', 'losses', 'for', 'against'),
+        })
 
-      total.played += result.played
-      total.wins += result.wins
-      total.draws += result.draws
-      total.losses += result.losses
-      total.for += result.for
-      total.against += result.against
+        total.played += result.played
+        total.wins += result.wins
+        total.draws += result.draws
+        total.losses += result.losses
+        total.for += result.for
+        total.against += result.against
+      }
     })
 
     response.send({ team: teamUrl(teamId), total, history })
