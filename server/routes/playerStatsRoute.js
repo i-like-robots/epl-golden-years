@@ -8,35 +8,43 @@ module.exports = function playerStatsRoute(request, response) {
   const player = get(players, playerId)
 
   if (player) {
-    const squadHistory = squads.filter((squad) =>
-      squad.players.some((p) => p.playerId === playerId)
-    )
-
-    const hatTrickHistory = hatTricks.filter((h) => h.playerId === playerId)
-
     const total = {
       appearances: 0,
       goals: 0,
       assists: 0,
       cleanSheets: 0,
-      hatTricks: hatTrickHistory.length,
+      hatTricks: 0,
     }
+
+    const hatTricksBySeason = hatTricks.reduce((acc, hatTrick) => {
+      if (hatTrick.playerId === playerId) {
+        acc[hatTrick.seasonId] ??= 0
+        acc[hatTrick.seasonId]++
+      }
+
+      return acc
+    }, {})
 
     const history = []
 
-    squadHistory.forEach((squad) => {
+    squads.forEach((squad) => {
       const member = squad.players.find((p) => p.playerId === playerId)
 
-      history.push({
-        season: seasonUrl(squad.seasonId),
-        ...pick(member, 'appearances', 'goals', 'assists', 'cleanSheets'),
-        hatTricks: hatTrickHistory.filter((h) => h.seasonId === squad.seasonId).length,
-      })
+      if (member) {
+        const seasonHatTricks = hatTricksBySeason[squad.seasonId] || 0
 
-      total.appearances += member.appearances
-      total.goals += member.goals
-      total.assists += member.assists
-      total.cleanSheets += member.cleanSheets
+        history.push({
+          season: seasonUrl(squad.seasonId),
+          ...pick(member, 'appearances', 'goals', 'assists', 'cleanSheets'),
+          hatTricks: seasonHatTricks,
+        })
+
+        total.appearances += member.appearances
+        total.goals += member.goals
+        total.assists += member.assists
+        total.cleanSheets += member.cleanSheets
+        total.hatTricks += seasonHatTricks
+      }
     })
 
     response.send({ player: playerUrl(playerId), total, history })
