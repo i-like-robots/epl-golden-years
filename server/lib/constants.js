@@ -1,6 +1,6 @@
 const API_URL = process.env.BASE_URL || 'http://localhost:3000/'
 
-const PLAYER_ID = '^[a-z]+-[a-z]+-[a-z0-9]{4}$'
+const PLAYER_ID = '^(?:[a-z]+-)+[a-z0-9]{4}$'
 
 const PLAYER_POSITIONS = ['G', 'D', 'M', 'F']
 
