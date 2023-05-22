@@ -1,6 +1,5 @@
 const { players, squads } = require('../dataset')
 const { playerAlbumUrl, playerStatsUrl, seasonUrl, teamUrl } = require('../lib/urls')
-const omit = require('../lib/object-omit')
 const get = require('../lib/object-get')
 
 module.exports = function playerRoute(request, response) {
@@ -25,7 +24,7 @@ module.exports = function playerRoute(request, response) {
 
     const album = playerAlbumUrl(playerId)
 
-    response.send({ ...omit(player, 'playerId'), history, statistics, album })
+    response.send({ ...player, history, statistics, album })
   } else {
     response.code(404)
     response.send({ error: 'Player not found' })
