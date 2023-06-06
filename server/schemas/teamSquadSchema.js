@@ -66,6 +66,21 @@ module.exports = {
             example: managerUrl('kenny-dalglish-b9f2'),
           },
         },
+        links: {
+          type: 'object',
+          properties: {
+            previous: {
+              type: 'string',
+              format: 'uri',
+              nullable: true,
+            },
+            next: {
+              type: 'string',
+              format: 'uri',
+              nullable: true,
+            },
+          },
+        },
       },
     },
     ...errorSchema,
