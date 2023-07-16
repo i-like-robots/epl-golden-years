@@ -1,10 +1,9 @@
-const { managers } = require('../dataset')
+const managerModel = require('../resources/manager/model')
 const { seasonUrl, teamUrl } = require('../lib/urls')
-const get = require('../lib/object-get')
 
 module.exports = function managerRoute(request, response) {
   const { managerId } = request.params
-  const manager = get(managers, managerId)
+  const manager = managerModel(managerId)
 
   if (manager) {
     const history = manager.history.map(({ seasonId, teamId }) => ({
