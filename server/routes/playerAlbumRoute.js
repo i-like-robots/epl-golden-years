@@ -1,17 +1,15 @@
-const { players, stickers } = require('../dataset')
+const playerAlbumModel = require('../resources/playerAlbum/model')
 const { seasonUrl, teamUrl, playerUrl } = require('../lib/urls')
-const get = require('../lib/object-get')
 
 module.exports = function playerAlbumRoute(request, response) {
   const { playerId } = request.params
-  const player = get(players, playerId)
+  const album = playerAlbumModel(playerId)
 
-  if (player) {
-    const album = stickers[playerId] || []
-
+  if (album) {
     const data = album.map((sticker) => ({
       season: seasonUrl(sticker.seasonId),
       team: teamUrl(sticker.teamId),
+      // TODO: standardise on url or sticker
       url: sticker.sticker,
     }))
 
