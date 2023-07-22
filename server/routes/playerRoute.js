@@ -1,24 +1,16 @@
-const { players, squads } = require('../dataset')
+const playerModel = require('../resources/player/model')
+const playerHistoryModel = require('../resources/playerHistory/model')
 const { playerAlbumUrl, playerStatsUrl, seasonUrl, teamUrl } = require('../lib/urls')
-const get = require('../lib/object-get')
 
 module.exports = function playerRoute(request, response) {
   const { playerId } = request.params
-  const player = get(players, playerId)
+  const player = playerModel(playerId)
 
   if (player) {
-    const history = []
-
-    squads.forEach((squad) => {
-      const playedInSeason = squad.players.some((player) => player.playerId === playerId)
-
-      if (playedInSeason) {
-        history.push({
-          season: seasonUrl(squad.seasonId),
-          team: teamUrl(squad.teamId),
-        })
-      }
-    })
+    const history = playerHistoryModel(playerId).map((h) => ({
+      season: seasonUrl(h.seasonId),
+      team: teamUrl(h.teamId),
+    }))
 
     const statistics = playerStatsUrl(playerId)
 
