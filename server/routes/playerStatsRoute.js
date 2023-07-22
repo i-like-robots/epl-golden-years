@@ -1,4 +1,5 @@
 const playerStatsModel = require('../resources/playerStats/model')
+const playerStatsHistory = require('../resources/playerStatsHistory/model')
 const { playerUrl, seasonUrl } = require('../lib/urls')
 
 module.exports = function playerStatsRoute(request, response) {
@@ -6,12 +7,12 @@ module.exports = function playerStatsRoute(request, response) {
   const stats = playerStatsModel(playerId)
 
   if (stats) {
-    const history = stats.history.map((history) => ({
+    const history = playerStatsHistory(playerId).map((history) => ({
       ...history,
       season: seasonUrl(history.seasonId),
     }))
 
-    response.send({ ...stats, history, player: playerUrl(playerId) })
+    response.send({ player: playerUrl(playerId), total: stats, history })
   } else {
     response.code(404)
     response.send({ error: 'Player not found' })
