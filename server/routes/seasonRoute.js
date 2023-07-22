@@ -1,4 +1,4 @@
-const { seasons } = require('../dataset')
+const seasonModel = require('../resources/season/model')
 const {
   seasonHatTricksUrl,
   seasonTableUrl,
@@ -7,18 +7,12 @@ const {
   seasonTopCleanSheetsUrl,
   seasonUrl,
 } = require('../lib/urls')
-const get = require('../lib/object-get')
 
 module.exports = function seasonRoute(request, response) {
   const { seasonId } = request.params
-  const season = get(seasons, seasonId)
+  const season = seasonModel(seasonId)
 
   if (season) {
-    const seasonIds = Object.keys(seasons)
-    const seasonIndex = seasonIds.indexOf(seasonId)
-    const nextId = seasonIds[seasonIndex + 1]
-    const previousId = seasonIds[seasonIndex - 1]
-
     const seasonData = {
       ...season,
       table: seasonTableUrl(seasonId),
@@ -27,8 +21,8 @@ module.exports = function seasonRoute(request, response) {
       topCleanSheets: seasonTopCleanSheetsUrl(seasonId),
       hatTricks: seasonHatTricksUrl(seasonId),
       links: {
-        previous: previousId ? seasonUrl(previousId) : null,
-        next: nextId ? seasonUrl(nextId) : null,
+        previous: season.previousId && seasonUrl(season.previousId),
+        next: season.nextId && seasonUrl(season.nextId),
       },
     }
 
