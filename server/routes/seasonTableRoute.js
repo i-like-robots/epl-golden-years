@@ -1,11 +1,10 @@
-const { tables } = require('../dataset')
+const seasonTableModel = require('../resources/seasonTable/model')
 const { seasonUrl, teamUrl } = require('../lib/urls')
 const omit = require('../lib/object-omit')
-const get = require('../lib/object-get')
 
-module.exports = function seasonRoute(request, response) {
+module.exports = function seasonTableRoute(request, response) {
   const { seasonId } = request.params
-  const table = get(tables, seasonId)
+  const table = seasonTableModel(seasonId)
 
   if (table) {
     const data = table.map((row) => ({
