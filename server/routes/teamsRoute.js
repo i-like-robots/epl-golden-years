@@ -1,27 +1,9 @@
-const { teams } = require('../dataset')
+const teamsModel = require('../resources/teams/model')
 const { teamUrl } = require('../lib/urls')
-const search = require('../lib/object-search')
 
-const NAME_PROPS = ['name', 'shortName']
-
-module.exports = function teamRoute(request, response) {
+module.exports = function teamsRoute(request, response) {
   const { name } = request.query
+  const teamsData = teamsModel({ name })
 
-  const filters = []
-  const teamsData = []
-
-  if (name) {
-    const fn = search(name)
-    filters.push((player) => fn(player, NAME_PROPS))
-  }
-
-  Object.keys(teams).forEach((teamId) => {
-    const team = teams[teamId]
-
-    if (filters.every((filter) => filter(team))) {
-      teamsData.push(teamUrl(teamId))
-    }
-  })
-
-  response.send(teamsData)
+  response.send(teamsData.map((teamId) => teamUrl(teamId)))
 }

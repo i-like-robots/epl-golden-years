@@ -1,25 +1,17 @@
-const { tables, teams } = require('../dataset')
+const teamModel = require('../resources/team/model')
+const teamSeasonsModel = require('../resources/teamSeasons/model')
 const { seasonUrl, teamStatsUrl, teamSquadsUrl } = require('../lib/urls')
-const get = require('../lib/object-get')
 
 module.exports = function teamRoute(request, response) {
   const { teamId } = request.params
-  const team = get(teams, teamId)
+  const team = teamModel(teamId)
 
   if (team) {
-    const seasons = []
-
-    Object.keys(tables).forEach((seasonId) => {
-      const playedInSeason = tables[seasonId].some((team) => team.teamId === teamId)
-
-      if (playedInSeason) {
-        seasons.push(seasonUrl(seasonId))
-      }
-    })
-
-    const statistics = teamStatsUrl(teamId)
+    const seasons = teamSeasonsModel(teamId).map((seasonId) => seasonUrl(seasonId))
 
     const squads = teamSquadsUrl(teamId)
+
+    const statistics = teamStatsUrl(teamId)
 
     response.send({ ...team, seasons, squads, statistics })
   } else {
