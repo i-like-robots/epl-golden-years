@@ -1,45 +1,28 @@
-const { squads, managers } = require('../dataset')
+const teamSquadModel = require('../resources/teamSquad/model')
 const { seasonUrl, teamUrl, playerUrl, managerUrl, teamSquadUrl } = require('../lib/urls')
-const pick = require('../lib/object-pick')
-const get = require('../lib/object-get')
 
 module.exports = function teamSquadRoute(request, response) {
   const { teamId, seasonId } = request.params
 
-  const teamSquads = squads.reduce((acc, squad) => {
-    if (squad.teamId === teamId) {
-      acc[squad.seasonId] = squad
-    }
-
-    return acc
-  }, {})
-
-  const squad = get(teamSquads, seasonId)
+  const squad = teamSquadModel(teamId, seasonId)
 
   if (squad) {
     const players = squad.players.map((player) => ({
+      ...player,
+      playerId: undefined,
       player: playerUrl(player.playerId),
-      ...pick(player, 'appearances', 'cleanSheets', 'goals', 'assists'),
     }))
 
-    const managerIds = Object.keys(managers).filter((managerId) => {
-      const manager = managers[managerId]
-      return manager.history.some((h) => h.teamId === teamId && h.seasonId === seasonId)
-    })
-
-    const seasonIds = Object.keys(teamSquads)
-    const seasonIndex = seasonIds.indexOf(seasonId)
-    const nextId = seasonIds[seasonIndex + 1]
-    const previousId = seasonIds[seasonIndex - 1]
+    const managers = squad.managers.map((managerId) => managerUrl(managerId))
 
     response.send({
-      season: seasonUrl(squad.seasonId),
-      team: teamUrl(squad.teamId),
+      team: teamUrl(teamId),
+      season: seasonUrl(seasonId),
       players,
-      managers: managerIds.map(managerUrl),
+      managers,
       links: {
-        previous: previousId ? teamSquadUrl(teamId, previousId) : null,
-        next: nextId ? teamSquadUrl(teamId, nextId) : null,
+        previous: squad.previousId && teamSquadUrl(teamId, squad.previousId),
+        next: squad.nextId && teamSquadUrl(teamId, squad.nextId),
       },
     })
   } else {
