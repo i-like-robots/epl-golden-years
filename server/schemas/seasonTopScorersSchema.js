@@ -39,7 +39,7 @@ module.exports = {
               appearances: {
                 type: 'integer',
               },
-              minutesPerAssist: {
+              minutesPerGoal: {
                 type: 'integer',
               },
             },

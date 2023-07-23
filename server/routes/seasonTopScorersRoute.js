@@ -1,38 +1,15 @@
-const { squads, seasons } = require('../dataset')
+const seasonTopScorersModel = require('../resources/seasonTopScorers/model')
 const { playerUrl, seasonUrl } = require('../lib/urls')
-const pick = require('../lib/object-pick')
-const get = require('../lib/object-get')
 
 module.exports = function seasonTopScorersRoute(request, response) {
   const { seasonId } = request.params
-  const season = get(seasons, seasonId)
+  const data = seasonTopScorersModel(seasonId)
 
-  if (season) {
-    const data = []
-
-    squads.forEach((squad) => {
-      if (squad.seasonId === seasonId) {
-        squad.players.forEach((player) => {
-          if (player.goals) {
-            data.push(player)
-          }
-        })
-      }
-    })
-
-    data.sort((a, b) => {
-      if (a.goals > b.goals) return -1
-      if (a.goals < b.goals) return 1
-      if (a.appearances > b.appearances) return 1
-      if (a.appearances < b.appearances) return -1
-
-      return 0
-    })
-
-    const table = data.slice(0, 10).map((player) => ({
+  if (data) {
+    const table = data.map((player) => ({
+      ...player,
+      playerId: undefined,
       player: playerUrl(player.playerId),
-      ...pick(player, 'goals', 'appearances'),
-      minutesPerGoal: Math.round((player.appearances * 90) / player.goals),
     }))
 
     response.send({ season: seasonUrl(seasonId), table })
