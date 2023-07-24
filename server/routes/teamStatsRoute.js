@@ -1,44 +1,18 @@
-const { tables, teams } = require('../dataset')
+const teamStatsModel = require('../resources/teamStats/model')
+const teamStatsHistory = require('../resources/teamStatsHistory/model')
 const { teamUrl, seasonUrl } = require('../lib/urls')
-const pick = require('../lib/object-pick')
-const get = require('../lib/object-get')
 
 module.exports = function teamStatsRoute(request, response) {
   const { teamId } = request.params
-  const team = get(teams, teamId)
+  const stats = teamStatsModel(teamId)
 
-  if (team) {
-    const total = {
-      played: 0,
-      wins: 0,
-      draws: 0,
-      losses: 0,
-      for: 0,
-      against: 0,
-    }
+  if (stats) {
+    const history = teamStatsHistory(teamId).map((history) => ({
+      ...history,
+      season: seasonUrl(history.seasonId),
+    }))
 
-    const history = []
-
-    Object.keys(tables).forEach((tableId) => {
-      const table = tables[tableId]
-      const result = table.find((t) => t.teamId === teamId)
-
-      if (result) {
-        history.push({
-          season: seasonUrl(tableId),
-          ...pick(result, 'played', 'wins', 'draws', 'losses', 'for', 'against'),
-        })
-
-        total.played += result.played
-        total.wins += result.wins
-        total.draws += result.draws
-        total.losses += result.losses
-        total.for += result.for
-        total.against += result.against
-      }
-    })
-
-    response.send({ team: teamUrl(teamId), total, history })
+    response.send({ team: teamUrl(teamId), total: stats, history })
   } else {
     response.code(404)
     response.send({ error: 'Team not found' })
