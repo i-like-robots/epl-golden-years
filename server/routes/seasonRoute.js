@@ -1,4 +1,5 @@
 const seasonModel = require('../resources/season/model')
+const seasonLinksModel = require('../resources/seasonLinks/model')
 const {
   seasonHatTricksUrl,
   seasonTableUrl,
@@ -13,7 +14,9 @@ module.exports = function seasonRoute(request, response) {
   const season = seasonModel(seasonId)
 
   if (season) {
-    const seasonData = {
+    const links = seasonLinksModel(seasonId)
+
+    response.send({
       ...season,
       table: seasonTableUrl(seasonId),
       topScorers: seasonTopScorersUrl(seasonId),
@@ -21,12 +24,10 @@ module.exports = function seasonRoute(request, response) {
       topCleanSheets: seasonTopCleanSheetsUrl(seasonId),
       hatTricks: seasonHatTricksUrl(seasonId),
       links: {
-        previous: season.previousId && seasonUrl(season.previousId),
-        next: season.nextId && seasonUrl(season.nextId),
+        previous: links.previousId ? seasonUrl(links.previousId) : null,
+        next: links.nextId ? seasonUrl(links.nextId) : null,
       },
-    }
-
-    response.send(seasonData)
+    })
   } else {
     response.code(404)
     response.send({ error: 'Season not found' })

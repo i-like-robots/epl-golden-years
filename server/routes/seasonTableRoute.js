@@ -1,6 +1,5 @@
 const seasonTableModel = require('../resources/seasonTable/model')
 const { seasonUrl, teamUrl } = require('../lib/urls')
-const omit = require('../lib/object-omit')
 
 module.exports = function seasonTableRoute(request, response) {
   const { seasonId } = request.params
@@ -8,8 +7,9 @@ module.exports = function seasonTableRoute(request, response) {
 
   if (table) {
     const data = table.map((row) => ({
+      ...row,
+      teamId: undefined,
       team: teamUrl(row.teamId),
-      ...omit(row, 'teamId'),
     }))
 
     response.send({ season: seasonUrl(seasonId), table: data })
