@@ -3,19 +3,17 @@ const { playerUrl, seasonUrl, teamUrl } = require('../lib/urls')
 
 module.exports = function seasonHatTricksRoute(request, response) {
   const { seasonId } = request.params
-  const hatTricks = seasonHatTricksModel(seasonId)
+  const data = seasonHatTricksModel(seasonId)
 
-  if (hatTricks) {
-    const data = []
-
-    hatTricks.map((hatTrick) => ({
+  if (data.length) {
+    const hatTricks = data.map((hatTrick) => ({
       player: playerUrl(hatTrick.playerId),
       homeTeam: teamUrl(hatTrick.homeTeamId),
       awayTeam: teamUrl(hatTrick.awayTeamId),
       date: hatTrick.date,
     }))
 
-    response.send({ season: seasonUrl(seasonId), hatTricks: data })
+    response.send({ season: seasonUrl(seasonId), hatTricks })
   } else {
     response.code(404)
     response.send({ error: 'Season not found' })

@@ -14,15 +14,13 @@ function getHatTricksBySeason(playerId) {
 
 module.exports = function playerStatsHistoryModel(playerId) {
   const player = get(players, playerId)
+  const history = []
 
   if (player) {
     const hatTricksBySeason = getHatTricksBySeason(playerId)
 
-    // TODO: refactor into { [seasonId]: stats }
-    const history = []
-
     squads.forEach((squad) => {
-      const member = squad.players.find((p) => p.playerId === playerId)
+      const member = squad.players.find((player) => player.playerId === playerId)
 
       if (member) {
         history.push({
@@ -31,11 +29,11 @@ module.exports = function playerStatsHistoryModel(playerId) {
           goals: member.goals,
           assists: member.assists,
           cleanSheets: member.cleanSheets,
-          hatTricks: hatTricksBySeason[squad.seasonId] || 0,
+          hatTricks: hatTricksBySeason[squad.seasonId] ?? 0,
         })
       }
     })
-
-    return history
   }
+
+  return history
 }

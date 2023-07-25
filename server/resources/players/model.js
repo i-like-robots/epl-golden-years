@@ -5,7 +5,7 @@ const NAME_PROPS = ['displayName', 'firstName', 'lastName']
 
 module.exports = function playersModel(filters = {}) {
   const filterFns = []
-  const playersData = []
+  const playerIds = []
 
   if (filters.name) {
     const fn = search(filters.name)
@@ -20,9 +20,9 @@ module.exports = function playersModel(filters = {}) {
     const player = players[playerId]
 
     if (filterFns.every((filter) => filter(player))) {
-      playersData.push(playerId)
+      playerIds.push(playerId)
     }
   })
 
-  return playersData
+  return playerIds
 }

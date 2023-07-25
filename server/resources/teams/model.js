@@ -5,7 +5,7 @@ const NAME_PROPS = ['name', 'shortName']
 
 module.exports = function teamsModel(filters = {}) {
   const filterFns = []
-  const teamsData = []
+  const teamIds = []
 
   if (filters.name) {
     const fn = search(filters.name)
@@ -16,9 +16,9 @@ module.exports = function teamsModel(filters = {}) {
     const team = teams[teamId]
 
     if (filterFns.every((filter) => filter(team))) {
-      teamsData.push(teamId)
+      teamIds.push(teamId)
     }
   })
 
-  return teamsData
+  return teamIds
 }

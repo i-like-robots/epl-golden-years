@@ -1,35 +1,32 @@
-const { squads, seasons } = require('../../dataset')
-const pick = require('../../lib/object-pick')
-const get = require('../../lib/object-get')
+const { squads } = require('../../dataset')
+
+function sortByGoals(a, b) {
+  if (a.goals > b.goals) return -1
+  if (a.goals < b.goals) return 1
+  if (a.appearances > b.appearances) return 1
+  if (a.appearances < b.appearances) return -1
+
+  return 0
+}
 
 module.exports = function seasonTopScorersModel(seasonId) {
-  const season = get(seasons, seasonId)
+  const draft = []
 
-  if (season) {
-    const data = []
+  squads.forEach((squad) => {
+    if (squad.seasonId === seasonId) {
+      squad.players.forEach((player) => {
+        if (player.goals) {
+          draft.push(player)
+        }
+      })
+    }
+  })
 
-    squads.forEach((squad) => {
-      if (squad.seasonId === seasonId) {
-        squad.players.forEach((player) => {
-          if (player.goals) {
-            data.push(player)
-          }
-        })
-      }
-    })
+  // TODO: merge players if needed, i.e. they transferred
+  draft.sort(sortByGoals)
 
-    data.sort((a, b) => {
-      if (a.goals > b.goals) return -1
-      if (a.goals < b.goals) return 1
-      if (a.appearances > b.appearances) return 1
-      if (a.appearances < b.appearances) return -1
-
-      return 0
-    })
-
-    return data.slice(0, 10).map((player) => ({
-      ...pick(player, 'playerId', 'goals', 'appearances'),
-      minutesPerGoal: Math.round((player.appearances * 90) / player.goals),
-    }))
-  }
+  return draft.slice(0, 10).map((player) => ({
+    ...player,
+    minutesPerGoal: Math.round((player.appearances * 90) / player.goals),
+  }))
 }

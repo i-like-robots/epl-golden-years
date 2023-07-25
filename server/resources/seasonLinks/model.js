@@ -1,10 +1,15 @@
 const { seasons } = require('../../dataset')
+const get = require('../../lib/object-get')
 
-module.exports = function seasonModel(seasonId) {
-  const seasonIds = Object.keys(seasons)
-  const seasonIndex = seasonIds.indexOf(seasonId)
-  const previousId = seasonIndex ? seasonIds[seasonIndex - 1] : null
-  const nextId = seasonIndex ? seasonIds[seasonIndex + 1] : null
+module.exports = function seasonLinksModel(seasonId) {
+  const season = get(seasons, seasonId)
 
-  return { previousId, nextId }
+  if (season) {
+    const seasonIds = Object.keys(seasons)
+    const seasonIndex = seasonIds.indexOf(seasonId)
+    const previousId = seasonIds[seasonIndex - 1] || null
+    const nextId = seasonIds[seasonIndex + 1] || null
+
+    return { previousId, nextId }
+  }
 }

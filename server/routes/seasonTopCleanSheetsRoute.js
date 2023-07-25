@@ -5,10 +5,9 @@ module.exports = function seasonTopCleanSheetsRoute(request, response) {
   const { seasonId } = request.params
   const data = seasonTopCleanSheetsModel(seasonId)
 
-  if (data) {
+  if (data.length) {
     const table = data.map((player) => ({
       ...player,
-      playerId: undefined,
       player: playerUrl(player.playerId),
     }))
 

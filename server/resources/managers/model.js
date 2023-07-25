@@ -5,20 +5,20 @@ const NAME_PROPS = ['displayName', 'firstName', 'lastName']
 
 module.exports = function managersModel(filters = {}) {
   const filterFns = []
-  const managersData = []
+  const managerIds = []
 
   if (filters.name) {
     const fn = search(filters.name)
-    filterFns.push((player) => fn(player, NAME_PROPS))
+    filterFns.push((manager) => fn(manager, NAME_PROPS))
   }
 
   Object.keys(managers).forEach((managerId) => {
     const manager = managers[managerId]
 
     if (filterFns.every((filterFn) => filterFn(manager))) {
-      managersData.push(managerId)
+      managerIds.push(managerId)
     }
   })
 
-  return managersData
+  return managerIds
 }

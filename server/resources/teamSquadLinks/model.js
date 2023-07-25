@@ -1,17 +1,22 @@
-const { squads } = require('../../dataset')
+const { squads, teams } = require('../../dataset')
+const get = require('../../lib/object-get')
 
 module.exports = function teamSquadLinksModel(teamId, seasonId) {
-  const seasonIds = squads.reduce((acc, squad) => {
-    if (squad.teamId === teamId) {
-      acc.push(squad.seasonId)
-    }
+  const team = get(teams, teamId)
 
-    return acc
-  }, [])
+  if (team) {
+    const seasonIds = squads.reduce((acc, squad) => {
+      if (squad.teamId === teamId) {
+        acc.push(squad.seasonId)
+      }
 
-  const seasonIndex = seasonIds.indexOf(seasonId)
-  const nextId = seasonIndex > -1 ? seasonIds[seasonIndex + 1] : null
-  const previousId = seasonIndex > -1 ? seasonIds[seasonIndex - 1] : null
+      return acc
+    }, [])
 
-  return { previousId, nextId }
+    const seasonIndex = seasonIds.indexOf(seasonId)
+    const nextId = seasonIds[seasonIndex + 1] || null
+    const previousId = seasonIds[seasonIndex - 1] || null
+
+    return { previousId, nextId }
+  }
 }

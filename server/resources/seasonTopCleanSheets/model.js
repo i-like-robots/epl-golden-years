@@ -1,32 +1,29 @@
-const { players, squads, seasons } = require('../../dataset')
-const pick = require('../../lib/object-pick')
-const get = require('../../lib/object-get')
+const { players, squads } = require('../../dataset')
+
+function sortByCleanSheets(a, b) {
+  if (a.cleanSheets > b.cleanSheets) return -1
+  if (a.cleanSheets < b.cleanSheets) return 1
+  if (a.appearances > b.appearances) return -1
+  if (a.appearances < b.appearances) return 1
+
+  return 0
+}
 
 module.exports = function seasonTopCleanSheetsModel(seasonId) {
-  const season = get(seasons, seasonId)
+  const draft = []
 
-  if (season) {
-    const data = []
+  squads.forEach((squad) => {
+    if (squad.seasonId === seasonId) {
+      squad.players.forEach((player) => {
+        if (players[player.playerId].positionCode === 'G' && player.cleanSheets) {
+          draft.push(player)
+        }
+      })
+    }
+  })
 
-    squads.forEach((squad) => {
-      if (squad.seasonId === seasonId) {
-        squad.players.forEach((player) => {
-          if (players[player.playerId].positionCode === 'G' && player.cleanSheets) {
-            data.push(player)
-          }
-        })
-      }
-    })
+  // TODO: merge players if needed, i.e. they transferred
+  draft.sort(sortByCleanSheets)
 
-    data.sort((a, b) => {
-      if (a.cleanSheets > b.cleanSheets) return -1
-      if (a.cleanSheets < b.cleanSheets) return 1
-      if (a.appearances > b.appearances) return -1
-      if (a.appearances < b.appearances) return 1
-
-      return 0
-    })
-
-    return data.slice(0, 10).map((player) => pick(player, 'playerId', 'cleanSheets', 'appearances'))
-  }
+  return draft.slice(0, 10).map((player) => ({ ...player }))
 }

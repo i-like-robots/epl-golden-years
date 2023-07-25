@@ -1,10 +1,5 @@
-const { hatTricks, tables } = require('../../dataset')
-const get = require('../../lib/object-get')
+const { hatTricks } = require('../../dataset')
 
 module.exports = function seasonHatTricksModel(seasonId) {
-  const table = get(tables, seasonId)
-
-  if (table) {
-    return hatTricks.filter((h) => h.seasonId === seasonId)
-  }
+  return hatTricks.filter((hatTrick) => hatTrick.seasonId === seasonId)
 }

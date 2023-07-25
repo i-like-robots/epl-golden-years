@@ -16,7 +16,7 @@ module.exports = function teamStatsModel(teamId) {
 
     Object.keys(tables).forEach((tableId) => {
       const table = tables[tableId]
-      const result = table.find((t) => t.teamId === teamId)
+      const result = table.find((row) => row.teamId === teamId)
 
       if (result) {
         total.played += result.played

@@ -14,7 +14,7 @@ module.exports = function playerStatsModel(playerId) {
     }
 
     squads.forEach((squad) => {
-      const member = squad.players.find((p) => p.playerId === playerId)
+      const member = squad.players.find((player) => player.playerId === playerId)
 
       if (member) {
         total.appearances += member.appearances
@@ -24,7 +24,7 @@ module.exports = function playerStatsModel(playerId) {
       }
     })
 
-    total.hatTricks = hatTricks.reduce((sum, h) => (h.playerId === playerId ? sum + 1 : sum), 0)
+    total.hatTricks = hatTricks.filter((hatTrick) => hatTrick.playerId === playerId).length
 
     return total
   }

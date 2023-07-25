@@ -5,10 +5,9 @@ module.exports = function seasonTopAssistsRoute(request, response) {
   const { seasonId } = request.params
   const data = seasonTopAssistsModel(seasonId)
 
-  if (data) {
+  if (data.length) {
     const table = data.map((player) => ({
       ...player,
-      playerId: undefined,
       player: playerUrl(player.playerId),
     }))
 

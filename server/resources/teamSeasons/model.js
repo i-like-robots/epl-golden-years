@@ -1,20 +1,15 @@
-const { tables, teams } = require('../../dataset')
-const get = require('../../lib/object-get')
+const { tables } = require('../../dataset')
 
 module.exports = function teamSeasonsModel(teamId) {
-  const team = get(teams, teamId)
+  const seasons = []
 
-  if (team) {
-    const seasons = []
+  Object.keys(tables).forEach((seasonId) => {
+    const inSeason = tables[seasonId].some((team) => team.teamId === teamId)
 
-    Object.keys(tables).forEach((seasonId) => {
-      const inSeason = tables[seasonId].some((team) => team.teamId === teamId)
+    if (inSeason) {
+      seasons.push(seasonId)
+    }
+  })
 
-      if (inSeason) {
-        seasons.push(seasonId)
-      }
-    })
-
-    return seasons
-  }
+  return seasons
 }
