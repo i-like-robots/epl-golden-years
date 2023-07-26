@@ -3,7 +3,7 @@ const assert = require('node:assert')
 const Ajv = require('ajv')
 const addFormats = require('ajv-formats')
 const app = require('../app')
-const schemas = require('../schemas')
+const schemas = require('../rest/schemas')
 
 describe('App', () => {
   const ajv = new Ajv({ strict: false })
