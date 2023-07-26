@@ -7,9 +7,9 @@ module.exports = function playerRoute(request, response) {
   const player = playerModel(playerId)
 
   if (player) {
-    const history = playerHistoryModel(playerId).map((h) => ({
-      season: seasonUrl(h.seasonId),
-      team: teamUrl(h.teamId),
+    const history = playerHistoryModel(playerId).map((record) => ({
+      season: seasonUrl(record.seasonId),
+      team: teamUrl(record.teamId),
     }))
 
     const statistics = playerStatsUrl(playerId)

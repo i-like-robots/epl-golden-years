@@ -3,7 +3,7 @@ const { playerUrl } = require('../lib/urls')
 
 module.exports = function playerRoute(request, response) {
   const { name, position } = request.query
-  const playersData = playersModel({ name, position })
+  const playerIds = playersModel({ name, position })
 
-  response.send(playersData.map((playerId) => playerUrl(playerId)))
+  response.send(playerIds.map((playerId) => playerUrl(playerId)))
 }

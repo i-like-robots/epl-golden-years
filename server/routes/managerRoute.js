@@ -6,9 +6,9 @@ module.exports = function managerRoute(request, response) {
   const manager = managerModel(managerId)
 
   if (manager) {
-    const history = manager.history.map(({ seasonId, teamId }) => ({
-      season: seasonUrl(seasonId),
-      team: teamUrl(teamId),
+    const history = manager.history.map((record) => ({
+      season: seasonUrl(record.seasonId),
+      team: teamUrl(record.teamId),
     }))
 
     response.send({ ...manager, history })

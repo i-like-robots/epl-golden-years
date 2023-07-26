@@ -3,7 +3,7 @@ const { seasonUrl } = require('../lib/urls')
 
 module.exports = function seasonsRoute(request, response) {
   const { team } = request.query
-  const seasonsData = seasonsModel({ team })
+  const seasonsIds = seasonsModel({ team })
 
-  response.send(seasonsData.map((seasonId) => seasonUrl(seasonId)))
+  response.send(seasonsIds.map((seasonId) => seasonUrl(seasonId)))
 }

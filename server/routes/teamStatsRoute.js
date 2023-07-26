@@ -7,9 +7,9 @@ module.exports = function teamStatsRoute(request, response) {
   const stats = teamStatsModel(teamId)
 
   if (stats) {
-    const history = teamStatsHistory(teamId).map((history) => ({
-      ...history,
-      season: seasonUrl(history.seasonId),
+    const history = teamStatsHistory(teamId).map((record) => ({
+      ...record,
+      season: seasonUrl(record.seasonId),
     }))
 
     response.send({ team: teamUrl(teamId), total: stats, history })

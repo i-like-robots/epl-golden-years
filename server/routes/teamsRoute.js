@@ -3,7 +3,7 @@ const { teamUrl } = require('../lib/urls')
 
 module.exports = function teamsRoute(request, response) {
   const { name } = request.query
-  const teamsData = teamsModel({ name })
+  const teamIds = teamsModel({ name })
 
-  response.send(teamsData.map((teamId) => teamUrl(teamId)))
+  response.send(teamIds.map((teamId) => teamUrl(teamId)))
 }

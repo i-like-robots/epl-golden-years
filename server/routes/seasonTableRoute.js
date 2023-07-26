@@ -8,7 +8,6 @@ module.exports = function seasonTableRoute(request, response) {
   if (table) {
     const data = table.map((row) => ({
       ...row,
-      teamId: undefined,
       team: teamUrl(row.teamId),
     }))
 
