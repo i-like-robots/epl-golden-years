@@ -43,11 +43,13 @@ module.exports = {
         start: {
           type: 'string',
           format: 'date',
+          description: 'ISO 8601 date',
           example: '1992-08-15',
         },
         end: {
           type: 'string',
           format: 'date',
+          description: 'ISO 8601 date',
           example: '1993-05-11',
         },
         table: {

@@ -46,6 +46,7 @@ module.exports = {
               date: {
                 type: 'string',
                 format: 'date',
+                description: 'ISO 8601 date',
                 example: '1994-12-17',
               },
             },
