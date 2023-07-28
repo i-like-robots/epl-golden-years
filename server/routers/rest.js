@@ -43,7 +43,7 @@ const {
   metaSchema,
 } = require('../rest/schemas')
 
-module.exports = function restAPI(app, opts, done) {
+module.exports = function restRouter(app, opts, done) {
   app.register(swagger, {
     openapi: metaSchema,
   })
@@ -97,6 +97,10 @@ module.exports = function restAPI(app, opts, done) {
   app.get('/managers', { schema: managersSchema }, managersRoute)
 
   app.get('/managers/:managerId', { schema: managerSchema }, managerRoute)
+
+  app.get('/swagger', (_, response) => {
+    response.send(app.swagger())
+  })
 
   done()
 }
