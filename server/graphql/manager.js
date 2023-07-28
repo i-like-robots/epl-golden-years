@@ -1,11 +1,11 @@
 const {
-  GraphQLError,
   GraphQLInt,
   GraphQLList,
   GraphQLNonNull,
   GraphQLObjectType,
   GraphQLString,
 } = require('graphql')
+const { validateArg } = require('./utils')
 const { PLAYER_ID } = require('../lib/constants')
 const managerModel = require('../models/managerModel')
 
@@ -65,15 +65,8 @@ const managerQuery = {
       },
     },
     resolve: (_, args) => {
-      if (new RegExp(PLAYER_ID).test(args.managerId)) {
+      if (validateArg(args.managerId, PLAYER_ID, 'managerId')) {
         return managerModel(args.managerId)
-      } else {
-        throw new GraphQLError('Argument validation error', {
-          extensions: {
-            code: 'INVALID_ARGUMENT',
-            message: `"managerId" does not match pattern ${PLAYER_ID}`,
-          },
-        })
       }
     },
   },
