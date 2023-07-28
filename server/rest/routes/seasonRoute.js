@@ -1,5 +1,5 @@
-const seasonModel = require('../../resources/season/model')
-const seasonLinksModel = require('../../resources/seasonLinks/model')
+const seasonModel = require('../../models/seasonModel')
+const seasonLinksModel = require('../../models/seasonLinksModel')
 const {
   seasonHatTricksUrl,
   seasonTableUrl,

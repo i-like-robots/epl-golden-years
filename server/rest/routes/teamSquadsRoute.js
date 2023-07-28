@@ -1,4 +1,4 @@
-const teamSquadsModel = require('../../resources/teamSquads/model')
+const teamSquadsModel = require('../../models/teamSquadsModel')
 const { teamSquadUrl, teamUrl } = require('../../lib/urls')
 
 module.exports = function teamSquadsRoute(request, response) {

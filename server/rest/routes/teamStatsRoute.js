@@ -1,5 +1,5 @@
-const teamStatsModel = require('../../resources/teamStats/model')
-const teamStatsHistory = require('../../resources/teamStatsHistory/model')
+const teamStatsModel = require('../../models/teamStatsModel')
+const teamStatsHistory = require('../../models/teamStatsHistoryModel')
 const { teamUrl, seasonUrl } = require('../../lib/urls')
 
 module.exports = function teamStatsRoute(request, response) {

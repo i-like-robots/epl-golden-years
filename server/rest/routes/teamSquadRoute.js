@@ -1,6 +1,6 @@
-const teamSquadModel = require('../../resources/teamSquad/model')
-const teamSquadManagersModel = require('../../resources/teamSquadManagers/model')
-const teamSquadLinksModel = require('../../resources/teamSquadLinks/model')
+const teamSquadModel = require('../../models/teamSquadModel')
+const teamSquadManagersModel = require('../../models/teamSquadManagersModel')
+const teamSquadLinksModel = require('../../models/teamSquadLinksModel')
 const { seasonUrl, teamUrl, playerUrl, managerUrl, teamSquadUrl } = require('../../lib/urls')
 
 module.exports = function teamSquadRoute(request, response) {

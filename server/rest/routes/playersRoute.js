@@ -1,4 +1,4 @@
-const playersModel = require('../../resources/players/model')
+const playersModel = require('../../models/playersModel')
 const { playerUrl } = require('../../lib/urls')
 
 module.exports = function playerRoute(request, response) {

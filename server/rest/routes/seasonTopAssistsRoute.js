@@ -1,4 +1,4 @@
-const seasonTopAssistsModel = require('../../resources/seasonTopAssists/model')
+const seasonTopAssistsModel = require('../../models/seasonTopAssistsModel')
 const { playerUrl, seasonUrl } = require('../../lib/urls')
 
 module.exports = function seasonTopAssistsRoute(request, response) {

@@ -1,4 +1,4 @@
-const seasonTopCleanSheetsModel = require('../../resources/seasonTopCleanSheets/model')
+const seasonTopCleanSheetsModel = require('../../models/seasonTopCleanSheetsModel')
 const { playerUrl, seasonUrl } = require('../../lib/urls')
 
 module.exports = function seasonTopCleanSheetsRoute(request, response) {

@@ -1,4 +1,4 @@
-const seasonHatTricksModel = require('../../resources/seasonHatTricks/model')
+const seasonHatTricksModel = require('../../models/seasonHatTricksModel')
 const { playerUrl, seasonUrl, teamUrl } = require('../../lib/urls')
 
 module.exports = function seasonHatTricksRoute(request, response) {

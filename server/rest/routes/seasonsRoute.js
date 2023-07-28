@@ -1,4 +1,4 @@
-const seasonsModel = require('../../resources/seasons/model')
+const seasonsModel = require('../../models/seasonsModel')
 const { seasonUrl } = require('../../lib/urls')
 
 module.exports = function seasonsRoute(request, response) {

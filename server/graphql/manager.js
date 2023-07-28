@@ -7,7 +7,7 @@ const {
   GraphQLString,
 } = require('graphql')
 const { PLAYER_ID } = require('../lib/constants')
-const managerModel = require('../resources/manager/model')
+const managerModel = require('../models/managerModel')
 
 const managerHistoryType = new GraphQLObjectType({
   name: 'ManagerHistory',

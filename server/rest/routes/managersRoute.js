@@ -1,4 +1,4 @@
-const managersModel = require('../../resources/managers/model')
+const managersModel = require('../../models/managersModel')
 const { managerUrl } = require('../../lib/urls')
 
 module.exports = function managersRoute(request, response) {

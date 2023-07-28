@@ -1,5 +1,5 @@
-const playerModel = require('../../resources/player/model')
-const playerAlbumModel = require('../../resources/playerAlbum/model')
+const playerModel = require('../../models/playerModel')
+const playerAlbumModel = require('../../models/playerAlbumModel')
 const { seasonUrl, teamUrl, playerUrl } = require('../../lib/urls')
 
 module.exports = function playerAlbumRoute(request, response) {

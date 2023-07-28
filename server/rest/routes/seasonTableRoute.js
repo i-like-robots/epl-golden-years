@@ -1,4 +1,4 @@
-const seasonTableModel = require('../../resources/seasonTable/model')
+const seasonTableModel = require('../../models/seasonTableModel')
 const { seasonUrl, teamUrl } = require('../../lib/urls')
 
 module.exports = function seasonTableRoute(request, response) {

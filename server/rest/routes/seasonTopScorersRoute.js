@@ -1,4 +1,4 @@
-const seasonTopScorersModel = require('../../resources/seasonTopScorers/model')
+const seasonTopScorersModel = require('../../models/seasonTopScorersModel')
 const { playerUrl, seasonUrl } = require('../../lib/urls')
 
 module.exports = function seasonTopScorersRoute(request, response) {
