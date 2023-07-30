@@ -9,6 +9,7 @@ const {
 const { validateArg, arrayToEnum } = require('./utils')
 const { PLAYER_ID, POSITION_CODES, POSITION_NAMES } = require('../lib/constants')
 const playerModel = require('../models/playerModel')
+const playerAlbumModel = require('../models/playerAlbumModel')
 const playerHistoryModel = require('../models/playerHistoryModel')
 
 const positionCodeType = new GraphQLEnumType({
@@ -28,6 +29,21 @@ const playerHistoryType = new GraphQLObjectType({
       type: new GraphQLNonNull(GraphQLString),
     },
     seasonId: {
+      type: new GraphQLNonNull(GraphQLString),
+    },
+  },
+})
+
+const playerAlbumType = new GraphQLObjectType({
+  name: 'PlayerAlbum',
+  fields: {
+    teamId: {
+      type: new GraphQLNonNull(GraphQLString),
+    },
+    seasonId: {
+      type: new GraphQLNonNull(GraphQLString),
+    },
+    sticker: {
       type: new GraphQLNonNull(GraphQLString),
     },
   },
@@ -72,6 +88,10 @@ const playerType = new GraphQLObjectType({
       type: new GraphQLList(playerHistoryType),
       resolve: (source) => playerHistoryModel(source.playerId),
     },
+    album: {
+      type: new GraphQLList(playerAlbumType),
+      resolve: (source) => playerAlbumModel(source.playerId),
+    }
   },
 })
 
