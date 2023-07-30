@@ -4,11 +4,7 @@ const PLAYER_ID = '^(?:[a-z]+-)+[a-z0-9]{4}$'
 
 const POSITION_CODES = ['G', 'D', 'M', 'F']
 
-const POSITION_NAMES = ['Goalkeeper',
-    'Defender',
-    'Midfielder',
-    'Winger',
-    'Forward',]
+const POSITION_NAMES = ['Goalkeeper', 'Defender', 'Midfielder', 'Winger', 'Forward']
 
 const SEASON_ID = '^\\d{4}-\\d{4}$'
 

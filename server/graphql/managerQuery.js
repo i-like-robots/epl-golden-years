@@ -72,4 +72,4 @@ const managerQuery = {
   },
 }
 
-module.exports = { managerHistoryType, managerType, managerQuery }
+module.exports = { managerType, managerQuery }

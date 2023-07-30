@@ -1,8 +1,7 @@
 const { GraphQLObjectType, GraphQLSchema } = require('graphql')
-const { managerQuery } = require('./manager')
+const { managerQuery } = require('./managerQuery')
 const { managersQuery } = require('./managersQuery')
 const { playerAlbumQuery } = require('./playerAlbumQuery')
-const { playerHistoryQuery } = require('./playerHistoryQuery')
 const { playerQuery } = require('./playerQuery')
 
 const rootQuery = new GraphQLObjectType({
@@ -11,7 +10,6 @@ const rootQuery = new GraphQLObjectType({
     ...managerQuery,
     ...managersQuery,
     ...playerAlbumQuery,
-    ...playerHistoryQuery,
     ...playerQuery,
   },
 })
