@@ -15,6 +15,8 @@ const playerAlbumModel = require('../models/playerAlbumModel')
 const playerHistoryModel = require('../models/playerHistoryModel')
 const playerModel = require('../models/playerModel')
 const playersModel = require('../models/playersModel')
+const playerStatsHistoryModel = require('../models/playerStatsHistoryModel')
+const playerStatsModel = require('../models/playerStatsModel')
 
 const historyType = new GraphQLObjectType({
   name: 'History',
@@ -65,12 +67,12 @@ const managerType = new GraphQLObjectType({
 
 const managersType = new GraphQLObjectType({
   name: 'Managers',
-  fields: () => ({
+  fields: {
     managerId: {
       type: new GraphQLNonNull(GraphQLString),
       resolve: (source) => source,
     },
-  }),
+  },
 })
 
 const positionCodeType = new GraphQLEnumType({
@@ -94,6 +96,65 @@ const albumType = new GraphQLObjectType({
     },
     sticker: {
       type: new GraphQLNonNull(GraphQLString),
+    },
+  },
+})
+
+const playerStatsTotalType = new GraphQLObjectType({
+  name: 'PlayerStatsTotal',
+  fields: {
+    appearances: {
+      type: new GraphQLNonNull(GraphQLInt),
+    },
+    cleanSheets: {
+      type: new GraphQLNonNull(GraphQLInt),
+    },
+    goals: {
+      type: new GraphQLNonNull(GraphQLInt),
+    },
+    assists: {
+      type: new GraphQLNonNull(GraphQLInt),
+    },
+    hatTricks: {
+      type: new GraphQLNonNull(GraphQLInt),
+    },
+  },
+})
+
+const playerStatsHistoryType = new GraphQLObjectType({
+  name: 'PlayerStatsHistory',
+  fields: {
+    seasonId: {
+      type: new GraphQLNonNull(GraphQLString),
+    },
+    appearances: {
+      type: new GraphQLNonNull(GraphQLInt),
+    },
+    cleanSheets: {
+      type: new GraphQLNonNull(GraphQLInt),
+    },
+    goals: {
+      type: new GraphQLNonNull(GraphQLInt),
+    },
+    assists: {
+      type: new GraphQLNonNull(GraphQLInt),
+    },
+    hatTricks: {
+      type: new GraphQLNonNull(GraphQLInt),
+    },
+  },
+})
+
+const playerStatsType = new GraphQLObjectType({
+  name: 'PlayerStats',
+  fields: {
+    total: {
+      type: new GraphQLNonNull(playerStatsTotalType),
+      resolve: (playerId) => playerStatsModel(playerId),
+    },
+    history: {
+      type: new GraphQLList(playerStatsHistoryType),
+      resolve: (playerId) => playerStatsHistoryModel(playerId),
     },
   },
 })
@@ -141,17 +202,21 @@ const playerType = new GraphQLObjectType({
       type: new GraphQLList(albumType),
       resolve: (source) => playerAlbumModel(source.playerId),
     },
+    stats: {
+      type: new GraphQLNonNull(playerStatsType),
+      resolve: (source) => source.playerId,
+    },
   },
 })
 
 const playersType = new GraphQLObjectType({
   name: 'Players',
-  fields: () => ({
+  fields: {
     playerId: {
       type: new GraphQLNonNull(GraphQLString),
       resolve: (source) => source,
     },
-  }),
+  },
 })
 
 const rootQuery = new GraphQLObjectType({
