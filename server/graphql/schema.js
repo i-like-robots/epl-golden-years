@@ -72,6 +72,10 @@ const managersType = new GraphQLObjectType({
       type: new GraphQLNonNull(GraphQLString),
       resolve: (source) => source,
     },
+    manager: {
+      type: new GraphQLNonNull(managerType),
+      resolve: (source) => ({ managerId: source, ...managerModel(source) }),
+    },
   },
 })
 
@@ -215,6 +219,10 @@ const playersType = new GraphQLObjectType({
     playerId: {
       type: new GraphQLNonNull(GraphQLString),
       resolve: (source) => source,
+    },
+    player: {
+      type: new GraphQLNonNull(playerType),
+      resolve: (source) => ({ playerId: source, ...playerModel(source) }),
     },
   },
 })
