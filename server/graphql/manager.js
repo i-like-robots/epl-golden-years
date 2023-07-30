@@ -11,19 +11,19 @@ const managerModel = require('../models/managerModel')
 
 const managerHistoryType = new GraphQLObjectType({
   name: 'ManagerHistory',
-  fields: () => ({
+  fields: {
     seasonId: {
       type: new GraphQLNonNull(GraphQLString),
     },
     teamId: {
       type: new GraphQLNonNull(GraphQLString),
     },
-  }),
+  },
 })
 
 const managerType = new GraphQLObjectType({
   name: 'Manager',
-  fields: () => ({
+  fields: {
     pulseId: {
       type: new GraphQLNonNull(GraphQLInt),
     },
@@ -53,7 +53,7 @@ const managerType = new GraphQLObjectType({
     history: {
       type: new GraphQLList(managerHistoryType),
     },
-  }),
+  },
 })
 
 const managerQuery = {
@@ -64,9 +64,9 @@ const managerQuery = {
         type: new GraphQLNonNull(GraphQLString),
       },
     },
-    resolve: (_, args) => {
-      if (validateArg(args.managerId, PLAYER_ID, 'managerId')) {
-        return managerModel(args.managerId)
+    resolve: (_, { managerId }) => {
+      if (validateArg(managerId, PLAYER_ID, 'managerId')) {
+        return { managerId, ...managerModel(managerId) }
       }
     },
   },
