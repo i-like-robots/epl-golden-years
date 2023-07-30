@@ -1,4 +1,4 @@
-const { PLAYER_ID, PLAYER_POSITIONS } = require('../../lib/constants')
+const { PLAYER_ID, POSITION_CODES, POSITION_NAMES } = require('../../lib/constants')
 const { seasonUrl, playerStatsUrl, playerAlbumUrl, teamUrl } = require('../../lib/urls')
 const errorSchema = require('./errorSchema')
 
@@ -29,12 +29,12 @@ module.exports = {
         },
         positionCode: {
           type: 'string',
-          enum: PLAYER_POSITIONS,
+          enum: POSITION_CODES,
           example: 'G',
         },
         positionName: {
           type: 'string',
-          enum: ['Goalkeeper', 'Defender', 'Midfielder', 'Winger', 'Forward'],
+          enum: POSITION_NAMES,
           example: 'Goalkeeper',
         },
         displayName: {

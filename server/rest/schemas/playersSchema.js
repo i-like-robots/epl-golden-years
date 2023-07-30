@@ -1,4 +1,4 @@
-const { PLAYER_POSITIONS } = require('../../lib/constants')
+const { POSITION_CODES } = require('../../lib/constants')
 const { playerUrl } = require('../../lib/urls')
 const errorSchema = require('./errorSchema')
 
@@ -14,7 +14,7 @@ module.exports = {
     },
     position: {
       type: 'string',
-      enum: PLAYER_POSITIONS,
+      enum: POSITION_CODES,
       description: 'Filter players by position',
     },
   },

@@ -1,5 +1,9 @@
 const { GraphQLError } = require('graphql')
 
+function arrayToEnum(arr) {
+  return arr.reduce((acc, item) => ({ ...acc, [item]: { value: item } }), {})
+}
+
 function validateArg(arg, pattern, name) {
   if (new RegExp(pattern).test(arg)) {
     return true
@@ -13,4 +17,4 @@ function validateArg(arg, pattern, name) {
   }
 }
 
-module.exports = { validateArg }
+module.exports = { arrayToEnum, validateArg }

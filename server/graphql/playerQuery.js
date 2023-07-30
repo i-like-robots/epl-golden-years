@@ -6,20 +6,20 @@ const {
   GraphQLObjectType,
   GraphQLString,
 } = require('graphql')
-const { validateArg } = require('./utils')
-const { PLAYER_ID, PLAYER_POSITIONS, POSITION_NAMES } = require('../lib/constants')
+const { validateArg, arrayToEnum } = require('./utils')
+const { PLAYER_ID, POSITION_CODES, POSITION_NAMES } = require('../lib/constants')
 const { playerHistoryType } = require('./playerHistoryQuery')
 const playerModel = require('../models/playerModel')
 const playerHistoryModel = require('../models/playerHistoryModel')
 
 const positionCodeType = new GraphQLEnumType({
   name: 'PositionCode',
-  values: PLAYER_POSITIONS.reduce((acc, code) => ({ ...acc, [code]: { value: code } }), {}),
+  values: arrayToEnum(POSITION_CODES),
 })
 
 const positionNameType = new GraphQLEnumType({
   name: 'PositionName',
-  values: POSITION_NAMES.reduce((acc, code) => ({ ...acc, [code]: { value: code } }), {}),
+  values: arrayToEnum(POSITION_NAMES)
 })
 
 const playerType = new GraphQLObjectType({
