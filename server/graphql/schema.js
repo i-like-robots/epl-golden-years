@@ -7,7 +7,7 @@ const {
   GraphQLSchema,
   GraphQLString,
 } = require('graphql')
-const { POSITION_CODES, POSITION_NAMES, PLAYER_ID } = require('../lib/constants')
+const { POSITION_CODES, POSITION_NAMES, PLAYER_ID, SEASON_ID } = require('../lib/constants')
 const { arrayToEnum, validateArg } = require('./utils')
 const managerModel = require('../models/managerModel')
 const managersModel = require('../models/managersModel')
@@ -17,17 +17,32 @@ const playerModel = require('../models/playerModel')
 const playersModel = require('../models/playersModel')
 const playerStatsHistoryModel = require('../models/playerStatsHistoryModel')
 const playerStatsModel = require('../models/playerStatsModel')
+const seasonHatTricksModel = require('../models/seasonHatTricksModel')
+const seasonModel = require('../models/seasonModel')
+const seasonTableModel = require('../models/seasonTableModel')
+const seasonTopAssistsModel = require('../models/seasonTopAssistsModel')
+const seasonTopCleanSheetsModel = require('../models/seasonTopCleanSheetsModel')
+const seasonTopScorersModel = require('../models/seasonTopScorersModel')
+const seasonsModel = require('../models/seasonsModel')
 
 const historyType = new GraphQLObjectType({
   name: 'History',
-  fields: {
+  fields: () => ({
     seasonId: {
       type: new GraphQLNonNull(GraphQLString),
+    },
+    season: {
+      type: new GraphQLNonNull(seasonType),
+      resolve: ({ seasonId }) => seasonModel(seasonId),
     },
     teamId: {
       type: new GraphQLNonNull(GraphQLString),
     },
-  },
+    // team: {
+    //   type: new GraphQLNonNull(teamType),
+    // resolver: (source) => {},
+    // },
+  }),
 })
 
 const managerType = new GraphQLObjectType({
@@ -70,11 +85,11 @@ const managersType = new GraphQLObjectType({
   fields: {
     managerId: {
       type: new GraphQLNonNull(GraphQLString),
-      resolve: (source) => source,
+      resolve: (managerId) => managerId,
     },
     manager: {
       type: new GraphQLNonNull(managerType),
-      resolve: (source) => ({ managerId: source, ...managerModel(source) }),
+      resolve: (managerId) => ({ managerId, ...managerModel(managerId) }),
     },
   },
 })
@@ -91,17 +106,25 @@ const positionNameType = new GraphQLEnumType({
 
 const albumType = new GraphQLObjectType({
   name: 'Album',
-  fields: {
-    teamId: {
-      type: new GraphQLNonNull(GraphQLString),
-    },
+  fields: () => ({
     seasonId: {
       type: new GraphQLNonNull(GraphQLString),
     },
+    season: {
+      type: new GraphQLNonNull(seasonType),
+      resolve: ({ seasonId }) => seasonModel(seasonId),
+    },
+    teamId: {
+      type: new GraphQLNonNull(GraphQLString),
+    },
+    // team: {
+    //   type: new GraphQLNonNull(teamType),
+    // resolver: (source) => {},
+    // },
     sticker: {
       type: new GraphQLNonNull(GraphQLString),
     },
-  },
+  }),
 })
 
 const playerStatsTotalType = new GraphQLObjectType({
@@ -127,9 +150,13 @@ const playerStatsTotalType = new GraphQLObjectType({
 
 const playerStatsHistoryType = new GraphQLObjectType({
   name: 'PlayerStatsHistory',
-  fields: {
+  fields: () => ({
     seasonId: {
       type: new GraphQLNonNull(GraphQLString),
+    },
+    season: {
+      type: new GraphQLNonNull(seasonType),
+      resolve: ({ seasonId }) => seasonModel(seasonId),
     },
     appearances: {
       type: new GraphQLNonNull(GraphQLInt),
@@ -146,7 +173,7 @@ const playerStatsHistoryType = new GraphQLObjectType({
     hatTricks: {
       type: new GraphQLNonNull(GraphQLInt),
     },
-  },
+  }),
 })
 
 const playerStatsType = new GraphQLObjectType({
@@ -200,15 +227,15 @@ const playerType = new GraphQLObjectType({
     },
     history: {
       type: new GraphQLList(historyType),
-      resolve: (source) => playerHistoryModel(source.playerId),
+      resolve: ({ playerId }) => playerHistoryModel(playerId),
     },
     album: {
       type: new GraphQLList(albumType),
-      resolve: (source) => playerAlbumModel(source.playerId),
+      resolve: ({ playerId }) => playerAlbumModel(playerId),
     },
     stats: {
       type: new GraphQLNonNull(playerStatsType),
-      resolve: (source) => source.playerId,
+      resolve: ({ playerId }) => playerId,
     },
   },
 })
@@ -218,11 +245,205 @@ const playersType = new GraphQLObjectType({
   fields: {
     playerId: {
       type: new GraphQLNonNull(GraphQLString),
-      resolve: (source) => source,
+      resolve: (playerId) => playerId,
     },
     player: {
       type: new GraphQLNonNull(playerType),
-      resolve: (source) => ({ playerId: source, ...playerModel(source) }),
+      resolve: (playerId) => ({ playerId, ...playerModel(playerId) }),
+    },
+  },
+})
+
+const seasonHatTricksType = new GraphQLObjectType({
+  name: 'SeasonHatTricks',
+  fields: {
+    playerId: {
+      type: new GraphQLNonNull(GraphQLString),
+    },
+    player: {
+      type: new GraphQLNonNull(playerType),
+      resolve: ({ playerId }) => ({ playerId, ...playerModel(playerId) }),
+    },
+    homeTeamId: {
+      type: new GraphQLNonNull(GraphQLString),
+    },
+    // homeTeam: {
+    //   type: new GraphQLNonNull(teamType),
+    // resolver: (source) => {},
+    // },
+    awayTeamId: {
+      type: new GraphQLNonNull(GraphQLString),
+    },
+    // awayTeam: {
+    //   type: new GraphQLNonNull(teamType),
+    // resolver: (source) => {},
+    // },
+    date: {
+      type: new GraphQLNonNull(GraphQLString),
+      description: 'ISO 8601 date, e.g. 1954-05-10',
+    },
+  },
+})
+
+const seasonTableType = new GraphQLObjectType({
+  name: 'SeasonTable',
+  fields: {
+    teamId: {
+      type: new GraphQLNonNull(GraphQLString),
+    },
+    // team: {
+    //   type: new GraphQLNonNull(teamType),
+    // resolver: (source) => {},
+    // },
+    rank: {
+      type: new GraphQLNonNull(GraphQLInt),
+    },
+    points: {
+      type: new GraphQLNonNull(GraphQLInt),
+    },
+    played: {
+      type: new GraphQLNonNull(GraphQLInt),
+    },
+    wins: {
+      type: new GraphQLNonNull(GraphQLInt),
+    },
+    draws: {
+      type: new GraphQLNonNull(GraphQLInt),
+    },
+    losses: {
+      type: new GraphQLNonNull(GraphQLInt),
+    },
+    for: {
+      type: new GraphQLNonNull(GraphQLInt),
+    },
+    against: {
+      type: new GraphQLNonNull(GraphQLInt),
+    },
+    diff: {
+      type: new GraphQLNonNull(GraphQLInt),
+    },
+  },
+})
+
+const seasonTopAssistsType = new GraphQLObjectType({
+  name: 'SeasonTopAssists',
+  fields: {
+    playerId: {
+      type: new GraphQLNonNull(GraphQLString),
+    },
+    player: {
+      type: new GraphQLNonNull(playerType),
+      resolve: ({ playerId }) => ({ playerId, ...playerModel(playerId) }),
+    },
+    assists: {
+      type: new GraphQLNonNull(GraphQLInt),
+    },
+    appearances: {
+      type: new GraphQLNonNull(GraphQLInt),
+    },
+    minutesPerAssist: {
+      type: new GraphQLNonNull(GraphQLInt),
+    },
+  },
+})
+
+const seasonTopCleanSheetsType = new GraphQLObjectType({
+  name: 'SeasonTopCleanSheets',
+  fields: {
+    playerId: {
+      type: new GraphQLNonNull(GraphQLString),
+    },
+    player: {
+      type: new GraphQLNonNull(playerType),
+      resolve: ({ playerId }) => ({ playerId, ...playerModel(playerId) }),
+    },
+    cleanSheets: {
+      type: new GraphQLNonNull(GraphQLInt),
+    },
+    appearances: {
+      type: new GraphQLNonNull(GraphQLInt),
+    },
+  },
+})
+
+const seasonTopScorersType = new GraphQLObjectType({
+  name: 'SeasonTopScorers',
+  fields: {
+    playerId: {
+      type: new GraphQLNonNull(GraphQLString),
+    },
+    player: {
+      type: new GraphQLNonNull(playerType),
+      resolve: ({ playerId }) => ({ playerId, ...playerModel(playerId) }),
+    },
+    goals: {
+      type: new GraphQLNonNull(GraphQLInt),
+    },
+    appearances: {
+      type: new GraphQLNonNull(GraphQLInt),
+    },
+    minutesPerGoal: {
+      type: new GraphQLNonNull(GraphQLInt),
+    },
+  },
+})
+
+const seasonType = new GraphQLObjectType({
+  name: 'Season',
+  fields: {
+    displayName: {
+      type: new GraphQLNonNull(GraphQLString),
+    },
+    shortName: {
+      type: new GraphQLNonNull(GraphQLString),
+    },
+    sponsor: {
+      type: new GraphQLNonNull(GraphQLString),
+    },
+    ball: {
+      type: new GraphQLNonNull(GraphQLString),
+    },
+    start: {
+      type: new GraphQLNonNull(GraphQLString),
+      description: 'ISO 8601 date, e.g. 1954-05-10',
+    },
+    end: {
+      type: new GraphQLNonNull(GraphQLString),
+      description: 'ISO 8601 date, e.g. 1954-05-10',
+    },
+    hatTricks: {
+      type: new GraphQLList(seasonHatTricksType),
+      resolve: ({ seasonId }) => seasonHatTricksModel(seasonId),
+    },
+    table: {
+      type: new GraphQLList(seasonTableType),
+      resolve: ({ seasonId }) => seasonTableModel(seasonId),
+    },
+    topAssists: {
+      type: new GraphQLList(seasonTopAssistsType),
+      resolve: ({ seasonId }) => seasonTopAssistsModel(seasonId),
+    },
+    topCleanSheets: {
+      type: new GraphQLList(seasonTopCleanSheetsType),
+      resolve: ({ seasonId }) => seasonTopCleanSheetsModel(seasonId),
+    },
+    topScorers: {
+      type: new GraphQLList(seasonTopScorersType),
+      resolve: ({ seasonId }) => seasonTopScorersModel(seasonId),
+    },
+  },
+})
+
+const seasonsType = new GraphQLObjectType({
+  name: 'Seasons',
+  fields: {
+    seasonId: {
+      type: new GraphQLNonNull(GraphQLString),
+      resolve: (seasonId) => seasonId,
+    },
+    season: {
+      type: new GraphQLNonNull(seasonType),
+      resolve: (seasonId) => ({ seasonId, ...seasonModel(seasonId) }),
     },
   },
 })
@@ -279,6 +500,30 @@ const rootQuery = new GraphQLObjectType({
       },
       resolve: (_, { name, position }) => {
         return playersModel({ name, position })
+      },
+    },
+    season: {
+      type: seasonType,
+      args: {
+        seasonId: {
+          type: new GraphQLNonNull(GraphQLString),
+        },
+      },
+      resolve: (_, { seasonId }) => {
+        if (validateArg(seasonId, SEASON_ID, 'seasonId')) {
+          return { seasonId, ...seasonModel(seasonId) }
+        }
+      },
+    },
+    seasons: {
+      type: new GraphQLList(seasonsType),
+      args: {
+        team: {
+          type: GraphQLString,
+        },
+      },
+      resolve: (_, { team }) => {
+        return seasonsModel({ team })
       },
     },
   },
