@@ -42,26 +42,14 @@ const teamStatsModel = require('../models/teamStatsModel')
 const historyType = new GraphQLObjectType({
   name: 'History',
   fields: () => ({
-    seasonId: {
-      type: new GraphQLNonNull(GraphQLString),
-    },
-    season: {
-      type: new GraphQLNonNull(seasonType),
-      resolve: ({ seasonId }) => ({ seasonId, ...seasonModel(seasonId) }),
-    },
-    teamId: {
-      type: new GraphQLNonNull(GraphQLString),
-    },
-    team: {
-      type: new GraphQLNonNull(teamType),
-      resolve: ({ teamId }) => ({ teamId, ...teamModel(teamId) }),
-    },
+    ...seasonRelationship,
+    ...teamRelationship,
   }),
 })
 
 const managerType = new GraphQLObjectType({
   name: 'Manager',
-  fields: {
+  fields: () => ({
     pulseId: {
       type: new GraphQLNonNull(GraphQLInt),
     },
@@ -91,12 +79,12 @@ const managerType = new GraphQLObjectType({
     history: {
       type: new GraphQLList(historyType),
     },
-  },
+  }),
 })
 
 const managersType = new GraphQLObjectType({
   name: 'Managers',
-  fields: {
+  fields: () => ({
     managerId: {
       type: new GraphQLNonNull(GraphQLString),
       resolve: (managerId) => managerId,
@@ -105,7 +93,7 @@ const managersType = new GraphQLObjectType({
       type: new GraphQLNonNull(managerType),
       resolve: (managerId) => ({ managerId, ...managerModel(managerId) }),
     },
-  },
+  }),
 })
 
 const positionCodeType = new GraphQLEnumType({
@@ -121,36 +109,10 @@ const positionNameType = new GraphQLEnumType({
 const playerAlbumType = new GraphQLObjectType({
   name: 'PlayerAlbum',
   fields: () => ({
-    seasonId: {
-      type: new GraphQLNonNull(GraphQLString),
-    },
-    season: {
-      type: new GraphQLNonNull(seasonType),
-      resolve: ({ seasonId }) => ({ seasonId, ...seasonModel(seasonId) }),
-    },
-    teamId: {
-      type: new GraphQLNonNull(GraphQLString),
-    },
-    team: {
-      type: new GraphQLNonNull(teamType),
-      resolve: ({ teamId }) => ({ teamId, ...teamModel(teamId) }),
-    },
+    ...seasonRelationship,
+    ...teamRelationship,
     sticker: {
       type: new GraphQLNonNull(GraphQLString),
-    },
-  }),
-})
-
-const playerStatsType = new GraphQLObjectType({
-  name: 'PlayerStats',
-  fields: () => ({
-    total: {
-      type: new GraphQLNonNull(playerStatsTotalType),
-      resolve: (playerId) => playerStatsModel(playerId),
-    },
-    history: {
-      type: new GraphQLList(playerStatsHistoryType),
-      resolve: (playerId) => playerStatsHistoryModel(playerId),
     },
   }),
 })
@@ -179,13 +141,7 @@ const playerStatsTotalType = new GraphQLObjectType({
 const playerStatsHistoryType = new GraphQLObjectType({
   name: 'PlayerStatsHistory',
   fields: () => ({
-    seasonId: {
-      type: new GraphQLNonNull(GraphQLString),
-    },
-    season: {
-      type: new GraphQLNonNull(seasonType),
-      resolve: ({ seasonId }) => ({ seasonId, ...seasonModel(seasonId) }),
-    },
+    ...seasonRelationship,
     appearances: {
       type: new GraphQLNonNull(GraphQLInt),
     },
@@ -204,20 +160,28 @@ const playerStatsHistoryType = new GraphQLObjectType({
   }),
 })
 
+const playerStatsType = new GraphQLObjectType({
+  name: 'PlayerStats',
+  fields: () => ({
+    total: {
+      type: new GraphQLNonNull(playerStatsTotalType),
+      resolve: (playerId) => playerStatsModel(playerId),
+    },
+    history: {
+      type: new GraphQLList(playerStatsHistoryType),
+      resolve: (playerId) => playerStatsHistoryModel(playerId),
+    },
+  }),
+})
+
 const playerType = new GraphQLObjectType({
   name: 'Player',
-  fields: {
+  fields: () => ({
     pulseId: {
       type: new GraphQLNonNull(GraphQLInt),
     },
     optaId: {
       type: new GraphQLNonNull(GraphQLString),
-    },
-    positionCode: {
-      type: new GraphQLNonNull(positionCodeType),
-    },
-    positionName: {
-      type: new GraphQLNonNull(positionNameType),
     },
     displayName: {
       type: new GraphQLNonNull(GraphQLString),
@@ -239,6 +203,12 @@ const playerType = new GraphQLObjectType({
     countryName: {
       type: new GraphQLNonNull(GraphQLString),
     },
+    positionCode: {
+      type: new GraphQLNonNull(positionCodeType),
+    },
+    positionName: {
+      type: new GraphQLNonNull(positionNameType),
+    },
     history: {
       type: new GraphQLList(historyType),
       resolve: ({ playerId }) => playerHistoryModel(playerId),
@@ -251,8 +221,18 @@ const playerType = new GraphQLObjectType({
       type: new GraphQLNonNull(playerStatsType),
       resolve: ({ playerId }) => playerId,
     },
-  },
+  }),
 })
+
+const playerRelationship = {
+  playerId: {
+    type: new GraphQLNonNull(GraphQLString),
+  },
+  player: {
+    type: new GraphQLNonNull(playerType),
+    resolve: ({ playerId }) => ({ playerId, ...playerModel(playerId) }),
+  },
+}
 
 const playersType = new GraphQLObjectType({
   name: 'Players',
@@ -270,45 +250,33 @@ const playersType = new GraphQLObjectType({
 
 const seasonHatTricksType = new GraphQLObjectType({
   name: 'SeasonHatTricks',
-  fields: {
-    playerId: {
-      type: new GraphQLNonNull(GraphQLString),
-    },
-    player: {
-      type: new GraphQLNonNull(playerType),
-      resolve: ({ playerId }) => ({ playerId, ...playerModel(playerId) }),
-    },
+  fields: () => ({
+    ...playerRelationship,
     homeTeamId: {
       type: new GraphQLNonNull(GraphQLString),
     },
-    // homeTeam: {
-    //   type: new GraphQLNonNull(teamType),
-    // resolver: (source) => {},
-    // },
+    homeTeam: {
+      type: new GraphQLNonNull(teamType),
+      resolve: ({ homeTeamId }) => ({ teamId: homeTeamId, ...teamModel(homeTeamId) }),
+    },
     awayTeamId: {
       type: new GraphQLNonNull(GraphQLString),
     },
-    // awayTeam: {
-    //   type: new GraphQLNonNull(teamType),
-    // resolver: (source) => {},
-    // },
+    awayTeam: {
+      type: new GraphQLNonNull(teamType),
+      resolve: ({ awayTeamId }) => ({ teamId: awayTeamId, ...teamModel(awayTeamId) }),
+    },
     date: {
       type: new GraphQLNonNull(GraphQLString),
       description: 'ISO 8601 date, e.g. 1954-05-10',
     },
-  },
+  }),
 })
 
 const seasonTableType = new GraphQLObjectType({
   name: 'SeasonTable',
-  fields: {
-    teamId: {
-      type: new GraphQLNonNull(GraphQLString),
-    },
-    // team: {
-    //   type: new GraphQLNonNull(teamType),
-    // resolver: (source) => {},
-    // },
+  fields: () => ({
+    ...teamRelationship,
     rank: {
       type: new GraphQLNonNull(GraphQLInt),
     },
@@ -336,19 +304,13 @@ const seasonTableType = new GraphQLObjectType({
     diff: {
       type: new GraphQLNonNull(GraphQLInt),
     },
-  },
+  }),
 })
 
 const seasonTopAssistsType = new GraphQLObjectType({
   name: 'SeasonTopAssists',
-  fields: {
-    playerId: {
-      type: new GraphQLNonNull(GraphQLString),
-    },
-    player: {
-      type: new GraphQLNonNull(playerType),
-      resolve: ({ playerId }) => ({ playerId, ...playerModel(playerId) }),
-    },
+  fields: () => ({
+    ...playerRelationship,
     assists: {
       type: new GraphQLNonNull(GraphQLInt),
     },
@@ -358,38 +320,26 @@ const seasonTopAssistsType = new GraphQLObjectType({
     minutesPerAssist: {
       type: new GraphQLNonNull(GraphQLInt),
     },
-  },
+  }),
 })
 
 const seasonTopCleanSheetsType = new GraphQLObjectType({
   name: 'SeasonTopCleanSheets',
-  fields: {
-    playerId: {
-      type: new GraphQLNonNull(GraphQLString),
-    },
-    player: {
-      type: new GraphQLNonNull(playerType),
-      resolve: ({ playerId }) => ({ playerId, ...playerModel(playerId) }),
-    },
+  fields: () => ({
+    ...playerRelationship,
     cleanSheets: {
       type: new GraphQLNonNull(GraphQLInt),
     },
     appearances: {
       type: new GraphQLNonNull(GraphQLInt),
     },
-  },
+  }),
 })
 
 const seasonTopScorersType = new GraphQLObjectType({
   name: 'SeasonTopScorers',
-  fields: {
-    playerId: {
-      type: new GraphQLNonNull(GraphQLString),
-    },
-    player: {
-      type: new GraphQLNonNull(playerType),
-      resolve: ({ playerId }) => ({ playerId, ...playerModel(playerId) }),
-    },
+  fields: () => ({
+    ...playerRelationship,
     goals: {
       type: new GraphQLNonNull(GraphQLInt),
     },
@@ -399,12 +349,12 @@ const seasonTopScorersType = new GraphQLObjectType({
     minutesPerGoal: {
       type: new GraphQLNonNull(GraphQLInt),
     },
-  },
+  }),
 })
 
 const seasonType = new GraphQLObjectType({
   name: 'Season',
-  fields: {
+  fields: () => ({
     displayName: {
       type: new GraphQLNonNull(GraphQLString),
     },
@@ -445,8 +395,18 @@ const seasonType = new GraphQLObjectType({
       type: new GraphQLList(seasonTopScorersType),
       resolve: ({ seasonId }) => seasonTopScorersModel(seasonId),
     },
-  },
+  }),
 })
+
+const seasonRelationship = {
+  seasonId: {
+    type: new GraphQLNonNull(GraphQLString),
+  },
+  season: {
+    type: new GraphQLNonNull(seasonType),
+    resolve: ({ seasonId }) => ({ seasonId, ...seasonModel(seasonId) }),
+  },
+}
 
 const seasonsType = new GraphQLObjectType({
   name: 'Seasons',
@@ -489,13 +449,7 @@ const teamStatsTotalType = new GraphQLObjectType({
 const teamStatsHistoryType = new GraphQLObjectType({
   name: 'TeamStatsHistory',
   fields: () => ({
-    seasonId: {
-      type: new GraphQLNonNull(GraphQLString),
-    },
-    season: {
-      type: new GraphQLNonNull(seasonType),
-      resolve: ({ seasonId }) => ({ seasonId, ...seasonModel(seasonId) }),
-    },
+    ...seasonRelationship,
     played: {
       type: new GraphQLNonNull(GraphQLInt),
     },
@@ -531,31 +485,10 @@ const teamStatsType = new GraphQLObjectType({
   }),
 })
 
-const teamSeasonType = new GraphQLObjectType({
-  name: 'TeamSeason',
-  fields: () => ({
-    seasonId: {
-      type: new GraphQLNonNull(GraphQLString),
-      resolve: (seasonId) => seasonId,
-    },
-    // TODO: make this not shonky
-    season: {
-      type: new GraphQLNonNull(seasonType),
-      resolve: (seasonId) => ({ seasonId, ...seasonModel(seasonId) }),
-    },
-  }),
-})
-
 const teamSquadPlayerType = new GraphQLObjectType({
   name: 'TeamSquadPlayer',
   fields: () => ({
-    playerId: {
-      type: new GraphQLNonNull(GraphQLString),
-    },
-    player: {
-      type: new GraphQLNonNull(playerType),
-      resolve: ({ playerId }) => ({ playerId, ...playerModel(playerId) }),
-    },
+    ...playerRelationship,
     appearances: {
       type: new GraphQLNonNull(GraphQLInt),
     },
@@ -571,37 +504,16 @@ const teamSquadPlayerType = new GraphQLObjectType({
   }),
 })
 
-const teamSquadManagersType = new GraphQLObjectType({
-  name: 'TeamSquadManagers',
-  fields: () => ({
-    managerId: {
-      type: new GraphQLNonNull(GraphQLString),
-      resolve: (managerId) => managerId,
-    },
-    manager: {
-      type: new GraphQLNonNull(managerType),
-      resolve: (managerId) => ({ managerId, ...managerModel(managerId) }),
-    },
-  }),
-})
-
 const teamSquadType = new GraphQLObjectType({
   name: 'TeamSquad',
   fields: () => ({
-    seasonId: {
-      type: new GraphQLNonNull(GraphQLString),
-      resolve: ({ seasonId }) => seasonId,
-    },
-    season: {
-      type: new GraphQLNonNull(seasonType),
-      resolve: ({ seasonId }) => ({ seasonId, ...seasonModel(seasonId) }),
-    },
+    ...seasonRelationship,
     players: {
       type: new GraphQLList(teamSquadPlayerType),
       resolve: ({ teamId, seasonId }) => teamSquadModel(teamId, seasonId).players,
     },
     managers: {
-      type: new GraphQLList(teamSquadManagersType),
+      type: new GraphQLList(managersType),
       resolve: ({ teamId, seasonId }) => teamSquadManagersModel(teamId, seasonId),
     },
   }),
@@ -628,14 +540,13 @@ const teamType = new GraphQLObjectType({
     city: {
       type: new GraphQLNonNull(GraphQLString),
     },
-    // TODO: standardise terminology
     seasons: {
-      type: new GraphQLList(teamSeasonType),
-      resolve: ({ teamId }) => ({ teamId, ...teamSeasonsModel(teamId) }),
+      type: new GraphQLList(seasonsType),
+      resolve: ({ teamId }) => teamSeasonsModel(teamId)
     },
     squads: {
       type: new GraphQLList(teamSquadType),
-      resolve: ({ teamId }) => teamSquadsModel(teamId),
+      resolve: ({ teamId }) => teamSquadsModel(teamId)
     },
     // TODO: standardise terminology
     stats: {
@@ -644,6 +555,16 @@ const teamType = new GraphQLObjectType({
     },
   }),
 })
+
+const teamRelationship = {
+  teamId: {
+    type: new GraphQLNonNull(GraphQLString),
+  },
+  team: {
+    type: new GraphQLNonNull(teamType),
+    resolve: ({ teamId }) => ({ teamId, ...teamModel(teamId) }),
+  },
+}
 
 const teamsType = new GraphQLObjectType({
   name: 'Teams',
