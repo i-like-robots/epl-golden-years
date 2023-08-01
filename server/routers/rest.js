@@ -43,8 +43,8 @@ const {
   metaSchema,
 } = require('../rest/schemas')
 
-module.exports = function restRouter(app, opts, done) {
-  app.register(swagger, {
+module.exports = async function restRouter(app, opts, done) {
+  await app.register(swagger, {
     openapi: metaSchema,
   })
 
