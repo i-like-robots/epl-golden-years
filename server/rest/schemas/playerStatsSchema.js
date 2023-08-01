@@ -1,4 +1,4 @@
-const { PLAYER_ID } = require('../../lib/constants')
+const { PERSON_ID } = require('../../lib/constants')
 const { playerUrl, seasonUrl } = require('../../lib/urls')
 const errorSchema = require('./errorSchema')
 
@@ -10,7 +10,7 @@ module.exports = {
   params: {
     playerId: {
       type: 'string',
-      pattern: PLAYER_ID,
+      pattern: PERSON_ID,
       description: 'ID of player',
     },
   },

@@ -10,7 +10,7 @@ const {
 const {
   POSITION_CODES,
   POSITION_NAMES,
-  PLAYER_ID,
+  PERSON_ID,
   SEASON_ID,
   TEAM_ID,
 } = require('../lib/constants')
@@ -670,7 +670,7 @@ const rootQuery = new GraphQLObjectType({
         },
       },
       resolve: (_, { managerId }) => {
-        if (validateArg(managerId, PLAYER_ID, 'managerId')) {
+        if (validateArg(managerId, PERSON_ID, 'managerId')) {
           return { managerId, ...managerModel(managerId) }
         }
       },
@@ -694,7 +694,7 @@ const rootQuery = new GraphQLObjectType({
         },
       },
       resolve: (_, { playerId }) => {
-        if (validateArg(playerId, PLAYER_ID, 'playerId')) {
+        if (validateArg(playerId, PERSON_ID, 'playerId')) {
           return { playerId, ...playerModel(playerId) }
         }
       },
