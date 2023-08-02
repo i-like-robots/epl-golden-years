@@ -1,0 +1,31 @@
+{
+  "team": "http://localhost:3000/teams/shu",
+  "total": {
+    "played": 84,
+    "wins": 22,
+    "draws": 28,
+    "losses": 34,
+    "for": 96,
+    "against": 113
+  },
+  "history": [
+    {
+      "season": "http://localhost:3000/seasons/1992-1993",
+      "played": 42,
+      "wins": 14,
+      "draws": 10,
+      "losses": 18,
+      "for": 54,
+      "against": 53
+    },
+    {
+      "season": "http://localhost:3000/seasons/1993-1994",
+      "played": 42,
+      "wins": 8,
+      "draws": 18,
+      "losses": 16,
+      "for": 42,
+      "against": 60
+    }
+  ]
+}

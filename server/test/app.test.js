@@ -2,6 +2,7 @@ const { after, before, describe, test } = require('node:test')
 const assert = require('node:assert')
 const Ajv = require('ajv')
 const addFormats = require('ajv-formats')
+const snapshot = require('./lib/snapshot')
 const app = require('../app')
 const schemas = require('../rest/schemas')
 
@@ -20,6 +21,11 @@ describe('App', () => {
 
     assert.equal(response.statusCode, statusCode)
     assert.equal(ajv.errors, null)
+
+    if (response.statusCode === 200) {
+      const name = `${schema.summary}--${path}`
+      await snapshot(response.json(), name)
+    }
 
     return response
   }
@@ -54,10 +60,10 @@ describe('App', () => {
     })
 
     test('OK - with position filter', async () => {
-      const response = await validateRoute('/players?position=D', schemas.playersSchema, 200)
+      const response = await validateRoute('/players?position=G', schemas.playersSchema, 200)
       const data = response.json()
 
-      assert.equal(data.length, 680)
+      assert.equal(data.length, 210)
     })
 
     test('Invalid Request', async () => {
@@ -118,7 +124,7 @@ describe('App', () => {
 
   describe('/teams/:teamId', () => {
     test('OK', async () => {
-      await validateRoute('/teams/cov', schemas.teamSchema, 200)
+      await validateRoute('/teams/shu', schemas.teamSchema, 200)
     })
 
     test('Not Found', async () => {
@@ -128,7 +134,7 @@ describe('App', () => {
 
   describe('/teams/:teamId/squads', () => {
     test('OK', async () => {
-      await validateRoute('/teams/cov/squads', schemas.teamSquadsSchema, 200)
+      await validateRoute('/teams/shu/squads', schemas.teamSquadsSchema, 200)
     })
 
     test('Not Found', async () => {
@@ -136,19 +142,19 @@ describe('App', () => {
     })
   })
 
-  describe('/teams/:teamId/squads/1994-1995', () => {
+  describe('/teams/:teamId/squads/1993-1994', () => {
     test('OK', async () => {
-      await validateRoute('/teams/cov/squads/1994-1995', schemas.teamSquadSchema, 200)
+      await validateRoute('/teams/shu/squads/1993-1994', schemas.teamSquadSchema, 200)
     })
 
     test('Not Found', async () => {
-      await validateRoute('/teams/abc/squads/1994-1995', schemas.teamSquadSchema, 404)
+      await validateRoute('/teams/abc/squads/1993-1994', schemas.teamSquadSchema, 404)
     })
   })
 
   describe('/teams/:teamId/statistics', () => {
     test('OK', async () => {
-      await validateRoute('/teams/cov/statistics', schemas.teamStatsSchema, 200)
+      await validateRoute('/teams/shu/statistics', schemas.teamStatsSchema, 200)
     })
 
     test('Not Found', async () => {

@@ -1,0 +1,6 @@
+{
+  "players": "http://localhost:3000/players",
+  "seasons": "http://localhost:3000/seasons",
+  "teams": "http://localhost:3000/teams",
+  "managers": "http://localhost:3000/managers"
+}

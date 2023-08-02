@@ -1,0 +1,65 @@
+{
+  "season": "http://localhost:3000/seasons/1994-1995",
+  "table": [
+    {
+      "player": "http://localhost:3000/players/matt-le-tissier-d558",
+      "assists": 15,
+      "appearances": 41,
+      "minutesPerAssist": 246
+    },
+    {
+      "player": "http://localhost:3000/players/darren-anderton-a498",
+      "assists": 14,
+      "appearances": 37,
+      "minutesPerAssist": 238
+    },
+    {
+      "player": "http://localhost:3000/players/alan-shearer-816a",
+      "assists": 13,
+      "appearances": 42,
+      "minutesPerAssist": 291
+    },
+    {
+      "player": "http://localhost:3000/players/andy-hinchcliffe-7934",
+      "assists": 11,
+      "appearances": 29,
+      "minutesPerAssist": 237
+    },
+    {
+      "player": "http://localhost:3000/players/ryan-giggs-2664",
+      "assists": 11,
+      "appearances": 29,
+      "minutesPerAssist": 237
+    },
+    {
+      "player": "http://localhost:3000/players/bryan-roy-2b19",
+      "assists": 11,
+      "appearances": 37,
+      "minutesPerAssist": 303
+    },
+    {
+      "player": "http://localhost:3000/players/ruel-fox-3698",
+      "assists": 11,
+      "appearances": 40,
+      "minutesPerAssist": 327
+    },
+    {
+      "player": "http://localhost:3000/players/kevin-gallen-f799",
+      "assists": 10,
+      "appearances": 37,
+      "minutesPerAssist": 333
+    },
+    {
+      "player": "http://localhost:3000/players/chris-sutton-1e82",
+      "assists": 10,
+      "appearances": 40,
+      "minutesPerAssist": 360
+    },
+    {
+      "player": "http://localhost:3000/players/jurgen-klinsmann-11b4",
+      "assists": 10,
+      "appearances": 41,
+      "minutesPerAssist": 369
+    }
+  ]
+}

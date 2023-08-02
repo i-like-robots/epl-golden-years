@@ -1,0 +1,28 @@
+{
+  "pulseId": 1768,
+  "optaId": "p1972",
+  "positionCode": "F",
+  "positionName": "Forward",
+  "displayName": "Kevin Phillips",
+  "firstName": "Kevin",
+  "lastName": "Phillips",
+  "dateOfBirth": "1973-07-24",
+  "countryCode": "GB-ENG",
+  "countryName": "England",
+  "history": [
+    {
+      "season": "http://localhost:3000/seasons/1999-2000",
+      "team": "http://localhost:3000/teams/sun"
+    },
+    {
+      "season": "http://localhost:3000/seasons/2000-2001",
+      "team": "http://localhost:3000/teams/sun"
+    },
+    {
+      "season": "http://localhost:3000/seasons/2001-2002",
+      "team": "http://localhost:3000/teams/sun"
+    }
+  ],
+  "statistics": "http://localhost:3000/players/kevin-phillips-b8f6/statistics",
+  "album": "http://localhost:3000/players/kevin-phillips-b8f6/album"
+}

@@ -1,0 +1,7 @@
+{
+  "team": "http://localhost:3000/teams/shu",
+  "squads": [
+    "http://localhost:3000/teams/shu/squads/1992-1993",
+    "http://localhost:3000/teams/shu/squads/1993-1994"
+  ]
+}

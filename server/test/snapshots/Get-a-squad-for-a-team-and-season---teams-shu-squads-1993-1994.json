@@ -1,0 +1,242 @@
+{
+  "team": "http://localhost:3000/teams/shu",
+  "season": "http://localhost:3000/seasons/1993-1994",
+  "players": [
+    {
+      "player": "http://localhost:3000/players/simon-tracey-a284",
+      "appearances": 15,
+      "cleanSheets": 4,
+      "goals": 0,
+      "assists": 0
+    },
+    {
+      "player": "http://localhost:3000/players/alan-kelly-4fa9",
+      "appearances": 30,
+      "cleanSheets": 8,
+      "goals": 0,
+      "assists": 0
+    },
+    {
+      "player": "http://localhost:3000/players/rob-scott-e3ce",
+      "appearances": 0,
+      "cleanSheets": 0,
+      "goals": 0,
+      "assists": 0
+    },
+    {
+      "player": "http://localhost:3000/players/roger-nilsen-ef79",
+      "appearances": 22,
+      "cleanSheets": 7,
+      "goals": 0,
+      "assists": 1
+    },
+    {
+      "player": "http://localhost:3000/players/david-tuttle-f6cd",
+      "appearances": 31,
+      "cleanSheets": 8,
+      "goals": 0,
+      "assists": 0
+    },
+    {
+      "player": "http://localhost:3000/players/tom-cowan-2693",
+      "appearances": 4,
+      "cleanSheets": 0,
+      "goals": 0,
+      "assists": 0
+    },
+    {
+      "player": "http://localhost:3000/players/dave-barnes-9568",
+      "appearances": 2,
+      "cleanSheets": 0,
+      "goals": 0,
+      "assists": 0
+    },
+    {
+      "player": "http://localhost:3000/players/jamie-hoyland-21ff",
+      "appearances": 18,
+      "cleanSheets": 7,
+      "goals": 0,
+      "assists": 0
+    },
+    {
+      "player": "http://localhost:3000/players/paul-beesley-bc88",
+      "appearances": 25,
+      "cleanSheets": 8,
+      "goals": 0,
+      "assists": 0
+    },
+    {
+      "player": "http://localhost:3000/players/glyn-hodges-a297",
+      "appearances": 31,
+      "cleanSheets": 5,
+      "goals": 2,
+      "assists": 3
+    },
+    {
+      "player": "http://localhost:3000/players/charlie-hartfield-b2c6",
+      "appearances": 5,
+      "cleanSheets": 1,
+      "goals": 0,
+      "assists": 0
+    },
+    {
+      "player": "http://localhost:3000/players/mitch-ward-5163",
+      "appearances": 22,
+      "cleanSheets": 5,
+      "goals": 1,
+      "assists": 1
+    },
+    {
+      "player": "http://localhost:3000/players/chris-kamara-c337",
+      "appearances": 16,
+      "cleanSheets": 2,
+      "goals": 0,
+      "assists": 1
+    },
+    {
+      "player": "http://localhost:3000/players/nathan-blake-bdfd",
+      "appearances": 12,
+      "cleanSheets": 3,
+      "goals": 5,
+      "assists": 0
+    },
+    {
+      "player": "http://localhost:3000/players/jostein-flo-349b",
+      "appearances": 33,
+      "cleanSheets": 9,
+      "goals": 9,
+      "assists": 4
+    },
+    {
+      "player": "http://localhost:3000/players/nathan-peel-512c",
+      "appearances": 0,
+      "cleanSheets": 0,
+      "goals": 0,
+      "assists": 0
+    },
+    {
+      "player": "http://localhost:3000/players/bobby-davison-498f",
+      "appearances": 9,
+      "cleanSheets": 2,
+      "goals": 0,
+      "assists": 0
+    },
+    {
+      "player": "http://localhost:3000/players/alan-cork-6ab2",
+      "appearances": 19,
+      "cleanSheets": 0,
+      "goals": 3,
+      "assists": 1
+    },
+    {
+      "player": "http://localhost:3000/players/adrian-littlejohn-7c17",
+      "appearances": 19,
+      "cleanSheets": 1,
+      "goals": 3,
+      "assists": 1
+    },
+    {
+      "player": "http://localhost:3000/players/franz-carr-d279",
+      "appearances": 10,
+      "cleanSheets": 2,
+      "goals": 1,
+      "assists": 1
+    },
+    {
+      "player": "http://localhost:3000/players/carl-bradshaw-81ab",
+      "appearances": 40,
+      "cleanSheets": 8,
+      "goals": 1,
+      "assists": 2
+    },
+    {
+      "player": "http://localhost:3000/players/dane-whitehouse-53f0",
+      "appearances": 38,
+      "cleanSheets": 10,
+      "goals": 5,
+      "assists": 6
+    },
+    {
+      "player": "http://localhost:3000/players/brian-gayle-8171",
+      "appearances": 13,
+      "cleanSheets": 4,
+      "goals": 3,
+      "assists": 1
+    },
+    {
+      "player": "http://localhost:3000/players/john-gannon-6d99",
+      "appearances": 14,
+      "cleanSheets": 3,
+      "goals": 0,
+      "assists": 1
+    },
+    {
+      "player": "http://localhost:3000/players/paul-rogers-fc40",
+      "appearances": 25,
+      "cleanSheets": 7,
+      "goals": 3,
+      "assists": 0
+    },
+    {
+      "player": "http://localhost:3000/players/kevin-gage-3337",
+      "appearances": 21,
+      "cleanSheets": 7,
+      "goals": 0,
+      "assists": 2
+    },
+    {
+      "player": "http://localhost:3000/players/andrew-scott-81e6",
+      "appearances": 15,
+      "cleanSheets": 1,
+      "goals": 1,
+      "assists": 0
+    },
+    {
+      "player": "http://localhost:3000/players/willie-falconer-e14e",
+      "appearances": 23,
+      "cleanSheets": 4,
+      "goals": 4,
+      "assists": 1
+    },
+    {
+      "player": "http://localhost:3000/players/carl-muggleton-b1e3",
+      "appearances": 0,
+      "cleanSheets": 0,
+      "goals": 0,
+      "assists": 0
+    },
+    {
+      "player": "http://localhost:3000/players/jonas-wirmola-82c3",
+      "appearances": 8,
+      "cleanSheets": 1,
+      "goals": 0,
+      "assists": 0
+    },
+    {
+      "player": "http://localhost:3000/players/david-walton-f96b",
+      "appearances": 0,
+      "cleanSheets": 0,
+      "goals": 0,
+      "assists": 0
+    },
+    {
+      "player": "http://localhost:3000/players/peter-duffield-7d36",
+      "appearances": 0,
+      "cleanSheets": 0,
+      "goals": 0,
+      "assists": 0
+    },
+    {
+      "player": "http://localhost:3000/players/john-pemberton-b18c",
+      "appearances": 8,
+      "cleanSheets": 0,
+      "goals": 0,
+      "assists": 0
+    }
+  ],
+  "managers": ["http://localhost:3000/managers/dave-bassett-3f79"],
+  "links": {
+    "previous": "http://localhost:3000/teams/shu/squads/1992-1993",
+    "next": null
+  }
+}
