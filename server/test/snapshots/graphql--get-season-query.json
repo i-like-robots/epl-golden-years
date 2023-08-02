@@ -1,0 +1,457 @@
+{
+  "data": {
+    "season": {
+      "displayName": "The FA Carling Premiership",
+      "ball": "Mitre Pro Max",
+      "start": "1992-08-20",
+      "end": "1993-05-14",
+      "hatTricks": [
+        {
+          "playerId": "chris-sutton-1e82",
+          "player": {
+            "displayName": "Chris Sutton"
+          },
+          "homeTeamId": "blb",
+          "awayTeamId": "cov",
+          "date": "1994-08-27"
+        },
+        {
+          "playerId": "robbie-fowler-41c4",
+          "player": {
+            "displayName": "Robbie Fowler"
+          },
+          "homeTeamId": "liv",
+          "awayTeamId": "ars",
+          "date": "1994-08-28"
+        },
+        {
+          "playerId": "andrei-kanchelskis-58c7",
+          "player": {
+            "displayName": "Andrei Kanchelskis"
+          },
+          "homeTeamId": "mun",
+          "awayTeamId": "mci",
+          "date": "1994-11-10"
+        },
+        {
+          "playerId": "alan-shearer-816a",
+          "player": {
+            "displayName": "Alan Shearer"
+          },
+          "homeTeamId": "blb",
+          "awayTeamId": "qpr",
+          "date": "1994-11-26"
+        },
+        {
+          "playerId": "teddy-sheringham-4d16",
+          "player": {
+            "displayName": "Teddy Sheringham"
+          },
+          "homeTeamId": "tot",
+          "awayTeamId": "new",
+          "date": "1994-12-03"
+        },
+        {
+          "playerId": "tony-cottee-c708",
+          "player": {
+            "displayName": "Tony Cottee"
+          },
+          "homeTeamId": "whu",
+          "awayTeamId": "mci",
+          "date": "1994-12-17"
+        },
+        {
+          "playerId": "alan-shearer-816a",
+          "player": {
+            "displayName": "Alan Shearer"
+          },
+          "homeTeamId": "blb",
+          "awayTeamId": "whu",
+          "date": "1995-01-02"
+        },
+        {
+          "playerId": "alan-shearer-816a",
+          "player": {
+            "displayName": "Alan Shearer"
+          },
+          "homeTeamId": "blb",
+          "awayTeamId": "ips",
+          "date": "1995-01-28"
+        },
+        {
+          "playerId": "tommy-johnson-9400",
+          "player": {
+            "displayName": "Tommy Johnson"
+          },
+          "homeTeamId": "avl",
+          "awayTeamId": "wim",
+          "date": "1995-02-11"
+        },
+        {
+          "playerId": "andy-cole-ee27",
+          "player": {
+            "displayName": "Andy Cole"
+          },
+          "homeTeamId": "mun",
+          "awayTeamId": "ips",
+          "date": "1995-03-04"
+        },
+        {
+          "playerId": "peter-ndlovu-56da",
+          "player": {
+            "displayName": "Peter Ndlovu"
+          },
+          "homeTeamId": "liv",
+          "awayTeamId": "cov",
+          "date": "1995-03-14"
+        },
+        {
+          "playerId": "tony-yeboah-d3db",
+          "player": {
+            "displayName": "Tony Yeboah"
+          },
+          "homeTeamId": "lee",
+          "awayTeamId": "ips",
+          "date": "1995-04-05"
+        },
+        {
+          "playerId": "ian-wright-f40c",
+          "player": {
+            "displayName": "Ian Wright"
+          },
+          "homeTeamId": "ars",
+          "awayTeamId": "ips",
+          "date": "1995-04-15"
+        }
+      ],
+      "table": [
+        {
+          "rank": 1,
+          "teamId": "blb",
+          "points": 89
+        },
+        {
+          "rank": 2,
+          "teamId": "mun",
+          "points": 88
+        },
+        {
+          "rank": 3,
+          "teamId": "nfo",
+          "points": 77
+        },
+        {
+          "rank": 4,
+          "teamId": "liv",
+          "points": 74
+        },
+        {
+          "rank": 5,
+          "teamId": "lee",
+          "points": 73
+        },
+        {
+          "rank": 6,
+          "teamId": "new",
+          "points": 72
+        },
+        {
+          "rank": 7,
+          "teamId": "tot",
+          "points": 62
+        },
+        {
+          "rank": 8,
+          "teamId": "qpr",
+          "points": 60
+        },
+        {
+          "rank": 9,
+          "teamId": "wim",
+          "points": 56
+        },
+        {
+          "rank": 10,
+          "teamId": "sou",
+          "points": 54
+        },
+        {
+          "rank": 11,
+          "teamId": "che",
+          "points": 54
+        },
+        {
+          "rank": 12,
+          "teamId": "ars",
+          "points": 51
+        },
+        {
+          "rank": 13,
+          "teamId": "shw",
+          "points": 51
+        },
+        {
+          "rank": 14,
+          "teamId": "whu",
+          "points": 50
+        },
+        {
+          "rank": 15,
+          "teamId": "eve",
+          "points": 50
+        },
+        {
+          "rank": 16,
+          "teamId": "cov",
+          "points": 50
+        },
+        {
+          "rank": 17,
+          "teamId": "mci",
+          "points": 49
+        },
+        {
+          "rank": 18,
+          "teamId": "avl",
+          "points": 48
+        },
+        {
+          "rank": 19,
+          "teamId": "cry",
+          "points": 45
+        },
+        {
+          "rank": 20,
+          "teamId": "nor",
+          "points": 43
+        },
+        {
+          "rank": 21,
+          "teamId": "lei",
+          "points": 29
+        },
+        {
+          "rank": 22,
+          "teamId": "ips",
+          "points": 27
+        }
+      ],
+      "topAssists": [
+        {
+          "playerId": "matt-le-tissier-d558",
+          "player": {
+            "displayName": "Matt Le Tissier"
+          },
+          "assists": 15
+        },
+        {
+          "playerId": "darren-anderton-a498",
+          "player": {
+            "displayName": "Darren Anderton"
+          },
+          "assists": 14
+        },
+        {
+          "playerId": "alan-shearer-816a",
+          "player": {
+            "displayName": "Alan Shearer"
+          },
+          "assists": 13
+        },
+        {
+          "playerId": "andy-hinchcliffe-7934",
+          "player": {
+            "displayName": "Andy Hinchcliffe"
+          },
+          "assists": 11
+        },
+        {
+          "playerId": "ryan-giggs-2664",
+          "player": {
+            "displayName": "Ryan Giggs"
+          },
+          "assists": 11
+        },
+        {
+          "playerId": "bryan-roy-2b19",
+          "player": {
+            "displayName": "Bryan Roy"
+          },
+          "assists": 11
+        },
+        {
+          "playerId": "ruel-fox-3698",
+          "player": {
+            "displayName": "Ruel Fox"
+          },
+          "assists": 11
+        },
+        {
+          "playerId": "kevin-gallen-f799",
+          "player": {
+            "displayName": "Kevin Gallen"
+          },
+          "assists": 10
+        },
+        {
+          "playerId": "chris-sutton-1e82",
+          "player": {
+            "displayName": "Chris Sutton"
+          },
+          "assists": 10
+        },
+        {
+          "playerId": "jurgen-klinsmann-11b4",
+          "player": {
+            "displayName": "Jürgen Klinsmann"
+          },
+          "assists": 10
+        }
+      ],
+      "topCleanSheets": [
+        {
+          "playerId": "peter-schmeichel-2945",
+          "player": {
+            "displayName": "Peter Schmeichel"
+          },
+          "cleanSheets": 20
+        },
+        {
+          "playerId": "john-lukic-a1c0",
+          "player": {
+            "displayName": "John Lukic"
+          },
+          "cleanSheets": 17
+        },
+        {
+          "playerId": "david-james-fdf3",
+          "player": {
+            "displayName": "David James"
+          },
+          "cleanSheets": 17
+        },
+        {
+          "playerId": "tim-flowers-78ab",
+          "player": {
+            "displayName": "Tim Flowers"
+          },
+          "cleanSheets": 16
+        },
+        {
+          "playerId": "neville-southall-4dfe",
+          "player": {
+            "displayName": "Neville Southall"
+          },
+          "cleanSheets": 14
+        },
+        {
+          "playerId": "nigel-martyn-99a8",
+          "player": {
+            "displayName": "Nigel Martyn"
+          },
+          "cleanSheets": 14
+        },
+        {
+          "playerId": "mark-crossley-9232",
+          "player": {
+            "displayName": "Mark Crossley"
+          },
+          "cleanSheets": 13
+        },
+        {
+          "playerId": "ludek-miklosko-b06c",
+          "player": {
+            "displayName": "Ludek Miklosko"
+          },
+          "cleanSheets": 13
+        },
+        {
+          "playerId": "pavel-srnicek-155f",
+          "player": {
+            "displayName": "Pavel Srnicek"
+          },
+          "cleanSheets": 13
+        },
+        {
+          "playerId": "ian-walker-175f",
+          "player": {
+            "displayName": "Ian Walker"
+          },
+          "cleanSheets": 11
+        }
+      ],
+      "topScorers": [
+        {
+          "playerId": "alan-shearer-816a",
+          "player": {
+            "displayName": "Alan Shearer"
+          },
+          "goals": 34
+        },
+        {
+          "playerId": "robbie-fowler-41c4",
+          "player": {
+            "displayName": "Robbie Fowler"
+          },
+          "goals": 25
+        },
+        {
+          "playerId": "les-ferdinand-459c",
+          "player": {
+            "displayName": "Les Ferdinand"
+          },
+          "goals": 24
+        },
+        {
+          "playerId": "stan-collymore-14b1",
+          "player": {
+            "displayName": "Stan Collymore"
+          },
+          "goals": 22
+        },
+        {
+          "playerId": "jurgen-klinsmann-11b4",
+          "player": {
+            "displayName": "Jürgen Klinsmann"
+          },
+          "goals": 20
+        },
+        {
+          "playerId": "matt-le-tissier-d558",
+          "player": {
+            "displayName": "Matt Le Tissier"
+          },
+          "goals": 19
+        },
+        {
+          "playerId": "ian-wright-f40c",
+          "player": {
+            "displayName": "Ian Wright"
+          },
+          "goals": 18
+        },
+        {
+          "playerId": "teddy-sheringham-4d16",
+          "player": {
+            "displayName": "Teddy Sheringham"
+          },
+          "goals": 18
+        },
+        {
+          "playerId": "uwe-rosler-6bb9",
+          "player": {
+            "displayName": "Uwe Rösler"
+          },
+          "goals": 15
+        },
+        {
+          "playerId": "dean-saunders-175a",
+          "player": {
+            "displayName": "Dean Saunders"
+          },
+          "goals": 15
+        }
+      ]
+    }
+  }
+}

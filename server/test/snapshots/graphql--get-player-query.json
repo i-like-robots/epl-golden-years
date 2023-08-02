@@ -1,0 +1,93 @@
+{
+  "data": {
+    "player": {
+      "displayName": "Kevin Phillips",
+      "positionName": "Forward",
+      "positionCode": "F",
+      "dateOfBirth": "1973-07-24",
+      "countryCode": "GB-ENG",
+      "countryName": "England",
+      "history": [
+        {
+          "seasonId": "1999-2000",
+          "season": {
+            "displayName": "The FA Carling Premiership"
+          },
+          "teamId": "sun"
+        },
+        {
+          "seasonId": "2000-2001",
+          "season": {
+            "displayName": "The FA Carling Premiership"
+          },
+          "teamId": "sun"
+        },
+        {
+          "seasonId": "2001-2002",
+          "season": {
+            "displayName": "The FA Barclaycard Premiership"
+          },
+          "teamId": "sun"
+        }
+      ],
+      "album": [
+        {
+          "seasonId": "1999-2000",
+          "season": {
+            "displayName": "The FA Carling Premiership"
+          },
+          "teamId": "sun",
+          "sticker": "https://www.laststicker.com/i/cards/88/430.jpg"
+        },
+        {
+          "seasonId": "2000-2001",
+          "season": {
+            "displayName": "The FA Carling Premiership"
+          },
+          "teamId": "sun",
+          "sticker": "https://www.laststicker.com/i/cards/498/368.jpg"
+        },
+        {
+          "seasonId": "2001-2002",
+          "season": {
+            "displayName": "The FA Barclaycard Premiership"
+          },
+          "teamId": "sun",
+          "sticker": "https://www.laststicker.com/i/cards/507/387.jpg"
+        }
+      ],
+      "stats": {
+        "total": {
+          "appearances": 107,
+          "goals": 55
+        },
+        "history": [
+          {
+            "seasonId": "1999-2000",
+            "season": {
+              "displayName": "The FA Carling Premiership"
+            },
+            "appearances": 36,
+            "goals": 30
+          },
+          {
+            "seasonId": "2000-2001",
+            "season": {
+              "displayName": "The FA Carling Premiership"
+            },
+            "appearances": 34,
+            "goals": 14
+          },
+          {
+            "seasonId": "2001-2002",
+            "season": {
+              "displayName": "The FA Barclaycard Premiership"
+            },
+            "appearances": 37,
+            "goals": 11
+          }
+        ]
+      }
+    }
+  }
+}

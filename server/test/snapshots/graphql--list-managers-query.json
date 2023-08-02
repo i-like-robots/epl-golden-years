@@ -1,0 +1,18 @@
+{
+  "data": {
+    "managers": [
+      {
+        "managerId": "tony-book-1bd5",
+        "manager": {
+          "displayName": "Tony Book"
+        }
+      },
+      {
+        "managerId": "tony-parkes-4061",
+        "manager": {
+          "displayName": "Tony Parkes"
+        }
+      }
+    ]
+  }
+}

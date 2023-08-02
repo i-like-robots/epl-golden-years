@@ -1,0 +1,54 @@
+{
+  "data": {
+    "players": [
+      {
+        "playerId": "david-forde-018f",
+        "player": {
+          "displayName": "David Forde",
+          "positionName": "Goalkeeper",
+          "stats": {
+            "total": {
+              "goals": 0
+            }
+          }
+        }
+      },
+      {
+        "playerId": "david-james-fdf3",
+        "player": {
+          "displayName": "David James",
+          "positionName": "Goalkeeper",
+          "stats": {
+            "total": {
+              "goals": 0
+            }
+          }
+        }
+      },
+      {
+        "playerId": "david-seaman-3245",
+        "player": {
+          "displayName": "David Seaman",
+          "positionName": "Goalkeeper",
+          "stats": {
+            "total": {
+              "goals": 0
+            }
+          }
+        }
+      },
+      {
+        "playerId": "david-watson-8a39",
+        "player": {
+          "displayName": "David Watson",
+          "positionName": "Goalkeeper",
+          "stats": {
+            "total": {
+              "goals": 0
+            }
+          }
+        }
+      }
+    ]
+  }
+}

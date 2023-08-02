@@ -1,0 +1,18 @@
+{
+  "data": {
+    "seasons": [
+      {
+        "seasonId": "1992-1993",
+        "season": {
+          "displayName": "The FA Carling Premiership"
+        }
+      },
+      {
+        "seasonId": "1993-1994",
+        "season": {
+          "displayName": "The FA Carling Premiership"
+        }
+      }
+    ]
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "data": {
+    "manager": {
+      "displayName": "Terry Venables",
+      "history": [
+        {
+          "seasonId": "2000-2001",
+          "season": {
+            "displayName": "The FA Carling Premiership"
+          },
+          "teamId": "mid"
+        }
+      ]
+    }
+  }
+}

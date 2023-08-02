@@ -1,0 +1,20 @@
+{
+  "data": {
+    "teams": [
+      {
+        "teamId": "mci",
+        "team": {
+          "name": "Manchester City",
+          "grounds": ["Maine Road"]
+        }
+      },
+      {
+        "teamId": "mun",
+        "team": {
+          "name": "Manchester United",
+          "grounds": ["Old Trafford"]
+        }
+      }
+    ]
+  }
+}
