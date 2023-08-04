@@ -6,7 +6,7 @@ const snapshot = require('./lib/snapshot')
 const app = require('../app')
 const schemas = require('../rest/schemas')
 
-describe('App', () => {
+describe('Rest API', () => {
   const ajv = new Ajv({ strict: false })
 
   addFormats(ajv)
