@@ -10,19 +10,31 @@ function sortByCleanSheets(a, b) {
 }
 
 module.exports = function seasonTopCleanSheetsModel(seasonId) {
-  const draft = []
+  const unique = {}
 
   squads.forEach((squad) => {
-    if (squad.seasonId === seasonId) {
-      squad.players.forEach((player) => {
-        if (players[player.playerId].positionCode === 'G' && player.cleanSheets) {
-          draft.push(player)
-        }
-      })
+    if (squad.seasonId !== seasonId) {
+      return
     }
+
+    squad.players.forEach((player) => {
+      if (players[player.playerId].positionCode !== 'G' || player.cleanSheets === 0) {
+        return
+      }
+
+      unique[player.playerId] ??= {
+        playerId: player.playerId,
+        cleanSheets: 0,
+        appearances: 0,
+      }
+
+      unique[player.playerId].cleanSheets += player.cleanSheets
+      unique[player.playerId].appearances += player.appearances
+    })
   })
 
-  // TODO: merge players if needed, i.e. they transferred
+  const draft = Array.from(Object.values(unique))
+
   draft.sort(sortByCleanSheets)
 
   return draft.slice(0, 10).map((player) => ({ ...player }))
