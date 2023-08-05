@@ -23,6 +23,6 @@
       "team": "http://localhost:3000/rest/teams/sun"
     }
   ],
-  "statistics": "http://localhost:3000/rest/players/kevin-phillips-b8f6/statistics",
+  "stats": "http://localhost:3000/rest/players/kevin-phillips-b8f6/stats",
   "album": "http://localhost:3000/rest/players/kevin-phillips-b8f6/album"
 }

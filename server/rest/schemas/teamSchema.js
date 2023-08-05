@@ -59,7 +59,7 @@ module.exports = {
           format: 'uri',
           example: teamSquadsUrl('tot'),
         },
-        statistics: {
+        stats: {
           type: 'string',
           format: 'uri',
           example: teamStatsUrl('tot'),

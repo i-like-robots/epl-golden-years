@@ -521,7 +521,6 @@ const teamType = new GraphQLObjectType({
       type: new GraphQLList(teamSquadType),
       resolve: ({ teamId }) => teamSquadsModel(teamId),
     },
-    // TODO: standardise terminology
     stats: {
       type: new GraphQLNonNull(teamStatsType),
       resolve: ({ teamId }) => teamId,

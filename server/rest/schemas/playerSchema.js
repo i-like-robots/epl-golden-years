@@ -83,7 +83,7 @@ module.exports = {
             },
           },
         },
-        statistics: {
+        stats: {
           type: 'string',
           format: 'uri',
           example: playerStatsUrl('nigel-martyn-99a8'),

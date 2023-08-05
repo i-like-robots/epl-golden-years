@@ -92,13 +92,13 @@ describe('Rest API', () => {
     })
   })
 
-  describe('/players/:playerId/statistics', () => {
+  describe('/players/:playerId/stats', () => {
     test('OK', async () => {
-      await validateRoute('/players/kevin-phillips-b8f6/statistics', schemas.playerStatsSchema, 200)
+      await validateRoute('/players/kevin-phillips-b8f6/stats', schemas.playerStatsSchema, 200)
     })
 
     test('Not Found', async () => {
-      await validateRoute('/players/joe-bloggs-1234/statistics', schemas.playerStatsSchema, 404)
+      await validateRoute('/players/joe-bloggs-1234/stats', schemas.playerStatsSchema, 404)
     })
   })
 
@@ -152,13 +152,13 @@ describe('Rest API', () => {
     })
   })
 
-  describe('/teams/:teamId/statistics', () => {
+  describe('/teams/:teamId/stats', () => {
     test('OK', async () => {
-      await validateRoute('/teams/shu/statistics', schemas.teamStatsSchema, 200)
+      await validateRoute('/teams/shu/stats', schemas.teamStatsSchema, 200)
     })
 
     test('Not Found', async () => {
-      await validateRoute('/teams/abc/statistics', schemas.teamStatsSchema, 404)
+      await validateRoute('/teams/abc/stats', schemas.teamStatsSchema, 404)
     })
   })
 

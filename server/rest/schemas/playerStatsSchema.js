@@ -4,7 +4,7 @@ const errorSchema = require('./errorSchema')
 
 module.exports = {
   tags: ['player'],
-  summary: 'Get statistics for a player',
+  summary: 'Get stats for a player',
   description:
     'Returns statistics for a player both by season and cumulatively for the seasons they played in.',
   params: {

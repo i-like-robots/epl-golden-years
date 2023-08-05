@@ -12,11 +12,11 @@ module.exports = function playerRoute(request, response) {
       team: teamUrl(record.teamId),
     }))
 
-    const statistics = playerStatsUrl(playerId)
+    const stats = playerStatsUrl(playerId)
 
     const album = playerAlbumUrl(playerId)
 
-    response.send({ ...player, history, statistics, album })
+    response.send({ ...player, history, stats, album })
   } else {
     response.code(404)
     response.send({ error: 'Player not found' })

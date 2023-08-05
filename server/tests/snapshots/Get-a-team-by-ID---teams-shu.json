@@ -10,5 +10,5 @@
     "http://localhost:3000/rest/seasons/1993-1994"
   ],
   "squads": "http://localhost:3000/rest/teams/shu/squads",
-  "statistics": "http://localhost:3000/rest/teams/shu/statistics"
+  "stats": "http://localhost:3000/rest/teams/shu/stats"
 }

@@ -14,7 +14,7 @@ function playerAlbumUrl(playerId) {
 }
 
 function playerStatsUrl(playerId) {
-  return join(API_URL, '/rest/players', playerId, '/statistics')
+  return join(API_URL, '/rest/players', playerId, '/stats')
 }
 
 function teamsUrl() {
@@ -34,7 +34,7 @@ function teamSquadUrl(teamId, seasonId) {
 }
 
 function teamStatsUrl(teamId) {
-  return join(API_URL, '/rest/teams', teamId, '/statistics')
+  return join(API_URL, '/rest/teams', teamId, '/stats')
 }
 
 function seasonsUrl() {

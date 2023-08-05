@@ -11,9 +11,9 @@ module.exports = function teamRoute(request, response) {
 
     const squads = teamSquadsUrl(teamId)
 
-    const statistics = teamStatsUrl(teamId)
+    const stats = teamStatsUrl(teamId)
 
-    response.send({ ...team, seasons, squads, statistics })
+    response.send({ ...team, seasons, squads, stats })
   } else {
     response.code(404)
     response.send({ error: 'Team not found' })
