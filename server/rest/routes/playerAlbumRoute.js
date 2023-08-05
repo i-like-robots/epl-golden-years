@@ -10,8 +10,7 @@ module.exports = function playerAlbumRoute(request, response) {
     const data = playerAlbumModel(playerId).map((sticker) => ({
       season: seasonUrl(sticker.seasonId),
       team: teamUrl(sticker.teamId),
-      // TODO: standardise on url or sticker
-      url: sticker.sticker,
+      sticker: sticker.sticker,
     }))
 
     response.send({ player: playerUrl(playerId), stickers: data })

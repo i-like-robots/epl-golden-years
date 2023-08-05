@@ -5,7 +5,7 @@ const errorSchema = require('./errorSchema')
 module.exports = {
   tags: ['player'],
   summary: 'Get an album for a player',
-  description: 'Returns an album of stickers for a player.',
+  description: 'Returns an album of football stickers for a player.',
   params: {
     playerId: {
       type: 'string',
@@ -38,7 +38,7 @@ module.exports = {
                 format: 'uri',
                 example: teamUrl('lee'),
               },
-              url: {
+              sticker: {
                 type: 'string',
                 format: 'uri',
                 example: 'https://www.laststicker.com/i/cards/88/190.jpg',
