@@ -10,6 +10,7 @@ module.exports = function graphqlRouter(app, _, done) {
   app.post('/', handler)
 
   app.options('/', (_, response) => response.send(gql))
+  app.get('/schema.gql', (_, response) => response.send(gql))
 
   done()
 }

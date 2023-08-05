@@ -98,7 +98,7 @@ module.exports = async function restRouter(app, _, done) {
 
   app.get('/managers/:managerId', { schema: managerSchema }, managerRoute)
 
-  app.get('/swagger', (_, response) => {
+  app.get('/schema.json', (_, response) => {
     response.send(app.swagger())
   })
 
