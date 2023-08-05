@@ -6,7 +6,7 @@ const app = fastify({
   logger: { level: process.env.LOG_LEVEL || 'info' },
 })
 
-app.register(restRouter)
+app.register(restRouter, { prefix: '/rest' })
 
 app.register(graphqlRouter, { prefix: '/graphql' })
 

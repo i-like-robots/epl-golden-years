@@ -1,19 +1,19 @@
 {
-  "player": "http://localhost:3000/players/kevin-phillips-b8f6",
+  "player": "http://localhost:3000/rest/players/kevin-phillips-b8f6",
   "stickers": [
     {
-      "season": "http://localhost:3000/seasons/1999-2000",
-      "team": "http://localhost:3000/teams/sun",
+      "season": "http://localhost:3000/rest/seasons/1999-2000",
+      "team": "http://localhost:3000/rest/teams/sun",
       "url": "https://www.laststicker.com/i/cards/88/430.jpg"
     },
     {
-      "season": "http://localhost:3000/seasons/2000-2001",
-      "team": "http://localhost:3000/teams/sun",
+      "season": "http://localhost:3000/rest/seasons/2000-2001",
+      "team": "http://localhost:3000/rest/teams/sun",
       "url": "https://www.laststicker.com/i/cards/498/368.jpg"
     },
     {
-      "season": "http://localhost:3000/seasons/2001-2002",
-      "team": "http://localhost:3000/teams/sun",
+      "season": "http://localhost:3000/rest/seasons/2001-2002",
+      "team": "http://localhost:3000/rest/teams/sun",
       "url": "https://www.laststicker.com/i/cards/507/387.jpg"
     }
   ]

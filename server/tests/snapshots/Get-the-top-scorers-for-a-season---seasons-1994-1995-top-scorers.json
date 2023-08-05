@@ -1,62 +1,62 @@
 {
-  "season": "http://localhost:3000/seasons/1994-1995",
+  "season": "http://localhost:3000/rest/seasons/1994-1995",
   "table": [
     {
-      "player": "http://localhost:3000/players/alan-shearer-816a",
+      "player": "http://localhost:3000/rest/players/alan-shearer-816a",
       "goals": 34,
       "appearances": 42,
       "minutesPerGoal": 111
     },
     {
-      "player": "http://localhost:3000/players/robbie-fowler-41c4",
+      "player": "http://localhost:3000/rest/players/robbie-fowler-41c4",
       "goals": 25,
       "appearances": 42,
       "minutesPerGoal": 151
     },
     {
-      "player": "http://localhost:3000/players/les-ferdinand-459c",
+      "player": "http://localhost:3000/rest/players/les-ferdinand-459c",
       "goals": 24,
       "appearances": 37,
       "minutesPerGoal": 139
     },
     {
-      "player": "http://localhost:3000/players/stan-collymore-14b1",
+      "player": "http://localhost:3000/rest/players/stan-collymore-14b1",
       "goals": 22,
       "appearances": 37,
       "minutesPerGoal": 151
     },
     {
-      "player": "http://localhost:3000/players/jurgen-klinsmann-11b4",
+      "player": "http://localhost:3000/rest/players/jurgen-klinsmann-11b4",
       "goals": 20,
       "appearances": 41,
       "minutesPerGoal": 185
     },
     {
-      "player": "http://localhost:3000/players/matt-le-tissier-d558",
+      "player": "http://localhost:3000/rest/players/matt-le-tissier-d558",
       "goals": 19,
       "appearances": 41,
       "minutesPerGoal": 194
     },
     {
-      "player": "http://localhost:3000/players/ian-wright-f40c",
+      "player": "http://localhost:3000/rest/players/ian-wright-f40c",
       "goals": 18,
       "appearances": 31,
       "minutesPerGoal": 155
     },
     {
-      "player": "http://localhost:3000/players/teddy-sheringham-4d16",
+      "player": "http://localhost:3000/rest/players/teddy-sheringham-4d16",
       "goals": 18,
       "appearances": 42,
       "minutesPerGoal": 210
     },
     {
-      "player": "http://localhost:3000/players/uwe-rosler-6bb9",
+      "player": "http://localhost:3000/rest/players/uwe-rosler-6bb9",
       "goals": 15,
       "appearances": 31,
       "minutesPerGoal": 186
     },
     {
-      "player": "http://localhost:3000/players/dean-saunders-175a",
+      "player": "http://localhost:3000/rest/players/dean-saunders-175a",
       "goals": 15,
       "appearances": 39,
       "minutesPerGoal": 234

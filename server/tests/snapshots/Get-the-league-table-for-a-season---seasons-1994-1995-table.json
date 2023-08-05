@@ -1,8 +1,8 @@
 {
-  "season": "http://localhost:3000/seasons/1994-1995",
+  "season": "http://localhost:3000/rest/seasons/1994-1995",
   "table": [
     {
-      "team": "http://localhost:3000/teams/blb",
+      "team": "http://localhost:3000/rest/teams/blb",
       "rank": 1,
       "points": 89,
       "played": 42,
@@ -14,7 +14,7 @@
       "diff": 41
     },
     {
-      "team": "http://localhost:3000/teams/mun",
+      "team": "http://localhost:3000/rest/teams/mun",
       "rank": 2,
       "points": 88,
       "played": 42,
@@ -26,7 +26,7 @@
       "diff": 49
     },
     {
-      "team": "http://localhost:3000/teams/nfo",
+      "team": "http://localhost:3000/rest/teams/nfo",
       "rank": 3,
       "points": 77,
       "played": 42,
@@ -38,7 +38,7 @@
       "diff": 29
     },
     {
-      "team": "http://localhost:3000/teams/liv",
+      "team": "http://localhost:3000/rest/teams/liv",
       "rank": 4,
       "points": 74,
       "played": 42,
@@ -50,7 +50,7 @@
       "diff": 28
     },
     {
-      "team": "http://localhost:3000/teams/lee",
+      "team": "http://localhost:3000/rest/teams/lee",
       "rank": 5,
       "points": 73,
       "played": 42,
@@ -62,7 +62,7 @@
       "diff": 21
     },
     {
-      "team": "http://localhost:3000/teams/new",
+      "team": "http://localhost:3000/rest/teams/new",
       "rank": 6,
       "points": 72,
       "played": 42,
@@ -74,7 +74,7 @@
       "diff": 20
     },
     {
-      "team": "http://localhost:3000/teams/tot",
+      "team": "http://localhost:3000/rest/teams/tot",
       "rank": 7,
       "points": 62,
       "played": 42,
@@ -86,7 +86,7 @@
       "diff": 8
     },
     {
-      "team": "http://localhost:3000/teams/qpr",
+      "team": "http://localhost:3000/rest/teams/qpr",
       "rank": 8,
       "points": 60,
       "played": 42,
@@ -98,7 +98,7 @@
       "diff": 2
     },
     {
-      "team": "http://localhost:3000/teams/wim",
+      "team": "http://localhost:3000/rest/teams/wim",
       "rank": 9,
       "points": 56,
       "played": 42,
@@ -110,7 +110,7 @@
       "diff": -17
     },
     {
-      "team": "http://localhost:3000/teams/sou",
+      "team": "http://localhost:3000/rest/teams/sou",
       "rank": 10,
       "points": 54,
       "played": 42,
@@ -122,7 +122,7 @@
       "diff": -2
     },
     {
-      "team": "http://localhost:3000/teams/che",
+      "team": "http://localhost:3000/rest/teams/che",
       "rank": 11,
       "points": 54,
       "played": 42,
@@ -134,7 +134,7 @@
       "diff": -5
     },
     {
-      "team": "http://localhost:3000/teams/ars",
+      "team": "http://localhost:3000/rest/teams/ars",
       "rank": 12,
       "points": 51,
       "played": 42,
@@ -146,7 +146,7 @@
       "diff": 3
     },
     {
-      "team": "http://localhost:3000/teams/shw",
+      "team": "http://localhost:3000/rest/teams/shw",
       "rank": 13,
       "points": 51,
       "played": 42,
@@ -158,7 +158,7 @@
       "diff": -8
     },
     {
-      "team": "http://localhost:3000/teams/whu",
+      "team": "http://localhost:3000/rest/teams/whu",
       "rank": 14,
       "points": 50,
       "played": 42,
@@ -170,7 +170,7 @@
       "diff": -4
     },
     {
-      "team": "http://localhost:3000/teams/eve",
+      "team": "http://localhost:3000/rest/teams/eve",
       "rank": 15,
       "points": 50,
       "played": 42,
@@ -182,7 +182,7 @@
       "diff": -7
     },
     {
-      "team": "http://localhost:3000/teams/cov",
+      "team": "http://localhost:3000/rest/teams/cov",
       "rank": 16,
       "points": 50,
       "played": 42,
@@ -194,7 +194,7 @@
       "diff": -18
     },
     {
-      "team": "http://localhost:3000/teams/mci",
+      "team": "http://localhost:3000/rest/teams/mci",
       "rank": 17,
       "points": 49,
       "played": 42,
@@ -206,7 +206,7 @@
       "diff": -11
     },
     {
-      "team": "http://localhost:3000/teams/avl",
+      "team": "http://localhost:3000/rest/teams/avl",
       "rank": 18,
       "points": 48,
       "played": 42,
@@ -218,7 +218,7 @@
       "diff": -5
     },
     {
-      "team": "http://localhost:3000/teams/cry",
+      "team": "http://localhost:3000/rest/teams/cry",
       "rank": 19,
       "points": 45,
       "played": 42,
@@ -230,7 +230,7 @@
       "diff": -15
     },
     {
-      "team": "http://localhost:3000/teams/nor",
+      "team": "http://localhost:3000/rest/teams/nor",
       "rank": 20,
       "points": 43,
       "played": 42,
@@ -242,7 +242,7 @@
       "diff": -17
     },
     {
-      "team": "http://localhost:3000/teams/lei",
+      "team": "http://localhost:3000/rest/teams/lei",
       "rank": 21,
       "points": 29,
       "played": 42,
@@ -254,7 +254,7 @@
       "diff": -35
     },
     {
-      "team": "http://localhost:3000/teams/ips",
+      "team": "http://localhost:3000/rest/teams/ips",
       "rank": 22,
       "points": 27,
       "played": 42,

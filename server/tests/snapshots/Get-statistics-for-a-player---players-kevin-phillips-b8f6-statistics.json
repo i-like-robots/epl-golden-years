@@ -1,5 +1,5 @@
 {
-  "player": "http://localhost:3000/players/kevin-phillips-b8f6",
+  "player": "http://localhost:3000/rest/players/kevin-phillips-b8f6",
   "total": {
     "appearances": 107,
     "cleanSheets": 28,
@@ -9,7 +9,7 @@
   },
   "history": [
     {
-      "season": "http://localhost:3000/seasons/1999-2000",
+      "season": "http://localhost:3000/rest/seasons/1999-2000",
       "appearances": 36,
       "cleanSheets": 8,
       "goals": 30,
@@ -17,7 +17,7 @@
       "hatTricks": 1
     },
     {
-      "season": "http://localhost:3000/seasons/2000-2001",
+      "season": "http://localhost:3000/rest/seasons/2000-2001",
       "appearances": 34,
       "cleanSheets": 9,
       "goals": 14,
@@ -25,7 +25,7 @@
       "hatTricks": 1
     },
     {
-      "season": "http://localhost:3000/seasons/2001-2002",
+      "season": "http://localhost:3000/rest/seasons/2001-2002",
       "appearances": 37,
       "cleanSheets": 11,
       "goals": 11,

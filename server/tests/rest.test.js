@@ -14,7 +14,7 @@ describe('Rest API', () => {
   const validateRoute = async (path, schema, statusCode) => {
     const response = await app.inject({
       method: 'GET',
-      url: path,
+      url: `/rest${path}`,
     })
 
     ajv.validate(schema.response[statusCode], response.json())

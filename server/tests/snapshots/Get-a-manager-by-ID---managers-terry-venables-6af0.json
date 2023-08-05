@@ -9,8 +9,8 @@
   "countryName": "England",
   "history": [
     {
-      "season": "http://localhost:3000/seasons/2000-2001",
-      "team": "http://localhost:3000/teams/mid"
+      "season": "http://localhost:3000/rest/seasons/2000-2001",
+      "team": "http://localhost:3000/rest/teams/mid"
     }
   ]
 }

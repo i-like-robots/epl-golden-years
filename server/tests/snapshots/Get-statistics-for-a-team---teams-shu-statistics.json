@@ -1,5 +1,5 @@
 {
-  "team": "http://localhost:3000/teams/shu",
+  "team": "http://localhost:3000/rest/teams/shu",
   "total": {
     "played": 84,
     "wins": 22,
@@ -10,7 +10,7 @@
   },
   "history": [
     {
-      "season": "http://localhost:3000/seasons/1992-1993",
+      "season": "http://localhost:3000/rest/seasons/1992-1993",
       "played": 42,
       "wins": 14,
       "draws": 10,
@@ -19,7 +19,7 @@
       "against": 53
     },
     {
-      "season": "http://localhost:3000/seasons/1993-1994",
+      "season": "http://localhost:3000/rest/seasons/1993-1994",
       "played": 42,
       "wins": 8,
       "draws": 18,

@@ -5,7 +5,10 @@
   "shortName": "Sheffield Utd",
   "grounds": ["Bramall Lane"],
   "city": "Sheffield",
-  "seasons": ["http://localhost:3000/seasons/1992-1993", "http://localhost:3000/seasons/1993-1994"],
-  "squads": "http://localhost:3000/teams/shu/squads",
-  "statistics": "http://localhost:3000/teams/shu/statistics"
+  "seasons": [
+    "http://localhost:3000/rest/seasons/1992-1993",
+    "http://localhost:3000/rest/seasons/1993-1994"
+  ],
+  "squads": "http://localhost:3000/rest/teams/shu/squads",
+  "statistics": "http://localhost:3000/rest/teams/shu/statistics"
 }
