@@ -410,6 +410,13 @@
           "goals": 22
         },
         {
+          "playerId": "andy-cole-ee27",
+          "player": {
+            "displayName": "Andy Cole"
+          },
+          "goals": 21
+        },
+        {
           "playerId": "jurgen-klinsmann-11b4",
           "player": {
             "displayName": "Jürgen Klinsmann"
@@ -441,13 +448,6 @@
           "playerId": "uwe-rosler-6bb9",
           "player": {
             "displayName": "Uwe Rösler"
-          },
-          "goals": 15
-        },
-        {
-          "playerId": "dean-saunders-175a",
-          "player": {
-            "displayName": "Dean Saunders"
           },
           "goals": 15
         }

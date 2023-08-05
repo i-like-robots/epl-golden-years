@@ -26,6 +26,12 @@
       "minutesPerGoal": 151
     },
     {
+      "player": "http://localhost:3000/rest/players/andy-cole-ee27",
+      "goals": 21,
+      "appearances": 36,
+      "minutesPerGoal": 154
+    },
+    {
       "player": "http://localhost:3000/rest/players/jurgen-klinsmann-11b4",
       "goals": 20,
       "appearances": 41,
@@ -54,12 +60,6 @@
       "goals": 15,
       "appearances": 31,
       "minutesPerGoal": 186
-    },
-    {
-      "player": "http://localhost:3000/rest/players/dean-saunders-175a",
-      "goals": 15,
-      "appearances": 39,
-      "minutesPerGoal": 234
     }
   ]
 }
