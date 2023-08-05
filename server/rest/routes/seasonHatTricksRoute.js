@@ -1,5 +1,5 @@
 const seasonHatTricksModel = require('../../models/seasonHatTricksModel')
-const { playerUrl, seasonUrl, teamUrl } = require('../../lib/urls')
+const { playerUrl, seasonUrl, teamUrl } = require('../urls')
 
 module.exports = function seasonHatTricksRoute(request, response) {
   const { seasonId } = request.params

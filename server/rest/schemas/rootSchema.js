@@ -1,4 +1,4 @@
-const { playersUrl, seasonsUrl, teamsUrl, managersUrl } = require('../../lib/urls')
+const { playersUrl, seasonsUrl, teamsUrl, managersUrl } = require('../urls')
 
 module.exports = {
   tags: [],

@@ -1,5 +1,5 @@
 const { POSITION_CODES } = require('../../lib/constants')
-const { playerUrl } = require('../../lib/urls')
+const { playerUrl } = require('../urls')
 const errorSchema = require('./errorSchema')
 
 module.exports = {

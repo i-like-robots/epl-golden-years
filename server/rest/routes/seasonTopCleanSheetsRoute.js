@@ -1,5 +1,5 @@
 const seasonTopCleanSheetsModel = require('../../models/seasonTopCleanSheetsModel')
-const { playerUrl, seasonUrl } = require('../../lib/urls')
+const { playerUrl, seasonUrl } = require('../urls')
 
 module.exports = function seasonTopCleanSheetsRoute(request, response) {
   const { seasonId } = request.params

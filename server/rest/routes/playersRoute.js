@@ -1,5 +1,5 @@
 const playersModel = require('../../models/playersModel')
-const { playerUrl } = require('../../lib/urls')
+const { playerUrl } = require('../urls')
 
 module.exports = function playerRoute(request, response) {
   const { name, position } = request.query

@@ -1,5 +1,5 @@
 const managersModel = require('../../models/managersModel')
-const { managerUrl } = require('../../lib/urls')
+const { managerUrl } = require('../urls')
 
 module.exports = function managersRoute(request, response) {
   const { name } = request.query

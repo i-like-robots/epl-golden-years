@@ -1,5 +1,5 @@
 const seasonTopAssistsModel = require('../../models/seasonTopAssistsModel')
-const { playerUrl, seasonUrl } = require('../../lib/urls')
+const { playerUrl, seasonUrl } = require('../urls')
 
 module.exports = function seasonTopAssistsRoute(request, response) {
   const { seasonId } = request.params

@@ -1,5 +1,5 @@
 const managerModel = require('../../models/managerModel')
-const { seasonUrl, teamUrl } = require('../../lib/urls')
+const { seasonUrl, teamUrl } = require('../urls')
 
 module.exports = function managerRoute(request, response) {
   const { managerId } = request.params

@@ -1,5 +1,5 @@
 const { TEAM_ID, SEASON_ID } = require('../../lib/constants')
-const { managerUrl, teamUrl, seasonUrl, playerUrl } = require('../../lib/urls')
+const { managerUrl, teamUrl, seasonUrl, playerUrl } = require('../urls')
 const errorSchema = require('./errorSchema')
 
 module.exports = {

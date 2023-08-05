@@ -1,6 +1,6 @@
 const playerStatsModel = require('../../models/playerStatsModel')
 const playerStatsHistory = require('../../models/playerStatsHistoryModel')
-const { playerUrl, seasonUrl } = require('../../lib/urls')
+const { playerUrl, seasonUrl } = require('../urls')
 
 module.exports = function playerStatsRoute(request, response) {
   const { playerId } = request.params

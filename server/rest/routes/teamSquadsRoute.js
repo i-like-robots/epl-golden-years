@@ -1,5 +1,5 @@
 const teamSquadsModel = require('../../models/teamSquadsModel')
-const { teamSquadUrl, teamUrl } = require('../../lib/urls')
+const { teamSquadUrl, teamUrl } = require('../urls')
 
 module.exports = function teamSquadsRoute(request, response) {
   const { teamId } = request.params

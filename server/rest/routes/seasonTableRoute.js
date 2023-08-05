@@ -1,5 +1,5 @@
 const seasonTableModel = require('../../models/seasonTableModel')
-const { seasonUrl, teamUrl } = require('../../lib/urls')
+const { seasonUrl, teamUrl } = require('../urls')
 
 module.exports = function seasonTableRoute(request, response) {
   const { seasonId } = request.params

@@ -1,7 +1,7 @@
 const teamSquadModel = require('../../models/teamSquadModel')
 const teamSquadManagersModel = require('../../models/teamSquadManagersModel')
 const teamSquadLinksModel = require('../../models/teamSquadLinksModel')
-const { seasonUrl, teamUrl, playerUrl, managerUrl, teamSquadUrl } = require('../../lib/urls')
+const { seasonUrl, teamUrl, playerUrl, managerUrl, teamSquadUrl } = require('../urls')
 
 module.exports = function teamSquadRoute(request, response) {
   const { teamId, seasonId } = request.params

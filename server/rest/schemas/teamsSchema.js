@@ -1,4 +1,4 @@
-const { teamUrl } = require('../../lib/urls')
+const { teamUrl } = require('../urls')
 const errorSchema = require('./errorSchema')
 
 module.exports = {

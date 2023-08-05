@@ -7,7 +7,7 @@ const {
   seasonTopAssistsUrl,
   seasonTopCleanSheetsUrl,
   seasonUrl,
-} = require('../../lib/urls')
+} = require('../urls')
 
 module.exports = function seasonRoute(request, response) {
   const { seasonId } = request.params

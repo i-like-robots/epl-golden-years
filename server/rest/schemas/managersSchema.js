@@ -1,4 +1,4 @@
-const { managerUrl } = require('../../lib/urls')
+const { managerUrl } = require('../urls')
 const errorSchema = require('./errorSchema')
 
 module.exports = {

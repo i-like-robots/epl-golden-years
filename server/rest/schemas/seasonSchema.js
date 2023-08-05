@@ -5,7 +5,7 @@ const {
   seasonTopAssistsUrl,
   seasonHatTricksUrl,
   seasonTopCleanSheetsUrl,
-} = require('../../lib/urls')
+} = require('../urls')
 const errorSchema = require('./errorSchema')
 
 module.exports = {

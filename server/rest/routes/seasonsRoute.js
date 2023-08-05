@@ -1,5 +1,5 @@
 const seasonsModel = require('../../models/seasonsModel')
-const { seasonUrl } = require('../../lib/urls')
+const { seasonUrl } = require('../urls')
 
 module.exports = function seasonsRoute(request, response) {
   const { team } = request.query
