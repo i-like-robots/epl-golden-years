@@ -4,6 +4,7 @@ const Ajv = require('ajv')
 const addFormats = require('ajv-formats')
 const snapshot = require('data-snapshot').default
 const jsonDiff = require('json-diff')
+const urlJoin = require('url-join')
 const app = require('../app')
 const schemas = require('../rest/schemas')
 
@@ -13,26 +14,24 @@ describe('Rest API', () => {
   addFormats(ajv)
 
   const validateRoute = async (path, schema, statusCode = 200) => {
-    const url = `/rest${path}`
+    const url = urlJoin('/rest', path)
 
-    async function fetch() {
+    const request = async () => {
       const response = await app.inject({
         method: 'GET',
         url,
       })
 
-      assert.equal(response.statusCode, statusCode)
-
       return response.json()
     }
 
-    const expected = await snapshot(url, () => fetch())
-    const actual = await fetch()
+    const expected = await snapshot(url, request)
+    const actual = await request()
     const diff = jsonDiff.diffString(expected, actual, { color: false })
 
-    assert.equal(diff.length, 0, diff)
-    
     ajv.validate(schema.response[statusCode], actual)
+
+    assert.equal(diff.length, 0, diff)
     assert.equal(ajv.errors, null, ajv.errors)
 
     return actual

@@ -6,7 +6,7 @@ const app = require('../app')
 
 describe('GraphQL API', () => {
   const validateQuery = async (testName, query) => {
-    async function fetch () {
+    const request = async () => {
       const response = await app.inject({
         method: 'POST',
         url: '/graphql',
@@ -19,8 +19,8 @@ describe('GraphQL API', () => {
       return response.json()
     }
 
-    const expected = await snapshot(testName, () => fetch())
-    const actual = await fetch()
+    const expected = await snapshot(testName, request)
+    const actual = await request()
     const diff = jsonDiff.diffString(expected, actual, { color: false })
 
     assert.equal(actual.errors, undefined, actual.errors)
