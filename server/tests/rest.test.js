@@ -2,7 +2,7 @@ const { after, before, describe, test } = require('node:test')
 const assert = require('node:assert')
 const Ajv = require('ajv')
 const addFormats = require('ajv-formats')
-const snapshot = require('./lib/snapshot')
+const snapshot = require('data-snapshot').default
 const app = require('../app')
 const schemas = require('../rest/schemas')
 
@@ -11,23 +11,29 @@ describe('Rest API', () => {
 
   addFormats(ajv)
 
-  const validateRoute = async (path, schema, statusCode) => {
-    const response = await app.inject({
-      method: 'GET',
-      url: `/rest${path}`,
-    })
+  const validateRoute = async (path, schema, statusCode = 200) => {
+    const url = `/rest${path}`
 
-    ajv.validate(schema.response[statusCode], response.json())
+    async function fetch() {
+      const response = await app.inject({
+        method: 'GET',
+        url,
+      })
 
-    assert.equal(response.statusCode, statusCode)
-    assert.equal(ajv.errors, null)
+      assert.equal(response.statusCode, statusCode)
 
-    if (response.statusCode === 200) {
-      const name = `${schema.summary}--${path}`
-      await snapshot(response.json(), name)
+      return response.json()
     }
 
-    return response
+    const expected = await snapshot(url, () => fetch())
+    const actual = await fetch()
+
+    assert.deepStrictEqual(actual, expected)
+    
+    ajv.validate(schema.response[statusCode], actual)
+    assert.equal(ajv.errors, null)
+
+    return actual
   }
 
   before(async () => {
@@ -46,22 +52,19 @@ describe('Rest API', () => {
 
   describe('/players', () => {
     test('OK', async () => {
-      const response = await validateRoute('/players', schemas.playersSchema, 200)
-      const data = response.json()
+      const data = await validateRoute('/players', schemas.playersSchema, 200)
 
       assert.equal(data.length, 2105)
     })
 
     test('OK - with name filter', async () => {
-      const response = await validateRoute('/players?name=tony', schemas.playersSchema, 200)
-      const data = response.json()
+      const data = await validateRoute('/players?name=tony', schemas.playersSchema, 200)
 
       assert.equal(data.length, 23)
     })
 
     test('OK - with position filter', async () => {
-      const response = await validateRoute('/players?position=G', schemas.playersSchema, 200)
-      const data = response.json()
+      const data = await validateRoute('/players?position=G', schemas.playersSchema, 200)
 
       assert.equal(data.length, 210)
     })
@@ -104,15 +107,13 @@ describe('Rest API', () => {
 
   describe('/teams', () => {
     test('OK', async () => {
-      const response = await validateRoute('/teams', schemas.teamsSchema, 200)
-      const data = response.json()
+      const data = await validateRoute('/teams', schemas.teamsSchema, 200)
 
       assert.equal(data.length, 34)
     })
 
     test('OK - with name filter', async () => {
-      const response = await validateRoute('/teams?name=man', schemas.teamsSchema, 200)
-      const data = response.json()
+      const data = await validateRoute('/teams?name=man', schemas.teamsSchema, 200)
 
       assert.equal(data.length, 2)
     })
@@ -164,15 +165,13 @@ describe('Rest API', () => {
 
   describe('/seasons', () => {
     test('OK', async () => {
-      const response = await validateRoute('/seasons', schemas.seasonsSchema, 200)
-      const data = response.json()
+      const data = await validateRoute('/seasons', schemas.seasonsSchema, 200)
 
       assert.equal(data.length, 10)
     })
 
     test('OK - with team filter', async () => {
-      const response = await validateRoute('/seasons?team=shu', schemas.seasonsSchema, 200)
-      const data = response.json()
+      const data = await validateRoute('/seasons?team=shu', schemas.seasonsSchema, 200)
 
       assert.equal(data.length, 2)
     })
@@ -252,15 +251,13 @@ describe('Rest API', () => {
 
   describe('/managers', () => {
     test('OK', async () => {
-      const response = await validateRoute('/managers', schemas.managersSchema, 200)
-      const data = response.json()
+      const data = await validateRoute('/managers', schemas.managersSchema, 200)
 
       assert.equal(data.length, 98)
     })
 
     test('OK - with name filter', async () => {
-      const response = await validateRoute('/managers?name=tony', schemas.managersSchema, 200)
-      const data = response.json()
+      const data = await validateRoute('/managers?name=tony', schemas.managersSchema, 200)
 
       assert.equal(data.length, 2)
     })

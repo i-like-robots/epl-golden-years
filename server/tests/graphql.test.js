@@ -1,28 +1,28 @@
 const { describe, test } = require('node:test')
 const assert = require('node:assert')
-const snapshot = require('./lib/snapshot')
+const snapshot = require('data-snapshot').default
 const app = require('../app')
 
 describe('GraphQL API', () => {
-  const validateQuery = async (operation, query) => {
-    const response = await app.inject({
-      method: 'POST',
-      url: '/graphql',
-      headers: {
-        'Content-Type': 'application/json',
-      },
-      body: JSON.stringify({ query }),
-    })
+  const validateQuery = async (testName, query) => {
+    async function fetch () {
+      const response = await app.inject({
+        method: 'POST',
+        url: '/graphql',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({ query }),
+      })
 
-    const data = response.json()
+      return response.json()
+    }
 
-    assert.equal(response.statusCode, 200)
-    assert.equal(data.errors, undefined)
+    const expected = await snapshot(testName, () => fetch())
+    const actual = await fetch()
 
-    const name = `graphql--${operation}`
-    await snapshot(data, name)
-
-    return response
+    assert.equal(actual.errors, undefined)
+    assert.deepStrictEqual(actual, expected)
   }
 
   test('get manager query', async (ctx) => {

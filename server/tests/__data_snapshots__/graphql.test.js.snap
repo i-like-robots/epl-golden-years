@@ -1,0 +1,1444 @@
+// Data Snap v1
+
+exports['get manager query'] = {
+  "data": {
+    "data": {
+      "manager": {
+        "displayName": "Terry Venables",
+        "history": [
+          {
+            "seasonId": "2000-2001",
+            "season": {
+              "displayName": "The FA Carling Premiership"
+            },
+            "teamId": "mid",
+            "team": {
+              "name": "Middlesbrough"
+            }
+          }
+        ]
+      }
+    }
+  },
+  "metadata": {
+    "expires": null
+  }
+}
+
+exports['get player query'] = {
+  "data": {
+    "data": {
+      "player": {
+        "displayName": "Kevin Phillips",
+        "positionName": "Forward",
+        "positionCode": "F",
+        "dateOfBirth": "1973-07-24",
+        "countryCode": "GB-ENG",
+        "countryName": "England",
+        "history": [
+          {
+            "seasonId": "1999-2000",
+            "season": {
+              "displayName": "The FA Carling Premiership"
+            },
+            "teamId": "sun",
+            "team": {
+              "name": "Sunderland"
+            }
+          },
+          {
+            "seasonId": "2000-2001",
+            "season": {
+              "displayName": "The FA Carling Premiership"
+            },
+            "teamId": "sun",
+            "team": {
+              "name": "Sunderland"
+            }
+          },
+          {
+            "seasonId": "2001-2002",
+            "season": {
+              "displayName": "The FA Barclaycard Premiership"
+            },
+            "teamId": "sun",
+            "team": {
+              "name": "Sunderland"
+            }
+          }
+        ],
+        "album": [
+          {
+            "seasonId": "1999-2000",
+            "season": {
+              "displayName": "The FA Carling Premiership"
+            },
+            "teamId": "sun",
+            "team": {
+              "name": "Sunderland"
+            },
+            "sticker": "https://www.laststicker.com/i/cards/88/430.jpg"
+          },
+          {
+            "seasonId": "2000-2001",
+            "season": {
+              "displayName": "The FA Carling Premiership"
+            },
+            "teamId": "sun",
+            "team": {
+              "name": "Sunderland"
+            },
+            "sticker": "https://www.laststicker.com/i/cards/498/368.jpg"
+          },
+          {
+            "seasonId": "2001-2002",
+            "season": {
+              "displayName": "The FA Barclaycard Premiership"
+            },
+            "teamId": "sun",
+            "team": {
+              "name": "Sunderland"
+            },
+            "sticker": "https://www.laststicker.com/i/cards/507/387.jpg"
+          }
+        ],
+        "stats": {
+          "total": {
+            "appearances": 107,
+            "goals": 55
+          },
+          "history": [
+            {
+              "seasonId": "1999-2000",
+              "season": {
+                "displayName": "The FA Carling Premiership"
+              },
+              "appearances": 36,
+              "goals": 30
+            },
+            {
+              "seasonId": "2000-2001",
+              "season": {
+                "displayName": "The FA Carling Premiership"
+              },
+              "appearances": 34,
+              "goals": 14
+            },
+            {
+              "seasonId": "2001-2002",
+              "season": {
+                "displayName": "The FA Barclaycard Premiership"
+              },
+              "appearances": 37,
+              "goals": 11
+            }
+          ]
+        }
+      }
+    }
+  },
+  "metadata": {
+    "expires": null
+  }
+}
+
+exports['get season query'] = {
+  "data": {
+    "data": {
+      "season": {
+        "displayName": "The FA Carling Premiership",
+        "ball": "Mitre Pro Max",
+        "start": "1992-08-20",
+        "end": "1993-05-14",
+        "hatTricks": [
+          {
+            "playerId": "chris-sutton-1e82",
+            "player": {
+              "displayName": "Chris Sutton"
+            },
+            "homeTeamId": "blb",
+            "homeTeam": {
+              "name": "Blackburn Rovers"
+            },
+            "awayTeamId": "cov",
+            "awayTeam": {
+              "name": "Coventry City"
+            },
+            "date": "1994-08-27"
+          },
+          {
+            "playerId": "robbie-fowler-41c4",
+            "player": {
+              "displayName": "Robbie Fowler"
+            },
+            "homeTeamId": "liv",
+            "homeTeam": {
+              "name": "Liverpool"
+            },
+            "awayTeamId": "ars",
+            "awayTeam": {
+              "name": "Arsenal"
+            },
+            "date": "1994-08-28"
+          },
+          {
+            "playerId": "andrei-kanchelskis-58c7",
+            "player": {
+              "displayName": "Andrei Kanchelskis"
+            },
+            "homeTeamId": "mun",
+            "homeTeam": {
+              "name": "Manchester United"
+            },
+            "awayTeamId": "mci",
+            "awayTeam": {
+              "name": "Manchester City"
+            },
+            "date": "1994-11-10"
+          },
+          {
+            "playerId": "alan-shearer-816a",
+            "player": {
+              "displayName": "Alan Shearer"
+            },
+            "homeTeamId": "blb",
+            "homeTeam": {
+              "name": "Blackburn Rovers"
+            },
+            "awayTeamId": "qpr",
+            "awayTeam": {
+              "name": "Queens Park Rangers"
+            },
+            "date": "1994-11-26"
+          },
+          {
+            "playerId": "teddy-sheringham-4d16",
+            "player": {
+              "displayName": "Teddy Sheringham"
+            },
+            "homeTeamId": "tot",
+            "homeTeam": {
+              "name": "Tottenham Hotspur"
+            },
+            "awayTeamId": "new",
+            "awayTeam": {
+              "name": "Newcastle United"
+            },
+            "date": "1994-12-03"
+          },
+          {
+            "playerId": "tony-cottee-c708",
+            "player": {
+              "displayName": "Tony Cottee"
+            },
+            "homeTeamId": "whu",
+            "homeTeam": {
+              "name": "West Ham United"
+            },
+            "awayTeamId": "mci",
+            "awayTeam": {
+              "name": "Manchester City"
+            },
+            "date": "1994-12-17"
+          },
+          {
+            "playerId": "alan-shearer-816a",
+            "player": {
+              "displayName": "Alan Shearer"
+            },
+            "homeTeamId": "blb",
+            "homeTeam": {
+              "name": "Blackburn Rovers"
+            },
+            "awayTeamId": "whu",
+            "awayTeam": {
+              "name": "West Ham United"
+            },
+            "date": "1995-01-02"
+          },
+          {
+            "playerId": "alan-shearer-816a",
+            "player": {
+              "displayName": "Alan Shearer"
+            },
+            "homeTeamId": "blb",
+            "homeTeam": {
+              "name": "Blackburn Rovers"
+            },
+            "awayTeamId": "ips",
+            "awayTeam": {
+              "name": "Ipswich Town"
+            },
+            "date": "1995-01-28"
+          },
+          {
+            "playerId": "tommy-johnson-9400",
+            "player": {
+              "displayName": "Tommy Johnson"
+            },
+            "homeTeamId": "avl",
+            "homeTeam": {
+              "name": "Aston Villa"
+            },
+            "awayTeamId": "wim",
+            "awayTeam": {
+              "name": "Wimbledon"
+            },
+            "date": "1995-02-11"
+          },
+          {
+            "playerId": "andy-cole-ee27",
+            "player": {
+              "displayName": "Andy Cole"
+            },
+            "homeTeamId": "mun",
+            "homeTeam": {
+              "name": "Manchester United"
+            },
+            "awayTeamId": "ips",
+            "awayTeam": {
+              "name": "Ipswich Town"
+            },
+            "date": "1995-03-04"
+          },
+          {
+            "playerId": "peter-ndlovu-56da",
+            "player": {
+              "displayName": "Peter Ndlovu"
+            },
+            "homeTeamId": "liv",
+            "homeTeam": {
+              "name": "Liverpool"
+            },
+            "awayTeamId": "cov",
+            "awayTeam": {
+              "name": "Coventry City"
+            },
+            "date": "1995-03-14"
+          },
+          {
+            "playerId": "tony-yeboah-d3db",
+            "player": {
+              "displayName": "Tony Yeboah"
+            },
+            "homeTeamId": "lee",
+            "homeTeam": {
+              "name": "Leeds United"
+            },
+            "awayTeamId": "ips",
+            "awayTeam": {
+              "name": "Ipswich Town"
+            },
+            "date": "1995-04-05"
+          },
+          {
+            "playerId": "ian-wright-f40c",
+            "player": {
+              "displayName": "Ian Wright"
+            },
+            "homeTeamId": "ars",
+            "homeTeam": {
+              "name": "Arsenal"
+            },
+            "awayTeamId": "ips",
+            "awayTeam": {
+              "name": "Ipswich Town"
+            },
+            "date": "1995-04-15"
+          }
+        ],
+        "table": [
+          {
+            "rank": 1,
+            "teamId": "blb",
+            "team": {
+              "name": "Blackburn Rovers"
+            },
+            "points": 89
+          },
+          {
+            "rank": 2,
+            "teamId": "mun",
+            "team": {
+              "name": "Manchester United"
+            },
+            "points": 88
+          },
+          {
+            "rank": 3,
+            "teamId": "nfo",
+            "team": {
+              "name": "Nottingham Forest"
+            },
+            "points": 77
+          },
+          {
+            "rank": 4,
+            "teamId": "liv",
+            "team": {
+              "name": "Liverpool"
+            },
+            "points": 74
+          },
+          {
+            "rank": 5,
+            "teamId": "lee",
+            "team": {
+              "name": "Leeds United"
+            },
+            "points": 73
+          },
+          {
+            "rank": 6,
+            "teamId": "new",
+            "team": {
+              "name": "Newcastle United"
+            },
+            "points": 72
+          },
+          {
+            "rank": 7,
+            "teamId": "tot",
+            "team": {
+              "name": "Tottenham Hotspur"
+            },
+            "points": 62
+          },
+          {
+            "rank": 8,
+            "teamId": "qpr",
+            "team": {
+              "name": "Queens Park Rangers"
+            },
+            "points": 60
+          },
+          {
+            "rank": 9,
+            "teamId": "wim",
+            "team": {
+              "name": "Wimbledon"
+            },
+            "points": 56
+          },
+          {
+            "rank": 10,
+            "teamId": "sou",
+            "team": {
+              "name": "Southampton"
+            },
+            "points": 54
+          },
+          {
+            "rank": 11,
+            "teamId": "che",
+            "team": {
+              "name": "Chelsea"
+            },
+            "points": 54
+          },
+          {
+            "rank": 12,
+            "teamId": "ars",
+            "team": {
+              "name": "Arsenal"
+            },
+            "points": 51
+          },
+          {
+            "rank": 13,
+            "teamId": "shw",
+            "team": {
+              "name": "Sheffield Wednesday"
+            },
+            "points": 51
+          },
+          {
+            "rank": 14,
+            "teamId": "whu",
+            "team": {
+              "name": "West Ham United"
+            },
+            "points": 50
+          },
+          {
+            "rank": 15,
+            "teamId": "eve",
+            "team": {
+              "name": "Everton"
+            },
+            "points": 50
+          },
+          {
+            "rank": 16,
+            "teamId": "cov",
+            "team": {
+              "name": "Coventry City"
+            },
+            "points": 50
+          },
+          {
+            "rank": 17,
+            "teamId": "mci",
+            "team": {
+              "name": "Manchester City"
+            },
+            "points": 49
+          },
+          {
+            "rank": 18,
+            "teamId": "avl",
+            "team": {
+              "name": "Aston Villa"
+            },
+            "points": 48
+          },
+          {
+            "rank": 19,
+            "teamId": "cry",
+            "team": {
+              "name": "Crystal Palace"
+            },
+            "points": 45
+          },
+          {
+            "rank": 20,
+            "teamId": "nor",
+            "team": {
+              "name": "Norwich City"
+            },
+            "points": 43
+          },
+          {
+            "rank": 21,
+            "teamId": "lei",
+            "team": {
+              "name": "Leicester City"
+            },
+            "points": 29
+          },
+          {
+            "rank": 22,
+            "teamId": "ips",
+            "team": {
+              "name": "Ipswich Town"
+            },
+            "points": 27
+          }
+        ],
+        "topAssists": [
+          {
+            "playerId": "matt-le-tissier-d558",
+            "player": {
+              "displayName": "Matt Le Tissier"
+            },
+            "assists": 15
+          },
+          {
+            "playerId": "darren-anderton-a498",
+            "player": {
+              "displayName": "Darren Anderton"
+            },
+            "assists": 14
+          },
+          {
+            "playerId": "alan-shearer-816a",
+            "player": {
+              "displayName": "Alan Shearer"
+            },
+            "assists": 13
+          },
+          {
+            "playerId": "andy-hinchcliffe-7934",
+            "player": {
+              "displayName": "Andy Hinchcliffe"
+            },
+            "assists": 11
+          },
+          {
+            "playerId": "ryan-giggs-2664",
+            "player": {
+              "displayName": "Ryan Giggs"
+            },
+            "assists": 11
+          },
+          {
+            "playerId": "bryan-roy-2b19",
+            "player": {
+              "displayName": "Bryan Roy"
+            },
+            "assists": 11
+          },
+          {
+            "playerId": "ruel-fox-3698",
+            "player": {
+              "displayName": "Ruel Fox"
+            },
+            "assists": 11
+          },
+          {
+            "playerId": "kevin-gallen-f799",
+            "player": {
+              "displayName": "Kevin Gallen"
+            },
+            "assists": 10
+          },
+          {
+            "playerId": "chris-sutton-1e82",
+            "player": {
+              "displayName": "Chris Sutton"
+            },
+            "assists": 10
+          },
+          {
+            "playerId": "jurgen-klinsmann-11b4",
+            "player": {
+              "displayName": "Jürgen Klinsmann"
+            },
+            "assists": 10
+          }
+        ],
+        "topCleanSheets": [
+          {
+            "playerId": "peter-schmeichel-2945",
+            "player": {
+              "displayName": "Peter Schmeichel"
+            },
+            "cleanSheets": 20
+          },
+          {
+            "playerId": "john-lukic-a1c0",
+            "player": {
+              "displayName": "John Lukic"
+            },
+            "cleanSheets": 17
+          },
+          {
+            "playerId": "david-james-fdf3",
+            "player": {
+              "displayName": "David James"
+            },
+            "cleanSheets": 17
+          },
+          {
+            "playerId": "tim-flowers-78ab",
+            "player": {
+              "displayName": "Tim Flowers"
+            },
+            "cleanSheets": 16
+          },
+          {
+            "playerId": "neville-southall-4dfe",
+            "player": {
+              "displayName": "Neville Southall"
+            },
+            "cleanSheets": 14
+          },
+          {
+            "playerId": "nigel-martyn-99a8",
+            "player": {
+              "displayName": "Nigel Martyn"
+            },
+            "cleanSheets": 14
+          },
+          {
+            "playerId": "mark-crossley-9232",
+            "player": {
+              "displayName": "Mark Crossley"
+            },
+            "cleanSheets": 13
+          },
+          {
+            "playerId": "ludek-miklosko-b06c",
+            "player": {
+              "displayName": "Ludek Miklosko"
+            },
+            "cleanSheets": 13
+          },
+          {
+            "playerId": "pavel-srnicek-155f",
+            "player": {
+              "displayName": "Pavel Srnicek"
+            },
+            "cleanSheets": 13
+          },
+          {
+            "playerId": "ian-walker-175f",
+            "player": {
+              "displayName": "Ian Walker"
+            },
+            "cleanSheets": 11
+          }
+        ],
+        "topScorers": [
+          {
+            "playerId": "alan-shearer-816a",
+            "player": {
+              "displayName": "Alan Shearer"
+            },
+            "goals": 34
+          },
+          {
+            "playerId": "robbie-fowler-41c4",
+            "player": {
+              "displayName": "Robbie Fowler"
+            },
+            "goals": 25
+          },
+          {
+            "playerId": "les-ferdinand-459c",
+            "player": {
+              "displayName": "Les Ferdinand"
+            },
+            "goals": 24
+          },
+          {
+            "playerId": "stan-collymore-14b1",
+            "player": {
+              "displayName": "Stan Collymore"
+            },
+            "goals": 22
+          },
+          {
+            "playerId": "andy-cole-ee27",
+            "player": {
+              "displayName": "Andy Cole"
+            },
+            "goals": 21
+          },
+          {
+            "playerId": "jurgen-klinsmann-11b4",
+            "player": {
+              "displayName": "Jürgen Klinsmann"
+            },
+            "goals": 20
+          },
+          {
+            "playerId": "matt-le-tissier-d558",
+            "player": {
+              "displayName": "Matt Le Tissier"
+            },
+            "goals": 19
+          },
+          {
+            "playerId": "ian-wright-f40c",
+            "player": {
+              "displayName": "Ian Wright"
+            },
+            "goals": 18
+          },
+          {
+            "playerId": "teddy-sheringham-4d16",
+            "player": {
+              "displayName": "Teddy Sheringham"
+            },
+            "goals": 18
+          },
+          {
+            "playerId": "uwe-rosler-6bb9",
+            "player": {
+              "displayName": "Uwe Rösler"
+            },
+            "goals": 15
+          }
+        ]
+      }
+    }
+  },
+  "metadata": {
+    "expires": null
+  }
+}
+
+exports['get team query'] = {
+  "data": {
+    "data": {
+      "team": {
+        "optaId": "t49",
+        "name": "Sheffield United",
+        "city": "Sheffield",
+        "grounds": [
+          "Bramall Lane"
+        ],
+        "seasons": [
+          {
+            "seasonId": "1992-1993",
+            "season": {
+              "displayName": "The FA Carling Premiership"
+            }
+          },
+          {
+            "seasonId": "1993-1994",
+            "season": {
+              "displayName": "The FA Carling Premiership"
+            }
+          }
+        ],
+        "stats": {
+          "total": {
+            "played": 84,
+            "wins": 22,
+            "draws": 28,
+            "losses": 34
+          },
+          "history": [
+            {
+              "seasonId": "1992-1993",
+              "season": {
+                "shortName": "The Premier League"
+              },
+              "wins": 14,
+              "draws": 10,
+              "losses": 18,
+              "for": 54,
+              "against": 53
+            },
+            {
+              "seasonId": "1993-1994",
+              "season": {
+                "shortName": "The Premier League"
+              },
+              "wins": 8,
+              "draws": 18,
+              "losses": 16,
+              "for": 42,
+              "against": 60
+            }
+          ]
+        },
+        "squads": [
+          {
+            "seasonId": "1992-1993",
+            "season": {
+              "displayName": "The FA Carling Premiership"
+            },
+            "players": [
+              {
+                "playerId": "simon-tracey-a284",
+                "player": {
+                  "displayName": "Simon Tracey"
+                },
+                "appearances": 10,
+                "goals": 0
+              },
+              {
+                "playerId": "alan-kelly-4fa9",
+                "player": {
+                  "displayName": "Alan Kelly"
+                },
+                "appearances": 33,
+                "goals": 0
+              },
+              {
+                "playerId": "david-walton-f96b",
+                "player": {
+                  "displayName": "David Walton"
+                },
+                "appearances": 0,
+                "goals": 0
+              },
+              {
+                "playerId": "paul-beesley-bc88",
+                "player": {
+                  "displayName": "Paul Beesley"
+                },
+                "appearances": 39,
+                "goals": 2
+              },
+              {
+                "playerId": "kevin-gage-3337",
+                "player": {
+                  "displayName": "Kevin Gage"
+                },
+                "appearances": 27,
+                "goals": 0
+              },
+              {
+                "playerId": "ian-bryson-72d6",
+                "player": {
+                  "displayName": "Ian Bryson"
+                },
+                "appearances": 16,
+                "goals": 3
+              },
+              {
+                "playerId": "tom-cowan-2693",
+                "player": {
+                  "displayName": "Tom Cowan"
+                },
+                "appearances": 21,
+                "goals": 0
+              },
+              {
+                "playerId": "dave-barnes-9568",
+                "player": {
+                  "displayName": "Dave Barnes"
+                },
+                "appearances": 13,
+                "goals": 0
+              },
+              {
+                "playerId": "brian-gayle-8171",
+                "player": {
+                  "displayName": "Brian Gayle"
+                },
+                "appearances": 31,
+                "goals": 2
+              },
+              {
+                "playerId": "jamie-hoyland-21ff",
+                "player": {
+                  "displayName": "Jamie Hoyland"
+                },
+                "appearances": 22,
+                "goals": 2
+              },
+              {
+                "playerId": "carl-bradshaw-81ab",
+                "player": {
+                  "displayName": "Carl Bradshaw"
+                },
+                "appearances": 32,
+                "goals": 1
+              },
+              {
+                "playerId": "paul-rogers-fc40",
+                "player": {
+                  "displayName": "Paul Rogers"
+                },
+                "appearances": 27,
+                "goals": 3
+              },
+              {
+                "playerId": "glyn-hodges-a297",
+                "player": {
+                  "displayName": "Glyn Hodges"
+                },
+                "appearances": 31,
+                "goals": 4
+              },
+              {
+                "playerId": "john-gannon-6d99",
+                "player": {
+                  "displayName": "John Gannon"
+                },
+                "appearances": 27,
+                "goals": 1
+              },
+              {
+                "playerId": "mitch-ward-5163",
+                "player": {
+                  "displayName": "Mitch Ward"
+                },
+                "appearances": 26,
+                "goals": 0
+              },
+              {
+                "playerId": "john-pemberton-b18c",
+                "player": {
+                  "displayName": "John Pemberton"
+                },
+                "appearances": 19,
+                "goals": 0
+              },
+              {
+                "playerId": "chris-kamara-c337",
+                "player": {
+                  "displayName": "Chris Kamara"
+                },
+                "appearances": 8,
+                "goals": 0
+              },
+              {
+                "playerId": "dane-whitehouse-53f0",
+                "player": {
+                  "displayName": "Dane Whitehouse"
+                },
+                "appearances": 14,
+                "goals": 5
+              },
+              {
+                "playerId": "charlie-hartfield-b2c6",
+                "player": {
+                  "displayName": "Charlie Hartfield"
+                },
+                "appearances": 17,
+                "goals": 0
+              },
+              {
+                "playerId": "peter-duffield-7d36",
+                "player": {
+                  "displayName": "Peter Duffield"
+                },
+                "appearances": 0,
+                "goals": 0
+              },
+              {
+                "playerId": "andrew-scott-81e6",
+                "player": {
+                  "displayName": "Andrew Scott"
+                },
+                "appearances": 2,
+                "goals": 1
+              },
+              {
+                "playerId": "brian-deane-03af",
+                "player": {
+                  "displayName": "Brian Deane"
+                },
+                "appearances": 41,
+                "goals": 15
+              },
+              {
+                "playerId": "alan-cork-6ab2",
+                "player": {
+                  "displayName": "Alan Cork"
+                },
+                "appearances": 27,
+                "goals": 2
+              },
+              {
+                "playerId": "adrian-littlejohn-7c17",
+                "player": {
+                  "displayName": "Adrian Littlejohn"
+                },
+                "appearances": 27,
+                "goals": 8
+              },
+              {
+                "playerId": "franz-carr-d279",
+                "player": {
+                  "displayName": "Franz Carr"
+                },
+                "appearances": 8,
+                "goals": 3
+              },
+              {
+                "playerId": "michael-lake-19d5",
+                "player": {
+                  "displayName": "Michael Lake"
+                },
+                "appearances": 6,
+                "goals": 0
+              },
+              {
+                "playerId": "ken-veysey-c497",
+                "player": {
+                  "displayName": "Ken Veysey"
+                },
+                "appearances": 0,
+                "goals": 0
+              },
+              {
+                "playerId": "alan-mcleary-d6a5",
+                "player": {
+                  "displayName": "Alan McLeary"
+                },
+                "appearances": 3,
+                "goals": 0
+              }
+            ],
+            "managers": [
+              {
+                "managerId": "dave-bassett-3f79",
+                "manager": {
+                  "displayName": "Dave Bassett"
+                }
+              }
+            ]
+          },
+          {
+            "seasonId": "1993-1994",
+            "season": {
+              "displayName": "The FA Carling Premiership"
+            },
+            "players": [
+              {
+                "playerId": "simon-tracey-a284",
+                "player": {
+                  "displayName": "Simon Tracey"
+                },
+                "appearances": 15,
+                "goals": 0
+              },
+              {
+                "playerId": "alan-kelly-4fa9",
+                "player": {
+                  "displayName": "Alan Kelly"
+                },
+                "appearances": 30,
+                "goals": 0
+              },
+              {
+                "playerId": "rob-scott-e3ce",
+                "player": {
+                  "displayName": "Rob Scott"
+                },
+                "appearances": 0,
+                "goals": 0
+              },
+              {
+                "playerId": "roger-nilsen-ef79",
+                "player": {
+                  "displayName": "Roger Nilsen"
+                },
+                "appearances": 22,
+                "goals": 0
+              },
+              {
+                "playerId": "david-tuttle-f6cd",
+                "player": {
+                  "displayName": "David Tuttle"
+                },
+                "appearances": 31,
+                "goals": 0
+              },
+              {
+                "playerId": "tom-cowan-2693",
+                "player": {
+                  "displayName": "Tom Cowan"
+                },
+                "appearances": 4,
+                "goals": 0
+              },
+              {
+                "playerId": "dave-barnes-9568",
+                "player": {
+                  "displayName": "Dave Barnes"
+                },
+                "appearances": 2,
+                "goals": 0
+              },
+              {
+                "playerId": "jamie-hoyland-21ff",
+                "player": {
+                  "displayName": "Jamie Hoyland"
+                },
+                "appearances": 18,
+                "goals": 0
+              },
+              {
+                "playerId": "paul-beesley-bc88",
+                "player": {
+                  "displayName": "Paul Beesley"
+                },
+                "appearances": 25,
+                "goals": 0
+              },
+              {
+                "playerId": "glyn-hodges-a297",
+                "player": {
+                  "displayName": "Glyn Hodges"
+                },
+                "appearances": 31,
+                "goals": 2
+              },
+              {
+                "playerId": "charlie-hartfield-b2c6",
+                "player": {
+                  "displayName": "Charlie Hartfield"
+                },
+                "appearances": 5,
+                "goals": 0
+              },
+              {
+                "playerId": "mitch-ward-5163",
+                "player": {
+                  "displayName": "Mitch Ward"
+                },
+                "appearances": 22,
+                "goals": 1
+              },
+              {
+                "playerId": "chris-kamara-c337",
+                "player": {
+                  "displayName": "Chris Kamara"
+                },
+                "appearances": 16,
+                "goals": 0
+              },
+              {
+                "playerId": "nathan-blake-bdfd",
+                "player": {
+                  "displayName": "Nathan Blake"
+                },
+                "appearances": 12,
+                "goals": 5
+              },
+              {
+                "playerId": "jostein-flo-349b",
+                "player": {
+                  "displayName": "Jostein Flo"
+                },
+                "appearances": 33,
+                "goals": 9
+              },
+              {
+                "playerId": "nathan-peel-512c",
+                "player": {
+                  "displayName": "Nathan Peel"
+                },
+                "appearances": 0,
+                "goals": 0
+              },
+              {
+                "playerId": "bobby-davison-498f",
+                "player": {
+                  "displayName": "Bobby Davison"
+                },
+                "appearances": 9,
+                "goals": 0
+              },
+              {
+                "playerId": "alan-cork-6ab2",
+                "player": {
+                  "displayName": "Alan Cork"
+                },
+                "appearances": 19,
+                "goals": 3
+              },
+              {
+                "playerId": "adrian-littlejohn-7c17",
+                "player": {
+                  "displayName": "Adrian Littlejohn"
+                },
+                "appearances": 19,
+                "goals": 3
+              },
+              {
+                "playerId": "franz-carr-d279",
+                "player": {
+                  "displayName": "Franz Carr"
+                },
+                "appearances": 10,
+                "goals": 1
+              },
+              {
+                "playerId": "carl-bradshaw-81ab",
+                "player": {
+                  "displayName": "Carl Bradshaw"
+                },
+                "appearances": 40,
+                "goals": 1
+              },
+              {
+                "playerId": "dane-whitehouse-53f0",
+                "player": {
+                  "displayName": "Dane Whitehouse"
+                },
+                "appearances": 38,
+                "goals": 5
+              },
+              {
+                "playerId": "brian-gayle-8171",
+                "player": {
+                  "displayName": "Brian Gayle"
+                },
+                "appearances": 13,
+                "goals": 3
+              },
+              {
+                "playerId": "john-gannon-6d99",
+                "player": {
+                  "displayName": "John Gannon"
+                },
+                "appearances": 14,
+                "goals": 0
+              },
+              {
+                "playerId": "paul-rogers-fc40",
+                "player": {
+                  "displayName": "Paul Rogers"
+                },
+                "appearances": 25,
+                "goals": 3
+              },
+              {
+                "playerId": "kevin-gage-3337",
+                "player": {
+                  "displayName": "Kevin Gage"
+                },
+                "appearances": 21,
+                "goals": 0
+              },
+              {
+                "playerId": "andrew-scott-81e6",
+                "player": {
+                  "displayName": "Andrew Scott"
+                },
+                "appearances": 15,
+                "goals": 1
+              },
+              {
+                "playerId": "willie-falconer-e14e",
+                "player": {
+                  "displayName": "Willie Falconer"
+                },
+                "appearances": 23,
+                "goals": 4
+              },
+              {
+                "playerId": "carl-muggleton-b1e3",
+                "player": {
+                  "displayName": "Carl Muggleton"
+                },
+                "appearances": 0,
+                "goals": 0
+              },
+              {
+                "playerId": "jonas-wirmola-82c3",
+                "player": {
+                  "displayName": "Jonas Wirmola"
+                },
+                "appearances": 8,
+                "goals": 0
+              },
+              {
+                "playerId": "david-walton-f96b",
+                "player": {
+                  "displayName": "David Walton"
+                },
+                "appearances": 0,
+                "goals": 0
+              },
+              {
+                "playerId": "peter-duffield-7d36",
+                "player": {
+                  "displayName": "Peter Duffield"
+                },
+                "appearances": 0,
+                "goals": 0
+              },
+              {
+                "playerId": "john-pemberton-b18c",
+                "player": {
+                  "displayName": "John Pemberton"
+                },
+                "appearances": 8,
+                "goals": 0
+              }
+            ],
+            "managers": [
+              {
+                "managerId": "dave-bassett-3f79",
+                "manager": {
+                  "displayName": "Dave Bassett"
+                }
+              }
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "metadata": {
+    "expires": null
+  }
+}
+
+exports['list managers query'] = {
+  "data": {
+    "data": {
+      "managers": [
+        {
+          "managerId": "tony-book-1bd5",
+          "manager": {
+            "displayName": "Tony Book"
+          }
+        },
+        {
+          "managerId": "tony-parkes-4061",
+          "manager": {
+            "displayName": "Tony Parkes"
+          }
+        }
+      ]
+    }
+  },
+  "metadata": {
+    "expires": null
+  }
+}
+
+exports['list players query'] = {
+  "data": {
+    "data": {
+      "players": [
+        {
+          "playerId": "david-forde-018f",
+          "player": {
+            "displayName": "David Forde"
+          }
+        },
+        {
+          "playerId": "david-james-fdf3",
+          "player": {
+            "displayName": "David James"
+          }
+        },
+        {
+          "playerId": "david-seaman-3245",
+          "player": {
+            "displayName": "David Seaman"
+          }
+        },
+        {
+          "playerId": "david-watson-8a39",
+          "player": {
+            "displayName": "David Watson"
+          }
+        }
+      ]
+    }
+  },
+  "metadata": {
+    "expires": null
+  }
+}
+
+exports['list seasons query'] = {
+  "data": {
+    "data": {
+      "seasons": [
+        {
+          "seasonId": "1992-1993",
+          "season": {
+            "displayName": "The FA Carling Premiership"
+          }
+        },
+        {
+          "seasonId": "1993-1994",
+          "season": {
+            "displayName": "The FA Carling Premiership"
+          }
+        }
+      ]
+    }
+  },
+  "metadata": {
+    "expires": null
+  }
+}
+
+exports['list teams query'] = {
+  "data": {
+    "data": {
+      "teams": [
+        {
+          "teamId": "mci",
+          "team": {
+            "name": "Manchester City"
+          }
+        },
+        {
+          "teamId": "mun",
+          "team": {
+            "name": "Manchester United"
+          }
+        }
+      ]
+    }
+  },
+  "metadata": {
+    "expires": null
+  }
+}
