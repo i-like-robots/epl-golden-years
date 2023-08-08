@@ -12,7 +12,13 @@
             "displayName": "Chris Sutton"
           },
           "homeTeamId": "blb",
+          "homeTeam": {
+            "name": "Blackburn Rovers"
+          },
           "awayTeamId": "cov",
+          "awayTeam": {
+            "name": "Coventry City"
+          },
           "date": "1994-08-27"
         },
         {
@@ -21,7 +27,13 @@
             "displayName": "Robbie Fowler"
           },
           "homeTeamId": "liv",
+          "homeTeam": {
+            "name": "Liverpool"
+          },
           "awayTeamId": "ars",
+          "awayTeam": {
+            "name": "Arsenal"
+          },
           "date": "1994-08-28"
         },
         {
@@ -30,7 +42,13 @@
             "displayName": "Andrei Kanchelskis"
           },
           "homeTeamId": "mun",
+          "homeTeam": {
+            "name": "Manchester United"
+          },
           "awayTeamId": "mci",
+          "awayTeam": {
+            "name": "Manchester City"
+          },
           "date": "1994-11-10"
         },
         {
@@ -39,7 +57,13 @@
             "displayName": "Alan Shearer"
           },
           "homeTeamId": "blb",
+          "homeTeam": {
+            "name": "Blackburn Rovers"
+          },
           "awayTeamId": "qpr",
+          "awayTeam": {
+            "name": "Queens Park Rangers"
+          },
           "date": "1994-11-26"
         },
         {
@@ -48,7 +72,13 @@
             "displayName": "Teddy Sheringham"
           },
           "homeTeamId": "tot",
+          "homeTeam": {
+            "name": "Tottenham Hotspur"
+          },
           "awayTeamId": "new",
+          "awayTeam": {
+            "name": "Newcastle United"
+          },
           "date": "1994-12-03"
         },
         {
@@ -57,7 +87,13 @@
             "displayName": "Tony Cottee"
           },
           "homeTeamId": "whu",
+          "homeTeam": {
+            "name": "West Ham United"
+          },
           "awayTeamId": "mci",
+          "awayTeam": {
+            "name": "Manchester City"
+          },
           "date": "1994-12-17"
         },
         {
@@ -66,7 +102,13 @@
             "displayName": "Alan Shearer"
           },
           "homeTeamId": "blb",
+          "homeTeam": {
+            "name": "Blackburn Rovers"
+          },
           "awayTeamId": "whu",
+          "awayTeam": {
+            "name": "West Ham United"
+          },
           "date": "1995-01-02"
         },
         {
@@ -75,7 +117,13 @@
             "displayName": "Alan Shearer"
           },
           "homeTeamId": "blb",
+          "homeTeam": {
+            "name": "Blackburn Rovers"
+          },
           "awayTeamId": "ips",
+          "awayTeam": {
+            "name": "Ipswich Town"
+          },
           "date": "1995-01-28"
         },
         {
@@ -84,7 +132,13 @@
             "displayName": "Tommy Johnson"
           },
           "homeTeamId": "avl",
+          "homeTeam": {
+            "name": "Aston Villa"
+          },
           "awayTeamId": "wim",
+          "awayTeam": {
+            "name": "Wimbledon"
+          },
           "date": "1995-02-11"
         },
         {
@@ -93,7 +147,13 @@
             "displayName": "Andy Cole"
           },
           "homeTeamId": "mun",
+          "homeTeam": {
+            "name": "Manchester United"
+          },
           "awayTeamId": "ips",
+          "awayTeam": {
+            "name": "Ipswich Town"
+          },
           "date": "1995-03-04"
         },
         {
@@ -102,7 +162,13 @@
             "displayName": "Peter Ndlovu"
           },
           "homeTeamId": "liv",
+          "homeTeam": {
+            "name": "Liverpool"
+          },
           "awayTeamId": "cov",
+          "awayTeam": {
+            "name": "Coventry City"
+          },
           "date": "1995-03-14"
         },
         {
@@ -111,7 +177,13 @@
             "displayName": "Tony Yeboah"
           },
           "homeTeamId": "lee",
+          "homeTeam": {
+            "name": "Leeds United"
+          },
           "awayTeamId": "ips",
+          "awayTeam": {
+            "name": "Ipswich Town"
+          },
           "date": "1995-04-05"
         },
         {
@@ -120,7 +192,13 @@
             "displayName": "Ian Wright"
           },
           "homeTeamId": "ars",
+          "homeTeam": {
+            "name": "Arsenal"
+          },
           "awayTeamId": "ips",
+          "awayTeam": {
+            "name": "Ipswich Town"
+          },
           "date": "1995-04-15"
         }
       ],
@@ -128,111 +206,177 @@
         {
           "rank": 1,
           "teamId": "blb",
+          "team": {
+            "name": "Blackburn Rovers"
+          },
           "points": 89
         },
         {
           "rank": 2,
           "teamId": "mun",
+          "team": {
+            "name": "Manchester United"
+          },
           "points": 88
         },
         {
           "rank": 3,
           "teamId": "nfo",
+          "team": {
+            "name": "Nottingham Forest"
+          },
           "points": 77
         },
         {
           "rank": 4,
           "teamId": "liv",
+          "team": {
+            "name": "Liverpool"
+          },
           "points": 74
         },
         {
           "rank": 5,
           "teamId": "lee",
+          "team": {
+            "name": "Leeds United"
+          },
           "points": 73
         },
         {
           "rank": 6,
           "teamId": "new",
+          "team": {
+            "name": "Newcastle United"
+          },
           "points": 72
         },
         {
           "rank": 7,
           "teamId": "tot",
+          "team": {
+            "name": "Tottenham Hotspur"
+          },
           "points": 62
         },
         {
           "rank": 8,
           "teamId": "qpr",
+          "team": {
+            "name": "Queens Park Rangers"
+          },
           "points": 60
         },
         {
           "rank": 9,
           "teamId": "wim",
+          "team": {
+            "name": "Wimbledon"
+          },
           "points": 56
         },
         {
           "rank": 10,
           "teamId": "sou",
+          "team": {
+            "name": "Southampton"
+          },
           "points": 54
         },
         {
           "rank": 11,
           "teamId": "che",
+          "team": {
+            "name": "Chelsea"
+          },
           "points": 54
         },
         {
           "rank": 12,
           "teamId": "ars",
+          "team": {
+            "name": "Arsenal"
+          },
           "points": 51
         },
         {
           "rank": 13,
           "teamId": "shw",
+          "team": {
+            "name": "Sheffield Wednesday"
+          },
           "points": 51
         },
         {
           "rank": 14,
           "teamId": "whu",
+          "team": {
+            "name": "West Ham United"
+          },
           "points": 50
         },
         {
           "rank": 15,
           "teamId": "eve",
+          "team": {
+            "name": "Everton"
+          },
           "points": 50
         },
         {
           "rank": 16,
           "teamId": "cov",
+          "team": {
+            "name": "Coventry City"
+          },
           "points": 50
         },
         {
           "rank": 17,
           "teamId": "mci",
+          "team": {
+            "name": "Manchester City"
+          },
           "points": 49
         },
         {
           "rank": 18,
           "teamId": "avl",
+          "team": {
+            "name": "Aston Villa"
+          },
           "points": 48
         },
         {
           "rank": 19,
           "teamId": "cry",
+          "team": {
+            "name": "Crystal Palace"
+          },
           "points": 45
         },
         {
           "rank": 20,
           "teamId": "nor",
+          "team": {
+            "name": "Norwich City"
+          },
           "points": 43
         },
         {
           "rank": 21,
           "teamId": "lei",
+          "team": {
+            "name": "Leicester City"
+          },
           "points": 29
         },
         {
           "rank": 22,
           "teamId": "ips",
+          "team": {
+            "name": "Ipswich Town"
+          },
           "points": 27
         }
       ],

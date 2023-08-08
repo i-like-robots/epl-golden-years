@@ -9,15 +9,13 @@
         {
           "seasonId": "1992-1993",
           "season": {
-            "start": "1992-08-15",
-            "end": "1993-05-11"
+            "displayName": "The FA Carling Premiership"
           }
         },
         {
           "seasonId": "1993-1994",
           "season": {
-            "start": "1992-08-14",
-            "end": "1993-05-08"
+            "displayName": "The FA Carling Premiership"
           }
         }
       ],
@@ -57,147 +55,230 @@
         {
           "seasonId": "1992-1993",
           "season": {
-            "start": "1992-08-15",
-            "end": "1993-05-11"
+            "displayName": "The FA Carling Premiership"
           },
           "players": [
             {
               "playerId": "simon-tracey-a284",
+              "player": {
+                "displayName": "Simon Tracey"
+              },
               "appearances": 10,
               "goals": 0
             },
             {
               "playerId": "alan-kelly-4fa9",
+              "player": {
+                "displayName": "Alan Kelly"
+              },
               "appearances": 33,
               "goals": 0
             },
             {
               "playerId": "david-walton-f96b",
+              "player": {
+                "displayName": "David Walton"
+              },
               "appearances": 0,
               "goals": 0
             },
             {
               "playerId": "paul-beesley-bc88",
+              "player": {
+                "displayName": "Paul Beesley"
+              },
               "appearances": 39,
               "goals": 2
             },
             {
               "playerId": "kevin-gage-3337",
+              "player": {
+                "displayName": "Kevin Gage"
+              },
               "appearances": 27,
               "goals": 0
             },
             {
               "playerId": "ian-bryson-72d6",
+              "player": {
+                "displayName": "Ian Bryson"
+              },
               "appearances": 16,
               "goals": 3
             },
             {
               "playerId": "tom-cowan-2693",
+              "player": {
+                "displayName": "Tom Cowan"
+              },
               "appearances": 21,
               "goals": 0
             },
             {
               "playerId": "dave-barnes-9568",
+              "player": {
+                "displayName": "Dave Barnes"
+              },
               "appearances": 13,
               "goals": 0
             },
             {
               "playerId": "brian-gayle-8171",
+              "player": {
+                "displayName": "Brian Gayle"
+              },
               "appearances": 31,
               "goals": 2
             },
             {
               "playerId": "jamie-hoyland-21ff",
+              "player": {
+                "displayName": "Jamie Hoyland"
+              },
               "appearances": 22,
               "goals": 2
             },
             {
               "playerId": "carl-bradshaw-81ab",
+              "player": {
+                "displayName": "Carl Bradshaw"
+              },
               "appearances": 32,
               "goals": 1
             },
             {
               "playerId": "paul-rogers-fc40",
+              "player": {
+                "displayName": "Paul Rogers"
+              },
               "appearances": 27,
               "goals": 3
             },
             {
               "playerId": "glyn-hodges-a297",
+              "player": {
+                "displayName": "Glyn Hodges"
+              },
               "appearances": 31,
               "goals": 4
             },
             {
               "playerId": "john-gannon-6d99",
+              "player": {
+                "displayName": "John Gannon"
+              },
               "appearances": 27,
               "goals": 1
             },
             {
               "playerId": "mitch-ward-5163",
+              "player": {
+                "displayName": "Mitch Ward"
+              },
               "appearances": 26,
               "goals": 0
             },
             {
               "playerId": "john-pemberton-b18c",
+              "player": {
+                "displayName": "John Pemberton"
+              },
               "appearances": 19,
               "goals": 0
             },
             {
               "playerId": "chris-kamara-c337",
+              "player": {
+                "displayName": "Chris Kamara"
+              },
               "appearances": 8,
               "goals": 0
             },
             {
               "playerId": "dane-whitehouse-53f0",
+              "player": {
+                "displayName": "Dane Whitehouse"
+              },
               "appearances": 14,
               "goals": 5
             },
             {
               "playerId": "charlie-hartfield-b2c6",
+              "player": {
+                "displayName": "Charlie Hartfield"
+              },
               "appearances": 17,
               "goals": 0
             },
             {
               "playerId": "peter-duffield-7d36",
+              "player": {
+                "displayName": "Peter Duffield"
+              },
               "appearances": 0,
               "goals": 0
             },
             {
               "playerId": "andrew-scott-81e6",
+              "player": {
+                "displayName": "Andrew Scott"
+              },
               "appearances": 2,
               "goals": 1
             },
             {
               "playerId": "brian-deane-03af",
+              "player": {
+                "displayName": "Brian Deane"
+              },
               "appearances": 41,
               "goals": 15
             },
             {
               "playerId": "alan-cork-6ab2",
+              "player": {
+                "displayName": "Alan Cork"
+              },
               "appearances": 27,
               "goals": 2
             },
             {
               "playerId": "adrian-littlejohn-7c17",
+              "player": {
+                "displayName": "Adrian Littlejohn"
+              },
               "appearances": 27,
               "goals": 8
             },
             {
               "playerId": "franz-carr-d279",
+              "player": {
+                "displayName": "Franz Carr"
+              },
               "appearances": 8,
               "goals": 3
             },
             {
               "playerId": "michael-lake-19d5",
+              "player": {
+                "displayName": "Michael Lake"
+              },
               "appearances": 6,
               "goals": 0
             },
             {
               "playerId": "ken-veysey-c497",
+              "player": {
+                "displayName": "Ken Veysey"
+              },
               "appearances": 0,
               "goals": 0
             },
             {
               "playerId": "alan-mcleary-d6a5",
+              "player": {
+                "displayName": "Alan McLeary"
+              },
               "appearances": 3,
               "goals": 0
             }
@@ -214,172 +295,270 @@
         {
           "seasonId": "1993-1994",
           "season": {
-            "start": "1992-08-14",
-            "end": "1993-05-08"
+            "displayName": "The FA Carling Premiership"
           },
           "players": [
             {
               "playerId": "simon-tracey-a284",
+              "player": {
+                "displayName": "Simon Tracey"
+              },
               "appearances": 15,
               "goals": 0
             },
             {
               "playerId": "alan-kelly-4fa9",
+              "player": {
+                "displayName": "Alan Kelly"
+              },
               "appearances": 30,
               "goals": 0
             },
             {
               "playerId": "rob-scott-e3ce",
+              "player": {
+                "displayName": "Rob Scott"
+              },
               "appearances": 0,
               "goals": 0
             },
             {
               "playerId": "roger-nilsen-ef79",
+              "player": {
+                "displayName": "Roger Nilsen"
+              },
               "appearances": 22,
               "goals": 0
             },
             {
               "playerId": "david-tuttle-f6cd",
+              "player": {
+                "displayName": "David Tuttle"
+              },
               "appearances": 31,
               "goals": 0
             },
             {
               "playerId": "tom-cowan-2693",
+              "player": {
+                "displayName": "Tom Cowan"
+              },
               "appearances": 4,
               "goals": 0
             },
             {
               "playerId": "dave-barnes-9568",
+              "player": {
+                "displayName": "Dave Barnes"
+              },
               "appearances": 2,
               "goals": 0
             },
             {
               "playerId": "jamie-hoyland-21ff",
+              "player": {
+                "displayName": "Jamie Hoyland"
+              },
               "appearances": 18,
               "goals": 0
             },
             {
               "playerId": "paul-beesley-bc88",
+              "player": {
+                "displayName": "Paul Beesley"
+              },
               "appearances": 25,
               "goals": 0
             },
             {
               "playerId": "glyn-hodges-a297",
+              "player": {
+                "displayName": "Glyn Hodges"
+              },
               "appearances": 31,
               "goals": 2
             },
             {
               "playerId": "charlie-hartfield-b2c6",
+              "player": {
+                "displayName": "Charlie Hartfield"
+              },
               "appearances": 5,
               "goals": 0
             },
             {
               "playerId": "mitch-ward-5163",
+              "player": {
+                "displayName": "Mitch Ward"
+              },
               "appearances": 22,
               "goals": 1
             },
             {
               "playerId": "chris-kamara-c337",
+              "player": {
+                "displayName": "Chris Kamara"
+              },
               "appearances": 16,
               "goals": 0
             },
             {
               "playerId": "nathan-blake-bdfd",
+              "player": {
+                "displayName": "Nathan Blake"
+              },
               "appearances": 12,
               "goals": 5
             },
             {
               "playerId": "jostein-flo-349b",
+              "player": {
+                "displayName": "Jostein Flo"
+              },
               "appearances": 33,
               "goals": 9
             },
             {
               "playerId": "nathan-peel-512c",
+              "player": {
+                "displayName": "Nathan Peel"
+              },
               "appearances": 0,
               "goals": 0
             },
             {
               "playerId": "bobby-davison-498f",
+              "player": {
+                "displayName": "Bobby Davison"
+              },
               "appearances": 9,
               "goals": 0
             },
             {
               "playerId": "alan-cork-6ab2",
+              "player": {
+                "displayName": "Alan Cork"
+              },
               "appearances": 19,
               "goals": 3
             },
             {
               "playerId": "adrian-littlejohn-7c17",
+              "player": {
+                "displayName": "Adrian Littlejohn"
+              },
               "appearances": 19,
               "goals": 3
             },
             {
               "playerId": "franz-carr-d279",
+              "player": {
+                "displayName": "Franz Carr"
+              },
               "appearances": 10,
               "goals": 1
             },
             {
               "playerId": "carl-bradshaw-81ab",
+              "player": {
+                "displayName": "Carl Bradshaw"
+              },
               "appearances": 40,
               "goals": 1
             },
             {
               "playerId": "dane-whitehouse-53f0",
+              "player": {
+                "displayName": "Dane Whitehouse"
+              },
               "appearances": 38,
               "goals": 5
             },
             {
               "playerId": "brian-gayle-8171",
+              "player": {
+                "displayName": "Brian Gayle"
+              },
               "appearances": 13,
               "goals": 3
             },
             {
               "playerId": "john-gannon-6d99",
+              "player": {
+                "displayName": "John Gannon"
+              },
               "appearances": 14,
               "goals": 0
             },
             {
               "playerId": "paul-rogers-fc40",
+              "player": {
+                "displayName": "Paul Rogers"
+              },
               "appearances": 25,
               "goals": 3
             },
             {
               "playerId": "kevin-gage-3337",
+              "player": {
+                "displayName": "Kevin Gage"
+              },
               "appearances": 21,
               "goals": 0
             },
             {
               "playerId": "andrew-scott-81e6",
+              "player": {
+                "displayName": "Andrew Scott"
+              },
               "appearances": 15,
               "goals": 1
             },
             {
               "playerId": "willie-falconer-e14e",
+              "player": {
+                "displayName": "Willie Falconer"
+              },
               "appearances": 23,
               "goals": 4
             },
             {
               "playerId": "carl-muggleton-b1e3",
+              "player": {
+                "displayName": "Carl Muggleton"
+              },
               "appearances": 0,
               "goals": 0
             },
             {
               "playerId": "jonas-wirmola-82c3",
+              "player": {
+                "displayName": "Jonas Wirmola"
+              },
               "appearances": 8,
               "goals": 0
             },
             {
               "playerId": "david-walton-f96b",
+              "player": {
+                "displayName": "David Walton"
+              },
               "appearances": 0,
               "goals": 0
             },
             {
               "playerId": "peter-duffield-7d36",
+              "player": {
+                "displayName": "Peter Duffield"
+              },
               "appearances": 0,
               "goals": 0
             },
             {
               "playerId": "john-pemberton-b18c",
+              "player": {
+                "displayName": "John Pemberton"
+              },
               "appearances": 8,
               "goals": 0
             }

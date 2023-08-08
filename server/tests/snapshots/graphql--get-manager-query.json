@@ -8,7 +8,10 @@
           "season": {
             "displayName": "The FA Carling Premiership"
           },
-          "teamId": "mid"
+          "teamId": "mid",
+          "team": {
+            "name": "Middlesbrough"
+          }
         }
       ]
     }

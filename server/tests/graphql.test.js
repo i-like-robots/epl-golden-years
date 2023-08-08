@@ -37,6 +37,9 @@ describe('GraphQL API', () => {
               displayName
             }
             teamId
+            team {
+              name
+            }
           }
         }
       }`
@@ -74,6 +77,9 @@ describe('GraphQL API', () => {
               displayName
             }
             teamId
+            team {
+              name
+            }
           }
           album {
             seasonId
@@ -81,6 +87,9 @@ describe('GraphQL API', () => {
               displayName
             }
             teamId
+            team {
+              name
+            }
             sticker
           }
           stats {
@@ -110,12 +119,6 @@ describe('GraphQL API', () => {
           playerId
           player {
             displayName
-            positionName
-            stats {
-              total {
-                goals
-              }
-            }
           }
         }
       }`
@@ -137,12 +140,21 @@ describe('GraphQL API', () => {
               displayName
             }
             homeTeamId
+            homeTeam {
+              name
+            }
             awayTeamId
+            awayTeam {
+              name
+            }
             date
           }
           table {
             rank
             teamId
+            team {
+              name
+            }
             points
           }
           topAssists {
@@ -197,8 +209,7 @@ describe('GraphQL API', () => {
           seasons {
             seasonId
             season {
-              start
-              end
+              displayName
             }
           }
           stats {
@@ -223,11 +234,13 @@ describe('GraphQL API', () => {
           squads {
             seasonId
             season {
-              start
-              end
+              displayName
             }
             players {
               playerId
+              player {
+                displayName
+              }
               appearances
               goals
             }
@@ -251,7 +264,6 @@ describe('GraphQL API', () => {
           teamId
           team {
             name
-            grounds
           }
         }
       }`

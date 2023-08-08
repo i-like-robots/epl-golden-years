@@ -4,15 +4,13 @@
       {
         "teamId": "mci",
         "team": {
-          "name": "Manchester City",
-          "grounds": ["Maine Road"]
+          "name": "Manchester City"
         }
       },
       {
         "teamId": "mun",
         "team": {
-          "name": "Manchester United",
-          "grounds": ["Old Trafford"]
+          "name": "Manchester United"
         }
       }
     ]
