@@ -34,8 +34,8 @@ const teamStatsHistoryModel = require('../models/teamStatsHistoryModel')
 const teamsModel = require('../models/teamsModel')
 const teamStatsModel = require('../models/teamStatsModel')
 
-const managerHistoryType = new GraphQLObjectType({
-  name: 'ManagerHistory',
+const historyType = new GraphQLObjectType({
+  name: 'History',
   fields: () => ({
     ...createRelationship(seasonType, seasonModel),
     ...createRelationship(teamType, teamModel),
@@ -72,7 +72,7 @@ const managerType = new GraphQLObjectType({
       type: new GraphQLNonNull(GraphQLString),
     },
     history: {
-      type: new GraphQLList(managerHistoryType),
+      type: new GraphQLList(historyType),
     },
   }),
 })
@@ -99,14 +99,6 @@ const playerAlbumType = new GraphQLObjectType({
     sticker: {
       type: new GraphQLNonNull(GraphQLString),
     },
-  }),
-})
-
-const playerHistoryType = new GraphQLObjectType({
-  name: 'PlayerHistory',
-  fields: () => ({
-    ...createRelationship(seasonType, seasonModel),
-    ...createRelationship(teamType, teamModel),
   }),
 })
 
@@ -203,7 +195,7 @@ const playerType = new GraphQLObjectType({
       type: new GraphQLNonNull(PositionNameType),
     },
     history: {
-      type: new GraphQLList(playerHistoryType),
+      type: new GraphQLList(historyType),
       resolve: ({ playerId }) => playerHistoryModel(playerId),
     },
     album: {
