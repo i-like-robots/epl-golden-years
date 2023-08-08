@@ -3,6 +3,7 @@ const assert = require('node:assert')
 const Ajv = require('ajv')
 const addFormats = require('ajv-formats')
 const snapshot = require('data-snapshot').default
+const jsonDiff = require('json-diff')
 const app = require('../app')
 const schemas = require('../rest/schemas')
 
@@ -27,11 +28,12 @@ describe('Rest API', () => {
 
     const expected = await snapshot(url, () => fetch())
     const actual = await fetch()
+    const diff = jsonDiff.diffString(expected, actual, { color: false })
 
-    assert.deepStrictEqual(actual, expected)
+    assert.equal(diff.length, 0, diff)
     
     ajv.validate(schema.response[statusCode], actual)
-    assert.equal(ajv.errors, null)
+    assert.equal(ajv.errors, null, ajv.errors)
 
     return actual
   }

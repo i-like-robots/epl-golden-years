@@ -1,6 +1,7 @@
 const { describe, test } = require('node:test')
 const assert = require('node:assert')
 const snapshot = require('data-snapshot').default
+const jsonDiff = require('json-diff')
 const app = require('../app')
 
 describe('GraphQL API', () => {
@@ -20,9 +21,10 @@ describe('GraphQL API', () => {
 
     const expected = await snapshot(testName, () => fetch())
     const actual = await fetch()
+    const diff = jsonDiff.diffString(expected, actual, { color: false })
 
-    assert.equal(actual.errors, undefined)
-    assert.deepStrictEqual(actual, expected)
+    assert.equal(actual.errors, undefined, actual.errors)
+    assert.equal(diff.length, 0, diff)
   }
 
   test('get manager query', async (ctx) => {
