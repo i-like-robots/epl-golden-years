@@ -8,35 +8,35 @@ const urlJoin = require('url-join')
 const app = require('../app')
 const schemas = require('../rest/schemas')
 
-describe('Rest API', () => {
-  const ajv = new Ajv({ strict: false })
+const ajv = new Ajv({ strict: false })
 
-  addFormats(ajv)
+addFormats(ajv)
 
-  const validateRoute = async (path, schema, statusCode = 200) => {
-    const url = urlJoin('/rest', path)
+const validateRoute = async (path, schema, statusCode = 200) => {
+  const url = urlJoin('/rest', path)
 
-    const request = async () => {
-      const response = await app.inject({
-        method: 'GET',
-        url,
-      })
+  const request = async () => {
+    const response = await app.inject({
+      method: 'GET',
+      url,
+    })
 
-      return response.json()
-    }
-
-    const expected = await snapshot(url, request)
-    const actual = await request()
-    const diff = jsonDiff.diffString(expected, actual, { color: false })
-
-    ajv.validate(schema.response[statusCode], actual)
-
-    assert.equal(diff.length, 0, diff)
-    assert.equal(ajv.errors, null, ajv.errors)
-
-    return actual
+    return response.json()
   }
 
+  const expected = await snapshot(url, request)
+  const actual = await request()
+  const diff = jsonDiff.diffString(expected, actual, { color: false })
+
+  ajv.validate(schema.response[statusCode], actual)
+
+  assert.equal(diff.length, 0, diff)
+  assert.equal(ajv.errors, null, ajv.errors)
+
+  return actual
+}
+
+describe('Rest API', () => {
   before(async () => {
     await app.ready()
   })
