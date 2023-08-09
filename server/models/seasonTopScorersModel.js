@@ -10,7 +10,7 @@ function sortByGoals(a, b) {
 }
 
 module.exports = function seasonTopScorersModel(seasonId) {
-  const unique = {}
+  const records = {}
 
   squads.forEach((squad) => {
     if (squad.seasonId !== seasonId) {
@@ -22,18 +22,18 @@ module.exports = function seasonTopScorersModel(seasonId) {
         return
       }
 
-      unique[player.playerId] ??= {
+      const record = (records[player.playerId] ??= {
         playerId: player.playerId,
         goals: 0,
         appearances: 0,
-      }
+      })
 
-      unique[player.playerId].goals += player.goals
-      unique[player.playerId].appearances += player.appearances
+      record.goals += player.goals
+      record.appearances += player.appearances
     })
   })
 
-  const draft = Array.from(Object.values(unique))
+  const draft = Array.from(Object.values(records))
 
   draft.sort(sortByGoals)
 
