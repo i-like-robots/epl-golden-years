@@ -1,6 +1,6 @@
 // Data Snap v1
 
-exports['get manager query'] = {
+exports['GetManagerQuery'] = {
   "data": {
     "data": {
       "manager": {
@@ -25,7 +25,7 @@ exports['get manager query'] = {
   }
 }
 
-exports['get player query'] = {
+exports['GetPlayerQuery'] = {
   "data": {
     "data": {
       "player": {
@@ -142,7 +142,7 @@ exports['get player query'] = {
   }
 }
 
-exports['get season query'] = {
+exports['GetSeasonQuery'] = {
   "data": {
     "data": {
       "season": {
@@ -749,7 +749,7 @@ exports['get season query'] = {
   }
 }
 
-exports['get team query'] = {
+exports['GetTeamQuery'] = {
   "data": {
     "data": {
       "team": {
@@ -1335,7 +1335,7 @@ exports['get team query'] = {
   }
 }
 
-exports['list managers query'] = {
+exports['ListManagersQuery'] = {
   "data": {
     "data": {
       "managers": [
@@ -1359,7 +1359,7 @@ exports['list managers query'] = {
   }
 }
 
-exports['list players query'] = {
+exports['ListPlayersQuery'] = {
   "data": {
     "data": {
       "players": [
@@ -1395,31 +1395,7 @@ exports['list players query'] = {
   }
 }
 
-exports['list seasons query'] = {
-  "data": {
-    "data": {
-      "seasons": [
-        {
-          "seasonId": "1992-1993",
-          "season": {
-            "displayName": "The FA Carling Premiership"
-          }
-        },
-        {
-          "seasonId": "1993-1994",
-          "season": {
-            "displayName": "The FA Carling Premiership"
-          }
-        }
-      ]
-    }
-  },
-  "metadata": {
-    "expires": null
-  }
-}
-
-exports['list teams query'] = {
+exports['ListTeamsQuery'] = {
   "data": {
     "data": {
       "teams": [
@@ -1433,6 +1409,30 @@ exports['list teams query'] = {
           "teamId": "mun",
           "team": {
             "name": "Manchester United"
+          }
+        }
+      ]
+    }
+  },
+  "metadata": {
+    "expires": null
+  }
+}
+
+exports['listSeasonsQuery'] = {
+  "data": {
+    "data": {
+      "seasons": [
+        {
+          "seasonId": "1992-1993",
+          "season": {
+            "displayName": "The FA Carling Premiership"
+          }
+        },
+        {
+          "seasonId": "1993-1994",
+          "season": {
+            "displayName": "The FA Carling Premiership"
           }
         }
       ]

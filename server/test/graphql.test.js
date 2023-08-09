@@ -4,33 +4,33 @@ const snapshot = require('data-snapshot').default
 const jsonDiff = require('json-diff')
 const app = require('../app')
 
-describe('GraphQL API', () => {
-  const validateQuery = async (testName, query) => {
-    const request = async () => {
-      const response = await app.inject({
-        method: 'POST',
-        url: '/graphql',
-        headers: {
-          'Content-Type': 'application/json',
-        },
-        body: JSON.stringify({ query }),
-      })
+const validateQuery = async (query) => {
+  const request = async () => {
+    const response = await app.inject({
+      method: 'POST',
+      url: '/graphql',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify({ query }),
+    })
 
-      return response.json()
-    }
-
-    const expected = await snapshot(testName, request)
-    const actual = await request()
-    const diff = jsonDiff.diffString(expected, actual, { color: false })
-
-    assert.equal(actual.errors, undefined, actual.errors)
-    assert.equal(diff.length, 0, diff)
+    return response.json()
   }
 
-  test('get manager query', async (ctx) => {
+  const operation = query.match(/^query ([a-z]+) {/i).pop()
+  const expected = await snapshot(operation, request)
+  const actual = await request()
+  const diff = jsonDiff.diffString(expected, actual, { color: false })
+
+  assert.equal(actual.errors, undefined, actual.errors)
+  assert.equal(diff.length, 0, diff)
+}
+
+describe('GraphQL API', () => {
+  test('get manager query', async () => {
     await validateQuery(
-      ctx.name,
-      `{
+      `query GetManagerQuery {
         manager(managerId: "terry-venables-6af0") {
           displayName
           history {
@@ -48,10 +48,9 @@ describe('GraphQL API', () => {
     )
   })
 
-  test('list managers query', async (ctx) => {
+  test('list managers query', async () => {
     await validateQuery(
-      ctx.name,
-      `{
+      `query ListManagersQuery {
         managers(name: "tony") {
           managerId
           manager {
@@ -62,10 +61,9 @@ describe('GraphQL API', () => {
     )
   })
 
-  test('get player query', async (ctx) => {
+  test('get player query', async () => {
     await validateQuery(
-      ctx.name,
-      `{
+      `query GetPlayerQuery {
         player(playerId: "kevin-phillips-b8f6") {
           displayName
           positionName
@@ -113,10 +111,9 @@ describe('GraphQL API', () => {
     )
   })
 
-  test('list players query', async (ctx) => {
+  test('list players query', async () => {
     await validateQuery(
-      ctx.name,
-      `{
+      `query ListPlayersQuery {
         players(name: "david", position: G) {
           playerId
           player {
@@ -127,10 +124,9 @@ describe('GraphQL API', () => {
     )
   })
 
-  test('get season query', async (ctx) => {
+  test('get season query', async () => {
     await validateQuery(
-      ctx.name,
-      `{
+      `query GetSeasonQuery {
         season(seasonId: "1994-1995") {
           displayName
           ball
@@ -185,10 +181,9 @@ describe('GraphQL API', () => {
     )
   })
 
-  test('list seasons query', async (ctx) => {
+  test('list seasons query', async () => {
     await validateQuery(
-      ctx.name,
-      `{
+      `query listSeasonsQuery {
         seasons(team: "shu") {
           seasonId
           season {
@@ -199,10 +194,9 @@ describe('GraphQL API', () => {
     )
   })
 
-  test('get team query', async (ctx) => {
+  test('get team query', async () => {
     await validateQuery(
-      ctx.name,
-      `{
+      `query GetTeamQuery {
         team(teamId: "shu") {
           optaId
           name
@@ -258,10 +252,9 @@ describe('GraphQL API', () => {
     )
   })
 
-  test('list teams query', async (ctx) => {
+  test('list teams query', async () => {
     await validateQuery(
-      ctx.name,
-      `{
+      `query ListTeamsQuery {
         teams(name: "man") {
           teamId
           team {
