@@ -12,28 +12,26 @@ const ajv = new Ajv({ strict: false })
 
 addFormats(ajv)
 
-const validateRoute = async (path, schema, statusCode = 200) => {
+async function validateRoute(path, schema, statusCode = 200) {
   const url = urlJoin('/rest', path)
 
-  const request = async () => {
-    const response = await app.inject({
-      method: 'GET',
-      url,
-    })
+  const response = await app.inject({
+    method: 'GET',
+    url,
+  })
 
-    return response.json()
-  }
+  const data = response.json()
 
-  const expected = await snapshot(url, request)
-  const actual = await request()
-  const diff = jsonDiff.diffString(expected, actual, { color: false })
+  const expected = await snapshot(url, Promise.resolve(data))
+  const diff = jsonDiff.diffString(expected, data, { color: false })
 
-  ajv.validate(schema.response[statusCode], actual)
-
+  assert.equal(response.statusCode, statusCode)
   assert.equal(diff.length, 0, diff)
+
+  ajv.validate(schema.response[statusCode], data)
   assert.equal(ajv.errors, null, ajv.errors)
 
-  return actual
+  return data
 }
 
 describe('Rest API', () => {

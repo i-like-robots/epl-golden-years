@@ -4,26 +4,24 @@ const snapshot = require('data-snapshot').default
 const jsonDiff = require('json-diff')
 const app = require('../app')
 
-const validateQuery = async (query) => {
-  const request = async () => {
-    const response = await app.inject({
-      method: 'POST',
-      url: '/graphql',
-      headers: {
-        'Content-Type': 'application/json',
-      },
-      body: JSON.stringify({ query }),
-    })
+async function validateQuery(query) {
+  const response = await app.inject({
+    method: 'POST',
+    url: '/graphql',
+    headers: {
+      'Content-Type': 'application/json',
+    },
+    body: JSON.stringify({ query }),
+  })
 
-    return response.json()
-  }
+  const data = response.json()
 
   const operation = query.match(/^query ([a-z]+) {/i).pop()
-  const expected = await snapshot(operation, request)
-  const actual = await request()
-  const diff = jsonDiff.diffString(expected, actual, { color: false })
+  const expected = await snapshot(operation, Promise.resolve(data))
+  const diff = jsonDiff.diffString(expected, data, { color: false })
 
-  assert.equal(actual.errors, undefined, actual.errors)
+  assert.equal(response.statusCode, 200)
+  assert.equal(data.errors, undefined, data.errors)
   assert.equal(diff.length, 0, diff)
 }
 
