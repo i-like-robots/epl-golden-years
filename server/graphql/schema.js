@@ -5,6 +5,7 @@ const {
   GraphQLObjectType,
   GraphQLSchema,
   GraphQLString,
+  GraphQLFloat,
 } = require('graphql')
 const { PERSON_ID, SEASON_ID, TEAM_ID } = require('../lib/constants')
 const { validateArg } = require('./utils')
@@ -307,6 +308,9 @@ const seasonTopCleanSheetsType = new GraphQLObjectType({
     },
     appearances: {
       type: new GraphQLNonNull(GraphQLInt),
+    },
+    cleanSheetRatio: {
+      type: new GraphQLNonNull(GraphQLFloat),
     },
   }),
 })

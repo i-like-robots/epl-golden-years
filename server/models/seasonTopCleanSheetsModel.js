@@ -37,5 +37,8 @@ module.exports = function seasonTopCleanSheetsModel(seasonId) {
 
   draft.sort(sortByCleanSheets)
 
-  return draft.slice(0, 10).map((player) => ({ ...player }))
+  return draft.slice(0, 10).map((player) => ({
+    ...player,
+    cleanSheetRatio: Math.round((100 / player.appearances) * player.cleanSheets) / 100,
+  }))
 }

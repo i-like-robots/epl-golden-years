@@ -39,6 +39,10 @@ module.exports = {
               appearances: {
                 type: 'integer',
               },
+              cleanSheetRatio: {
+                type: 'number',
+                format: 'float',
+              },
             },
           },
         },
