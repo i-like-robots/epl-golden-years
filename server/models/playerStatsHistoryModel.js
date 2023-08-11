@@ -1,15 +1,12 @@
 const { players, squads, hatTricks } = require('../dataset')
 const get = require('../lib/object-get')
 
-function getHatTricksBySeason(playerId) {
-  return hatTricks.reduce((acc, hatTrick) => {
-    if (hatTrick.playerId === playerId) {
-      acc[hatTrick.seasonId] ??= 0
-      acc[hatTrick.seasonId]++
-    }
+function countHatTricks(playerId, seasonId) {
+  const list = hatTricks.filter(
+    (hatTrick) => hatTrick.seasonId === seasonId && hatTrick.playerId === playerId
+  )
 
-    return acc
-  }, {})
+  return list.length
 }
 
 module.exports = function playerStatsHistoryModel(playerId) {
@@ -17,8 +14,6 @@ module.exports = function playerStatsHistoryModel(playerId) {
   const history = []
 
   if (player) {
-    const hatTricksBySeason = getHatTricksBySeason(playerId)
-
     squads.forEach((squad) => {
       const member = squad.players.find((player) => player.playerId === playerId)
 
@@ -29,7 +24,7 @@ module.exports = function playerStatsHistoryModel(playerId) {
           goals: member.goals,
           assists: member.assists,
           cleanSheets: member.cleanSheets,
-          hatTricks: hatTricksBySeason[squad.seasonId] ?? 0,
+          hatTricks: member.goals >= 3 ? countHatTricks(playerId, squad.seasonId) : 0,
         })
       }
     })

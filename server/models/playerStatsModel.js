@@ -1,6 +1,11 @@
 const { players, squads, hatTricks } = require('../dataset')
 const get = require('../lib/object-get')
 
+function countHatTricks(playerId) {
+  const list = hatTricks.filter((hatTrick) => hatTrick.playerId === playerId)
+  return list.length
+}
+
 module.exports = function playerStatsModel(playerId) {
   const player = get(players, playerId)
 
@@ -10,7 +15,7 @@ module.exports = function playerStatsModel(playerId) {
       goals: 0,
       assists: 0,
       cleanSheets: 0,
-      hatTricks: 0,
+      hatTricks: countHatTricks(playerId),
     }
 
     squads.forEach((squad) => {
@@ -23,8 +28,6 @@ module.exports = function playerStatsModel(playerId) {
         total.cleanSheets += member.cleanSheets
       }
     })
-
-    total.hatTricks = hatTricks.filter((hatTrick) => hatTrick.playerId === playerId).length
 
     return total
   }
