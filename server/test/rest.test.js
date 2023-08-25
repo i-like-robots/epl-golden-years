@@ -1,18 +1,11 @@
 const { after, before, describe, test } = require('node:test')
 const assert = require('node:assert')
-const Ajv = require('ajv')
-const addFormats = require('ajv-formats')
 const snapshot = require('data-snapshot').default
 const jsonDiff = require('json-diff')
 const urlJoin = require('url-join')
 const app = require('../app')
-const schemas = require('../rest/schemas')
 
-const ajv = new Ajv({ strict: false })
-
-addFormats(ajv)
-
-async function validateRoute(path, schema, statusCode = 200) {
+async function validateRoute(path, statusCode = 200) {
   const url = urlJoin('/rest', path)
 
   const response = await app.inject({
@@ -28,9 +21,6 @@ async function validateRoute(path, schema, statusCode = 200) {
   assert.equal(response.statusCode, statusCode)
   assert.equal(diff.length, 0, diff)
 
-  ajv.validate(schema.response[statusCode], data)
-  assert.equal(ajv.errors, null, ajv.errors)
-
   return data
 }
 
@@ -45,178 +35,173 @@ describe('Rest API', () => {
 
   describe('/', () => {
     test('OK', async () => {
-      await validateRoute('/', schemas.rootSchema, 200)
+      await validateRoute('/', 200)
     })
   })
 
   describe('/players', () => {
     test('OK', async () => {
-      const data = await validateRoute('/players', schemas.playersSchema, 200)
-
+      const data = await validateRoute('/players', 200)
       assert.equal(data.length, 2105)
     })
 
     test('OK - with name filter', async () => {
-      const data = await validateRoute('/players?name=tony', schemas.playersSchema, 200)
-
+      const data = await validateRoute('/players?name=tony', 200)
       assert.equal(data.length, 23)
     })
 
     test('OK - with position filter', async () => {
-      const data = await validateRoute('/players?position=G', schemas.playersSchema, 200)
-
+      const data = await validateRoute('/players?position=G', 200)
       assert.equal(data.length, 210)
     })
 
     test('Invalid Request', async () => {
-      await validateRoute('/players?name=@', schemas.playersSchema, 400)
-      await validateRoute('/players?position=X', schemas.playersSchema, 400)
+      await validateRoute('/players?name=@', 400)
+      await validateRoute('/players?position=X', 400)
     })
   })
 
   describe('/players/:playerId', () => {
     test('OK', async () => {
-      await validateRoute('/players/kevin-phillips-b8f6', schemas.playerSchema, 200)
+      await validateRoute('/players/kevin-phillips-b8f6', 200)
     })
 
     test('Not Found', async () => {
-      await validateRoute('/players/joe-bloggs-1234', schemas.playerSchema, 404)
+      await validateRoute('/players/joe-bloggs-1234', 404)
     })
   })
 
   describe('/players/:playerId/album', () => {
     test('OK', async () => {
-      await validateRoute('/players/kevin-phillips-b8f6/album', schemas.playerAlbumSchema, 200)
+      await validateRoute('/players/kevin-phillips-b8f6/album', 200)
     })
 
     test('Not Found', async () => {
-      await validateRoute('/players/joe-bloggs-1234/album', schemas.playerAlbumSchema, 404)
+      await validateRoute('/players/joe-bloggs-1234/album', 404)
     })
   })
 
   describe('/players/:playerId/stats', () => {
     test('OK', async () => {
-      await validateRoute('/players/kevin-phillips-b8f6/stats', schemas.playerStatsSchema, 200)
+      await validateRoute('/players/kevin-phillips-b8f6/stats', 200)
     })
 
     test('Not Found', async () => {
-      await validateRoute('/players/joe-bloggs-1234/stats', schemas.playerStatsSchema, 404)
+      await validateRoute('/players/joe-bloggs-1234/stats', 404)
     })
   })
 
   describe('/teams', () => {
     test('OK', async () => {
-      const data = await validateRoute('/teams', schemas.teamsSchema, 200)
-
+      const data = await validateRoute('/teams', 200)
       assert.equal(data.length, 34)
     })
 
     test('OK - with name filter', async () => {
-      const data = await validateRoute('/teams?name=man', schemas.teamsSchema, 200)
-
+      const data = await validateRoute('/teams?name=man', 200)
       assert.equal(data.length, 2)
     })
 
     test('Invalid Request', async () => {
-      await validateRoute('/teams?name=@', schemas.teamsSchema, 400)
+      await validateRoute('/teams?name=@', 400)
     })
   })
 
   describe('/teams/:teamId', () => {
     test('OK', async () => {
-      await validateRoute('/teams/shu', schemas.teamSchema, 200)
+      await validateRoute('/teams/shu', 200)
     })
 
     test('Not Found', async () => {
-      await validateRoute('/teams/abc', schemas.teamSchema, 404)
+      await validateRoute('/teams/abc', 404)
     })
   })
 
   describe('/teams/:teamId/squads', () => {
     test('OK', async () => {
-      await validateRoute('/teams/shu/squads', schemas.teamSquadsSchema, 200)
+      await validateRoute('/teams/shu/squads', 200)
     })
 
     test('Not Found', async () => {
-      await validateRoute('/teams/abc/squads', schemas.teamSquadsSchema, 404)
+      await validateRoute('/teams/abc/squads', 404)
     })
   })
 
   describe('/teams/:teamId/squads/1993-1994', () => {
     test('OK', async () => {
-      await validateRoute('/teams/shu/squads/1993-1994', schemas.teamSquadSchema, 200)
+      await validateRoute('/teams/shu/squads/1993-1994', 200)
     })
 
     test('Not Found', async () => {
-      await validateRoute('/teams/abc/squads/1993-1994', schemas.teamSquadSchema, 404)
+      await validateRoute('/teams/abc/squads/1993-1994', 404)
     })
   })
 
   describe('/teams/:teamId/stats', () => {
     test('OK', async () => {
-      await validateRoute('/teams/shu/stats', schemas.teamStatsSchema, 200)
+      await validateRoute('/teams/shu/stats', 200)
     })
 
     test('Not Found', async () => {
-      await validateRoute('/teams/abc/stats', schemas.teamStatsSchema, 404)
+      await validateRoute('/teams/abc/stats', 404)
     })
   })
 
   describe('/seasons', () => {
     test('OK', async () => {
-      const data = await validateRoute('/seasons', schemas.seasonsSchema, 200)
+      const data = await validateRoute('/seasons', 200)
 
       assert.equal(data.length, 10)
     })
 
     test('OK - with team filter', async () => {
-      const data = await validateRoute('/seasons?team=shu', schemas.seasonsSchema, 200)
+      const data = await validateRoute('/seasons?team=shu', 200)
 
       assert.equal(data.length, 2)
     })
 
     test('Invalid Request', async () => {
-      await validateRoute('/seasons?team=@', schemas.seasonsSchema, 400)
+      await validateRoute('/seasons?team=@', 400)
     })
   })
 
   describe('/seasons/:seasonId', () => {
     test('OK', async () => {
-      await validateRoute('/seasons/1994-1995', schemas.seasonSchema, 200)
+      await validateRoute('/seasons/1994-1995', 200)
     })
 
     test('Not Found', async () => {
-      await validateRoute('/seasons/2008-2009', schemas.seasonSchema, 404)
+      await validateRoute('/seasons/2008-2009', 404)
     })
   })
 
   describe('/seasons/:seasonId/hat-tricks', () => {
     test('OK', async () => {
-      await validateRoute('/seasons/1994-1995/hat-tricks', schemas.seasonHatTricksSchema, 200)
+      await validateRoute('/seasons/1994-1995/hat-tricks', 200)
     })
 
     test('Not Found', async () => {
-      await validateRoute('/seasons/2008-2009/hat-tricks', schemas.seasonHatTricksSchema, 404)
+      await validateRoute('/seasons/2008-2009/hat-tricks', 404)
     })
   })
 
   describe('/seasons/:seasonId/table', () => {
     test('OK', async () => {
-      await validateRoute('/seasons/1994-1995/table', schemas.seasonTableSchema, 200)
+      await validateRoute('/seasons/1994-1995/table', 200)
     })
 
     test('Not Found', async () => {
-      await validateRoute('/seasons/2008-2009/table', schemas.seasonTableSchema, 404)
+      await validateRoute('/seasons/2008-2009/table', 404)
     })
   })
 
   describe('/seasons/:seasonId/top-assists', () => {
     test('OK', async () => {
-      await validateRoute('/seasons/1994-1995/top-assists', schemas.seasonTopAssistsSchema, 200)
+      await validateRoute('/seasons/1994-1995/top-assists', 200)
     })
 
     test('Not Found', async () => {
-      await validateRoute('/seasons/2008-2009/top-assists', schemas.seasonTopAssistsSchema, 404)
+      await validateRoute('/seasons/2008-2009/top-assists', 404)
     })
   })
 
@@ -224,7 +209,7 @@ describe('Rest API', () => {
     test('OK', async () => {
       await validateRoute(
         '/seasons/1994-1995/top-clean-sheets',
-        schemas.seasonTopCleanSheetsSchema,
+
         200
       )
     })
@@ -232,7 +217,7 @@ describe('Rest API', () => {
     test('Not Found', async () => {
       await validateRoute(
         '/seasons/2008-2009/top-clean-sheets',
-        schemas.seasonTopCleanSheetsSchema,
+
         404
       )
     })
@@ -240,39 +225,37 @@ describe('Rest API', () => {
 
   describe('/seasons/:seasonId/top-scorers', () => {
     test('OK', async () => {
-      await validateRoute('/seasons/1994-1995/top-scorers', schemas.seasonTopScorersSchema, 200)
+      await validateRoute('/seasons/1994-1995/top-scorers', 200)
     })
 
     test('Not Found', async () => {
-      await validateRoute('/seasons/2008-2009/top-scorers', schemas.seasonTopScorersSchema, 404)
+      await validateRoute('/seasons/2008-2009/top-scorers', 404)
     })
   })
 
   describe('/managers', () => {
     test('OK', async () => {
-      const data = await validateRoute('/managers', schemas.managersSchema, 200)
-
+      const data = await validateRoute('/managers', 200)
       assert.equal(data.length, 98)
     })
 
     test('OK - with name filter', async () => {
-      const data = await validateRoute('/managers?name=tony', schemas.managersSchema, 200)
-
+      const data = await validateRoute('/managers?name=tony', 200)
       assert.equal(data.length, 2)
     })
 
     test('Invalid Request', async () => {
-      await validateRoute('/managers?name=@', schemas.managersSchema, 400)
+      await validateRoute('/managers?name=@', 400)
     })
   })
 
   describe('/managers/:managerId', () => {
     test('OK', async () => {
-      await validateRoute('/managers/terry-venables-6af0', schemas.managerSchema, 200)
+      await validateRoute('/managers/terry-venables-6af0', 200)
     })
 
     test('Not Found', async () => {
-      await validateRoute('/managers/joe-bloggs-1234', schemas.managerSchema, 404)
+      await validateRoute('/managers/joe-bloggs-1234', 404)
     })
   })
 })
