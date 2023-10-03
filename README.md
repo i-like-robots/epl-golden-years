@@ -1,5 +1,11 @@
 # EPL Golden Years
 
+An API with RESTful and GraphQL endpoints to access player and team data for each season of The Premier League (or Premiership as it was known) covering its first decade since inception in 1992.
+
+> It will never be finally decided who has won the football. There is still everything to play for and forever to play it in.
+>
+> \- [That Mitchell and Webb Look](https://www.youtube.com/watch?v=MusyO7J2inM)
+
 See the [about section](#about) to find out more about the app or jump to the [getting started](#getting-started) to run the website on your machine.
 
 ---
@@ -12,7 +18,9 @@ See the [about section](#about) to find out more about the app or jump to the [g
 
 ## About
 
-TODO
+A copy of the API is currently hosted on Vercel; the Open API definition can be found [here](https://epl-golden-years.vercel.app/rest/schema.json) and the GraphQL Schema is [here](https://epl-golden-years.vercel.app/graphql/schema.gql).
+
+Currently WIP 👷
 
 ### Requirements
 
