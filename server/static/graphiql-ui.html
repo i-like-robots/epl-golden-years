@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>GraphiQL</title>
+    <style>
+      body {
+        margin: 0;
+      }
+
+      #app {
+        height: 100vh;
+      }
+    </style>
+
+    <link rel="stylesheet" href="https://unpkg.com/graphiql@3.0.6/graphiql.min.css">
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/@graphiql/plugin-explorer@0.3.5/dist/style.css"
+    >
+
+    <script
+      src="https://unpkg.com/react@18.2.0/umd/react.production.min.js"
+      integrity="sha512-8Q6Y9XnTbOE+JNvjBQwJ2H8S+UV4uA6hiRykhdtIyDYZ2TprdNmWOUaKdGzOhyr4dCyk287OejbPvwl7lrfqrQ=="
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://unpkg.com/react-dom@18.2.0/umd/react-dom.production.min.js"
+      integrity="sha512-MOCpqoRoisCTwJ8vQQiciZv0qcpROCidek3GTFS6KTk2+y7munJIlKCVkFCYY+p3ErYFXCjmFjnfTTRSC1OHWQ=="
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://unpkg.com/graphiql@3.0.6/graphiql.min.js"
+      integrity="sha512-J1qOEDzw11Yb9g9NS8iyR/Gq92y7k3fGnIxFBvQd9VRuS0iRbDkZo6S+k0SK+3UjQotW35LP/jSXgJfu2LsjHA=="
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://unpkg.com/@graphiql/plugin-explorer@0.3.5/dist/index.umd.js"
+      integrity="sha512-IDbV3QsOmVaeAJ1hQc0NiDrxZLpd7wCkjekBl3rmJjPsdEJagBhnWSwLqiD5NRqH6gy0QvP49P7tDH4xF1J9tA=="
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div id="app"></div>
+    <script>
+      const root = ReactDOM.createRoot(document.getElementById('app'))
+
+      const App = React.createElement(GraphiQL, {
+        fetcher: GraphiQL.createFetcher({
+          url: '/graphql',
+        }),
+        defaultQuery: `query PlayersNamedDave {
+  players(name: "Dave") {
+    player {
+      displayName
+      history {
+        team {
+          name
+        }
+        seasonId
+      }
+    }
+  }
+}`,
+        defaultEditorToolsVisibility: true,
+        plugins: [GraphiQLPluginExplorer.explorerPlugin()],
+      })
+
+      root.render(App)
+    </script>
+  </body>
+</html>

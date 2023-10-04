@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Swagger UI</title>
+
+    <style>
+      html {
+        box-sizing: border-box;
+      }
+
+      *,
+      *:before,
+      *:after {
+        box-sizing: inherit;
+      }
+
+      body {
+        margin: 0;
+        background: #fafafa;
+      }
+    </style>
+
+    <link rel="stylesheet" type="text/css" href="https://unpkg.com/swagger-ui-dist@3.23.4/swagger-ui.css">
+
+    <script src="https://unpkg.com/swagger-ui-dist@3.23.4/swagger-ui-bundle.js" integrity="sha512-OszSd30dZ3YOrjuJykPDh4YXm3e9ZE/X+wKWvXYPnwIYlvCBAZIllFJ/CTr3PXRRlGZ/YtrsazEpcJG92fuHyg==" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/swagger-ui-dist@3.23.4/swagger-ui-standalone-preset.js" integrity="sha512-gMRrH4Hqb/yx+19VqkCI99/aTDUMpJ+hkZWRvKHbI3A1fDN3sYVYdVssY8vSdfoMbFLu1JB2HdZ94LaJqKN+SQ==" crossorigin="anonymous"></script>
+  </head>
+
+  <body>
+    <div id="swagger-ui"></div>
+
+    <script>
+      window.onload = function () {
+        const ui = SwaggerUIBundle({
+          url: '/rest/schema.json',
+          dom_id: '#swagger-ui',
+          deepLinking: true,
+          presets: [SwaggerUIBundle.presets.apis, SwaggerUIStandalonePreset],
+          plugins: [SwaggerUIBundle.plugins.DownloadUrl],
+          layout: 'StandaloneLayout',
+        })
+      }
+    </script>
+  </body>
+</html>
