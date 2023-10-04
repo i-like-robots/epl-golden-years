@@ -6,7 +6,7 @@ An API with RESTful and GraphQL endpoints to access player and team data for eac
 >
 > \- [That Mitchell and Webb Look](https://www.youtube.com/watch?v=MusyO7J2inM)
 
-See the [about section](#about) to find out more about the app or jump to the [getting started](#getting-started) to run the website on your machine.
+See the [about section](#about) to find out more about the app or jump to the [getting started](#getting-started) guide to run the website on your machine.
 
 ---
 
@@ -18,7 +18,11 @@ See the [about section](#about) to find out more about the app or jump to the [g
 
 ## About
 
-A copy of the API is currently hosted on Vercel; the Open API definition can be found [here](https://epl-golden-years.vercel.app/rest/schema.json) and the GraphQL Schema is [here](https://epl-golden-years.vercel.app/graphql/schema.gql).
+The API has been built using Fastify and a copy of the API is currently hosted on Vercel.
+
+You can explore the REST API using [Swagger UI](https://epl-golden-years.vercel.app/docs/swagger-ui) or the GraphQL API with [GraphiQL](https://epl-golden-years.vercel.app/docs/graphiql-ui).
+
+Alternatively, the Swagger/Open API definition can be found [here](https://epl-golden-years.vercel.app/rest/schema.json) and the GraphQL schema is available [here](https://epl-golden-years.vercel.app/graphql/schema.gql).
 
 Currently WIP 👷
 
