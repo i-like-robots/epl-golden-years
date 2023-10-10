@@ -1,11 +1,11 @@
-const { SEASON_ID } = require('../../lib/constants')
-const { seasonUrl, playerUrl } = require('../urls')
-const errorSchema = require('./errorSchema')
+import { SEASON_ID } from '../../lib/constants.mjs'
+import { seasonUrl, playerUrl } from '../urls.mjs'
+import errorSchema from './errorSchema.mjs'
 
-module.exports = {
+export default {
   tags: ['season'],
-  summary: 'Get the top clean sheets for a season',
-  description: 'Returns a list of goalkeepers who achieved the most clean sheets within a season.',
+  summary: 'Get the top assists for a season',
+  description: 'Returns a list of players who provided the most assists within a season.',
   params: {
     seasonId: {
       type: 'string',
@@ -21,7 +21,7 @@ module.exports = {
         season: {
           type: 'string',
           format: 'uri',
-          example: seasonUrl('1993-1994'),
+          example: seasonUrl('1995-1996'),
         },
         table: {
           type: 'array',
@@ -31,17 +31,16 @@ module.exports = {
               player: {
                 type: 'string',
                 format: 'uri',
-                example: playerUrl('steve-ogrizovic-3e99'),
+                example: playerUrl('darren-peacock-78af'),
               },
-              cleanSheets: {
+              assists: {
                 type: 'integer',
               },
               appearances: {
                 type: 'integer',
               },
-              cleanSheetRatio: {
-                type: 'number',
-                format: 'float',
+              minutesPerAssist: {
+                type: 'integer',
               },
             },
           },

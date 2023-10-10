@@ -1,4 +1,4 @@
-module.exports = {
+export default {
   400: {
     description: 'Bad request',
     type: 'object',

@@ -1,8 +1,8 @@
-const { TEAM_ID, SEASON_ID } = require('../../lib/constants')
-const { managerUrl, teamUrl, seasonUrl, playerUrl } = require('../urls')
-const errorSchema = require('./errorSchema')
+import { TEAM_ID, SEASON_ID } from '../../lib/constants.mjs'
+import { managerUrl, teamUrl, seasonUrl, playerUrl } from '../urls.mjs'
+import errorSchema from './errorSchema.mjs'
 
-module.exports = {
+export default {
   tags: ['team'],
   summary: 'Get a squad for a team and season',
   description: 'Returns a list of players and their statistics for a team and season.',

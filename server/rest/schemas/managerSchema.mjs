@@ -1,16 +1,16 @@
-const { PERSON_ID, POSITION_CODES, POSITION_NAMES } = require('../../lib/constants')
-const { seasonUrl, playerStatsUrl, playerAlbumUrl, teamUrl } = require('../urls')
-const errorSchema = require('./errorSchema')
+import { PERSON_ID } from '../../lib/constants.mjs'
+import { seasonUrl, teamUrl } from '../urls.mjs'
+import errorSchema from './errorSchema.mjs'
 
-module.exports = {
-  tags: ['player'],
-  summary: 'Get a player by ID',
-  description: 'Returns details about a player and references to additional resources.',
+export default {
+  tags: ['manager'],
+  summary: 'Get a manager by ID',
+  description: 'Returns details about a manager and references to additional resources.',
   params: {
-    playerId: {
+    managerId: {
       type: 'string',
       pattern: PERSON_ID,
-      description: 'ID of player',
+      description: 'ID of manager',
     },
   },
   response: {
@@ -20,40 +20,30 @@ module.exports = {
       properties: {
         pulseId: {
           type: 'integer',
-          example: 146,
+          example: 1310,
         },
         optaId: {
           type: 'string',
-          pattern: '^p\\d{2,4}$',
-          example: 'p145',
-        },
-        positionCode: {
-          type: 'string',
-          enum: POSITION_CODES,
-          example: 'G',
-        },
-        positionName: {
-          type: 'string',
-          enum: POSITION_NAMES,
-          example: 'Goalkeeper',
+          pattern: '^man\\d{2,5}$',
+          example: 'man37359',
         },
         displayName: {
           type: 'string',
-          example: 'Nigel Martyn',
+          example: 'John Gregory',
         },
         firstName: {
           type: 'string',
-          example: 'Nigel',
+          example: 'John',
         },
         lastName: {
           type: 'string',
-          example: 'Martyn',
+          example: 'Gregory',
         },
         dateOfBirth: {
           type: 'string',
           format: 'date',
-          description: 'ISO 8601 date',
-          example: '1966-08-10',
+          description: 'ISO-8601 date',
+          example: '1954-05-10',
         },
         countryCode: {
           type: 'string',
@@ -78,20 +68,10 @@ module.exports = {
               team: {
                 type: 'string',
                 format: 'uri',
-                example: teamUrl('lee'),
+                example: teamUrl('avl'),
               },
             },
           },
-        },
-        stats: {
-          type: 'string',
-          format: 'uri',
-          example: playerStatsUrl('nigel-martyn-99a8'),
-        },
-        album: {
-          type: 'string',
-          format: 'uri',
-          example: playerAlbumUrl('nigel-martyn-99a8'),
         },
       },
     },

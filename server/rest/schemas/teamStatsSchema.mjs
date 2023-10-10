@@ -1,17 +1,17 @@
-const { PERSON_ID } = require('../../lib/constants')
-const { playerUrl, seasonUrl } = require('../urls')
-const errorSchema = require('./errorSchema')
+import { TEAM_ID } from '../../lib/constants.mjs'
+import { teamUrl, seasonUrl } from '../urls.mjs'
+import errorSchema from './errorSchema.mjs'
 
-module.exports = {
-  tags: ['player'],
-  summary: 'Get stats for a player',
+export default {
+  tags: ['team'],
+  summary: 'Get stats for a team',
   description:
-    'Returns statistics for a player both by season and cumulatively for the seasons they played in.',
+    'Returns statistics for a team by season and cumulatively for the seasons they competed in.',
   params: {
-    playerId: {
+    teamId: {
       type: 'string',
-      pattern: PERSON_ID,
-      description: 'ID of player',
+      pattern: TEAM_ID,
+      description: 'ID of team',
     },
   },
   response: {
@@ -19,27 +19,30 @@ module.exports = {
       description: 'OK',
       type: 'object',
       properties: {
-        player: {
+        team: {
           type: 'string',
           format: 'uri',
-          example: playerUrl('ken-monkou-c89e'),
+          example: teamUrl('nor'),
         },
         total: {
           type: 'object',
           properties: {
-            appearances: {
+            played: {
               type: 'integer',
             },
-            cleanSheets: {
+            wins: {
               type: 'integer',
             },
-            goals: {
+            draws: {
               type: 'integer',
             },
-            assists: {
+            losses: {
               type: 'integer',
             },
-            hatTricks: {
+            for: {
+              type: 'integer',
+            },
+            against: {
               type: 'integer',
             },
           },
@@ -52,21 +55,24 @@ module.exports = {
               season: {
                 type: 'string',
                 format: 'uri',
-                example: seasonUrl('1993-1994'),
+                example: seasonUrl('1992-1993'),
               },
-              appearances: {
+              played: {
                 type: 'integer',
               },
-              cleanSheets: {
+              wins: {
                 type: 'integer',
               },
-              goals: {
+              draws: {
                 type: 'integer',
               },
-              assists: {
+              losses: {
                 type: 'integer',
               },
-              hatTricks: {
+              for: {
+                type: 'integer',
+              },
+              against: {
                 type: 'integer',
               },
             },

@@ -1,11 +1,11 @@
-const { SEASON_ID } = require('../../lib/constants')
-const { seasonUrl, playerUrl } = require('../urls')
-const errorSchema = require('./errorSchema')
+import { SEASON_ID } from '../../lib/constants.mjs'
+import { seasonUrl, playerUrl } from '../urls.mjs'
+import errorSchema from './errorSchema.mjs'
 
-module.exports = {
+export default {
   tags: ['season'],
-  summary: 'Get the top assists for a season',
-  description: 'Returns a list of players who provided the most assists within a season.',
+  summary: 'Get the top scorers for a season',
+  description: 'Returns a list of players who scored the most goals within a season.',
   params: {
     seasonId: {
       type: 'string',
@@ -21,7 +21,7 @@ module.exports = {
         season: {
           type: 'string',
           format: 'uri',
-          example: seasonUrl('1995-1996'),
+          example: seasonUrl('1998-1999'),
         },
         table: {
           type: 'array',
@@ -31,15 +31,15 @@ module.exports = {
               player: {
                 type: 'string',
                 format: 'uri',
-                example: playerUrl('darren-peacock-78af'),
+                example: playerUrl('julian-joachim-3ade'),
               },
-              assists: {
+              goals: {
                 type: 'integer',
               },
               appearances: {
                 type: 'integer',
               },
-              minutesPerAssist: {
+              minutesPerGoal: {
                 type: 'integer',
               },
             },

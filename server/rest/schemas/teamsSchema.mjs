@@ -1,7 +1,7 @@
-const { teamUrl } = require('../urls')
-const errorSchema = require('./errorSchema')
+import { teamUrl } from '../urls.mjs'
+import errorSchema from './errorSchema.mjs'
 
-module.exports = {
+export default {
   tags: ['team'],
   summary: 'List teams',
   description: 'Returns a list of all teams, optionally filtered by team name.',

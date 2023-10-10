@@ -1,7 +1,7 @@
-const { managerUrl } = require('../urls')
-const errorSchema = require('./errorSchema')
+import { managerUrl } from '../urls.mjs'
+import errorSchema from './errorSchema.mjs'
 
-module.exports = {
+export default {
   tags: ['manager'],
   summary: 'List managers',
   description: 'Returns a list of all managers, optionally filtered by manager name.',

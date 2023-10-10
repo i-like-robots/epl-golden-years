@@ -1,8 +1,8 @@
-const { POSITION_CODES } = require('../../lib/constants')
-const { playerUrl } = require('../urls')
-const errorSchema = require('./errorSchema')
+import { POSITION_CODES } from '../../lib/constants.mjs'
+import { playerUrl } from '../urls.mjs'
+import errorSchema from './errorSchema.mjs'
 
-module.exports = {
+export default {
   tags: ['player'],
   summary: 'List players',
   description: 'Returns a list of all players, optionally filtered by player name and position.',
