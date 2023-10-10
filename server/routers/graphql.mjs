@@ -1,6 +1,6 @@
 import { printSchema } from 'graphql'
-import { createHandler } from 'graphql-http/lib/use/fastify.mjs'
-import { schema } from '../graphql.mjs'
+import { createHandler } from 'graphql-http/lib/use/fastify'
+import { schema } from '../graphql/index.mjs'
 
 export default function graphqlRouter(app, _, done) {
   const gql = printSchema(schema)

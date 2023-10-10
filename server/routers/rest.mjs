@@ -19,7 +19,7 @@ import {
   seasonTopCleanSheetsRoute,
   managersRoute,
   managerRoute,
-} from '../rest/routes.mjs'
+} from '../rest/routes/index.mjs'
 import {
   playerAlbumSchema,
   playerSchema,
@@ -41,7 +41,7 @@ import {
   managersSchema,
   managerSchema,
   metaSchema,
-} from '../rest/schemas.mjs'
+} from '../rest/schemas/index.mjs'
 
 export default async function restRouter(app, _, done) {
   await app.register(swagger, {
