@@ -1,10 +1,8 @@
 import fs from 'fs'
-import url from 'url'
 import path from 'path'
 
 function resolveFile(fileName) {
-  const dirname = url.fileURLToPath(path.dirname(import.meta.url))
-  return path.join(dirname, '..', 'static', fileName)
+  return path.join(process.cwd(), 'server', 'static', fileName)
 }
 
 export default function docsRouter(app, _, done) {
