@@ -1,8 +1,10 @@
-const { describe, test } = require('node:test')
-const assert = require('node:assert')
-const snapshot = require('data-snapshot').default
-const jsonDiff = require('json-diff')
-const app = require('../app')
+import { describe, test } from 'node:test'
+import assert from 'node:assert'
+import jsonDiff from 'json-diff'
+import snapshot from './snapshot.mjs'
+import app from '../app.mjs'
+
+console.log({ snapshot })
 
 async function validateQuery(query) {
   const response = await app.inject({
@@ -17,7 +19,7 @@ async function validateQuery(query) {
   const data = response.json()
 
   const operation = query.match(/^query ([a-z]+) {/i).pop()
-  const expected = await snapshot(operation, Promise.resolve(data))
+  const expected = await snapshot(operation, async () => data)
   const diff = jsonDiff.diffString(expected, data, { color: false })
 
   assert.equal(response.statusCode, 200)

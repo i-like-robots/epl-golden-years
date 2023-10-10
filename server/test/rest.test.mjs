@@ -1,9 +1,9 @@
-const { after, before, describe, test } = require('node:test')
-const assert = require('node:assert')
-const snapshot = require('data-snapshot').default
-const jsonDiff = require('json-diff')
-const urlJoin = require('url-join')
-const app = require('../app')
+import { after, before, describe, test } from 'node:test'
+import assert from 'node:assert'
+import jsonDiff from 'json-diff'
+import urlJoin from 'url-join'
+import snapshot from './snapshot.mjs'
+import app from '../app.mjs'
 
 async function validateRoute(path, statusCode = 200) {
   const url = urlJoin('/rest', path)
@@ -15,7 +15,7 @@ async function validateRoute(path, statusCode = 200) {
 
   const data = response.json()
 
-  const expected = await snapshot(url, Promise.resolve(data))
+  const expected = await snapshot(url, async () => data)
   const diff = jsonDiff.diffString(expected, data, { color: false })
 
   assert.equal(response.statusCode, statusCode)
