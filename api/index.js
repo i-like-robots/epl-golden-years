@@ -1,4 +1,4 @@
-import app from '../server/app.mjs'
+import app from '../server/app.js'
 
 export default async (req, res) => {
   await app.ready()
