@@ -8,7 +8,7 @@
   "scripts": {
     "dev": "node --watch ./server/start.mjs",
     "start": "node ./server/start.mjs",
-    "lint": "eslint . --ext ts,tsx,js,jsx",
+    "lint": "eslint . --ext mjs,cjs,js,jsx",
     "format": "prettier --write '**/*.{mjs,cjs,js,jsx,json,yml}'",
     "verify": "npm run lint && npm run format",
     "spec": "LOG_LEVEL=silent node --test",
