@@ -1,6 +1,6 @@
-const { GraphQLNonNull, GraphQLString } = require('graphql')
+import { GraphQLNonNull, GraphQLString } from 'graphql'
 
-module.exports = function createRelationship(schema, model) {
+export default function createRelationship(schema, model) {
   const name = schema.name.toLowerCase()
   const id = `${name}Id`
 
