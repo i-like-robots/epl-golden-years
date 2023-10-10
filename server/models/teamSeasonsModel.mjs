@@ -1,6 +1,6 @@
-const { tables } = require('../dataset')
+import { tables } from '../dataset.mjs'
 
-module.exports = function teamSeasonsModel(teamId) {
+export default function teamSeasonsModel(teamId) {
   const seasons = []
 
   Object.keys(tables).forEach((seasonId) => {

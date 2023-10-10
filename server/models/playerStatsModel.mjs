@@ -1,12 +1,12 @@
-const { players, squads, hatTricks } = require('../dataset')
-const get = require('../lib/object-get')
+import { players, squads, hatTricks } from '../dataset.mjs'
+import get from '../lib/object-get.mjs'
 
 function countHatTricks(playerId) {
   const list = hatTricks.filter((hatTrick) => hatTrick.playerId === playerId)
   return list.length
 }
 
-module.exports = function playerStatsModel(playerId) {
+export default function playerStatsModel(playerId) {
   const player = get(players, playerId)
 
   if (player) {

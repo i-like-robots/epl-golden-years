@@ -1,6 +1,6 @@
-const { seasons, tables } = require('../dataset')
+import { seasons, tables } from '../dataset.mjs'
 
-module.exports = function seasonsModel(filters = {}) {
+export default function seasonsModel(filters = {}) {
   const filterFns = []
   const seasonIds = []
 

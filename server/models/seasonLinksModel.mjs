@@ -1,7 +1,7 @@
-const { seasons } = require('../dataset')
-const get = require('../lib/object-get')
+import { seasons } from '../dataset.mjs'
+import get from '../lib/object-get.mjs'
 
-module.exports = function seasonLinksModel(seasonId) {
+export default function seasonLinksModel(seasonId) {
   const season = get(seasons, seasonId)
 
   if (season) {

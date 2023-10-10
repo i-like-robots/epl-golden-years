@@ -1,9 +1,9 @@
-const { teams } = require('../dataset')
-const search = require('../lib/object-search')
+import { teams } from '../dataset.mjs'
+import search from '../lib/object-search.mjs'
 
 const NAME_PROPS = ['name', 'shortName']
 
-module.exports = function teamsModel(filters = {}) {
+export default function teamsModel(filters = {}) {
   const filterFns = []
   const teamIds = []
 

@@ -1,9 +1,9 @@
-const { managers } = require('../dataset')
-const search = require('../lib/object-search')
+import { managers } from '../dataset.mjs'
+import search from '../lib/object-search.mjs'
 
 const NAME_PROPS = ['displayName', 'firstName', 'lastName']
 
-module.exports = function managersModel(filters = {}) {
+export default function managersModel(filters = {}) {
   const filterFns = []
   const managerIds = []
 

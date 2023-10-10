@@ -1,6 +1,6 @@
-const { squads } = require('../dataset')
+import { squads } from '../dataset.mjs'
 
-module.exports = function playerHistoryModel(playerId) {
+export default function playerHistoryModel(playerId) {
   const history = []
 
   squads.forEach((squad) => {
