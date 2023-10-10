@@ -4,6 +4,7 @@
   "version": "1.0.0",
   "description": "",
   "main": "server/start.js",
+  "type": "module",
   "scripts": {
     "dev": "node --watch ./server/start.js",
     "start": "node ./server/start.js",
