@@ -1,6 +1,6 @@
-const app = require('../server/app')
+import app from '../server/app.mjs'
 
-module.exports = async (req, res) => {
+export default async (req, res) => {
   await app.ready()
   app.server.emit('request', req, res)
 }
