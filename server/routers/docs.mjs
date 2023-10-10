@@ -1,11 +1,11 @@
-const fs = require('fs')
-const path = require('path')
+import fs from 'fs'
+import path from 'path'
 
 function resolveFile(fileName) {
   return path.join(__dirname, '..', 'static', fileName)
 }
 
-module.exports = function docsRouter(app, _, done) {
+export default function docsRouter(app, _, done) {
   app.get('/graphiql-ui', (_, response) => {
     const stream = fs.createReadStream(resolveFile('graphiql-ui.html'))
 

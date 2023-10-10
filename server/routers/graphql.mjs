@@ -1,8 +1,8 @@
-const { printSchema } = require('graphql')
-const { createHandler } = require('graphql-http/lib/use/fastify')
-const { schema } = require('../graphql')
+import { printSchema } from 'graphql'
+import { createHandler } from 'graphql-http/lib/use/fastify.mjs'
+import { schema } from '../graphql.mjs'
 
-module.exports = function graphqlRouter(app, _, done) {
+export default function graphqlRouter(app, _, done) {
   const gql = printSchema(schema)
   const handler = createHandler({ schema })
 

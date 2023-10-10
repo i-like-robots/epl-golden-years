@@ -1,5 +1,5 @@
-const swagger = require('@fastify/swagger')
-const {
+import swagger from '@fastify/swagger'
+import {
   playerRoute,
   playersRoute,
   playerAlbumRoute,
@@ -19,8 +19,8 @@ const {
   seasonTopCleanSheetsRoute,
   managersRoute,
   managerRoute,
-} = require('../rest/routes')
-const {
+} from '../rest/routes.mjs'
+import {
   playerAlbumSchema,
   playerSchema,
   playerStatsSchema,
@@ -41,9 +41,9 @@ const {
   managersSchema,
   managerSchema,
   metaSchema,
-} = require('../rest/schemas')
+} from '../rest/schemas.mjs'
 
-module.exports = async function restRouter(app, _, done) {
+export default async function restRouter(app, _, done) {
   await app.register(swagger, {
     openapi: metaSchema,
   })
