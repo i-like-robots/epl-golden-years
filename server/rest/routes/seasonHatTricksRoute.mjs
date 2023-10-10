@@ -1,7 +1,7 @@
-const seasonHatTricksModel = require('../../models/seasonHatTricksModel')
-const { playerUrl, seasonUrl, teamUrl } = require('../urls')
+import seasonHatTricksModel from '../../models/seasonHatTricksModel.mjs'
+import { playerUrl, seasonUrl, teamUrl } from '../urls.mjs'
 
-module.exports = function seasonHatTricksRoute(request, response) {
+export default function seasonHatTricksRoute(request, response) {
   const { seasonId } = request.params
   const data = seasonHatTricksModel(seasonId)
 

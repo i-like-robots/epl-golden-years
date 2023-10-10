@@ -1,7 +1,7 @@
-const teamSquadsModel = require('../../models/teamSquadsModel')
-const { teamSquadUrl, teamUrl } = require('../urls')
+import teamSquadsModel from '../../models/teamSquadsModel.mjs'
+import { teamSquadUrl, teamUrl } from '../urls.mjs'
 
-module.exports = function teamSquadsRoute(request, response) {
+export default function teamSquadsRoute(request, response) {
   const { teamId } = request.params
   const squads = teamSquadsModel(teamId)
 

@@ -1,15 +1,15 @@
-const seasonModel = require('../../models/seasonModel')
-const seasonLinksModel = require('../../models/seasonLinksModel')
-const {
+import seasonModel from '../../models/seasonModel.mjs'
+import seasonLinksModel from '../../models/seasonLinksModel.mjs'
+import {
   seasonHatTricksUrl,
   seasonTableUrl,
   seasonTopScorersUrl,
   seasonTopAssistsUrl,
   seasonTopCleanSheetsUrl,
   seasonUrl,
-} = require('../urls')
+} from '../urls.mjs'
 
-module.exports = function seasonRoute(request, response) {
+export default function seasonRoute(request, response) {
   const { seasonId } = request.params
   const season = seasonModel(seasonId)
 

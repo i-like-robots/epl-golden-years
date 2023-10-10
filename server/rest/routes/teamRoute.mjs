@@ -1,8 +1,8 @@
-const teamModel = require('../../models/teamModel')
-const teamSeasonsModel = require('../../models/teamSeasonsModel')
-const { seasonUrl, teamStatsUrl, teamSquadsUrl } = require('../urls')
+import teamModel from '../../models/teamModel.mjs'
+import teamSeasonsModel from '../../models/teamSeasonsModel.mjs'
+import { seasonUrl, teamStatsUrl, teamSquadsUrl } from '../urls.mjs'
 
-module.exports = function teamRoute(request, response) {
+export default function teamRoute(request, response) {
   const { teamId } = request.params
   const team = teamModel(teamId)
 

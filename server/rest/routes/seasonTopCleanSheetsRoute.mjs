@@ -1,9 +1,9 @@
-const seasonTopAssistsModel = require('../../models/seasonTopAssistsModel')
-const { playerUrl, seasonUrl } = require('../urls')
+import seasonTopCleanSheetsModel from '../../models/seasonTopCleanSheetsModel.mjs'
+import { playerUrl, seasonUrl } from '../urls.mjs'
 
-module.exports = function seasonTopAssistsRoute(request, response) {
+export default function seasonTopCleanSheetsRoute(request, response) {
   const { seasonId } = request.params
-  const data = seasonTopAssistsModel(seasonId)
+  const data = seasonTopCleanSheetsModel(seasonId)
 
   if (data.length) {
     const table = data.map((player) => ({

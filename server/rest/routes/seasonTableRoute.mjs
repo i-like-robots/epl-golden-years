@@ -1,7 +1,7 @@
-const seasonTableModel = require('../../models/seasonTableModel')
-const { seasonUrl, teamUrl } = require('../urls')
+import seasonTableModel from '../../models/seasonTableModel.mjs'
+import { seasonUrl, teamUrl } from '../urls.mjs'
 
-module.exports = function seasonTableRoute(request, response) {
+export default function seasonTableRoute(request, response) {
   const { seasonId } = request.params
   const table = seasonTableModel(seasonId)
 

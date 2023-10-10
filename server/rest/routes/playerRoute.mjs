@@ -1,8 +1,8 @@
-const playerModel = require('../../models/playerModel')
-const playerHistoryModel = require('../../models/playerHistoryModel')
-const { playerAlbumUrl, playerStatsUrl, seasonUrl, teamUrl } = require('../urls')
+import playerModel from '../../models/playerModel.mjs'
+import playerHistoryModel from '../../models/playerHistoryModel.mjs'
+import { playerAlbumUrl, playerStatsUrl, seasonUrl, teamUrl } from '../urls.mjs'
 
-module.exports = function playerRoute(request, response) {
+export default function playerRoute(request, response) {
   const { playerId } = request.params
   const player = playerModel(playerId)
 
