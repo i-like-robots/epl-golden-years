@@ -4,8 +4,6 @@ import jsonDiff from 'json-diff'
 import snapshot from './snapshot.js'
 import app from '../app.js'
 
-console.log({ snapshot })
-
 async function validateQuery(query) {
   const response = await app.inject({
     method: 'POST',

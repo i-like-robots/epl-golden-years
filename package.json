@@ -29,6 +29,7 @@
     "url-join": "^4.0.1"
   },
   "devDependencies": {
+    "callsites": "^4.1.0",
     "eslint": "^8.50.0",
     "husky": "^8.0.3",
     "json-diff": "^1.0.6",

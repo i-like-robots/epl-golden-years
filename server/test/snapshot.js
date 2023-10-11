@@ -1,15 +1,13 @@
+import callsites from 'callsites'
 import chalk from 'chalk'
 import path from 'path'
 import url from 'url'
 import fs from 'fs'
 
-const callingFilePath = (stack) => {
-  const callingStack = stack.split('\n')[2].split(/\s/)
-  const callingFile = url.fileURLToPath(
-    callingStack[callingStack.length - 1].replace(/[()]/g, '').replace(/js:.+$/, 'js')
-  )
-
-  return callingFile
+const callingFilePath = () => {
+  const stack = callsites()
+  const callingFile = stack[2].getFileName()
+  return url.fileURLToPath(callingFile)
 }
 
 const shouldUpdate = () => {
@@ -19,7 +17,7 @@ const shouldUpdate = () => {
 
 const banner = '// Data Snap v1'
 
-const ensureDirectoryExistence = (filePath) => {
+const checkDirectoryExistence = (filePath) => {
   const dirname = path.dirname(filePath)
 
   if (fs.existsSync(dirname)) {
@@ -29,12 +27,16 @@ const ensureDirectoryExistence = (filePath) => {
   fs.mkdirSync(dirname)
 }
 
-const dataSnapshot = async (dataKey, thunkPromise, opts = {}) => {
-  const callingFile = callingFilePath(new Error().stack)
-  const relativeCallingFile = path.relative(process.cwd(), callingFile)
-
+const getSnapFile = (callingFile) => {
   const basename = `${path.basename(callingFile)}.snap`
-  const snapFile = path.resolve(callingFile, '..', '__data_snapshots__', basename)
+  const dirname = path.dirname(callingFile)
+  return path.resolve(dirname, '__data_snapshots__', basename)
+}
+
+const dataSnapshot = async (dataKey, thunkPromise, opts = {}) => {
+  const callingFile = callingFilePath()
+  const relativeCallingFile = path.relative(process.cwd(), callingFile)
+  const snapFile = getSnapFile(callingFile)
 
   const exports = {}
 
@@ -80,7 +82,7 @@ const dataSnapshot = async (dataKey, thunkPromise, opts = {}) => {
       `${banner}\n`
     )
 
-  ensureDirectoryExistence(snapFile)
+  checkDirectoryExistence(snapFile)
   fs.writeFileSync(snapFile, newSnap)
 
   return data
