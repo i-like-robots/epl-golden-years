@@ -1,6 +1,6 @@
 // Data Snap v1
 
-exports['GetManagerQuery'] = {
+exports[`GetManagerQuery`] = {
   "data": {
     "data": {
       "manager": {
@@ -20,12 +20,12 @@ exports['GetManagerQuery'] = {
       }
     }
   },
-  "metadata": {
+  "meta": {
     "expires": null
   }
 }
 
-exports['GetPlayerQuery'] = {
+exports[`GetPlayerQuery`] = {
   "data": {
     "data": {
       "player": {
@@ -77,7 +77,7 @@ exports['GetPlayerQuery'] = {
             "team": {
               "name": "Sunderland"
             },
-            "sticker": "https://www.laststicker.com/i/cards/88/430.jpg"
+            "sticker": "https:\u002F\u002Fwww.laststicker.com\u002Fi\u002Fcards\u002F88\u002F430.jpg"
           },
           {
             "seasonId": "2000-2001",
@@ -88,7 +88,7 @@ exports['GetPlayerQuery'] = {
             "team": {
               "name": "Sunderland"
             },
-            "sticker": "https://www.laststicker.com/i/cards/498/368.jpg"
+            "sticker": "https:\u002F\u002Fwww.laststicker.com\u002Fi\u002Fcards\u002F498\u002F368.jpg"
           },
           {
             "seasonId": "2001-2002",
@@ -99,7 +99,7 @@ exports['GetPlayerQuery'] = {
             "team": {
               "name": "Sunderland"
             },
-            "sticker": "https://www.laststicker.com/i/cards/507/387.jpg"
+            "sticker": "https:\u002F\u002Fwww.laststicker.com\u002Fi\u002Fcards\u002F507\u002F387.jpg"
           }
         ],
         "stats": {
@@ -137,12 +137,12 @@ exports['GetPlayerQuery'] = {
       }
     }
   },
-  "metadata": {
+  "meta": {
     "expires": null
   }
 }
 
-exports['GetSeasonQuery'] = {
+exports[`GetSeasonQuery`] = {
   "data": {
     "data": {
       "season": {
@@ -744,12 +744,12 @@ exports['GetSeasonQuery'] = {
       }
     }
   },
-  "metadata": {
+  "meta": {
     "expires": null
   }
 }
 
-exports['GetTeamQuery'] = {
+exports[`GetTeamQuery`] = {
   "data": {
     "data": {
       "team": {
@@ -1330,12 +1330,12 @@ exports['GetTeamQuery'] = {
       }
     }
   },
-  "metadata": {
+  "meta": {
     "expires": null
   }
 }
 
-exports['ListManagersQuery'] = {
+exports[`ListManagersQuery`] = {
   "data": {
     "data": {
       "managers": [
@@ -1354,12 +1354,12 @@ exports['ListManagersQuery'] = {
       ]
     }
   },
-  "metadata": {
+  "meta": {
     "expires": null
   }
 }
 
-exports['ListPlayersQuery'] = {
+exports[`ListPlayersQuery`] = {
   "data": {
     "data": {
       "players": [
@@ -1390,12 +1390,12 @@ exports['ListPlayersQuery'] = {
       ]
     }
   },
-  "metadata": {
+  "meta": {
     "expires": null
   }
 }
 
-exports['ListTeamsQuery'] = {
+exports[`ListTeamsQuery`] = {
   "data": {
     "data": {
       "teams": [
@@ -1414,12 +1414,12 @@ exports['ListTeamsQuery'] = {
       ]
     }
   },
-  "metadata": {
+  "meta": {
     "expires": null
   }
 }
 
-exports['listSeasonsQuery'] = {
+exports[`listSeasonsQuery`] = {
   "data": {
     "data": {
       "seasons": [
@@ -1438,7 +1438,7 @@ exports['listSeasonsQuery'] = {
       ]
     }
   },
-  "metadata": {
+  "meta": {
     "expires": null
   }
 }

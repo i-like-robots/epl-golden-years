@@ -2,7 +2,7 @@ import { after, before, describe, test } from 'node:test'
 import assert from 'node:assert'
 import jsonDiff from 'json-diff'
 import urlJoin from 'url-join'
-import snapshot from './snapshot.js'
+import snap from 'snappy-snaps'
 import app from '../app.js'
 
 async function validateRoute(path, statusCode = 200) {
@@ -15,7 +15,7 @@ async function validateRoute(path, statusCode = 200) {
 
   const data = response.json()
 
-  const expected = await snapshot(url, async () => data)
+  const expected = await snap(url, data)
   const diff = jsonDiff.diffString(expected, data, { color: false })
 
   assert.equal(response.statusCode, statusCode)
