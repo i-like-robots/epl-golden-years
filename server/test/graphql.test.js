@@ -1,6 +1,5 @@
 import { describe, test } from 'node:test'
 import assert from 'node:assert'
-import jsonDiff from 'json-diff'
 import snap from 'snappy-snaps'
 import app from '../app.js'
 
@@ -15,14 +14,12 @@ async function validateQuery(query) {
   })
 
   const data = response.json()
-
   const operation = query.match(/^query ([a-z]+) {/i).pop()
   const expected = await snap(operation, data)
-  const diff = jsonDiff.diffString(expected, data, { color: false })
 
+  assert.deepEqual(data, expected)
   assert.equal(response.statusCode, 200)
   assert.equal(data.errors, undefined, data.errors)
-  assert.equal(diff.length, 0, diff)
 }
 
 describe('GraphQL API', () => {

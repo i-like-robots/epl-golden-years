@@ -31,10 +31,9 @@
   "devDependencies": {
     "eslint": "^8.50.0",
     "husky": "^8.0.3",
-    "json-diff": "^1.0.6",
     "lint-staged": "^14.0.1",
     "prettier": "^3.0.3",
-    "snappy-snaps": "^1.0.1"
+    "snappy-snaps": "^1.0.2"
   },
   "engines": {
     "node": "18.x"
