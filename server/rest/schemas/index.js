@@ -1,23 +1,21 @@
-module.exports = {
-  errorSchema: require('./errorSchema'),
-  managersSchema: require('./managersSchema'),
-  managerSchema: require('./managerSchema'),
-  metaSchema: require('./metaSchema'),
-  playerAlbumSchema: require('./playerAlbumSchema'),
-  playerSchema: require('./playerSchema'),
-  playersSchema: require('./playersSchema'),
-  playerStatsSchema: require('./playerStatsSchema'),
-  rootSchema: require('./rootSchema'),
-  seasonHatTricksSchema: require('./seasonHatTricksSchema'),
-  seasonSchema: require('./seasonSchema'),
-  seasonsSchema: require('./seasonsSchema'),
-  seasonTableSchema: require('./seasonTableSchema'),
-  seasonTopAssistsSchema: require('./seasonTopAssistsSchema'),
-  seasonTopCleanSheetsSchema: require('./seasonTopCleanSheetsSchema'),
-  seasonTopScorersSchema: require('./seasonTopScorersSchema'),
-  teamSchema: require('./teamSchema'),
-  teamSquadSchema: require('./teamSquadSchema'),
-  teamSquadsSchema: require('./teamSquadsSchema'),
-  teamsSchema: require('./teamsSchema'),
-  teamStatsSchema: require('./teamStatsSchema'),
-}
+export { default as errorSchema } from './errorSchema.js'
+export { default as managersSchema } from './managersSchema.js'
+export { default as managerSchema } from './managerSchema.js'
+export { default as metaSchema } from './metaSchema.js'
+export { default as playerAlbumSchema } from './playerAlbumSchema.js'
+export { default as playerSchema } from './playerSchema.js'
+export { default as playersSchema } from './playersSchema.js'
+export { default as playerStatsSchema } from './playerStatsSchema.js'
+export { default as rootSchema } from './rootSchema.js'
+export { default as seasonHatTricksSchema } from './seasonHatTricksSchema.js'
+export { default as seasonSchema } from './seasonSchema.js'
+export { default as seasonsSchema } from './seasonsSchema.js'
+export { default as seasonTableSchema } from './seasonTableSchema.js'
+export { default as seasonTopAssistsSchema } from './seasonTopAssistsSchema.js'
+export { default as seasonTopCleanSheetsSchema } from './seasonTopCleanSheetsSchema.js'
+export { default as seasonTopScorersSchema } from './seasonTopScorersSchema.js'
+export { default as teamSchema } from './teamSchema.js'
+export { default as teamSquadSchema } from './teamSquadSchema.js'
+export { default as teamSquadsSchema } from './teamSquadsSchema.js'
+export { default as teamsSchema } from './teamsSchema.js'
+export { default as teamStatsSchema } from './teamStatsSchema.js'

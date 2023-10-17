@@ -1,8 +1,8 @@
-const { SEASON_ID } = require('../../lib/constants')
-const { seasonsUrl, playerUrl } = require('../urls')
-const errorSchema = require('./errorSchema')
+import { SEASON_ID } from '../../lib/constants.js'
+import { seasonsUrl, playerUrl } from '../urls.js'
+import errorSchema from './errorSchema.js'
 
-module.exports = {
+export default {
   tags: ['season'],
   summary: 'Get hat-tricks for a season',
   description: 'Returns a list of completed hat-tricks within a season.',

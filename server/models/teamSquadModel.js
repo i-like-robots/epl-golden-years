@@ -1,5 +1,5 @@
-const { squads } = require('../dataset')
+import { squads } from '../dataset.js'
 
-module.exports = function teamSquadModel(teamId, seasonId) {
+export default function teamSquadModel(teamId, seasonId) {
   return squads.find((squad) => squad.teamId === teamId && squad.seasonId === seasonId)
 }

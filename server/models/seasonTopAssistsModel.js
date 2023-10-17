@@ -1,4 +1,4 @@
-const { squads } = require('../dataset')
+import { squads } from '../dataset.js'
 
 function sortByAssists(a, b) {
   if (a.assists > b.assists) return -1
@@ -9,7 +9,7 @@ function sortByAssists(a, b) {
   return 0
 }
 
-module.exports = function seasonTopAssistsModel(seasonId) {
+export default function seasonTopAssistsModel(seasonId) {
   const records = {}
 
   squads.forEach((squad) => {

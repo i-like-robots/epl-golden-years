@@ -1,8 +1,8 @@
-const { TEAM_ID } = require('../../lib/constants')
-const { teamUrl, teamSquadUrl } = require('../urls')
-const errorSchema = require('./errorSchema')
+import { TEAM_ID } from '../../lib/constants.js'
+import { teamUrl, teamSquadUrl } from '../urls.js'
+import errorSchema from './errorSchema.js'
 
-module.exports = {
+export default {
   tags: ['team'],
   summary: 'Get a list of squads for a team',
   description: 'Returns a list of all EPL squads for a single team',

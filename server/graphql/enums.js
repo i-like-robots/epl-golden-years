@@ -1,15 +1,13 @@
-const { GraphQLEnumType } = require('graphql')
-const { POSITION_CODES, POSITION_NAMES } = require('../lib/constants')
-const { arrayToEnum } = require('./utils')
+import { GraphQLEnumType } from 'graphql'
+import { POSITION_CODES, POSITION_NAMES } from '../lib/constants.js'
+import { arrayToEnum } from './utils.js'
 
-const PositionCodeType = new GraphQLEnumType({
+export const PositionCodeType = new GraphQLEnumType({
   name: 'PositionCode',
   values: arrayToEnum(POSITION_CODES),
 })
 
-const PositionNameType = new GraphQLEnumType({
+export const PositionNameType = new GraphQLEnumType({
   name: 'PositionName',
   values: arrayToEnum(POSITION_NAMES),
 })
-
-module.exports = { PositionCodeType, PositionNameType }

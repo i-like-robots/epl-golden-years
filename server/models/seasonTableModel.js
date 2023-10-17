@@ -1,6 +1,6 @@
-const { tables } = require('../dataset')
-const get = require('../lib/object-get')
+import { tables } from '../dataset.js'
+import get from '../lib/object-get.js'
 
-module.exports = function seasonTableModel(seasonId) {
+export default function seasonTableModel(seasonId) {
   return get(tables, seasonId)
 }

@@ -1,7 +1,7 @@
-const fastify = require('fastify')
-const docsRouter = require('./routers/docs')
-const restRouter = require('./routers/rest')
-const graphqlRouter = require('./routers/graphql')
+import fastify from 'fastify'
+import docsRouter from './routers/docs.js'
+import restRouter from './routers/rest.js'
+import graphqlRouter from './routers/graphql.js'
 
 const app = fastify({
   logger: { level: process.env.LOG_LEVEL || 'info' },
@@ -13,4 +13,4 @@ app.register(restRouter, { prefix: '/rest' })
 
 app.register(graphqlRouter, { prefix: '/graphql' })
 
-module.exports = app
+export default app

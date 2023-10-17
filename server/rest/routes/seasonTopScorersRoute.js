@@ -1,7 +1,7 @@
-const seasonTopScorersModel = require('../../models/seasonTopScorersModel')
-const { playerUrl, seasonUrl } = require('../urls')
+import seasonTopScorersModel from '../../models/seasonTopScorersModel.js'
+import { playerUrl, seasonUrl } from '../urls.js'
 
-module.exports = function seasonTopScorersRoute(request, response) {
+export default function seasonTopScorersRoute(request, response) {
   const { seasonId } = request.params
   const data = seasonTopScorersModel(seasonId)
 

@@ -1,8 +1,8 @@
-const { SEASON_ID } = require('../../lib/constants')
-const { seasonUrl, playerUrl } = require('../urls')
-const errorSchema = require('./errorSchema')
+import { SEASON_ID } from '../../lib/constants.js'
+import { seasonUrl, playerUrl } from '../urls.js'
+import errorSchema from './errorSchema.js'
 
-module.exports = {
+export default {
   tags: ['season'],
   summary: 'Get the top scorers for a season',
   description: 'Returns a list of players who scored the most goals within a season.',

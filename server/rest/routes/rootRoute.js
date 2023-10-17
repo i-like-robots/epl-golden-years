@@ -1,6 +1,6 @@
-const { playersUrl, teamsUrl, seasonsUrl, managersUrl } = require('../urls')
+import { playersUrl, teamsUrl, seasonsUrl, managersUrl } from '../urls.js'
 
-module.exports = function rootRoute(_, response) {
+export default function rootRoute(_, response) {
   response.send({
     players: playersUrl(),
     teams: teamsUrl(),

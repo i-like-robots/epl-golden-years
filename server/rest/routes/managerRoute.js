@@ -1,7 +1,7 @@
-const managerModel = require('../../models/managerModel')
-const { seasonUrl, teamUrl } = require('../urls')
+import managerModel from '../../models/managerModel.js'
+import { seasonUrl, teamUrl } from '../urls.js'
 
-module.exports = function managerRoute(request, response) {
+export default function managerRoute(request, response) {
   const { managerId } = request.params
   const manager = managerModel(managerId)
 

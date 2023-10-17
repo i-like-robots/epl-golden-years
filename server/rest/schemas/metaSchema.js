@@ -1,6 +1,6 @@
-const { API_URL } = require('../../lib/constants')
+import { API_URL } from '../../lib/constants.js'
 
-module.exports = {
+export default {
   info: {
     title: 'EPL Golden Years - OpenAPI',
     description:

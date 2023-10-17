@@ -1,8 +1,8 @@
-const { TEAM_ID } = require('../../lib/constants')
-const { seasonUrl, teamSquadsUrl, teamStatsUrl } = require('../urls')
-const errorSchema = require('./errorSchema')
+import { TEAM_ID } from '../../lib/constants.js'
+import { seasonUrl, teamSquadsUrl, teamStatsUrl } from '../urls.js'
+import errorSchema from './errorSchema.js'
 
-module.exports = {
+export default {
   tags: ['team'],
   summary: 'Get a team by ID',
   description: 'Returns details for a single team and references to additional resources.',

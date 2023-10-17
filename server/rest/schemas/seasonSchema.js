@@ -1,14 +1,14 @@
-const { SEASON_ID } = require('../../lib/constants')
-const {
+import { SEASON_ID } from '../../lib/constants.js'
+import {
   seasonTableUrl,
   seasonTopScorersUrl,
   seasonTopAssistsUrl,
   seasonHatTricksUrl,
   seasonTopCleanSheetsUrl,
-} = require('../urls')
-const errorSchema = require('./errorSchema')
+} from '../urls.js'
+import errorSchema from './errorSchema.js'
 
-module.exports = {
+export default {
   tags: ['season'],
   summary: 'Get a season by ID',
   description: 'Returns details about a single season and references to additional resources.',

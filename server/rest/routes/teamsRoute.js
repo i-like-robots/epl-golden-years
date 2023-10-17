@@ -1,7 +1,7 @@
-const teamsModel = require('../../models/teamsModel')
-const { teamUrl } = require('../urls')
+import teamsModel from '../../models/teamsModel.js'
+import { teamUrl } from '../urls.js'
 
-module.exports = function teamsRoute(request, response) {
+export default function teamsRoute(request, response) {
   const { name } = request.query
   const teamIds = teamsModel({ name })
 

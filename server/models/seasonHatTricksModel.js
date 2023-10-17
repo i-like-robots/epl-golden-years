@@ -1,5 +1,5 @@
-const { hatTricks } = require('../dataset')
+import { hatTricks } from '../dataset.js'
 
-module.exports = function seasonHatTricksModel(seasonId) {
+export default function seasonHatTricksModel(seasonId) {
   return hatTricks.filter((hatTrick) => hatTrick.seasonId === seasonId)
 }

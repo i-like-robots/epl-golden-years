@@ -1,7 +1,7 @@
-const seasonTopAssistsModel = require('../../models/seasonTopAssistsModel')
-const { playerUrl, seasonUrl } = require('../urls')
+import seasonTopAssistsModel from '../../models/seasonTopAssistsModel.js'
+import { playerUrl, seasonUrl } from '../urls.js'
 
-module.exports = function seasonTopAssistsRoute(request, response) {
+export default function seasonTopAssistsRoute(request, response) {
   const { seasonId } = request.params
   const data = seasonTopAssistsModel(seasonId)
 

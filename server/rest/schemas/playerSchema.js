@@ -1,8 +1,8 @@
-const { PERSON_ID, POSITION_CODES, POSITION_NAMES } = require('../../lib/constants')
-const { seasonUrl, playerStatsUrl, playerAlbumUrl, teamUrl } = require('../urls')
-const errorSchema = require('./errorSchema')
+import { PERSON_ID, POSITION_CODES, POSITION_NAMES } from '../../lib/constants.js'
+import { seasonUrl, playerStatsUrl, playerAlbumUrl, teamUrl } from '../urls.js'
+import errorSchema from './errorSchema.js'
 
-module.exports = {
+export default {
   tags: ['player'],
   summary: 'Get a player by ID',
   description: 'Returns details about a player and references to additional resources.',

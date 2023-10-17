@@ -1,8 +1,8 @@
-const { SEASON_ID } = require('../../lib/constants')
-const { seasonUrl, teamUrl } = require('../urls')
-const errorSchema = require('./errorSchema')
+import { SEASON_ID } from '../../lib/constants.js'
+import { seasonUrl, teamUrl } from '../urls.js'
+import errorSchema from './errorSchema.js'
 
-module.exports = {
+export default {
   tags: ['season'],
   summary: 'Get the league table for a season',
   description: 'Returns the final league table standings for a season.',

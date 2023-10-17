@@ -1,9 +1,9 @@
-const { players } = require('../dataset')
-const search = require('../lib/object-search')
+import { players } from '../dataset.js'
+import search from '../lib/object-search.js'
 
 const NAME_PROPS = ['displayName', 'firstName', 'lastName']
 
-module.exports = function playersModel(filters = {}) {
+export default function playersModel(filters = {}) {
   const filterFns = []
   const playerIds = []
 

@@ -1,9 +1,8 @@
-const { after, before, describe, test } = require('node:test')
-const assert = require('node:assert')
-const snapshot = require('data-snapshot').default
-const jsonDiff = require('json-diff')
-const urlJoin = require('url-join')
-const app = require('../app')
+import { after, before, describe, test } from 'node:test'
+import assert from 'node:assert'
+import urlJoin from 'url-join'
+import snap from 'snappy-snaps'
+import app from '../app.js'
 
 async function validateRoute(path, statusCode = 200) {
   const url = urlJoin('/rest', path)
@@ -14,12 +13,10 @@ async function validateRoute(path, statusCode = 200) {
   })
 
   const data = response.json()
+  const expected = await snap(url, data)
 
-  const expected = await snapshot(url, Promise.resolve(data))
-  const diff = jsonDiff.diffString(expected, data, { color: false })
-
+  assert.deepEqual(data, expected)
   assert.equal(response.statusCode, statusCode)
-  assert.equal(diff.length, 0, diff)
 
   return data
 }

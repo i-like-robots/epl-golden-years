@@ -1,7 +1,7 @@
-const managersModel = require('../../models/managersModel')
-const { managerUrl } = require('../urls')
+import managersModel from '../../models/managersModel.js'
+import { managerUrl } from '../urls.js'
 
-module.exports = function managersRoute(request, response) {
+export default function managersRoute(request, response) {
   const { name } = request.query
   const managerIds = managersModel({ name })
 

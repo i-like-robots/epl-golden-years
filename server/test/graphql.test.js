@@ -1,8 +1,7 @@
-const { describe, test } = require('node:test')
-const assert = require('node:assert')
-const snapshot = require('data-snapshot').default
-const jsonDiff = require('json-diff')
-const app = require('../app')
+import { describe, test } from 'node:test'
+import assert from 'node:assert'
+import snap from 'snappy-snaps'
+import app from '../app.js'
 
 async function validateQuery(query) {
   const response = await app.inject({
@@ -15,14 +14,12 @@ async function validateQuery(query) {
   })
 
   const data = response.json()
-
   const operation = query.match(/^query ([a-z]+) {/i).pop()
-  const expected = await snapshot(operation, Promise.resolve(data))
-  const diff = jsonDiff.diffString(expected, data, { color: false })
+  const expected = await snap(operation, data)
 
+  assert.deepEqual(data, expected)
   assert.equal(response.statusCode, 200)
   assert.equal(data.errors, undefined, data.errors)
-  assert.equal(diff.length, 0, diff)
 }
 
 describe('GraphQL API', () => {

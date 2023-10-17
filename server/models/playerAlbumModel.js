@@ -1,6 +1,6 @@
-const { stickers } = require('../dataset')
-const get = require('../lib/object-get')
+import { stickers } from '../dataset.js'
+import get from '../lib/object-get.js'
 
-module.exports = function playerAlbumModel(playerId) {
+export default function playerAlbumModel(playerId) {
   return get(stickers, playerId) || []
 }

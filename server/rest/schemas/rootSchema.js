@@ -1,6 +1,6 @@
-const { playersUrl, seasonsUrl, teamsUrl, managersUrl } = require('../urls')
+import { playersUrl, seasonsUrl, teamsUrl, managersUrl } from '../urls.js'
 
-module.exports = {
+export default {
   tags: [],
   summary: 'API root',
   description: 'Returns a list of all resource types presented by this API.',

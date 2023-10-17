@@ -1,6 +1,6 @@
-const { players } = require('../dataset')
-const get = require('../lib/object-get')
+import { players } from '../dataset.js'
+import get from '../lib/object-get.js'
 
-module.exports = function playerModel(playerId) {
+export default function playerModel(playerId) {
   return get(players, playerId)
 }

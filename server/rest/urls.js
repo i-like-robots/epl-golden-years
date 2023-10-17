@@ -1,95 +1,74 @@
-const join = require('url-join')
-const { API_URL } = require('../lib/constants')
+import join from 'url-join'
+import { API_URL } from '../lib/constants.js'
 
-function playersUrl() {
+export function playersUrl() {
   return join(API_URL, '/rest/players')
 }
 
-function playerUrl(playerId) {
+export function playerUrl(playerId) {
   return join(API_URL, '/rest/players', playerId)
 }
 
-function playerAlbumUrl(playerId) {
+export function playerAlbumUrl(playerId) {
   return join(API_URL, '/rest/players', playerId, '/album')
 }
 
-function playerStatsUrl(playerId) {
+export function playerStatsUrl(playerId) {
   return join(API_URL, '/rest/players', playerId, '/stats')
 }
 
-function teamsUrl() {
+export function teamsUrl() {
   return join(API_URL, '/rest/teams')
 }
 
-function teamUrl(teamId) {
+export function teamUrl(teamId) {
   return join(API_URL, '/rest/teams', teamId)
 }
 
-function teamSquadsUrl(teamId) {
+export function teamSquadsUrl(teamId) {
   return join(API_URL, '/rest/teams', teamId, '/squads')
 }
 
-function teamSquadUrl(teamId, seasonId) {
+export function teamSquadUrl(teamId, seasonId) {
   return join(API_URL, '/rest/teams', teamId, '/squads', seasonId)
 }
 
-function teamStatsUrl(teamId) {
+export function teamStatsUrl(teamId) {
   return join(API_URL, '/rest/teams', teamId, '/stats')
 }
 
-function seasonsUrl() {
+export function seasonsUrl() {
   return join(API_URL, '/rest/seasons')
 }
 
-function seasonUrl(seasonId) {
+export function seasonUrl(seasonId) {
   return join(API_URL, '/rest/seasons', seasonId)
 }
 
-function seasonHatTricksUrl(seasonId) {
+export function seasonHatTricksUrl(seasonId) {
   return join(API_URL, '/rest/seasons', seasonId, '/hat-tricks')
 }
 
-function seasonTableUrl(seasonId) {
+export function seasonTableUrl(seasonId) {
   return join(API_URL, '/rest/seasons', seasonId, '/table')
 }
 
-function seasonTopAssistsUrl(seasonId) {
+export function seasonTopAssistsUrl(seasonId) {
   return join(API_URL, '/rest/seasons', seasonId, '/top-assists')
 }
 
-function seasonTopCleanSheetsUrl(seasonId) {
+export function seasonTopCleanSheetsUrl(seasonId) {
   return join(API_URL, '/rest/seasons', seasonId, '/top-clean-sheets')
 }
 
-function seasonTopScorersUrl(seasonId) {
+export function seasonTopScorersUrl(seasonId) {
   return join(API_URL, '/rest/seasons', seasonId, '/top-scorers')
 }
 
-function managersUrl() {
+export function managersUrl() {
   return join(API_URL, '/rest/managers')
 }
 
-function managerUrl(managerId) {
+export function managerUrl(managerId) {
   return join(API_URL, '/rest/managers', managerId)
-}
-
-module.exports = {
-  playersUrl,
-  playerUrl,
-  playerAlbumUrl,
-  playerStatsUrl,
-  teamsUrl,
-  teamUrl,
-  teamSquadsUrl,
-  teamSquadUrl,
-  teamStatsUrl,
-  seasonsUrl,
-  seasonUrl,
-  seasonHatTricksUrl,
-  seasonTableUrl,
-  seasonTopAssistsUrl,
-  seasonTopCleanSheetsUrl,
-  seasonTopScorersUrl,
-  managersUrl,
-  managerUrl,
 }

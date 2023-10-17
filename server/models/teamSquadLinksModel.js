@@ -1,7 +1,7 @@
-const { squads, teams } = require('../dataset')
-const get = require('../lib/object-get')
+import { squads, teams } from '../dataset.js'
+import get from '../lib/object-get.js'
 
-module.exports = function teamSquadLinksModel(teamId, seasonId) {
+export default function teamSquadLinksModel(teamId, seasonId) {
   const team = get(teams, teamId)
 
   if (team) {

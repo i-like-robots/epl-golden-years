@@ -4,11 +4,12 @@
   "version": "1.0.0",
   "description": "",
   "main": "server/start.js",
+  "type": "module",
   "scripts": {
     "dev": "node --watch ./server/start.js",
     "start": "node ./server/start.js",
-    "lint": "eslint . --ext ts,tsx,js,jsx",
-    "format": "prettier --write '**/*.{ts,tsx,js,jsx,json,yml}'",
+    "lint": "eslint . --ext mjs,cjs,js,jsx",
+    "format": "prettier --write '**/*.{mjs,cjs,js,jsx,json,yml}'",
     "verify": "npm run lint && npm run format",
     "spec": "LOG_LEVEL=silent node --test",
     "test": "npm run verify && npm run spec",
@@ -28,12 +29,11 @@
     "url-join": "^4.0.1"
   },
   "devDependencies": {
-    "data-snapshot": "^1.0.1",
     "eslint": "^8.50.0",
     "husky": "^8.0.3",
-    "json-diff": "^1.0.6",
     "lint-staged": "^14.0.1",
-    "prettier": "^3.0.3"
+    "prettier": "^3.0.3",
+    "snappy-snaps": "^1.0.2"
   },
   "engines": {
     "node": "18.x"

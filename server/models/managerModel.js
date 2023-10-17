@@ -1,6 +1,6 @@
-const { managers } = require('../dataset')
-const get = require('../lib/object-get')
+import { managers } from '../dataset.js'
+import get from '../lib/object-get.js'
 
-module.exports = function managerModel(managerId) {
+export default function managerModel(managerId) {
   return get(managers, managerId)
 }

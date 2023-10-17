@@ -1,7 +1,7 @@
-const { tables, teams } = require('../dataset')
-const get = require('../lib/object-get')
+import { tables, teams } from '../dataset.js'
+import get from '../lib/object-get.js'
 
-module.exports = function teamStatsHistoryModel(teamId) {
+export default function teamStatsHistoryModel(teamId) {
   const team = get(teams, teamId)
   const history = []
 

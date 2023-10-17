@@ -1,7 +1,7 @@
-const playersModel = require('../../models/playersModel')
-const { playerUrl } = require('../urls')
+import playersModel from '../../models/playersModel.js'
+import { playerUrl } from '../urls.js'
 
-module.exports = function playerRoute(request, response) {
+export default function playerRoute(request, response) {
   const { name, position } = request.query
   const playerIds = playersModel({ name, position })
 

@@ -1,4 +1,4 @@
-const {
+import {
   GraphQLInt,
   GraphQLList,
   GraphQLNonNull,
@@ -6,34 +6,34 @@ const {
   GraphQLSchema,
   GraphQLString,
   GraphQLFloat,
-} = require('graphql')
-const { PERSON_ID, SEASON_ID, TEAM_ID } = require('../lib/constants')
-const { validateArg } = require('./utils')
-const { PositionCodeType, PositionNameType } = require('./enums')
-const createRelationship = require('./relationship')
-const managerModel = require('../models/managerModel')
-const managersModel = require('../models/managersModel')
-const playerAlbumModel = require('../models/playerAlbumModel')
-const playerHistoryModel = require('../models/playerHistoryModel')
-const playerModel = require('../models/playerModel')
-const playersModel = require('../models/playersModel')
-const playerStatsHistoryModel = require('../models/playerStatsHistoryModel')
-const playerStatsModel = require('../models/playerStatsModel')
-const seasonHatTricksModel = require('../models/seasonHatTricksModel')
-const seasonModel = require('../models/seasonModel')
-const seasonsModel = require('../models/seasonsModel')
-const seasonTableModel = require('../models/seasonTableModel')
-const seasonTopAssistsModel = require('../models/seasonTopAssistsModel')
-const seasonTopCleanSheetsModel = require('../models/seasonTopCleanSheetsModel')
-const seasonTopScorersModel = require('../models/seasonTopScorersModel')
-const teamModel = require('../models/teamModel')
-const teamSeasonsModel = require('../models/teamSeasonsModel')
-const teamSquadManagersModel = require('../models/teamSquadManagersModel')
-const teamSquadModel = require('../models/teamSquadModel')
-const teamSquadsModel = require('../models/teamSquadsModel')
-const teamStatsHistoryModel = require('../models/teamStatsHistoryModel')
-const teamsModel = require('../models/teamsModel')
-const teamStatsModel = require('../models/teamStatsModel')
+} from 'graphql'
+import { PERSON_ID, SEASON_ID, TEAM_ID } from '../lib/constants.js'
+import { validateArg } from './utils.js'
+import { PositionCodeType, PositionNameType } from './enums.js'
+import createRelationship from './relationship.js'
+import managerModel from '../models/managerModel.js'
+import managersModel from '../models/managersModel.js'
+import playerAlbumModel from '../models/playerAlbumModel.js'
+import playerHistoryModel from '../models/playerHistoryModel.js'
+import playerModel from '../models/playerModel.js'
+import playersModel from '../models/playersModel.js'
+import playerStatsHistoryModel from '../models/playerStatsHistoryModel.js'
+import playerStatsModel from '../models/playerStatsModel.js'
+import seasonHatTricksModel from '../models/seasonHatTricksModel.js'
+import seasonModel from '../models/seasonModel.js'
+import seasonsModel from '../models/seasonsModel.js'
+import seasonTableModel from '../models/seasonTableModel.js'
+import seasonTopAssistsModel from '../models/seasonTopAssistsModel.js'
+import seasonTopCleanSheetsModel from '../models/seasonTopCleanSheetsModel.js'
+import seasonTopScorersModel from '../models/seasonTopScorersModel.js'
+import teamModel from '../models/teamModel.js'
+import teamSeasonsModel from '../models/teamSeasonsModel.js'
+import teamSquadManagersModel from '../models/teamSquadManagersModel.js'
+import teamSquadModel from '../models/teamSquadModel.js'
+import teamSquadsModel from '../models/teamSquadsModel.js'
+import teamStatsHistoryModel from '../models/teamStatsHistoryModel.js'
+import teamsModel from '../models/teamsModel.js'
+import teamStatsModel from '../models/teamStatsModel.js'
 
 const historyType = new GraphQLObjectType({
   name: 'History',
@@ -643,6 +643,6 @@ const rootQuery = new GraphQLObjectType({
   },
 })
 
-module.exports = new GraphQLSchema({
+export default new GraphQLSchema({
   query: rootQuery,
 })
