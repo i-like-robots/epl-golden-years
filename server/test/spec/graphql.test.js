@@ -1,7 +1,7 @@
 import { describe, test } from 'node:test'
 import assert from 'node:assert'
 import snap from 'snappy-snaps'
-import app from '../app.js'
+import app from '../../app.js'
 
 async function validateQuery(query) {
   const response = await app.inject({

@@ -2,7 +2,7 @@ import { after, before, describe, test } from 'node:test'
 import assert from 'node:assert'
 import urlJoin from 'url-join'
 import snap from 'snappy-snaps'
-import app from '../app.js'
+import app from '../../app.js'
 
 async function validateRoute(path, statusCode = 200) {
   const url = urlJoin('/rest', path)
