@@ -1,10 +1,10 @@
-name: End-to-end test
+name: Post deployment
 
 on:
   deployment_status:
 
 jobs:
-  run-smoke-tests:
+  smoke-tests:
     runs-on: ubuntu-latest
 
     if: github.event_name == 'deployment_status' && github.event.deployment_status.state == 'success'
@@ -22,6 +22,6 @@ jobs:
         run: npm ci
 
       - name: Run smoke tests
-        run: node server/smoke.test.js
+        run: node server/test/smoke.test.js
         env:
           TEST_URL: ${{ github.event.deployment_status.environment_url }}
