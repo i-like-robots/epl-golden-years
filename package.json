@@ -11,7 +11,7 @@
     "lint": "eslint . --ext mjs,cjs,js,jsx",
     "format": "prettier --write '**/*.{mjs,cjs,js,jsx,json,yml}'",
     "verify": "npm run lint && npm run format",
-    "spec": "LOG_LEVEL=silent node --test",
+    "spec": "LOG_LEVEL=silent node --test server/test",
     "test": "npm run verify && npm run spec",
     "prepare": "husky install"
   },

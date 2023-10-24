@@ -1,0 +1,27 @@
+name: End-to-end test
+
+on:
+  deployment_status:
+
+jobs:
+  run-smoke-tests:
+    runs-on: ubuntu-latest
+
+    if: github.event_name == 'deployment_status' && github.event.deployment_status.state == 'success'
+
+    steps:
+      - uses: actions/checkout@v2
+
+      - name: Use Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: 18.x
+          cache: 'npm'
+
+      - name: Install
+        run: npm ci
+
+      - name: Run smoke tests
+        run: node server/smoke.test.js
+        env:
+          TEST_URL: ${{ github.event.deployment_status.environment_url }}
