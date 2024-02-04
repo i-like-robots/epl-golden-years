@@ -43,7 +43,7 @@ import {
   metaSchema,
 } from '../rest/schemas/index.js'
 
-export default async function restRouter(app, _) {
+export default async function restRouter(app) {
   await app.register(swagger, {
     openapi: metaSchema,
   })
