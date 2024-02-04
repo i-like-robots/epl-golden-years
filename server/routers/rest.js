@@ -43,7 +43,7 @@ import {
   metaSchema,
 } from '../rest/schemas/index.js'
 
-export default async function restRouter(app, _, done) {
+export default async function restRouter(app, _) {
   await app.register(swagger, {
     openapi: metaSchema,
   })
@@ -101,6 +101,4 @@ export default async function restRouter(app, _, done) {
   app.get('/schema.json', (_, response) => {
     response.send(app.swagger())
   })
-
-  done()
 }
