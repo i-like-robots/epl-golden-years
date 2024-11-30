@@ -11,7 +11,7 @@
     "lint": "eslint .",
     "format": "prettier --write '**/*.{mjs,cjs,js,jsx,json,yml}'",
     "verify": "npm run lint && npm run format",
-    "spec": "LOG_LEVEL=silent node --test server/test/spec",
+    "spec": "LOG_LEVEL=silent node --test server/test/spec/*.js",
     "test": "npm run verify && npm run spec",
     "prepare": "husky install"
   },
@@ -32,8 +32,8 @@
     "eslint": "^9.16.0",
     "husky": "^8.0.3",
     "lint-staged": "^14.0.1",
-    "prettier": "^3.0.3",
-    "snappy-snaps": "^1.0.2"
+    "prettier": "^3.4.0",
+    "snappy-snaps": "^1.1.0"
   },
   "engines": {
     "node": "22.x"
