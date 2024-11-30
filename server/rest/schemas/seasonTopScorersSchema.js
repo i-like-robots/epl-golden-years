@@ -7,11 +7,15 @@ export default {
   summary: 'Get the top scorers for a season',
   description: 'Returns a list of players who scored the most goals within a season.',
   params: {
-    seasonId: {
-      type: 'string',
-      pattern: SEASON_ID,
-      description: 'ID of season',
+    type: 'object',
+    properties: {
+      seasonId: {
+        type: 'string',
+        pattern: SEASON_ID,
+        description: 'ID of season',
+      },
     },
+    required: ['seasonId'],
   },
   response: {
     200: {

@@ -7,11 +7,15 @@ export default {
   summary: 'Get an album for a player',
   description: 'Returns an album of football stickers for a player.',
   params: {
-    playerId: {
-      type: 'string',
-      pattern: PERSON_ID,
-      description: 'ID of player',
+    type: 'object',
+    properties: {
+      playerId: {
+        type: 'string',
+        pattern: PERSON_ID,
+        description: 'ID of player',
+      },
     },
+    required: ['playerId'],
   },
   response: {
     200: {

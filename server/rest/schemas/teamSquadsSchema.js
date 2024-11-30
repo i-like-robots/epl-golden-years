@@ -7,11 +7,15 @@ export default {
   summary: 'Get a list of squads for a team',
   description: 'Returns a list of all EPL squads for a single team',
   params: {
-    teamId: {
-      type: 'string',
-      pattern: TEAM_ID,
-      description: 'ID of team',
+    type: 'object',
+    properties: {
+      teamId: {
+        type: 'string',
+        pattern: TEAM_ID,
+        description: 'ID of team',
+      },
     },
+    required: ['teamId'],
   },
   response: {
     200: {

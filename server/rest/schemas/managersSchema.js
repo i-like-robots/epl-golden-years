@@ -6,11 +6,15 @@ export default {
   summary: 'List managers',
   description: 'Returns a list of all managers, optionally filtered by manager name.',
   query: {
-    name: {
-      type: 'string',
-      pattern: '^\\w+$',
-      description: 'Filter managers by name',
+    type: 'object',
+    properties: {
+      name: {
+        type: 'string',
+        pattern: '^\\w+$',
+        description: 'Filter managers by name',
+      },
     },
+    required: [],
   },
   response: {
     200: {

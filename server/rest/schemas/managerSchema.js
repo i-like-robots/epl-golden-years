@@ -7,11 +7,15 @@ export default {
   summary: 'Get a manager by ID',
   description: 'Returns details about a manager and references to additional resources.',
   params: {
-    managerId: {
-      type: 'string',
-      pattern: PERSON_ID,
-      description: 'ID of manager',
+    type: 'object',
+    properties: {
+      managerId: {
+        type: 'string',
+        pattern: PERSON_ID,
+        description: 'ID of manager',
+      },
     },
+    required: ['managerId']
   },
   response: {
     200: {

@@ -7,16 +7,20 @@ export default {
   summary: 'List players',
   description: 'Returns a list of all players, optionally filtered by player name and position.',
   query: {
-    name: {
-      type: 'string',
-      pattern: '^\\w+$',
-      description: 'Filter players by name',
+    type: 'object',
+    properties: {
+      name: {
+        type: 'string',
+        pattern: '^\\w+$',
+        description: 'Filter players by name',
+      },
+      position: {
+        type: 'string',
+        enum: POSITION_CODES,
+        description: 'Filter players by position',
+      },
     },
-    position: {
-      type: 'string',
-      enum: POSITION_CODES,
-      description: 'Filter players by position',
-    },
+    required: [],
   },
   response: {
     200: {

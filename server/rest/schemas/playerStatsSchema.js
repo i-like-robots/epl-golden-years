@@ -8,11 +8,15 @@ export default {
   description:
     'Returns statistics for a player both by season and cumulatively for the seasons they played in.',
   params: {
-    playerId: {
-      type: 'string',
-      pattern: PERSON_ID,
-      description: 'ID of player',
+    type: 'object',
+    properties: {
+      playerId: {
+        type: 'string',
+        pattern: PERSON_ID,
+        description: 'ID of player',
+      },
     },
+    required: ['playerId'],
   },
   response: {
     200: {

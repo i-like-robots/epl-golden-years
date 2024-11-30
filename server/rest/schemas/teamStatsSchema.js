@@ -8,11 +8,15 @@ export default {
   description:
     'Returns statistics for a team by season and cumulatively for the seasons they competed in.',
   params: {
-    teamId: {
-      type: 'string',
-      pattern: TEAM_ID,
-      description: 'ID of team',
+    type: 'object',
+    properties: {
+      teamId: {
+        type: 'string',
+        pattern: TEAM_ID,
+        description: 'ID of team',
+      },
     },
+    required: ['teamId'],
   },
   response: {
     200: {

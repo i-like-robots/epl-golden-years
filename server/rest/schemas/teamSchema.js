@@ -7,11 +7,15 @@ export default {
   summary: 'Get a team by ID',
   description: 'Returns details for a single team and references to additional resources.',
   params: {
-    teamId: {
-      type: 'string',
-      pattern: TEAM_ID,
-      description: 'ID of team',
+    type: 'object',
+    properties: {
+      teamId: {
+        type: 'string',
+        pattern: TEAM_ID,
+        description: 'ID of team',
+      },
     },
+    required: ['teamId'],
   },
   response: {
     200: {

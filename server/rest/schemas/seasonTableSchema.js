@@ -7,11 +7,15 @@ export default {
   summary: 'Get the league table for a season',
   description: 'Returns the final league table standings for a season.',
   params: {
-    seasonId: {
-      type: 'string',
-      pattern: SEASON_ID,
-      description: 'ID of season',
+    type: 'object',
+    properties: {
+      seasonId: {
+        type: 'string',
+        pattern: SEASON_ID,
+        description: 'ID of season',
+      },
     },
+    required: ['seasonId'],
   },
   response: {
     200: {

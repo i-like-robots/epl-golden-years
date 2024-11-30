@@ -6,11 +6,15 @@ export default {
   summary: 'List teams',
   description: 'Returns a list of all teams, optionally filtered by team name.',
   query: {
-    name: {
-      type: 'string',
-      pattern: '^\\w+$',
-      description: 'Filter teams by name',
+    type: 'object',
+    properties: {
+      name: {
+        type: 'string',
+        pattern: '^\\w+$',
+        description: 'Filter teams by name',
+      },
     },
+    required: [],
   },
   response: {
     200: {

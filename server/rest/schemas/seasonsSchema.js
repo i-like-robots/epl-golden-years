@@ -7,11 +7,15 @@ export default {
   summary: 'List seasons',
   description: 'Returns a list of all seasons, optionally filtered by a team who played in them.',
   query: {
-    team: {
-      type: 'string',
-      pattern: TEAM_ID,
-      description: 'Filter seasons by participant team ID',
+    type: 'object',
+    properties: {
+      team: {
+        type: 'string',
+        pattern: TEAM_ID,
+        description: 'Filter seasons by participant team ID',
+      },
     },
+    required: [],
   },
   response: {
     200: {

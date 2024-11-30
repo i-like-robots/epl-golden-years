@@ -7,11 +7,15 @@ export default {
   summary: 'Get a player by ID',
   description: 'Returns details about a player and references to additional resources.',
   params: {
-    playerId: {
-      type: 'string',
-      pattern: PERSON_ID,
-      description: 'ID of player',
+    type: 'object',
+    properties: {
+      playerId: {
+        type: 'string',
+        pattern: PERSON_ID,
+        description: 'ID of player',
+      },
     },
+    required: ['playerId'],
   },
   response: {
     200: {

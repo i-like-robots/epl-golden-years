@@ -13,11 +13,15 @@ export default {
   summary: 'Get a season by ID',
   description: 'Returns details about a single season and references to additional resources.',
   params: {
-    seasonId: {
-      type: 'string',
-      pattern: SEASON_ID,
-      description: 'ID of season',
+    type: 'object',
+    properties: {
+      seasonId: {
+        type: 'string',
+        pattern: SEASON_ID,
+        description: 'ID of season',
+      },
     },
+    required: ['seasonId'],
   },
   response: {
     200: {

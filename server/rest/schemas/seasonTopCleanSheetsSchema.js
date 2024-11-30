@@ -7,11 +7,15 @@ export default {
   summary: 'Get the top clean sheets for a season',
   description: 'Returns a list of goalkeepers who achieved the most clean sheets within a season.',
   params: {
-    seasonId: {
-      type: 'string',
-      pattern: SEASON_ID,
-      description: 'ID of season',
+    type: 'object',
+    properties: {
+      seasonId: {
+        type: 'string',
+        pattern: SEASON_ID,
+        description: 'ID of season',
+      },
     },
+    required: ['seasonId'],
   },
   response: {
     200: {
